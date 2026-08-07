@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reporte de Stock y Rotación — Maqueta · Camping 44</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12161A; --ink2:#39424A; --muted:#77828B;
+  --paper:#FFFFFF; --bg:#E7EAEA; --line:#D2D7D7; --line2:#E6E9E9;
+  --A:#B08A2E; --B:#3D6E8C; --C:#A6432E; --SC:#626C76; --NC:#8C7A57;
+  --ncbg:#DCD6C8;
+  --ok:#2F6B4F;
+  --disp:"Barlow Condensed", "Arial Narrow", sans-serif;
+  --body:"IBM Plex Sans", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body);
+  font-size:14px; line-height:1.45; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1260px; margin:0 auto; padding:0 20px 64px}
+.mono{font-family:var(--mono); font-variant-numeric:tabular-nums; font-feature-settings:"tnum"}
+
+/* ---------- barra de maqueta ---------- */
+.flag{
+  background:repeating-linear-gradient(135deg,#1B2126 0 14px,#232B31 14px 28px);
+  color:#E9E4D6; font-family:var(--disp); letter-spacing:.14em; text-transform:uppercase;
+  font-size:12px; padding:7px 20px; text-align:center;
+}
+.flag b{color:#D9B65C; font-weight:700}
+
+/* ---------- header ---------- */
+header.top{background:var(--paper); border-bottom:1px solid var(--line)}
+.top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
+.mark{
+  width:44px; height:44px; flex:0 0 44px; border:1.5px solid var(--ink); border-radius:2px;
+  display:grid; place-items:center; font-family:var(--disp); font-weight:700; font-size:17px; letter-spacing:.02em;
+}
+.ttl{flex:1 1 340px}
+.ttl h1{
+  font-family:var(--disp); font-weight:700; font-size:30px; line-height:1.02;
+  margin:0; letter-spacing:-.01em; text-transform:uppercase;
+}
+.ttl p{margin:3px 0 0; color:var(--muted); font-size:12.5px}
+.meta{display:flex; gap:26px; flex-wrap:wrap; padding-top:4px}
+.meta div{min-width:88px}
+.meta span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.meta strong{font-family:var(--mono); font-weight:500; font-size:13.5px}
+
+/* ---------- tabs ---------- */
+.tabs{max-width:1260px; margin:0 auto; padding:14px 20px 0; display:flex; gap:2px}
+.tab{
+  appearance:none; border:1px solid var(--line); border-bottom:none; background:#F4F6F6;
+  font-family:var(--disp); font-size:15px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  padding:9px 18px 8px; cursor:pointer; color:var(--muted); border-radius:3px 3px 0 0;
+}
+.tab[aria-selected="true"]{background:var(--paper); color:var(--ink); box-shadow:inset 0 3px 0 var(--ink)}
+.tab:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+
+/* ---------- filtros ---------- */
+.filters{
+  background:var(--paper); border:1px solid var(--line); border-top:none;
+  padding:12px 16px; display:flex; gap:22px; flex-wrap:wrap; align-items:center;
+}
+.fgroup{display:flex; align-items:center; gap:8px}
+.flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+select,input[type=date]{
+  font-family:var(--mono); font-size:12.5px; padding:5px 8px; border:1px solid var(--line);
+  background:#FAFBFB; border-radius:2px; color:var(--ink);
+}
+.chips{display:flex; gap:4px; flex-wrap:wrap}
+.chip{
+  font-size:12px; padding:4px 10px; border:1px solid var(--line); background:#FAFBFB;
+  border-radius:20px; cursor:pointer; font-family:var(--body);
+}
+.chip[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
+
+/* ---------- secciones ---------- */
+section{margin-top:22px}
+.shead{display:flex; align-items:baseline; gap:12px; margin:0 0 10px}
+.shead h2{
+  font-family:var(--disp); font-weight:600; font-size:19px; text-transform:uppercase;
+  letter-spacing:.05em; margin:0;
+}
+.shead .rule{flex:1; height:1px; background:var(--line)}
+.shead .note{font-size:11.5px; color:var(--muted)}
+
+/* ---------- KPIs ---------- */
+.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.kpi{background:var(--paper); border:1px solid var(--line); padding:14px 16px; position:relative; overflow:hidden}
+.kpi span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.kpi strong{display:block; font-family:var(--mono); font-weight:500; font-size:23px; margin-top:6px; letter-spacing:-.02em}
+.kpi em{display:block; font-style:normal; font-size:11.5px; color:var(--ink2); margin-top:3px}
+.kpi.warn{border-left:3px solid var(--NC)}
+.kpi.warn strong{color:#7A6742}
+
+/* ---------- panel torta principal ---------- */
+.hero{display:grid; grid-template-columns:minmax(300px,1fr) 1.15fr; gap:10px}
+.card{background:var(--paper); border:1px solid var(--line); padding:16px}
+.card h3{
+  font-family:var(--disp); font-size:15px; text-transform:uppercase; letter-spacing:.06em;
+  font-weight:600; margin:0 0 2px;
+}
+.card .sub{font-size:11.5px; color:var(--muted); margin:0 0 14px}
+.donutbox{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.legend{flex:1 1 190px; margin:0; padding:0; list-style:none}
+.legend li{
+  display:grid; grid-template-columns:14px 1fr auto; gap:9px; align-items:center;
+  padding:5px 0; border-bottom:1px solid var(--line2); font-size:12.5px;
+}
+.legend li:last-child{border-bottom:none}
+.sw{width:14px; height:14px; border-radius:2px; display:block}
+.legend .val{font-family:var(--mono); font-size:12.5px; font-variant-numeric:tabular-nums}
+.legend .pct{color:var(--muted); font-size:11px; margin-left:6px}
+
+/* ---------- tabla ---------- */
+table{width:100%; border-collapse:collapse}
+th,td{padding:7px 9px; text-align:right; border-bottom:1px solid var(--line2); font-size:12.5px}
+th{
+  font-family:var(--disp); font-size:12px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--ink2); border-bottom:1px solid var(--line); font-weight:600; white-space:nowrap;
+}
+th:first-child,td:first-child{text-align:left}
+th.l,td.l{text-align:left}
+td.num{font-family:var(--mono); font-variant-numeric:tabular-nums}
+tbody tr:hover{background:#F6F8F8}
+tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600; padding-top:9px}
+.tipo{
+  font-family:var(--disp); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); border:1px solid var(--line); padding:1px 6px; border-radius:2px; margin-left:7px; white-space:nowrap;
+}
+.bar{height:9px; width:100%; min-width:90px; display:flex; border-radius:1px; overflow:hidden; background:var(--line2)}
+.bar i{display:block; height:100%}
+
+/* ---------- grilla de tortas por marca ---------- */
+.pies{display:grid; grid-template-columns:repeat(auto-fill,minmax(178px,1fr)); gap:10px}
+.pie{background:var(--paper); border:1px solid var(--line); padding:12px; text-align:center}
+.pie h4{font-family:var(--disp); font-size:14px; text-transform:uppercase; letter-spacing:.05em; margin:0 0 1px; font-weight:600}
+.pie .tot{font-family:var(--mono); font-size:11.5px; color:var(--muted); margin-bottom:8px}
+.pie .mini{display:flex; gap:3px; justify-content:center; margin-top:9px; flex-wrap:wrap}
+.pie .mini b{font-family:var(--mono); font-size:10px; font-weight:500; padding:1px 5px; border-radius:2px; color:#fff}
+
+/* ---------- parte 2 ---------- */
+.evo{display:grid; grid-template-columns:1fr; gap:10px}
+.axis{font-family:var(--mono); font-size:10.5px; fill:var(--muted)}
+.repline{stroke:var(--C); stroke-width:1.2; stroke-dasharray:5 4}
+.rotpill{
+  font-family:var(--mono); font-size:11.5px; padding:2px 8px; border-radius:11px;
+  display:inline-block; min-width:58px; text-align:center;
+}
+.r-hi{background:#E2EFE7; color:#235741}
+.r-md{background:#F0EBDA; color:#6E5C2C}
+.r-lo{background:#F4E2DD; color:#8A3524}
+
+/* ---------- notas ---------- */
+.notes{background:#1B2126; color:#DDE2E4; border:1px solid #1B2126; padding:18px 20px}
+.notes h3{font-family:var(--disp); font-size:15px; text-transform:uppercase; letter-spacing:.07em; margin:0 0 10px; color:#D9B65C}
+.notes ol{margin:0; padding-left:20px}
+.notes li{margin-bottom:8px; font-size:13px}
+.notes li b{color:#fff}
+.notes li:last-child{margin-bottom:0}
+
+footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
+[hidden]{display:none !important}
+@media (max-width:900px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .hero{grid-template-columns:1fr}
+  .ttl h1{font-size:24px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .slice{transition:opacity .15s}
+}
+</style>
+</head>
+<body>
+
+<div class="flag">Maqueta de trabajo · <b>datos ficticios</b> · para validación de estructura, no de cifras</div>
+
+<header class="top">
+  <div class="top-in">
+    <div class="mark">44</div>
+    <div class="ttl">
+      <h1>Reporte de Stock y Rotación de Mercaderías</h1>
+      <p>Camping 44 S.A. · Valuación a costo · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)</p>
+    </div>
+    <div class="meta">
+      <div><span>Corte</span><strong>07/08/2026</strong></div>
+      <div><span>Moneda</span><strong>Gs.</strong></div>
+      <div><span>Depósitos</span><strong>3 de 3</strong></div>
+      <div><span>Última matriz ABC</span><strong>31/01/2026</strong></div>
+    </div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Parte 1 · Situación actual</button>
+    <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">Parte 2 · Histórico y rotación</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="filters">
+    <div class="fgroup"><label class="flab" for="f-corte">Fecha de corte</label><input type="date" id="f-corte" value="2026-08-07"></div>
+    <div class="fgroup"><label class="flab" for="f-dep">Depósito</label>
+      <select id="f-dep"><option>Todos</option><option>Central – Asunción</option><option>Sucursal Este</option><option>Depósito fiscal</option></select>
+    </div>
+    <div class="fgroup"><span class="flab">Tipo</span>
+      <div class="chips" id="f-tipo">
+        <button class="chip" aria-pressed="true" data-tipo="*">Todos</button>
+        <button class="chip" aria-pressed="false" data-tipo="Armas">Armas</button>
+        <button class="chip" aria-pressed="false" data-tipo="Municiones">Municiones</button>
+        <button class="chip" aria-pressed="false" data-tipo="No reglamentado">No reglamentado</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PARTE 1 ============ -->
+  <div id="p1" role="tabpanel" aria-labelledby="t1">
+
+    <section>
+      <div class="kpis" id="kpis"></div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Composición del stock a costo</h2><div class="rule"></div>
+        <div class="note">A / B / C según matriz vigente · armas y municiones fuera del alcance ABC</div></div>
+      <div class="hero">
+        <div class="card">
+          <h3>Total por categoría</h3>
+          <p class="sub">Todas las marcas, todos los depósitos</p>
+          <div class="donutbox">
+            <div id="donut-total"></div>
+            <ul class="legend" id="leg-total"></ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Apertura por marca y categoría</h3>
+          <p class="sub">Ordenado por monto a costo · clic en la marca para ver su detalle en la Parte 2</p>
+          <div style="overflow-x:auto">
+            <table id="tbl-marcas">
+              <thead><tr>
+                <th>Marca</th><th>A</th><th>B</th><th>C</th>
+                <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
+              </tr></thead>
+              <tbody></tbody><tfoot></tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Tortas por marca</h2><div class="rule"></div>
+        <div class="note">Mismo esquema replicado para cada marca</div></div>
+      <div class="pies" id="pies"></div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Composición del producto y cliente</h2><div class="rule"></div>
+        <div class="note">Ventas del período valuadas a costo, de mayor a menor</div></div>
+      <div class="card">
+        <div style="overflow-x:auto">
+          <table id="tbl-detalle">
+            <thead><tr>
+              <th>Artículo</th><th class="l">Marca</th><th class="l">Cat.</th><th class="l">Composición</th>
+              <th class="l">Cliente</th><th>Cant.</th><th>Costo unit.</th><th>Costo total</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============ PARTE 2 ============ -->
+  <div id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+
+    <section>
+      <div class="shead"><h2>Evolución del stock</h2><div class="rule"></div>
+        <div class="note">Período definido por el usuario · valuado a costo</div></div>
+      <div class="card">
+        <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:16px">
+          <div class="fgroup"><label class="flab" for="d1">Desde</label><input type="date" id="d1" value="2025-09-01"></div>
+          <div class="fgroup"><label class="flab" for="d2">Hasta</label><input type="date" id="d2" value="2026-08-07"></div>
+          <div class="fgroup"><span class="flab">Marca</span><div class="chips" id="f-marca"></div></div>
+        </div>
+        <div id="evo-chart"></div>
+        <p class="sub" style="margin:12px 0 0">
+          La línea punteada marca el <b>punto de reposición sugerido</b>: el nivel de stock a costo por debajo del cual,
+          al ritmo de venta de los últimos 6 meses, la mercadería se agota antes de que llegue una reposición.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Rotación por marca</h2><div class="rule"></div>
+        <div class="note">Rotación = costo de la mercadería vendida ÷ stock promedio a costo (anualizado)</div></div>
+      <div class="card">
+        <div style="overflow-x:auto">
+          <table id="tbl-rot">
+            <thead><tr>
+              <th>Marca</th><th>Costo de venta (6 m)</th><th>Stock promedio a costo</th>
+              <th>Stock actual</th><th>Rotación (veces/año)</th><th>Días de stock</th><th class="l">Lectura</th>
+            </tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="notes">
+        <h3>Qué falta definir antes de construir el reporte</h3>
+        <ol>
+          <li><b>"Sin clasificación" no es lo mismo que "sin categorizar".</b> Armas y municiones quedan fuera del ABC por regla del negocio (definitivo). Los artículos sin categorizar son una deuda de la matriz semestral (transitorio). En esta maqueta van separados: si se muestran juntos, el 71% del stock cae en un solo bloque y el reporte deja de informar.</li>
+          <li><b>Qué significa "composición del producto".</b> Se tomó como el desglose del kit o combo vendido (arma + cargadores + estuche). Si lo que se pide es el escandallo de fabricación o el armado de packs promocionales, la fuente de datos es otra y hay que relevarla.</li>
+          <li><b>Qué costo se usa.</b> Odoo puede valuar a costo estándar, promedio o FIFO. La rotación cambia según cuál se tome. Falta confirmar cuál está parametrizado y si es el mismo para todas las categorías de producto.</li>
+          <li><b>El histórico depende de que exista valorización de inventario en Odoo.</b> Si la valuación es manual o periódica, no hay serie histórica que consultar y la Parte 2 arranca recién desde la fecha en que se active, no hacia atrás.</li>
+          <li><b>La matriz ABC vigente es del 31/01/2026.</b> El MP-MIS-01 fija reclasificación cada 6 meses: la del ciclo julio ya está vencida. El reporte va a mostrar categorías desactualizadas hasta que se corra el ciclo.</li>
+          <li><b>Punto de reposición: falta el lead time por proveedor.</b> Sin el plazo de importación por marca, el punto de reposición es una estimación sobre promedio de venta y no sirve para disparar la compra.</li>
+        </ol>
+      </div>
+    </section>
+  </div>
+
+  <footer>Maqueta · TI Camping 44 · 07/08/2026 — cifras ilustrativas generadas para validar la estructura del reporte.</footer>
+</div>
+
+<script src="datos.js"></script>
+<script>
+(function(){
+"use strict";
+
+/* ---------------- datos: vienen de datos.js ---------------- */
+  if (typeof DATOS === "undefined") {
+    document.querySelector(".wrap").innerHTML =
+      '<div class="card" style="margin-top:22px"><h3>No se encontró datos.js</h3>' +
+      '<p class="sub">El archivo <b>datos.js</b> tiene que estar en la misma carpeta que index.html. ' +
+      'Si lo renombraste, volvé a ponerle ese nombre.</p></div>';
+    return;
+  }
+  var CATS = DATOS.CATS, MARCAS = DATOS.MARCAS, DETALLE = DATOS.DETALLE,
+      MESES = DATOS.MESES, SERIES = DATOS.SERIES, CMV6 = DATOS.CMV6;
+
+/* ---------------- helpers ---------------- */
+var fmt = function(n,d){ return new Intl.NumberFormat("es-PY",{minimumFractionDigits:d||0,maximumFractionDigits:d||0}).format(n); };
+var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
+var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
+var tot = function(r){ return r.A+r.B+r.C+r.SC+r.NC; };
+var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
+
+var state = { tipo:"*", marca:"Beretta" };
+var view = function(){ return state.tipo === "*" ? MARCAS : MARCAS.filter(function(r){ return r.tipo === state.tipo; }); };
+
+/* defs SVG compartidas: trama para "sin categorizar" */
+var DEFS = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
+  '<rect width="6" height="6" fill="#DCD6C8"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8C7A57" stroke-width="2.4"/></pattern></defs>';
+
+function donut(vals, size, thick){
+  var t = vals.reduce(function(a,b){return a+b.v;},0);
+  var r = size/2, ir = r - thick, cx = r, cy = r, ang = -Math.PI/2, out = "";
+  if(!t){
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="#E6E9E9" stroke-width="'+thick+'"/></svg>';
+  }
+  vals.forEach(function(s){
+    if(s.v <= 0) return;
+    var a2 = ang + (s.v/t)*Math.PI*2, big = (a2-ang) > Math.PI ? 1 : 0;
+    var x1=cx+r*Math.cos(ang), y1=cy+r*Math.sin(ang), x2=cx+r*Math.cos(a2), y2=cy+r*Math.sin(a2);
+    var x3=cx+ir*Math.cos(a2), y3=cy+ir*Math.sin(a2), x4=cx+ir*Math.cos(ang), y4=cy+ir*Math.sin(ang);
+    out += '<path class="slice" d="M'+x1.toFixed(2)+' '+y1.toFixed(2)+
+      ' A'+r+' '+r+' 0 '+big+' 1 '+x2.toFixed(2)+' '+y2.toFixed(2)+
+      ' L'+x3.toFixed(2)+' '+y3.toFixed(2)+
+      ' A'+ir+' '+ir+' 0 '+big+' 0 '+x4.toFixed(2)+' '+y4.toFixed(2)+' Z" fill="'+s.col+'" stroke="#fff" stroke-width="1.2">'+
+      '<title>'+esc(s.lab)+': '+gsM(s.v)+' ('+pct(s.v,t)+')</title></path>';
+    ang = a2;
+  });
+  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+out+'</svg>';
+}
+
+/* ---------------- Parte 1 ---------------- */
+function renderKPIs(){
+  var rows = view();
+  var s = {A:0,B:0,C:0,SC:0,NC:0};
+  rows.forEach(function(r){ ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; }); });
+  var T = s.A+s.B+s.C+s.SC+s.NC;
+  var alcance = T - s.SC;                       /* lo que sí debería tener ABC */
+  var cob = alcance ? (alcance - s.NC)/alcance*100 : 0;
+  var html = "";
+  html += kpi("Stock total a costo", "Gs. "+fmt(T)+" M", fmt(rows.length)+" marcas · corte 07/08/2026","");
+  html += kpi("Dentro del alcance ABC", gsM(alcance), "excluye armas y municiones ("+pct(s.SC,T)+" del total)","");
+  html += kpi("Cobertura de la matriz", cob.toFixed(1).replace(".",",")+"%", gsM(s.NC)+" todavía sin categorizar","warn");
+  html += kpi("Capital en Categoría C", gsM(s.C), pct(s.C,alcance)+" del alcance ABC · liquidación pendiente","");
+  document.getElementById("kpis").innerHTML = html;
+}
+function kpi(lab,val,sub,cls){
+  return '<div class="kpi '+cls+'"><span>'+lab+'</span><strong>'+val+'</strong><em>'+sub+'</em></div>';
+}
+
+function renderTotal(){
+  var rows = view(), s = {A:0,B:0,C:0,SC:0,NC:0};
+  rows.forEach(function(r){ ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; }); });
+  var T = s.A+s.B+s.C+s.SC+s.NC;
+  var vals = CATS.map(function(c){ return {v:s[c.k], col:c.col, lab:c.lab}; });
+  document.getElementById("donut-total").innerHTML = donut(vals, 210, 42);
+  document.getElementById("leg-total").innerHTML = CATS.map(function(c){
+    var bg = c.k==="NC" ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)" : "background:"+c.col;
+    return '<li><span class="sw" style="'+bg+'"></span><span>'+c.lab+'</span>'+
+      '<span class="val">'+gsM(s[c.k])+'<span class="pct">'+pct(s[c.k],T)+'</span></span></li>';
+  }).join("") + '<li style="border-top:1.5px solid var(--ink);padding-top:8px"><span></span><span><b>Total</b></span>'+
+    '<span class="val"><b>'+gsM(T)+'</b></span></li>';
+}
+
+function renderTabla(){
+  var rows = view().slice().sort(function(a,b){ return tot(b)-tot(a); });
+  var tb = document.querySelector("#tbl-marcas tbody"), tf = document.querySelector("#tbl-marcas tfoot");
+  var s = {A:0,B:0,C:0,SC:0,NC:0};
+  tb.innerHTML = rows.map(function(r){
+    ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; });
+    var T = tot(r);
+    var bar = CATS.map(function(c){
+      var w = T ? r[c.k]/T*100 : 0;
+      var st = c.k==="NC" ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)" : "background:"+c.col;
+      return w ? '<i style="width:'+w.toFixed(2)+'%;'+st+'" title="'+c.lab+' '+pct(r[c.k],T)+'"></i>' : "";
+    }).join("");
+    return '<tr data-marca="'+esc(r.m)+'"><td><b>'+esc(r.m)+'</b><span class="tipo">'+r.tipo+'</span></td>'+
+      cell(r.A)+cell(r.B)+cell(r.C)+cell(r.SC)+cell(r.NC)+
+      '<td class="num"><b>'+fmt(T)+'</b></td><td><div class="bar">'+bar+'</div></td></tr>';
+  }).join("");
+  var T = s.A+s.B+s.C+s.SC+s.NC;
+  tf.innerHTML = '<tr><td>Total general</td>'+cell(s.A)+cell(s.B)+cell(s.C)+cell(s.SC)+cell(s.NC)+
+    '<td class="num">'+fmt(T)+'</td><td class="num" style="font-size:11px;color:var(--muted)">millones de Gs.</td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr"), function(tr){
+    tr.style.cursor = "pointer";
+    tr.addEventListener("click", function(){ state.marca = tr.dataset.marca; goTab(1); renderEvo(); renderChips(); });
+  });
+}
+function cell(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
+
+function renderPies(){
+  var rows = view().slice().sort(function(a,b){ return tot(b)-tot(a); });
+  document.getElementById("pies").innerHTML = rows.map(function(r){
+    var T = tot(r);
+    var vals = CATS.map(function(c){ return {v:r[c.k], col:c.col, lab:c.lab}; });
+    var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
+      var st = c.k==="NC" ? "background:#8C7A57" : "background:"+c.col;
+      return '<b style="'+st+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+    }).join("");
+    return '<div class="pie"><h4>'+esc(r.m)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+      donut(vals,116,24)+'<div class="mini">'+mini+'</div></div>';
+  }).join("");
+}
+
+function renderDetalle(){
+  var rows = DETALLE.map(function(d){
+    return {art:d[0], m:d[1], cat:d[2], comp:d[3], cli:d[4], q:d[5], cu:d[6], ct:d[5]*d[6]};
+  }).filter(function(d){
+    if(state.tipo === "*") return true;
+    var mk = MARCAS.filter(function(x){ return x.m === d.m; })[0];
+    return mk && mk.tipo === state.tipo;
+  }).sort(function(a,b){ return b.ct - a.ct; });
+  document.querySelector("#tbl-detalle tbody").innerHTML = rows.map(function(d){
+    var badge = d.cat === "SC"
+      ? '<span style="font-family:var(--mono);font-size:11px;color:var(--SC)">s/clas.</span>'
+      : '<b style="font-family:var(--mono);color:var(--'+d.cat+')">'+d.cat+'</b>';
+    return '<tr><td>'+esc(d.art)+'</td><td class="l">'+esc(d.m)+'</td><td class="l">'+badge+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(d.comp)+'</td>'+
+      '<td class="l">'+esc(d.cli)+'</td>'+
+      '<td class="num">'+fmt(d.q)+'</td><td class="num">'+fmt(d.cu,2)+'</td>'+
+      '<td class="num"><b>'+fmt(d.ct,1)+'</b></td></tr>';
+  }).join("");
+}
+
+/* ---------------- Parte 2 ---------------- */
+function renderChips(){
+  document.getElementById("f-marca").innerHTML = MARCAS.map(function(r){
+    return '<button class="chip" data-m="'+esc(r.m)+'" aria-pressed="'+(r.m===state.marca)+'">'+esc(r.m)+'</button>';
+  }).join("");
+  Array.prototype.forEach.call(document.querySelectorAll("#f-marca .chip"), function(b){
+    b.addEventListener("click", function(){ state.marca = b.dataset.m; renderChips(); renderEvo(); });
+  });
+}
+
+function renderEvo(){
+  var d = SERIES[state.marca] || [], W = 1040, H = 300, P = {t:18,r:22,b:34,l:66};
+  var iw = W-P.l-P.r, ih = H-P.t-P.b;
+  var max = Math.max.apply(null,d)*1.12, min = 0;
+  var X = function(i){ return P.l + i*(iw/(d.length-1)); };
+  var Y = function(v){ return P.t + ih - (v-min)/(max-min)*ih; };
+  var line = d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
+  var area = line + " L"+X(d.length-1).toFixed(1)+" "+(P.t+ih)+" L"+P.l+" "+(P.t+ih)+" Z";
+  var rep = Math.round(CMV6[state.marca]/6*1.8);   /* consumo mensual x lead time estimado */
+
+  var grid = "", ticks = 4;
+  for(var g=0; g<=ticks; g++){
+    var v = min + (max-min)*g/ticks, y = Y(v);
+    grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+'" stroke="#E6E9E9"/>'+
+      '<text class="axis" x="'+(P.l-9)+'" y="'+(y+3.5).toFixed(1)+'" text-anchor="end">'+fmt(Math.round(v))+'</text>';
+  }
+  var xlab = MESES.map(function(m,i){
+    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-12)+'" text-anchor="middle">'+m+'</text>';
+  }).join("");
+  var dots = d.map(function(v,i){
+    return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="#fff" stroke="#12161A" stroke-width="1.6">'+
+      '<title>'+MESES[i]+': '+gsM(v)+'</title></circle>';
+  }).join("");
+
+  document.getElementById("evo-chart").innerHTML =
+    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(state.marca)+'">'+
+    '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
+      '<stop offset="0%" stop-color="#12161A" stop-opacity=".14"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
+    '</linearGradient></defs>'+ grid +
+    '<path d="'+area+'" fill="url(#fade)"/>'+
+    '<path d="'+line+'" fill="none" stroke="#12161A" stroke-width="2" stroke-linejoin="round"/>'+
+    '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
+    '<text class="axis" x="'+(W-P.r)+'" y="'+(Y(rep)-7).toFixed(1)+'" text-anchor="end" fill="#A6432E">'+
+      'Punto de reposición · '+fmt(rep)+' M</text>'+
+    dots + xlab + '</svg>';
+}
+
+function renderRot(){
+  var rows = MARCAS.map(function(r){
+    var s = SERIES[r.m], prom = s.reduce(function(a,b){return a+b;},0)/s.length;
+    var rot = (CMV6[r.m]*2)/prom, dias = 365/rot;
+    return {m:r.m, cmv:CMV6[r.m], prom:prom, act:tot(r), rot:rot, dias:dias};
+  }).sort(function(a,b){ return b.rot - a.rot; });
+  document.querySelector("#tbl-rot tbody").innerHTML = rows.map(function(r){
+    var cls = r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo");
+    var lec = r.rot >= 2 ? "Sana" : (r.rot >= 1 ? "Ajustada" : "Inmovilizada");
+    return '<tr><td><b>'+esc(r.m)+'</b></td>'+
+      '<td class="num">'+fmt(r.cmv)+'</td><td class="num">'+fmt(r.prom)+'</td><td class="num">'+fmt(r.act)+'</td>'+
+      '<td class="num"><span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span></td>'+
+      '<td class="num">'+fmt(Math.round(r.dias))+'</td>'+
+      '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
+  }).join("");
+}
+
+/* ---------------- navegación ---------------- */
+var tabs = [document.getElementById("t1"), document.getElementById("t2")];
+var panes = [document.getElementById("p1"), document.getElementById("p2")];
+function goTab(i){
+  tabs.forEach(function(t,j){ t.setAttribute("aria-selected", j===i); });
+  panes.forEach(function(p,j){ p.hidden = j!==i; });
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+tabs.forEach(function(t,i){ t.addEventListener("click", function(){ goTab(i); }); });
+
+Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(b){
+  b.addEventListener("click", function(){
+    state.tipo = b.dataset.tipo;
+    Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+      x.setAttribute("aria-pressed", x === b);
+    });
+    renderP1();
+  });
+});
+
+function renderP1(){ renderKPIs(); renderTotal(); renderTabla(); renderPies(); renderDetalle(); }
+renderP1(); renderChips(); renderEvo(); renderRot();
+})();
+</script>
+</body>
+</html>
