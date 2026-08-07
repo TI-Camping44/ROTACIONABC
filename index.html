@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reporte de Stock y Rotación — Maqueta · Camping 44</title>
+<title>Reporte de Stock y Rotación · Camping 44</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -168,6 +168,12 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 
 footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 [hidden]{display:none !important}
+.filters .sep{width:1px; height:26px; background:var(--line)}
+.stamp{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
+.empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
+.chip.sm{font-size:11.5px; padding:3px 9px}
+.clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
+.count{font-family:var(--mono); font-size:11px; color:var(--muted)}
 @media (max-width:900px){
   .kpis{grid-template-columns:repeat(2,1fr)}
   .hero{grid-template-columns:1fr}
@@ -180,8 +186,6 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 </head>
 <body>
 
-<div class="flag">Maqueta de trabajo · <b>datos ficticios</b> · para validación de estructura, no de cifras</div>
-
 <header class="top">
   <div class="top-in">
     <div class="mark">44</div>
@@ -190,10 +194,10 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
       <p>Camping 44 S.A. · Valuación a costo · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)</p>
     </div>
     <div class="meta">
-      <div><span>Corte</span><strong>07/08/2026</strong></div>
-      <div><span>Moneda</span><strong>Gs.</strong></div>
-      <div><span>Depósitos</span><strong>3 de 3</strong></div>
-      <div><span>Última matriz ABC</span><strong>31/01/2026</strong></div>
+      <div><span>Datos al</span><strong id="sello">—</strong></div>
+      <div><span>Moneda</span><strong>Gs. millones</strong></div>
+      <div><span>Depósitos</span><strong id="ndep">—</strong></div>
+      <div><span>Marcas</span><strong id="nmar">—</strong></div>
     </div>
   </div>
   <div class="tabs" role="tablist">
@@ -205,34 +209,29 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 <div class="wrap">
 
   <div class="filters">
-    <div class="fgroup"><label class="flab" for="f-corte">Fecha de corte</label><input type="date" id="f-corte" value="2026-08-07"></div>
     <div class="fgroup"><label class="flab" for="f-dep">Depósito</label>
-      <select id="f-dep"><option>Todos</option><option>Central – Asunción</option><option>Sucursal Este</option><option>Depósito fiscal</option></select>
-    </div>
-    <div class="fgroup"><span class="flab">Tipo</span>
-      <div class="chips" id="f-tipo">
-        <button class="chip" aria-pressed="true" data-tipo="*">Todos</button>
-        <button class="chip" aria-pressed="false" data-tipo="Armas">Armas</button>
-        <button class="chip" aria-pressed="false" data-tipo="Municiones">Municiones</button>
-        <button class="chip" aria-pressed="false" data-tipo="No reglamentado">No reglamentado</button>
-      </div>
-    </div>
+      <select id="f-dep"></select></div>
+    <div class="sep"></div>
+    <div class="fgroup"><span class="flab">Tipo</span><div class="chips" id="f-tipo"></div></div>
+    <div class="sep"></div>
+    <div class="fgroup"><label class="flab" for="f-cat">Categoría</label>
+      <select id="f-cat"></select></div>
+    <div class="sep"></div>
+    <div class="fgroup"><label class="flab" for="f-marca">Marca</label>
+      <select id="f-marca"></select></div>
+    <div class="fgroup"><button class="clear" id="f-reset" hidden>quitar filtros</button></div>
   </div>
 
-  <!-- ============ PARTE 1 ============ -->
   <div id="p1" role="tabpanel" aria-labelledby="t1">
-
-    <section>
-      <div class="kpis" id="kpis"></div>
-    </section>
+    <section><div class="kpis" id="kpis"></div></section>
 
     <section>
       <div class="shead"><h2>Composición del stock a costo</h2><div class="rule"></div>
-        <div class="note">A / B / C según matriz vigente · armas y municiones fuera del alcance ABC</div></div>
+        <div class="note" id="nota-alcance"></div></div>
       <div class="hero">
         <div class="card">
           <h3>Total por categoría</h3>
-          <p class="sub">Todas las marcas, todos los depósitos</p>
+          <p class="sub" id="sub-total"></p>
           <div class="donutbox">
             <div id="donut-total"></div>
             <ul class="legend" id="leg-total"></ul>
@@ -240,136 +239,155 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         </div>
         <div class="card">
           <h3>Apertura por marca y categoría</h3>
-          <p class="sub">Ordenado por monto a costo · clic en la marca para ver su detalle en la Parte 2</p>
-          <div style="overflow-x:auto">
-            <table id="tbl-marcas">
-              <thead><tr>
-                <th>Marca</th><th>A</th><th>B</th><th>C</th>
-                <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
-              </tr></thead>
-              <tbody></tbody><tfoot></tfoot>
-            </table>
-          </div>
+          <p class="sub">Ordenado por monto a costo · clic en una marca para filtrar por ella</p>
+          <div style="overflow-x:auto"><table id="tbl-marcas">
+            <thead><tr>
+              <th>Marca</th><th>A</th><th>B</th><th>C</th>
+              <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
+            </tr></thead><tbody></tbody><tfoot></tfoot>
+          </table></div>
         </div>
       </div>
     </section>
 
     <section>
+      <div class="shead"><h2>Por depósito</h2><div class="rule"></div>
+        <div class="note">Mismo criterio, abierto por ubicación física</div></div>
+      <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
+        <thead><tr>
+          <th>Depósito</th><th>A</th><th>B</th><th>C</th>
+          <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th>% del stock</th>
+        </tr></thead><tbody></tbody><tfoot></tfoot>
+      </table></div></div>
+    </section>
+
+    <section>
       <div class="shead"><h2>Tortas por marca</h2><div class="rule"></div>
-        <div class="note">Mismo esquema replicado para cada marca</div></div>
+        <div class="note" id="nota-pies"></div></div>
       <div class="pies" id="pies"></div>
     </section>
 
     <section>
       <div class="shead"><h2>Composición del producto y cliente</h2><div class="rule"></div>
-        <div class="note">Ventas del período valuadas a costo, de mayor a menor</div></div>
+        <div class="note">Salidas a cliente valuadas a costo real, de mayor a menor</div></div>
       <div class="card">
-        <div style="overflow-x:auto">
-          <table id="tbl-detalle">
-            <thead><tr>
-              <th>Artículo</th><th class="l">Marca</th><th class="l">Cat.</th><th class="l">Composición</th>
-              <th class="l">Cliente</th><th>Cant.</th><th>Costo unit.</th><th>Costo total</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
+        <div style="overflow-x:auto"><table id="tbl-detalle">
+          <thead><tr>
+            <th>Artículo</th><th class="l">Marca</th><th class="l">Cat.</th><th class="l">Composición</th>
+            <th class="l">Cliente</th><th class="l">Depósito</th><th>Cant.</th><th>Costo total</th>
+          </tr></thead><tbody></tbody>
+        </table></div>
+        <p class="sub" style="margin:12px 0 0" id="nota-detalle"></p>
       </div>
     </section>
   </div>
 
-  <!-- ============ PARTE 2 ============ -->
   <div id="p2" role="tabpanel" aria-labelledby="t2" hidden>
-
     <section>
       <div class="shead"><h2>Evolución del stock</h2><div class="rule"></div>
-        <div class="note">Período definido por el usuario · valuado a costo</div></div>
+        <div class="note">Reconstruido desde las capas de valorización de Odoo</div></div>
       <div class="card">
         <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:16px">
-          <div class="fgroup"><label class="flab" for="d1">Desde</label><input type="date" id="d1" value="2025-09-01"></div>
-          <div class="fgroup"><label class="flab" for="d2">Hasta</label><input type="date" id="d2" value="2026-08-07"></div>
-          <div class="fgroup"><span class="flab">Marca</span><div class="chips" id="f-marca"></div></div>
+          <div class="fgroup"><span class="flab">Marca</span><div class="chips" id="f-serie"></div></div>
         </div>
         <div id="evo-chart"></div>
         <p class="sub" style="margin:12px 0 0">
-          La línea punteada marca el <b>punto de reposición sugerido</b>: el nivel de stock a costo por debajo del cual,
-          al ritmo de venta de los últimos 6 meses, la mercadería se agota antes de que llegue una reposición.
+          La línea punteada marca el <b>punto de reposición estimado</b>: el consumo promedio
+          de los últimos seis meses proyectado sobre el plazo de reposición.
+          <b>Es una referencia, no una alarma:</b> hasta que se cargue el plazo real de cada
+          proveedor, no sirve para disparar una compra.
+          El histórico abarca todos los depósitos y no responde al filtro de arriba.
         </p>
       </div>
     </section>
 
     <section>
       <div class="shead"><h2>Rotación por marca</h2><div class="rule"></div>
-        <div class="note">Rotación = costo de la mercadería vendida ÷ stock promedio a costo (anualizado)</div></div>
-      <div class="card">
-        <div style="overflow-x:auto">
-          <table id="tbl-rot">
-            <thead><tr>
-              <th>Marca</th><th>Costo de venta (6 m)</th><th>Stock promedio a costo</th>
-              <th>Stock actual</th><th>Rotación (veces/año)</th><th>Días de stock</th><th class="l">Lectura</th>
-            </tr></thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="notes">
-        <h3>Qué falta definir antes de construir el reporte</h3>
-        <ol>
-          <li><b>"Sin clasificación" no es lo mismo que "sin categorizar".</b> Armas y municiones quedan fuera del ABC por regla del negocio (definitivo). Los artículos sin categorizar son una deuda de la matriz semestral (transitorio). En esta maqueta van separados: si se muestran juntos, el 71% del stock cae en un solo bloque y el reporte deja de informar.</li>
-          <li><b>Qué significa "composición del producto".</b> Se tomó como el desglose del kit o combo vendido (arma + cargadores + estuche). Si lo que se pide es el escandallo de fabricación o el armado de packs promocionales, la fuente de datos es otra y hay que relevarla.</li>
-          <li><b>Qué costo se usa.</b> Odoo puede valuar a costo estándar, promedio o FIFO. La rotación cambia según cuál se tome. Falta confirmar cuál está parametrizado y si es el mismo para todas las categorías de producto.</li>
-          <li><b>El histórico depende de que exista valorización de inventario en Odoo.</b> Si la valuación es manual o periódica, no hay serie histórica que consultar y la Parte 2 arranca recién desde la fecha en que se active, no hacia atrás.</li>
-          <li><b>La matriz ABC vigente es del 31/01/2026.</b> El MP-MIS-01 fija reclasificación cada 6 meses: la del ciclo julio ya está vencida. El reporte va a mostrar categorías desactualizadas hasta que se corra el ciclo.</li>
-          <li><b>Punto de reposición: falta el lead time por proveedor.</b> Sin el plazo de importación por marca, el punto de reposición es una estimación sobre promedio de venta y no sirve para disparar la compra.</li>
-        </ol>
-      </div>
+        <div class="note">Costo de la mercadería vendida ÷ stock promedio a costo, anualizado</div></div>
+      <div class="card"><div style="overflow-x:auto"><table id="tbl-rot">
+        <thead><tr>
+          <th>Marca</th><th>Costo de venta (6 m)</th><th>Stock promedio</th>
+          <th>Stock actual</th><th>Rotación (veces/año)</th><th>Días de stock</th><th class="l">Lectura</th>
+        </tr></thead><tbody></tbody>
+      </table></div></div>
     </section>
   </div>
 
-  <footer>Maqueta · TI Camping 44 · 07/08/2026 — cifras ilustrativas generadas para validar la estructura del reporte.</footer>
+  <footer id="pie"></footer>
 </div>
-
 <script src="datos.js"></script>
 <script>
 (function(){
 "use strict";
 
-/* ---------------- datos: vienen de datos.js ---------------- */
-  if (typeof DATOS === "undefined") {
-    document.querySelector(".wrap").innerHTML =
-      '<div class="card" style="margin-top:22px"><h3>No se encontró datos.js</h3>' +
-      '<p class="sub">El archivo <b>datos.js</b> tiene que estar en la misma carpeta que index.html. ' +
-      'Si lo renombraste, volvé a ponerle ese nombre.</p></div>';
-    return;
-  }
-  var CATS = DATOS.CATS, MARCAS = DATOS.MARCAS, DETALLE = DATOS.DETALLE,
-      MESES = DATOS.MESES, SERIES = DATOS.SERIES, CMV6 = DATOS.CMV6;
+if (typeof DATOS === "undefined" || !DATOS.STOCK) {
+  document.querySelector(".wrap").innerHTML =
+    '<div class="card" style="margin-top:22px"><h3>Todavía no hay datos</h3>' +
+    '<p class="sub">Falta el archivo <b>datos.js</b>, o es de una versión anterior. ' +
+    'Ejecutá <b>3. Actualizar datos</b> y después <b>4. Publicar reporte</b> desde la planilla.</p></div>';
+  return;
+}
 
-/* ---------------- helpers ---------------- */
+var CATS = DATOS.CATS;
+var STOCK = DATOS.STOCK;
+var DETALLE = DATOS.DETALLE || [];
+var MESES = DATOS.MESES || [];
+var SERIES = DATOS.SERIES || {};
+var CMV6 = DATOS.CMV6 || {};
+
+/* ---------------- formato ---------------- */
 var fmt = function(n,d){ return new Intl.NumberFormat("es-PY",{minimumFractionDigits:d||0,maximumFractionDigits:d||0}).format(n); };
 var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
 var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
-var tot = function(r){ return r.A+r.B+r.C+r.SC+r.NC; };
 var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
+var vacio = { A:0,B:0,C:0,SC:0,NC:0 };
+var suma = function(o){ return o.A+o.B+o.C+o.SC+o.NC; };
 
-var state = { tipo:"*", marca:"Beretta" };
-var view = function(){ return state.tipo === "*" ? MARCAS : MARCAS.filter(function(r){ return r.tipo === state.tipo; }); };
+/* ---------------- estado de filtros ---------------- */
+var f = { dep:"*", tipo:"*", cat:"*", marca:"*" };
+var serieActiva = null;
 
-/* defs SVG compartidas: trama para "sin categorizar" */
+var pasa = function(r){
+  return (f.dep === "*" || r.dep === f.dep)
+      && (f.tipo === "*" || r.tipo === f.tipo)
+      && (f.cat === "*" || r.cat === f.cat)
+      && (f.marca === "*" || r.m === f.marca);
+};
+var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*"; };
+
+/** Agrupa las filas que pasan el filtro por la clave que se pida. */
+function agrupar(clave){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    var k = r[clave];
+    if (!mapa[k]) mapa[k] = Object.assign({ k:k, tipo:r.tipo }, vacio);
+    if (mapa[k][r.cat] === undefined) return;
+    mapa[k][r.cat] += r.v;
+  });
+  return Object.keys(mapa).map(function(k){ return mapa[k]; })
+    .sort(function(a,b){ return suma(b)-suma(a); });
+}
+function totales(){
+  var t = Object.assign({}, vacio);
+  STOCK.forEach(function(r){ if (pasa(r) && t[r.cat] !== undefined) t[r.cat] += r.v; });
+  return t;
+}
+var valores = function(x){ return CATS.map(function(c){ return {v:x[c.k]||0, col:c.col, lab:c.lab}; }); };
+
+/* ---------------- gráficos ---------------- */
 var DEFS = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
   '<rect width="6" height="6" fill="#DCD6C8"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8C7A57" stroke-width="2.4"/></pattern></defs>';
 
 function donut(vals, size, thick){
   var t = vals.reduce(function(a,b){return a+b.v;},0);
   var r = size/2, ir = r - thick, cx = r, cy = r, ang = -Math.PI/2, out = "";
-  if(!t){
+  if (t <= 0) {
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'+
       '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="#E6E9E9" stroke-width="'+thick+'"/></svg>';
   }
   vals.forEach(function(s){
-    if(s.v <= 0) return;
+    if (s.v <= 0) return;
     var a2 = ang + (s.v/t)*Math.PI*2, big = (a2-ang) > Math.PI ? 1 : 0;
     var x1=cx+r*Math.cos(ang), y1=cy+r*Math.sin(ang), x2=cx+r*Math.cos(a2), y2=cy+r*Math.sin(a2);
     var x3=cx+ir*Math.cos(a2), y3=cy+ir*Math.sin(a2), x4=cx+ir*Math.cos(ang), y4=cy+ir*Math.sin(ang);
@@ -382,160 +400,315 @@ function donut(vals, size, thick){
   });
   return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+out+'</svg>';
 }
+function swatch(c){
+  return c.k === "NC"
+    ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)"
+    : "background:" + c.col;
+}
+function barra(x){
+  var t = suma(x);
+  return CATS.map(function(c){
+    var w = t ? (x[c.k]||0)/t*100 : 0;
+    return w ? '<i style="width:'+w.toFixed(2)+'%;'+swatch(c)+'" title="'+c.lab+' '+pct(x[c.k],t)+'"></i>' : "";
+  }).join("");
+}
+
+/* ---------------- controles ---------------- */
+function opciones(sel, lista, etiquetaTodos){
+  sel.innerHTML = '<option value="*">'+etiquetaTodos+'</option>' +
+    lista.map(function(v){ return '<option value="'+esc(v)+'">'+esc(v)+'</option>'; }).join("");
+}
+function unicos(campo){
+  var s = {};
+  STOCK.forEach(function(r){ s[r[campo]] = true; });
+  return Object.keys(s).sort();
+}
+
+function armarFiltros(){
+  var deps = unicos("dep"), tipos = unicos("tipo"), marcas = unicos("m");
+
+  opciones(document.getElementById("f-dep"), deps, "Todos los depósitos");
+  opciones(document.getElementById("f-marca"), marcas, "Todas las marcas");
+
+  var etiquetas = {A:"A – Potenciar", B:"B – Mantener", C:"C – Liquidar",
+                   SC:"Sin clasificación", NC:"Sin categorizar"};
+  var presentes = CATS.filter(function(c){
+    return STOCK.some(function(r){ return r.cat === c.k; });
+  });
+  var selCat = document.getElementById("f-cat");
+  selCat.innerHTML = '<option value="*">Todas</option>' +
+    presentes.map(function(c){ return '<option value="'+c.k+'">'+esc(etiquetas[c.k]||c.k)+'</option>'; }).join("");
+
+  document.getElementById("f-tipo").innerHTML =
+    '<button class="chip sm" data-v="*" aria-pressed="true">Todos</button>' +
+    tipos.map(function(t){ return '<button class="chip sm" data-v="'+esc(t)+'" aria-pressed="false">'+esc(t)+'</button>'; }).join("");
+
+  document.getElementById("f-dep").addEventListener("change", function(){ f.dep = this.value; pintar(); });
+  document.getElementById("f-marca").addEventListener("change", function(){ f.marca = this.value; pintar(); });
+  selCat.addEventListener("change", function(){ f.cat = this.value; pintar(); });
+  Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(b){
+    b.addEventListener("click", function(){
+      f.tipo = b.dataset.v;
+      Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+        x.setAttribute("aria-pressed", x === b);
+      });
+      pintar();
+    });
+  });
+  document.getElementById("f-reset").addEventListener("click", function(){
+    f = { dep:"*", tipo:"*", cat:"*", marca:"*" };
+    document.getElementById("f-dep").value = "*";
+    document.getElementById("f-marca").value = "*";
+    selCat.value = "*";
+    Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+      x.setAttribute("aria-pressed", x.dataset.v === "*");
+    });
+    pintar();
+  });
+
+  document.getElementById("sello").textContent = (DATOS.GENERADO || "—").split(" ")[0];
+  document.getElementById("ndep").textContent = fmt(deps.length);
+  document.getElementById("nmar").textContent = fmt(marcas.length);
+  document.getElementById("pie").textContent =
+    "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · montos en millones de guaraníes.";
+}
 
 /* ---------------- Parte 1 ---------------- */
-function renderKPIs(){
-  var rows = view();
-  var s = {A:0,B:0,C:0,SC:0,NC:0};
-  rows.forEach(function(r){ ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; }); });
-  var T = s.A+s.B+s.C+s.SC+s.NC;
-  var alcance = T - s.SC;                       /* lo que sí debería tener ABC */
-  var cob = alcance ? (alcance - s.NC)/alcance*100 : 0;
-  var html = "";
-  html += kpi("Stock total a costo", "Gs. "+fmt(T)+" M", fmt(rows.length)+" marcas · corte 07/08/2026","");
-  html += kpi("Dentro del alcance ABC", gsM(alcance), "excluye armas y municiones ("+pct(s.SC,T)+" del total)","");
-  html += kpi("Cobertura de la matriz", cob.toFixed(1).replace(".",",")+"%", gsM(s.NC)+" todavía sin categorizar","warn");
-  html += kpi("Capital en Categoría C", gsM(s.C), pct(s.C,alcance)+" del alcance ABC · liquidación pendiente","");
-  document.getElementById("kpis").innerHTML = html;
-}
-function kpi(lab,val,sub,cls){
-  return '<div class="kpi '+cls+'"><span>'+lab+'</span><strong>'+val+'</strong><em>'+sub+'</em></div>';
-}
+function pintar(){
+  var t = totales(), T = suma(t);
+  var alcance = T - t.SC;
+  var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
 
-function renderTotal(){
-  var rows = view(), s = {A:0,B:0,C:0,SC:0,NC:0};
-  rows.forEach(function(r){ ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; }); });
-  var T = s.A+s.B+s.C+s.SC+s.NC;
-  var vals = CATS.map(function(c){ return {v:s[c.k], col:c.col, lab:c.lab}; });
-  document.getElementById("donut-total").innerHTML = donut(vals, 210, 42);
-  document.getElementById("leg-total").innerHTML = CATS.map(function(c){
-    var bg = c.k==="NC" ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)" : "background:"+c.col;
-    return '<li><span class="sw" style="'+bg+'"></span><span>'+c.lab+'</span>'+
-      '<span class="val">'+gsM(s[c.k])+'<span class="pct">'+pct(s[c.k],T)+'</span></span></li>';
-  }).join("") + '<li style="border-top:1.5px solid var(--ink);padding-top:8px"><span></span><span><b>Total</b></span>'+
+  document.getElementById("f-reset").hidden = !hayFiltro();
+
+  document.getElementById("kpis").innerHTML = [
+    kpi("Stock a costo", gsM(T), etiquetaFiltro(), ""),
+    kpi("Dentro del alcance ABC", gsM(alcance),
+        t.SC ? "excluye armas y municiones (" + pct(t.SC,T) + " del total)" : "sin exclusiones", ""),
+    kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
+        gsM(t.NC) + " todavía sin categorizar", "warn"),
+    kpi("Capital en Categoría C", gsM(t.C),
+        pct(t.C, alcance) + " del alcance ABC · liquidación pendiente", ""),
+  ].join("");
+
+  document.getElementById("sub-total").textContent = etiquetaFiltro();
+  document.getElementById("donut-total").innerHTML = donut(valores(t), 210, 42);
+  document.getElementById("leg-total").innerHTML =
+    CATS.map(function(c){
+      return '<li><span class="sw" style="'+swatch(c)+'"></span><span>'+c.lab+'</span>'+
+        '<span class="val">'+gsM(t[c.k])+'<span class="pct">'+pct(t[c.k],T)+'</span></span></li>';
+    }).join("") +
+    '<li style="border-top:1.5px solid var(--ink);padding-top:8px"><span></span><span><b>Total</b></span>'+
     '<span class="val"><b>'+gsM(T)+'</b></span></li>';
+
+  document.getElementById("nota-alcance").textContent =
+    "A / B / C según la matriz vigente · armas y municiones fuera del alcance ABC";
+
+  tablaMarcas(agrupar("m"), T);
+  tablaDepositos(agrupar("dep"), T);
+  tortas(agrupar("m"));
+  detalle();
 }
 
-function renderTabla(){
-  var rows = view().slice().sort(function(a,b){ return tot(b)-tot(a); });
+function kpi(lab,val,sub,cls){
+  return '<div class="kpi '+cls+'"><span>'+lab+'</span><strong>'+val+'</strong><em>'+esc(sub)+'</em></div>';
+}
+function etiquetaFiltro(){
+  var p = [];
+  if (f.dep !== "*") p.push(f.dep);
+  if (f.tipo !== "*") p.push(f.tipo);
+  if (f.marca !== "*") p.push(f.marca);
+  if (f.cat !== "*") p.push("categoría " + f.cat);
+  return p.length ? p.join(" · ") : "Todos los depósitos y marcas";
+}
+
+function tablaMarcas(filas, T){
   var tb = document.querySelector("#tbl-marcas tbody"), tf = document.querySelector("#tbl-marcas tfoot");
-  var s = {A:0,B:0,C:0,SC:0,NC:0};
-  tb.innerHTML = rows.map(function(r){
-    ["A","B","C","SC","NC"].forEach(function(k){ s[k]+=r[k]; });
-    var T = tot(r);
-    var bar = CATS.map(function(c){
-      var w = T ? r[c.k]/T*100 : 0;
-      var st = c.k==="NC" ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)" : "background:"+c.col;
-      return w ? '<i style="width:'+w.toFixed(2)+'%;'+st+'" title="'+c.lab+' '+pct(r[c.k],T)+'"></i>' : "";
-    }).join("");
-    return '<tr data-marca="'+esc(r.m)+'"><td><b>'+esc(r.m)+'</b><span class="tipo">'+r.tipo+'</span></td>'+
-      cell(r.A)+cell(r.B)+cell(r.C)+cell(r.SC)+cell(r.NC)+
-      '<td class="num"><b>'+fmt(T)+'</b></td><td><div class="bar">'+bar+'</div></td></tr>';
+  if (!filas.length) {
+    tb.innerHTML = '<tr><td colspan="8" class="empty">Ninguna marca con stock para este filtro.</td></tr>';
+    tf.innerHTML = ""; return;
+  }
+  var s = Object.assign({}, vacio);
+  tb.innerHTML = filas.map(function(r){
+    CATS.forEach(function(c){ s[c.k] += r[c.k]; });
+    return '<tr data-marca="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b>'+
+      '<span class="tipo">'+esc(r.tipo)+'</span></td>'+
+      celda(r.A)+celda(r.B)+celda(r.C)+celda(r.SC)+celda(r.NC)+
+      '<td class="num"><b>'+fmt(suma(r))+'</b></td><td><div class="bar">'+barra(r)+'</div></td></tr>';
   }).join("");
-  var T = s.A+s.B+s.C+s.SC+s.NC;
-  tf.innerHTML = '<tr><td>Total general</td>'+cell(s.A)+cell(s.B)+cell(s.C)+cell(s.SC)+cell(s.NC)+
-    '<td class="num">'+fmt(T)+'</td><td class="num" style="font-size:11px;color:var(--muted)">millones de Gs.</td></tr>';
-  Array.prototype.forEach.call(tb.querySelectorAll("tr"), function(tr){
-    tr.style.cursor = "pointer";
-    tr.addEventListener("click", function(){ state.marca = tr.dataset.marca; goTab(1); renderEvo(); renderChips(); });
+  tf.innerHTML = '<tr><td>Total</td>'+celda(s.A)+celda(s.B)+celda(s.C)+celda(s.SC)+celda(s.NC)+
+    '<td class="num">'+fmt(suma(s))+'</td><td class="count">millones de Gs.</td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.marca = (f.marca === tr.dataset.marca) ? "*" : tr.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar();
+    });
   });
 }
-function cell(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
 
-function renderPies(){
-  var rows = view().slice().sort(function(a,b){ return tot(b)-tot(a); });
-  document.getElementById("pies").innerHTML = rows.map(function(r){
-    var T = tot(r);
-    var vals = CATS.map(function(c){ return {v:r[c.k], col:c.col, lab:c.lab}; });
+function tablaDepositos(filas, T){
+  var tb = document.querySelector("#tbl-dep tbody"), tf = document.querySelector("#tbl-dep tfoot");
+  if (!filas.length) {
+    tb.innerHTML = '<tr><td colspan="8" class="empty">Sin datos para este filtro.</td></tr>';
+    tf.innerHTML = ""; return;
+  }
+  var s = Object.assign({}, vacio);
+  tb.innerHTML = filas.map(function(r){
+    CATS.forEach(function(c){ s[c.k] += r[c.k]; });
+    return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      celda(r.A)+celda(r.B)+celda(r.C)+celda(r.SC)+celda(r.NC)+
+      '<td class="num"><b>'+fmt(suma(r))+'</b></td>'+
+      '<td class="num">'+pct(suma(r), T)+'</td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td>'+celda(s.A)+celda(s.B)+celda(s.C)+celda(s.SC)+celda(s.NC)+
+    '<td class="num">'+fmt(suma(s))+'</td><td class="num">100%</td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-dep]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.dep = (f.dep === tr.dataset.dep) ? "*" : tr.dataset.dep;
+      document.getElementById("f-dep").value = f.dep;
+      pintar();
+    });
+  });
+}
+function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
+
+function tortas(filas){
+  var top = filas.slice(0, 24);
+  document.getElementById("nota-pies").textContent = filas.length > 24
+    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
+    : "Mismo esquema replicado para cada marca";
+  if (!top.length) {
+    document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
+    return;
+  }
+  document.getElementById("pies").innerHTML = top.map(function(r){
+    var T = suma(r);
     var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
-      var st = c.k==="NC" ? "background:#8C7A57" : "background:"+c.col;
-      return '<b style="'+st+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
     }).join("");
-    return '<div class="pie"><h4>'+esc(r.m)+'</h4><div class="tot">'+gsM(T)+'</div>'+
-      donut(vals,116,24)+'<div class="mini">'+mini+'</div></div>';
+    return '<div class="pie"><h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
   }).join("");
 }
 
-function renderDetalle(){
-  var rows = DETALLE.map(function(d){
-    return {art:d[0], m:d[1], cat:d[2], comp:d[3], cli:d[4], q:d[5], cu:d[6], ct:d[5]*d[6]};
-  }).filter(function(d){
-    if(state.tipo === "*") return true;
-    var mk = MARCAS.filter(function(x){ return x.m === d.m; })[0];
-    return mk && mk.tipo === state.tipo;
-  }).sort(function(a,b){ return b.ct - a.ct; });
-  document.querySelector("#tbl-detalle tbody").innerHTML = rows.map(function(d){
-    var badge = d.cat === "SC"
+function detalle(){
+  var filas = DETALLE.filter(function(d){
+    return (f.dep === "*" || d[5] === f.dep)
+        && (f.marca === "*" || d[1] === f.marca)
+        && (f.cat === "*" || d[2] === f.cat);
+  });
+  var top = filas.slice(0, 60);
+  var tb = document.querySelector("#tbl-detalle tbody");
+  if (!top.length) {
+    tb.innerHTML = '<tr><td colspan="8" class="empty">Sin ventas registradas para este filtro.</td></tr>';
+    document.getElementById("nota-detalle").textContent = "";
+    return;
+  }
+  tb.innerHTML = top.map(function(d){
+    var badge = d[2] === "SC"
       ? '<span style="font-family:var(--mono);font-size:11px;color:var(--SC)">s/clas.</span>'
-      : '<b style="font-family:var(--mono);color:var(--'+d.cat+')">'+d.cat+'</b>';
-    return '<tr><td>'+esc(d.art)+'</td><td class="l">'+esc(d.m)+'</td><td class="l">'+badge+'</td>'+
-      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(d.comp)+'</td>'+
-      '<td class="l">'+esc(d.cli)+'</td>'+
-      '<td class="num">'+fmt(d.q)+'</td><td class="num">'+fmt(d.cu,2)+'</td>'+
-      '<td class="num"><b>'+fmt(d.ct,1)+'</b></td></tr>';
+      : (d[2] === "NC"
+        ? '<span style="font-family:var(--mono);font-size:11px;color:var(--NC)">s/categ.</span>'
+        : '<b style="font-family:var(--mono);color:var(--'+d[2]+')">'+d[2]+'</b>');
+    return '<tr><td>'+esc(d[0])+'</td><td class="l">'+esc(d[1])+'</td><td class="l">'+badge+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(d[3])+'</td>'+
+      '<td class="l">'+esc(d[4])+'</td><td class="l">'+esc(d[5])+'</td>'+
+      '<td class="num">'+fmt(d[6],0)+'</td>'+
+      '<td class="num"><b>'+fmt(d[6]*d[7],1)+'</b></td></tr>';
   }).join("");
+  document.getElementById("nota-detalle").textContent =
+    filas.length > 60
+      ? "Se muestran las 60 líneas de mayor costo, de " + fmt(filas.length) + " que cumplen el filtro."
+      : fmt(filas.length) + " líneas.";
 }
 
 /* ---------------- Parte 2 ---------------- */
-function renderChips(){
-  document.getElementById("f-marca").innerHTML = MARCAS.map(function(r){
-    return '<button class="chip" data-m="'+esc(r.m)+'" aria-pressed="'+(r.m===state.marca)+'">'+esc(r.m)+'</button>';
+function marcasConSerie(){
+  return Object.keys(SERIES).filter(function(m){ return (SERIES[m]||[]).length; })
+    .sort(function(a,b){ return (CMV6[b]||0) - (CMV6[a]||0); });
+}
+
+function chipsSerie(){
+  var lista = marcasConSerie();
+  if (!lista.length) {
+    document.getElementById("f-serie").innerHTML = '<span class="sub">Sin histórico disponible.</span>';
+    return;
+  }
+  if (!serieActiva || lista.indexOf(serieActiva) < 0) serieActiva = lista[0];
+  document.getElementById("f-serie").innerHTML = lista.slice(0, 30).map(function(m){
+    return '<button class="chip sm" data-m="'+esc(m)+'" aria-pressed="'+(m===serieActiva)+'">'+esc(m)+'</button>';
   }).join("");
-  Array.prototype.forEach.call(document.querySelectorAll("#f-marca .chip"), function(b){
-    b.addEventListener("click", function(){ state.marca = b.dataset.m; renderChips(); renderEvo(); });
+  Array.prototype.forEach.call(document.querySelectorAll("#f-serie .chip"), function(b){
+    b.addEventListener("click", function(){ serieActiva = b.dataset.m; chipsSerie(); evolucion(); });
   });
 }
 
-function renderEvo(){
-  var d = SERIES[state.marca] || [], W = 1040, H = 300, P = {t:18,r:22,b:34,l:66};
-  var iw = W-P.l-P.r, ih = H-P.t-P.b;
-  var max = Math.max.apply(null,d)*1.12, min = 0;
-  var X = function(i){ return P.l + i*(iw/(d.length-1)); };
-  var Y = function(v){ return P.t + ih - (v-min)/(max-min)*ih; };
-  var line = d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
-  var area = line + " L"+X(d.length-1).toFixed(1)+" "+(P.t+ih)+" L"+P.l+" "+(P.t+ih)+" Z";
-  var rep = Math.round(CMV6[state.marca]/6*1.8);   /* consumo mensual x lead time estimado */
+function evolucion(){
+  var d = SERIES[serieActiva] || [];
+  var caja = document.getElementById("evo-chart");
+  if (d.length < 2) { caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>'; return; }
 
-  var grid = "", ticks = 4;
-  for(var g=0; g<=ticks; g++){
-    var v = min + (max-min)*g/ticks, y = Y(v);
+  var W = 1040, H = 300, P = {t:18,r:22,b:34,l:74};
+  var iw = W-P.l-P.r, ih = H-P.t-P.b;
+  var max = Math.max.apply(null, d) * 1.12 || 1;
+  var X = function(i){ return P.l + i*(iw/(d.length-1)); };
+  var Y = function(v){ return P.t + ih - (v/max)*ih; };
+  var linea = d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
+  var area = linea + " L"+X(d.length-1).toFixed(1)+" "+(P.t+ih)+" L"+P.l+" "+(P.t+ih)+" Z";
+  var rep = Math.round((CMV6[serieActiva]||0)/6*1.8);
+
+  var grid = "";
+  for (var g=0; g<=4; g++){
+    var v = max*g/4, y = Y(v);
     grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+'" stroke="#E6E9E9"/>'+
       '<text class="axis" x="'+(P.l-9)+'" y="'+(y+3.5).toFixed(1)+'" text-anchor="end">'+fmt(Math.round(v))+'</text>';
   }
-  var xlab = MESES.map(function(m,i){
-    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-12)+'" text-anchor="middle">'+m+'</text>';
+  var etiquetas = d.map(function(_,i){
+    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-12)+'" text-anchor="middle">'+esc(MESES[i]||"")+'</text>';
   }).join("");
-  var dots = d.map(function(v,i){
+  var puntos = d.map(function(v,i){
     return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="#fff" stroke="#12161A" stroke-width="1.6">'+
-      '<title>'+MESES[i]+': '+gsM(v)+'</title></circle>';
+      '<title>'+esc(MESES[i]||"")+': '+gsM(v)+'</title></circle>';
   }).join("");
+  var lineaRep = (rep > 0 && rep < max)
+    ? '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
+      '<text class="axis" x="'+(W-P.r)+'" y="'+(Y(rep)-7).toFixed(1)+'" text-anchor="end" fill="#A6432E">'+
+      'Reposición estimada · '+fmt(rep)+' M</text>'
+    : "";
 
-  document.getElementById("evo-chart").innerHTML =
-    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(state.marca)+'">'+
+  caja.innerHTML =
+    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(serieActiva)+'">'+
     '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
       '<stop offset="0%" stop-color="#12161A" stop-opacity=".14"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
     '</linearGradient></defs>'+ grid +
     '<path d="'+area+'" fill="url(#fade)"/>'+
-    '<path d="'+line+'" fill="none" stroke="#12161A" stroke-width="2" stroke-linejoin="round"/>'+
-    '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
-    '<text class="axis" x="'+(W-P.r)+'" y="'+(Y(rep)-7).toFixed(1)+'" text-anchor="end" fill="#A6432E">'+
-      'Punto de reposición · '+fmt(rep)+' M</text>'+
-    dots + xlab + '</svg>';
+    '<path d="'+linea+'" fill="none" stroke="#12161A" stroke-width="2" stroke-linejoin="round"/>'+
+    lineaRep + puntos + etiquetas + '</svg>';
 }
 
-function renderRot(){
-  var rows = MARCAS.map(function(r){
-    var s = SERIES[r.m], prom = s.reduce(function(a,b){return a+b;},0)/s.length;
-    var rot = (CMV6[r.m]*2)/prom, dias = 365/rot;
-    return {m:r.m, cmv:CMV6[r.m], prom:prom, act:tot(r), rot:rot, dias:dias};
+function rotacion(){
+  var actual = {};
+  STOCK.forEach(function(r){ actual[r.m] = (actual[r.m]||0) + r.v; });
+
+  var filas = marcasConSerie().map(function(m){
+    var s = SERIES[m];
+    var prom = s.reduce(function(a,b){return a+b;},0)/s.length;
+    var cmv = CMV6[m] || 0;
+    var rot = prom > 0 ? (cmv*2)/prom : 0;
+    return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot, dias: rot > 0 ? 365/rot : null };
   }).sort(function(a,b){ return b.rot - a.rot; });
-  document.querySelector("#tbl-rot tbody").innerHTML = rows.map(function(r){
+
+  var tb = document.querySelector("#tbl-rot tbody");
+  if (!filas.length) { tb.innerHTML = '<tr><td colspan="7" class="empty">Sin datos de rotación.</td></tr>'; return; }
+  tb.innerHTML = filas.map(function(r){
     var cls = r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo");
-    var lec = r.rot >= 2 ? "Sana" : (r.rot >= 1 ? "Ajustada" : "Inmovilizada");
+    var lec = r.cmv === 0 ? "Sin ventas en el período"
+            : (r.rot >= 2 ? "Sana" : (r.rot >= 1 ? "Ajustada" : "Inmovilizada"));
     return '<tr><td><b>'+esc(r.m)+'</b></td>'+
       '<td class="num">'+fmt(r.cmv)+'</td><td class="num">'+fmt(r.prom)+'</td><td class="num">'+fmt(r.act)+'</td>'+
       '<td class="num"><span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span></td>'+
-      '<td class="num">'+fmt(Math.round(r.dias))+'</td>'+
+      '<td class="num">'+(r.dias ? fmt(Math.round(r.dias)) : "—")+'</td>'+
       '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
   }).join("");
 }
@@ -543,25 +716,19 @@ function renderRot(){
 /* ---------------- navegación ---------------- */
 var tabs = [document.getElementById("t1"), document.getElementById("t2")];
 var panes = [document.getElementById("p1"), document.getElementById("p2")];
-function goTab(i){
-  tabs.forEach(function(t,j){ t.setAttribute("aria-selected", j===i); });
-  panes.forEach(function(p,j){ p.hidden = j!==i; });
-  window.scrollTo({top:0, behavior:"smooth"});
-}
-tabs.forEach(function(t,i){ t.addEventListener("click", function(){ goTab(i); }); });
-
-Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(b){
-  b.addEventListener("click", function(){
-    state.tipo = b.dataset.tipo;
-    Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
-      x.setAttribute("aria-pressed", x === b);
-    });
-    renderP1();
+tabs.forEach(function(t,i){
+  t.addEventListener("click", function(){
+    tabs.forEach(function(x,j){ x.setAttribute("aria-selected", j===i); });
+    panes.forEach(function(p,j){ p.hidden = j!==i; });
+    window.scrollTo({top:0, behavior:"smooth"});
   });
 });
 
-function renderP1(){ renderKPIs(); renderTotal(); renderTabla(); renderPies(); renderDetalle(); }
-renderP1(); renderChips(); renderEvo(); renderRot();
+armarFiltros();
+pintar();
+chipsSerie();
+evolucion();
+rotacion();
 })();
 </script>
 </body>
