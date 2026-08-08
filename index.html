@@ -224,6 +224,8 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
     <div class="sep"></div>
     <div class="fgroup"><label class="flab" for="f-marca">Marca</label>
       <select id="f-marca"></select></div>
+    <div class="fgroup"><label class="flab" for="f-cal">Calibre</label>
+      <select id="f-cal"></select></div>
     <div class="fgroup"><button class="clear" id="f-reset" hidden>quitar filtros</button></div>
   </div>
 
@@ -266,6 +268,16 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
       </table></div></div>
     </section>
 
+    <section id="sec-cal">
+      <div class="shead"><h2>Por calibre</h2><div class="rule"></div>
+        <div class="note">Armas y municiones no llevan ABC, pero sí calibre</div></div>
+      <div class="card"><div style="overflow-x:auto"><table id="tbl-cal">
+        <thead><tr>
+          <th>Calibre</th><th>Tipo</th><th>Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
+        </tr></thead><tbody></tbody><tfoot></tfoot>
+      </table></div></div>
+    </section>
+
     <section>
       <div class="shead"><h2>Tortas por marca</h2><div class="rule"></div>
         <div class="note" id="nota-pies"></div></div>
@@ -295,6 +307,12 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:18px">
           <div class="fgroup"><label class="flab" for="f-serie">Marca</label>
             <select id="f-serie"></select></div>
+          <div class="sep"></div>
+          <div class="fgroup"><label class="flab" for="f-desde">Desde</label>
+            <select id="f-desde"></select></div>
+          <div class="fgroup"><label class="flab" for="f-hasta">Hasta</label>
+            <select id="f-hasta"></select></div>
+          <div class="fgroup"><button class="clear" id="f-periodo-reset">período completo</button></div>
           <div class="stamp" id="serie-resumen"></div>
         </div>
         <div id="evo-chart"></div>
@@ -310,10 +328,10 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 
     <section>
       <div class="shead"><h2>Rotación por marca</h2><div class="rule"></div>
-        <div class="note">Costo de la mercadería vendida ÷ stock promedio a costo, anualizado</div></div>
+        <div class="note" id="nota-rot"></div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-rot">
         <thead><tr>
-          <th>Marca</th><th>Costo de venta (6 m)</th><th>Stock promedio</th>
+          <th>Marca</th><th>Costo de venta</th><th>Costo de compra</th><th>Stock promedio</th>
           <th>Stock actual</th><th>Rotación (veces/año)</th><th>Días de stock</th><th class="l">Lectura</th>
         </tr></thead><tbody></tbody>
       </table></div></div>
@@ -351,16 +369,19 @@ var vacio = { A:0,B:0,C:0,SC:0,NC:0 };
 var suma = function(o){ return o.A+o.B+o.C+o.SC+o.NC; };
 
 /* ---------------- estado de filtros ---------------- */
-var f = { dep:"*", tipo:"*", cat:"*", marca:"*" };
+var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
 var serieActiva = null;
+var COMPRAS6 = DATOS.COMPRAS6 || {};
+var per = { desde: 0, hasta: (DATOS.MESES || []).length - 1 };
 
 var pasa = function(r){
   return (f.dep === "*" || r.dep === f.dep)
       && (f.tipo === "*" || r.tipo === f.tipo)
       && (f.cat === "*" || r.cat === f.cat)
-      && (f.marca === "*" || r.m === f.marca);
+      && (f.marca === "*" || r.m === f.marca)
+      && (f.cal === "*" || r.cal === f.cal);
 };
-var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*"; };
+var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*" || f.cal!=="*"; };
 
 /** Agrupa las filas que pasan el filtro por la clave que se pida. */
 function agrupar(clave){
@@ -368,11 +389,16 @@ function agrupar(clave){
   STOCK.forEach(function(r){
     if (!pasa(r)) return;
     var k = r[clave];
-    if (!mapa[k]) mapa[k] = Object.assign({ k:k, tipo:r.tipo }, vacio);
+    if (!mapa[k]) mapa[k] = Object.assign({ k:k, tipos:{} }, vacio);
+    mapa[k].tipos[r.tipo] = true;
     if (mapa[k][r.cat] === undefined) return;
     mapa[k][r.cat] += r.v;
   });
-  return Object.keys(mapa).map(function(k){ return mapa[k]; })
+  return Object.keys(mapa).map(function(k){
+      var t = Object.keys(mapa[k].tipos);
+      mapa[k].tipo = t.length === 1 ? t[0] : "varios tipos";
+      return mapa[k];
+    })
     .sort(function(a,b){ return suma(b)-suma(a); });
 }
 function totales(){
@@ -437,6 +463,13 @@ function armarFiltros(){
   opciones(document.getElementById("f-dep"), deps, "Todos los depósitos");
   opciones(document.getElementById("f-marca"), marcas, "Todas las marcas");
 
+  /* Los calibres se ordenan por monto, no alfabéticamente: 9mm arriba. */
+  var pesoCal = {};
+  STOCK.forEach(function(r){ pesoCal[r.cal] = (pesoCal[r.cal]||0) + r.v; });
+  var calibres = Object.keys(pesoCal).sort(function(a,b){ return pesoCal[b]-pesoCal[a]; });
+  opciones(document.getElementById("f-cal"), calibres, "Todos los calibres");
+  document.getElementById("f-cal").addEventListener("change", function(){ f.cal = this.value; pintar(); });
+
   var etiquetas = {A:"A – Potenciar", B:"B – Mantener", C:"C – Liquidar",
                    SC:"Sin clasificación", NC:"Sin categorizar"};
   var presentes = CATS.filter(function(c){
@@ -463,8 +496,9 @@ function armarFiltros(){
     });
   });
   document.getElementById("f-reset").addEventListener("click", function(){
-    f = { dep:"*", tipo:"*", cat:"*", marca:"*" };
+    f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
     document.getElementById("f-dep").value = "*";
+    document.getElementById("f-cal").value = "*";
     document.getElementById("f-marca").value = "*";
     selCat.value = "*";
     sincronizarSerie();
@@ -514,6 +548,7 @@ function pintar(){
 
   tablaMarcas(agrupar("m"), T);
   tablaDepositos(agrupar("dep"), T);
+  tablaCalibres(T);
   tortas(agrupar("m"));
   detalle();
 }
@@ -526,6 +561,7 @@ function etiquetaFiltro(){
   if (f.dep !== "*") p.push(f.dep);
   if (f.tipo !== "*") p.push(f.tipo);
   if (f.marca !== "*") p.push(f.marca);
+  if (f.cal !== "*") p.push(f.cal);
   if (f.cat !== "*") p.push("categoría " + f.cat);
   return p.length ? p.join(" · ") : "Todos los depósitos y marcas";
 }
@@ -579,6 +615,44 @@ function tablaDepositos(filas, T){
     });
   });
 }
+function tablaCalibres(T){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    if (!mapa[r.cal]) mapa[r.cal] = { k:r.cal, tipos:{}, v:0 };
+    mapa[r.cal].tipos[r.tipo] = true;
+    mapa[r.cal].v += r.v;
+  });
+  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
+    .sort(function(a,b){ return b.v - a.v; });
+
+  var sec = document.getElementById("sec-cal");
+  var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
+  sec.hidden = reales.length === 0;
+  if (sec.hidden) return;
+
+  var max = filas[0] ? filas[0].v : 0;
+  var tb = document.querySelector("#tbl-cal tbody"), tf = document.querySelector("#tbl-cal tfoot");
+  tb.innerHTML = filas.map(function(r){
+    var t = Object.keys(r.tipos);
+    var w = max ? r.v/max*100 : 0;
+    var color = r.k === "Sin calibre" ? "var(--SC)" : "var(--ink2)";
+    return '<tr data-cal="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
+      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
+      '<td class="num">'+pct(r.v, T)+'</td>'+
+      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+color+'"></i></div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
+      document.getElementById("f-cal").value = f.cal;
+      pintar();
+    });
+  });
+}
+
 function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
 
 function tortas(filas){
@@ -658,6 +732,36 @@ function marcasConSerie(){
     .sort(function(a,b){ return (CMV6[b]||0) - (CMV6[a]||0); });
 }
 
+/** Los meses disponibles según lo que trajo Odoo. */
+function armarPeriodo(){
+  var opt = MESES.map(function(m,i){ return '<option value="'+i+'">'+esc(m)+'</option>'; }).join("");
+  var d = document.getElementById("f-desde"), h = document.getElementById("f-hasta");
+  d.innerHTML = opt; h.innerHTML = opt;
+  d.value = per.desde; h.value = per.hasta;
+
+  d.addEventListener("change", function(){
+    per.desde = parseInt(this.value, 10);
+    if (per.desde > per.hasta) { per.hasta = per.desde; h.value = per.hasta; }
+    evolucion(); rotacion();
+  });
+  h.addEventListener("change", function(){
+    per.hasta = parseInt(this.value, 10);
+    if (per.hasta < per.desde) { per.desde = per.hasta; d.value = per.desde; }
+    evolucion(); rotacion();
+  });
+  document.getElementById("f-periodo-reset").addEventListener("click", function(){
+    per.desde = 0; per.hasta = MESES.length - 1;
+    d.value = per.desde; h.value = per.hasta;
+    evolucion(); rotacion();
+  });
+}
+
+/** La serie recortada al período elegido. */
+function serieDe(marca){
+  return (SERIES[marca] || []).slice(per.desde, per.hasta + 1);
+}
+function mesesDe(){ return MESES.slice(per.desde, per.hasta + 1); }
+
 /** Mantiene la marca de la Parte 2 alineada con el filtro de la Parte 1. */
 function sincronizarSerie(){
   var lista = marcasConSerie();
@@ -680,7 +784,8 @@ function sincronizarSerie(){
 function evolucion(){
   var caja = document.getElementById("evo-chart");
   var resumen = document.getElementById("serie-resumen");
-  var d = serieActiva ? (SERIES[serieActiva] || []) : [];
+  var d = serieActiva ? serieDe(serieActiva) : [];
+  var etiquetasMes = mesesDe();
   if (d.length < 2) {
     caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>';
     resumen.textContent = "";
@@ -709,12 +814,12 @@ function evolucion(){
   var etiquetas = d.map(function(_,i){
     if (i % paso !== 0 && i !== d.length-1) return "";
     return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-14)+'" text-anchor="middle">'+
-      esc(MESES[i] || "") + '</text>';
+      esc(etiquetasMes[i] || "") + '</text>';
   }).join("");
 
   var puntos = d.map(function(v,i){
     return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.4" fill="#fff" '+
-      'stroke="#12161A" stroke-width="1.6"><title>'+esc(MESES[i]||"")+': '+gsM(v)+'</title></circle>';
+      'stroke="#12161A" stroke-width="1.6"><title>'+esc(etiquetasMes[i]||"")+': '+gsM(v)+'</title></circle>';
   }).join("");
 
   /* Valor del último mes, rotulado sobre el punto. */
@@ -744,6 +849,7 @@ function evolucion(){
   var variacion = ini0 ? (ult - ini0) / ini0 * 100 : 0;
   var pico = Math.max.apply(null, d), piso = Math.min.apply(null, d);
   resumen.textContent =
+    etiquetasMes[0] + " → " + etiquetasMes[etiquetasMes.length-1] + "   ·   " +
     gsM(ini0) + " → " + gsM(ult) +
     "  (" + (variacion >= 0 ? "+" : "") + variacion.toFixed(0) + "%)" +
     "   ·   máx " + fmt(Math.round(pico)) + " · mín " + fmt(Math.round(piso));
@@ -753,23 +859,46 @@ function rotacion(){
   var actual = {};
   STOCK.forEach(function(r){ if (pasa(r)) actual[r.m] = (actual[r.m]||0) + r.v; });
 
-  var lista = marcasConSerie();
-  var filas = lista.map(function(m){
-    var s = SERIES[m];
-    var prom = s.reduce(function(a,b){return a+b;},0)/s.length;
+  /* El período elegido cambia el stock promedio, así que la rotación se
+     recalcula sobre los meses visibles. El costo de venta y el de compra
+     son de los últimos 6 meses y no dependen del período. */
+  var meses = per.hasta - per.desde + 1;
+
+  var filas = marcasConSerie().map(function(m){
+    var s = serieDe(m);
+    var prom = s.length ? s.reduce(function(a,b){return a+b;},0)/s.length : 0;
     var cmv = CMV6[m] || 0;
+    var compras = COMPRAS6[m] || 0;
     var rot = prom > 0 ? (cmv*2)/prom : 0;
-    return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot, dias: rot > 0 ? 365/rot : null };
+    return { m:m, cmv:cmv, compras:compras, prom:prom, act:actual[m]||0,
+             rot:rot, dias: rot > 0 ? 365/rot : null };
   }).sort(function(a,b){ return b.rot - a.rot; });
 
+  document.getElementById("nota-rot").textContent =
+    "Stock promedio sobre " + meses + (meses === 1 ? " mes" : " meses") +
+    " · costo de venta y de compra de los últimos 6 meses";
+
   var tb = document.querySelector("#tbl-rot tbody");
-  if (!filas.length) { tb.innerHTML = '<tr><td colspan="7" class="empty">Sin datos de rotación.</td></tr>'; return; }
+  if (!filas.length) { tb.innerHTML = '<tr><td colspan="8" class="empty">Sin datos de rotación.</td></tr>'; return; }
+
   tb.innerHTML = filas.map(function(r){
     var cls = r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo");
-    var lec = r.cmv === 0 ? "Sin ventas en el período"
-            : (r.rot >= 2 ? "Sana" : (r.rot >= 1 ? "Ajustada" : "Inmovilizada"));
+    var lec;
+    if (r.cmv === 0 && r.compras === 0) lec = "Sin movimiento";
+    else if (r.cmv === 0) lec = "Compró y no vendió";
+    else if (r.rot >= 2) lec = "Sana";
+    else if (r.rot >= 1) lec = "Ajustada";
+    else lec = "Inmovilizada";
+
+    /* Compró más de lo que vendió: el stock de esa marca está creciendo. */
+    var flecha = "";
+    if (r.compras > r.cmv * 1.2 && r.compras > 5) flecha = ' <span title="compró más de lo que vendió" style="color:var(--C)">▲</span>';
+    else if (r.cmv > r.compras * 1.2 && r.cmv > 5) flecha = ' <span title="vendió más de lo que compró" style="color:var(--ok)">▼</span>';
+
     return '<tr><td><b>'+esc(r.m)+'</b></td>'+
-      '<td class="num">'+fmt(r.cmv)+'</td><td class="num">'+fmt(r.prom)+'</td><td class="num">'+fmt(r.act)+'</td>'+
+      '<td class="num">'+fmt(r.cmv)+'</td>'+
+      '<td class="num">'+fmt(r.compras)+flecha+'</td>'+
+      '<td class="num">'+fmt(Math.round(r.prom))+'</td><td class="num">'+fmt(Math.round(r.act))+'</td>'+
       '<td class="num"><span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span></td>'+
       '<td class="num">'+(r.dias ? fmt(Math.round(r.dias)) : "—")+'</td>'+
       '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
@@ -788,6 +917,7 @@ tabs.forEach(function(t,i){
 });
 
 armarFiltros();
+armarPeriodo();
 document.getElementById("f-serie").addEventListener("change", function(){
   serieActiva = this.value;
   evolucion();
