@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 08/08/2026 09:08.
+/* Generado desde la planilla el 08/08/2026 09:23.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -34,7 +34,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "08/08/2026 09:08",
+  "GENERADO": "08/08/2026 09:23",
   "EMPRESA": "CAMPING44",
   "MESES": [
     "mar 25",
@@ -58,6 +58,254 @@ var DATOS = {
   ],
   "STOCK": [
     {
+      "m": "ABU GARCIA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3.6
+    },
+    {
+      "m": "ABU GARCIA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 14.7
+    },
+    {
+      "m": "AHSS",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4.6
+    },
+    {
+      "m": "AHSS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 2.9
+    },
+    {
+      "m": "AHSS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0.8
+    },
+    {
+      "m": "AITOR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 7.6
+    },
+    {
+      "m": "AITOR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 10.1
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 9.6
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 1.9
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "6,35/25Auto",
+      "v": 7.6
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 8.1
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.1
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 0.2
+    },
+    {
+      "m": "AKDAL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "6,35/25Auto",
+      "v": 0.1
+    },
+    {
+      "m": "AKKAR",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 78.4
+    },
+    {
+      "m": "AKKAR",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 14.6
+    },
+    {
+      "m": "AKKAR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "AKSA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 2.7
+    },
+    {
+      "m": "AKSA",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 1.6
+    },
+    {
+      "m": "ALBAINOX",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "ALFA PROJ",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 3.7
+    },
+    {
+      "m": "AMT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 0.4
+    },
+    {
+      "m": "ANTIGERM",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 398.4
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 6.4
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 137.2
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 3.1
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "APOLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2
+    },
+    {
+      "m": "ARATY",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
       "m": "ARMADILLO",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -79,6 +327,190 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "ARMED",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 72.8
+    },
+    {
+      "m": "ARMED",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 36.1
+    },
+    {
+      "m": "ARMED",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 2.8
+    },
+    {
+      "m": "ARMED",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 0.6
+    },
+    {
+      "m": "ARMED",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 9.6
+    },
+    {
+      "m": "ARMED",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "16 GA",
+      "v": 0.5
+    },
+    {
+      "m": "ARMED",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "ARMED",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.7
+    },
+    {
+      "m": "ARMSAN",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 1.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22 Corto",
+      "v": 72
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 641.8
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 40.2
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "22 Corto",
+      "v": 3.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 0.8
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 0.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22 Corto",
+      "v": 0.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 0.5
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 0.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.1
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 3.8
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.2
+    },
+    {
+      "m": "ARMSCOR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
       "v": 0.2
     },
     {
@@ -144,6 +576,62 @@ var DATOS = {
       "cat": "NC",
       "cal": "Sin calibre",
       "v": 0.3
+    },
+    {
+      "m": "ATA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 3.4
+    },
+    {
+      "m": "ATTWOOD",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "ATTWOOD",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "BAIKAL",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 2.7
+    },
+    {
+      "m": "BE ARMOR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 52.7
+    },
+    {
+      "m": "BE ARMOR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 21.7
+    },
+    {
+      "m": "BEAMSHOT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
     },
     {
       "m": "BERETTA",
@@ -215,7 +703,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 14.1
+      "v": 13.7
     },
     {
       "m": "BERETTA",
@@ -263,7 +751,15 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 10
+      "v": 9.9
+    },
+    {
+      "m": "BERKLEY",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.7
     },
     {
       "m": "BERSA",
@@ -282,6 +778,454 @@ var DATOS = {
       "v": 2.3
     },
     {
+      "m": "BESTWAY",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "BESTWAY",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 227.9
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 158.6
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 65.6
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 7.8
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 0.6
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 1
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 0.2
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 0.2
+    },
+    {
+      "m": "BLAZER",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 0.3
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 58.3
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 38.3
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 8.5
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 5.2
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 3.2
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 3.7
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 2.6
+    },
+    {
+      "m": "BOITO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 2.5
+    },
+    {
+      "m": "BOITO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.7
+    },
+    {
+      "m": "BOITO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 5.6
+    },
+    {
+      "m": "BOITO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "BRG",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 16.4
+    },
+    {
+      "m": "BROWNING",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0.1
+    },
+    {
+      "m": "BROWNING",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0.2
+    },
+    {
+      "m": "BSA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2.3
+    },
+    {
+      "m": "BSA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2
+    },
+    {
+      "m": "BUSHNELL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.9
+    },
+    {
+      "m": "BUSHNELL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "BUTLER CREEK",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "BUTLER CREEK",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "CAL.38",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "CAL.38",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "CAL.9MM",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "CAL.9MM",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "CANIK",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 20.4
+    },
+    {
+      "m": "CASE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 19.4
+    },
+    {
+      "m": "CASE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "CATERPILLAR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 218.8
+    },
+    {
+      "m": "CATERPILLAR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 8.7
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 9.4
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "38SPL",
+      "v": 16.2
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 4.7
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 33.3
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 27.5
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 0.2
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 0.2
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 1.7
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 0.4
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "38SPL",
+      "v": 0.4
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "44MAG",
+      "v": 0.5
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 0.4
+    },
+    {
+      "m": "CCI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 0.4
+    },
+    {
+      "m": "CENTURY",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3.4
+    },
+    {
+      "m": "CENTURY",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.7
+    },
+    {
+      "m": "CHIAPPA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 7.3
+    },
+    {
       "m": "COLEMAN",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -296,6 +1240,110 @@ var DATOS = {
       "cat": "C",
       "cal": "Sin calibre",
       "v": 16.1
+    },
+    {
+      "m": "COLT",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 6.1
+    },
+    {
+      "m": "COLT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": ".40",
+      "v": 1.2
+    },
+    {
+      "m": "COLT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "COLT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": ".40",
+      "v": 0.2
+    },
+    {
+      "m": "COLT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "COMETA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 12.4
+    },
+    {
+      "m": "COMETA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 6.8
+    },
+    {
+      "m": "CON",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "CON",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "CROSMAN",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 54.4
+    },
+    {
+      "m": "CROSMAN",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 3.1
+    },
+    {
+      "m": "CROSMAN",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 10.9
+    },
+    {
+      "m": "CROSMAN",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 1.3
     },
     {
       "m": "CZ",
@@ -317,25 +1365,145 @@ var DATOS = {
       "m": "CZ",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "B",
-      "cal": "9mm",
-      "v": 2.9
-    },
-    {
-      "m": "CZ",
-      "tipo": "No reglamentado",
-      "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "v": 1.6
     },
     {
-      "m": "CZ",
+      "m": "DAIWA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "DAIWA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "DELISLE",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4.6
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 6.6
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 34.6
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 596.8
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 27.9
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 15.8
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 4.9
+    },
+    {
+      "m": "DERYA",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 42.4
+    },
+    {
+      "m": "DERYA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "12GA",
+      "v": 88.3
+    },
+    {
+      "m": "DERYA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 5.5
+    },
+    {
+      "m": "DERYA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "DERYA",
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
-      "cal": "9mm",
-      "v": 0.8
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "DERYA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "DILLON",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 11.7
+    },
+    {
+      "m": "DILLON",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.6
     },
     {
       "m": "DOBERMAN",
@@ -410,6 +1578,78 @@ var DATOS = {
       "v": 0.1
     },
     {
+      "m": "DULONAY",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 1.2
+    },
+    {
+      "m": "DURACELL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 4.8
+    },
+    {
+      "m": "DURACELL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": -0.3
+    },
+    {
+      "m": "DURACELL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 1.4
+    },
+    {
+      "m": "DURACELL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "DURACELL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "ELEY",
+      "tipo": "Municiones",
+      "dep": "Licitaciones",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 3.6
+    },
+    {
+      "m": "EVEREADY",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "EXORI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
       "m": "FAB DEFENSE",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -447,7 +1687,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 4.2
+      "v": 4.6
     },
     {
       "m": "FAB DEFENSE",
@@ -455,7 +1695,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 41.3
+      "v": 41.4
     },
     {
       "m": "FAB DEFENSE",
@@ -464,6 +1704,174 @@ var DATOS = {
       "cat": "NC",
       "cal": "Sin calibre",
       "v": 7.2
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 245.9
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "10mm",
+      "v": 17
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 10.4
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Tue Jun 30 2026 04:00:00 GMT-0300 (hora estándar de Paraguay)",
+      "v": 0.2
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "338WIMMAG",
+      "v": 3.2
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "357SIG",
+      "v": 0.5
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 39.1
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 0.6
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 0.9
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 0.9
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 0.7
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 0.4
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "10mm",
+      "v": 0.1
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 0.2
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "338WIMMAG",
+      "v": 0.6
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "357SIG",
+      "v": 0.2
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 0.1
+    },
+    {
+      "m": "FEDERAL",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 0.3
+    },
+    {
+      "m": "FENWICK",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1
+    },
+    {
+      "m": "FENWICK",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2
+    },
+    {
+      "m": "FN",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 7.6
     },
     {
       "m": "FOBUS",
@@ -514,28 +1922,172 @@ var DATOS = {
       "v": 7.9
     },
     {
+      "m": "GAMO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 4.5
+    },
+    {
+      "m": "GAMO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 16.2
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 10.9
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 7
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "28GA",
+      "v": 41.8
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "32GA",
+      "v": 2.3
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 38.3
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 5.5
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 0.2
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 0.5
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 0.5
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 0.6
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "28GA",
+      "v": 0.5
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "32GA",
+      "v": 0.7
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 0.5
+    },
+    {
+      "m": "GB",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "GERBER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "GIRSAN",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 190.8
+    },
+    {
+      "m": "GIRSAN",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 45.2
+    },
+    {
       "m": "GLOCK",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "SC",
       "cal": "Sin calibre",
       "v": 11.6
-    },
-    {
-      "m": "GLOCK",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "A",
-      "cal": "9mm",
-      "v": 39.3
-    },
-    {
-      "m": "GLOCK",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": ".40",
-      "v": 61
     },
     {
       "m": "GLOCK",
@@ -550,16 +2102,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
-      "cal": "45ACP",
-      "v": 2.5
-    },
-    {
-      "m": "GLOCK",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
       "cal": "9mm",
-      "v": 66.9
+      "v": 34.7
     },
     {
       "m": "GLOCK",
@@ -575,15 +2119,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 60.9
-    },
-    {
-      "m": "GLOCK",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "A",
-      "cal": "9mm",
-      "v": 0.9
+      "v": 54.1
     },
     {
       "m": "GLOCK",
@@ -591,7 +2127,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": ".40",
-      "v": 2
+      "v": 0.1
     },
     {
       "m": "GLOCK",
@@ -607,7 +2143,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "45ACP",
-      "v": 1
+      "v": 0.1
     },
     {
       "m": "GLOCK",
@@ -615,7 +2151,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "9mm",
-      "v": 2.9
+      "v": 1
     },
     {
       "m": "GLOCK",
@@ -623,7 +2159,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 27
+      "v": 26.3
     },
     {
       "m": "GLOCK",
@@ -631,15 +2167,23 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 13.9
+      "v": 7.1
     },
     {
-      "m": "GLOCK",
-      "tipo": "No reglamentado",
+      "m": "GOLDEN EAGLE",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 283
+    },
+    {
+      "m": "GOLDEN EAGLE",
+      "tipo": "Municiones",
       "dep": "Showroom",
-      "cat": "NC",
-      "cal": ".40",
-      "v": 0.1
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 0.3
     },
     {
       "m": "GSM",
@@ -647,7 +2191,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 48.7
+      "v": 48.3
     },
     {
       "m": "GSM",
@@ -655,7 +2199,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 42.2
+      "v": 41.5
     },
     {
       "m": "GSM",
@@ -679,7 +2223,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 2.8
+      "v": 3.1
     },
     {
       "m": "GSM",
@@ -687,7 +2231,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 3.3
+      "v": 3.9
     },
     {
       "m": "GSM",
@@ -696,6 +2240,238 @@ var DATOS = {
       "cat": "C",
       "cal": "Sin calibre",
       "v": 4.7
+    },
+    {
+      "m": "GUEPARDO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "HATSAN",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 95
+    },
+    {
+      "m": "HATSAN",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 6.3
+    },
+    {
+      "m": "HAWKE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 5.5
+    },
+    {
+      "m": "HAWKE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 10.3
+    },
+    {
+      "m": "HIPOINT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 1.5
+    },
+    {
+      "m": "HIPOINT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0.3
+    },
+    {
+      "m": "HIPOINT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "HIPOINT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 0.1
+    },
+    {
+      "m": "HK",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 17
+    },
+    {
+      "m": "HK",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 5.5
+    },
+    {
+      "m": "HK",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "HK",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "HOGUE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 5.6
+    },
+    {
+      "m": "HOGUE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.7
+    },
+    {
+      "m": "HOPPES",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "HOPPES",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "HORNADY",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.9
+    },
+    {
+      "m": "HOWA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "IMALENT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 13.2
+    },
+    {
+      "m": "IMALENT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 7.5
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 2091
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "308WIN",
+      "v": 827.5
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 1281.8
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 0.2
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 19.8
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 0.2
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "308WIN",
+      "v": 1.8
+    },
+    {
+      "m": "IMI",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 4.6
     },
     {
       "m": "INDUNAYLON",
@@ -720,6 +2496,166 @@ var DATOS = {
       "cat": "B",
       "cal": "Sin calibre",
       "v": 0.3
+    },
+    {
+      "m": "INTEX",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "INTEX",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "INTRATEC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 3.3
+    },
+    {
+      "m": "ISSC",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 3.8
+    },
+    {
+      "m": "JACKSON",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "JACKSON",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "9mm",
+      "v": 39.3
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": ".40",
+      "v": 61
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 143.4
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 6.1
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 32.2
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "9mm",
+      "v": 0.9
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": ".40",
+      "v": 1.9
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 10.5
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 1.6
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 1.9
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.7
+    },
+    {
+      "m": "KCI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "NC",
+      "cal": ".40",
+      "v": 0.1
+    },
+    {
+      "m": "KLEEN-BORE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "KLEEN-BORE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
     },
     {
       "m": "KONUS",
@@ -751,7 +2687,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 304.7
+      "v": 305.1
     },
     {
       "m": "KONUS",
@@ -776,6 +2712,198 @@ var DATOS = {
       "cat": "NC",
       "cal": "Sin calibre",
       "v": 0.2
+    },
+    {
+      "m": "KOR",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 2.4
+    },
+    {
+      "m": "LEE",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 5.4
+    },
+    {
+      "m": "LEE",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "LEUPOLD",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.5
+    },
+    {
+      "m": "LEUPOLD",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3.9
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.4
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 0.4
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 2.5
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.2
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 0.1
+    },
+    {
+      "m": "LLAMA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "LORCIN",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 2.5
+    },
+    {
+      "m": "LUJOSO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 12
+    },
+    {
+      "m": "LUJOSO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1
+    },
+    {
+      "m": "LUVO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 26.5
+    },
+    {
+      "m": "LUVO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 24.1
+    },
+    {
+      "m": "LYMAN",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 7.2
+    },
+    {
+      "m": "LYMAN",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 1.3
+    },
+    {
+      "m": "MAGLITE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "MAGLITE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "MARINE SPORTS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "MARINE SPORTS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 7.4
+    },
+    {
+      "m": "MARINE SPORTS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.8
+    },
+    {
+      "m": "MARKSMAN",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
     },
     {
       "m": "MARLIN",
@@ -826,6 +2954,142 @@ var DATOS = {
       "v": 0.2
     },
     {
+      "m": "MAXELL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "MAXELL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "MEC",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "MEGGAR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0.1
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 1111.2
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "380ACP",
+      "v": 6.1
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 10.1
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 3.2
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.1
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0.7
+    },
+    {
+      "m": "MENDOZA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "MILLET",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.7
+    },
+    {
+      "m": "MILLET",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.9
+    },
+    {
+      "m": "MILLET",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "MILLET",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "MOR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "MOR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
       "m": "MOSSBERG",
       "tipo": "Armas",
       "dep": "Central",
@@ -858,12 +3122,36 @@ var DATOS = {
       "v": 0.2
     },
     {
+      "m": "MUSTAD",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 5.2
+    },
+    {
+      "m": "MUSTAD",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "NAA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.9
+    },
+    {
       "m": "NAUTIKA",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 368.5
+      "v": 371.2
     },
     {
       "m": "NAUTIKA",
@@ -871,7 +3159,823 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 18.5
+      "v": 18.9
+    },
+    {
+      "m": "NIETO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 19.2
+    },
+    {
+      "m": "NIETO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 15.5
+    },
+    {
+      "m": "NITECORE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 145
+    },
+    {
+      "m": "NITECORE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 52.3
+    },
+    {
+      "m": "NORINCO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 3
+    },
+    {
+      "m": "NORINCO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 20.2
+    },
+    {
+      "m": "NORINCO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 0.2
+    },
+    {
+      "m": "NORINCO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 0.1
+    },
+    {
+      "m": "OLIGHT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 3.3
+    },
+    {
+      "m": "OTTONI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.3
+    },
+    {
+      "m": "OTTONI",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "OTTONI",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "PACHMAYR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "PANASONIC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "PICATINY",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "PLANO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 15.1
+    },
+    {
+      "m": "PLANO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.1
+    },
+    {
+      "m": "PMC",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "7,65/32Auto",
+      "v": 9.1
+    },
+    {
+      "m": "POLV.540P",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "POLVORA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 4.1
+    },
+    {
+      "m": "POLYMER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3.3
+    },
+    {
+      "m": "POLYMER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "PPU",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 0
+    },
+    {
+      "m": "PPU",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "300WINMAG",
+      "v": 3.7
+    },
+    {
+      "m": "PUCARA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "RAB-01",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "RAIGLON",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "RAPALA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "RAPALA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "RAYOVAC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "RAYOVAC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "REBEL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "REMINGTON",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 1.9
+    },
+    {
+      "m": "REMINGTON",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "REMINGTON",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "REMINGTON",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "REPLAST",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
+    },
+    {
+      "m": "REXIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22MAG",
+      "v": 4.9
+    },
+    {
+      "m": "REXIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 0.6
+    },
+    {
+      "m": "REXIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4.6
+    },
+    {
+      "m": "REXIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22MAG",
+      "v": 1.1
+    },
+    {
+      "m": "REXIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 0.6
+    },
+    {
+      "m": "REXIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "REYSOL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 6
+    },
+    {
+      "m": "REYSOL",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 1.3
+    },
+    {
+      "m": "REYSOL",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "RIO",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 0
+    },
+    {
+      "m": "RIO",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 0.3
+    },
+    {
+      "m": "ROCKY BOOTS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "12GA",
+      "v": 1.5
+    },
+    {
+      "m": "ROCKY BOOTS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 43.8
+    },
+    {
+      "m": "ROCKY BOOTS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "ROCKY BOOTS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
+      "v": 0.7
+    },
+    {
+      "m": "ROCKY BOOTS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 4.2
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 75.1
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22MAG",
+      "v": 7.3
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "45ACP",
+      "v": 6.4
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 5.8
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 12.9
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 9.7
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "22MAG",
+      "v": 7.3
+    },
+    {
+      "m": "RUGER",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 7.3
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": ".40",
+      "v": 0.7
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 6.9
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 4.2
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 0.1
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "308WIN",
+      "v": 0.4
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 1.6
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 17
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 16.2
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": ".40",
+      "v": 0.5
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 1.7
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.5
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 0.1
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "308WIN",
+      "v": 0.8
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 1.1
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 1.4
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "RUGER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "RULE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "SAFIR",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 98.6
+    },
+    {
+      "m": "SAFIR",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 8.2
+    },
+    {
+      "m": "SAFIR",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "36GA",
+      "v": 4.1
+    },
+    {
+      "m": "SAFIR",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "36GA",
+      "v": 0.2
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 39.2
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 2.6
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 120.4
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "28GA",
+      "v": 32.8
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "32GA",
+      "v": 11.2
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 372.2
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 4.2
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 4.3
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "28GA",
+      "v": 18.3
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 23.3
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 0.8
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 1.1
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 0.9
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "28GA",
+      "v": 1.3
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "32GA",
+      "v": 0.3
+    },
+    {
+      "m": "SAGA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "36GA",
+      "v": 1.4
+    },
+    {
+      "m": "SARSILMAZ",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 28.5
+    },
+    {
+      "m": "SAVAGE",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 11.5
     },
     {
       "m": "SELLIER",
@@ -1098,220 +4202,108 @@ var DATOS = {
       "v": 0.3
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": ".40",
-      "v": 28.2
+      "m": "SHIMANO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "12GA",
-      "v": 72.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "20GA",
-      "v": 111.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "223REM",
-      "v": 1073.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "22LR",
-      "v": 1189.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "22MAG",
-      "v": 12.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "308WIN",
-      "v": 5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "36GA",
-      "v": 178.4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "380ACP",
-      "v": 6.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "38Super",
-      "v": 50.1
-    },
-    {
-      "m": "SIN MARCA",
+      "m": "SIG SAUER",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "SC",
       "cal": "45ACP",
-      "v": 26.5
+      "v": 20.1
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "9mm",
-      "v": 1080.9
-    },
-    {
-      "m": "SIN MARCA",
+      "m": "SIG SAUER",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "SC",
       "cal": "Sin calibre",
-      "v": 583.8
+      "v": 7
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Deposito DIGEMABEL",
-      "cat": "SC",
-      "cal": "9mm",
-      "v": 3.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": ".40",
-      "v": 37
+      "v": 21.8
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "12GA",
-      "v": 19.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "20GA",
-      "v": 6.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "223REM",
-      "v": 113.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": "22LR",
-      "v": 19.7
+      "v": 11.9
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "22MAG",
-      "v": 8.4
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 70.6
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "36GA",
-      "v": 16.9
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 62
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "38Super",
-      "v": 14.3
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "SC",
-      "cal": "7,65/32Auto",
+      "cat": "B",
+      "cal": ".40",
       "v": 2.6
     },
     {
-      "m": "SIN MARCA",
-      "tipo": "Armas",
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "SC",
+      "cat": "B",
+      "cal": "380ACP",
+      "v": 0.5
+    },
+    {
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
       "cal": "9mm",
-      "v": 70.5
+      "v": 1.5
+    },
+    {
+      "m": "SIG SAUER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
     },
     {
       "m": "SIN MARCA",
       "tipo": "Armas",
-      "dep": "Showroom",
+      "dep": "Central",
       "cat": "SC",
       "cal": "Sin calibre",
-      "v": 83.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": ".40",
-      "v": 483.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "10mm",
-      "v": 17
+      "v": 28.8
     },
     {
       "m": "SIN MARCA",
@@ -1319,55 +4311,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "SC",
       "cal": "12GA",
-      "v": 57.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "16 GA",
-      "v": 35
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "20GA",
-      "v": 155.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "22 Corto",
-      "v": 72
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "223REM",
-      "v": 2091
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "22LR",
-      "v": 293.4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "28GA",
-      "v": 74.6
+      "v": 1.9
     },
     {
       "m": "SIN MARCA",
@@ -1375,87 +4319,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "SC",
       "cal": "Tue Jun 30 2026 04:00:00 GMT-0300 (hora estándar de Paraguay)",
-      "v": 7.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "308WIN",
-      "v": 827.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "32GA",
-      "v": 13.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "338WIMMAG",
-      "v": 3.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "357SIG",
-      "v": 0.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "36GA",
-      "v": 372.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "380ACP",
-      "v": 680.9
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "38SPL",
-      "v": 16.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "38Super",
-      "v": 40.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "44MAG",
-      "v": 163.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "45ACP",
-      "v": 98.9
+      "v": 7.1
     },
     {
       "m": "SIN MARCA",
@@ -1470,384 +4334,48 @@ var DATOS = {
       "tipo": "Municiones",
       "dep": "Central",
       "cat": "SC",
-      "cal": "7,65/32Auto",
-      "v": 9.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
-      "cal": "9mm",
-      "v": 1309.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "SC",
       "cal": "Sin calibre",
-      "v": 60.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": ".40",
-      "v": 8.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "12GA",
-      "v": 48.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "16 GA",
-      "v": 9.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "20GA",
-      "v": 0.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "22 Corto",
-      "v": 3.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "223REM",
-      "v": 0.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "22LR",
-      "v": 1.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "28GA",
-      "v": 18.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "300WINMAG",
-      "v": 3.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "36GA",
-      "v": 23.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "380ACP",
-      "v": 0.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "38Super",
-      "v": 0.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "44MAG",
-      "v": 0.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "45ACP",
-      "v": 1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Incautación DIGEMABEL",
-      "cat": "SC",
-      "cal": "9mm",
-      "v": 21.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Licitaciones",
-      "cat": "SC",
-      "cal": "12GA",
-      "v": 3.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": ".40",
-      "v": 1.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "10mm",
-      "v": 0.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "12GA",
-      "v": 1.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "16 GA",
-      "v": 2.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "20GA",
-      "v": 2.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "22 Corto",
-      "v": 0.1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "223REM",
-      "v": 0.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "22LR",
-      "v": 0.4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "28GA",
-      "v": 1.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "308WIN",
-      "v": 1.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "32GA",
-      "v": 1
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "338WIMMAG",
-      "v": 0.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "357SIG",
-      "v": 0.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "36GA",
-      "v": 2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "380ACP",
-      "v": 0.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "38SPL",
-      "v": 0.4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "38Super",
-      "v": 0.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "44MAG",
-      "v": 0.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "45ACP",
-      "v": 0.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "500MAG",
-      "v": 0.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "9mm",
-      "v": 5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "SC",
-      "cal": "Sin calibre",
-      "v": 3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "v": 452.2
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": ".40",
-      "v": 27.4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "12GA",
-      "v": 88.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "223REM",
-      "v": 150.3
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "22LR",
       "v": 35.3
     },
     {
       "m": "SIN MARCA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 0
+    },
+    {
+      "m": "SIN MARCA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "500MAG",
+      "v": 0.6
+    },
+    {
+      "m": "SIN MARCA",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "SIN MARCA",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "B",
-      "cal": "22MAG",
-      "v": 4
+      "cat": "A",
+      "cal": "Sin calibre",
+      "v": 29.4
     },
     {
       "m": "SIN MARCA",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
-      "cal": "308WIN",
-      "v": 0.4
+      "cal": "22LR",
+      "v": 2
     },
     {
       "m": "SIN MARCA",
@@ -1855,7 +4383,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "380ACP",
-      "v": 76.3
+      "v": 0.4
     },
     {
       "m": "SIN MARCA",
@@ -1863,7 +4391,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "38Super",
-      "v": 1.9
+      "v": 1
     },
     {
       "m": "SIN MARCA",
@@ -1871,15 +4399,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "45ACP",
-      "v": 8.9
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "6,35/25Auto",
-      "v": 11
+      "v": 1
     },
     {
       "m": "SIN MARCA",
@@ -1895,7 +4415,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "9mm",
-      "v": 98.5
+      "v": 0.5
     },
     {
       "m": "SIN MARCA",
@@ -1903,31 +4423,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 123.6
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "12GA",
-      "v": 1.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "16 GA",
-      "v": 0.5
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "36GA",
-      "v": 4.1
+      "v": 13.7
     },
     {
       "m": "SIN MARCA",
@@ -1935,7 +4431,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 1788.7
+      "v": 297.6
     },
     {
       "m": "SIN MARCA",
@@ -1943,7 +4439,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 7.5
+      "v": 1.2
     },
     {
       "m": "SIN MARCA",
@@ -1951,15 +4447,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 5.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": ".40",
-      "v": 7.1
+      "v": 0.5
     },
     {
       "m": "SIN MARCA",
@@ -1967,7 +4455,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "223REM",
-      "v": 12.7
+      "v": 0.5
     },
     {
       "m": "SIN MARCA",
@@ -1975,31 +4463,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "22LR",
-      "v": 1.9
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "22MAG",
-      "v": 0.9
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "308WIN",
-      "v": 0.8
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "380ACP",
-      "v": 0.9
+      "v": 0.2
     },
     {
       "m": "SIN MARCA",
@@ -2007,7 +4471,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "38Super",
-      "v": 0.4
+      "v": 0.2
     },
     {
       "m": "SIN MARCA",
@@ -2015,15 +4479,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "45ACP",
-      "v": 4
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "6,35/25Auto",
-      "v": 0.2
+      "v": 0.5
     },
     {
       "m": "SIN MARCA",
@@ -2039,7 +4495,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "9mm",
-      "v": 5.6
+      "v": 0.2
     },
     {
       "m": "SIN MARCA",
@@ -2047,23 +4503,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 58.9
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "12GA",
-      "v": 0.7
-    },
-    {
-      "m": "SIN MARCA",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "36GA",
-      "v": 0.2
+      "v": 4.4
     },
     {
       "m": "SIN MARCA",
@@ -2071,7 +4511,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 247.1
+      "v": 48.6
     },
     {
       "m": "SIN MARCA",
@@ -2079,7 +4519,87 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 4.3
+      "v": 1.4
+    },
+    {
+      "m": "SMITH & WESSON",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "22LR",
+      "v": 3.1
+    },
+    {
+      "m": "SMITH & WESSON",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 6.1
+    },
+    {
+      "m": "SMITH & WESSON",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.3
+    },
+    {
+      "m": "SNAKE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 675.3
+    },
+    {
+      "m": "SNAKE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "SNAKE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 12.6
+    },
+    {
+      "m": "SNIPER",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.1
+    },
+    {
+      "m": "SNIPER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.6
+    },
+    {
+      "m": "STAND SPORT",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 13.1
+    },
+    {
+      "m": "STAND SPORT",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 1.1
     },
     {
       "m": "STEYR",
@@ -2096,6 +4616,246 @@ var DATOS = {
       "cat": "C",
       "cal": "Sin calibre",
       "v": 0.1
+    },
+    {
+      "m": "SUFIX",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "SUFIX",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "SUMAX",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 12.6
+    },
+    {
+      "m": "SUMAX",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 6
+    },
+    {
+      "m": "SUNDANCE",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "6,35/25Auto",
+      "v": 3.4
+    },
+    {
+      "m": "SUNDANCE",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "6,35/25Auto",
+      "v": 0.1
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 23.8
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 50.1
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 442.5
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Deposito DIGEMABEL",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 3.8
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": ".40",
+      "v": 37
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "38Super",
+      "v": 14.3
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "7,65/32Auto",
+      "v": 2.6
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "9mm",
+      "v": 22.7
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 4
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": ".40",
+      "v": 2.4
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 7.2
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "38Super",
+      "v": 0.8
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 0.2
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 2.3
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 6.4
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 2.7
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": ".40",
+      "v": 3
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.7
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "38Super",
+      "v": 0.2
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 0.9
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 2.2
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.2
+    },
+    {
+      "m": "TANFOGLIO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3
     },
     {
       "m": "TAURUS",
@@ -2146,6 +4906,142 @@ var DATOS = {
       "v": 2.1
     },
     {
+      "m": "TIKKA",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "308WIN",
+      "v": 5
+    },
+    {
+      "m": "TINCK",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 1046.6
+    },
+    {
+      "m": "TINCK",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "223REM",
+      "v": 85
+    },
+    {
+      "m": "TISAS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": ".40",
+      "v": 1.2
+    },
+    {
+      "m": "TISAS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 1
+    },
+    {
+      "m": "TISAS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 2.5
+    },
+    {
+      "m": "TISAS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": ".40",
+      "v": 0.9
+    },
+    {
+      "m": "TISAS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "45ACP",
+      "v": 0.7
+    },
+    {
+      "m": "TOPPING",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "TOPPING",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.4
+    },
+    {
+      "m": "TRAMONTINA",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "TRAMONTINA",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
+    },
+    {
+      "m": "TRUGLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 1.7
+    },
+    {
+      "m": "TRUGLO",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 6.9
+    },
+    {
+      "m": "TRUGLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.9
+    },
+    {
+      "m": "TRUGLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 7.6
+    },
+    {
+      "m": "TRUGLO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 1.7
+    },
+    {
       "m": "TSS",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -2192,6 +5088,30 @@ var DATOS = {
       "cat": "NC",
       "cal": "Sin calibre",
       "v": 0.2
+    },
+    {
+      "m": "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 2.2
+    },
+    {
+      "m": "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 24
+    },
+    {
+      "m": "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0
     },
     {
       "m": "UMAREX",
@@ -2290,6 +5210,78 @@ var DATOS = {
       "v": 1
     },
     {
+      "m": "UNCLE MIKES",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 10.8
+    },
+    {
+      "m": "UNCLE MIKES",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 3.5
+    },
+    {
+      "m": "UTAS",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "Sin calibre",
+      "v": 20.1
+    },
+    {
+      "m": "UZKON",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.8
+    },
+    {
+      "m": "VALOR",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 21.5
+    },
+    {
+      "m": "VALOR",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 27.9
+    },
+    {
+      "m": "VALOR",
+      "tipo": "Municiones",
+      "dep": "Incautación DIGEMABEL",
+      "cat": "SC",
+      "cal": "12GA",
+      "v": 5.7
+    },
+    {
+      "m": "VALOR",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "16 GA",
+      "v": 0.4
+    },
+    {
+      "m": "VALOR",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "SC",
+      "cal": "20GA",
+      "v": 0.9
+    },
+    {
       "m": "VECTOR OPTICS",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -2328,6 +5320,14 @@ var DATOS = {
       "cat": "B",
       "cal": "Sin calibre",
       "v": 26
+    },
+    {
+      "m": "VEXTER",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.9
     },
     {
       "m": "VICOPTICS",
@@ -2440,6 +5440,14 @@ var DATOS = {
       "cat": "B",
       "cal": "Sin calibre",
       "v": 0.5
+    },
+    {
+      "m": "ZIPPO",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "v": 0.5
     }
   ],
   "DETALLE": [
@@ -2465,7 +5473,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 14,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "PROSEGUR PARAGUAY SA - 80001646-7",
@@ -2505,7 +5513,7 @@ var DATOS = {
     ],
     [
       "Cartuchos Mirage 12 #7 30,5GR 25x10",
-      "SIN MARCA",
+      "MIRAGE",
       "SC",
       "ALL / MUNICION",
       "PC y SURVIVAL SHOP - MIRCO PASCAL MÜLLER - 2302853-0",
@@ -2515,7 +5523,7 @@ var DATOS = {
     ],
     [
       "Rifle Mendoza 22LR Puma SemiAuto Madera MirasReflect 17T ",
-      "SIN MARCA",
+      "MENDOZA",
       "SC",
       "ALL / ARMA",
       "CHACO OUTDOORS SOCIEDAD ANONIMA, CHACO OUTDOORS (ASU) - 80069395-7",
@@ -2535,7 +5543,7 @@ var DATOS = {
     ],
     [
       "Pistola SigSauer 9MM MPX SemiAuto",
-      "SIN MARCA",
+      "SIG SAUER",
       "SC",
       "ALL / ARMA",
       "EVAN BENITO OVELAR FERNANDEZ - . - 1068584-7",
@@ -2565,7 +5573,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. PERUN X16 10,5 '' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "ELLIOTT GEORGE HUGHES - 9130760-0",
@@ -2635,7 +5643,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 8,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "VENTURI SPORT E.I.R.L. de Cristian de Souza Cano - 80122368-7",
@@ -2645,7 +5653,7 @@ var DATOS = {
     ],
     [
       "Pistola SigSauer 9MM MPX SemiAuto",
-      "SIN MARCA",
+      "SIG SAUER",
       "SC",
       "ALL / ARMA",
       "KILIAN GRONERT - 9364543",
@@ -2655,7 +5663,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -2665,7 +5673,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "CONSORCIO LOS AMIGOS - MIRCO PASCAL MÜLLER - 80122972-3",
@@ -2725,7 +5733,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 28 BUCK 9P T3",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "DANUHE S.A. - 80084602-8",
@@ -2735,7 +5743,7 @@ var DATOS = {
     ],
     [
       "Escopeta Superpuesta DERYA cal 12 Mod. MERIVA MRS2 30Â´Â´ ",
-      "SIN MARCA",
+      "DERYA",
       "SC",
       "ALL / ARMA",
       "ERIKVON SNEIDERN DUSSAN - 5879640-1",
@@ -2905,7 +5913,7 @@ var DATOS = {
     ],
     [
       "Pistola FN l Cal. 45ACP l Negro l Mod. FNX l 3C. L 15T. l Punto rojo. ",
-      "SIN MARCA",
+      "FN",
       "SC",
       "ALL / ARMA",
       "JEREMIE TARDIF NADON - 9210548",
@@ -2915,7 +5923,7 @@ var DATOS = {
     ],
     [
       "Pistola FN l Cal. 45ACP l Negro l Mod. FNX l 3C. L 15T. l Punto rojo. ",
-      "SIN MARCA",
+      "FN",
       "SC",
       "ALL / ARMA",
       "FABIO VIDAL CINO NUÑEZ - 2141551-0",
@@ -2985,7 +5993,7 @@ var DATOS = {
     ],
     [
       "Pistola TANFOGLIO cal 9mm Mod. Combat R  2 cargadores 15 tiros ",
-      "SIN MARCA",
+      "TANFOGLIO",
       "SC",
       "ALL / ARMA",
       "A Y E CAZA Y PESCA CELULARES Y ELECTRONICA - MARIA ELIZABETH SILGUERO MEZA - 3557808-4",
@@ -3085,7 +6093,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 14,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "MIGUEL ANDRES PFANNL DE AGUIRRE - 2472450-5",
@@ -3095,7 +6103,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 14,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "EVAN BENITO OVELAR FERNANDEZ - . - 1068584-7",
@@ -3105,7 +6113,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 14,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "LUIS ROBERTO SANABRIA RIVEROS - 1857396-7",
@@ -3125,7 +6133,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "ELVIO VICENTE JAQUET LUGO - 5884253-5",
@@ -3145,7 +6153,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 10,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "AMMO S.A. - 80112226-0",
@@ -3155,7 +6163,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 10,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "MARCIAL ERNESTO BATE LOPEZ - 4941866-1",
@@ -3195,7 +6203,7 @@ var DATOS = {
     ],
     [
       "Carabina  Rossi 38 SPL Puma 077 ",
-      "SIN MARCA",
+      "ROSSI",
       "SC",
       "ALL / ARMA",
       "VIRGINIA FLORES DE KERZENBERGER - 2369854-3",
@@ -3205,7 +6213,7 @@ var DATOS = {
     ],
     [
       "Carabina  Rossi 38 SPL Puma 077 ",
-      "SIN MARCA",
+      "ROSSI",
       "SC",
       "ALL / ARMA",
       "RENE AUGUSTO SALAS CARDOZO - 683911-8",
@@ -3265,7 +6273,7 @@ var DATOS = {
     ],
     [
       "Rifle marca TINCK cal 223REM Mod. ARX15-MS 8,5'' 1 carg 30 tiros",
-      "SIN MARCA",
+      "TINCK",
       "SC",
       "ALL / ARMA",
       "A Y E CAZA Y PESCA CELULARES Y ELECTRONICA - MARIA ELIZABETH SILGUERO MEZA - 3557808-4",
@@ -3275,7 +6283,7 @@ var DATOS = {
     ],
     [
       "Cartuchos Rio Posta Cal 20 4x4",
-      "SIN MARCA",
+      "RIO",
       "SC",
       "ALL / MUNICION",
       "SELVA GUARANI de Angel Dario Salas Gonzalez - 3681146-7",
@@ -3285,7 +6293,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "CAZA Y PESCA EL AGUILA S.R.L. - 80071412-1",
@@ -3295,7 +6303,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "Agro San Alberto Caza y Pezca - César De Brito - 5392914-4",
@@ -3355,7 +6363,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -3495,7 +6503,7 @@ var DATOS = {
     ],
     [
       "PISTOLA MARCA PARA ORDNANCE MODELO ESPERT CALIBRE .45 ACP ",
-      "SIN MARCA",
+      "PARA ORDNANCE",
       "SC",
       "ALL / ARMA",
       "FRANCISCO JOSE GRIÑO TROCHE - 3197398-1",
@@ -3555,7 +6563,7 @@ var DATOS = {
     ],
     [
       "Rifle Sabatti 223 REM ROVER 600DL Cul.Sint.1C",
-      "SIN MARCA",
+      "SABATTI",
       "SC",
       "ALL / ARMA",
       "RODRIGO TREBASTONI FIGUEREDO - 4942439-4",
@@ -3635,7 +6643,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "PC y SURVIVAL SHOP - MIRCO PASCAL MÜLLER - 2302853-0",
@@ -3645,7 +6653,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 20 #3 GOLD 28gr T2 ",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -3665,7 +6673,7 @@ var DATOS = {
     ],
     [
       "Escopeta semiautomica Armsan verde 12 M. RS-S1 20´´ 2C.5-10tiros",
-      "SIN MARCA",
+      "ARMSAN",
       "SC",
       "ALL / ARMA",
       "CHUNMAE LEE - 6900795-0",
@@ -3735,7 +6743,7 @@ var DATOS = {
     ],
     [
       "Revolver Colt I Cal. 38SPL I Madera I Mod. Police Positive I 2 P. I 6T. ",
-      "SIN MARCA",
+      "COLT",
       "SC",
       "ALL / ARMA",
       "ALBERTO ANASTACIO CARVALLO - 1888869-0",
@@ -3745,7 +6753,7 @@ var DATOS = {
     ],
     [
       "Pistola TANFOGLIO cal 9mm Mod. Combat F  2 cargadores 15 tiros ",
-      "SIN MARCA",
+      "TANFOGLIO",
       "SC",
       "ALL / ARMA",
       "CAZA Y PESCA PARANA - Hector Rieve Cabral - 2556488-9",
@@ -3755,7 +6763,7 @@ var DATOS = {
     ],
     [
       "Balas IMI 9MM 158GR SubSonica PNormalCobreada 1000/50",
-      "SIN MARCA",
+      "IMI",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -3765,7 +6773,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "Amazonas Caza y Pesca - Luis José Blanco Portillo - 4918888-7",
@@ -3775,7 +6783,7 @@ var DATOS = {
     ],
     [
       "Pistola Tanfoglio 40SW Stock2 DA/SA Inox 2C 12T",
-      "SIN MARCA",
+      "TANFOGLIO",
       "SC",
       "ALL / ARMA",
       "CYNTHIA CAROLINA LEON GIMENEZ - 4617363-3",
@@ -3785,7 +6793,7 @@ var DATOS = {
     ],
     [
       "Pistola Tanfoglio 40SW Stock2 DA/SA Inox 2C 12T",
-      "SIN MARCA",
+      "TANFOGLIO",
       "SC",
       "ALL / ARMA",
       "ROLANDO JAVIER PARRA ROLON - 5320298-8",
@@ -3845,7 +6853,7 @@ var DATOS = {
     ],
     [
       "Revolver Ruger l Cal. 357 MAG l Niquel l Mod. Speed-Six l 2P. l 6T. ",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "LUIS RAMON SALAZAR SANTOS - 4641110-0",
@@ -3855,7 +6863,7 @@ var DATOS = {
     ],
     [
       "Rifle Semiautomico Ruger l Cal. 22LR l Mod. 10/22 l 2C. l 25T.  ",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "RUBEN ADRIAN ESTIGARRIBIA GARAY - 1144130-5",
@@ -3905,7 +6913,7 @@ var DATOS = {
     ],
     [
       "Balas IMI 5.56/223 62Gr M855 FMJ BT1200/30",
-      "SIN MARCA",
+      "IMI",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -3915,7 +6923,7 @@ var DATOS = {
     ],
     [
       "Cartuchos Mirage 12 #7 30,5GR 25x10",
-      "SIN MARCA",
+      "MIRAGE",
       "SC",
       "ALL / MUNICION",
       "Amazonas Caza y Pesca - Luis José Blanco Portillo - 4918888-7",
@@ -3925,7 +6933,7 @@ var DATOS = {
     ],
     [
       "Cargador KCI cal .40 Mod. Glock 50 tiros",
-      "GLOCK",
+      "KCI",
       "B",
       "ALL / ACCESORIO DE ARMA",
       "GRUPO CELL MOTION S.A., GRUPO CELL MOTION S.A. - CDE - 80062853-5",
@@ -3945,7 +6953,7 @@ var DATOS = {
     ],
     [
       "Cartuchos Valor 12 #5 32gr *25",
-      "SIN MARCA",
+      "VALOR",
       "SC",
       "ALL / MUNICION",
       "JAGUER ARMAS Y MUNICIONES de MIRIAN THAYNA AGUIAR DE SOUZA - 4691271-1",
@@ -3965,7 +6973,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik 9mm Mod. TP9 SFX RIVAL Black 1c. 18T y 2c. 20T",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "BACHIR SEBASTIAN LEONARDO LAMAS REYES - 6507939-6",
@@ -3975,7 +6983,7 @@ var DATOS = {
     ],
     [
       "Rifle Sig Sauer 22LR R522 C 16\" 1C 10T CantGoma",
-      "SIN MARCA",
+      "SIG SAUER",
       "SC",
       "ALL / ARMA",
       "RUBEN ADRIAN ESTIGARRIBIA GARAY - 1144130-5",
@@ -4035,7 +7043,7 @@ var DATOS = {
     ],
     [
       "Pistola ROCK ISLAND cal 9mm Mod STK100 2 cargadores 17+1",
-      "SIN MARCA",
+      "ARMSCOR",
       "SC",
       "ALL / ARMA",
       "ELISEO MARTINEZ ARZAMENDIA - 5120294",
@@ -4045,7 +7053,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "YRENDAGUE SERVICIO DE SEGURIDAD S.A. - 80013251-3",
@@ -4065,7 +7073,7 @@ var DATOS = {
     ],
     [
       "Rifle Semiautomático ISSC Cal.22LR Mod. MK22 FDE 2C. 25T",
-      "SIN MARCA",
+      "ISSC",
       "SC",
       "ALL / ARMA",
       "RENE AUGUSTO SALAS CARDOZO - 683911-8",
@@ -4085,7 +7093,7 @@ var DATOS = {
     ],
     [
       "Pistola EMTAN 9mm M:RAMON Negro 2Carg. 15Tiros",
-      "SIN MARCA",
+      "EMTAN",
       "SC",
       "ALL / ARMA",
       "ANDREA ABIGAIL JARA VILLALBA - 6814719",
@@ -4105,7 +7113,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "YASSER YASSINE EL GHAZZAOUI - 3497098-3",
@@ -4245,7 +7253,7 @@ var DATOS = {
     ],
     [
       "REVOLVER COLT. MOD POLICE POSITIVE CAL 38SPL",
-      "SIN MARCA",
+      "COLT",
       "SC",
       "ALL / ARMA",
       "Edward Harrison Albrecht Pacheco - 2909115-2",
@@ -4255,7 +7263,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik l Cal. 9mm l Negro l Mod. TP9SF Sub Elite l 2C. l 14/15T. ",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "ENZO SEBASTIAN YODICE LOPEZ - 4806583-8",
@@ -4275,7 +7283,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik l Cal. 9mm l FDE l Mod. TP9 l 2 C. l 15/18 T.",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "RODRIGO ENRIQUE CABRERA CANDIA - 4688877-2",
@@ -4355,7 +7363,7 @@ var DATOS = {
     ],
     [
       "Balas IMI 9MM 158GR SubSonica PNormalCobreada 1000/50",
-      "SIN MARCA",
+      "IMI",
       "SC",
       "ALL / MUNICION",
       "YRENDAGUE SERVICIO DE SEGURIDAD S.A. - 80013251-3",
@@ -4365,7 +7373,7 @@ var DATOS = {
     ],
     [
       "Balas IMI 9MM 158GR SubSonica PNormalCobreada 1000/50",
-      "SIN MARCA",
+      "IMI",
       "SC",
       "ALL / MUNICION",
       "EDUARDO KURT KEMPER PERERA - 474508-6",
@@ -4375,7 +7383,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "PROSEGUR PARAGUAY SA - 80001646-7",
@@ -4385,7 +7393,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "SOLUCIONES INTEGRALES DE SEGURIDAD PROSEGUR PARAGUAY  S.A. - 80089399-9",
@@ -4395,7 +7403,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #3 Express 34g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "ERIKVON SNEIDERN DUSSAN - 5879640-1",
@@ -4405,7 +7413,7 @@ var DATOS = {
     ],
     [
       "Cartuchos SAGA 36-65 #1 11gr T1 ",
-      "SIN MARCA",
+      "SAGA",
       "SC",
       "ALL / MUNICION",
       "PASTORE CAZA y PESCA de WILLIAN LUIZ PASTORE - 7278661-2",
@@ -4415,7 +7423,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "PASTORE CAZA y PESCA de WILLIAN LUIZ PASTORE - 7278661-2",
@@ -4445,7 +7453,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik 9mm TP9 Elite Combat Des/Neg. 2C",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "DANIEL RODRIGUEZ GOMEZ - 3812815-2",
@@ -4455,7 +7463,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik 9mm TP9 Elite Combat Des/Neg. 2C",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "BASTIAN KARIN ROJAS JIMENEZ - 3445153-6",
@@ -4485,7 +7493,7 @@ var DATOS = {
     ],
     [
       "Escopeta Semiautomático DERYA Cal 12 Mod. VR70 20P 3 Cargadores Camo 151",
-      "SIN MARCA",
+      "DERYA",
       "SC",
       "ALL / ARMA",
       "RODRIGO ENRIQUE CABRERA CANDIA - 4688877-2",
@@ -4495,7 +7503,7 @@ var DATOS = {
     ],
     [
       "Linterna NITECORE Mod. P10i 1800Lm Bat21700 4000mAh ",
-      "SIN MARCA",
+      "NITECORE",
       "C",
       "ALL / AIRE LIBRE (PROMO)",
       "ESTILO XTREME - JAIME SEBASTIAN DELGADO GONZALEZ - 3007056-2",
@@ -4565,7 +7573,7 @@ var DATOS = {
     ],
     [
       "Rifle DERYA cal 9mm Mod. ZY9 Negro 14,5'' 2 carg 17 tiros ",
-      "SIN MARCA",
+      "DERYA",
       "SC",
       "ALL / ARMA",
       "FABRICIO CARLOS D'AMICO WEHRLE - FABRICIO CARLOS D'AMICO WEHRLE :2525002-7 - 2525002-7",
@@ -4595,7 +7603,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik 9mm Mod. TP9 Sub Elite CAS Black 2C 12/15",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "ADRIAN CARLOS AYALA GONZALES ALVES - 6284918-2",
@@ -4605,7 +7613,7 @@ var DATOS = {
     ],
     [
       "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
-      "SIN MARCA",
+      "BRG",
       "SC",
       "ALL / ARMA",
       "JUAN OSVALDO MARTINEZ - 4960500-3",
@@ -4615,7 +7623,7 @@ var DATOS = {
     ],
     [
       "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
-      "SIN MARCA",
+      "BRG",
       "SC",
       "ALL / ARMA",
       "RUBEN DARIO GOMEZ ARMOA - 2204929-0",
@@ -4625,7 +7633,7 @@ var DATOS = {
     ],
     [
       "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
-      "SIN MARCA",
+      "BRG",
       "SC",
       "ALL / ARMA",
       "RONALDO GALEANO GAONA - 5098786",
@@ -4635,7 +7643,7 @@ var DATOS = {
     ],
     [
       "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
-      "SIN MARCA",
+      "BRG",
       "SC",
       "ALL / ARMA",
       "ROMINA LEANDRA BENITEZ BAEZ - 5197799-0",
@@ -4645,7 +7653,7 @@ var DATOS = {
     ],
     [
       "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
-      "SIN MARCA",
+      "BRG",
       "SC",
       "ALL / ARMA",
       "JOSE VICTOR MARTINEZ CHAMORRO - 4112104-0",
@@ -4655,7 +7663,7 @@ var DATOS = {
     ],
     [
       "Pistola HK 9mm M:USP-C 2carg",
-      "SIN MARCA",
+      "HK",
       "SC",
       "ALL / ARMA",
       "MARK CHRISTOPHER JONES - 9211850",
@@ -4665,7 +7673,7 @@ var DATOS = {
     ],
     [
       "Pistola HK 9mm M:USP-C 2carg",
-      "SIN MARCA",
+      "HK",
       "SC",
       "ALL / ARMA",
       "SERGIO RUBEN CIBILS BAUMANN - 3799254-6",
@@ -4675,7 +7683,7 @@ var DATOS = {
     ],
     [
       "Revolver Ruger 38SPL SP101 DA/SA Inox CachaGoma 5T 3'' #5737",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "HUGO ANTONIO FRANCISCO LARROSA AYALA - 574758-9",
@@ -4685,7 +7693,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28SV2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "ALIDO DE JESUS BAEZ LEZCANO - 6655619",
@@ -4695,7 +7703,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28SV2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "VICTOR MATIAS ROJAS OJEDA - 7453963",
@@ -4705,7 +7713,7 @@ var DATOS = {
     ],
     [
       "Escopeta pajera Remington 12 Mod M887 NITROMAG 28´´ 5+1 tiros",
-      "SIN MARCA",
+      "REMINGTON",
       "SC",
       "ALL / ARMA",
       "RAMON ALBERTO BAREIRO SANCHEZ - 5803551-6",
@@ -4745,7 +7753,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "KEVIN ALCIBIADES LAFUENTE CANDIA - 5627916",
@@ -4755,7 +7763,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "JESUS WILFRIDO SAMUDIO MACHUCA - 1687760-8",
@@ -4765,7 +7773,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "ISIDRO CAÑETE ROLON - 5265054-5",
@@ -4775,7 +7783,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "MARCOS FABIAN LOPEZ DENIS - 6849046",
@@ -4785,7 +7793,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "HUGO JAVIER BENITEZ DELVALLE - 6928049",
@@ -4795,7 +7803,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "DIEGO EMANUEL RAMIREZ - 6956501",
@@ -4805,7 +7813,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "ALAN JESUS SANTOS ARANDA - 6875721-2",
@@ -4815,7 +7823,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "EDGAR RAUL MARIS PEREZ - 5945176",
@@ -4825,7 +7833,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "ISMAIL ABOUL HOQUE - 5677002-2",
@@ -4835,7 +7843,7 @@ var DATOS = {
     ],
     [
       "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
-      "SIN MARCA",
+      "GIRSAN",
       "SC",
       "ALL / ARMA",
       "RICHARD PATRICIO DAVALOS BLANCO - 5334186",
@@ -4845,7 +7853,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik 9mm Mod. TP9 SF Desert/Negro 20T 2C",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "IDILIO IGNACIO ALARCON PEREIRA - 5162567",
@@ -4995,7 +8003,7 @@ var DATOS = {
     ],
     [
       "Pistola Sig Sauer I Cal. 380 ACP I Negra I Mod. P 238 I 2 C. I 5 T. ",
-      "SIN MARCA",
+      "SIG SAUER",
       "SC",
       "ALL / ARMA",
       "MARCOS DAVID CHAPARRO BARRIOS - 4172511-5",
@@ -5035,7 +8043,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik Modelo TP9DA calibre 9mm 3 cargadores",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "JOSE DAVID SAMANIEGO RAMIREZ - 3625341-3",
@@ -5045,7 +8053,7 @@ var DATOS = {
     ],
     [
       "Pistola Canik l Cal. 9mm l Negro l Mod. TP9SF l 1C. l 18T. ",
-      "SIN MARCA",
+      "CANIK",
       "SC",
       "ALL / ARMA",
       "MARCOS AURELIO AVALOS ORTIZ - 5546649",
@@ -5055,7 +8063,7 @@ var DATOS = {
     ],
     [
       "Pistola DERYA cal 9mm Mod DY9 C150K Full Camo 2 carg de 15/17T",
-      "SIN MARCA",
+      "DERYA",
       "SC",
       "ALL / ARMA",
       "GUSTAVO IGNACIO NOLDIN ZARATE - 3563598",
@@ -5075,7 +8083,7 @@ var DATOS = {
     ],
     [
       "Balines APOLO 5,5mm Domed 1,6 gr 25GRAINS 200 x 30 #E19918",
-      "SIN MARCA",
+      "APOLO",
       "A",
       "ALL / AIRSOFT / AIRGUN",
       "RIGOMAR - JUAN MIGUEL MARMOL ALMADA - 6835767-2",
@@ -5095,7 +8103,7 @@ var DATOS = {
     ],
     [
       "Rifle TOZ-TULA 22 LR",
-      "SIN MARCA",
+      "TOZ-TULA",
       "SC",
       "ALL / ARMA",
       "JORGE ANTONIO RODRIGUEZ PORTILLO - 5506710",
@@ -5145,7 +8153,7 @@ var DATOS = {
     ],
     [
       "Cartuchos Rio Posta Cal 20 4x4",
-      "SIN MARCA",
+      "RIO",
       "SC",
       "ALL / MUNICION",
       "CASA SAN JAVIER - FRANCISCO JAVIER PEREIRA RIEVE - 1878889-0",
@@ -5155,7 +8163,7 @@ var DATOS = {
     ],
     [
       "Cartuchos GB 12 #5 Rapid 32g 250/25",
-      "SIN MARCA",
+      "GB",
       "SC",
       "ALL / MUNICION",
       "HUNTER CAZA Y PESCA de GERARDO ALBERTO MEMMEL DE LOS RIOS - 3679965-3",
@@ -5235,7 +8243,7 @@ var DATOS = {
     ],
     [
       "Linterna NITECORE Mod. P10i 1800Lm Bat21700 4000mAh ",
-      "SIN MARCA",
+      "NITECORE",
       "C",
       "ALL / AIRE LIBRE (PROMO)",
       "LA IGLESIA DE JESUCRISTO DE LOS SANTOS DE LOS ULTIMOS DIAS - 80012523-1",
@@ -5265,7 +8273,7 @@ var DATOS = {
     ],
     [
       "Pistola Ruger I Cal. 40 I Two Tone I Mod. SR40C I 2 C. I 9/15 T. ",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "HUGO DANIEL ECHEVERRIA - 3528936-8",
@@ -5305,7 +8313,7 @@ var DATOS = {
     ],
     [
       "Linterna NITECORE Mod. P10 V2 1100Lm SinBat",
-      "SIN MARCA",
+      "NITECORE",
       "C",
       "ALL / AIRE LIBRE (PROMO)",
       "LA IGLESIA DE JESUCRISTO DE LOS SANTOS DE LOS ULTIMOS DIAS - 80012523-1",
@@ -5315,7 +8323,7 @@ var DATOS = {
     ],
     [
       "Linterna NITECORE Mod. MT2APro 1000Lm Bat 1600 mAh y 2xAA ",
-      "SIN MARCA",
+      "NITECORE",
       "C",
       "ALL / AIRE LIBRE (PROMO)",
       "PORTER S.A. - 80076883-3",
@@ -5335,7 +8343,7 @@ var DATOS = {
     ],
     [
       "Revolver Alfa - Proj mod. 291 calibre 22LR",
-      "SIN MARCA",
+      "ALFA",
       "SC",
       "ALL / ARMA",
       "RUBEN ADRIAN ESTIGARRIBIA GARAY - 1144130-5",
@@ -5345,7 +8353,7 @@ var DATOS = {
     ],
     [
       "Pistola Ruger 380ACP LCP DAO 1C 7T c/Cartuc #3701 ",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "VIRGINIA FLORES DE KERZENBERGER - 2369854-3",
@@ -5355,7 +8363,7 @@ var DATOS = {
     ],
     [
       "Pistola kor l Cal. 9mm l FDE l Mod. FX-9 SAND l 2C. l 17T. ",
-      "SIN MARCA",
+      "KOR",
       "SC",
       "ALL / ARMA",
       "Alejandro David Cabrera Mora - ALEJANDRO DAVID CABRERA MORA - 5218827",
@@ -5365,7 +8373,7 @@ var DATOS = {
     ],
     [
       "Revolver Rossi 357MAG",
-      "SIN MARCA",
+      "ROSSI",
       "SC",
       "ALL / ARMA",
       "CARLOS EDUARDO GIARETTA - 7917527-9",
@@ -5385,7 +8393,7 @@ var DATOS = {
     ],
     [
       "Pistola Ruger 380ACP LCP DAO 1C 7T c/Cartuc #3701 ",
-      "SIN MARCA",
+      "RUGER",
       "SC",
       "ALL / ARMA",
       "RODNEY DAVID VELAZQUEZ AYALA - 3505058-6",
@@ -5395,7 +8403,7 @@ var DATOS = {
     ],
     [
       "Pistola kor l Cal. 9mm l FDE l Mod. FX-9 SAND l 2C. l 17T. ",
-      "SIN MARCA",
+      "KOR",
       "SC",
       "ALL / ARMA",
       "VICTOR CARLOS BENITEZ GALEANO - 4492156-0",
@@ -5405,7 +8413,7 @@ var DATOS = {
     ],
     [
       "Pistola AHSS l Cal. 9mm l Negra l Mod. FXS-9 l 2 C. l 17T.",
-      "SIN MARCA",
+      "AHSS",
       "SC",
       "ALL / ARMA",
       "BONIFACIO RAMON CUENCA - 4815163-7",
@@ -5445,6 +8453,246 @@ var DATOS = {
     ]
   ],
   "SERIES": {
+    "ABU GARCIA": [
+      37.9,
+      37.6,
+      36.1,
+      35.1,
+      31.3,
+      23.8,
+      19.6,
+      19.6,
+      19.6,
+      19.6,
+      19.6,
+      19.6,
+      19.6,
+      18.3,
+      18.3,
+      18.3,
+      18.3,
+      18.3
+    ],
+    "AHSS": [
+      15.3,
+      15.3,
+      14.8,
+      7.6,
+      5.1,
+      5.1,
+      4.4,
+      4.4,
+      4.4,
+      8.5,
+      8.5,
+      8.5,
+      12.2,
+      4.1,
+      4.1,
+      7.8,
+      8.3,
+      8.3
+    ],
+    "AITOR": [
+      25,
+      25,
+      19.9,
+      19.1,
+      14.6,
+      19.9,
+      19.9,
+      19.4,
+      19.4,
+      19.4,
+      19.4,
+      18.5,
+      18.5,
+      17.6,
+      17.6,
+      17.6,
+      17.6,
+      17.6
+    ],
+    "AKDAL": [
+      55.5,
+      55.5,
+      55.5,
+      55.5,
+      55.5,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8,
+      27.8
+    ],
+    "AKKAR": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      135.7,
+      112.7,
+      97.4,
+      97.4,
+      74.5,
+      74.5,
+      74.5,
+      74.5,
+      77,
+      77,
+      76.9,
+      93.2,
+      93.2
+    ],
+    "AKSA": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14.8,
+      14.8,
+      3.1,
+      3.1,
+      4.2
+    ],
+    "ALBAINOX": [
+      0.5,
+      0.5,
+      0.5,
+      0.4,
+      0.4,
+      0.4,
+      0.3,
+      0.3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ALFA PROJ": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7
+    ],
+    "AMT": [
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "ANTIGERM": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "APOLO": [
+      228,
+      203,
+      151.9,
+      123.9,
+      163.9,
+      520.8,
+      511.5,
+      468.4,
+      458.9,
+      447.2,
+      432.1,
+      419.4,
+      406.3,
+      390.8,
+      607.5,
+      589.3,
+      561.3,
+      547.4
+    ],
+    "ARATY": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
     "ARMADILLO": [
       0,
       0,
@@ -5464,6 +8712,66 @@ var DATOS = {
       0.2,
       8.2,
       6.5
+    ],
+    "ARMED": [
+      147.5,
+      148,
+      145.3,
+      137.8,
+      135.3,
+      125.7,
+      119.1,
+      123.4,
+      129,
+      127.8,
+      127.8,
+      127.3,
+      126.7,
+      124.9,
+      124.3,
+      123.8,
+      123,
+      123.5
+    ],
+    "ARMSAN": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4.1
+    ],
+    "ARMSCOR": [
+      1194.1,
+      1190.6,
+      1048.8,
+      868.6,
+      790.2,
+      788.7,
+      786.7,
+      785.7,
+      782.1,
+      782,
+      782,
+      782,
+      785.5,
+      765,
+      761.6,
+      761.4,
+      763.9,
+      764.1
     ],
     "ASG": [
       79.7,
@@ -5485,36 +8793,156 @@ var DATOS = {
       842.3,
       830.7
     ],
+    "ATA": [
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4
+    ],
+    "ATTWOOD": [
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "BAIKAL": [
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7,
+      2.7
+    ],
+    "BE ARMOR": [
+      0,
+      0,
+      83.8,
+      83.8,
+      118.6,
+      118.6,
+      90.4,
+      85.7,
+      85.7,
+      85.7,
+      85.7,
+      85.7,
+      85.7,
+      85.7,
+      81,
+      74.4,
+      74.4,
+      74.4
+    ],
+    "BEAMSHOT": [
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
     "BERETTA": [
-      3909.4,
-      3866.4,
-      3044.3,
-      2786.7,
-      2779,
-      2389.2,
-      3011.8,
-      2547.8,
-      2125.4,
-      2062.1,
-      2107.3,
-      2116.3,
-      2033.6,
-      1941.4,
-      1902.8,
-      1857.7,
-      1804.1,
-      1815.6
+      3909.9,
+      3866.9,
+      3044.8,
+      2787.2,
+      2779.5,
+      2388.7,
+      3011.3,
+      2547.3,
+      2124.9,
+      2061.6,
+      2106.8,
+      2115.8,
+      2033.1,
+      1940.9,
+      1902.3,
+      1857.2,
+      1803.6,
+      1815.1
+    ],
+    "BERKLEY": [
+      2.2,
+      2.2,
+      2,
+      1.5,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
     ],
     "BERSA": [
-      7.6,
-      7.6,
-      7.6,
-      7.6,
-      7.6,
-      5.3,
-      5.3,
-      5.3,
-      5.3,
+      10.7,
+      10.7,
+      10.7,
+      10.7,
+      10.7,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
       12.5,
       12.5,
       12.5,
@@ -5524,6 +8952,326 @@ var DATOS = {
       3.1,
       3.1,
       3.1
+    ],
+    "BESTWAY": [
+      11.8,
+      11.8,
+      11.4,
+      8.5,
+      6.9,
+      2.6,
+      2.2,
+      2.3,
+      2.2,
+      1.6,
+      1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "BLAZER": [
+      473.1,
+      473.1,
+      471.4,
+      471,
+      470.7,
+      465.2,
+      464.1,
+      464.1,
+      463.8,
+      463.8,
+      463.8,
+      463.8,
+      463.3,
+      463.1,
+      463,
+      462.8,
+      462.6,
+      462.3
+    ],
+    "BOITO": [
+      177.3,
+      171.2,
+      164.2,
+      154.9,
+      145.7,
+      147.7,
+      145.3,
+      142.2,
+      136.4,
+      134.6,
+      134.6,
+      135.9,
+      134.1,
+      141.6,
+      139.4,
+      132.9,
+      126.7,
+      128.9
+    ],
+    "BRG": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      76.4,
+      70.9,
+      54.5,
+      43.6,
+      43.6,
+      43.6,
+      43.6,
+      32.7,
+      21.8,
+      21.8,
+      21.8,
+      21.8,
+      16.4
+    ],
+    "BROWNING": [
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      0.2,
+      0.2,
+      1.6,
+      1.6,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "BSA": [
+      1.6,
+      1.6,
+      1.6,
+      1.6,
+      1.6,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3,
+      4.3
+    ],
+    "BUSHNELL": [
+      8.8,
+      8.8,
+      8.8,
+      8.8,
+      8.8,
+      4.4,
+      4.4,
+      4.4,
+      4.4,
+      4.4,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "BUTLER CREEK": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "CAL.38": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "CAL.9MM": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "CANIK": [
+      23.3,
+      23.3,
+      23.3,
+      17.6,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      11.8,
+      5,
+      25.1,
+      19.4,
+      13.3,
+      19.4,
+      20.4
+    ],
+    "CASE": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      19.7,
+      19.7
+    ],
+    "CATERPILLAR": [
+      33.4,
+      33,
+      90.7,
+      71.6,
+      99.4,
+      232.4,
+      230.6,
+      231.1,
+      231.2,
+      230.8,
+      230.1,
+      230.1,
+      230.1,
+      229.5,
+      229.2,
+      229,
+      227.7,
+      227.5
+    ],
+    "CCI": [
+      100.7,
+      100.7,
+      100.5,
+      100.1,
+      99.4,
+      98.9,
+      98.9,
+      98.1,
+      97.9,
+      97,
+      97,
+      97,
+      97,
+      97,
+      97,
+      97,
+      94.4,
+      95.1
+    ],
+    "CENTURY": [
+      6.7,
+      6.7,
+      6.6,
+      6.5,
+      6.5,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.8,
+      4.8,
+      4.8,
+      4.8,
+      4.8,
+      5.1
+    ],
+    "CHIAPPA": [
+      34.8,
+      34.8,
+      34.8,
+      24.9,
+      24.9,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      7.3
     ],
     "COLEMAN": [
       180.4,
@@ -5545,25 +9293,185 @@ var DATOS = {
       151.9,
       154.4
     ],
+    "COLT": [
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
+      1.9,
+      1.9,
+      1.9,
+      8.1,
+      1.9,
+      8.1,
+      8.1,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      8
+    ],
+    "COMETA": [
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.8,
+      19.3,
+      19.3,
+      19.3,
+      19.3
+    ],
+    "CON": [
+      0.9,
+      0.9,
+      0.7,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "CROSMAN": [
+      353.2,
+      350.7,
+      323.7,
+      298.7,
+      288.2,
+      205.6,
+      191.1,
+      162.8,
+      139.5,
+      134.8,
+      128.7,
+      122.8,
+      115.5,
+      111.7,
+      102.6,
+      90.7,
+      69.7,
+      69.7
+    ],
     "CZ": [
-      31.2,
-      31.2,
-      23.8,
-      12.2,
-      12.1,
-      16.8,
-      30.7,
-      16.1,
-      16.1,
-      16.1,
-      16.1,
-      16.1,
-      15.8,
-      51,
-      53.3,
-      17.5,
-      24.2,
-      30.8
+      25.5,
+      25.5,
+      18.6,
+      7,
+      7,
+      11.7,
+      26.3,
+      11.7,
+      11.7,
+      11.7,
+      11.7,
+      11.7,
+      11.7,
+      46.9,
+      49.3,
+      13.8,
+      20.4,
+      27
+    ],
+    "DAIWA": [
+      3.7,
+      3.7,
+      2.5,
+      0.9,
+      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "DELISLE": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4.6,
+      0,
+      0,
+      0,
+      4.6,
+      4.6,
+      4.6,
+      4.6,
+      4.6,
+      4.6
+    ],
+    "DERYA": [
+      1161.5,
+      1156.8,
+      1073.5,
+      998.6,
+      979.2,
+      870.6,
+      834.6,
+      832.7,
+      830.4,
+      824.8,
+      827.5,
+      827.5,
+      816.7,
+      833.2,
+      827.6,
+      819.4,
+      823.7,
+      823.7
+    ],
+    "DILLON": [
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3,
+      12.3
     ],
     "DOBERMAN": [
       2123.1,
@@ -5585,25 +9493,185 @@ var DATOS = {
       2593.9,
       2498.5
     ],
+    "DULONAY": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2
+    ],
+    "DURACELL": [
+      2.7,
+      3.9,
+      9.6,
+      9.2,
+      5.5,
+      3.9,
+      3.6,
+      3.3,
+      3,
+      2.9,
+      2.6,
+      2.6,
+      2.4,
+      2.1,
+      2,
+      7.2,
+      6.9,
+      6.9
+    ],
+    "ELEY": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6
+    ],
+    "EVEREADY": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "EXORI": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
     "FAB DEFENSE": [
-      176.8,
-      172.7,
-      123.9,
-      101.2,
-      32.5,
-      300.2,
-      291,
-      289.4,
-      284.9,
-      283.1,
-      279.1,
-      279.9,
-      274.9,
-      268,
-      273.2,
-      272.1,
-      270.3,
-      269.9
+      177.2,
+      173,
+      124.3,
+      101.6,
+      32.9,
+      300.7,
+      291.4,
+      289.8,
+      285.3,
+      283.5,
+      279.5,
+      280.4,
+      275.3,
+      268.4,
+      273.6,
+      272.6,
+      270.8,
+      270.4
+    ],
+    "FEDERAL": [
+      323.3,
+      321.5,
+      321.1,
+      320.5,
+      319.8,
+      319.2,
+      319.1,
+      319.2,
+      319,
+      319,
+      319,
+      319,
+      318.4,
+      320.8,
+      320.7,
+      320.5,
+      321.4,
+      321.4
+    ],
+    "FENWICK": [
+      9.2,
+      9.2,
+      9.2,
+      9.2,
+      9.2,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1
+    ],
+    "FN": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      7.6
     ],
     "FOBUS": [
       0,
@@ -5611,8 +9679,8 @@ var DATOS = {
       0,
       0,
       0,
-      120.8,
-      100.7,
+      120.5,
+      100.4,
       96.4,
       82.3,
       80.2,
@@ -5625,36 +9693,136 @@ var DATOS = {
       50.7,
       50.2
     ],
+    "GAMO": [
+      9.3,
+      9.3,
+      9.1,
+      9.1,
+      8.9,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5,
+      6.5
+    ],
+    "GB": [
+      974.7,
+      920.1,
+      605.3,
+      507.2,
+      175,
+      292.5,
+      279,
+      259.2,
+      254.8,
+      252.8,
+      252.8,
+      252.6,
+      246.5,
+      198.3,
+      165,
+      135.9,
+      129.3,
+      125.8
+    ],
+    "GERBER": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "GIRSAN": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      374.4,
+      368.9,
+      326.4,
+      279.8,
+      274.4,
+      285.1,
+      285.1,
+      274.5,
+      282,
+      271.3,
+      252.1,
+      236,
+      236
+    ],
     "GLOCK": [
-      205,
-      210.3,
-      191,
-      271,
-      222.1,
-      433.2,
-      418.7,
-      415.9,
-      414.1,
-      438.4,
-      437.4,
-      437.3,
-      463.3,
-      421.5,
-      406.4,
-      416.2,
-      401.1,
-      411.3
+      222.4,
+      229.6,
+      212.1,
+      178.8,
+      141,
+      244.3,
+      245.5,
+      245.3,
+      244.7,
+      262.4,
+      262.2,
+      262.2,
+      294.9,
+      254.8,
+      244.7,
+      254,
+      244.5,
+      256.2
+    ],
+    "GOLDEN EAGLE": [
+      612.5,
+      602.8,
+      598.9,
+      556.8,
+      474.6,
+      395.2,
+      358,
+      306.1,
+      295.9,
+      291.8,
+      291.9,
+      291.9,
+      291,
+      290.4,
+      289.1,
+      287,
+      283.5,
+      283.3
     ],
     "GSM": [
-      228.9,
-      226.5,
-      221.1,
-      208.6,
-      201.1,
-      181.1,
-      174.9,
-      172.4,
-      168.2,
+      227.3,
+      224.9,
+      219.5,
+      207,
+      199.6,
+      179.5,
+      173.3,
+      170.8,
+      166.6,
       162.7,
       158.3,
       156.4,
@@ -5664,6 +9832,226 @@ var DATOS = {
       139.9,
       135.8,
       133.8
+    ],
+    "GUEPARDO": [
+      1.4,
+      1.4,
+      1.4,
+      1,
+      1,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "HATSAN": [
+      0,
+      0,
+      0,
+      0,
+      114.1,
+      114.1,
+      112.3,
+      109.4,
+      96,
+      93.1,
+      93.1,
+      93.1,
+      93,
+      116.7,
+      113.9,
+      104.2,
+      101.3,
+      101.3
+    ],
+    "HAWKE": [
+      5.2,
+      5.2,
+      5.2,
+      5.2,
+      5.2,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7,
+      15.7
+    ],
+    "HIPOINT": [
+      5.8,
+      5.8,
+      5.8,
+      5.8,
+      5.8,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4
+    ],
+    "HK": [
+      61.3,
+      61.3,
+      61.3,
+      56.6,
+      56.6,
+      56.5,
+      56.5,
+      37.7,
+      23.6,
+      23.6,
+      23.6,
+      23.6,
+      33.3,
+      27.9,
+      22.7,
+      22.5,
+      22.5,
+      22.5
+    ],
+    "HOGUE": [
+      9,
+      9,
+      9,
+      9,
+      9,
+      7.4,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3,
+      7.3
+    ],
+    "HOPPES": [
+      1.8,
+      1.8,
+      1.6,
+      1.6,
+      1.5,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "HORNADY": [
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
+    ],
+    "HOWA": [
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "IMALENT": [
+      5.3,
+      5.3,
+      4.9,
+      4.5,
+      4.5,
+      21.3,
+      21.3,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7,
+      20.7
+    ],
+    "IMI": [
+      4438.7,
+      4420.1,
+      4404,
+      4363.1,
+      4353,
+      4345.3,
+      4342.3,
+      4337.4,
+      4324.5,
+      4317.2,
+      4317.9,
+      4317.9,
+      4299.4,
+      4262.3,
+      4245.3,
+      4224.9,
+      4230.9,
+      4226.8
     ],
     "INDUNAYLON": [
       0.1,
@@ -5685,36 +10073,376 @@ var DATOS = {
       3.6,
       3.6
     ],
+    "INTEX": [
+      0.8,
+      0.8,
+      0.8,
+      0.6,
+      0.5,
+      0.7,
+      0.6,
+      0.6,
+      0.5,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "INTRATEC": [
+      13.1,
+      13.1,
+      13.1,
+      13.1,
+      13.1,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3
+    ],
+    "ISSC": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10.5,
+      3.8,
+      3.8,
+      3.8,
+      3.8
+    ],
+    "JACKSON": [
+      0,
+      0,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "KCI": [
+      131.5,
+      123.5,
+      122,
+      230.4,
+      169.5,
+      331.6,
+      313.2,
+      311,
+      308.5,
+      308.2,
+      308.2,
+      308.2,
+      301,
+      299.8,
+      298.3,
+      297.8,
+      299.8,
+      299.6
+    ],
+    "KLEEN-BORE": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
     "KONUS": [
-      494.1,
-      484,
-      475.9,
-      466.6,
-      2369.6,
-      2262.2,
-      2247.3,
-      2236.2,
-      2231.6,
-      2214.4,
-      2451.2,
-      2449.4,
-      2444.9,
-      2425.2,
-      2407,
-      2437.5,
-      2409.9,
-      2393.2
+      493.7,
+      483.6,
+      475.5,
+      466.2,
+      2369.2,
+      2261.4,
+      2246.4,
+      2235.3,
+      2230.8,
+      2214.8,
+      2451.6,
+      2449.8,
+      2445.3,
+      2425.7,
+      2407.4,
+      2437.9,
+      2410.3,
+      2393.7
+    ],
+    "KOR": [
+      1472.6,
+      1434.7,
+      766.5,
+      549.8,
+      171.5,
+      102.2,
+      9.4,
+      4.7,
+      2.4,
+      11.3,
+      13.6,
+      18.4,
+      8.9,
+      2.4,
+      2.4,
+      2.4,
+      2.4,
+      2.4
+    ],
+    "LEE": [
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      5.6,
+      5.6,
+      5.6,
+      5.6,
+      5.6
+    ],
+    "LEUPOLD": [
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      4.9,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4
+    ],
+    "LLAMA": [
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.7
+    ],
+    "LORCIN": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "LUJOSO": [
+      26.9,
+      26.9,
+      26.9,
+      26.9,
+      25.9,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "LUVO": [
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      26.5,
+      50.6,
+      50.6,
+      50.6,
+      50.6,
+      50.6
+    ],
+    "LYMAN": [
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5,
+      8.5
+    ],
+    "MAGLITE": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6
+    ],
+    "MARINE SPORTS": [
+      10.5,
+      9.9,
+      8.2,
+      8.1,
+      6.7,
+      11.1,
+      10.8,
+      10.2,
+      10.2,
+      10,
+      9.6,
+      9.4,
+      9.4,
+      9.3,
+      9.3,
+      9.3,
+      9.3,
+      9.3
+    ],
+    "MARKSMAN": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
     ],
     "MARLIN": [
-      8.6,
-      8.6,
-      8.6,
-      8.2,
-      8.2,
-      4.2,
-      4.2,
-      4.2,
-      4.2,
+      8.7,
+      8.7,
+      8.7,
+      8.4,
+      8.4,
+      4.4,
+      4.4,
+      4.4,
+      4.4,
       4.2,
       4.1,
       4.1,
@@ -5724,6 +10452,126 @@ var DATOS = {
       4.1,
       4.1,
       10.7
+    ],
+    "MAXELL": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "MEC": [
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "MEGGAR": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "MENDOZA": [
+      1337.6,
+      1335.8,
+      1332.5,
+      1317,
+      1231.6,
+      1216.5,
+      1199.2,
+      1180.8,
+      1167.4,
+      1159.5,
+      1164.7,
+      1166.4,
+      1129.8,
+      1144.6,
+      1141.3,
+      1130.8,
+      1132.5,
+      1132.5
+    ],
+    "MILLET": [
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1
+    ],
+    "MOR": [
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
     ],
     "MOSSBERG": [
       22.3,
@@ -5745,25 +10593,705 @@ var DATOS = {
       3.8,
       5.9
     ],
+    "MUSTAD": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      6.2,
+      6.2,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6.1,
+      6
+    ],
+    "NAA": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
+    ],
     "NAUTIKA": [
-      667.9,
-      654.7,
-      639.4,
-      592.9,
-      541.8,
-      510.6,
-      492.1,
-      483.9,
-      467.1,
-      454.7,
-      445.1,
-      433.5,
-      424.4,
+      672.9,
+      659.7,
+      643.7,
+      596.5,
+      545.4,
+      514.3,
+      495.8,
+      487.6,
+      470.6,
+      458.2,
+      448.6,
+      437.1,
+      427.5,
+      419.6,
       416.5,
-      413.4,
-      409.2,
-      388.5,
-      387
+      412.3,
+      391.5,
+      390.1
+    ],
+    "NIETO": [
+      62.4,
+      62.1,
+      60.6,
+      60.1,
+      57.1,
+      57.8,
+      56.2,
+      47.8,
+      45.8,
+      44.9,
+      44.2,
+      44.2,
+      42.5,
+      40.3,
+      39,
+      38.4,
+      34.7,
+      34.7
+    ],
+    "NITECORE": [
+      228.1,
+      235.9,
+      185.7,
+      156.9,
+      136.7,
+      226,
+      214.9,
+      376.8,
+      361.6,
+      344.6,
+      341.9,
+      329.1,
+      323.6,
+      307.7,
+      299.8,
+      296.7,
+      202,
+      197.3
+    ],
+    "NORINCO": [
+      43.8,
+      43.8,
+      43.8,
+      43.8,
+      43.8,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5,
+      23.5
+    ],
+    "OLIGHT": [
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.5,
+      7.5,
+      7.5,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      3.3,
+      3.3,
+      3.3
+    ],
+    "OTTONI": [
+      1.5,
+      1.5,
+      1.4,
+      1.4,
+      1.4,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9
+    ],
+    "PACHMAYR": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "PANASONIC": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "PICATINY": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "PLANO": [
+      16.4,
+      16.4,
+      16.4,
+      16.3,
+      16.3,
+      16.3,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2,
+      16.2
+    ],
+    "PMC": [
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1,
+      9.1
+    ],
+    "POLV.540P": [
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "POLVORA": [
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1
+    ],
+    "POLYMER": [
+      4.6,
+      4.6,
+      4.3,
+      4,
+      3.2,
+      4,
+      3.7,
+      3.6,
+      3.7,
+      3.7,
+      3.7,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6
+    ],
+    "PPU": [
+      17.3,
+      17.3,
+      15.1,
+      11.1,
+      10.7,
+      10.7,
+      10.3,
+      10.3,
+      10,
+      10,
+      10,
+      10,
+      9.4,
+      7.3,
+      5.7,
+      4.6,
+      3.8,
+      3.8
+    ],
+    "PUCARA": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
+    "RAB-01": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "RAIGLON": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "RAPALA": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3
+    ],
+    "RAYOVAC": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "REBEL": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "REMINGTON": [
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      5.7,
+      5.7,
+      5.7,
+      5.1,
+      4.4,
+      5.1,
+      5.1,
+      3.2,
+      8.6,
+      8.6,
+      3.2,
+      3.2,
+      3.2
+    ],
+    "REPLAST": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "REXIO": [
+      9.5,
+      9.5,
+      8.3,
+      8.3,
+      9,
+      9.2,
+      9.2,
+      9.2,
+      9.2,
+      8.1,
+      8.1,
+      8.1,
+      10.5,
+      9.9,
+      10.1,
+      10.1,
+      10.1,
+      12.2
+    ],
+    "REYSOL": [
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.4,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5,
+      7.5
+    ],
+    "RIO": [
+      23.2,
+      23.2,
+      23.2,
+      23.2,
+      23,
+      23,
+      22.7,
+      22.6,
+      22.6,
+      22.6,
+      22.6,
+      22.6,
+      22.6,
+      22.6,
+      5,
+      0.5,
+      0.5,
+      0.3
+    ],
+    "ROCKY BOOTS": [
+      66.4,
+      66.4,
+      61.8,
+      61.4,
+      60.7,
+      60.1,
+      59.5,
+      59.5,
+      59.5,
+      58.7,
+      58.7,
+      51.6,
+      52.3,
+      50.2,
+      51,
+      51,
+      51,
+      51
+    ],
+    "RUGER": [
+      184.1,
+      184.1,
+      183.6,
+      173.3,
+      173.9,
+      180.1,
+      181,
+      173.1,
+      172.9,
+      166.3,
+      166.5,
+      169.5,
+      179.5,
+      165.6,
+      165.6,
+      168.6,
+      186.2,
+      186.2
+    ],
+    "RULE": [
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.2,
+      0.2,
+      0.2
+    ],
+    "SAFIR": [
+      106.8,
+      106.8,
+      106.8,
+      106.8,
+      106.8,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.3,
+      111.1,
+      111.1
+    ],
+    "SAGA": [
+      1432.8,
+      1273.6,
+      1033.1,
+      947.5,
+      840,
+      813.2,
+      761.9,
+      739.3,
+      719.7,
+      719.2,
+      719.2,
+      719.1,
+      701.8,
+      693.6,
+      689.6,
+      652.4,
+      649.3,
+      634.2
+    ],
+    "SARSILMAZ": [
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5,
+      28.5
+    ],
+    "SAVAGE": [
+      9.8,
+      9.8,
+      9.8,
+      9.8,
+      9.8,
+      14.8,
+      14.8,
+      14.8,
+      13.6,
+      9.2,
+      9.2,
+      9.2,
+      8,
+      7.4,
+      7.4,
+      7.4,
+      11.5,
+      11.5
     ],
     "SELLIER": [
       6010.2,
@@ -5785,25 +11313,145 @@ var DATOS = {
       10452.3,
       10435.1
     ],
+    "SHIMANO": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "SIG SAUER": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      217.5,
+      217.5,
+      179,
+      179.2,
+      179.4,
+      179.4,
+      180.1,
+      207,
+      200.3,
+      200.4,
+      200.4,
+      198.5,
+      198.5
+    ],
     "SIN MARCA": [
-      23559.4,
-      23235.8,
-      21562,
-      20510.8,
-      19366.3,
-      20188.5,
-      16718.6,
-      16430.9,
-      16026.8,
-      15895.3,
-      15915.6,
-      15892,
-      15610.1,
-      15533.5,
-      15508.1,
-      15227.4,
-      15124.7,
-      15107.5
+      3533.5,
+      3534.9,
+      3541.7,
+      3535.8,
+      3523.2,
+      3467.1,
+      436.7,
+      437.2,
+      434.7,
+      446.5,
+      442.6,
+      442.3,
+      440.7,
+      472.7,
+      472,
+      465.4,
+      487.9,
+      487
+    ],
+    "SMITH & WESSON": [
+      8.5,
+      8.5,
+      8.2,
+      8.2,
+      8.2,
+      8.2,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      3.5,
+      9.6
+    ],
+    "SNAKE": [
+      1050.2,
+      1049.7,
+      1039.4,
+      1036.1,
+      1028,
+      710.6,
+      704.3,
+      703.7,
+      703.5,
+      702.1,
+      700.6,
+      696.8,
+      696.5,
+      695.5,
+      694.8,
+      694.1,
+      690.6,
+      688
+    ],
+    "SNIPER": [
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "STAND SPORT": [
+      2.3,
+      2.3,
+      2.3,
+      2.2,
+      2.2,
+      14.4,
+      14.4,
+      14.4,
+      14.4,
+      14.3,
+      14.2,
+      14.1,
+      14.1,
+      14.1,
+      14,
+      14,
+      14,
+      14.2
     ],
     "STEYR": [
       0.3,
@@ -5825,16 +11473,96 @@ var DATOS = {
       0.5,
       0.5
     ],
+    "SUFIX": [
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
+    "SUMAX": [
+      33.6,
+      33.3,
+      34.8,
+      32,
+      29.8,
+      26.1,
+      25.3,
+      24.2,
+      23.9,
+      23.4,
+      21.7,
+      21.1,
+      20.6,
+      19.8,
+      19.7,
+      19.2,
+      18.6,
+      18.6
+    ],
+    "SUNDANCE": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.5,
+      3.5
+    ],
+    "TANFOGLIO": [
+      1219.3,
+      1219,
+      1128.3,
+      1074.6,
+      991,
+      987.8,
+      953.3,
+      881.9,
+      799.6,
+      769.5,
+      788.5,
+      796.6,
+      704.7,
+      690.3,
+      654.6,
+      647.1,
+      641.4,
+      637
+    ],
     "TAURUS": [
-      54.8,
-      54.8,
-      54.8,
-      61.7,
-      59.2,
-      26.4,
-      23.6,
-      23.6,
-      23.6,
+      56.7,
+      56.7,
+      56.7,
+      63.6,
+      61.1,
+      28.3,
+      25.5,
+      25.5,
+      25.5,
       25.7,
       25.7,
       25.7,
@@ -5844,6 +11572,126 @@ var DATOS = {
       18.7,
       20.6,
       25.5
+    ],
+    "TIKKA": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "TINCK": [
+      1651.7,
+      1651.7,
+      1568.7,
+      1525.2,
+      1485.1,
+      1447.4,
+      1436.9,
+      1406.8,
+      1288.2,
+      1257.1,
+      1267.4,
+      1267.4,
+      1185.9,
+      1165.2,
+      1165.2,
+      1131.4,
+      1131.7,
+      1131.7
+    ],
+    "TISAS": [
+      21.2,
+      21.2,
+      21.2,
+      21.2,
+      21.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2,
+      6.2
+    ],
+    "TOPPING": [
+      4.1,
+      4.1,
+      3.8,
+      3.7,
+      3.5,
+      2.4,
+      2,
+      1.8,
+      1.8,
+      1.3,
+      1.3,
+      1.4,
+      1.3,
+      1.2,
+      1.2,
+      1.1,
+      0.9,
+      0.9
+    ],
+    "TRAMONTINA": [
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.1,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.3,
+      1.3
+    ],
+    "TRUGLO": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      17.7,
+      17.8,
+      17.3,
+      17.3,
+      24.2,
+      23.2,
+      23.2,
+      22.8,
+      22,
+      20.4,
+      21.2,
+      20.1,
+      18.8
     ],
     "TSS": [
       60.6,
@@ -5865,6 +11713,26 @@ var DATOS = {
       53.6,
       53
     ],
+    "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)": [
+      43.4,
+      44.9,
+      41.5,
+      39.4,
+      41,
+      38.4,
+      32.8,
+      32.3,
+      30.6,
+      30.4,
+      28.5,
+      28.5,
+      28.3,
+      26.9,
+      25.5,
+      25.5,
+      26.2,
+      26.2
+    ],
     "UMAREX": [
       2227,
       2124,
@@ -5885,16 +11753,96 @@ var DATOS = {
       3262.5,
       3185.8
     ],
+    "UNCLE MIKES": [
+      10.3,
+      10.3,
+      10.3,
+      10.3,
+      10.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3,
+      14.3
+    ],
+    "UTAS": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20.1,
+      20.1,
+      20.1,
+      20.1,
+      20.1
+    ],
+    "UZKON": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "VALOR": [
+      73.8,
+      73.8,
+      73.8,
+      73.7,
+      73.7,
+      73.7,
+      73.5,
+      73.5,
+      73.5,
+      73.4,
+      73.4,
+      73.4,
+      73.4,
+      73.4,
+      73.4,
+      63.9,
+      56.4,
+      56.4
+    ],
     "VECTOR OPTICS": [
-      58.7,
-      58.7,
-      252,
-      225.3,
-      212.9,
-      85.9,
-      61.1,
-      60.2,
-      42.9,
+      179.5,
+      179.6,
+      372.8,
+      346.2,
+      333.8,
+      206.8,
+      181.9,
+      181.1,
+      163.8,
       291.5,
       271.1,
       268.8,
@@ -5904,6 +11852,26 @@ var DATOS = {
       381.5,
       366.8,
       362.3
+    ],
+    "VEXTER": [
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
     ],
     "VICOPTICS": [
       0,
@@ -5964,57 +11932,255 @@ var DATOS = {
       19.4,
       9.4,
       14
+    ],
+    "ZIPPO": [
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
     ]
   },
   "CMV6": {
+    "ABU GARCIA": 1.3,
+    "AHSS": 17.6,
+    "AITOR": 3.4,
+    "AKKAR": 8.8,
+    "AKSA": 11.7,
+    "ALFA": 4.6,
+    "ALFA PROJ": 4.9,
+    "ANTIGERM": 0,
+    "APOLO": 144.9,
+    "ARATY": 0,
     "ARMADILLO": 12.7,
+    "ARMED": 6,
+    "ARMSAN": 7.9,
+    "ARMSCOR": 24.3,
     "ASG": 299.6,
+    "BE ARMOR": 8.5,
+    "BENELLI": 3.1,
     "BERETTA": 624.6,
     "BERSA": 11.7,
+    "BESTWAY": 0.4,
+    "BLAZER": 1.1,
+    "BOITO": 24.8,
+    "BRG": 27.3,
+    "BROWNING": 4.1,
+    "BULL": 3.9,
+    "CANIK": 51.9,
+    "CASE": 0.5,
+    "CATERPILLAR": 2.8,
+    "CCI": 0.1,
+    "CENTURY": 0,
+    "CHIAPPA": 0,
     "COLEMAN": 18.3,
-    "CZ": 94,
+    "COLT": 13.8,
+    "COMETA": 0.5,
+    "CROSMAN": 78.6,
+    "CZ": 93.3,
+    "DAIWA": 0,
+    "DERYA": 56.2,
     "DOBERMAN": 2394.4,
+    "DULONAY": 0,
+    "DURACELL": 0.9,
+    "EMTAN": 6.6,
     "FAB DEFENSE": 37,
+    "FEDERAL": 1,
+    "FN": 25.2,
     "FOBUS": 28.5,
-    "GLOCK": 172.8,
+    "GB": 136.4,
+    "GIRSAN": 83.1,
+    "GLOCK": 141.7,
+    "GOLDEN EAGLE": 5.4,
     "GSM": 31.6,
+    "HATSAN": 18.4,
+    "HK": 10.9,
+    "HOPPES": 0,
+    "IMI": 103.6,
     "INDUNAYLON": 1.3,
+    "ISSC": 6.7,
+    "KCI": 25.4,
     "KONUS": 143.4,
+    "KOR": 29.3,
+    "LEE": 0.6,
+    "LUVO": 0,
+    "MAHELY": 0.8,
+    "MARINE SPORTS": 0.2,
+    "MARKSMAN": 0,
     "MARLIN": 6.4,
+    "MAUSER": 3.5,
+    "MENDOZA": 83.9,
+    "MIRAGE": 77.1,
     "MOSSBERG": 17.9,
-    "NAUTIKA": 61.5,
+    "MUSTAD": 0.1,
+    "NAUTIKA": 62,
+    "NIETO": 10.3,
+    "NITECORE": 84.8,
+    "OLIGHT": 0.7,
+    "OTTONI": 0,
+    "PARA ORDNANCE": 8.6,
+    "PLANO": 0,
+    "POLYMER": 0.2,
+    "PPU": 5.5,
+    "REMINGTON": 9.2,
+    "REXIO": 2.5,
+    "RIO": 22.8,
+    "ROCKY BOOTS": 9.3,
+    "ROSSI": 28.3,
+    "RUGER": 38.7,
+    "RULE": 0.2,
+    "SABATTI": 10,
+    "SAGA": 91.1,
+    "SAVAGE": 1.9,
     "SELLIER": 43.7,
-    "SIN MARCA": 2111.2,
+    "SIG SAUER": 71.9,
+    "SIN MARCA": 12.8,
+    "SMITH & WESSON": 0,
+    "SNAKE": 12.9,
+    "STAND SPORT": 0.2,
+    "SUMAX": 3.2,
+    "TANFOGLIO": 210.3,
     "TAURUS": 18.3,
+    "TINCK": 332.8,
+    "TOPPING": 0.4,
+    "TOZ-TULA": 7.7,
+    "TRAMONTINA": 0.1,
+    "TRUGLO": 11.9,
     "TSS": 10.3,
+    "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)": 3,
     "UMAREX": 1263.7,
+    "UTAS": 0,
+    "VALOR": 18.4,
+    "VALTRO": 4.5,
     "VECTOR OPTICS": 87.9,
     "VICOPTICS": 24.1,
     "WALTHER": 41.6,
     "WINCHESTER": 24.4
   },
   "COMPRAS6": {
+    "ABU GARCIA": 0,
+    "AHSS": 20.6,
+    "AITOR": 0,
+    "AKKAR": 12.1,
+    "AKSA": 55,
+    "ALFA": 13.6,
+    "ALFA PROJ": 8.5,
+    "ANTIGERM": 0,
+    "APOLO": 201.9,
+    "ARATY": 0,
     "ARMADILLO": 23.6,
+    "ARMED": 0,
+    "ARMSAN": 35.3,
+    "ARMSCOR": 10.6,
     "ASG": 573.4,
+    "BE ARMOR": 0,
+    "BENELLI": 0,
     "BERETTA": 180.2,
     "BERSA": 0,
+    "BESTWAY": 0,
+    "BLAZER": 0,
+    "BOITO": 33.9,
+    "BRG": 0,
+    "BROWNING": 12.1,
+    "BULL": 3.8,
+    "CANIK": 59.7,
+    "CASE": 14.1,
+    "CATERPILLAR": 0,
+    "CCI": 0,
+    "CENTURY": 0,
+    "CHIAPPA": 2,
     "COLEMAN": 0,
+    "COLT": 13.5,
+    "COMETA": 0,
+    "CROSMAN": 1.3,
     "CZ": 107.6,
+    "DAIWA": 0,
+    "DERYA": 56.5,
     "DOBERMAN": 1718.9,
+    "DULONAY": 1.2,
+    "DURACELL": 16.6,
+    "EMTAN": 19.6,
     "FAB DEFENSE": 6.4,
+    "FEDERAL": 2.5,
+    "FN": 20,
     "FOBUS": 0,
+    "GB": 0,
+    "GIRSAN": 32.8,
     "GLOCK": 236.5,
+    "GOLDEN EAGLE": 0,
     "GSM": 0,
+    "HATSAN": 33.1,
+    "HK": 35,
+    "HOPPES": 0,
+    "IMI": 0,
     "INDUNAYLON": 0,
+    "ISSC": 17.1,
+    "KCI": 0,
     "KONUS": 0,
+    "KOR": 8.5,
+    "LEE": 0,
+    "LUVO": 56.8,
+    "MAHELY": 0,
+    "MARINE SPORTS": 0,
+    "MARKSMAN": 0,
     "MARLIN": 12.8,
+    "MAUSER": 0,
+    "MENDOZA": 38.2,
+    "MIRAGE": 0,
     "MOSSBERG": 13.9,
+    "MUSTAD": 0,
     "NAUTIKA": 0,
+    "NIETO": 0,
+    "NITECORE": 0,
+    "OLIGHT": 0,
+    "OTTONI": 0,
+    "PARA ORDNANCE": 0,
+    "PLANO": 0,
+    "POLYMER": 0,
+    "PPU": 0,
+    "REMINGTON": 10.7,
+    "REXIO": 6.4,
+    "RIO": 0,
+    "ROCKY BOOTS": 0,
+    "ROSSI": 42.7,
+    "RUGER": 38,
+    "RULE": 0,
+    "SABATTI": 24.7,
+    "SAGA": 0,
+    "SAVAGE": 4,
     "SELLIER": 0,
-    "SIN MARCA": 1180.1,
+    "SIG SAUER": 58.7,
+    "SIN MARCA": 92.5,
+    "SMITH & WESSON": 6,
+    "SNAKE": 0,
+    "STAND SPORT": 0,
+    "SUMAX": 0,
+    "TANFOGLIO": 5.5,
     "TAURUS": 24.6,
+    "TINCK": 0,
+    "TOPPING": 0,
+    "TOZ-TULA": 7.6,
+    "TRAMONTINA": 0,
+    "TRUGLO": 0,
     "TSS": 0,
+    "Thu Nov 05 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)": 0,
     "UMAREX": 2785.6,
+    "UTAS": 47.3,
+    "VALOR": 0,
+    "VALTRO": 0,
     "VECTOR OPTICS": 0,
     "VICOPTICS": 0,
     "WALTHER": 25.4,
