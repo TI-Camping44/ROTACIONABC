@@ -70,6 +70,7 @@ header.top{background:var(--paper); border-bottom:1px solid var(--line)}
 }
 .fgroup{display:flex; align-items:center; gap:8px}
 .flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+#f-serie{min-width:190px}
 select,input[type=date]{
   font-family:var(--mono); font-size:12.5px; padding:5px 8px; border:1px solid var(--line);
   background:#FAFBFB; border-radius:2px; color:var(--ink);
@@ -141,6 +142,10 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 /* ---------- grilla de tortas por marca ---------- */
 .pies{display:grid; grid-template-columns:repeat(auto-fill,minmax(178px,1fr)); gap:10px}
 .pie{background:var(--paper); border:1px solid var(--line); padding:12px; text-align:center}
+.pie{cursor:pointer; transition:border-color .15s, box-shadow .15s}
+.pie:hover{border-color:var(--ink2)}
+.pie:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.pie.on{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
 .pie h4{font-family:var(--disp); font-size:14px; text-transform:uppercase; letter-spacing:.05em; margin:0 0 1px; font-weight:600}
 .pie .tot{font-family:var(--mono); font-size:11.5px; color:var(--muted); margin-bottom:8px}
 .pie .mini{display:flex; gap:3px; justify-content:center; margin-top:9px; flex-wrap:wrap}
@@ -287,8 +292,10 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
       <div class="shead"><h2>Evolución del stock</h2><div class="rule"></div>
         <div class="note">Reconstruido desde las capas de valorización de Odoo</div></div>
       <div class="card">
-        <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:16px">
-          <div class="fgroup"><span class="flab">Marca</span><div class="chips" id="f-serie"></div></div>
+        <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:18px">
+          <div class="fgroup"><label class="flab" for="f-serie">Marca</label>
+            <select id="f-serie"></select></div>
+          <div class="stamp" id="serie-resumen"></div>
         </div>
         <div id="evo-chart"></div>
         <p class="sub" style="margin:12px 0 0">
@@ -296,7 +303,7 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
           de los últimos seis meses proyectado sobre el plazo de reposición.
           <b>Es una referencia, no una alarma:</b> hasta que se cargue el plazo real de cada
           proveedor, no sirve para disparar una compra.
-          El histórico abarca todos los depósitos y no responde al filtro de arriba.
+          El histórico abarca todos los depósitos: la valorización de Odoo no separa por almacén.
         </p>
       </div>
     </section>
@@ -443,8 +450,8 @@ function armarFiltros(){
     '<button class="chip sm" data-v="*" aria-pressed="true">Todos</button>' +
     tipos.map(function(t){ return '<button class="chip sm" data-v="'+esc(t)+'" aria-pressed="false">'+esc(t)+'</button>'; }).join("");
 
-  document.getElementById("f-dep").addEventListener("change", function(){ f.dep = this.value; pintar(); });
-  document.getElementById("f-marca").addEventListener("change", function(){ f.marca = this.value; pintar(); });
+  document.getElementById("f-dep").addEventListener("change", function(){ f.dep = this.value; pintar(); sincronizarSerie(); });
+  document.getElementById("f-marca").addEventListener("change", function(){ f.marca = this.value; pintar(); sincronizarSerie(); });
   selCat.addEventListener("change", function(){ f.cat = this.value; pintar(); });
   Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(b){
     b.addEventListener("click", function(){
@@ -452,7 +459,7 @@ function armarFiltros(){
       Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
         x.setAttribute("aria-pressed", x === b);
       });
-      pintar();
+      pintar(); sincronizarSerie();
     });
   });
   document.getElementById("f-reset").addEventListener("click", function(){
@@ -460,6 +467,7 @@ function armarFiltros(){
     document.getElementById("f-dep").value = "*";
     document.getElementById("f-marca").value = "*";
     selCat.value = "*";
+    sincronizarSerie();
     Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
       x.setAttribute("aria-pressed", x.dataset.v === "*");
     });
@@ -542,7 +550,7 @@ function tablaMarcas(filas, T){
     tr.addEventListener("click", function(){
       f.marca = (f.marca === tr.dataset.marca) ? "*" : tr.dataset.marca;
       document.getElementById("f-marca").value = f.marca;
-      pintar();
+      pintar(); sincronizarSerie();
     });
   });
 }
@@ -584,12 +592,26 @@ function tortas(filas){
   }
   document.getElementById("pies").innerHTML = top.map(function(r){
     var T = suma(r);
+    var activa = (f.marca === r.k);
     var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
       return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
     }).join("");
-    return '<div class="pie"><h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
+      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
       donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
   }).join("");
+
+  Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
+    var elegir = function(){
+      f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar(); sincronizarSerie();
+    };
+    el.addEventListener("click", elegir);
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
+    });
+  });
 }
 
 function detalle(){
@@ -625,73 +647,114 @@ function detalle(){
 
 /* ---------------- Parte 2 ---------------- */
 function marcasConSerie(){
-  return Object.keys(SERIES).filter(function(m){ return (SERIES[m]||[]).length; })
+  /* Respeta el tipo y el depósito elegidos arriba: si filtraste Municiones,
+     acá aparecen solo las marcas de munición. */
+  var visibles = {};
+  STOCK.forEach(function(r){
+    if ((f.dep === "*" || r.dep === f.dep) && (f.tipo === "*" || r.tipo === f.tipo)) visibles[r.m] = true;
+  });
+  return Object.keys(SERIES)
+    .filter(function(m){ return (SERIES[m]||[]).length && visibles[m]; })
     .sort(function(a,b){ return (CMV6[b]||0) - (CMV6[a]||0); });
 }
 
-function chipsSerie(){
+/** Mantiene la marca de la Parte 2 alineada con el filtro de la Parte 1. */
+function sincronizarSerie(){
   var lista = marcasConSerie();
+  var sel = document.getElementById("f-serie");
   if (!lista.length) {
-    document.getElementById("f-serie").innerHTML = '<span class="sub">Sin histórico disponible.</span>';
+    sel.innerHTML = '<option>Sin histórico</option>';
+    serieActiva = null;
+    evolucion(); rotacion();
     return;
   }
+  if (f.marca !== "*" && lista.indexOf(f.marca) >= 0) serieActiva = f.marca;
   if (!serieActiva || lista.indexOf(serieActiva) < 0) serieActiva = lista[0];
-  document.getElementById("f-serie").innerHTML = lista.slice(0, 30).map(function(m){
-    return '<button class="chip sm" data-m="'+esc(m)+'" aria-pressed="'+(m===serieActiva)+'">'+esc(m)+'</button>';
+
+  sel.innerHTML = lista.map(function(m){
+    return '<option value="'+esc(m)+'"'+(m===serieActiva?' selected':'')+'>'+esc(m)+'</option>';
   }).join("");
-  Array.prototype.forEach.call(document.querySelectorAll("#f-serie .chip"), function(b){
-    b.addEventListener("click", function(){ serieActiva = b.dataset.m; chipsSerie(); evolucion(); });
-  });
+  evolucion(); rotacion();
 }
 
 function evolucion(){
-  var d = SERIES[serieActiva] || [];
   var caja = document.getElementById("evo-chart");
-  if (d.length < 2) { caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>'; return; }
+  var resumen = document.getElementById("serie-resumen");
+  var d = serieActiva ? (SERIES[serieActiva] || []) : [];
+  if (d.length < 2) {
+    caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>';
+    resumen.textContent = "";
+    return;
+  }
 
-  var W = 1040, H = 300, P = {t:18,r:22,b:34,l:74};
+  var W = 1040, H = 320, P = {t:26, r:26, b:42, l:82};
   var iw = W-P.l-P.r, ih = H-P.t-P.b;
-  var max = Math.max.apply(null, d) * 1.12 || 1;
+  var max = Math.max.apply(null, d);
+  var tope = max > 0 ? max*1.15 : 1;
   var X = function(i){ return P.l + i*(iw/(d.length-1)); };
-  var Y = function(v){ return P.t + ih - (v/max)*ih; };
+  var Y = function(v){ return P.t + ih - (v/tope)*ih; };
   var linea = d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
   var area = linea + " L"+X(d.length-1).toFixed(1)+" "+(P.t+ih)+" L"+P.l+" "+(P.t+ih)+" Z";
-  var rep = Math.round((CMV6[serieActiva]||0)/6*1.8);
 
   var grid = "";
   for (var g=0; g<=4; g++){
-    var v = max*g/4, y = Y(v);
-    grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+'" stroke="#E6E9E9"/>'+
-      '<text class="axis" x="'+(P.l-9)+'" y="'+(y+3.5).toFixed(1)+'" text-anchor="end">'+fmt(Math.round(v))+'</text>';
+    var v = tope*g/4, y = Y(v);
+    grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+
+      '" stroke="#E6E9E9"/><text class="axis" x="'+(P.l-10)+'" y="'+(y+3.5).toFixed(1)+
+      '" text-anchor="end">'+fmt(Math.round(v))+'</text>';
   }
+
+  /* Con muchos meses se saltean etiquetas para que no se pisen. */
+  var paso = d.length > 14 ? 2 : 1;
   var etiquetas = d.map(function(_,i){
-    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-12)+'" text-anchor="middle">'+esc(MESES[i]||"")+'</text>';
+    if (i % paso !== 0 && i !== d.length-1) return "";
+    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-14)+'" text-anchor="middle">'+
+      esc(MESES[i] || "") + '</text>';
   }).join("");
+
   var puntos = d.map(function(v,i){
-    return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.2" fill="#fff" stroke="#12161A" stroke-width="1.6">'+
-      '<title>'+esc(MESES[i]||"")+': '+gsM(v)+'</title></circle>';
+    return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.4" fill="#fff" '+
+      'stroke="#12161A" stroke-width="1.6"><title>'+esc(MESES[i]||"")+': '+gsM(v)+'</title></circle>';
   }).join("");
-  var lineaRep = (rep > 0 && rep < max)
+
+  /* Valor del último mes, rotulado sobre el punto. */
+  var ult = d[d.length-1];
+  var rotulo = '<text class="axis" x="'+(X(d.length-1)).toFixed(1)+'" y="'+(Y(ult)-14).toFixed(1)+
+    '" text-anchor="end" fill="#12161A" stroke="#fff" stroke-width="3.5" paint-order="stroke"'+
+    ' style="font-weight:600">'+fmt(Math.round(ult))+' M</text>';
+
+  var rep = Math.round((CMV6[serieActiva]||0)/6*1.8);
+  var lineaRep = (rep > 0 && rep < tope)
     ? '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
-      '<text class="axis" x="'+(W-P.r)+'" y="'+(Y(rep)-7).toFixed(1)+'" text-anchor="end" fill="#A6432E">'+
+      '<text class="axis" x="'+(P.l+6)+'" y="'+(Y(rep)-7).toFixed(1)+'" fill="#A6432E">'+
       'Reposición estimada · '+fmt(rep)+' M</text>'
     : "";
 
   caja.innerHTML =
     '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(serieActiva)+'">'+
     '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
-      '<stop offset="0%" stop-color="#12161A" stop-opacity=".14"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
+      '<stop offset="0%" stop-color="#12161A" stop-opacity=".13"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
     '</linearGradient></defs>'+ grid +
     '<path d="'+area+'" fill="url(#fade)"/>'+
-    '<path d="'+linea+'" fill="none" stroke="#12161A" stroke-width="2" stroke-linejoin="round"/>'+
-    lineaRep + puntos + etiquetas + '</svg>';
+    '<path d="'+linea+'" fill="none" stroke="#12161A" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'+
+    lineaRep + puntos + rotulo + etiquetas + '</svg>';
+
+  /* Resumen al lado del selector: de dónde a dónde fue el stock. */
+  var ini0 = d[0];
+  var variacion = ini0 ? (ult - ini0) / ini0 * 100 : 0;
+  var pico = Math.max.apply(null, d), piso = Math.min.apply(null, d);
+  resumen.textContent =
+    gsM(ini0) + " → " + gsM(ult) +
+    "  (" + (variacion >= 0 ? "+" : "") + variacion.toFixed(0) + "%)" +
+    "   ·   máx " + fmt(Math.round(pico)) + " · mín " + fmt(Math.round(piso));
 }
 
 function rotacion(){
   var actual = {};
-  STOCK.forEach(function(r){ actual[r.m] = (actual[r.m]||0) + r.v; });
+  STOCK.forEach(function(r){ if (pasa(r)) actual[r.m] = (actual[r.m]||0) + r.v; });
 
-  var filas = marcasConSerie().map(function(m){
+  var lista = marcasConSerie();
+  var filas = lista.map(function(m){
     var s = SERIES[m];
     var prom = s.reduce(function(a,b){return a+b;},0)/s.length;
     var cmv = CMV6[m] || 0;
@@ -725,10 +788,12 @@ tabs.forEach(function(t,i){
 });
 
 armarFiltros();
+document.getElementById("f-serie").addEventListener("change", function(){
+  serieActiva = this.value;
+  evolucion();
+});
 pintar();
-chipsSerie();
-evolucion();
-rotacion();
+sincronizarSerie();
 })();
 </script>
 </body>
