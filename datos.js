@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 07/08/2026 17:15.
+/* Generado desde la planilla el 08/08/2026 08:45.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -34,14 +34,14 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "07/08/2026 17:15",
+  "GENERADO": "08/08/2026 08:45",
   "EMPRESA": "CAMPING44",
   "MESES": [
     "sep 25",
     "oct",
     "nov",
     "dic",
-    "Mon Jan 26 2026 05:00:00 GMT-0300 (hora estándar de Paraguay)",
+    "ene 26",
     "feb",
     "mar",
     "abr",
@@ -609,7 +609,7 @@ var DATOS = {
       "tipo": "Municiones",
       "dep": "Central",
       "cat": "SC",
-      "v": 10420
+      "v": 10419.7
     },
     {
       "m": "SELLIER",
@@ -4257,7 +4257,7 @@ var DATOS = {
       10487.7,
       10474.5,
       10452.3,
-      10435.3
+      10435.1
     ],
     "SIN MARCA": [
       16592.1,
@@ -4403,7 +4403,7 @@ var DATOS = {
     "MARLIN": 6.4,
     "MOSSBERG": 17.9,
     "NAUTIKA": 61.1,
-    "SELLIER": 43.5,
+    "SELLIER": 43.7,
     "SIN MARCA": 2111.2,
     "TAURUS": 18.3,
     "TSS": 10.3,
