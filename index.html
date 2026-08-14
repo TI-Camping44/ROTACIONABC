@@ -205,6 +205,11 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 [hidden]{display:none !important}
 th.sel{cursor:pointer; user-select:none}
+th.ord{cursor:pointer; user-select:none; white-space:nowrap}
+th.ord:hover{color:var(--B)}
+th.ord::after{content:"⇅"; font-size:9px; color:var(--line); margin-left:4px}
+th.ord.asc::after{content:"▲"; font-size:8px; color:var(--ink)}
+th.ord.desc::after{content:"▼"; font-size:8px; color:var(--ink)}
 th.sel:hover{color:var(--B); text-decoration:underline}
 th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
 td.dim{opacity:.32}
@@ -303,7 +308,7 @@ td.dim{opacity:.32}
           </div>
           <div style="overflow-x:auto"><table id="tbl-marcas">
             <thead><tr>
-              <th>Marca</th>
+              <th class="ord l" data-k="k">Marca</th>
               <th class="sel" data-cat="A" title="Filtrar por A">A</th>
               <th class="sel" data-cat="B" title="Filtrar por B">B</th>
               <th class="sel" data-cat="C" title="Filtrar por C">C</th>
@@ -311,7 +316,7 @@ td.dim{opacity:.32}
               <th class="sel" data-cat="MUN" title="Filtrar por municiones">MUN</th>
               <th class="sel" data-cat="CARG" title="Filtrar por cargadores">CARG</th>
               <th class="sel" data-cat="NC" title="Filtrar por sin categorizar">Sin categorizar</th>
-              <th>Total</th><th style="width:120px">Mezcla</th>
+              <th class="ord" data-k="_t">Total</th><th style="width:120px">Mezcla</th>
             </tr></thead><tbody></tbody><tfoot></tfoot>
           </table></div>
         </div>
@@ -323,7 +328,7 @@ td.dim{opacity:.32}
         <div class="note">Mismo criterio, abierto por ubicación física</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
         <thead><tr>
-          <th>Depósito</th>
+          <th class="ord l" data-k="k">Depósito</th>
           <th class="sel" data-cat="A">A</th>
           <th class="sel" data-cat="B">B</th>
           <th class="sel" data-cat="C">C</th>
@@ -331,7 +336,7 @@ td.dim{opacity:.32}
           <th class="sel" data-cat="MUN">MUN</th>
           <th class="sel" data-cat="CARG">CARG</th>
           <th class="sel" data-cat="NC">Sin categorizar</th>
-          <th>Total</th><th>% del stock</th>
+          <th class="ord" data-k="_t">Total</th><th>% del stock</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -341,7 +346,8 @@ td.dim{opacity:.32}
         <div class="note">Sale de las etiquetas de producto de Odoo · clic para filtrar</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-cal">
         <thead><tr>
-          <th>Calibre</th><th>Tipo</th><th>Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
+          <th class="ord l" data-k="k">Calibre</th><th class="l">Tipo</th>
+          <th class="ord" data-k="v">Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -358,9 +364,14 @@ td.dim{opacity:.32}
         </div>
         <div style="overflow-x:auto"><table id="tbl-art">
           <thead><tr>
-            <th class="l">Referencia</th><th class="l">Producto</th><th class="l">Marca</th>
-            <th class="l">Depósito</th><th class="l">Cat.</th><th class="l">Calibre</th>
-            <th>Cantidad</th><th>Valor a costo</th>
+            <th class="ord l" data-k="0">Referencia</th>
+            <th class="ord l" data-k="1">Producto</th>
+            <th class="ord l" data-k="2">Marca</th>
+            <th class="ord l" data-k="4">Depósito</th>
+            <th class="ord l" data-k="5">Cat.</th>
+            <th class="ord l" data-k="6">Calibre</th>
+            <th class="ord" data-k="7">Cantidad</th>
+            <th class="ord" data-k="8">Valor a costo</th>
           </tr></thead><tbody></tbody>
         </table></div>
       </div>
@@ -420,8 +431,12 @@ td.dim{opacity:.32}
         </p>
         <div style="overflow-x:auto"><table id="tbl-rot">
         <thead><tr>
-          <th>Marca</th><th>Costo de venta (Gs.)</th><th>Stock promedio (Gs.)</th>
-          <th>Stock actual (Gs.)</th><th>Rotación (veces/año)</th><th class="l">Lectura</th>
+          <th class="ord l" data-k="m">Marca</th>
+          <th class="ord" data-k="cmv">Costo de venta (Gs.)</th>
+          <th class="ord" data-k="prom">Stock promedio (Gs.)</th>
+          <th class="ord" data-k="act">Stock actual (Gs.)</th>
+          <th class="ord" data-k="rot">Rotación (veces/año)</th>
+          <th class="l">Lectura</th>
         </tr></thead><tbody></tbody>
       </table></div></div>
     </section>
@@ -466,6 +481,29 @@ var sumaFuera = function(o){ var t=0; FUERA.forEach(function(k){ t += o[k]||0; }
 /* ---------------- estado de filtros ---------------- */
 var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
 var serieActiva = null;
+/* Orden de cada tabla: columna y sentido. */
+var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false},
+              mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
+
+/** Ordena filas por una clave, con texto e números tratados distinto. */
+function ordenar(filas, k, asc){
+  return filas.slice().sort(function(a,b){
+    var x = a[k], y = b[k];
+    var cmp = (typeof x === "number" && typeof y === "number")
+      ? x - y
+      : String(x).localeCompare(String(y), "es", {numeric:true, sensitivity:"base"});
+    return asc ? cmp : -cmp;
+  });
+}
+
+/** Deja los encabezados mostrando qué columna ordena y en qué sentido. */
+function marcarOrden(sel, est){
+  Array.prototype.forEach.call(document.querySelectorAll(sel + " th.ord"), function(th){
+    var activa = String(th.dataset.k) === String(est.k);
+    th.classList.toggle("asc", activa && est.asc);
+    th.classList.toggle("desc", activa && !est.asc);
+  });
+}
 var per = { desde: 0, hasta: (DATOS.MESES || []).length - 1 };
 
 var pasa = function(r){
@@ -637,6 +675,30 @@ function armarFiltros(){
     URL.revokeObjectURL(url);
   });
 
+  /* Clic en un encabezado ordenable: primera vez descendente, después alterna. */
+  var conectarOrden = function(sel, est, repintar){
+    Array.prototype.forEach.call(document.querySelectorAll(sel + " th.ord"), function(th){
+      th.setAttribute("role", "button");
+      th.setAttribute("tabindex", "0");
+      th.title = "Ordenar por " + th.textContent.trim();
+      var usar = function(){
+        var k = isNaN(th.dataset.k) ? th.dataset.k : Number(th.dataset.k);
+        if (String(est.k) === String(k)) est.asc = !est.asc;
+        else { est.k = k; est.asc = false; }
+        repintar();
+      };
+      th.addEventListener("click", usar);
+      th.addEventListener("keydown", function(e){
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); usar(); }
+      });
+    });
+  };
+  conectarOrden("#tbl-marcas", orden.mar, function(){ pintar(); });
+  conectarOrden("#tbl-dep", orden.dep, function(){ pintar(); });
+  conectarOrden("#tbl-cal", orden.cal, function(){ pintar(); });
+  conectarOrden("#tbl-rot", orden.rot, function(){ rotacion(); });
+  conectarOrden("#tbl-art", orden.art, function(){ tablaArticulos(); });
+
   /* Clic en el encabezado de una categoría: filtra por ella. */
   Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
     th.setAttribute("role", "button");
@@ -800,6 +862,10 @@ function tablaMarcas(filas, T){
     return true;
   });
 
+  vis.forEach(function(r){ r._t = suma(r); });
+  vis = ordenar(vis, orden.mar.k, orden.mar.asc);
+  marcarOrden("#tbl-marcas", orden.mar);
+
   document.getElementById("q-n").textContent =
     vis.length === filas.length ? fmt(vis.length) + " marcas"
                                 : fmt(vis.length) + " de " + fmt(filas.length);
@@ -880,9 +946,17 @@ function tablaArticulos(){
     filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
 
   if (!filas.length) {
-    tb.innerHTML = '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>';
+    /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
+       lo segundo es un problema de publicación, no del filtro. */
+    tb.innerHTML = ARTICULOS.length
+      ? '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>'
+      : '<tr><td colspan="8" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+        'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
+        'versión del script, y refrescá esta página con Ctrl+F5.</td></tr>';
     return;
   }
+  filas = ordenar(filas, orden.art.k, orden.art.asc);
+  marcarOrden("#tbl-art", orden.art);
   var top = filas.slice(0, 300);
   tb.innerHTML = top.map(function(a){
     var c = a[A_CAT];
@@ -914,10 +988,14 @@ function tablaCalibres(T){
   var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
     .filter(function(r){ return r.v > 0; })
     .sort(function(a,b){
-      if (a.k === "Sin calibre") return 1;
-      if (b.k === "Sin calibre") return -1;
-      return b.v - a.v;
+      if (orden.cal.k === "v" && !orden.cal.asc) {
+        if (a.k === "Sin calibre") return 1;
+        if (b.k === "Sin calibre") return -1;
+      }
+      return 0;
     });
+  filas = ordenar(filas, orden.cal.k, orden.cal.asc);
+  marcarOrden("#tbl-cal", orden.cal);
 
   var sec = document.getElementById("sec-cal");
   var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
@@ -1014,9 +1092,17 @@ function tablaArticulos(){
     filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
 
   if (!filas.length) {
-    tb.innerHTML = '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>';
+    /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
+       lo segundo es un problema de publicación, no del filtro. */
+    tb.innerHTML = ARTICULOS.length
+      ? '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>'
+      : '<tr><td colspan="8" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+        'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
+        'versión del script, y refrescá esta página con Ctrl+F5.</td></tr>';
     return;
   }
+  filas = ordenar(filas, orden.art.k, orden.art.asc);
+  marcarOrden("#tbl-art", orden.art);
   var top = filas.slice(0, 300);
   tb.innerHTML = top.map(function(a){
     var c = a[A_CAT];
@@ -1048,10 +1134,14 @@ function tablaCalibres(T){
   var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
     .filter(function(r){ return r.v > 0; })
     .sort(function(a,b){
-      if (a.k === "Sin calibre") return 1;
-      if (b.k === "Sin calibre") return -1;
-      return b.v - a.v;
+      if (orden.cal.k === "v" && !orden.cal.asc) {
+        if (a.k === "Sin calibre") return 1;
+        if (b.k === "Sin calibre") return -1;
+      }
+      return 0;
     });
+  filas = ordenar(filas, orden.cal.k, orden.cal.asc);
+  marcarOrden("#tbl-cal", orden.cal);
 
   var sec = document.getElementById("sec-cal");
   var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
@@ -1304,7 +1394,9 @@ function rotacion(){
     var cmv = CMV6[m] || 0;
     var rot = prom > 0 ? (cmv*2)/prom : 0;
     return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot };
-  }).sort(function(a,b){ return b.cmv - a.cmv; });
+  });
+  filas = ordenar(filas, orden.rot.k, orden.rot.asc);
+  marcarOrden("#tbl-rot", orden.rot);
 
   document.getElementById("nota-rot").textContent =
     "Rotación = costo de venta anualizado ÷ stock promedio · " +
