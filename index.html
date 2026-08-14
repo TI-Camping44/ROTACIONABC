@@ -40,8 +40,13 @@ body{
 header.top{background:var(--paper); border-bottom:1px solid var(--line)}
 .top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
 .mark{
-  width:44px; height:44px; flex:0 0 44px; border:1.5px solid var(--ink); border-radius:2px;
-  display:grid; place-items:center; font-family:var(--disp); font-weight:700; font-size:17px; letter-spacing:.02em;
+  height:46px; flex:0 0 auto; display:grid; place-items:center;
+}
+.mark img{height:46px; width:auto; display:block}
+/* Si el logo no carga, queda el cuadro con el 44 en su lugar. */
+.mark .fallback{
+  width:44px; height:44px; border:1.5px solid var(--ink); border-radius:2px;
+  display:grid; place-items:center; font-family:var(--disp); font-weight:700; font-size:17px;
 }
 .ttl{flex:1 1 340px}
 .ttl h1{
@@ -246,7 +251,10 @@ td.dim{opacity:.32}
 
 <header class="top">
   <div class="top-in">
-    <div class="mark">44</div>
+    <div class="mark">
+      <img src="LOGOC44.png" alt="Camping 44"
+           onerror="this.outerHTML='&lt;span class=\'fallback\'&gt;44&lt;/span&gt;'">
+    </div>
     <div class="ttl">
       <h1>Reporte de Stock y Rotación de Mercaderías</h1>
       <p>Camping 44 S.A. · Valuación a costo · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)</p>
