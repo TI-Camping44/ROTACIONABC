@@ -98,6 +98,10 @@ section{margin-top:22px}
 .shead.closed .caret{transform:rotate(-90deg)}
 .shead:hover h2{color:var(--B)}
 section.plegada > *:not(.shead){display:none}
+.scroll{max-height:520px; overflow-y:auto; overflow-x:auto}
+.scroll thead th{position:sticky; top:0; background:var(--paper); z-index:2; box-shadow:0 1px 0 var(--line)}
+.scroll table{border-collapse:separate; border-spacing:0}
+.scroll td{border-bottom:1px solid var(--line2)}
 .shead h2{
   font-family:var(--disp); font-weight:600; font-size:19px; text-transform:uppercase;
   letter-spacing:.05em; margin:0;
@@ -314,7 +318,7 @@ td.dim{opacity:.32}
             <select id="q-cat"></select>
             <span class="count" id="q-n"></span>
           </div>
-          <div style="overflow-x:auto"><table id="tbl-marcas">
+          <div class="scroll"><table id="tbl-marcas">
             <thead><tr>
               <th class="ord l" data-k="k">Marca</th>
               <th class="sel" data-cat="A" title="Filtrar por A">A</th>
@@ -352,7 +356,7 @@ td.dim{opacity:.32}
     <section id="sec-cal">
       <div class="shead"><h2>Por calibre</h2><div class="rule"></div>
         <div class="note">Millones de guaraníes · de la etiqueta de Odoo o del nombre del producto · clic para filtrar</div></div>
-      <div class="card"><div style="overflow-x:auto"><table id="tbl-cal">
+      <div class="card"><div class="scroll"><table id="tbl-cal">
         <thead><tr>
           <th class="ord l" data-k="k">Calibre</th><th class="l">Tipo</th>
           <th class="ord" data-k="v">Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
@@ -370,7 +374,7 @@ td.dim{opacity:.32}
           <span class="count" id="q-art-n"></span>
           <button class="clear" id="art-csv">descargar lista</button>
         </div>
-        <div style="overflow-x:auto"><table id="tbl-art">
+        <div class="scroll"><table id="tbl-art">
           <thead><tr>
             <th class="ord l" data-k="0">Referencia</th>
             <th class="ord l" data-k="1">Producto</th>
@@ -414,10 +418,8 @@ td.dim{opacity:.32}
         <p class="formula" style="margin:12px 0 0">
           La línea punteada marca el <b>punto de reposición estimado</b>: el consumo promedio
           de los últimos seis meses proyectado sobre el plazo de reposición.
-          <code>consumo mensual × 1,8 meses</code>.
-          <span class="aviso">Ese 1,8 es un valor de relleno, igual para todas las marcas.
-          No sale de ningún proveedor. Hasta que Compras cargue el plazo real de reposición
-          por marca, esta línea no sirve para disparar una compra.</span>
+          <code>consumo mensual × plazo de reposición</code>.
+          <span id="nota-plazo"></span>
           El histórico abarca todos los depósitos: la valorización de Odoo no separa por almacén.
         </p>
       </div>
@@ -433,11 +435,9 @@ td.dim{opacity:.32}
           El costo de venta sale de las capas de valorización de Odoo: lo que salió
           del depósito hacia un cliente, al costo real con que estaba registrado.
           El stock promedio es el promedio de los meses del período elegido arriba.
-          <br><b>Lectura:</b> sana ≥ 2 · ajustada entre 1 y 2 · inmovilizada &lt; 1.
-          <span class="aviso">Esos tres umbrales todavía no están definidos por Camping 44:
-          son referencias generales de retail y conviene fijarlos con Gerencia.</span>
+          <br><b>Lectura:</b> <span id="nota-umbral"></span>
         </p>
-        <div style="overflow-x:auto"><table id="tbl-rot">
+        <div class="scroll"><table id="tbl-rot">
         <thead><tr>
           <th class="ord l" data-k="m">Marca</th>
           <th class="ord" data-k="cmv">Costo de venta (Gs.)</th>
@@ -468,6 +468,13 @@ if (typeof DATOS === "undefined" || !DATOS.STOCK) {
 var CATS = DATOS.CATS;
 var STOCK = DATOS.STOCK;
 var ARTICULOS = DATOS.ARTICULOS || [];
+/* Parámetros cargados por Gerencia. Vacío = se usan los valores de relleno. */
+var PARAMS = DATOS.PARAMS || {};
+var PLAZO_DEFECTO = 1.8, SANA_DEFECTO = 2, AJUSTADA_DEFECTO = 1;
+var paramDe = function(m, k, porDefecto){
+  return (PARAMS[m] && PARAMS[m][k] > 0) ? PARAMS[m][k] : porDefecto;
+};
+var hayParams = function(){ return Object.keys(PARAMS).length > 0; };
 var MESES = DATOS.MESES || [];
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
@@ -1361,7 +1368,7 @@ function evolucion(){
     '" text-anchor="end" fill="#12161A" stroke="#fff" stroke-width="3.5" paint-order="stroke"'+
     ' style="font-weight:600">'+fmt(Math.round(ult))+' M</text>';
 
-  var rep = Math.round((CMV6[serieActiva]||0)/6*1.8);
+  var rep = Math.round((CMV6[serieActiva]||0)/6 * paramDe(serieActiva, "plazo", PLAZO_DEFECTO));
   var lineaRep = (rep > 0 && rep < tope)
     ? '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
       '<text class="axis" x="'+(P.l+6)+'" y="'+(Y(rep)-7).toFixed(1)+'" fill="#A6432E">'+
@@ -1420,13 +1427,15 @@ function rotacion(){
        significar algo: una marca que vendió una unidad y quedó en cero puede
        dar rotación 50. Esos casos se marcan en vez de mostrar un número falso. */
     var sinBase = r.prom < 5 || r.cmv < 5;
-    var cls = sinBase ? "" : (r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo"));
+    var uSana = paramDe(r.m, "sana", SANA_DEFECTO);
+    var uAjus = paramDe(r.m, "ajustada", AJUSTADA_DEFECTO);
+    var cls = sinBase ? "" : (r.rot >= uSana ? "r-hi" : (r.rot >= uAjus ? "r-md" : "r-lo"));
     var lec;
-    if (r.cmv === 0)      lec = "Sin ventas en el período";
-    else if (sinBase)     lec = "Volumen muy bajo para medir";
-    else if (r.rot >= 2)  lec = "Sana";
-    else if (r.rot >= 1)  lec = "Ajustada";
-    else                  lec = "Inmovilizada";
+    if (r.cmv === 0)         lec = "Sin ventas en el período";
+    else if (sinBase)        lec = "Volumen muy bajo para medir";
+    else if (r.rot >= uSana) lec = "Sana";
+    else if (r.rot >= uAjus) lec = "Ajustada";
+    else                     lec = "Inmovilizada";
 
     return '<tr data-marca="'+esc(r.m)+'" style="cursor:pointer" '+
       'title="Ver los artículos de '+esc(r.m)+'"><td><b>'+esc(r.m)+'</b></td>'+
@@ -1463,6 +1472,21 @@ function irA(i){
 tabs.forEach(function(t,i){
   t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
 });
+
+/* Los textos cambian según Gerencia haya cargado los parámetros o no. */
+document.getElementById("nota-plazo").innerHTML = hayParams()
+  ? 'El plazo sale de la hoja PARAMETROS; las marcas sin valor cargado usan ' +
+    PLAZO_DEFECTO.toString().replace(".", ",") + ' meses.'
+  : '<span class="aviso">El plazo usado es ' + PLAZO_DEFECTO.toString().replace(".", ",") +
+    ' meses, igual para todas las marcas. Es un valor de relleno: no sale de ningún ' +
+    'proveedor, y hasta que se cargue el plazo real esta línea no sirve para disparar una compra.</span>';
+
+document.getElementById("nota-umbral").innerHTML = hayParams()
+  ? 'los umbrales salen de la hoja PARAMETROS; las marcas sin valor usan sana ≥ ' +
+    SANA_DEFECTO + ' y ajustada ≥ ' + AJUSTADA_DEFECTO + '.'
+  : 'sana ≥ ' + SANA_DEFECTO + ' · ajustada entre ' + AJUSTADA_DEFECTO + ' y ' + SANA_DEFECTO +
+    ' · inmovilizada &lt; ' + AJUSTADA_DEFECTO + '. <span class="aviso">Todavía no están ' +
+    'definidos por Camping 44: son referencias generales de retail.</span>';
 
 armarFiltros();
 armarPeriodo();
