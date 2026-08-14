@@ -253,7 +253,7 @@ td.dim{opacity:.32}
     </div>
     <div class="meta">
       <div><span>Datos al</span><strong id="sello">—</strong></div>
-      <div><span>Moneda</span><strong>Gs. millones</strong></div>
+      <div><span>Moneda</span><strong>Guaraníes</strong></div>
       <div><span>Depósitos</span><strong id="ndep">—</strong></div>
       <div><span>Marcas</span><strong id="nmar">—</strong></div>
     </div>
@@ -298,7 +298,7 @@ td.dim{opacity:.32}
           </div>
         </div>
         <div class="card">
-          <h3>Apertura por marca y categoría</h3>
+          <h3>Apertura por marca y categoría <span class="count" style="font-weight:400">— millones de Gs.</span></h3>
           <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:2px 0 12px">
             <input type="search" id="q-marca" placeholder="Buscar marca…"
                    style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:150px">
@@ -325,7 +325,7 @@ td.dim{opacity:.32}
 
     <section>
       <div class="shead"><h2>Por depósito</h2><div class="rule"></div>
-        <div class="note">Mismo criterio, abierto por ubicación física</div></div>
+        <div class="note">Millones de guaraníes · mismo criterio, abierto por ubicación física</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
         <thead><tr>
           <th class="ord l" data-k="k">Depósito</th>
@@ -343,7 +343,7 @@ td.dim{opacity:.32}
 
     <section id="sec-cal">
       <div class="shead"><h2>Por calibre</h2><div class="rule"></div>
-        <div class="note">De la etiqueta de Odoo, o del nombre del producto cuando no la tiene · clic para filtrar</div></div>
+        <div class="note">Millones de guaraníes · de la etiqueta de Odoo o del nombre del producto · clic para filtrar</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-cal">
         <thead><tr>
           <th class="ord l" data-k="k">Calibre</th><th class="l">Tipo</th>
@@ -371,7 +371,7 @@ td.dim{opacity:.32}
             <th class="ord l" data-k="5">Cat.</th>
             <th class="ord l" data-k="6">Calibre</th>
             <th class="ord" data-k="7">Cantidad</th>
-            <th class="ord" data-k="8">Valor a costo</th>
+            <th class="ord" data-k="8">Valor a costo (Gs.)</th>
           </tr></thead><tbody></tbody>
         </table></div>
       </div>
@@ -734,7 +734,8 @@ function armarFiltros(){
   document.getElementById("ndep").textContent = fmt(deps.length);
   document.getElementById("nmar").textContent = fmt(marcas.length);
   document.getElementById("pie").textContent =
-    "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · montos en millones de guaraníes.";
+    "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · " +
+    "las tablas resumen muestran millones de guaraníes; el detalle por artículo y la rotación, guaraníes completos.";
 }
 
 /* ---------------- Parte 1 ---------------- */
@@ -940,10 +941,10 @@ function tablaArticulos(){
   var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
 
   document.getElementById("nota-art").textContent = hayFiltro()
-    ? "Los artículos que cumplen el filtro, de mayor a menor valor"
-    : "Elegí un filtro arriba para acotar la lista";
+    ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
+    : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
   document.getElementById("q-art-n").textContent =
-    filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
+    filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
 
   if (!filas.length) {
     /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
@@ -970,7 +971,7 @@ function tablaArticulos(){
       '<td class="l">'+badge+'</td>'+
       '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
       '<td class="num">'+fmt(a[A_CANT])+'</td>'+
-      '<td class="num"><b>'+fmt(a[A_VAL],1)+'</b></td></tr>';
+      '<td class="num"><b>'+gs(a[A_VAL])+'</b></td></tr>';
   }).join("") +
   (filas.length > top.length
     ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
@@ -1086,10 +1087,10 @@ function tablaArticulos(){
   var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
 
   document.getElementById("nota-art").textContent = hayFiltro()
-    ? "Los artículos que cumplen el filtro, de mayor a menor valor"
-    : "Elegí un filtro arriba para acotar la lista";
+    ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
+    : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
   document.getElementById("q-art-n").textContent =
-    filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
+    filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
 
   if (!filas.length) {
     /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
@@ -1116,7 +1117,7 @@ function tablaArticulos(){
       '<td class="l">'+badge+'</td>'+
       '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
       '<td class="num">'+fmt(a[A_CANT])+'</td>'+
-      '<td class="num"><b>'+fmt(a[A_VAL],1)+'</b></td></tr>';
+      '<td class="num"><b>'+gs(a[A_VAL])+'</b></td></tr>';
   }).join("") +
   (filas.length > top.length
     ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
