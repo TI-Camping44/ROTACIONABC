@@ -11,7 +11,8 @@
 :root{
   --ink:#12161A; --ink2:#39424A; --muted:#77828B;
   --paper:#FFFFFF; --bg:#E7EAEA; --line:#D2D7D7; --line2:#E6E9E9;
-  --A:#B08A2E; --B:#3D6E8C; --C:#A6432E; --SC:#626C76; --NC:#8C7A57;
+  --A:#B08A2E; --B:#3D6E8C; --C:#A6432E; --NC:#8C7A57;
+  --ARM:#4A5560; --MUN:#6E7B84; --CARG:#93A0A6; --SC:#626C76;
   --ncbg:#DCD6C8;
   --ok:#2F6B4F;
   --disp:"Barlow Condensed", "Arial Narrow", sans-serif;
@@ -84,7 +85,14 @@ select,input[type=date]{
 
 /* ---------- secciones ---------- */
 section{margin-top:22px}
-.shead{display:flex; align-items:baseline; gap:12px; margin:0 0 10px}
+.shead{display:flex; align-items:baseline; gap:12px; margin:0 0 10px; cursor:pointer; user-select:none}
+.shead .caret{
+  font-family:var(--mono); font-size:13px; color:var(--muted); width:14px;
+  transition:transform .15s; display:inline-block; flex:0 0 14px;
+}
+.shead.closed .caret{transform:rotate(-90deg)}
+.shead:hover h2{color:var(--B)}
+section.plegada > *:not(.shead){display:none}
 .shead h2{
   font-family:var(--disp); font-weight:600; font-size:19px; text-transform:uppercase;
   letter-spacing:.05em; margin:0;
@@ -246,11 +254,17 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         </div>
         <div class="card">
           <h3>Apertura por marca y categoría</h3>
-          <p class="sub">Ordenado por monto a costo · clic en una marca para filtrar por ella</p>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:2px 0 12px">
+            <input type="search" id="q-marca" placeholder="Buscar marca…"
+                   style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:150px">
+            <label class="flab" for="q-cat">Categoría</label>
+            <select id="q-cat"></select>
+            <span class="count" id="q-n"></span>
+          </div>
           <div style="overflow-x:auto"><table id="tbl-marcas">
             <thead><tr>
-              <th>Marca</th><th>A</th><th>B</th><th>C</th>
-              <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
+              <th>Marca</th><th>A</th><th>B</th><th>C</th><th>ARM</th><th>MUN</th><th>CARG</th>
+              <th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
             </tr></thead><tbody></tbody><tfoot></tfoot>
           </table></div>
         </div>
@@ -262,8 +276,8 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         <div class="note">Mismo criterio, abierto por ubicación física</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
         <thead><tr>
-          <th>Depósito</th><th>A</th><th>B</th><th>C</th>
-          <th>Sin clasificación</th><th>Sin categorizar</th><th>Total</th><th>% del stock</th>
+          <th>Depósito</th><th>A</th><th>B</th><th>C</th><th>ARM</th><th>MUN</th><th>CARG</th>
+          <th>Sin categorizar</th><th>Total</th><th>% del stock</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -284,18 +298,6 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
       <div class="pies" id="pies"></div>
     </section>
 
-    <section>
-      <div class="shead"><h2>Composición del producto y cliente</h2><div class="rule"></div>
-        <div class="note">Salidas a cliente valuadas a costo real, de mayor a menor</div></div>
-      <div class="card">
-        <div style="overflow-x:auto"><table id="tbl-detalle">
-          <thead><tr>
-            <th>Artículo</th><th class="l">Marca</th><th class="l">Cat.</th><th class="l">Composición</th>
-            <th class="l">Cliente</th><th class="l">Depósito</th><th>Cant.</th><th>Costo total</th>
-          </tr></thead><tbody></tbody>
-        </table></div>
-        <p class="sub" style="margin:12px 0 0" id="nota-detalle"></p>
-      </div>
     </section>
   </div>
 
@@ -331,8 +333,8 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         <div class="note" id="nota-rot"></div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-rot">
         <thead><tr>
-          <th>Marca</th><th>Costo de venta</th><th>Costo de compra</th><th>Stock promedio</th>
-          <th>Stock actual</th><th>Rotación (veces/año)</th><th>Días de stock</th><th class="l">Lectura</th>
+          <th>Marca</th><th>Costo de venta (Gs.)</th><th>Stock promedio (Gs.)</th>
+          <th>Stock actual (Gs.)</th><th>Rotación (veces/año)</th><th class="l">Lectura</th>
         </tr></thead><tbody></tbody>
       </table></div></div>
     </section>
@@ -355,7 +357,6 @@ if (typeof DATOS === "undefined" || !DATOS.STOCK) {
 
 var CATS = DATOS.CATS;
 var STOCK = DATOS.STOCK;
-var DETALLE = DATOS.DETALLE || [];
 var MESES = DATOS.MESES || [];
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
@@ -363,15 +364,20 @@ var CMV6 = DATOS.CMV6 || {};
 /* ---------------- formato ---------------- */
 var fmt = function(n,d){ return new Intl.NumberFormat("es-PY",{minimumFractionDigits:d||0,maximumFractionDigits:d||0}).format(n); };
 var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
+/* Los datos vienen en millones; esta los muestra en guaraníes completos. */
+var gs = function(n){ return fmt(Math.round((n||0) * 1000000)); };
 var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
 var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
-var vacio = { A:0,B:0,C:0,SC:0,NC:0 };
-var suma = function(o){ return o.A+o.B+o.C+o.SC+o.NC; };
+var vacio = { A:0,B:0,C:0,ARM:0,MUN:0,CARG:0,NC:0 };
+var CLAVES = ["A","B","C","ARM","MUN","CARG","NC"];
+var suma = function(o){ var t=0; CLAVES.forEach(function(k){ t += o[k]||0; }); return t; };
+/* Fuera del alcance ABC: armas, municiones y cargadores. */
+var FUERA = ["ARM","MUN","CARG"];
+var sumaFuera = function(o){ var t=0; FUERA.forEach(function(k){ t += o[k]||0; }); return t; };
 
 /* ---------------- estado de filtros ---------------- */
 var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
 var serieActiva = null;
-var COMPRAS6 = DATOS.COMPRAS6 || {};
 var per = { desde: 0, hasta: (DATOS.MESES || []).length - 1 };
 
 var pasa = function(r){
@@ -470,14 +476,12 @@ function armarFiltros(){
   opciones(document.getElementById("f-cal"), calibres, "Todos los calibres");
   document.getElementById("f-cal").addEventListener("change", function(){ f.cal = this.value; pintar(); });
 
-  var etiquetas = {A:"A – Potenciar", B:"B – Mantener", C:"C – Liquidar",
-                   SC:"Sin clasificación", NC:"Sin categorizar"};
   var presentes = CATS.filter(function(c){
     return STOCK.some(function(r){ return r.cat === c.k; });
   });
   var selCat = document.getElementById("f-cat");
   selCat.innerHTML = '<option value="*">Todas</option>' +
-    presentes.map(function(c){ return '<option value="'+c.k+'">'+esc(etiquetas[c.k]||c.k)+'</option>'; }).join("");
+    presentes.map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
 
   document.getElementById("f-tipo").innerHTML =
     '<button class="chip sm" data-v="*" aria-pressed="true">Todos</button>' +
@@ -508,6 +512,30 @@ function armarFiltros(){
     pintar();
   });
 
+  /* Filtros propios de la tabla de apertura. */
+  var qcat = document.getElementById("q-cat");
+  qcat.innerHTML = '<option value="*">Todas</option>' +
+    CATS.filter(function(c){ return STOCK.some(function(r){ return r.cat === c.k; }); })
+        .map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
+  qcat.addEventListener("change", function(){ pintar(); });
+  document.getElementById("q-marca").addEventListener("input", function(){ pintar(); });
+
+  /* Secciones plegables. */
+  Array.prototype.forEach.call(document.querySelectorAll("section .shead"), function(h){
+    if (!h.querySelector(".caret")) h.insertAdjacentHTML("afterbegin", '<span class="caret">▾</span>');
+    h.setAttribute("role", "button");
+    h.setAttribute("tabindex", "0");
+    var alternar = function(){
+      var sec = h.closest("section");
+      sec.classList.toggle("plegada");
+      h.classList.toggle("closed");
+    };
+    h.addEventListener("click", alternar);
+    h.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); alternar(); }
+    });
+  });
+
   document.getElementById("sello").textContent = (DATOS.GENERADO || "—").split(" ")[0];
   document.getElementById("ndep").textContent = fmt(deps.length);
   document.getElementById("nmar").textContent = fmt(marcas.length);
@@ -518,7 +546,7 @@ function armarFiltros(){
 /* ---------------- Parte 1 ---------------- */
 function pintar(){
   var t = totales(), T = suma(t);
-  var alcance = T - t.SC;
+  var alcance = T - sumaFuera(t);
   var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
 
   document.getElementById("f-reset").hidden = !hayFiltro();
@@ -526,7 +554,8 @@ function pintar(){
   document.getElementById("kpis").innerHTML = [
     kpi("Stock a costo", gsM(T), etiquetaFiltro(), ""),
     kpi("Dentro del alcance ABC", gsM(alcance),
-        t.SC ? "excluye armas y municiones (" + pct(t.SC,T) + " del total)" : "sin exclusiones", ""),
+        sumaFuera(t) ? "excluye armas, municiones y cargadores (" + pct(sumaFuera(t),T) + " del total)"
+                     : "sin exclusiones", ""),
     kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
         gsM(t.NC) + " todavía sin categorizar", "warn"),
     kpi("Capital en Categoría C", gsM(t.C),
@@ -536,7 +565,7 @@ function pintar(){
   document.getElementById("sub-total").textContent = etiquetaFiltro();
   document.getElementById("donut-total").innerHTML = donut(valores(t), 210, 42);
   document.getElementById("leg-total").innerHTML =
-    CATS.map(function(c){
+    CATS.filter(function(c){ return (t[c.k]||0) > 0; }).map(function(c){
       return '<li><span class="sw" style="'+swatch(c)+'"></span><span>'+c.lab+'</span>'+
         '<span class="val">'+gsM(t[c.k])+'<span class="pct">'+pct(t[c.k],T)+'</span></span></li>';
     }).join("") +
@@ -550,7 +579,6 @@ function pintar(){
   tablaDepositos(agrupar("dep"), T);
   tablaCalibres(T);
   tortas(agrupar("m"));
-  detalle();
 }
 
 function kpi(lab,val,sub,cls){
@@ -567,20 +595,35 @@ function etiquetaFiltro(){
 }
 
 function tablaMarcas(filas, T){
+  var q = (document.getElementById("q-marca").value || "").trim().toLowerCase();
+  var cat = document.getElementById("q-cat").value || "*";
+
+  /* Fuera las que están en cero: una fila de ceros no dice nada. */
+  var vis = filas.filter(function(r){
+    if (suma(r) <= 0) return false;
+    if (cat !== "*" && !(r[cat] > 0)) return false;
+    if (q && r.k.toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+
+  document.getElementById("q-n").textContent =
+    vis.length === filas.length ? fmt(vis.length) + " marcas"
+                                : fmt(vis.length) + " de " + fmt(filas.length);
+
   var tb = document.querySelector("#tbl-marcas tbody"), tf = document.querySelector("#tbl-marcas tfoot");
-  if (!filas.length) {
-    tb.innerHTML = '<tr><td colspan="8" class="empty">Ninguna marca con stock para este filtro.</td></tr>';
+  if (!vis.length) {
+    tb.innerHTML = '<tr><td colspan="10" class="empty">Ninguna marca coincide.</td></tr>';
     tf.innerHTML = ""; return;
   }
   var s = Object.assign({}, vacio);
-  tb.innerHTML = filas.map(function(r){
-    CATS.forEach(function(c){ s[c.k] += r[c.k]; });
+  tb.innerHTML = vis.map(function(r){
+    CATS.forEach(function(c){ s[c.k] += r[c.k]||0; });
     return '<tr data-marca="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b>'+
-      '<span class="tipo">'+esc(r.tipo)+'</span></td>'+
-      celda(r.A)+celda(r.B)+celda(r.C)+celda(r.SC)+celda(r.NC)+
+      (r.tipo ? '<span class="tipo">'+esc(r.tipo)+'</span>' : '')+'</td>'+
+      CLAVES.map(function(k){ return celda(r[k]); }).join('')+
       '<td class="num"><b>'+fmt(suma(r))+'</b></td><td><div class="bar">'+barra(r)+'</div></td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td>'+celda(s.A)+celda(s.B)+celda(s.C)+celda(s.SC)+celda(s.NC)+
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k]); }).join('')+
     '<td class="num">'+fmt(suma(s))+'</td><td class="count">millones de Gs.</td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
     tr.addEventListener("click", function(){
@@ -594,18 +637,18 @@ function tablaMarcas(filas, T){
 function tablaDepositos(filas, T){
   var tb = document.querySelector("#tbl-dep tbody"), tf = document.querySelector("#tbl-dep tfoot");
   if (!filas.length) {
-    tb.innerHTML = '<tr><td colspan="8" class="empty">Sin datos para este filtro.</td></tr>';
+    tb.innerHTML = '<tr><td colspan="10" class="empty">Sin datos para este filtro.</td></tr>';
     tf.innerHTML = ""; return;
   }
   var s = Object.assign({}, vacio);
   tb.innerHTML = filas.map(function(r){
     CATS.forEach(function(c){ s[c.k] += r[c.k]; });
     return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
-      celda(r.A)+celda(r.B)+celda(r.C)+celda(r.SC)+celda(r.NC)+
+      CLAVES.map(function(k){ return celda(r[k]); }).join('')+
       '<td class="num"><b>'+fmt(suma(r))+'</b></td>'+
       '<td class="num">'+pct(suma(r), T)+'</td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td>'+celda(s.A)+celda(s.B)+celda(s.C)+celda(s.SC)+celda(s.NC)+
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k]); }).join('')+
     '<td class="num">'+fmt(suma(s))+'</td><td class="num">100%</td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-dep]"), function(tr){
     tr.addEventListener("click", function(){
@@ -624,7 +667,12 @@ function tablaCalibres(T){
     mapa[r.cal].v += r.v;
   });
   var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
-    .sort(function(a,b){ return b.v - a.v; });
+    .filter(function(r){ return r.v > 0; })
+    .sort(function(a,b){
+      if (a.k === "Sin calibre") return 1;
+      if (b.k === "Sin calibre") return -1;
+      return b.v - a.v;
+    });
 
   var sec = document.getElementById("sec-cal");
   var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
@@ -656,6 +704,7 @@ function tablaCalibres(T){
 function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
 
 function tortas(filas){
+  filas = filas.filter(function(r){ return suma(r) > 0; });
   var top = filas.slice(0, 24);
   document.getElementById("nota-pies").textContent = filas.length > 24
     ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
@@ -688,35 +737,83 @@ function tortas(filas){
   });
 }
 
-function detalle(){
-  var filas = DETALLE.filter(function(d){
-    return (f.dep === "*" || d[5] === f.dep)
-        && (f.marca === "*" || d[1] === f.marca)
-        && (f.cat === "*" || d[2] === f.cat);
+function tablaCalibres(T){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    if (!mapa[r.cal]) mapa[r.cal] = { k:r.cal, tipos:{}, v:0 };
+    mapa[r.cal].tipos[r.tipo] = true;
+    mapa[r.cal].v += r.v;
   });
-  var top = filas.slice(0, 60);
-  var tb = document.querySelector("#tbl-detalle tbody");
+  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
+    .filter(function(r){ return r.v > 0; })
+    .sort(function(a,b){
+      if (a.k === "Sin calibre") return 1;
+      if (b.k === "Sin calibre") return -1;
+      return b.v - a.v;
+    });
+
+  var sec = document.getElementById("sec-cal");
+  var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
+  sec.hidden = reales.length === 0;
+  if (sec.hidden) return;
+
+  var max = filas[0] ? filas[0].v : 0;
+  var tb = document.querySelector("#tbl-cal tbody"), tf = document.querySelector("#tbl-cal tfoot");
+  tb.innerHTML = filas.map(function(r){
+    var t = Object.keys(r.tipos);
+    var w = max ? r.v/max*100 : 0;
+    var color = r.k === "Sin calibre" ? "var(--SC)" : "var(--ink2)";
+    return '<tr data-cal="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
+      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
+      '<td class="num">'+pct(r.v, T)+'</td>'+
+      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+color+'"></i></div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
+      document.getElementById("f-cal").value = f.cal;
+      pintar();
+    });
+  });
+}
+
+function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
+
+function tortas(filas){
+  filas = filas.filter(function(r){ return suma(r) > 0; });
+  var top = filas.slice(0, 24);
+  document.getElementById("nota-pies").textContent = filas.length > 24
+    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
+    : "Mismo esquema replicado para cada marca";
   if (!top.length) {
-    tb.innerHTML = '<tr><td colspan="8" class="empty">Sin ventas registradas para este filtro.</td></tr>';
-    document.getElementById("nota-detalle").textContent = "";
+    document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
     return;
   }
-  tb.innerHTML = top.map(function(d){
-    var badge = d[2] === "SC"
-      ? '<span style="font-family:var(--mono);font-size:11px;color:var(--SC)">s/clas.</span>'
-      : (d[2] === "NC"
-        ? '<span style="font-family:var(--mono);font-size:11px;color:var(--NC)">s/categ.</span>'
-        : '<b style="font-family:var(--mono);color:var(--'+d[2]+')">'+d[2]+'</b>');
-    return '<tr><td>'+esc(d[0])+'</td><td class="l">'+esc(d[1])+'</td><td class="l">'+badge+'</td>'+
-      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(d[3])+'</td>'+
-      '<td class="l">'+esc(d[4])+'</td><td class="l">'+esc(d[5])+'</td>'+
-      '<td class="num">'+fmt(d[6],0)+'</td>'+
-      '<td class="num"><b>'+fmt(d[6]*d[7],1)+'</b></td></tr>';
+  document.getElementById("pies").innerHTML = top.map(function(r){
+    var T = suma(r);
+    var activa = (f.marca === r.k);
+    var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
+      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+    }).join("");
+    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
+      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
   }).join("");
-  document.getElementById("nota-detalle").textContent =
-    filas.length > 60
-      ? "Se muestran las 60 líneas de mayor costo, de " + fmt(filas.length) + " que cumplen el filtro."
-      : fmt(filas.length) + " líneas.";
+
+  Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
+    var elegir = function(){
+      f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar(); sincronizarSerie();
+    };
+    el.addEventListener("click", elegir);
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
+    });
+  });
 }
 
 /* ---------------- Parte 2 ---------------- */
@@ -868,39 +965,30 @@ function rotacion(){
     var s = serieDe(m);
     var prom = s.length ? s.reduce(function(a,b){return a+b;},0)/s.length : 0;
     var cmv = CMV6[m] || 0;
-    var compras = COMPRAS6[m] || 0;
     var rot = prom > 0 ? (cmv*2)/prom : 0;
-    return { m:m, cmv:cmv, compras:compras, prom:prom, act:actual[m]||0,
-             rot:rot, dias: rot > 0 ? 365/rot : null };
+    return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot };
   }).sort(function(a,b){ return b.rot - a.rot; });
 
   document.getElementById("nota-rot").textContent =
-    "Stock promedio sobre " + meses + (meses === 1 ? " mes" : " meses") +
-    " · costo de venta y de compra de los últimos 6 meses";
+    "Rotación = costo de venta anualizado ÷ stock promedio · " +
+    "stock promedio sobre " + meses + (meses === 1 ? " mes" : " meses") +
+    " · costo de venta de los últimos 6 meses";
 
   var tb = document.querySelector("#tbl-rot tbody");
-  if (!filas.length) { tb.innerHTML = '<tr><td colspan="8" class="empty">Sin datos de rotación.</td></tr>'; return; }
+  if (!filas.length) { tb.innerHTML = '<tr><td colspan="6" class="empty">Sin datos de rotación.</td></tr>'; return; }
 
   tb.innerHTML = filas.map(function(r){
     var cls = r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo");
     var lec;
-    if (r.cmv === 0 && r.compras === 0) lec = "Sin movimiento";
-    else if (r.cmv === 0) lec = "Compró y no vendió";
+    if (r.cmv === 0) lec = "Sin ventas en el período";
     else if (r.rot >= 2) lec = "Sana";
     else if (r.rot >= 1) lec = "Ajustada";
     else lec = "Inmovilizada";
 
-    /* Compró más de lo que vendió: el stock de esa marca está creciendo. */
-    var flecha = "";
-    if (r.compras > r.cmv * 1.2 && r.compras > 5) flecha = ' <span title="compró más de lo que vendió" style="color:var(--C)">▲</span>';
-    else if (r.cmv > r.compras * 1.2 && r.cmv > 5) flecha = ' <span title="vendió más de lo que compró" style="color:var(--ok)">▼</span>';
-
     return '<tr><td><b>'+esc(r.m)+'</b></td>'+
-      '<td class="num">'+fmt(r.cmv)+'</td>'+
-      '<td class="num">'+fmt(r.compras)+flecha+'</td>'+
-      '<td class="num">'+fmt(Math.round(r.prom))+'</td><td class="num">'+fmt(Math.round(r.act))+'</td>'+
+      '<td class="num">'+gs(r.cmv)+'</td>'+
+      '<td class="num">'+gs(r.prom)+'</td><td class="num">'+gs(r.act)+'</td>'+
       '<td class="num"><span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span></td>'+
-      '<td class="num">'+(r.dias ? fmt(Math.round(r.dias)) : "—")+'</td>'+
       '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
   }).join("");
 }
