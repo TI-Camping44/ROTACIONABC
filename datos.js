@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 14/08/2026 12:38.
+/* Generado desde la planilla el 14/08/2026 13:30.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -46,7 +46,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "14/08/2026 12:38",
+  "GENERADO": "14/08/2026 13:29",
   "EMPRESA": "CAMPING44",
   "MESES": [
     "mar 25",
@@ -243,7 +243,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "6mm",
-      "v": 96.7
+      "v": 98
     },
     {
       "m": "ASG",
@@ -251,7 +251,15 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 204.6
+      "v": 203.3
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "6mm",
+      "v": 1
     },
     {
       "m": "ASG",
@@ -259,7 +267,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 8.2
+      "v": 7.1
     },
     {
       "m": "ASG",
@@ -275,7 +283,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "6mm",
-      "v": 1.2
+      "v": 3.2
     },
     {
       "m": "ASG",
@@ -283,7 +291,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 2
+      "v": 0
     },
     {
       "m": "ASG",
@@ -307,7 +315,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "6mm",
-      "v": 1.8
+      "v": 2.6
     },
     {
       "m": "ASG",
@@ -315,7 +323,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 17.9
+      "v": 17.1
     },
     {
       "m": "ASG",
@@ -451,15 +459,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "ARM",
       "cal": "12GA",
-      "v": 12.1
-    },
-    {
-      "m": "Akkar",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 2.5
+      "v": 14.6
     },
     {
       "m": "Akkar",
@@ -482,7 +482,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 22",
+      "cal": "22LR",
       "v": 3.7
     },
     {
@@ -522,7 +522,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
-      "cal": "6.35mm",
+      "cal": "6,35/25Auto",
       "v": 44.1
     },
     {
@@ -554,7 +554,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "Sin calibre",
+      "cal": "6mm",
       "v": 28.7
     },
     {
@@ -586,7 +586,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "A",
-      "cal": "6.35mm",
+      "cal": "6,35/25Auto",
       "v": 0.5
     },
     {
@@ -618,7 +618,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "Sin calibre",
+      "cal": "6mm",
       "v": 0.3
     },
     {
@@ -683,7 +683,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "12GA",
-      "v": 0.2
+      "v": 0.7
     },
     {
       "m": "Armed",
@@ -691,7 +691,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "20GA",
-      "v": 0.4
+      "v": 0.6
     },
     {
       "m": "Armed",
@@ -700,22 +700,6 @@ var DATOS = {
       "cat": "B",
       "cal": "Sin calibre",
       "v": 8.3
-    },
-    {
-      "m": "Armed",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 12",
-      "v": 0.5
-    },
-    {
-      "m": "Armed",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 20",
-      "v": 0.3
     },
     {
       "m": "Armed",
@@ -898,8 +882,32 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
-      "cal": "5.56mm",
-      "v": 0.2
+      "cal": "223REM",
+      "v": 0.5
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 6.7
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "22MAG",
+      "v": 4.6
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "9mm",
+      "v": 0
     },
     {
       "m": "BWC",
@@ -907,7 +915,23 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 41.1
+      "v": 29.4
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "12GA",
+      "v": 1.1
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "22LR",
+      "v": 1.1
     },
     {
       "m": "BWC",
@@ -916,22 +940,6 @@ var DATOS = {
       "cat": "C",
       "cal": "Sin calibre",
       "v": 27.9
-    },
-    {
-      "m": "BWC",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 12",
-      "v": 1.1
-    },
-    {
-      "m": "BWC",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 22",
-      "v": 1.1
     },
     {
       "m": "BWC",
@@ -954,7 +962,23 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
-      "cal": "5.56mm",
+      "cal": "223REM",
+      "v": 0.1
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "v": 0.5
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
       "v": 0.1
     },
     {
@@ -963,7 +987,23 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 3.4
+      "v": 2.8
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
+      "v": 0.3
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "22LR",
+      "v": 1.4
     },
     {
       "m": "BWC",
@@ -972,22 +1012,6 @@ var DATOS = {
       "cat": "C",
       "cal": "Sin calibre",
       "v": 3.5
-    },
-    {
-      "m": "BWC",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 12",
-      "v": 0.3
-    },
-    {
-      "m": "BWC",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 22",
-      "v": 1.4
     },
     {
       "m": "Beamshot",
@@ -1051,15 +1075,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "9mm",
-      "v": 1522.4
-    },
-    {
-      "m": "Beretta",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 13.7
+      "v": 1536.2
     },
     {
       "m": "Beretta",
@@ -1171,7 +1187,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "12GA",
-      "v": 60.9
+      "v": 63
     },
     {
       "m": "Boito",
@@ -1187,7 +1203,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "36GA",
-      "v": 8.5
+      "v": 11
     },
     {
       "m": "Boito",
@@ -1196,22 +1212,6 @@ var DATOS = {
       "cat": "ARM",
       "cal": "Sin calibre",
       "v": 0.7
-    },
-    {
-      "m": "Boito",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "cal 12",
-      "v": 2
-    },
-    {
-      "m": "Boito",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "cal 36",
-      "v": 2.5
     },
     {
       "m": "Boito",
@@ -1235,15 +1235,15 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "ARM",
       "cal": "36GA",
-      "v": 2.6
+      "v": 5.1
     },
     {
       "m": "Boito",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "ARM",
-      "cal": "cal 36",
-      "v": 2.5
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "12GA",
+      "v": 0.1
     },
     {
       "m": "Boito",
@@ -1257,9 +1257,9 @@ var DATOS = {
       "m": "Boito",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "B",
-      "cal": "cal 12",
-      "v": 0.1
+      "cat": "C",
+      "cal": "12GA",
+      "v": 0.3
     },
     {
       "m": "Boito",
@@ -1267,22 +1267,14 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 5.5
-    },
-    {
-      "m": "Boito",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 12",
-      "v": 0.1
+      "v": 5.3
     },
     {
       "m": "Boito",
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "cal 12",
+      "cal": "12GA",
       "v": 0.1
     },
     {
@@ -1314,6 +1306,14 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
+      "cal": "22LR",
+      "v": 12.2
+    },
+    {
+      "m": "CZ",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "ARM",
       "cal": "9mm",
       "v": 24.3
     },
@@ -1323,7 +1323,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "Sin calibre",
-      "v": 41
+      "v": 28.8
     },
     {
       "m": "Canik",
@@ -1362,24 +1362,16 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "410GA",
-      "v": 2.1
+      "cal": "22LR",
+      "v": 5.1
     },
     {
       "m": "Chiappa",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 22",
-      "v": 5.1
-    },
-    {
-      "m": "Coleman",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.35mm",
-      "v": 1.7
+      "cal": "410GA",
+      "v": 2.1
     },
     {
       "m": "Coleman",
@@ -1387,15 +1379,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 136.5
-    },
-    {
-      "m": "Coleman",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.35mm",
-      "v": 1.7
+      "v": 138.3
     },
     {
       "m": "Coleman",
@@ -1403,14 +1387,14 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 14.8
+      "v": 16.5
     },
     {
       "m": "Colt",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 38",
+      "cal": "38SPL",
       "v": 6.1
     },
     {
@@ -1514,7 +1498,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "NC",
-      "cal": "Sin calibre",
+      "cal": "6mm",
       "v": 0.7
     },
     {
@@ -1538,8 +1522,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
+      "cal": "6mm",
+      "v": 0.5
+    },
+    {
+      "m": "Crosman",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
       "cal": "Sin calibre",
-      "v": 6.4
+      "v": 5.8
     },
     {
       "m": "Crosman",
@@ -1554,7 +1546,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 45",
+      "cal": "45ACP",
       "v": 4.6
     },
     {
@@ -1658,7 +1650,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "Sin calibre",
+      "cal": "9mm",
       "v": 0.2
     },
     {
@@ -1674,7 +1666,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "Sin calibre",
+      "cal": "9mm",
       "v": 0.1
     },
     {
@@ -1683,7 +1675,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "5.5mm",
-      "v": 207.6
+      "v": 207.5
     },
     {
       "m": "Doberman BALINES",
@@ -2010,7 +2002,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 38",
+      "cal": "38SPL",
       "v": 7.6
     },
     {
@@ -2058,8 +2050,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
+      "cal": "223REM",
+      "v": 18.8
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
       "cal": "Sin calibre",
-      "v": 136.4
+      "v": 117.6
     },
     {
       "m": "Fab Defense",
@@ -2074,8 +2074,24 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
+      "cal": "223REM",
+      "v": 0.3
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "v": 0.2
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
       "cal": "Sin calibre",
-      "v": 33.3
+      "v": 32.9
     },
     {
       "m": "Fab Defense",
@@ -2322,7 +2338,7 @@ var DATOS = {
       "tipo": "Municiones",
       "dep": "Central",
       "cat": "MUN",
-      "cal": "Sin calibre",
+      "cal": "12GA",
       "v": 4.1
     },
     {
@@ -2338,7 +2354,7 @@ var DATOS = {
       "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
-      "cal": "Sin calibre",
+      "cal": "9mm",
       "v": 0.4
     },
     {
@@ -2650,8 +2666,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
+      "cal": "9mm",
+      "v": 0.7
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": "Sin calibre",
-      "v": 92.8
+      "v": 92.1
     },
     {
       "m": "Glock",
@@ -2666,8 +2690,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
+      "cal": "9mm",
+      "v": 7.8
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
       "cal": "Sin calibre",
-      "v": 25.7
+      "v": 18
     },
     {
       "m": "Glock",
@@ -2755,15 +2787,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "CARG",
       "cal": "9mm",
-      "v": 0.3
-    },
-    {
-      "m": "Hipoint",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.5
+      "v": 0.8
     },
     {
       "m": "Hipoint",
@@ -2778,7 +2802,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "Sin calibre",
+      "cal": "223REM",
       "v": 0.6
     },
     {
@@ -2850,16 +2874,8 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 22",
+      "cal": "22LR",
       "v": 3.8
-    },
-    {
-      "m": "Imalent",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "1.5mm",
-      "v": 0
     },
     {
       "m": "Imalent",
@@ -2874,16 +2890,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "1.5mm",
-      "v": 0
-    },
-    {
-      "m": "Imalent",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 4.5
+      "v": 4.6
     },
     {
       "m": "Indunaylon",
@@ -2978,7 +2986,7 @@ var DATOS = {
       "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
-      "cal": "Sin calibre",
+      "cal": "cal 40",
       "v": 0.7
     },
     {
@@ -3003,15 +3011,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 399.7
-    },
-    {
-      "m": "Konus",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 25.4",
-      "v": 4.7
+      "v": 404.5
     },
     {
       "m": "Konus",
@@ -3035,15 +3035,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 57.7
-    },
-    {
-      "m": "Konus",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "cal 25.4",
-      "v": 3.2
+      "v": 60.9
     },
     {
       "m": "Konus",
@@ -3075,15 +3067,15 @@ var DATOS = {
       "dep": "Central",
       "cat": "CARG",
       "cal": "380ACP",
-      "v": 0.4
+      "v": 2.1
     },
     {
       "m": "Llama",
       "tipo": "Cargadores",
       "dep": "Central",
       "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 2.5
+      "cal": "9mm",
+      "v": 0.8
     },
     {
       "m": "Llama",
@@ -3099,15 +3091,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "380ACP",
-      "v": 0.1
-    },
-    {
-      "m": "Llama",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.1
+      "v": 0.3
     },
     {
       "m": "Lorcin",
@@ -3339,15 +3323,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "22LR",
-      "v": 1.8
-    },
-    {
-      "m": "Mossberg",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 1.8
+      "v": 3.5
     },
     {
       "m": "Mossberg",
@@ -3378,40 +3354,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "6.9mm",
-      "v": 1.1
-    },
-    {
-      "m": "NTK",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "9.5mm",
-      "v": 0.2
-    },
-    {
-      "m": "NTK",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 367
-    },
-    {
-      "m": "NTK",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "6.9mm",
-      "v": 0
-    },
-    {
-      "m": "NTK",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9.5mm",
-      "v": 0.1
+      "v": 368.2
     },
     {
       "m": "NTK",
@@ -3419,7 +3363,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 18.9
+      "v": 19
     },
     {
       "m": "Nitecore",
@@ -3530,14 +3474,6 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "0.50mm",
-      "v": 0
-    },
-    {
-      "m": "Ottoni",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
       "cal": "Sin calibre",
       "v": 1.4
     },
@@ -3554,32 +3490,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "0.30mm",
-      "v": 0.1
-    },
-    {
-      "m": "Ottoni",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.50mm",
-      "v": 0
-    },
-    {
-      "m": "Ottoni",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.90mm",
-      "v": 0
-    },
-    {
-      "m": "Ottoni",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 0.2
+      "v": 0.3
     },
     {
       "m": "PMC",
@@ -3658,8 +3570,16 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
+      "cal": "308WIN",
+      "v": 1.2
+    },
+    {
+      "m": "Remington",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "ARM",
       "cal": "Sin calibre",
-      "v": 1.9
+      "v": 0.6
     },
     {
       "m": "Remington",
@@ -3714,7 +3634,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "Sin calibre",
+      "cal": "38SPL",
       "v": 0.4
     },
     {
@@ -3818,7 +3738,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 38",
+      "cal": "38SPL",
       "v": 6.1
     },
     {
@@ -3859,7 +3779,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "ARM",
       "cal": "22LR",
-      "v": 9.7
+      "v": 17
     },
     {
       "m": "Ruger",
@@ -3871,19 +3791,11 @@ var DATOS = {
     },
     {
       "m": "Ruger",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "ARM",
-      "cal": "cal 22",
-      "v": 7.3
-    },
-    {
-      "m": "Ruger",
       "tipo": "Cargadores",
       "dep": "Central",
       "cat": "CARG",
       "cal": ".40",
-      "v": 0.7
+      "v": 17
     },
     {
       "m": "Ruger",
@@ -3936,18 +3848,10 @@ var DATOS = {
     {
       "m": "Ruger",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 16.2
-    },
-    {
-      "m": "Ruger",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": ".40",
-      "v": 0.5
+      "v": 0.7
     },
     {
       "m": "Ruger",
@@ -3996,14 +3900,6 @@ var DATOS = {
       "cat": "CARG",
       "cal": "9mm",
       "v": 1.4
-    },
-    {
-      "m": "Ruger",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.2
     },
     {
       "m": "Ruger",
@@ -4186,8 +4082,16 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
+      "cal": "22LR",
+      "v": 0.3
+    },
+    {
+      "m": "Savage",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "ARM",
       "cal": "Sin calibre",
-      "v": 7.4
+      "v": 7.1
     },
     {
       "m": "Sellier & Bellot",
@@ -4426,7 +4330,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "Sin calibre",
+      "cal": "9mm",
       "v": 7
     },
     {
@@ -4536,14 +4440,6 @@ var DATOS = {
     {
       "m": "Sin Marca",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "cal 12",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "12GA",
@@ -4602,6 +4498,30 @@ var DATOS = {
       "tipo": "Municiones",
       "dep": "Central",
       "cat": "MUN",
+      "cal": "223REM",
+      "v": 1.2
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "MUN",
+      "cal": "380ACP",
+      "v": 3.3
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "MUN",
+      "cal": "45ACP",
+      "v": 4.9
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "Municiones",
+      "dep": "Central",
+      "cat": "MUN",
       "cal": "9mm",
       "v": 1.2
     },
@@ -4611,7 +4531,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "MUN",
       "cal": "Sin calibre",
-      "v": 52.7
+      "v": 43.5
     },
     {
       "m": "Sin Marca",
@@ -4632,14 +4552,6 @@ var DATOS = {
     {
       "m": "Sin Marca",
       "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "MUN",
-      "cal": "cal 45",
-      "v": 0.1
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
       "dep": "Showroom",
       "cat": "MUN",
       "cal": "12GA",
@@ -4650,16 +4562,24 @@ var DATOS = {
       "tipo": "Municiones",
       "dep": "Showroom",
       "cat": "MUN",
-      "cal": "Sin calibre",
-      "v": 2.7
+      "cal": "20GA",
+      "v": 0.2
     },
     {
       "m": "Sin Marca",
       "tipo": "Municiones",
       "dep": "Showroom",
       "cat": "MUN",
-      "cal": "cal 20",
-      "v": 0.2
+      "cal": "9mm",
+      "v": 0.4
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "Municiones",
+      "dep": "Showroom",
+      "cat": "MUN",
+      "cal": "Sin calibre",
+      "v": 2.3
     },
     {
       "m": "Sin Marca",
@@ -4676,30 +4596,6 @@ var DATOS = {
       "cat": "B",
       "cal": "Sin calibre",
       "v": 15.7
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 12",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 16",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.23mm",
-      "v": 0
     },
     {
       "m": "Sin Marca",
@@ -4722,7 +4618,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "2.00mm",
+      "cal": "22LR",
       "v": 0.1
     },
     {
@@ -4754,16 +4650,24 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "5.0mm",
-      "v": 0
+      "cal": "380ACP",
+      "v": 0.6
     },
     {
       "m": "Sin Marca",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "8.0mm",
-      "v": 0.1
+      "cal": "38SPL",
+      "v": 0.2
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "44MAG",
+      "v": 0.7
     },
     {
       "m": "Sin Marca",
@@ -4771,7 +4675,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "9mm",
-      "v": 0.4
+      "v": 11.4
     },
     {
       "m": "Sin Marca",
@@ -4779,31 +4683,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 390.5
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 16",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 27.5",
-      "v": 0.4
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 38",
-      "v": 0.2
+      "v": 378.7
     },
     {
       "m": "Sin Marca",
@@ -4834,22 +4714,6 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "0.40mm",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.80mm",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
       "cal": "12GA",
       "v": 0.1
     },
@@ -4858,24 +4722,32 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "2.0mm",
-      "v": 0
+      "cal": "16GA",
+      "v": 0.3
     },
     {
       "m": "Sin Marca",
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "4.0mm",
-      "v": 0
+      "cal": "380ACP",
+      "v": 0.1
     },
     {
       "m": "Sin Marca",
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "5.0mm",
-      "v": 0
+      "cal": "38SPL",
+      "v": 0.1
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "45ACP",
+      "v": 0.7
     },
     {
       "m": "Sin Marca",
@@ -4891,7 +4763,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "9mm",
-      "v": 0.1
+      "v": 2.8
     },
     {
       "m": "Sin Marca",
@@ -4899,31 +4771,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 69.1
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 16",
-      "v": 0.3
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 27.5",
-      "v": 0
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 38",
-      "v": 0
+      "v": 65.8
     },
     {
       "m": "Sin Marca",
@@ -4978,176 +4826,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
-      "cal": "0.10mm",
-      "v": 0.7
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.16mm",
-      "v": 4.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.20mm",
-      "v": 8.7
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.23mm",
-      "v": 11.8
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.25mm",
-      "v": 4.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.26mm",
-      "v": 10.6
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.28mm",
-      "v": 23
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.30mm",
-      "v": 24.8
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.33mm",
-      "v": 0
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.35mm",
-      "v": 23.8
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.37mm",
-      "v": 19.5
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.40mm",
-      "v": 22.9
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.43mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.45mm",
-      "v": 21.8
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.47mm",
-      "v": 0
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.50mm",
-      "v": 10.7
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.55mm",
-      "v": 5.5
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.60mm",
-      "v": 19.6
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.70mm",
-      "v": 20.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.80mm",
-      "v": 28.3
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "0.90mm",
-      "v": 24.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 390.3
+      "v": 674.9
     },
     {
       "m": "Snake",
@@ -5162,168 +4842,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "0.10mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.16mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.20mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.23mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.25mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.26mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.28mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.30mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.35mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.37mm",
-      "v": 0
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.40mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.43mm",
-      "v": 0.1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.45mm",
-      "v": 0.2
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.47mm",
-      "v": 0
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.50mm",
-      "v": 0.3
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.55mm",
-      "v": 0.5
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.60mm",
-      "v": 0.5
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.70mm",
-      "v": 0.7
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.80mm",
-      "v": 0.7
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.90mm",
-      "v": 1
-    },
-    {
-      "m": "Snake",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 7.2
+      "v": 12.6
     },
     {
       "m": "Sumax",
@@ -5346,56 +4866,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
-      "cal": "0.19mm",
-      "v": 0.3
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.21mm",
-      "v": 0
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.25mm",
-      "v": 0.6
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.310mm",
-      "v": 0
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "0.330mm",
-      "v": 0.1
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
       "cal": "Sin calibre",
-      "v": 9.4
-    },
-    {
-      "m": "Sumax",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 43.5",
-      "v": 0
+      "v": 10.4
     },
     {
       "m": "Sundance",
@@ -5451,7 +4923,15 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 128.9
+      "v": 13.6
+    },
+    {
+      "m": "TSS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "cal 50",
+      "v": 115.3
     },
     {
       "m": "TSS",
@@ -5507,7 +4987,15 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 1.9
+      "v": 0.4
+    },
+    {
+      "m": "TSS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "cal 50",
+      "v": 1.4
     },
     {
       "m": "TSS",
@@ -5530,6 +5018,14 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
+      "cal": "22LR",
+      "v": 4
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "ARM",
       "cal": "38Super",
       "v": 50.1
     },
@@ -5540,14 +5036,6 @@ var DATOS = {
       "cat": "ARM",
       "cal": "9mm",
       "v": 442.5
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 4
     },
     {
       "m": "Tanfoglio",
@@ -5564,6 +5052,14 @@ var DATOS = {
       "cat": "ARM",
       "cal": ".40",
       "v": 37
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "Armas",
+      "dep": "Showroom",
+      "cat": "ARM",
+      "cal": "22LR",
+      "v": 4
     },
     {
       "m": "Tanfoglio",
@@ -5588,14 +5084,6 @@ var DATOS = {
       "cat": "ARM",
       "cal": "9mm",
       "v": 26.4
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Armas",
-      "dep": "Showroom",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 4
     },
     {
       "m": "Tanfoglio",
@@ -5667,7 +5155,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "38Super",
-      "v": 0.2
+      "v": 0.4
     },
     {
       "m": "Tanfoglio",
@@ -5687,14 +5175,6 @@ var DATOS = {
     },
     {
       "m": "Tanfoglio",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.2
-    },
-    {
-      "m": "Tanfoglio",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
@@ -5706,8 +5186,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
+      "cal": "9mm",
+      "v": 0.3
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
       "cal": "Sin calibre",
-      "v": 17.7
+      "v": 17.5
     },
     {
       "m": "Tanfoglio",
@@ -5722,7 +5210,7 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "cal 22",
+      "cal": "22LR",
       "v": 2.1
     },
     {
@@ -5850,7 +5338,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
-      "cal": "Sin calibre",
+      "cal": "20GA",
       "v": 1.9
     },
     {
@@ -5874,7 +5362,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
-      "cal": "Sin calibre",
+      "cal": "20GA",
       "v": 0.7
     },
     {
@@ -5971,7 +5459,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "9mm",
-      "v": 118.9
+      "v": 227.1
     },
     {
       "m": "Umarex",
@@ -5979,7 +5467,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 298.5
+      "v": 190.2
     },
     {
       "m": "Umarex",
@@ -6082,8 +5570,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
+      "cal": "6mm",
+      "v": 3.1
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": "Sin calibre",
-      "v": 503
+      "v": 499.8
     },
     {
       "m": "Umarex",
@@ -6155,7 +5651,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "50x10",
-      "v": 32.2
+      "v": 32.1
     },
     {
       "m": "Umarex",
@@ -6186,24 +5682,8 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "NC",
-      "cal": "cal 46.5",
-      "v": 0
-    },
-    {
-      "m": "Umarex",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "NC",
       "cal": "cal 50",
-      "v": 77.3
-    },
-    {
-      "m": "Umarex",
-      "tipo": "No reglamentado",
-      "dep": "Central",
-      "cat": "NC",
-      "cal": "cal 69.5",
-      "v": 0
+      "v": 77.2
     },
     {
       "m": "Umarex",
@@ -6226,7 +5706,7 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Incautaciones Fiscalia",
       "cat": "A",
-      "cal": "Sin calibre",
+      "cal": "9mm",
       "v": 0.1
     },
     {
@@ -6243,7 +5723,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "9mm",
-      "v": 4.4
+      "v": 5.6
     },
     {
       "m": "Umarex",
@@ -6251,7 +5731,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 4.7
+      "v": 3.5
     },
     {
       "m": "Umarex",
@@ -6338,8 +5818,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
+      "cal": "6mm",
+      "v": 0.9
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
       "cal": "Sin calibre",
-      "v": 16.3
+      "v": 15.4
     },
     {
       "m": "Umarex",
@@ -6354,8 +5842,16 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
+      "cal": "6mm",
+      "v": 2
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
       "cal": "Sin calibre",
-      "v": 7.2
+      "v": 5.3
     },
     {
       "m": "Umarex",
@@ -6514,8 +6010,32 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
+      "cal": "22LR",
+      "v": 0.7
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
+      "cal": "9mm",
+      "v": 2.1
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "A",
       "cal": "Sin calibre",
-      "v": 175.3
+      "v": 172.5
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 0.7
     },
     {
       "m": "Vector Optics",
@@ -6523,7 +6043,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 144.8
+      "v": 144.1
     },
     {
       "m": "Vector Optics",
@@ -6538,8 +6058,32 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "A",
+      "cal": "22LR",
+      "v": 0.2
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "9mm",
+      "v": 0.1
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
       "cal": "Sin calibre",
-      "v": 18
+      "v": 17.7
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "223REM",
+      "v": 0.2
     },
     {
       "m": "Vector Optics",
@@ -6547,7 +6091,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 26.2
+      "v": 26
     },
     {
       "m": "Walther",
@@ -6555,7 +6099,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "22LR",
-      "v": 121.9
+      "v": 128.6
     },
     {
       "m": "Walther",
@@ -6564,14 +6108,6 @@ var DATOS = {
       "cat": "ARM",
       "cal": "9mm",
       "v": 65.3
-    },
-    {
-      "m": "Walther",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "Sin calibre",
-      "v": 6.7
     },
     {
       "m": "Walther",
@@ -7179,7 +6715,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "cal 50",
       400,
       115.3
     ],
@@ -7344,7 +6880,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "9mm",
       51780,
       92.6
     ],
@@ -7840,7 +7376,7 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      2379,
+      2378,
       47.6
     ],
     [
@@ -8262,17 +7798,6 @@ var DATOS = {
       32.2
     ],
     [
-      "400396",
-      "Balines de gas pimienta UMAREX cal 50 x 10 unid #2.4784",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
-      "50x10",
-      356,
-      32.2
-    ],
-    [
       "700801",
       "Escopeta Semiauto AKKAR cal 12 5+1 18,5\" Negro",
       "Akkar",
@@ -8282,6 +7807,17 @@ var DATOS = {
       "12GA",
       7,
       32.2
+    ],
+    [
+      "400396",
+      "Balines de gas pimienta UMAREX cal 50 x 10 unid #2.4784",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "50x10",
+      355,
+      32.1
     ],
     [
       "501493",
@@ -8581,7 +8117,7 @@ var DATOS = {
       27.2
     ],
     [
-      "941294",
+      "942194",
       "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 42",
       "Doberman BOTAS",
       "No reglamentado",
@@ -9324,7 +8860,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.90mm",
+      "Sin calibre",
       1783,
       20.3
     ],
@@ -9434,7 +8970,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.80mm",
+      "Sin calibre",
       2042,
       19.8
     ],
@@ -9478,7 +9014,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.37mm",
+      "Sin calibre",
       5349,
       19.5
     ],
@@ -9544,7 +9080,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "223REM",
       196,
       18.8
     ],
@@ -9621,7 +9157,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.35mm",
+      "Sin calibre",
       5087,
       18.3
     ],
@@ -9797,7 +9333,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       760,
       17.6
     ],
@@ -9918,7 +9454,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.40mm",
+      "Sin calibre",
       4637,
       17
     ],
@@ -9940,7 +9476,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       921,
       16.5
     ],
@@ -9973,7 +9509,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       798,
       16.4
     ],
@@ -10006,7 +9542,7 @@ var DATOS = {
       "Cargadores",
       "Central",
       "CARG",
-      "Sin calibre",
+      ".40",
       76,
       16.2
     ],
@@ -10072,7 +9608,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       4599,
       15.3
     ],
@@ -10161,7 +9697,7 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      9001,
+      8997,
       14.5
     ],
     [
@@ -10259,7 +9795,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.70mm",
+      "Sin calibre",
       1788,
       14
     ],
@@ -10347,7 +9883,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       1688,
       13.4
     ],
@@ -10424,7 +9960,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
+      "Sin calibre",
       2153,
       12.7
     ],
@@ -10545,7 +10081,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       677,
       12.2
     ],
@@ -10600,7 +10136,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.45mm",
+      "Sin calibre",
       2940,
       12
     ],
@@ -10721,7 +10257,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.23mm",
+      "Sin calibre",
       1480,
       11.8
     ],
@@ -10733,7 +10269,7 @@ var DATOS = {
       "Central",
       "NC",
       "cal 50",
-      575,
+      574,
       11.7
     ],
     [
@@ -10952,7 +10488,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.26mm",
+      "Sin calibre",
       1320,
       10.5
     ],
@@ -11128,7 +10664,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       576,
       10
     ],
@@ -11227,7 +10763,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "9mm",
       9469,
       9.8
     ],
@@ -11337,7 +10873,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       1160,
       9.2
     ],
@@ -11359,7 +10895,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       3040,
       9.2
     ],
@@ -11436,7 +10972,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.45mm",
+      "Sin calibre",
       1137,
       9
     ],
@@ -11722,7 +11258,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "9mm",
       1,
       8.1
     ],
@@ -11821,7 +11357,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       1725,
       7.8
     ],
@@ -11887,7 +11423,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 38",
+      "38SPL",
       1,
       7.6
     ],
@@ -11953,7 +11489,7 @@ var DATOS = {
       "Armas",
       "Showroom",
       "ARM",
-      "cal 22",
+      "22LR",
       1,
       7.3
     ],
@@ -12107,7 +11643,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "9mm",
       1,
       7
     ],
@@ -12217,7 +11753,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       6.7
     ],
@@ -12470,7 +12006,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 38",
+      "38SPL",
       1,
       6.1
     ],
@@ -12492,7 +12028,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 38",
+      "38SPL",
       1,
       6.1
     ],
@@ -12514,7 +12050,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       6.1
     ],
@@ -12525,7 +12061,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       6.1
     ],
@@ -12657,7 +12193,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "22LR",
       103,
       5.9
     ],
@@ -12668,7 +12204,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "9mm",
       3,
       5.8
     ],
@@ -12866,7 +12402,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "9mm",
       1,
       5.6
     ],
@@ -12899,7 +12435,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.40mm",
+      "Sin calibre",
       702,
       5.6
     ],
@@ -12943,7 +12479,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.35mm",
+      "Sin calibre",
       692,
       5.5
     ],
@@ -12954,7 +12490,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       41,
       5.5
     ],
@@ -13130,7 +12666,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 22",
+      "22LR",
       1,
       5.1
     ],
@@ -13207,19 +12743,8 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
-      636,
-      5
-    ],
-    [
-      "160190",
-      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
       "Sin calibre",
-      310,
+      636,
       5
     ],
     [
@@ -13231,6 +12756,17 @@ var DATOS = {
       "ARM",
       "9mm",
       1,
+      5
+    ],
+    [
+      "160190",
+      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "Sin calibre",
+      309,
       5
     ],
     [
@@ -13251,7 +12787,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.20mm",
+      "Sin calibre",
       627,
       5
     ],
@@ -13339,7 +12875,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.80mm",
+      "Sin calibre",
       509,
       4.9
     ],
@@ -13493,7 +13029,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 45",
+      "45ACP",
       1,
       4.6
     ],
@@ -13526,7 +13062,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "22MAG",
       80,
       4.6
     ],
@@ -13911,7 +13447,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.16mm",
+      "Sin calibre",
       482,
       4.1
     ],
@@ -13999,7 +13535,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "12GA",
       900,
       4.1
     ],
@@ -14032,7 +13568,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.55mm",
+      "Sin calibre",
       496,
       4
     ],
@@ -14065,7 +13601,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       4
     ],
@@ -14076,7 +13612,7 @@ var DATOS = {
       "Armas",
       "Showroom",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       4
     ],
@@ -14175,7 +13711,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.25mm",
+      "Sin calibre",
       1332,
       3.9
     ],
@@ -14208,7 +13744,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 22",
+      "22LR",
       1,
       3.8
     ],
@@ -14307,7 +13843,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.70mm",
+      "Sin calibre",
       408,
       3.8
     ],
@@ -14450,7 +13986,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 22",
+      "22LR",
       1,
       3.7
     ],
@@ -14670,7 +14206,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       24,
       3.5
     ],
@@ -14747,7 +14283,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.20mm",
+      "Sin calibre",
       1406,
       3.5
     ],
@@ -14813,7 +14349,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "9mm",
       39,
       3.5
     ],
@@ -15264,7 +14800,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "380ACP",
       16,
       3.1
     ],
@@ -15836,7 +15372,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       340,
       2.7
     ],
@@ -15913,7 +15449,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "45ACP",
       6,
       2.6
     ],
@@ -16177,7 +15713,7 @@ var DATOS = {
       "Armas",
       "Showroom",
       "ARM",
-      "Sin calibre",
+      "12GA",
       1,
       2.5
     ],
@@ -16199,7 +15735,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 36",
+      "36GA",
       1,
       2.5
     ],
@@ -16210,7 +15746,7 @@ var DATOS = {
       "Armas",
       "Showroom",
       "ARM",
-      "cal 36",
+      "36GA",
       1,
       2.5
     ],
@@ -16551,7 +16087,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "9mm",
       30,
       2.3
     ],
@@ -17024,7 +16560,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 22",
+      "22LR",
       1,
       2.1
     ],
@@ -17079,7 +16615,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "9mm",
       61,
       2.1
     ],
@@ -17200,7 +16736,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "6mm",
       4,
       2
     ],
@@ -17233,7 +16769,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "cal 12",
+      "12GA",
       1,
       2
     ],
@@ -17343,7 +16879,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "6mm",
       3,
       2
     ],
@@ -17409,7 +16945,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       9,
       1.9
     ],
@@ -17431,7 +16967,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "9mm",
       1,
       1.9
     ],
@@ -17541,7 +17077,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       5,
       1.9
     ],
@@ -17772,7 +17308,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "20GA",
       16,
       1.9
     ],
@@ -17981,7 +17517,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "45ACP",
       11,
       1.8
     ],
@@ -18047,7 +17583,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "NC",
-      "Sin calibre",
+      "6mm",
       8,
       1.8
     ],
@@ -18058,7 +17594,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       1.8
     ],
@@ -18102,7 +17638,7 @@ var DATOS = {
       "Cargadores",
       "Central",
       "CARG",
-      "Sin calibre",
+      "380ACP",
       24,
       1.7
     ],
@@ -19070,7 +18606,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.80mm",
+      "Sin calibre",
       52,
       1.5
     ],
@@ -19116,17 +18652,6 @@ var DATOS = {
       "C",
       "Sin calibre",
       7,
-      1.5
-    ],
-    [
-      "DES650225",
-      "Bolsa de dormir NTK Mod. BUGGY 200g #230120",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      21,
       1.5
     ],
     [
@@ -19235,7 +18760,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "cal 50",
       5,
       1.4
     ],
@@ -19284,6 +18809,17 @@ var DATOS = {
       1.4
     ],
     [
+      "DES650225",
+      "Bolsa de dormir NTK Mod. BUGGY 200g #230120",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      20,
+      1.4
+    ],
+    [
       "320280EGF",
       "Rifle AC NPE CROSMAN 5,5mm Mod. Mag-Fire Extreme con mira 4x32 #CME2SXS",
       "Crosman",
@@ -19301,7 +18837,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.80mm",
+      "Sin calibre",
       35,
       1.4
     ],
@@ -19873,7 +19409,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.90mm",
+      "Sin calibre",
       38,
       1.3
     ],
@@ -19983,7 +19519,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.90mm",
+      "Sin calibre",
       28,
       1.3
     ],
@@ -20071,7 +19607,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "308WIN",
       1,
       1.2
     ],
@@ -20390,7 +19926,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       8,
       1.2
     ],
@@ -20478,7 +20014,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       8,
       1.2
     ],
@@ -20709,7 +20245,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.70mm",
+      "Sin calibre",
       53,
       1.1
     ],
@@ -20885,7 +20421,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "6.9mm",
+      "Sin calibre",
       54,
       1.1
     ],
@@ -20929,7 +20465,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
+      "Sin calibre",
       33,
       1.1
     ],
@@ -20940,7 +20476,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.70mm",
+      "Sin calibre",
       30,
       1.1
     ],
@@ -21017,7 +20553,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "223REM",
       4,
       1.1
     ],
@@ -21083,7 +20619,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 12",
+      "12GA",
       21,
       1.1
     ],
@@ -21193,7 +20729,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "6mm",
       8,
       1.1
     ],
@@ -21303,7 +20839,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 22",
+      "22LR",
       6,
       1
     ],
@@ -21413,7 +20949,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.35mm",
+      "Sin calibre",
       6,
       1
     ],
@@ -22568,7 +22104,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "22LR",
       20,
       0.9
     ],
@@ -22700,7 +22236,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.35mm",
+      "Sin calibre",
       5,
       0.9
     ],
@@ -23448,7 +22984,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       2,
       0.8
     ],
@@ -23635,7 +23171,7 @@ var DATOS = {
       "Cargadores",
       "Central",
       "CARG",
-      "Sin calibre",
+      "9mm",
       6,
       0.8
     ],
@@ -23899,7 +23435,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "A",
-      "Sin calibre",
+      "22LR",
       24,
       0.7
     ],
@@ -23910,7 +23446,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       13,
       0.7
     ],
@@ -23943,7 +23479,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.10mm",
+      "Sin calibre",
       24,
       0.7
     ],
@@ -23965,7 +23501,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.80mm",
+      "Sin calibre",
       43,
       0.7
     ],
@@ -24174,7 +23710,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 22",
+      "22LR",
       7,
       0.7
     ],
@@ -24196,7 +23732,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "45ACP",
       1,
       0.7
     ],
@@ -24218,7 +23754,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "223REM",
       17,
       0.7
     ],
@@ -24416,7 +23952,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "20GA",
       6,
       0.7
     ],
@@ -24438,7 +23974,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      "cal 40",
       1,
       0.7
     ],
@@ -24460,7 +23996,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "44MAG",
       4,
       0.7
     ],
@@ -24559,7 +24095,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.55mm",
+      "Sin calibre",
       50,
       0.7
     ],
@@ -24570,7 +24106,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.35mm",
+      "Sin calibre",
       4,
       0.7
     ],
@@ -24581,7 +24117,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.35mm",
+      "Sin calibre",
       4,
       0.7
     ],
@@ -24724,7 +24260,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0.7
     ],
@@ -24735,7 +24271,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0.7
     ],
@@ -24911,7 +24447,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "Sin calibre",
+      "9mm",
       374,
       0.7
     ],
@@ -24933,7 +24469,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "NC",
-      "Sin calibre",
+      "6mm",
       1,
       0.7
     ],
@@ -24977,7 +24513,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.90mm",
+      "Sin calibre",
       66,
       0.7
     ],
@@ -25197,7 +24733,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.90mm",
+      "Sin calibre",
       38,
       0.6
     ],
@@ -25252,7 +24788,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "223REM",
       1,
       0.6
     ],
@@ -25483,7 +25019,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       4,
       0.6
     ],
@@ -25560,7 +25096,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.45mm",
+      "Sin calibre",
       44,
       0.6
     ],
@@ -25714,7 +25250,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       1,
       0.6
     ],
@@ -25725,7 +25261,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0.6
     ],
@@ -25945,7 +25481,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.55mm",
+      "Sin calibre",
       37,
       0.6
     ],
@@ -26231,7 +25767,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       22,
       0.6
     ],
@@ -26319,7 +25855,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "Sin calibre",
+      "9mm",
       533,
       0.6
     ],
@@ -26473,7 +26009,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       4,
       0.5
     ],
@@ -26528,7 +26064,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "6mm",
       1,
       0.5
     ],
@@ -26583,7 +26119,7 @@ var DATOS = {
       "Cargadores",
       "Central",
       "CARG",
-      "Sin calibre",
+      "9mm",
       6,
       0.5
     ],
@@ -26759,7 +26295,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "12GA",
       2,
       0.5
     ],
@@ -26902,7 +26438,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0.5
     ],
@@ -27474,7 +27010,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       18,
       0.5
     ],
@@ -27540,7 +27076,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
+      "Sin calibre",
       29,
       0.5
     ],
@@ -27716,7 +27252,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       10,
       0.4
     ],
@@ -27881,7 +27417,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       9,
       0.4
     ],
@@ -28255,7 +27791,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 27.5",
+      "Sin calibre",
       138,
       0.4
     ],
@@ -28299,7 +27835,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       17,
       0.4
     ],
@@ -28519,7 +28055,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "38SPL",
       4,
       0.4
     ],
@@ -28629,7 +28165,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.40mm",
+      "Sin calibre",
       29,
       0.4
     ],
@@ -28673,7 +28209,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "6mm",
       3,
       0.4
     ],
@@ -28904,7 +28440,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.4
     ],
@@ -28948,7 +28484,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "223REM",
       71,
       0.4
     ],
@@ -29003,7 +28539,7 @@ var DATOS = {
       "Municiones",
       "Showroom",
       "MUN",
-      "Sin calibre",
+      "9mm",
       1,
       0.4
     ],
@@ -29157,7 +28693,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       11,
       0.4
     ],
@@ -29168,7 +28704,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.70mm",
+      "Sin calibre",
       10,
       0.4
     ],
@@ -29575,7 +29111,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      "9mm",
       4,
       0.4
     ],
@@ -29586,7 +29122,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 22",
+      "22LR",
       2,
       0.3
     ],
@@ -29696,7 +29232,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       24,
       0.3
     ],
@@ -29806,7 +29342,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "45ACP",
       13,
       0.3
     ],
@@ -29960,7 +29496,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 16",
+      "16GA",
       7,
       0.3
     ],
@@ -30147,7 +29683,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.25mm",
+      "Sin calibre",
       10,
       0.3
     ],
@@ -30169,7 +29705,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "380ACP",
       5,
       0.3
     ],
@@ -30565,7 +30101,7 @@ var DATOS = {
       "Armas",
       "Central",
       "ARM",
-      "Sin calibre",
+      "22LR",
       1,
       0.3
     ],
@@ -30631,7 +30167,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 12",
+      "12GA",
       6,
       0.3
     ],
@@ -30664,7 +30200,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 22",
+      "22LR",
       3,
       0.3
     ],
@@ -30807,7 +30343,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       2,
       0.3
     ],
@@ -30994,7 +30530,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.25mm",
+      "Sin calibre",
       9,
       0.3
     ],
@@ -31236,7 +30772,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       2,
       0.3
     ],
@@ -31335,7 +30871,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "223REM",
       3,
       0.3
     ],
@@ -31610,7 +31146,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.19mm",
+      "Sin calibre",
       10,
       0.3
     ],
@@ -31709,7 +31245,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.3
     ],
@@ -31918,7 +31454,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "22LR",
       6,
       0.3
     ],
@@ -31984,7 +31520,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 20",
+      "20GA",
       1,
       0.3
     ],
@@ -32402,7 +31938,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "NC",
-      "Sin calibre",
+      "6mm",
       1,
       0.2
     ],
@@ -32666,7 +32202,7 @@ var DATOS = {
       "Municiones",
       "Showroom",
       "MUN",
-      "cal 20",
+      "20GA",
       1,
       0.2
     ],
@@ -32677,7 +32213,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.25mm",
+      "Sin calibre",
       35,
       0.2
     ],
@@ -33051,7 +32587,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "22LR",
       4,
       0.2
     ],
@@ -33271,7 +32807,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.20mm",
+      "Sin calibre",
       37,
       0.2
     ],
@@ -33326,7 +32862,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "12GA",
       2,
       0.2
     ],
@@ -33458,7 +32994,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "9.5mm",
+      "Sin calibre",
       8,
       0.2
     ],
@@ -33524,7 +33060,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "Sin calibre",
+      "22LR",
       7,
       0.2
     ],
@@ -33535,7 +33071,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "380ACP",
       1,
       0.2
     ],
@@ -33546,7 +33082,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      ".40",
       1,
       0.2
     ],
@@ -33755,7 +33291,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "223REM",
       5,
       0.2
     ],
@@ -33898,7 +33434,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       3,
       0.2
     ],
@@ -33964,7 +33500,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.70mm",
+      "Sin calibre",
       14,
       0.2
     ],
@@ -33997,7 +33533,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       5,
       0.2
     ],
@@ -34272,7 +33808,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       2,
       0.2
     ],
@@ -34283,7 +33819,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       2,
       0.2
     ],
@@ -34393,7 +33929,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       20,
       0.2
     ],
@@ -34415,7 +33951,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       18,
       0.2
     ],
@@ -34470,7 +34006,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      "38Super",
       1,
       0.2
     ],
@@ -34668,7 +34204,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
+      "Sin calibre",
       12,
       0.2
     ],
@@ -34679,7 +34215,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.60mm",
+      "Sin calibre",
       12,
       0.2
     ],
@@ -34756,7 +34292,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       8,
       0.2
     ],
@@ -34844,7 +34380,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 38",
+      "38SPL",
       5,
       0.2
     ],
@@ -34921,7 +34457,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.2
     ],
@@ -34954,7 +34490,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.35mm",
+      "Sin calibre",
       1,
       0.2
     ],
@@ -35152,7 +34688,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.43mm",
+      "Sin calibre",
       18,
       0.2
     ],
@@ -35251,7 +34787,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "380ACP",
       5,
       0.2
     ],
@@ -35306,7 +34842,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.55mm",
+      "Sin calibre",
       7,
       0.2
     ],
@@ -35427,7 +34963,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.2
     ],
@@ -35515,7 +35051,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.60mm",
+      "Sin calibre",
       5,
       0.2
     ],
@@ -35625,7 +35161,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       8,
       0.2
     ],
@@ -35933,7 +35469,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "5.56mm",
+      "223REM",
       15,
       0.2
     ],
@@ -36087,7 +35623,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.45mm",
+      "Sin calibre",
       10,
       0.2
     ],
@@ -36120,7 +35656,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.55mm",
+      "Sin calibre",
       10,
       0.2
     ],
@@ -36461,7 +35997,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "2.00mm",
+      "Sin calibre",
       1,
       0.1
     ],
@@ -36538,7 +36074,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.55mm",
+      "Sin calibre",
       6,
       0.1
     ],
@@ -36637,7 +36173,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      "380ACP",
       2,
       0.1
     ],
@@ -36703,7 +36239,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -36736,7 +36272,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "6mm",
       8,
       0.1
     ],
@@ -36758,7 +36294,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "6mm",
       8,
       0.1
     ],
@@ -36989,7 +36525,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "cal 45",
+      "45ACP",
       4,
       0.1
     ],
@@ -37000,7 +36536,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "Sin calibre",
+      "9mm",
       4,
       0.1
     ],
@@ -37022,7 +36558,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       1,
       0.1
     ],
@@ -37077,7 +36613,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.26mm",
+      "Sin calibre",
       10,
       0.1
     ],
@@ -37209,7 +36745,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 25.4",
+      "Sin calibre",
       1,
       0.1
     ],
@@ -37275,7 +36811,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.1
     ],
@@ -37583,7 +37119,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.70mm",
+      "Sin calibre",
       6,
       0.1
     ],
@@ -37715,7 +37251,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.70mm",
+      "Sin calibre",
       16,
       0.1
     ],
@@ -37935,7 +37471,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "22LR",
       4,
       0.1
     ],
@@ -37979,7 +37515,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       4,
       0.1
     ],
@@ -37990,7 +37526,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.10mm",
+      "Sin calibre",
       4,
       0.1
     ],
@@ -38001,7 +37537,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       4,
       0.1
     ],
@@ -38012,7 +37548,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "A",
-      "6.35mm",
+      "6,35/25Auto",
       7,
       0.1
     ],
@@ -38111,7 +37647,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       8,
       0.1
     ],
@@ -38188,7 +37724,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       7,
       0.1
     ],
@@ -38969,7 +38505,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 12",
+      "12GA",
       3,
       0.1
     ],
@@ -39046,7 +38582,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 12",
+      "12GA",
       3,
       0.1
     ],
@@ -39299,7 +38835,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "8.0mm",
+      "Sin calibre",
       67,
       0.1
     ],
@@ -39310,7 +38846,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       11,
       0.1
     ],
@@ -39508,7 +39044,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.43mm",
+      "Sin calibre",
       10,
       0.1
     ],
@@ -39629,7 +39165,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "5.56mm",
+      "223REM",
       9,
       0.1
     ],
@@ -39662,7 +39198,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0.1
     ],
@@ -39794,7 +39330,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       6,
       0.1
     ],
@@ -40036,7 +39572,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.55mm",
+      "Sin calibre",
       11,
       0.1
     ],
@@ -40179,7 +39715,7 @@ var DATOS = {
       "Cargadores",
       "Showroom",
       "CARG",
-      "Sin calibre",
+      "9mm",
       1,
       0.1
     ],
@@ -40432,7 +39968,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -40454,7 +39990,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       4,
       0.1
     ],
@@ -40597,7 +40133,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.25mm",
+      "Sin calibre",
       12,
       0.1
     ],
@@ -40751,7 +40287,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "9.5mm",
+      "Sin calibre",
       3,
       0.1
     ],
@@ -40784,7 +40320,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.20mm",
+      "Sin calibre",
       10,
       0.1
     ],
@@ -40839,7 +40375,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.40mm",
+      "Sin calibre",
       10,
       0.1
     ],
@@ -40916,7 +40452,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       4,
       0.1
     ],
@@ -40982,7 +40518,7 @@ var DATOS = {
       "No reglamentado",
       "Incautaciones Fiscalia",
       "A",
-      "Sin calibre",
+      "9mm",
       75,
       0.1
     ],
@@ -41004,7 +40540,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.16mm",
+      "Sin calibre",
       9,
       0.1
     ],
@@ -41081,7 +40617,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "380ACP",
       3,
       0.1
     ],
@@ -41323,7 +40859,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.70mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -41510,7 +41046,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.28mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -41554,7 +41090,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.23mm",
+      "Sin calibre",
       9,
       0.1
     ],
@@ -41565,7 +41101,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       9,
       0.1
     ],
@@ -41620,7 +41156,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.60mm",
+      "Sin calibre",
       12,
       0.1
     ],
@@ -41686,7 +41222,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       7,
       0.1
     ],
@@ -41884,7 +41420,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.55mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -41895,7 +41431,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.40mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -41906,7 +41442,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.60mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -41928,7 +41464,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.1
     ],
@@ -42247,7 +41783,7 @@ var DATOS = {
       "Municiones",
       "Central",
       "MUN",
-      "Sin calibre",
+      "223REM",
       1,
       0.1
     ],
@@ -42302,7 +41838,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.60mm",
+      "Sin calibre",
       4,
       0.1
     ],
@@ -42643,7 +42179,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.1
     ],
@@ -42687,7 +42223,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "22MAG",
       1,
       0.1
     ],
@@ -42731,7 +42267,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.330mm",
+      "Sin calibre",
       13,
       0.1
     ],
@@ -42753,7 +42289,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0.1
     ],
@@ -42830,7 +42366,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.28mm",
+      "Sin calibre",
       7,
       0.1
     ],
@@ -42896,7 +42432,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.45mm",
+      "Sin calibre",
       4,
       0.1
     ],
@@ -42962,7 +42498,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       5,
       0.1
     ],
@@ -43105,7 +42641,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       6,
       0.1
     ],
@@ -43116,7 +42652,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
-      "Sin calibre",
+      "223REM",
       10,
       0.1
     ],
@@ -43248,7 +42784,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       2,
       0.1
     ],
@@ -43479,7 +43015,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "380ACP",
       2,
       0.1
     ],
@@ -43556,7 +43092,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       10,
       0
     ],
@@ -43633,7 +43169,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.45mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -43644,7 +43180,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.28mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -43809,7 +43345,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -43853,7 +43389,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "cal 16",
+      "16GA",
       1,
       0
     ],
@@ -43941,7 +43477,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.23mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -43974,7 +43510,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.26mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -44007,7 +43543,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.70mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -44095,7 +43631,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       2,
       0
     ],
@@ -44128,7 +43664,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       4,
       0
     ],
@@ -44139,7 +43675,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "1.5mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -44161,7 +43697,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "1.5mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -44194,7 +43730,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       10,
       0
     ],
@@ -44403,7 +43939,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "6mm",
       1,
       0
     ],
@@ -44447,7 +43983,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.40mm",
+      "Sin calibre",
       12,
       0
     ],
@@ -44744,7 +44280,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       6,
       0
     ],
@@ -44755,7 +44291,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.40mm",
+      "Sin calibre",
       11,
       0
     ],
@@ -44876,7 +44412,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       3,
       0
     ],
@@ -44887,7 +44423,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "6.9mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -45217,7 +44753,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -45228,7 +44764,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.60mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -45239,7 +44775,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.45mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -45492,7 +45028,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.90mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -45569,7 +45105,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "6mm",
       1,
       0
     ],
@@ -45712,7 +45248,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 38",
+      "38SPL",
       1,
       0
     ],
@@ -45734,7 +45270,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.37mm",
+      "Sin calibre",
       10,
       0
     ],
@@ -45844,7 +45380,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.35mm",
+      "Sin calibre",
       10,
       0
     ],
@@ -45866,7 +45402,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.20mm",
+      "Sin calibre",
       6,
       0
     ],
@@ -45954,7 +45490,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "38SPL",
       1,
       0
     ],
@@ -45965,7 +45501,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "38SPL",
       1,
       0
     ],
@@ -45976,7 +45512,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       4,
       0
     ],
@@ -46053,7 +45589,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "12GA",
       2,
       0
     ],
@@ -46086,7 +45622,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 12",
+      "12GA",
       1,
       0
     ],
@@ -46174,7 +45710,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -46185,7 +45721,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "5.0mm",
+      "Sin calibre",
       87,
       0
     ],
@@ -46196,7 +45732,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -46328,7 +45864,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 43.5",
+      "Sin calibre",
       1,
       0
     ],
@@ -46438,7 +45974,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.35mm",
+      "Sin calibre",
       4,
       0
     ],
@@ -46515,7 +46051,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -46537,7 +46073,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -46548,7 +46084,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -46636,7 +46172,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.40mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -46658,7 +46194,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.50mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -46856,7 +46392,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "380ACP",
       1,
       0
     ],
@@ -46900,7 +46436,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.21mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -47087,7 +46623,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 16",
+      "Sin calibre",
       3,
       0
     ],
@@ -47230,7 +46766,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.26mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -47241,7 +46777,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.20mm",
+      "Sin calibre",
       11,
       0
     ],
@@ -47362,7 +46898,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.26mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -47406,7 +46942,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -47461,7 +46997,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -47593,7 +47129,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.33mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -47626,7 +47162,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -47637,7 +47173,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -47791,7 +47327,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -47824,7 +47360,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -47879,7 +47415,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.26mm",
+      "Sin calibre",
       3,
       0
     ],
@@ -48077,7 +47613,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -48275,7 +47811,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -48374,7 +47910,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       2,
       0
     ],
@@ -48484,7 +48020,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "38SPL",
       1,
       0
     ],
@@ -48616,7 +48152,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.47mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -49111,7 +48647,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -49122,7 +48658,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -49155,7 +48691,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.25mm",
+      "Sin calibre",
       6,
       0
     ],
@@ -49232,7 +48768,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -49331,7 +48867,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.45mm",
+      "Sin calibre",
       4,
       0
     ],
@@ -49540,7 +49076,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.28mm",
+      "Sin calibre",
       5,
       0
     ],
@@ -49562,7 +49098,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "12GA",
       1,
       0
     ],
@@ -49694,7 +49230,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.80mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -49815,7 +49351,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.28mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -49870,7 +49406,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       4,
       0
     ],
@@ -50068,7 +49604,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "2.0mm",
+      "Sin calibre",
       110,
       0
     ],
@@ -50442,7 +49978,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.310mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -50574,7 +50110,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.45mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -50651,7 +50187,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.47mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -50662,7 +50198,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.28mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -50761,7 +50297,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "4.0mm",
+      "Sin calibre",
       25,
       0
     ],
@@ -50926,7 +50462,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "cal 27.5",
+      "Sin calibre",
       3,
       0
     ],
@@ -51003,7 +50539,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.35mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -51014,7 +50550,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.310mm",
+      "Sin calibre",
       2,
       0
     ],
@@ -51278,7 +50814,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.30mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -51289,7 +50825,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.30mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -51443,7 +50979,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "C",
-      "0.23mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -51663,7 +51199,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "0.50mm",
+      "Sin calibre",
       1,
       0
     ],
@@ -51729,7 +51265,7 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "C",
-      "5.0mm",
+      "Sin calibre",
       15,
       0
     ],
@@ -51905,7 +51441,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "Sin calibre",
+      "9mm",
       1,
       0
     ],
@@ -52576,7 +52112,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "12GA",
       4,
       0
     ],
@@ -52587,7 +52123,7 @@ var DATOS = {
       "Cargadores",
       "Central",
       "CARG",
-      "cal 12",
+      "12GA",
       2,
       0
     ],
@@ -52906,7 +52442,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "12GA",
       2,
       0
     ],
@@ -52917,7 +52453,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 12",
+      "Sin calibre",
       2,
       0
     ],
@@ -53368,7 +52904,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "NC",
-      "cal 46.5",
+      "Sin calibre",
       20,
       0
     ],
@@ -53379,7 +52915,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "NC",
-      "cal 69.5",
+      "Sin calibre",
       20,
       0
     ],
@@ -53467,7 +53003,7 @@ var DATOS = {
       "No reglamentado",
       "Central",
       "B",
-      "cal 20",
+      "20GA",
       6,
       0
     ],
@@ -53936,15 +53472,15 @@ var DATOS = {
       27.8
     ],
     "Akkar": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      135.7,
-      112.7,
-      97.4,
-      97.4,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      135.8,
+      112.8,
+      97.5,
+      97.5,
       74.5,
       74.5,
       74.5,
@@ -54056,15 +53592,15 @@ var DATOS = {
       6.1
     ],
     "Armed": [
-      143.3,
-      143.8,
-      141.1,
-      133.6,
-      131,
-      124,
-      117.4,
-      121.8,
-      127.4,
+      143.7,
+      144.3,
+      141.5,
+      134,
+      131.5,
+      124.5,
+      117.9,
+      122.2,
+      127.8,
       127.4,
       127.4,
       126.8,
@@ -54156,15 +53692,15 @@ var DATOS = {
       16.4
     ],
     "BWC": [
-      199.1,
-      196.8,
-      190.8,
-      178.2,
-      170.8,
-      180.5,
-      174.3,
-      171.7,
-      167.6,
+      198.3,
+      196,
+      190,
+      177.4,
+      170,
+      179.7,
+      173.5,
+      170.9,
+      166.8,
       162.1,
       157.7,
       155.8,
@@ -54176,15 +53712,15 @@ var DATOS = {
       131.3
     ],
     "Beamshot": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -54276,15 +53812,15 @@ var DATOS = {
       0.7
     ],
     "Boito": [
-      182.2,
-      176.1,
-      169.1,
-      159.8,
-      150.6,
-      147.7,
-      145.3,
-      142.2,
-      136.4,
+      186.4,
+      180.3,
+      173.3,
+      164,
+      154.8,
+      151.9,
+      149.5,
+      146.4,
+      140.6,
       134.6,
       134.6,
       135.9,
@@ -54576,15 +54112,15 @@ var DATOS = {
       0.2
     ],
     "Derya": [
-      1160.9,
-      1156.1,
-      1072.8,
-      998,
-      978.6,
-      870.6,
-      834.6,
-      832.7,
-      830.4,
+      1166.9,
+      1162.1,
+      1078.8,
+      1004,
+      984.6,
+      876.7,
+      840.6,
+      838.7,
+      836.4,
       824.8,
       827.5,
       827.5,
@@ -54633,7 +54169,7 @@ var DATOS = {
       287.6,
       263.7,
       239.9,
-      233.6
+      233.5
     ],
     "Doberman BOTAS": [
       0,
@@ -54836,15 +54372,15 @@ var DATOS = {
       7.6
     ],
     "Fab Defense": [
-      25.4,
-      21.3,
+      25.8,
+      21.6,
       0,
       0,
       0,
-      300.8,
-      291.6,
-      290,
-      285.4,
+      301.2,
+      291.9,
+      290.3,
+      285.8,
       283.5,
       279.5,
       280.4,
@@ -54936,15 +54472,15 @@ var DATOS = {
       0.2
     ],
     "Fobus": [
-      19.3,
-      19.1,
-      70.6,
-      66.3,
-      83.1,
-      120.2,
-      100.1,
-      96.1,
-      82,
+      19.6,
+      19.4,
+      70.9,
+      66.6,
+      83.4,
+      120.5,
+      100.4,
+      96.4,
+      82.3,
       80.2,
       77.5,
       76.2,
@@ -55056,15 +54592,15 @@ var DATOS = {
       255.4
     ],
     "Glock": [
-      410.4,
-      417.6,
-      400,
-      366.7,
-      329,
-      269.4,
-      270.6,
-      270.5,
-      269.8,
+      380.3,
+      387.5,
+      369.9,
+      336.6,
+      298.9,
+      239.3,
+      240.5,
+      240.3,
+      239.7,
       255.6,
       255.5,
       255.5,
@@ -55276,15 +54812,15 @@ var DATOS = {
       20.8
     ],
     "Indunaylon": [
-      0,
-      0,
-      0,
-      0.9,
-      0.7,
-      0.5,
-      0.4,
-      0.4,
-      0.4,
+      1.1,
+      1.1,
+      1.1,
+      6.4,
+      6.2,
+      6,
+      6,
+      5.9,
+      5.9,
       4.8,
       4.7,
       4.7,
@@ -55356,15 +54892,15 @@ var DATOS = {
       2.4
     ],
     "Konus": [
-      438.9,
-      428.8,
-      420.6,
-      411.4,
-      2314.4,
-      2264.5,
-      2249.6,
-      2238.5,
-      2233.9,
+      437.8,
+      427.7,
+      419.6,
+      410.3,
+      2313.3,
+      2263.4,
+      2248.5,
+      2237.4,
+      2232.9,
       2214.8,
       2451.6,
       2449.8,
@@ -55476,15 +55012,15 @@ var DATOS = {
       12
     ],
     "Marlin": [
-      11.4,
-      11.4,
-      11.4,
-      11,
-      11,
-      3.9,
-      3.9,
-      3.9,
-      3.9,
+      11.7,
+      11.7,
+      11.7,
+      11.3,
+      11.3,
+      4.2,
+      4.2,
+      4.2,
+      4.2,
       3.9,
       3.8,
       3.8,
@@ -55496,15 +55032,15 @@ var DATOS = {
       10.4
     ],
     "Maverick": [
-      12.4,
-      12.1,
-      7.4,
-      4.9,
-      4.9,
-      5.2,
-      3,
-      3,
-      2.4,
+      14.9,
+      14.7,
+      9.9,
+      7.5,
+      7.5,
+      7.7,
+      5.6,
+      5.6,
+      5,
       2.6,
       2.3,
       2.3,
@@ -55516,15 +55052,15 @@ var DATOS = {
       2.3
     ],
     "Mendoza": [
-      1341.7,
-      1340,
-      1336.7,
-      1321.2,
-      1235.8,
-      1218.2,
-      1200.9,
-      1182.5,
-      1169.1,
+      1341,
+      1339.3,
+      1335.9,
+      1320.5,
+      1235.1,
+      1217.4,
+      1200.2,
+      1181.8,
+      1168.4,
       1159.7,
       1164.9,
       1166.7,
@@ -55616,15 +55152,15 @@ var DATOS = {
       387.3
     ],
     "Nitecore": [
-      322.4,
-      330.2,
-      293.2,
-      264.4,
-      244.3,
-      210.5,
-      199.4,
-      363.6,
-      348,
+      313.1,
+      320.9,
+      283.9,
+      255.1,
+      235,
+      201.2,
+      190.1,
+      354.3,
+      338.7,
       346.5,
       343.8,
       331,
@@ -55856,15 +55392,15 @@ var DATOS = {
       0
     ],
     "Rexio": [
-      9.8,
-      9.8,
-      8.6,
-      8.6,
-      9.2,
-      9.7,
-      9.7,
-      9.7,
-      9.7,
+      10.1,
+      10.1,
+      8.9,
+      8.9,
+      9.5,
+      10,
+      10,
+      10,
+      10,
       8.5,
       8.5,
       8.5,
@@ -56116,15 +55652,15 @@ var DATOS = {
       197.9
     ],
     "Sin Marca": [
-      3644.2,
-      3645.5,
-      3656.8,
-      3653.1,
-      3643.3,
-      3589.3,
-      569.6,
-      568.3,
-      567.6,
+      3700.7,
+      3702.1,
+      3713.3,
+      3709.7,
+      3699.9,
+      3645.8,
+      626.2,
+      624.9,
+      624.2,
       572.7,
       566.9,
       565.9,
@@ -56236,15 +55772,15 @@ var DATOS = {
       1343.8
     ],
     "Tanfoglio": [
-      1226.1,
-      1225.7,
-      1135.3,
-      1081.7,
-      998.1,
-      1003.8,
-      969.2,
-      897.9,
-      815.5,
+      1227.3,
+      1227,
+      1136.5,
+      1082.9,
+      999.3,
+      1005.1,
+      970.5,
+      899.2,
+      816.8,
       784.8,
       803.7,
       811.9,
@@ -56256,15 +55792,15 @@ var DATOS = {
       656
     ],
     "Taurus": [
-      8.3,
-      8.3,
-      8.3,
-      15.2,
-      12.7,
-      11.6,
-      8.8,
-      8.8,
-      8.8,
+      8.7,
+      8.7,
+      8.7,
+      15.5,
+      13,
+      12,
+      9.2,
+      9.2,
+      9.2,
       8.8,
       8.8,
       8.8,
@@ -56396,15 +55932,15 @@ var DATOS = {
       7.7
     ],
     "Umarex": [
-      2063.8,
-      1961.2,
-      1389.3,
-      1307.2,
-      1507.5,
-      1462.7,
-      1338.6,
-      1242.2,
-      2810.9,
+      2041.8,
+      1939.1,
+      1367.3,
+      1285.2,
+      1485.5,
+      1440.6,
+      1316.5,
+      1220.2,
+      2788.8,
       2687.1,
       2573.1,
       2491.9,
@@ -56413,18 +55949,18 @@ var DATOS = {
       3586.2,
       3436.2,
       3263,
-      3116.1
+      3115.9
     ],
     "Uzkon": [
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      3.9,
+      3.9,
+      3.9,
+      3.9,
       2.4,
       2.4,
       2.4,
@@ -56476,15 +56012,15 @@ var DATOS = {
       0.6
     ],
     "Vector Optics": [
-      164.2,
-      164,
-      441.4,
-      410,
-      392.4,
-      222,
-      190.5,
-      180.8,
-      158.9,
+      105.2,
+      105.1,
+      382.4,
+      351,
+      333.4,
+      163.1,
+      131.6,
+      121.8,
+      99.9,
       328.2,
       303.5,
       298.7,
@@ -56559,7 +56095,7 @@ var DATOS = {
   "CMV6": {
     "NTK": 65.1,
     "ASG": 333.4,
-    "Umarex": 1336.8,
+    "Umarex": 1336.9,
     "Doberman": 167.5,
     "Snake": 13.4,
     "Sin Marca": 8.2,
