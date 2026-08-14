@@ -181,6 +181,23 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 
 footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 [hidden]{display:none !important}
+th.sel{cursor:pointer; user-select:none}
+th.sel:hover{color:var(--B); text-decoration:underline}
+th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
+td.dim{opacity:.32}
+.activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:10px 0 0}
+.tag{
+  display:inline-flex; align-items:center; gap:6px; font-size:12px;
+  background:var(--ink); color:#fff; border-radius:20px; padding:3px 6px 3px 11px;
+}
+.tag b{font-weight:600}
+.tag button{
+  border:none; background:rgba(255,255,255,.22); color:#fff; cursor:pointer;
+  width:16px; height:16px; border-radius:50%; font-size:11px; line-height:1;
+  display:grid; place-items:center; padding:0;
+}
+.tag button:hover{background:rgba(255,255,255,.4)}
+.tag.all{background:none; color:var(--muted); border:1px solid var(--line); padding:3px 11px}
 .filters .sep{width:1px; height:26px; background:var(--line)}
 .stamp{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
 .empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
@@ -234,8 +251,8 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
       <select id="f-marca"></select></div>
     <div class="fgroup"><label class="flab" for="f-cal">Calibre</label>
       <select id="f-cal"></select></div>
-    <div class="fgroup"><button class="clear" id="f-reset" hidden>quitar filtros</button></div>
   </div>
+  <div class="activos" id="f-activos"></div>
 
   <div id="p1" role="tabpanel" aria-labelledby="t1">
     <section><div class="kpis" id="kpis"></div></section>
@@ -263,8 +280,15 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
           </div>
           <div style="overflow-x:auto"><table id="tbl-marcas">
             <thead><tr>
-              <th>Marca</th><th>A</th><th>B</th><th>C</th><th>ARM</th><th>MUN</th><th>CARG</th>
-              <th>Sin categorizar</th><th>Total</th><th style="width:120px">Mezcla</th>
+              <th>Marca</th>
+              <th class="sel" data-cat="A" title="Filtrar por A">A</th>
+              <th class="sel" data-cat="B" title="Filtrar por B">B</th>
+              <th class="sel" data-cat="C" title="Filtrar por C">C</th>
+              <th class="sel" data-cat="ARM" title="Filtrar por armas">ARM</th>
+              <th class="sel" data-cat="MUN" title="Filtrar por municiones">MUN</th>
+              <th class="sel" data-cat="CARG" title="Filtrar por cargadores">CARG</th>
+              <th class="sel" data-cat="NC" title="Filtrar por sin categorizar">Sin categorizar</th>
+              <th>Total</th><th style="width:120px">Mezcla</th>
             </tr></thead><tbody></tbody><tfoot></tfoot>
           </table></div>
         </div>
@@ -276,8 +300,15 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
         <div class="note">Mismo criterio, abierto por ubicación física</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
         <thead><tr>
-          <th>Depósito</th><th>A</th><th>B</th><th>C</th><th>ARM</th><th>MUN</th><th>CARG</th>
-          <th>Sin categorizar</th><th>Total</th><th>% del stock</th>
+          <th>Depósito</th>
+          <th class="sel" data-cat="A">A</th>
+          <th class="sel" data-cat="B">B</th>
+          <th class="sel" data-cat="C">C</th>
+          <th class="sel" data-cat="ARM">ARM</th>
+          <th class="sel" data-cat="MUN">MUN</th>
+          <th class="sel" data-cat="CARG">CARG</th>
+          <th class="sel" data-cat="NC">Sin categorizar</th>
+          <th>Total</th><th>% del stock</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -425,6 +456,13 @@ function donut(vals, size, thick){
     return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'+
       '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="#E6E9E9" stroke-width="'+thick+'"/></svg>';
   }
+  var conValor = vals.filter(function(s){ return s.v > 0; });
+  if (conValor.length === 1) {
+    var u = conValor[0];
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="'+u.col+
+      '" stroke-width="'+thick+'"><title>'+esc(u.lab)+': '+gsM(u.v)+' (100%)</title></circle></svg>';
+  }
   vals.forEach(function(s){
     if (s.v <= 0) return;
     var a2 = ang + (s.v/t)*Math.PI*2, big = (a2-ang) > Math.PI ? 1 : 0;
@@ -499,17 +537,17 @@ function armarFiltros(){
       pintar(); sincronizarSerie();
     });
   });
-  document.getElementById("f-reset").addEventListener("click", function(){
-    f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
-    document.getElementById("f-dep").value = "*";
-    document.getElementById("f-cal").value = "*";
-    document.getElementById("f-marca").value = "*";
-    selCat.value = "*";
-    sincronizarSerie();
-    Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
-      x.setAttribute("aria-pressed", x.dataset.v === "*");
-    });
-    pintar();
+  document.getElementById("f-activos").addEventListener("click", function(e){
+    var b = e.target.closest("button[data-quitar]");
+    if (!b) return;
+    var cual = b.dataset.quitar;
+    if (cual === "todos") {
+      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
+    } else {
+      f[cual] = "*";
+    }
+    reflejarFiltros();
+    pintar(); sincronizarSerie();
   });
 
   /* Filtros propios de la tabla de apertura. */
@@ -519,6 +557,21 @@ function armarFiltros(){
         .map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
   qcat.addEventListener("change", function(){ pintar(); });
   document.getElementById("q-marca").addEventListener("input", function(){ pintar(); });
+
+  /* Clic en el encabezado de una categoría: filtra por ella. */
+  Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
+    th.setAttribute("role", "button");
+    th.setAttribute("tabindex", "0");
+    var elegir = function(){
+      f.cat = (f.cat === th.dataset.cat) ? "*" : th.dataset.cat;
+      reflejarFiltros();
+      pintar(); sincronizarSerie();
+    };
+    th.addEventListener("click", elegir);
+    th.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
+    });
+  });
 
   /* Secciones plegables. */
   Array.prototype.forEach.call(document.querySelectorAll("section .shead"), function(h){
@@ -549,7 +602,7 @@ function pintar(){
   var alcance = T - sumaFuera(t);
   var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
 
-  document.getElementById("f-reset").hidden = !hayFiltro();
+  pintarActivos();
 
   document.getElementById("kpis").innerHTML = [
     kpi("Stock a costo", gsM(T), etiquetaFiltro(), ""),
@@ -575,6 +628,9 @@ function pintar(){
   document.getElementById("nota-alcance").textContent =
     "A / B / C según la matriz vigente · armas y municiones fuera del alcance ABC";
 
+  Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
+    th.classList.toggle("on", th.dataset.cat === f.cat);
+  });
   tablaMarcas(agrupar("m"), T);
   tablaDepositos(agrupar("dep"), T);
   tablaCalibres(T);
@@ -620,10 +676,10 @@ function tablaMarcas(filas, T){
     CATS.forEach(function(c){ s[c.k] += r[c.k]||0; });
     return '<tr data-marca="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b>'+
       (r.tipo ? '<span class="tipo">'+esc(r.tipo)+'</span>' : '')+'</td>'+
-      CLAVES.map(function(k){ return celda(r[k]); }).join('')+
+      CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
       '<td class="num"><b>'+fmt(suma(r))+'</b></td><td><div class="bar">'+barra(r)+'</div></td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k]); }).join('')+
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
     '<td class="num">'+fmt(suma(s))+'</td><td class="count">millones de Gs.</td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
     tr.addEventListener("click", function(){
@@ -644,11 +700,11 @@ function tablaDepositos(filas, T){
   tb.innerHTML = filas.map(function(r){
     CATS.forEach(function(c){ s[c.k] += r[c.k]; });
     return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
-      CLAVES.map(function(k){ return celda(r[k]); }).join('')+
+      CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
       '<td class="num"><b>'+fmt(suma(r))+'</b></td>'+
       '<td class="num">'+pct(suma(r), T)+'</td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k]); }).join('')+
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
     '<td class="num">'+fmt(suma(s))+'</td><td class="num">100%</td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-dep]"), function(tr){
     tr.addEventListener("click", function(){
@@ -701,7 +757,11 @@ function tablaCalibres(T){
   });
 }
 
-function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
+/* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
+function celda(v, k){
+  var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
+  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
+}
 
 function tortas(filas){
   filas = filas.filter(function(r){ return suma(r) > 0; });
@@ -780,7 +840,11 @@ function tablaCalibres(T){
   });
 }
 
-function celda(v){ return '<td class="num">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>'; }
+/* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
+function celda(v, k){
+  var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
+  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
+}
 
 function tortas(filas){
   filas = filas.filter(function(r){ return suma(r) > 0; });
@@ -827,6 +891,39 @@ function marcasConSerie(){
   return Object.keys(SERIES)
     .filter(function(m){ return (SERIES[m]||[]).length && visibles[m]; })
     .sort(function(a,b){ return (CMV6[b]||0) - (CMV6[a]||0); });
+}
+
+/** Deja los selects y chips coincidiendo con el estado de filtros. */
+function reflejarFiltros(){
+  document.getElementById("f-dep").value = f.dep;
+  document.getElementById("f-marca").value = f.marca;
+  document.getElementById("f-cat").value = f.cat;
+  document.getElementById("f-cal").value = f.cal;
+  Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+    x.setAttribute("aria-pressed", x.dataset.v === f.tipo);
+  });
+}
+
+/** Barra de filtros activos: cada uno con su X, más "quitar todos". */
+function pintarActivos(){
+  var etiquetaCat = {};
+  CATS.forEach(function(c){ etiquetaCat[c.k] = c.lab; });
+  var partes = [];
+  if (f.dep   !== "*") partes.push(["dep",   "Depósito",  f.dep]);
+  if (f.tipo  !== "*") partes.push(["tipo",  "Tipo",      f.tipo]);
+  if (f.cat   !== "*") partes.push(["cat",   "Categoría", etiquetaCat[f.cat] || f.cat]);
+  if (f.marca !== "*") partes.push(["marca", "Marca",     f.marca]);
+  if (f.cal   !== "*") partes.push(["cal",   "Calibre",   f.cal]);
+
+  var caja = document.getElementById("f-activos");
+  if (!partes.length) { caja.innerHTML = ""; return; }
+  caja.innerHTML = partes.map(function(p){
+    return '<span class="tag"><span>'+p[1]+': <b>'+esc(p[2])+'</b></span>'+
+           '<button data-quitar="'+p[0]+'" title="Quitar este filtro" aria-label="Quitar '+p[1]+'">×</button></span>';
+  }).join("") +
+  '<span class="tag all"><span>'+partes.length+' filtro'+(partes.length>1?"s":"")+'</span>'+
+  '<button data-quitar="todos" title="Quitar todos" aria-label="Quitar todos los filtros" '+
+  'style="background:var(--line);color:var(--ink)">×</button></span>';
 }
 
 /** Los meses disponibles según lo que trajo Odoo. */
