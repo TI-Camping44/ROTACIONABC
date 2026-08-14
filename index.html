@@ -1,1919 +1,1469 @@
-/**
- * ============================================================================
- *  REPORTE DE STOCK Y ROTACIÓN — Camping 44 S.A.
- * ============================================================================
- *
- *  Este archivo funciona en dos escenarios sin cambiarle una línea:
- *
- *  A) PLANILLA NUEVA (recomendado para probar)
- *     Proyecto propio, aislado. No comparte nada con el script del ABC.
- *
- *  B) DENTRO DEL PROYECTO DEL ABC (más adelante, si conviene)
- *     Se agrega como archivo aparte. Todo lleva prefijo stk, así que no
- *     choca con ninguna de las 129 funciones de ese script.
- *
- *  Los archivos de un proyecto de Apps Script comparten un único espacio de
- *  nombres: dos funciones con el mismo nombre se pisan en silencio. De ahí
- *  el prefijo. Si agregás algo, seguí la misma regla.
- *
- *  QUÉ NO HACE, EN NINGUNO DE LOS DOS ESCENARIOS
- *  · No escribe en Odoo. Solo search_read, read y search_count.
- *  · No abre ni modifica la planilla del ABC.
- *  · No toca menús, disparadores ni propiedades ajenas.
- *
- *  ----------------------------------------------------------------------
- *  PUESTA EN MARCHA — ESCENARIO A (planilla nueva)
- *
- *  1. Planilla nueva en Drive. Nombre sugerido:
- *        "Reporte Stock y Rotación - TI - PRUEBA"
- *
- *  2. Extensiones → Apps Script. Borrar el código de ejemplo y pegar esto.
- *     Guardar. Ponerle nombre al proyecto.
- *
- *  3. Clave API PROPIA en Odoo (30 segundos, y no depende de nadie):
- *        foto de perfil → Mi perfil → Seguridad de la cuenta → Nueva clave API
- *
- *     No reutilices la clave del otro proyecto. Si algún día se revoca o se
- *     cambia esa clave, tu reporte deja de andar y no vas a saber por qué.
- *
- *  4. Configuración del proyecto → Propiedades del script → Agregar:
- *
- *        ODOO_URL       https://loquesea.odoo.com     (sin barra final)
- *        ODOO_DB        nombre de la base
- *        ODOO_LOGIN     tu correo de Odoo
- *        ODOO_API_KEY   la clave del paso 3
- *
- *     ODOO_URL y ODOO_DB los podés copiar del otro proyecto: están a la
- *     vista en Configuración del proyecto. Copiarlos no lo modifica.
- *
- *  5. Ejecutar stkInstalarMenu() una vez. Google va a pedir permisos:
- *     es normal, son los de la planilla y los de salida a internet.
- *
- *  6. Recargar la planilla. Aparece el menú "Reporte de Stock".
- *
- *  ORDEN DE USO
- *      1. stkDiagnosticar      ¿Odoo guarda valorización? ← EMPEZAR ACÁ
- *      2. stkDetectarMarcas    arma el diccionario desde los nombres
- *      3. stkActualizarDatos   llena STOCK, VENTAS, HISTORICO, ROTACION
- *      4. stkPublicar          sube datos.js al repositorio (necesita
- *                              la propiedad GITHUB_TOKEN)
- *
- *  Los pasos 1 y 2 no dependen de nada externo. Corré esos primero.
- * ============================================================================
- */
+<!DOCTYPE html>
+<html lang="es-PY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reporte de Stock y Rotación · Camping 44</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#12161A; --ink2:#39424A; --muted:#77828B;
+  --paper:#FFFFFF; --bg:#E7EAEA; --line:#D2D7D7; --line2:#E6E9E9;
+  --A:#B08A2E; --B:#3D6E8C; --C:#A6432E; --NC:#8C7A57;
+  --ARM:#4A5560; --MUN:#6E7B84; --CARG:#93A0A6; --SC:#626C76;
+  --ncbg:#DCD6C8;
+  --ok:#2F6B4F;
+  --disp:"Barlow Condensed", "Arial Narrow", sans-serif;
+  --body:"IBM Plex Sans", system-ui, sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{
+  background:var(--bg); color:var(--ink); font-family:var(--body);
+  font-size:14px; line-height:1.45; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1260px; margin:0 auto; padding:0 20px 64px}
+.mono{font-family:var(--mono); font-variant-numeric:tabular-nums; font-feature-settings:"tnum"}
 
-/** Instala el menú propio. En el proyecto del ABC no toca su onOpen. */
-function stkInstalarMenu() {
-  const id = stkSS_().getId();
-  PropertiesService.getScriptProperties().setProperty('SPREADSHEET_ID', id);
-  ScriptApp.getProjectTriggers().forEach(t => {
-    if (t.getHandlerFunction() === 'stkMenu') ScriptApp.deleteTrigger(t);
+/* ---------- barra de maqueta ---------- */
+.flag{
+  background:repeating-linear-gradient(135deg,#1B2126 0 14px,#232B31 14px 28px);
+  color:#E9E4D6; font-family:var(--disp); letter-spacing:.14em; text-transform:uppercase;
+  font-size:12px; padding:7px 20px; text-align:center;
+}
+.flag b{color:#D9B65C; font-weight:700}
+
+/* ---------- header ---------- */
+header.top{background:var(--paper); border-bottom:1px solid var(--line)}
+.top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
+.mark{
+  width:44px; height:44px; flex:0 0 44px; border:1.5px solid var(--ink); border-radius:2px;
+  display:grid; place-items:center; font-family:var(--disp); font-weight:700; font-size:17px; letter-spacing:.02em;
+}
+.ttl{flex:1 1 340px}
+.ttl h1{
+  font-family:var(--disp); font-weight:700; font-size:30px; line-height:1.02;
+  margin:0; letter-spacing:-.01em; text-transform:uppercase;
+}
+.ttl p{margin:3px 0 0; color:var(--muted); font-size:12.5px}
+.meta{display:flex; gap:26px; flex-wrap:wrap; padding-top:4px}
+.meta div{min-width:88px}
+.meta span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.meta strong{font-family:var(--mono); font-weight:500; font-size:13.5px}
+
+/* ---------- tabs ---------- */
+.tabs{max-width:1260px; margin:0 auto; padding:14px 20px 0; display:flex; gap:2px}
+.tab{
+  appearance:none; border:1px solid var(--line); border-bottom:none; background:#F4F6F6;
+  font-family:var(--disp); font-size:15px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  padding:9px 18px 8px; cursor:pointer; color:var(--muted); border-radius:3px 3px 0 0;
+}
+.tab[aria-selected="true"]{background:var(--paper); color:var(--ink); box-shadow:inset 0 3px 0 var(--ink)}
+.tab:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+
+/* ---------- filtros ---------- */
+.filters{
+  background:var(--paper); border:1px solid var(--line); border-top:none;
+  padding:12px 16px; display:flex; gap:22px; flex-wrap:wrap; align-items:center;
+}
+.fgroup{display:flex; align-items:center; gap:8px}
+.flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+#f-serie{min-width:190px}
+select,input[type=date]{
+  font-family:var(--mono); font-size:12.5px; padding:5px 8px; border:1px solid var(--line);
+  background:#FAFBFB; border-radius:2px; color:var(--ink);
+}
+.chips{display:flex; gap:4px; flex-wrap:wrap}
+.chip{
+  font-size:12px; padding:4px 10px; border:1px solid var(--line); background:#FAFBFB;
+  border-radius:20px; cursor:pointer; font-family:var(--body);
+}
+.chip[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
+
+/* ---------- secciones ---------- */
+section{margin-top:22px}
+.shead{display:flex; align-items:baseline; gap:12px; margin:0 0 10px; cursor:pointer; user-select:none}
+.shead .caret{
+  font-family:var(--mono); font-size:13px; color:var(--muted); width:14px;
+  transition:transform .15s; display:inline-block; flex:0 0 14px;
+}
+.shead.closed .caret{transform:rotate(-90deg)}
+.shead:hover h2{color:var(--B)}
+section.plegada > *:not(.shead){display:none}
+.shead h2{
+  font-family:var(--disp); font-weight:600; font-size:19px; text-transform:uppercase;
+  letter-spacing:.05em; margin:0;
+}
+.shead .rule{flex:1; height:1px; background:var(--line)}
+.shead .note{font-size:11.5px; color:var(--muted)}
+
+/* ---------- KPIs ---------- */
+.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.kpi{background:var(--paper); border:1px solid var(--line); padding:14px 16px; position:relative; overflow:hidden}
+.kpi span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.kpi strong{display:block; font-family:var(--mono); font-weight:500; font-size:23px; margin-top:6px; letter-spacing:-.02em}
+.kpi em{display:block; font-style:normal; font-size:11.5px; color:var(--ink2); margin-top:3px}
+.kpi.warn{border-left:3px solid var(--NC)}
+.kpi.warn strong{color:#7A6742}
+.kpi.click{cursor:pointer; transition:border-color .15s, box-shadow .15s}
+.kpi.click:hover{border-color:var(--ink2); box-shadow:0 1px 0 var(--line)}
+.kpi.click:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.kpi .ver{display:block; font-size:11px; color:var(--B); margin-top:7px}
+.slice{cursor:pointer}
+.slice:hover{opacity:.82}
+.legend li.click{cursor:pointer; border-radius:2px}
+.legend li.click:hover{background:#F2F5F5}
+.ayuda{
+  border:none; background:none; color:var(--muted); cursor:pointer; padding:0 0 0 6px;
+  font-family:var(--mono); font-size:11px; border-bottom:1px dotted var(--muted);
+}
+.ayuda:hover{color:var(--B); border-color:var(--B)}
+.formula{
+  margin:10px 0 0; padding:11px 13px; background:#F4F6F6; border-left:3px solid var(--line);
+  font-size:12.5px; color:var(--ink2); line-height:1.55;
+}
+.formula code{
+  font-family:var(--mono); font-size:12px; background:#fff; padding:1px 5px;
+  border:1px solid var(--line); border-radius:2px;
+}
+.formula b{color:var(--ink)}
+.formula .aviso{color:#8A3524}
+
+/* ---------- panel torta principal ---------- */
+.hero{display:grid; grid-template-columns:minmax(300px,1fr) 1.15fr; gap:10px}
+.card{background:var(--paper); border:1px solid var(--line); padding:16px}
+.card h3{
+  font-family:var(--disp); font-size:15px; text-transform:uppercase; letter-spacing:.06em;
+  font-weight:600; margin:0 0 2px;
+}
+.card .sub{font-size:11.5px; color:var(--muted); margin:0 0 14px}
+.donutbox{display:flex; align-items:center; gap:18px; flex-wrap:wrap}
+.legend{flex:1 1 190px; margin:0; padding:0; list-style:none}
+.legend li{
+  display:grid; grid-template-columns:14px 1fr auto; gap:9px; align-items:center;
+  padding:5px 0; border-bottom:1px solid var(--line2); font-size:12.5px;
+}
+.legend li:last-child{border-bottom:none}
+.sw{width:14px; height:14px; border-radius:2px; display:block}
+.legend .val{font-family:var(--mono); font-size:12.5px; font-variant-numeric:tabular-nums}
+.legend .pct{color:var(--muted); font-size:11px; margin-left:6px}
+
+/* ---------- tabla ---------- */
+table{width:100%; border-collapse:collapse}
+th,td{padding:7px 9px; text-align:right; border-bottom:1px solid var(--line2); font-size:12.5px}
+th{
+  font-family:var(--disp); font-size:12px; letter-spacing:.07em; text-transform:uppercase;
+  color:var(--ink2); border-bottom:1px solid var(--line); font-weight:600; white-space:nowrap;
+}
+th:first-child,td:first-child{text-align:left}
+th.l,td.l{text-align:left}
+td.num{font-family:var(--mono); font-variant-numeric:tabular-nums}
+tbody tr:hover{background:#F6F8F8}
+tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600; padding-top:9px}
+.tipo{
+  font-family:var(--disp); font-size:11px; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--muted); border:1px solid var(--line); padding:1px 6px; border-radius:2px; margin-left:7px; white-space:nowrap;
+}
+.bar{height:9px; width:100%; min-width:90px; display:flex; border-radius:1px; overflow:hidden; background:var(--line2)}
+.bar i{display:block; height:100%}
+
+/* ---------- grilla de tortas por marca ---------- */
+.pies{display:grid; grid-template-columns:repeat(auto-fill,minmax(178px,1fr)); gap:10px}
+.pie{background:var(--paper); border:1px solid var(--line); padding:12px; text-align:center}
+.pie{cursor:pointer; transition:border-color .15s, box-shadow .15s}
+.pie:hover{border-color:var(--ink2)}
+.pie:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.pie.on{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
+.pie h4{font-family:var(--disp); font-size:14px; text-transform:uppercase; letter-spacing:.05em; margin:0 0 1px; font-weight:600}
+.pie .tot{font-family:var(--mono); font-size:11.5px; color:var(--muted); margin-bottom:8px}
+.pie .mini{display:flex; gap:3px; justify-content:center; margin-top:9px; flex-wrap:wrap}
+.pie .mini b{font-family:var(--mono); font-size:10px; font-weight:500; padding:1px 5px; border-radius:2px; color:#fff}
+
+/* ---------- parte 2 ---------- */
+.evo{display:grid; grid-template-columns:1fr; gap:10px}
+.axis{font-family:var(--mono); font-size:10.5px; fill:var(--muted)}
+.repline{stroke:var(--C); stroke-width:1.2; stroke-dasharray:5 4}
+.rotpill{
+  font-family:var(--mono); font-size:11.5px; padding:2px 8px; border-radius:11px;
+  display:inline-block; min-width:58px; text-align:center;
+}
+.r-hi{background:#E2EFE7; color:#235741}
+.r-md{background:#F0EBDA; color:#6E5C2C}
+.r-lo{background:#F4E2DD; color:#8A3524}
+
+/* ---------- notas ---------- */
+.notes{background:#1B2126; color:#DDE2E4; border:1px solid #1B2126; padding:18px 20px}
+.notes h3{font-family:var(--disp); font-size:15px; text-transform:uppercase; letter-spacing:.07em; margin:0 0 10px; color:#D9B65C}
+.notes ol{margin:0; padding-left:20px}
+.notes li{margin-bottom:8px; font-size:13px}
+.notes li b{color:#fff}
+.notes li:last-child{margin-bottom:0}
+
+footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
+[hidden]{display:none !important}
+th.sel{cursor:pointer; user-select:none}
+th.ord{cursor:pointer; user-select:none; white-space:nowrap}
+th.ord:hover{color:var(--B)}
+th.ord::after{content:"⇅"; font-size:9px; color:var(--line); margin-left:4px}
+th.ord.asc::after{content:"▲"; font-size:8px; color:var(--ink)}
+th.ord.desc::after{content:"▼"; font-size:8px; color:var(--ink)}
+th.sel:hover{color:var(--B); text-decoration:underline}
+th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
+td.dim{opacity:.32}
+.activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:10px 0 0}
+.tag{
+  display:inline-flex; align-items:center; gap:6px; font-size:12px;
+  background:var(--ink); color:#fff; border-radius:20px; padding:3px 6px 3px 11px;
+}
+.tag b{font-weight:600}
+.tag button{
+  border:none; background:rgba(255,255,255,.22); color:#fff; cursor:pointer;
+  width:16px; height:16px; border-radius:50%; font-size:11px; line-height:1;
+  display:grid; place-items:center; padding:0;
+}
+.tag button:hover{background:rgba(255,255,255,.4)}
+.tag.all{background:none; color:var(--muted); border:1px solid var(--line); padding:3px 11px}
+.filters .sep{width:1px; height:26px; background:var(--line)}
+.stamp{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
+.empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
+.chip.sm{font-size:11.5px; padding:3px 9px}
+.clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
+.count{font-family:var(--mono); font-size:11px; color:var(--muted)}
+@media (max-width:900px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .hero{grid-template-columns:1fr}
+  .ttl h1{font-size:24px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .slice{transition:opacity .15s}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="mark">44</div>
+    <div class="ttl">
+      <h1>Reporte de Stock y Rotación de Mercaderías</h1>
+      <p>Camping 44 S.A. · Valuación a costo · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)</p>
+    </div>
+    <div class="meta">
+      <div><span>Datos al</span><strong id="sello">—</strong></div>
+      <div><span>Moneda</span><strong>Gs. millones</strong></div>
+      <div><span>Depósitos</span><strong id="ndep">—</strong></div>
+      <div><span>Marcas</span><strong id="nmar">—</strong></div>
+    </div>
+  </div>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Parte 1 · Situación actual</button>
+    <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">Parte 2 · Histórico y rotación</button>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="filters">
+    <div class="fgroup"><label class="flab" for="f-dep">Depósito</label>
+      <select id="f-dep"></select></div>
+    <div class="sep"></div>
+    <div class="fgroup"><span class="flab">Tipo</span><div class="chips" id="f-tipo"></div></div>
+    <div class="sep"></div>
+    <div class="fgroup"><label class="flab" for="f-cat">Categoría</label>
+      <select id="f-cat"></select></div>
+    <div class="sep"></div>
+    <div class="fgroup"><label class="flab" for="f-marca">Marca</label>
+      <select id="f-marca"></select></div>
+    <div class="fgroup"><label class="flab" for="f-cal">Calibre</label>
+      <select id="f-cal"></select></div>
+  </div>
+  <div class="activos" id="f-activos"></div>
+
+  <div id="p1" role="tabpanel" aria-labelledby="t1">
+    <section><div class="kpis" id="kpis"></div></section>
+
+    <section>
+      <div class="shead"><h2>Composición del stock a costo</h2><div class="rule"></div>
+        <div class="note" id="nota-alcance"></div></div>
+      <div class="hero">
+        <div class="card">
+          <h3>Total por categoría</h3>
+          <p class="sub" id="sub-total"></p>
+          <div class="donutbox">
+            <div id="donut-total"></div>
+            <ul class="legend" id="leg-total"></ul>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Apertura por marca y categoría</h3>
+          <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin:2px 0 12px">
+            <input type="search" id="q-marca" placeholder="Buscar marca…"
+                   style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:150px">
+            <label class="flab" for="q-cat">Categoría</label>
+            <select id="q-cat"></select>
+            <span class="count" id="q-n"></span>
+          </div>
+          <div style="overflow-x:auto"><table id="tbl-marcas">
+            <thead><tr>
+              <th class="ord l" data-k="k">Marca</th>
+              <th class="sel" data-cat="A" title="Filtrar por A">A</th>
+              <th class="sel" data-cat="B" title="Filtrar por B">B</th>
+              <th class="sel" data-cat="C" title="Filtrar por C">C</th>
+              <th class="sel" data-cat="ARM" title="Filtrar por armas">ARM</th>
+              <th class="sel" data-cat="MUN" title="Filtrar por municiones">MUN</th>
+              <th class="sel" data-cat="CARG" title="Filtrar por cargadores">CARG</th>
+              <th class="sel" data-cat="NC" title="Filtrar por sin categorizar">Sin categorizar</th>
+              <th class="ord" data-k="_t">Total</th><th style="width:120px">Mezcla</th>
+            </tr></thead><tbody></tbody><tfoot></tfoot>
+          </table></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Por depósito</h2><div class="rule"></div>
+        <div class="note">Mismo criterio, abierto por ubicación física</div></div>
+      <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
+        <thead><tr>
+          <th class="ord l" data-k="k">Depósito</th>
+          <th class="sel" data-cat="A">A</th>
+          <th class="sel" data-cat="B">B</th>
+          <th class="sel" data-cat="C">C</th>
+          <th class="sel" data-cat="ARM">ARM</th>
+          <th class="sel" data-cat="MUN">MUN</th>
+          <th class="sel" data-cat="CARG">CARG</th>
+          <th class="sel" data-cat="NC">Sin categorizar</th>
+          <th class="ord" data-k="_t">Total</th><th>% del stock</th>
+        </tr></thead><tbody></tbody><tfoot></tfoot>
+      </table></div></div>
+    </section>
+
+    <section id="sec-cal">
+      <div class="shead"><h2>Por calibre</h2><div class="rule"></div>
+        <div class="note">De la etiqueta de Odoo, o del nombre del producto cuando no la tiene · clic para filtrar</div></div>
+      <div class="card"><div style="overflow-x:auto"><table id="tbl-cal">
+        <thead><tr>
+          <th class="ord l" data-k="k">Calibre</th><th class="l">Tipo</th>
+          <th class="ord" data-k="v">Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
+        </tr></thead><tbody></tbody><tfoot></tfoot>
+      </table></div></div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Artículos</h2><div class="rule"></div>
+        <div class="note" id="nota-art"></div></div>
+      <div class="card">
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
+          <input type="search" id="q-art" placeholder="Buscar artículo o referencia…"
+                 style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:230px">
+          <span class="count" id="q-art-n"></span>
+          <button class="clear" id="art-csv">descargar lista</button>
+        </div>
+        <div style="overflow-x:auto"><table id="tbl-art">
+          <thead><tr>
+            <th class="ord l" data-k="0">Referencia</th>
+            <th class="ord l" data-k="1">Producto</th>
+            <th class="ord l" data-k="2">Marca</th>
+            <th class="ord l" data-k="4">Depósito</th>
+            <th class="ord l" data-k="5">Cat.</th>
+            <th class="ord l" data-k="6">Calibre</th>
+            <th class="ord" data-k="7">Cantidad</th>
+            <th class="ord" data-k="8">Valor a costo</th>
+          </tr></thead><tbody></tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Tortas por marca</h2><div class="rule"></div>
+        <div class="note" id="nota-pies"></div></div>
+      <div class="pies" id="pies"></div>
+    </section>
+
+    </section>
+  </div>
+
+  <div id="p2" role="tabpanel" aria-labelledby="t2" hidden>
+    <section>
+      <div class="shead"><h2>Evolución del stock</h2><div class="rule"></div>
+        <div class="note">Reconstruido desde las capas de valorización de Odoo</div></div>
+      <div class="card">
+        <div style="display:flex; gap:22px; flex-wrap:wrap; align-items:center; margin-bottom:18px">
+          <div class="fgroup"><label class="flab" for="f-serie">Marca</label>
+            <select id="f-serie"></select></div>
+          <div class="sep"></div>
+          <div class="fgroup"><label class="flab" for="f-desde">Desde</label>
+            <select id="f-desde"></select></div>
+          <div class="fgroup"><label class="flab" for="f-hasta">Hasta</label>
+            <select id="f-hasta"></select></div>
+          <div class="fgroup"><button class="clear" id="f-periodo-reset">período completo</button></div>
+          <div class="stamp" id="serie-resumen"></div>
+        </div>
+        <div id="evo-chart"></div>
+        <p class="formula" style="margin:12px 0 0">
+          La línea punteada marca el <b>punto de reposición estimado</b>: el consumo promedio
+          de los últimos seis meses proyectado sobre el plazo de reposición.
+          <code>consumo mensual × 1,8 meses</code>.
+          <span class="aviso">Ese 1,8 es un valor de relleno, igual para todas las marcas.
+          No sale de ningún proveedor. Hasta que Compras cargue el plazo real de reposición
+          por marca, esta línea no sirve para disparar una compra.</span>
+          El histórico abarca todos los depósitos: la valorización de Odoo no separa por almacén.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="shead"><h2>Rotación por marca</h2><div class="rule"></div>
+        <div class="note" id="nota-rot"></div></div>
+      <div class="card">
+        <p class="formula" style="margin-top:0">
+          <b>Cómo se calcula:</b>
+          <code>rotación = costo de venta 6 meses × 2 ÷ stock promedio</code>.
+          El costo de venta sale de las capas de valorización de Odoo: lo que salió
+          del depósito hacia un cliente, al costo real con que estaba registrado.
+          El stock promedio es el promedio de los meses del período elegido arriba.
+          <br><b>Lectura:</b> sana ≥ 2 · ajustada entre 1 y 2 · inmovilizada &lt; 1.
+          <span class="aviso">Esos tres umbrales todavía no están definidos por Camping 44:
+          son referencias generales de retail y conviene fijarlos con Gerencia.</span>
+        </p>
+        <div style="overflow-x:auto"><table id="tbl-rot">
+        <thead><tr>
+          <th class="ord l" data-k="m">Marca</th>
+          <th class="ord" data-k="cmv">Costo de venta (Gs.)</th>
+          <th class="ord" data-k="prom">Stock promedio (Gs.)</th>
+          <th class="ord" data-k="act">Stock actual (Gs.)</th>
+          <th class="ord" data-k="rot">Rotación (veces/año)</th>
+          <th class="l">Lectura</th>
+        </tr></thead><tbody></tbody>
+      </table></div></div>
+    </section>
+  </div>
+
+  <footer id="pie"></footer>
+</div>
+<script src="datos.js"></script>
+<script>
+(function(){
+"use strict";
+
+if (typeof DATOS === "undefined" || !DATOS.STOCK) {
+  document.querySelector(".wrap").innerHTML =
+    '<div class="card" style="margin-top:22px"><h3>Todavía no hay datos</h3>' +
+    '<p class="sub">Falta el archivo <b>datos.js</b>, o es de una versión anterior. ' +
+    'Ejecutá <b>3. Actualizar datos</b> y después <b>4. Publicar reporte</b> desde la planilla.</p></div>';
+  return;
+}
+
+var CATS = DATOS.CATS;
+var STOCK = DATOS.STOCK;
+var ARTICULOS = DATOS.ARTICULOS || [];
+var MESES = DATOS.MESES || [];
+var SERIES = DATOS.SERIES || {};
+var CMV6 = DATOS.CMV6 || {};
+
+/* ---------------- formato ---------------- */
+var fmt = function(n,d){ return new Intl.NumberFormat("es-PY",{minimumFractionDigits:d||0,maximumFractionDigits:d||0}).format(n); };
+var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
+/* Los datos vienen en millones; esta los muestra en guaraníes completos. */
+var gs = function(n){ return fmt(Math.round((n||0) * 1000000)); };
+var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
+var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
+var vacio = { A:0,B:0,C:0,ARM:0,MUN:0,CARG:0,NC:0 };
+var CLAVES = ["A","B","C","ARM","MUN","CARG","NC"];
+var suma = function(o){ var t=0; CLAVES.forEach(function(k){ t += o[k]||0; }); return t; };
+/* Fuera del alcance ABC: armas, municiones y cargadores. */
+var FUERA = ["ARM","MUN","CARG"];
+var sumaFuera = function(o){ var t=0; FUERA.forEach(function(k){ t += o[k]||0; }); return t; };
+
+/* ---------------- estado de filtros ---------------- */
+var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
+var serieActiva = null;
+/* Orden de cada tabla: columna y sentido. */
+var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false},
+              mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
+
+/** Ordena filas por una clave, con texto e números tratados distinto. */
+function ordenar(filas, k, asc){
+  return filas.slice().sort(function(a,b){
+    var x = a[k], y = b[k];
+    var cmp = (typeof x === "number" && typeof y === "number")
+      ? x - y
+      : String(x).localeCompare(String(y), "es", {numeric:true, sensitivity:"base"});
+    return asc ? cmp : -cmp;
   });
-  ScriptApp.newTrigger('stkMenu').forSpreadsheet(id).onOpen().create();
-  stkAvisar_('Menú instalado', 'Recargá la planilla y va a aparecer el menú "Reporte de Stock".');
 }
 
-
-const STK = Object.freeze({
-  ZONA_HORARIA: 'America/Asuncion',
-
-  /* Empresa del reporte, tal como figura en Odoo (búsqueda parcial). */
-  EMPRESA: 'CAMPING44',
-
-  /* Campo de rotación ABC en product.template. */
-  CAMPO_ABC: 'x_studio_categoria_de_rotacion',
-
-  /* Campo de marca de Odoo (viene del módulo de marcas, no de Studio).
-     Si por algún motivo no existe, se cae a la hoja MARCAS. */
-  CAMPO_MARCA: 'product_brand_id',
-
-  MESES_HISTORICO: 18,
-  MESES_ROTACION: 6,
-  TOP_VENTAS: 300,
-  LOTE_API: 1000,
-
-  /* Publicación. */
-  GITHUB_OWNER: 'TI-Camping44',
-  GITHUB_REPO: 'ROTACIONABC',
-  GITHUB_RAMA: 'main',
-  GITHUB_ARCHIVO: 'datos.js',
-
-  /* Tipo según la categoría de producto de Odoo.
-     Se compara contra la ÚLTIMA hoja del árbol y de forma EXACTA: hace falta
-     que sea exacta porque "ACCESORIO DE ARMA" contiene "ARMA", y con
-     coincidencia parcial las fundas saldrían clasificadas como armas.
-
-     Los tres primeros tipos NO llevan clasificación ABC y en el reporte
-     aparecen con su propia sigla: ARM, MUN y CARG. */
-  TIPOS: Object.freeze([
-    { tipo: 'Armas',      sigla: 'ARM',  fuera_abc: true, categorias: ['ARMA'] },
-    { tipo: 'Municiones', sigla: 'MUN',  fuera_abc: true, categorias: ['MUNICION'] },
-    { tipo: 'Cargadores', sigla: 'CARG', fuera_abc: true, categorias: [] },
-  ]),
-  TIPO_DEFECTO: 'No reglamentado',
-
-  /* Los cargadores no tienen categoría propia en Odoo: están dentro de
-     ACCESORIO DE ARMA. Se los reconoce por el nombre, con las mismas
-     exclusiones que usa el reporte de lista de precios: un porta cargador,
-     una base o un piso NO son un cargador. */
-  CARGADOR_INCLUYE: Object.freeze(['CARGADOR']),
-  CARGADOR_EXCLUYE: Object.freeze(['PORTA', 'BASE', 'PISO', 'ACOPLE', 'RESORTE', 'CABEZA']),
-
-  /* Marcas que se abren en varias líneas según una palabra del nombre.
-     Doberman vende rifles, mochilas, botas, linternas y balines: verlos
-     juntos en una sola fila no dice nada. Mismo criterio que la lista
-     de precios. Agregar marcas acá con el mismo formato. */
-  SUBDIVIDIR: Object.freeze({
-    'DOBERMAN': [
-      { palabra: 'RIFLE',    sufijo: 'RIFLES' },
-      { palabra: 'MOCHILA',  sufijo: 'MOCHILAS' },
-      { palabra: 'MORRAL',   sufijo: 'MOCHILAS' },
-      { palabra: 'BOTA',     sufijo: 'BOTAS' },
-      { palabra: 'LINTERNA', sufijo: 'LINTERNAS' },
-      { palabra: 'REFLECTOR',sufijo: 'LINTERNAS' },
-      { palabra: 'BALIN',    sufijo: 'BALINES' },
-    ],
-  }),
-
-  /* Categorías que no son mercadería para la venta. Quedan fuera del reporte. */
-  CATEGORIAS_EXCLUIDAS: Object.freeze([
-    'NO USAR', 'Uso interno (Libreria)', 'Ajustes', 'Recupero', 'Descuento',
-    'Anticipo de Cliente', 'Gastos de Importación (Landed Cost)',
-    'Intereses', 'Gestiones', 'Servicios',
-  ]),
-
-  HOJAS: Object.freeze({
-    STOCK: 'STOCK', ARTICULOS: 'ARTICULOS', VENTAS: 'VENTAS', HISTORICO: 'HISTORICO',
-    ROTACION: 'ROTACION', MARCAS: 'MARCAS', DIAGNOSTICO: 'DIAGNOSTICO',
-  }),
-});
-
-/* ==========================================================================
-   DICCIONARIO DE MARCAS — RESPALDO
-   ==========================================================================
-   Ya NO se usa para el reporte: la marca se lee del campo product_brand_id
-   de Odoo, que es el mismo que usa el reporte de lista de precios.
-
-   Esto queda solo para stkDetectarMarcas, que sirve para auditar: comparar
-   lo que dice Odoo contra lo que dice el nombre del producto y encontrar
-   productos con la marca mal cargada o vacía.
-   ========================================================================== */
-const STK_MARCAS = [
-  /* --- aire comprimido, airsoft y no letal --- */
-  ['UMAREX',         ['umarex', 't4e']],
-  ['ASG',            ['asg']],
-  ['CROSMAN',        ['crosman', 'benjamin', 'ravin']],
-  ['DOBERMAN',       ['doberman']],
-  ['TSS',            ['tss']],
-  ['GAMO',           ['gamo']],
-  ['COMETA',         ['cometa']],
-  ['MAHELY',         ['mahely']],
-  ['MARKSMAN',       ['marksman']],
-  ['ARMADILLO',      ['armadillo']],
-  ['APOLO',          ['apolo', 'airboss']],
-
-  /* --- ópticas --- */
-  ['VECTOR OPTICS',  ['vector optics', 'vectoroptics']],
-  ['VICOPTICS',      ['vicoptics']],
-  ['KONUS',          ['konus', 'konu ']],
-  ['HAWKE',          ['hawke']],
-  ['BUSHNELL',       ['bushnell']],
-  ['BSA',            ['bsa']],
-  ['LEUPOLD',        ['leupold']],
-  ['TRUGLO',         ['truglo']],
-  ['MILLET',         ['millet']],
-  ['SNIPER',         ['sniper']],
-  ['BEAMSHOT',       ['beamshot']],
-
-  /* --- accesorios y fundas --- */
-  ['FOBUS',          ['fobus', 'cyasupply', 'cytac']],
-  ['FAB DEFENSE',    ['fab defense', 'fabdefense', 'kpos']],
-  ['INDUNAYLON',     ['indunaylon']],
-  ['GSM',            ['gsm', 'bwc', 'sme', 'stealthcam', 'walker']],
-  ['KCI',            ['kci']],
-  ['MEGGAR',         ['meg-gar', 'meggar']],
-  ['HOGUE',          ['hoge', 'hogue']],
-  ['BUTLER CREEK',   ['butler creek']],
-  ['UNCLE MIKES',    ['uncle mikes', 'unkle mikes', 'michaels', 'michngr']],
-  ['KLEEN-BORE',     ['kleen-bore', 'kleenbore']],
-  ['HOPPES',         ["hoppe's", 'hoppes']],
-  ['PACHMAYR',       ['pachmayer', 'pachmayr']],
-  ['TOPPING',        ['topping']],
-  ['VAULTEK',        ['vaultek']],
-  ['KAER',           ['kaer']],
-
-  /* --- armas de fuego --- */
-  ['GLOCK',          ['glock']],
-  ['BERETTA',        ['beretta', 'pietro beretta', 'prieto beretta']],
-  ['CZ',             ['cz ', 'cz-', 'cz75', 'ceska']],
-  ['TAURUS',         ['taurus']],
-  ['BERSA',          ['bersa']],
-  ['TANFOGLIO',      ['tanfoglio']],
-  ['SIG SAUER',      ['sig sauer', 'sigsauer', 'sig suger']],
-  ['SMITH & WESSON', ['smith & wesson', 'smith and wesson', 'smith n wesson', ' s&w ', ' sw ']],
-  ['RUGER',          ['ruger']],
-  ['WALTHER',        ['walther']],
-  ['CANIK',          ['canik', 'canick']],
-  ['GIRSAN',         ['girsan']],
-  ['DERYA',          ['derya']],
-  ['KOR',            ['kor ']],
-  ['AHSS',           ['ahss']],
-  ['ROSSI',          ['rossi']],
-  ['ARMSCOR',        ['armscor', 'rock island']],
-  ['ALFA PROJ',      ['alfa proj', 'alfa-proj', 'alfa holek']],
-  ['MOSSBERG',       ['mossberg', 'maverick']],
-  ['MARLIN',         ['marlin']],
-  ['WINCHESTER',     ['winchester']],
-  ['REMINGTON',      ['remington']],
-  ['SAVAGE',         ['savage']],
-  ['BOITO',          ['boito']],
-  ['ARMED',          ['armed']],
-  ['MENDOZA',        ['mendoza']],
-  ['AKKAR',          ['akkar']],
-  ['AKSA',           ['aksa']],
-  ['ARMSAN',         ['armsan']],
-  ['HATSAN',         ['hatsan', 'escort']],
-  ['CHIAPPA',        ['chiappa']],
-  ['TINCK',          ['tinck']],
-  ['SAFIR',          ['safir']],
-  ['LUVO',           ['luvo']],
-  ['SARSILMAZ',      ['sarsilmaz']],
-  ['UTAS',           ['utas']],
-  ['ISSC',           ['issc']],
-  ['TISAS',          ['tisas']],
-  ['BENELLI',        ['benelli']],
-  ['BROWNING',       ['browning']],
-  ['HK',             ['hk ', 'h y k']],
-  ['FN',             ['fn ']],
-  ['COLT',           ['colt']],
-  ['BAIKAL',         ['baikal']],
-  ['TOZ-TULA',       ['toz-tula', 'toz tula']],
-  ['MAUSER',         ['mauser']],
-  ['TIKKA',          ['tikka']],
-  ['HOWA',           ['howa']],
-  ['SABATTI',        ['sabatti']],
-  ['VALTRO',         ['valtro']],
-  ['BULL',           ['bull ']],
-  ['EMTAN',          ['emtan']],
-  ['AKDAL',          ['akdal']],
-  ['NORINCO',        ['norinco']],
-  ['HIPOINT',        ['hipoint', 'hi point']],
-  ['LLAMA',          ['llama']],
-  ['LORCIN',         ['lorcin']],
-  ['SUNDANCE',       ['sundance']],
-  ['INTRATEC',       ['intratec']],
-  ['AMT',            ['amt ']],
-  ['REXIO',          ['rexio']],
-  ['HERITAGE',       ['heritage']],
-  ['PARA ORDNANCE',  ['para ordnance']],
-  ['BRG',            ['brg']],
-  ['STEYR',          ['steyr']],
-  ['DELISLE',        ['delizle', 'delisle']],
-  ['HIGH STANDARD',  ['high standard']],
-  ['BRYCO',          ['bryco']],
-
-  /* --- municiones y recarga --- */
-  ['SELLIER',        ['sellier']],
-  ['IMI',            ['imi ']],
-  ['CBC',            ['cbc']],
-  ['SAGA',           ['saga']],
-  ['GB',             ['gb ']],
-  ['RIO',            ['rio ']],
-  ['MIRAGE',         ['mirage']],
-  ['VALOR',          ['valor']],
-  ['ELEY',           ['eley']],
-  ['GOLDEN EAGLE',   ['golden eagle']],
-  ['PPU',            ['ppu']],
-  ['FEDERAL',        ['federal']],
-  ['CCI',            ['cci']],
-  ['BLAZER',         ['blazer']],
-  ['PMC',            ['pmc']],
-  ['HORNADY',        ['hornady']],
-  ['LYMAN',          ['lyman']],
-  ['LEE',            ['lee ']],
-  ['DILLON',         ['dillon']],
-  ['MEC',            ['mec ']],
-
-  /* --- camping, aire libre e iluminación --- */
-  ['NAUTIKA',        ['nautika', 'ntk', 'campgas', 'azteq']],
-  ['COLEMAN',        ['coleman']],
-  ['NITECORE',       ['nitecore']],
-  ['IMALENT',        ['imalent']],
-  ['CATERPILLAR',    ['caterpillar']],
-  ['OLIGHT',         ['olight']],
-  ['MAGLITE',        ['maglite']],
-  ['BESTWAY',        ['bestway']],
-  ['INTEX',          ['intex']],
-  ['GUEPARDO',       ['guepardo']],
-  ['STAND SPORT',    ['stand sport', 'americamper', 'americamp']],
-  ['REYSOL',         ['reysol']],
-  ['MOR',            ['mor ']],
-  ['TRAMONTINA',     ['tramontina', 'tram.']],
-  ['ALBAINOX',       ['albainox']],
-  ['NIETO',          ['nieto']],
-  ['AITOR',          ['aitor']],
-  ['GERBER',         ['gerber']],
-  ['ZIPPO',          ['zippo']],
-
-  /* --- pesca --- */
-  ['SNAKE',          ['snake']],
-  ['MARINE SPORTS',  ['marine sport', 'marine sports']],
-  ['MUSTAD',         ['mustad']],
-  ['OTTONI',         ['ottoni']],
-  ['CENTURY',        ['century', 'carbonix']],
-  ['ABU GARCIA',     ['abu garcia']],
-  ['DAIWA',          ['daiwa']],
-  ['PENN',           ['penn']],
-  ['SHIMANO',        ['shimano']],
-  ['BERKLEY',        ['berkley']],
-  ['FENWICK',        ['fenwick']],
-  ['RAPALA',         ['rapala']],
-  ['SUMAX',          ['sumax']],
-  ['PLANO',          ['plano']],
-  ['POLYMER',        ['polymer']],
-  ['REPLAST',        ['replast']],
-  ['ARATY',          ['araty']],
-  ['SUFIX',          ['sufix']],
-  ['RAIGLON',        ['raiglon', 'laiglon']],
-  ['VEXTER',         ['vexter']],
-  ['EXORI',          ['exori']],
-  ['REBEL',          ['rebel']],
-  ['ATTWOOD',        ['attwood']],
-  ['RULE',           ['rule ']],
-
-  /* --- indumentaria y varios --- */
-  ['5.11',           ['5.11']],
-  ['COLUMBIA',       ['columbia']],
-  ['ROCKY BOOTS',    ['rocky boots']],
-  ['BE ARMOR',       ['b.e. armor', 'be armor']],
-  ['JACKSON',        ['jackson']],
-  ['DURACELL',       ['duracell']],
-  ['RAYOVAC',        ['rayovac']],
-  ['MAXELL',         ['maxell']],
-  ['EVEREADY',       ['eveready', 'ever.']],
-  ['PANASONIC',      ['panasonic']],
-  ['ANTIGERM',       ['antigerm']],
-  ['OLIMP',          ['olimp', 'osn']],
-];
-
-
-function stkMenu() {
-  let ui;
-  try { ui = SpreadsheetApp.getUi(); }
-  catch (sinInterfaz) {
-    Logger.log('stkMenu solo se puede ejecutar con la planilla abierta. Ejecutá stkInstalarMenu() y recargá.');
-    return;
-  }
-  ui.createMenu('Reporte de Stock')
-    .addItem('1. Diagnosticar Odoo', 'stkDiagnosticar')
-    .addItem('1b. Revisar qué queda afuera', 'stkRevisarExcluidas')
-    .addItem('1c. Ver campos personalizados', 'stkCamposPersonalizados')
-    .addItem('1d. Ver etiquetas de producto', 'stkEtiquetas')
-    .addItem('2. Detectar marcas', 'stkDetectarMarcas')
-    .addItem('2b. Priorizar por valor', 'stkPriorizarMarcas')
-    .addItem('3. Actualizar y publicar', 'stkAutomatico')
-    .addSeparator()
-    .addItem('Solo actualizar las hojas', 'stkActualizarDatos')
-    .addItem('Solo publicar (desde las hojas)', 'stkPublicar')
-    .addItem('Programar actualización diaria', 'stkProgramar')
-    .addItem('Cancelar actualización diaria', 'stkCancelarProgramacion')
-    .addItem('Ver estado de la programación', 'stkEstadoProgramacion')
-    .addToUi();
-}
-
-
-/* ==========================================================================
-   CONEXIÓN CON ODOO — solo lectura
-   ========================================================================== */
-
-function stkSesion_() {
-  const props = PropertiesService.getScriptProperties();
-  const faltan = ['ODOO_URL', 'ODOO_DB', 'ODOO_LOGIN', 'ODOO_API_KEY']
-    .filter(p => !props.getProperty(p));
-  if (faltan.length) {
-    throw new Error(
-      `Faltan propiedades del script: ${faltan.join(', ')}.\n` +
-      'Configuración del proyecto → Propiedades del script.'
-    );
-  }
-  const url = props.getProperty('ODOO_URL').replace(/\/+$/, '');
-  const db = props.getProperty('ODOO_DB');
-  const login = props.getProperty('ODOO_LOGIN');
-  const clave = props.getProperty('ODOO_API_KEY');
-
-  const uid = stkRpc_(url, 'common', 'authenticate', [db, login, clave, {}]);
-  if (!uid) throw new Error('Odoo rechazó la autenticación. Revisá URL, base, usuario y clave API.');
-
-  return { url, db, uid, clave, companyIds: [] };
-}
-
-function stkRpc_(url, service, method, args) {
-  const r = UrlFetchApp.fetch(`${url}/jsonrpc`, {
-    method: 'post', contentType: 'application/json', muteHttpExceptions: true,
-    payload: JSON.stringify({
-      jsonrpc: '2.0', method: 'call', id: Date.now(),
-      params: { service, method, args },
-    }),
+/** Deja los encabezados mostrando qué columna ordena y en qué sentido. */
+function marcarOrden(sel, est){
+  Array.prototype.forEach.call(document.querySelectorAll(sel + " th.ord"), function(th){
+    var activa = String(th.dataset.k) === String(est.k);
+    th.classList.toggle("asc", activa && est.asc);
+    th.classList.toggle("desc", activa && !est.asc);
   });
-  const codigo = r.getResponseCode();
-  const texto = r.getContentText();
-  if (codigo < 200 || codigo >= 300) throw new Error(`HTTP ${codigo} desde Odoo: ${texto.substring(0, 600)}`);
-  let cuerpo;
-  try { cuerpo = JSON.parse(texto); }
-  catch (e) { throw new Error(`Odoo no devolvió JSON: ${texto.substring(0, 600)}`); }
-  if (cuerpo.error) {
-    const d = cuerpo.error.data || {};
-    throw new Error(d.message || cuerpo.error.message || 'Error RPC de Odoo');
-  }
-  return cuerpo.result;
 }
+var per = { desde: 0, hasta: (DATOS.MESES || []).length - 1 };
 
-function stkEjecutar_(sesion, modelo, metodo, args, kwargs) {
-  const kw = Object.assign({}, kwargs || {});
-  const ctx = Object.assign({}, kw.context || {});
-  if (sesion.companyIds.length && !ctx.allowed_company_ids) ctx.allowed_company_ids = sesion.companyIds;
-  kw.context = ctx;
-  return stkRpc_(sesion.url, 'object', 'execute_kw',
-    [sesion.db, sesion.uid, sesion.clave, modelo, metodo, args || [], kw]);
-}
+var pasa = function(r){
+  return (f.dep === "*" || r.dep === f.dep)
+      && (f.tipo === "*" || r.tipo === f.tipo)
+      && (f.cat === "*" || r.cat === f.cat)
+      && (f.marca === "*" || r.m === f.marca)
+      && (f.cal === "*" || r.cal === f.cal);
+};
+var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*" || f.cal!=="*"; };
 
-function stkLeerTodo_(sesion, modelo, dominio, campos, orden) {
-  const salida = [];
-  let desplazamiento = 0;
-  for (;;) {
-    const lote = stkEjecutar_(sesion, modelo, 'search_read', [dominio], {
-      fields: campos, offset: desplazamiento, limit: STK.LOTE_API, order: orden || 'id asc',
-    });
-    salida.push(...lote);
-    if (lote.length < STK.LOTE_API) break;
-    desplazamiento += lote.length;
-  }
-  return salida;
-}
-
-function stkCamposDe_(sesion, modelo) { return stkEjecutar_(sesion, modelo, 'fields_get', [], {}); }
-
-function stkCamposQueExisten_(meta, deseados) {
-  return deseados.filter(c => Object.prototype.hasOwnProperty.call(meta, c));
-}
-
-function stkEmpresa_(sesion) {
-  const clave = stkNorm_(STK.EMPRESA);
-  const empresas = stkLeerTodo_(sesion, 'res.company', [['active', '=', true]], ['id', 'name'], 'id asc');
-  const encontrada = empresas.filter(e => stkNorm_(e.name).includes(clave))[0];
-  if (!encontrada) {
-    throw new Error(`No se encontró "${STK.EMPRESA}". Disponibles: ${empresas.map(e => e.name).join(', ')}`);
-  }
-  return encontrada;
-}
-
-
-/* ==========================================================================
-   1. DIAGNÓSTICO
-   ==========================================================================
-   Responde la pregunta que puede invalidar todo el proyecto: ¿Odoo guarda
-   capas de valorización? Sin eso, no existe histórico de stock a costo y la
-   Parte 2 del reporte no se puede construir de ninguna manera.
-   ========================================================================== */
-
-function stkDiagnosticar() {
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
-
-  const metaCapa = stkCamposDe_(sesion, 'stock.valuation.layer');
-  const campoFecha = metaCapa.create_date ? 'create_date' : 'date';
-  const capas = stkEjecutar_(sesion, 'stock.valuation.layer', 'search_count',
-    [[['company_id', '=', empresa.id]]], {});
-
-  let primeraCapa = '';
-  if (capas) {
-    const p = stkEjecutar_(sesion, 'stock.valuation.layer', 'search_read',
-      [[['company_id', '=', empresa.id]]], { fields: [campoFecha], limit: 1, order: `${campoFecha} asc` });
-    primeraCapa = p.length ? String(p[0][campoFecha]).substring(0, 10) : '';
-  }
-
-  const categorias = stkLeerTodo_(sesion, 'product.category', [],
-    ['id', 'complete_name', 'name', 'property_cost_method', 'property_valuation'], 'id asc');
-  const automaticas = categorias.filter(c => c.property_valuation === 'real_time').length;
-  const metodos = Array.from(new Set(categorias.map(c => c.property_cost_method || 'sin definir')));
-
-  /* Detalle por categoría: sin valoración automática no hay capas, y sin capas
-     esa categoría queda con el histórico plano aunque el stock se haya movido. */
-  const detalle = categorias
-    .map(c => {
-      const ruta = c.complete_name || c.name;
-      const hoja = stkHojaCategoria_(ruta);
-      const clas = stkTipo_(ruta, '');
-      return [
-        ruta,
-        c.property_cost_method || 'sin definir',
-        c.property_valuation === 'real_time' ? 'automática' : 'MANUAL',
-        stkExcluida_(ruta) ? 'excluida del reporte' : clas.tipo,
-        clas.fuera_abc ? 'sin clasificación' : 'lleva A/B/C',
-      ];
+/** Agrupa las filas que pasan el filtro por la clave que se pida. */
+function agrupar(clave){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    var k = r[clave];
+    if (!mapa[k]) mapa[k] = Object.assign({ k:k, tipos:{} }, vacio);
+    mapa[k].tipos[r.tipo] = true;
+    if (mapa[k][r.cat] === undefined) return;
+    mapa[k][r.cat] += r.v;
+  });
+  return Object.keys(mapa).map(function(k){
+      var t = Object.keys(mapa[k].tipos);
+      mapa[k].tipo = t.length === 1 ? t[0] : "varios tipos";
+      return mapa[k];
     })
-    .sort((a, b) => String(a[0]).localeCompare(String(b[0]), 'es'));
-  stkEscribir_('DIAGNOSTICO CATEGORIAS',
-    ['Categoría', 'Método de costo', 'Valoración', 'Tipo en el reporte', 'Alcance ABC'],
-    detalle, []);
-
-  const metaProd = stkCamposDe_(sesion, 'product.template');
-  const metaQuant = stkCamposDe_(sesion, 'stock.quant');
-
-  const filas = [
-    ['Empresa', `${empresa.name} [${empresa.id}]`],
-    ['', ''],
-    ['Capas de valorización', capas],
-    ['Capa más antigua', primeraCapa || 'ninguna'],
-    ['¿Hay histórico posible?', capas > 0 ? `SÍ, desde ${primeraCapa}` : 'NO — la Parte 2 del reporte no se puede hacer'],
-    ['', ''],
-    ['Categorías de producto', categorias.length],
-    ['Con valoración automática', automaticas],
-    ['Métodos de costo en uso', metodos.join(', ')],
-    ['Sin valoración automática', `${categorias.length - automaticas} categorías — ver hoja DIAGNOSTICO CATEGORIAS`],
-    ['', ''],
-    [`Campo ABC (${STK.CAMPO_ABC})`, metaProd[STK.CAMPO_ABC] ? 'existe' : 'NO EXISTE'],
-    [`Campo marca (${STK.CAMPO_MARCA})`,
-      metaProd[STK.CAMPO_MARCA] ? 'EXISTE — la marca se lee de Odoo, no hace falta el diccionario'
-                                : 'no existe — se usa la hoja MARCAS'],
-    ['Valor en stock.quant', metaQuant.value ? 'visible' : 'sin permiso — se calcula cantidad × costo'],
-    ['', ''],
-    ['Fuera del alcance ABC', detalle.filter(d => d[4] === 'sin clasificación').map(d => d[0]).join(' · ') || 'ninguna'],
-    ['Excluidas del reporte', detalle.filter(d => d[3] === 'excluida del reporte').map(d => d[0]).join(' · ') || 'ninguna'],
-    ['', ''],
-    ['Diagnóstico ejecutado', stkAhora_()],
-  ];
-  stkEscribir_(STK.HOJAS.DIAGNOSTICO, ['Punto', 'Resultado'], filas, []);
-  stkSS_().setActiveSheet(stkHoja_(STK.HOJAS.DIAGNOSTICO));
-
-  stkAvisar_('Diagnóstico', [
-    `Capas de valorización: ${capas}`,
-    capas > 0
-      ? `Hay histórico desde ${primeraCapa}. Se puede seguir.`
-      : 'Sin capas de valorización no hay histórico. Avisar antes de seguir.',
-    '',
-    'El detalle quedó en la hoja DIAGNOSTICO.',
-  ].join('\n'));
+    .sort(function(a,b){ return suma(b)-suma(a); });
 }
-
-
-/**
- * Cuánto stock a costo queda fuera del reporte, y cuánto cuelga de la
- * categoría raíz ALL (costo estándar, valoración manual).
- *
- * Importa por dos razones: si las categorías excluidas tienen valor, el total
- * del reporte no va a coincidir con la valorización contable de Odoo; y si ALL
- * tiene productos, esos entran con costo congelado y con el histórico plano.
- */
-function stkRevisarExcluidas() {
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
-
-  const meta = stkCamposDe_(sesion, 'product.template');
-  const campoTipo = meta.detailed_type ? 'detailed_type' : 'type';
-  const plantillas = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], stkCamposQueExisten_(meta, ['id', 'categ_id', 'standard_price']), 'id asc');
-
-  const categoriaPorPlantilla = {};
-  const costoPorPlantilla = {};
-  const ids = [];
-  plantillas.forEach(t => {
-    categoriaPorPlantilla[t.id] = stkNombre_(t.categ_id);
-    costoPorPlantilla[t.id] = stkNum_(t.standard_price);
-    ids.push(t.id);
-  });
-
-  const plantillaPorVariante = {};
-  stkLotes_(ids, STK.LOTE_API).forEach(lote => {
-    stkLeerTodo_(sesion, 'product.product', [['product_tmpl_id', 'in', lote]],
-      ['id', 'product_tmpl_id'], 'id asc')
-      .forEach(v => { plantillaPorVariante[v.id] = stkId_(v.product_tmpl_id); });
-  });
-
-  const metaQuant = stkCamposDe_(sesion, 'stock.quant');
-  const hayValor = Boolean(metaQuant.value);
-  const quants = stkLeerTodo_(sesion, 'stock.quant', [
-    ['company_id', '=', empresa.id],
-    ['location_id.usage', '=', 'internal'],
-  ], stkCamposQueExisten_(metaQuant, ['id', 'product_id', 'quantity', 'value']), 'id asc');
-
-  const porCategoria = {};
-  let total = 0;
-  quants.forEach(q => {
-    const plantilla = plantillaPorVariante[stkId_(q.product_id)];
-    const categoria = categoriaPorPlantilla[plantilla];
-    if (categoria === undefined) return;
-    const monto = hayValor ? stkNum_(q.value) : stkNum_(q.quantity) * costoPorPlantilla[plantilla];
-    if (!monto) return;
-    if (!porCategoria[categoria]) porCategoria[categoria] = { monto: 0, articulos: {} };
-    porCategoria[categoria].monto += monto;
-    porCategoria[categoria].articulos[plantilla] = true;
-    total += monto;
-  });
-
-  let excluido = 0;
-  let enRaiz = 0;
-  const filas = Object.keys(porCategoria).sort((a, b) => porCategoria[b].monto - porCategoria[a].monto)
-    .map(categoria => {
-      const dato = porCategoria[categoria];
-      const esRaiz = stkNorm_(stkHojaCategoria_(categoria)) === stkNorm_('ALL');
-      const excluida = stkExcluida_(categoria);
-      if (excluida) excluido += dato.monto;
-      if (esRaiz) enRaiz += dato.monto;
-      return [
-        categoria,
-        excluida ? 'FUERA del reporte' : (esRaiz ? 'ENTRA, pero costo estándar y sin capas' : 'entra'),
-        Object.keys(dato.articulos).length,
-        Math.round(dato.monto),
-        total ? (dato.monto / total * 100).toFixed(2) + '%' : '',
-      ];
-    });
-
-  stkEscribir_('DIAGNOSTICO EXCLUIDAS',
-    ['Categoría', 'Situación', 'Artículos con stock', 'Valor a costo (Gs.)', '% del total'],
-    filas, [4]);
-  stkSS_().setActiveSheet(stkHoja_('DIAGNOSTICO EXCLUIDAS'));
-
-  const gs = n => new Intl.NumberFormat('es-PY').format(Math.round(n));
-  stkAvisar_('Qué queda afuera', [
-    `Stock total valorizado: Gs. ${gs(total)}`,
-    '',
-    `Excluido del reporte: Gs. ${gs(excluido)} (${total ? (excluido / total * 100).toFixed(2) : 0}%)`,
-    excluido
-      ? 'El total del reporte NO va a coincidir con la valorización contable.'
-      : 'Las categorías excluidas no tienen stock. El total va a cuadrar.',
-    '',
-    `Colgado de la raíz ALL: Gs. ${gs(enRaiz)}`,
-    enRaiz
-      ? 'Esos productos entran con costo estándar y su histórico va a salir plano.'
-      : 'Ningún producto cuelga de la raíz. Sin problema.',
-    '',
-    'Detalle en la hoja DIAGNOSTICO EXCLUIDAS.',
-  ].join('\n'));
+function totales(){
+  var t = Object.assign({}, vacio);
+  STOCK.forEach(function(r){ if (pasa(r) && t[r.cat] !== undefined) t[r.cat] += r.v; });
+  return t;
 }
+var valores = function(x){ return CATS.map(function(c){ return {v:x[c.k]||0, col:c.col, lab:c.lab}; }); };
 
+/* ---------------- gráficos ---------------- */
+var DEFS = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
+  '<rect width="6" height="6" fill="#DCD6C8"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8C7A57" stroke-width="2.4"/></pattern></defs>';
 
-/**
- * Lista los campos personalizados de product.template con su etiqueta, su
- * nombre técnico, cuántos productos lo tienen cargado y tres valores de
- * ejemplo.
- *
- * Sirve para encontrar campos que ya existen y nadie documentó: si la marca
- * está cargada en un campo propio, no hace falta deducirla del nombre del
- * producto ni revisar miles de filas a mano.
- */
-function stkCamposPersonalizados() {
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
-
-  const meta = stkCamposDe_(sesion, 'product.template');
-
-  /* Campos de Studio y cualquier otro que no sea estándar de Odoo. */
-  const candidatos = Object.keys(meta).filter(nombre => {
-    if (nombre.indexOf('x_') === 0) return true;
-    const c = meta[nombre];
-    return c && c.manual === true;
-  }).sort();
-
-  if (!candidatos.length) {
-    stkAvisar_('Campos personalizados', 'No se encontró ninguno en product.template.');
-    return;
+function donut(vals, size, thick){
+  var t = vals.reduce(function(a,b){return a+b.v;},0);
+  var r = size/2, ir = r - thick, cx = r, cy = r, ang = -Math.PI/2, out = "";
+  if (t <= 0) {
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="#E6E9E9" stroke-width="'+thick+'"/></svg>';
   }
-
-  const campoTipo = meta.detailed_type ? 'detailed_type' : 'type';
-  const productos = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], ['id'].concat(candidatos), 'id asc');
-
-  const filas = candidatos.map(nombre => {
-    const c = meta[nombre];
-    let cargados = 0;
-    const ejemplos = [];
-    const distintos = {};
-    productos.forEach(p => {
-      const v = p[nombre];
-      if (v === false || v === null || v === undefined || v === '') return;
-      cargados += 1;
-      const texto = Array.isArray(v) ? String(v[1]) : String(v);
-      distintos[texto] = true;
-      if (ejemplos.length < 3 && ejemplos.indexOf(texto) < 0) ejemplos.push(texto);
-    });
-    return [
-      c.string || '',
-      nombre,
-      c.type || '',
-      cargados,
-      productos.length ? (cargados / productos.length * 100).toFixed(1) + '%' : '',
-      Object.keys(distintos).length,
-      ejemplos.join(' · '),
-    ];
-  }).sort((a, b) => b[3] - a[3]);
-
-  stkEscribir_('CAMPOS ODOO',
-    ['Etiqueta', 'Nombre técnico', 'Tipo', 'Productos con valor', '% cargado',
-     'Valores distintos', 'Ejemplos'],
-    filas, [4, 6]);
-  stkSS_().setActiveSheet(stkHoja_('CAMPOS ODOO'));
-
-  /* Un candidato a "marca" tiene muchos productos cargados y una cantidad
-     razonable de valores distintos: ni uno solo, ni uno por producto. */
-  const probables = filas.filter(f =>
-    f[3] > productos.length * 0.3 && f[5] > 3 && f[5] < productos.length * 0.5);
-
-  stkAvisar_('Campos personalizados', [
-    `Productos analizados: ${productos.length}`,
-    `Campos personalizados encontrados: ${filas.length}`,
-    '',
-    probables.length
-      ? 'Posibles campos de marca o clasificación:\n' +
-        probables.slice(0, 8).map(f => `· ${f[0]} (${f[1]}) — ${f[3]} productos, ${f[5]} valores`).join('\n')
-      : 'Ninguno parece un campo de marca.',
-    '',
-    'Detalle completo en la hoja CAMPOS ODOO.',
-  ].join('\n'));
+  var conValor = vals.filter(function(s){ return s.v > 0; });
+  if (conValor.length === 1) {
+    var u = conValor[0];
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+
+      '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="'+u.col+
+      '" stroke-width="'+thick+'"><title>'+esc(u.lab)+': '+gsM(u.v)+' (100%)</title></circle></svg>';
+  }
+  vals.forEach(function(s){
+    if (s.v <= 0) return;
+    var a2 = ang + (s.v/t)*Math.PI*2, big = (a2-ang) > Math.PI ? 1 : 0;
+    var x1=cx+r*Math.cos(ang), y1=cy+r*Math.sin(ang), x2=cx+r*Math.cos(a2), y2=cy+r*Math.sin(a2);
+    var x3=cx+ir*Math.cos(a2), y3=cy+ir*Math.sin(a2), x4=cx+ir*Math.cos(ang), y4=cy+ir*Math.sin(ang);
+    out += '<path class="slice" data-cat="'+(s.k||"")+'" d="M'+x1.toFixed(2)+' '+y1.toFixed(2)+
+      ' A'+r+' '+r+' 0 '+big+' 1 '+x2.toFixed(2)+' '+y2.toFixed(2)+
+      ' L'+x3.toFixed(2)+' '+y3.toFixed(2)+
+      ' A'+ir+' '+ir+' 0 '+big+' 0 '+x4.toFixed(2)+' '+y4.toFixed(2)+' Z" fill="'+s.col+'" stroke="#fff" stroke-width="1.2">'+
+      '<title>'+esc(s.lab)+': '+gsM(s.v)+' ('+pct(s.v,t)+')</title></path>';
+    ang = a2;
+  });
+  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+out+'</svg>';
+}
+function swatch(c){
+  return c.k === "NC"
+    ? "background:repeating-linear-gradient(45deg,#DCD6C8 0 2px,#8C7A57 2px 4px)"
+    : "background:" + c.col;
+}
+function barra(x){
+  var t = suma(x);
+  return CATS.map(function(c){
+    var w = t ? (x[c.k]||0)/t*100 : 0;
+    return w ? '<i style="width:'+w.toFixed(2)+'%;'+swatch(c)+'" title="'+c.lab+' '+pct(x[c.k],t)+'"></i>' : "";
+  }).join("");
 }
 
+/* ---------------- controles ---------------- */
+function opciones(sel, lista, etiquetaTodos){
+  sel.innerHTML = '<option value="*">'+etiquetaTodos+'</option>' +
+    lista.map(function(v){ return '<option value="'+esc(v)+'">'+esc(v)+'</option>'; }).join("");
+}
+function unicos(campo){
+  var s = {};
+  STOCK.forEach(function(r){ s[r[campo]] = true; });
+  return Object.keys(s).sort();
+}
 
-/**
- * Dos revisiones en una corrida:
- *
- * 1. ETIQUETAS de producto. Son un campo estándar de Odoo, no de Studio, así
- *    que no aparecen entre los campos personalizados. Si la marca está
- *    cargada ahí, se lee de Odoo y no hace falta deducirla del nombre.
- *
- * 2. Los DOS campos de categoría de rotación que existen con nombres casi
- *    iguales. Si no coinciden, hay productos donde el flujo de aprobación
- *    escribió en uno y la gente mira el otro.
- */
-function stkEtiquetas() {
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
+function armarFiltros(){
+  var deps = unicos("dep"), tipos = unicos("tipo"), marcas = unicos("m");
 
-  const meta = stkCamposDe_(sesion, 'product.template');
-  const campoTipo = meta.detailed_type ? 'detailed_type' : 'type';
-  const campoEtiquetas = meta.product_tag_ids ? 'product_tag_ids' : null;
+  opciones(document.getElementById("f-dep"), deps, "Todos los depósitos");
+  opciones(document.getElementById("f-marca"), marcas, "Todas las marcas");
 
-  const gemelos = ['x_studio_categoria_de_rotacion', 'x_studio_categoria_de_rotacin']
-    .filter(c => meta[c]);
+  /* Los calibres se ordenan por monto, no alfabéticamente: 9mm arriba. */
+  var pesoCal = {};
+  STOCK.forEach(function(r){ pesoCal[r.cal] = (pesoCal[r.cal]||0) + r.v; });
+  var calibres = Object.keys(pesoCal).sort(function(a,b){ return pesoCal[b]-pesoCal[a]; });
+  opciones(document.getElementById("f-cal"), calibres, "Todos los calibres");
+  document.getElementById("f-cal").addEventListener("change", function(){ f.cal = this.value; pintar(); });
 
-  const campos = ['id', 'name', 'default_code', 'categ_id', 'standard_price']
-    .concat(campoEtiquetas ? [campoEtiquetas] : [])
-    .concat(gemelos);
-
-  const productos = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], stkCamposQueExisten_(meta, campos), 'id asc');
-
-  /* ---- valor de stock por producto, para pesar cada etiqueta ---- */
-  const plantillaPorVariante = {};
-  stkLotes_(productos.map(p => p.id), STK.LOTE_API).forEach(lote => {
-    stkLeerTodo_(sesion, 'product.product', [['product_tmpl_id', 'in', lote]],
-      ['id', 'product_tmpl_id'], 'id asc')
-      .forEach(v => { plantillaPorVariante[v.id] = stkId_(v.product_tmpl_id); });
+  var presentes = CATS.filter(function(c){
+    return STOCK.some(function(r){ return r.cat === c.k; });
   });
-  const costo = {};
-  productos.forEach(p => { costo[p.id] = stkNum_(p.standard_price); });
+  var selCat = document.getElementById("f-cat");
+  selCat.innerHTML = '<option value="*">Todas</option>' +
+    presentes.map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
 
-  const metaQuant = stkCamposDe_(sesion, 'stock.quant');
-  const hayValor = Boolean(metaQuant.value);
-  const valor = {};
-  stkLeerTodo_(sesion, 'stock.quant', [
-    ['company_id', '=', empresa.id],
-    ['location_id.usage', '=', 'internal'],
-  ], stkCamposQueExisten_(metaQuant, ['id', 'product_id', 'quantity', 'value']), 'id asc')
-    .forEach(q => {
-      const t = plantillaPorVariante[stkId_(q.product_id)];
-      if (!t) return;
-      valor[t] = (valor[t] || 0) + (hayValor ? stkNum_(q.value) : stkNum_(q.quantity) * costo[t]);
+  document.getElementById("f-tipo").innerHTML =
+    '<button class="chip sm" data-v="*" aria-pressed="true">Todos</button>' +
+    tipos.map(function(t){ return '<button class="chip sm" data-v="'+esc(t)+'" aria-pressed="false">'+esc(t)+'</button>'; }).join("");
+
+  document.getElementById("f-dep").addEventListener("change", function(){ f.dep = this.value; pintar(); sincronizarSerie(); });
+  document.getElementById("f-marca").addEventListener("change", function(){ f.marca = this.value; pintar(); sincronizarSerie(); });
+  selCat.addEventListener("change", function(){ f.cat = this.value; pintar(); });
+  Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(b){
+    b.addEventListener("click", function(){
+      f.tipo = b.dataset.v;
+      Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+        x.setAttribute("aria-pressed", x === b);
+      });
+      pintar(); sincronizarSerie();
     });
+  });
+  document.getElementById("f-activos").addEventListener("click", function(e){
+    var b = e.target.closest("button[data-quitar]");
+    if (!b) return;
+    var cual = b.dataset.quitar;
+    if (cual === "todos") {
+      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
+    } else {
+      f[cual] = "*";
+    }
+    reflejarFiltros();
+    pintar(); sincronizarSerie();
+  });
 
-  /* ---- 1. etiquetas ---- */
-  if (!campoEtiquetas) {
-    stkAvisar_('Etiquetas', 'Este Odoo no tiene el campo product_tag_ids.');
-  } else {
-    const ids = {};
-    productos.forEach(p => (p[campoEtiquetas] || []).forEach(id => { ids[id] = true; }));
-    const listaIds = Object.keys(ids).map(Number);
+  /* Filtros propios de la tabla de apertura. */
+  var qcat = document.getElementById("q-cat");
+  qcat.innerHTML = '<option value="*">Todas</option>' +
+    CATS.filter(function(c){ return STOCK.some(function(r){ return r.cat === c.k; }); })
+        .map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
+  qcat.addEventListener("change", function(){ pintar(); });
+  document.getElementById("q-marca").addEventListener("input", function(){ pintar(); });
+  document.getElementById("q-art").addEventListener("input", function(){ tablaArticulos(); });
 
-    const nombrePorId = {};
-    stkLotes_(listaIds, STK.LOTE_API).forEach(lote => {
-      stkEjecutar_(sesion, 'product.tag', 'read', [lote], { fields: ['id', 'name'] })
-        .forEach(t => { nombrePorId[t.id] = t.name; });
+  /* Descarga la lista filtrada. Sirve para trabajarla en la planilla:
+     por ejemplo, mandarle a Comercial los artículos sin categorizar. */
+  document.getElementById("art-csv").addEventListener("click", function(){
+    var filas = articulosFiltrados();
+    if (!filas.length) return;
+    var esc2 = function(v){ return '"' + String(v).replace(/"/g, '""') + '"'; };
+    var lineas = [["Referencia","Producto","Marca","Tipo","Deposito","Categoria",
+                   "Calibre","Cantidad","Valor a costo (Gs.)"].map(esc2).join(";")];
+    filas.forEach(function(a){
+      lineas.push([a[A_REF],a[A_NOM],a[A_MAR],a[A_TIPO],a[A_DEP],a[A_CAT],a[A_CAL],
+                   a[A_CANT], Math.round(a[A_VAL]*1000000)].map(esc2).join(";"));
     });
+    var url = URL.createObjectURL(new Blob(["\ufeff" + lineas.join("\r\n")],
+                                           {type:"text/csv;charset=utf-8"}));
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "articulos-" + (DATOS.GENERADO || "").split(" ")[0].replace(/\//g,"-") + ".csv";
+    a.click();
+    URL.revokeObjectURL(url);
+  });
 
-    const conteo = {};
-    let sinEtiqueta = 0;
-    productos.forEach(p => {
-      const etiquetas = p[campoEtiquetas] || [];
-      if (!etiquetas.length) { sinEtiqueta += 1; return; }
-      etiquetas.forEach(id => {
-        const n = nombrePorId[id] || ('#' + id);
-        if (!conteo[n]) conteo[n] = { productos: 0, valor: 0 };
-        conteo[n].productos += 1;
-        conteo[n].valor += valor[p.id] || 0;
+  /* Clic en un encabezado ordenable: primera vez descendente, después alterna. */
+  var conectarOrden = function(sel, est, repintar){
+    Array.prototype.forEach.call(document.querySelectorAll(sel + " th.ord"), function(th){
+      th.setAttribute("role", "button");
+      th.setAttribute("tabindex", "0");
+      th.title = "Ordenar por " + th.textContent.trim();
+      var usar = function(){
+        var k = isNaN(th.dataset.k) ? th.dataset.k : Number(th.dataset.k);
+        if (String(est.k) === String(k)) est.asc = !est.asc;
+        else { est.k = k; est.asc = false; }
+        repintar();
+      };
+      th.addEventListener("click", usar);
+      th.addEventListener("keydown", function(e){
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); usar(); }
+      });
+    });
+  };
+  conectarOrden("#tbl-marcas", orden.mar, function(){ pintar(); });
+  conectarOrden("#tbl-dep", orden.dep, function(){ pintar(); });
+  conectarOrden("#tbl-cal", orden.cal, function(){ pintar(); });
+  conectarOrden("#tbl-rot", orden.rot, function(){ rotacion(); });
+  conectarOrden("#tbl-art", orden.art, function(){ tablaArticulos(); });
+
+  /* Clic en el encabezado de una categoría: filtra por ella. */
+  Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
+    th.setAttribute("role", "button");
+    th.setAttribute("tabindex", "0");
+    var elegir = function(){
+      f.cat = (f.cat === th.dataset.cat) ? "*" : th.dataset.cat;
+      reflejarFiltros();
+      pintar(); sincronizarSerie();
+    };
+    th.addEventListener("click", elegir);
+    th.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
+    });
+  });
+
+  /* Secciones plegables. */
+  Array.prototype.forEach.call(document.querySelectorAll("section .shead"), function(h){
+    if (!h.querySelector(".caret")) h.insertAdjacentHTML("afterbegin", '<span class="caret">▾</span>');
+    h.setAttribute("role", "button");
+    h.setAttribute("tabindex", "0");
+    var alternar = function(){
+      var sec = h.closest("section");
+      sec.classList.toggle("plegada");
+      h.classList.toggle("closed");
+    };
+    h.addEventListener("click", alternar);
+    h.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); alternar(); }
+    });
+  });
+
+  document.getElementById("sello").textContent = (DATOS.GENERADO || "—").split(" ")[0];
+  document.getElementById("ndep").textContent = fmt(deps.length);
+  document.getElementById("nmar").textContent = fmt(marcas.length);
+  document.getElementById("pie").textContent =
+    "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · montos en millones de guaraníes.";
+}
+
+/* ---------------- Parte 1 ---------------- */
+function pintar(){
+  var t = totales(), T = suma(t);
+  var alcance = T - sumaFuera(t);
+  var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
+
+  pintarActivos();
+
+  document.getElementById("kpis").innerHTML = [
+    kpi("Stock a costo", gsM(T), etiquetaFiltro(), "", "todo",
+        "Suma del valor de las existencias en depósitos internos, valuadas al costo " +
+        "que registra Odoo. No es precio de venta."),
+    kpi("Dentro del alcance ABC", gsM(alcance),
+        sumaFuera(t) ? "excluye armas, municiones y cargadores (" + pct(sumaFuera(t),T) + " del total)"
+                     : "sin exclusiones", "", "alcance",
+        "Stock total menos ARM, MUN y CARG. Esas tres no llevan clasificación A/B/C " +
+        "por regla del negocio, así que se apartan para no distorsionar el resto."),
+    kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
+        gsM(t.NC) + " todavía sin categorizar", "warn", "NC",
+        "Del stock que sí puede clasificarse, cuánto ya tiene su A, B o C. " +
+        "Si baja, hay productos nuevos sin categorizar o la matriz semestral quedó vieja."),
+    kpi("Capital en Categoría C", gsM(t.C),
+        pct(t.C, alcance) + " del alcance ABC · liquidación pendiente", "", "C",
+        "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
+        "inmovilizado que el MP-MIS-01 pide liberar."),
+  ].join("");
+
+  /* Cada KPI abre el detalle de lo que está contando. */
+  Array.prototype.forEach.call(document.querySelectorAll(".kpi.click"), function(el){
+    var ir = function(){
+      var d = el.dataset.filtro;
+      if (d === "todo")         f.cat = "*";
+      else if (d === "alcance") f.cat = "*";
+      else                      f.cat = d;
+      reflejarFiltros(); pintar(); sincronizarSerie();
+      if (d !== "todo" && d !== "alcance") abrirArticulos();
+    };
+    el.addEventListener("click", function(e){
+      if (e.target.closest(".ayuda")) return;
+      ir();
+    });
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ir(); }
+    });
+  });
+
+  document.getElementById("sub-total").textContent = etiquetaFiltro();
+  document.getElementById("donut-total").innerHTML = donut(valores(t), 210, 42);
+  document.getElementById("leg-total").innerHTML =
+    CATS.filter(function(c){ return (t[c.k]||0) > 0; }).map(function(c){
+      return '<li class="click" data-cat="'+c.k+'" title="Ver los artículos de '+esc(c.lab)+'">'+
+        '<span class="sw" style="'+swatch(c)+'"></span><span>'+c.lab+'</span>'+
+        '<span class="val">'+gsM(t[c.k])+'<span class="pct">'+pct(t[c.k],T)+'</span></span></li>';
+    }).join("") +
+    '<li style="border-top:1.5px solid var(--ink);padding-top:8px"><span></span><span><b>Total</b></span>'+
+    '<span class="val"><b>'+gsM(T)+'</b></span></li>';
+
+  /* Porción de la torta o renglón de la leyenda: filtra por esa categoría. */
+  Array.prototype.forEach.call(
+    document.querySelectorAll("#donut-total .slice[data-cat], #leg-total li.click"),
+    function(el){
+      el.addEventListener("click", function(){
+        var k = el.dataset.cat;
+        f.cat = (f.cat === k) ? "*" : k;
+        reflejarFiltros(); pintar(); sincronizarSerie();
+        if (f.cat !== "*") abrirArticulos();
       });
     });
 
-    const filas = Object.keys(conteo)
-      .sort((a, b) => conteo[b].valor - conteo[a].valor)
-      .map(n => [n, conteo[n].productos, Math.round(conteo[n].valor)]);
+  document.getElementById("nota-alcance").textContent =
+    "A / B / C según la matriz vigente · armas y municiones fuera del alcance ABC";
 
-    stkEscribir_('ETIQUETAS',
-      ['Etiqueta', 'Productos', 'Valor de stock (Gs.)'], filas, [2, 3]);
+  Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
+    th.classList.toggle("on", th.dataset.cat === f.cat);
+  });
+  tablaMarcas(agrupar("m"), T);
+  tablaDepositos(agrupar("dep"), T);
+  tablaCalibres(T);
+  tablaArticulos();
+  tortas(agrupar("m"));
+}
 
-    stkAvisar_('Etiquetas de producto', [
-      `Etiquetas distintas: ${filas.length}`,
-      `Productos sin ninguna etiqueta: ${sinEtiqueta} de ${productos.length}`,
-      '',
-      'Las 10 de mayor valor:',
-      filas.slice(0, 10).map(f => `· ${f[0]} — ${f[1]} productos`).join('\n'),
-      '',
-      'Detalle en la hoja ETIQUETAS.',
-    ].join('\n'));
+function kpi(lab,val,sub,cls,filtro,porque){
+  var id = "ayuda-" + (filtro || lab).replace(/\W/g,"");
+  return '<div class="kpi click '+cls+'" data-filtro="'+esc(filtro||"")+'" tabindex="0" role="button">'+
+    '<span>'+lab+
+      '<button class="ayuda" type="button" aria-expanded="false" aria-controls="'+id+'" '+
+      'onclick="event.stopPropagation();var p=document.getElementById(\''+id+'\');'+
+      'var v=p.hasAttribute(\'hidden\');v?p.removeAttribute(\'hidden\'):p.setAttribute(\'hidden\',\'\');'+
+      'this.setAttribute(\'aria-expanded\',v)">?</button>'+
+    '</span>'+
+    '<strong>'+val+'</strong><em>'+esc(sub)+'</em>'+
+    (filtro && filtro !== "todo" && filtro !== "alcance" ? '<span class="ver">ver artículos →</span>' : '')+
+    '<p class="formula" id="'+id+'" hidden style="margin-top:9px">'+porque+'</p></div>';
+}
+
+/** Abre la sección de artículos y baja hasta ella. */
+function abrirArticulos(){
+  var sec = document.getElementById("q-art").closest("section");
+  sec.classList.remove("plegada");
+  sec.querySelector(".shead").classList.remove("closed");
+  sec.scrollIntoView({ behavior:"smooth", block:"start" });
+}
+function etiquetaFiltro(){
+  var p = [];
+  if (f.dep !== "*") p.push(f.dep);
+  if (f.tipo !== "*") p.push(f.tipo);
+  if (f.marca !== "*") p.push(f.marca);
+  if (f.cal !== "*") p.push(f.cal);
+  if (f.cat !== "*") p.push("categoría " + f.cat);
+  return p.length ? p.join(" · ") : "Todos los depósitos y marcas";
+}
+
+function tablaMarcas(filas, T){
+  var q = (document.getElementById("q-marca").value || "").trim().toLowerCase();
+  var cat = document.getElementById("q-cat").value || "*";
+
+  /* Fuera las que están en cero: una fila de ceros no dice nada. */
+  var vis = filas.filter(function(r){
+    if (suma(r) <= 0) return false;
+    if (cat !== "*" && !(r[cat] > 0)) return false;
+    if (q && r.k.toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+
+  vis.forEach(function(r){ r._t = suma(r); });
+  vis = ordenar(vis, orden.mar.k, orden.mar.asc);
+  marcarOrden("#tbl-marcas", orden.mar);
+
+  document.getElementById("q-n").textContent =
+    vis.length === filas.length ? fmt(vis.length) + " marcas"
+                                : fmt(vis.length) + " de " + fmt(filas.length);
+
+  var tb = document.querySelector("#tbl-marcas tbody"), tf = document.querySelector("#tbl-marcas tfoot");
+  if (!vis.length) {
+    tb.innerHTML = '<tr><td colspan="10" class="empty">Ninguna marca coincide.</td></tr>';
+    tf.innerHTML = ""; return;
   }
+  var s = Object.assign({}, vacio);
+  tb.innerHTML = vis.map(function(r){
+    CATS.forEach(function(c){ s[c.k] += r[c.k]||0; });
+    return '<tr data-marca="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b>'+
+      (r.tipo ? '<span class="tipo">'+esc(r.tipo)+'</span>' : '')+'</td>'+
+      CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
+      '<td class="num"><b>'+fmt(suma(r))+'</b></td><td><div class="bar">'+barra(r)+'</div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
+    '<td class="num">'+fmt(suma(s))+'</td><td class="count">millones de Gs.</td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.marca = (f.marca === tr.dataset.marca) ? "*" : tr.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar(); sincronizarSerie();
+    });
+  });
+}
 
-  /* ---- 2. los dos campos de rotación ---- */
-  if (gemelos.length === 2) {
-    const visible = (campo, v) => stkVisible_(meta[campo], v) || '';
-    let iguales = 0, distintos = 0, soloA = 0, soloB = 0, ambosVacios = 0;
-    const ejemplos = [];
-    productos.forEach(p => {
-      const a = visible(gemelos[0], p[gemelos[0]]);
-      const b = visible(gemelos[1], p[gemelos[1]]);
-      if (!a && !b) { ambosVacios += 1; return; }
-      if (a && !b) { soloA += 1; }
-      else if (!a && b) { soloB += 1; }
-      else if (stkNorm_(a) === stkNorm_(b)) { iguales += 1; return; }
-      else { distintos += 1; }
-      if (ejemplos.length < 40) {
-        ejemplos.push([p.default_code || '', p.name || '', a || '(vacío)', b || '(vacío)',
-                       Math.round(valor[p.id] || 0)]);
+function tablaDepositos(filas, T){
+  var tb = document.querySelector("#tbl-dep tbody"), tf = document.querySelector("#tbl-dep tfoot");
+  if (!filas.length) {
+    tb.innerHTML = '<tr><td colspan="10" class="empty">Sin datos para este filtro.</td></tr>';
+    tf.innerHTML = ""; return;
+  }
+  var s = Object.assign({}, vacio);
+  tb.innerHTML = filas.map(function(r){
+    CATS.forEach(function(c){ s[c.k] += r[c.k]; });
+    return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
+      '<td class="num"><b>'+fmt(suma(r))+'</b></td>'+
+      '<td class="num">'+pct(suma(r), T)+'</td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
+    '<td class="num">'+fmt(suma(s))+'</td><td class="num">100%</td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-dep]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.dep = (f.dep === tr.dataset.dep) ? "*" : tr.dataset.dep;
+      document.getElementById("f-dep").value = f.dep;
+      pintar();
+    });
+  });
+}
+/* Artículo: [ref, nombre, marca, tipo, dep, cat, cal, cantidad, valor] */
+var A_REF=0, A_NOM=1, A_MAR=2, A_TIPO=3, A_DEP=4, A_CAT=5, A_CAL=6, A_CANT=7, A_VAL=8;
+
+function articulosFiltrados(){
+  var q = (document.getElementById("q-art").value || "").trim().toLowerCase();
+  return ARTICULOS.filter(function(a){
+    if (f.dep   !== "*" && a[A_DEP]  !== f.dep)   return false;
+    if (f.tipo  !== "*" && a[A_TIPO] !== f.tipo)  return false;
+    if (f.cat   !== "*" && a[A_CAT]  !== f.cat)   return false;
+    if (f.marca !== "*" && a[A_MAR]  !== f.marca) return false;
+    if (f.cal   !== "*" && a[A_CAL]  !== f.cal)   return false;
+    if (q && (a[A_NOM]+" "+a[A_REF]).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+}
+
+function tablaArticulos(){
+  var filas = articulosFiltrados();
+  var tb = document.querySelector("#tbl-art tbody");
+  var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
+
+  document.getElementById("nota-art").textContent = hayFiltro()
+    ? "Los artículos que cumplen el filtro, de mayor a menor valor"
+    : "Elegí un filtro arriba para acotar la lista";
+  document.getElementById("q-art-n").textContent =
+    filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
+
+  if (!filas.length) {
+    /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
+       lo segundo es un problema de publicación, no del filtro. */
+    tb.innerHTML = ARTICULOS.length
+      ? '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>'
+      : '<tr><td colspan="8" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+        'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
+        'versión del script, y refrescá esta página con Ctrl+F5.</td></tr>';
+    return;
+  }
+  filas = ordenar(filas, orden.art.k, orden.art.asc);
+  marcarOrden("#tbl-art", orden.art);
+  var top = filas.slice(0, 300);
+  tb.innerHTML = top.map(function(a){
+    var c = a[A_CAT];
+    var badge = (c === "A" || c === "B" || c === "C")
+      ? '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>'
+      : '<span style="font-family:var(--mono);font-size:11px;color:var(--'+(c==="NC"?"NC":"SC")+')">'+esc(c)+'</span>';
+    return '<tr><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[A_REF])+'</td>'+
+      '<td class="l">'+esc(a[A_NOM])+'</td>'+
+      '<td class="l">'+esc(a[A_MAR])+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_DEP])+'</td>'+
+      '<td class="l">'+badge+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
+      '<td class="num">'+fmt(a[A_CANT])+'</td>'+
+      '<td class="num"><b>'+fmt(a[A_VAL],1)+'</b></td></tr>';
+  }).join("") +
+  (filas.length > top.length
+    ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
+    : "");
+}
+
+function tablaCalibres(T){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    if (!mapa[r.cal]) mapa[r.cal] = { k:r.cal, tipos:{}, v:0 };
+    mapa[r.cal].tipos[r.tipo] = true;
+    mapa[r.cal].v += r.v;
+  });
+  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
+    .filter(function(r){ return r.v > 0; })
+    .sort(function(a,b){
+      if (orden.cal.k === "v" && !orden.cal.asc) {
+        if (a.k === "Sin calibre") return 1;
+        if (b.k === "Sin calibre") return -1;
       }
+      return 0;
     });
+  filas = ordenar(filas, orden.cal.k, orden.cal.asc);
+  marcarOrden("#tbl-cal", orden.cal);
 
-    stkEscribir_('ROTACION DUPLICADA',
-      ['Referencia', 'Producto', gemelos[0], gemelos[1], 'Valor de stock (Gs.)'],
-      ejemplos, [5]);
+  var sec = document.getElementById("sec-cal");
+  var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
+  sec.hidden = reales.length === 0;
+  if (sec.hidden) return;
 
-    stkAvisar_('Campos de rotación duplicados', [
-      `Coinciden: ${iguales}`,
-      `Difieren: ${distintos}`,
-      `Solo en ${gemelos[0]}: ${soloA}`,
-      `Solo en ${gemelos[1]}: ${soloB}`,
-      `Vacíos en los dos: ${ambosVacios}`,
-      '',
-      (distintos + soloA + soloB) === 0
-        ? 'Los dos campos dicen lo mismo. El duplicado es inofensivo, pero conviene eliminar uno.'
-        : 'HAY DIFERENCIAS. Ver la hoja ROTACION DUPLICADA antes de tocar nada.',
-    ].join('\n'));
-  }
-}
-
-
-/* ==========================================================================
-   2. MARCAS
-   ==========================================================================
-   La marca no existe como campo en Odoo: está dentro del nombre del producto.
-   Muchos nombres traen DOS marcas, la del fabricante y la del arma que imitan:
-       "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY"
-   El fabricante es ASG; CZ es el modelo copiado. Por eso se busca solo a la
-   izquierda de "Mod." — a la derecha vive el modelo, no el proveedor.
-   ========================================================================== */
-
-function stkDetectarMarcas() {
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
-
-  const meta = stkCamposDe_(sesion, 'product.template');
-  const campoTipo = meta.detailed_type ? 'detailed_type' : 'type';
-  const productos = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], stkCamposQueExisten_(meta, ['id', 'name', 'default_code', 'categ_id']), 'id asc');
-
-  const filas = [];
-  const cuenta = {};
-  let sinMarca = 0, aRevisar = 0;
-
-  productos.forEach(p => {
-    const nombre = String(p.name || '').trim();
-    if (!nombre) return;
-    const r = stkBuscarMarca_(nombre);
-    filas.push([p.id, String(p.default_code || '').trim(), nombre, stkNombre_(p.categ_id), r.marca, r.criterio]);
-    cuenta[r.marca] = (cuenta[r.marca] || 0) + 1;
-    if (r.marca === 'SIN MARCA') sinMarca += 1;
-    if (r.criterio.indexOf('REVISAR') === 0) aRevisar += 1;
+  var max = filas[0] ? filas[0].v : 0;
+  var tb = document.querySelector("#tbl-cal tbody"), tf = document.querySelector("#tbl-cal tfoot");
+  tb.innerHTML = filas.map(function(r){
+    var t = Object.keys(r.tipos);
+    var w = max ? r.v/max*100 : 0;
+    var color = r.k === "Sin calibre" ? "var(--SC)" : "var(--ink2)";
+    return '<tr data-cal="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
+      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
+      '<td class="num">'+pct(r.v, T)+'</td>'+
+      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+color+'"></i></div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
+      document.getElementById("f-cal").value = f.cal;
+      pintar();
+    });
   });
-
-  stkEscribir_(STK.HOJAS.MARCAS,
-    ['Producto ID', 'Referencia interna', 'Producto', 'Categoría de producto', 'MARCA', 'CRITERIO'],
-    filas, []);
-  stkResaltar_(stkHoja_(STK.HOJAS.MARCAS), filas.length);
-  stkSS_().setActiveSheet(stkHoja_(STK.HOJAS.MARCAS));
-
-  const ranking = Object.keys(cuenta).sort((a, b) => cuenta[b] - cuenta[a])
-    .slice(0, 12).map(m => `${m}: ${cuenta[m]}`).join('\n');
-
-  stkAvisar_('Marcas detectadas', [
-    `Productos: ${filas.length}`,
-    `Sin marca (rosa): ${sinMarca}`,
-    `A revisar (amarillo): ${aRevisar}`,
-    '',
-    'Revisá solo las filas de color. Podés corregir la columna MARCA a mano.',
-    '',
-    ranking,
-  ].join('\n'));
 }
 
-function stkBuscarMarca_(nombre) {
-  const limpio = ' ' + nombre.toLowerCase().replace(/#[^\s]*/g, ' ').replace(/\s+/g, ' ') + ' ';
-  /* "Mod.", "para" y "p/" marcan lo mismo: lo que sigue es compatibilidad,
-     no fabricante. "Resorte de Gatillo p/Glock" no lo hace Glock. */
-  const corte = limpio.search(/\bmod\.|\bmodelo\b|\bm:|\bpara\b|\bp\/|\bcompatible\b/);
-  const izquierda = corte > 0 ? limpio.slice(0, corte) : limpio;
+/* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
+function celda(v, k){
+  var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
+  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
+}
 
-  const enIzquierda = stkCoincidirMarca_(izquierda);
-  if (enIzquierda) {
-    const enDerecha = corte > 0 ? stkCoincidirMarca_(limpio.slice(corte)) : null;
-    return {
-      marca: enIzquierda,
-      criterio: enDerecha && enDerecha !== enIzquierda
-        ? `fabricante (el modelo imita a ${enDerecha})` : 'fabricante',
+function tortas(filas){
+  filas = filas.filter(function(r){ return suma(r) > 0; });
+  var top = filas.slice(0, 24);
+  document.getElementById("nota-pies").textContent = filas.length > 24
+    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
+    : "Mismo esquema replicado para cada marca";
+  if (!top.length) {
+    document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
+    return;
+  }
+  document.getElementById("pies").innerHTML = top.map(function(r){
+    var T = suma(r);
+    var activa = (f.marca === r.k);
+    var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
+      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+    }).join("");
+    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
+      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
+  }).join("");
+
+  Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
+    var elegir = function(){
+      f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar(); sincronizarSerie();
     };
-  }
-  if (corte > 0) {
-    const soloDerecha = stkCoincidirMarca_(limpio.slice(corte));
-    if (soloDerecha) {
-      return { marca: soloDerecha,
-               criterio: 'REVISAR · la marca aparece después de "Mod." o "para": puede ser compatibilidad, no fabricante' };
-    }
-  }
-  const suelta = stkCoincidirMarca_(limpio);
-  if (suelta) return { marca: suelta, criterio: 'REVISAR · coincidencia sin posición clara' };
-
-  /* Último recurso para armas: en el catálogo la marca casi siempre es la
-     palabra que sigue al tipo ("Pistola CANIK", "Escopeta AKKAR"). Se marca
-     como REVISAR porque a veces esa palabra es el calibre o un adjetivo. */
-  const porTipo = /\b(pistola|pistolon|revolver|rifle|escopeta|carabina)\b\s+(?:semi\s*auto\w*\s+|semiautom\w+\s+|palanquero\s+|pajera\s+|monotiro\s+|superpuesta\s+|de\s+cerrojo\s+)?([a-záéíóúñ0-9.&-]{3,})/i
-    .exec(nombre);
-  if (porTipo) {
-    const palabra = porTipo[2].toUpperCase().replace(/[^A-ZÁÉÍÓÚÑ0-9.&-]/g, '');
-    const descartar = ['CAL', 'MOD', 'AC', 'PCP', 'CO2', 'AIRSOFT', 'MARCA', 'A', 'DE', 'PARA'];
-    if (palabra.length >= 3 && descartar.indexOf(palabra) < 0 && !/^\d/.test(palabra)) {
-      return { marca: palabra, criterio: 'REVISAR · deducida por la posición tras el tipo de arma' };
-    }
-  }
-
-  return { marca: 'SIN MARCA', criterio: 'no encontrada · agregar al diccionario o cargar a mano' };
+    el.addEventListener("click", elegir);
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
+    });
+  });
 }
 
-function stkCoincidirMarca_(texto) {
-  for (let i = 0; i < STK_MARCAS.length; i++) {
-    const alias = STK_MARCAS[i][1];
-    for (let j = 0; j < alias.length; j++) {
-      if (texto.indexOf(' ' + alias[j]) >= 0 || texto.indexOf(alias[j] + ' ') >= 0) {
-        return STK_MARCAS[i][0];
+/* Artículo: [ref, nombre, marca, tipo, dep, cat, cal, cantidad, valor] */
+var A_REF=0, A_NOM=1, A_MAR=2, A_TIPO=3, A_DEP=4, A_CAT=5, A_CAL=6, A_CANT=7, A_VAL=8;
+
+function articulosFiltrados(){
+  var q = (document.getElementById("q-art").value || "").trim().toLowerCase();
+  return ARTICULOS.filter(function(a){
+    if (f.dep   !== "*" && a[A_DEP]  !== f.dep)   return false;
+    if (f.tipo  !== "*" && a[A_TIPO] !== f.tipo)  return false;
+    if (f.cat   !== "*" && a[A_CAT]  !== f.cat)   return false;
+    if (f.marca !== "*" && a[A_MAR]  !== f.marca) return false;
+    if (f.cal   !== "*" && a[A_CAL]  !== f.cal)   return false;
+    if (q && (a[A_NOM]+" "+a[A_REF]).toLowerCase().indexOf(q) < 0) return false;
+    return true;
+  });
+}
+
+function tablaArticulos(){
+  var filas = articulosFiltrados();
+  var tb = document.querySelector("#tbl-art tbody");
+  var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
+
+  document.getElementById("nota-art").textContent = hayFiltro()
+    ? "Los artículos que cumplen el filtro, de mayor a menor valor"
+    : "Elegí un filtro arriba para acotar la lista";
+  document.getElementById("q-art-n").textContent =
+    filas.length ? fmt(filas.length) + " artículos · " + gsM(total) : "";
+
+  if (!filas.length) {
+    /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
+       lo segundo es un problema de publicación, no del filtro. */
+    tb.innerHTML = ARTICULOS.length
+      ? '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>'
+      : '<tr><td colspan="8" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+        'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
+        'versión del script, y refrescá esta página con Ctrl+F5.</td></tr>';
+    return;
+  }
+  filas = ordenar(filas, orden.art.k, orden.art.asc);
+  marcarOrden("#tbl-art", orden.art);
+  var top = filas.slice(0, 300);
+  tb.innerHTML = top.map(function(a){
+    var c = a[A_CAT];
+    var badge = (c === "A" || c === "B" || c === "C")
+      ? '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>'
+      : '<span style="font-family:var(--mono);font-size:11px;color:var(--'+(c==="NC"?"NC":"SC")+')">'+esc(c)+'</span>';
+    return '<tr><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[A_REF])+'</td>'+
+      '<td class="l">'+esc(a[A_NOM])+'</td>'+
+      '<td class="l">'+esc(a[A_MAR])+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_DEP])+'</td>'+
+      '<td class="l">'+badge+'</td>'+
+      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
+      '<td class="num">'+fmt(a[A_CANT])+'</td>'+
+      '<td class="num"><b>'+fmt(a[A_VAL],1)+'</b></td></tr>';
+  }).join("") +
+  (filas.length > top.length
+    ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
+    : "");
+}
+
+function tablaCalibres(T){
+  var mapa = {};
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    if (!mapa[r.cal]) mapa[r.cal] = { k:r.cal, tipos:{}, v:0 };
+    mapa[r.cal].tipos[r.tipo] = true;
+    mapa[r.cal].v += r.v;
+  });
+  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
+    .filter(function(r){ return r.v > 0; })
+    .sort(function(a,b){
+      if (orden.cal.k === "v" && !orden.cal.asc) {
+        if (a.k === "Sin calibre") return 1;
+        if (b.k === "Sin calibre") return -1;
       }
-    }
-  }
-  return null;
-}
-
-function stkResaltar_(hoja, cantidad) {
-  if (!cantidad) return;
-  const rango = hoja.getRange(2, 1, cantidad, hoja.getLastColumn());
-  hoja.setConditionalFormatRules([
-    SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=$E2="SIN MARCA"').setBackground('#F4E2DD').setRanges([rango]).build(),
-    SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=LEFT($F2,7)="REVISAR"').setBackground('#F5EFDC').setRanges([rango]).build(),
-  ]);
-}
-
-/** Marca por referencia: del campo de Odoo si existe, si no de la hoja MARCAS. */
-function stkMarcasCorregidas_() {
-  const h = stkSS_().getSheetByName(STK.HOJAS.MARCAS);
-  if (!h || h.getLastRow() < 2) {
-    throw new Error('Falta la hoja MARCAS. Ejecutá primero "2. Detectar marcas".');
-  }
-  const filas = h.getDataRange().getValues().slice(1);
-  const porId = {};
-  filas.forEach(f => {
-    const id = stkNum_(f[0]);
-    if (id) porId[id] = stkTexto_(f[4]) || 'SIN MARCA';
-  });
-  return porId;
-}
-
-
-/**
- * Agrega a la hoja MARCAS el valor de stock de cada artículo y la ordena de
- * mayor a menor, con el porcentaje acumulado.
- *
- * Sirve para no revisar 3.669 filas. Se revisa de arriba hacia abajo y se
- * corta cuando el acumulado llega al 95%: lo que queda debajo son artículos
- * cuyo peso en el reporte es despreciable, y pueden quedar en SIN MARCA sin
- * que ningún número visible cambie.
- */
-function stkPriorizarMarcas() {
-  const hoja = stkSS_().getSheetByName(STK.HOJAS.MARCAS);
-  if (!hoja || hoja.getLastRow() < 2) {
-    throw new Error('Primero ejecutá "2. Detectar marcas".');
-  }
-
-  const sesion = stkSesion_();
-  const empresa = stkEmpresa_(sesion);
-  sesion.companyIds = [empresa.id];
-
-  /* Valor de stock por plantilla. */
-  const metaProd = stkCamposDe_(sesion, 'product.template');
-  const campoTipo = metaProd.detailed_type ? 'detailed_type' : 'type';
-  const plantillas = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], stkCamposQueExisten_(metaProd, ['id', 'standard_price']), 'id asc');
-
-  const costoPorPlantilla = {};
-  const ids = [];
-  plantillas.forEach(t => { costoPorPlantilla[t.id] = stkNum_(t.standard_price); ids.push(t.id); });
-
-  const plantillaPorVariante = {};
-  stkLotes_(ids, STK.LOTE_API).forEach(lote => {
-    stkLeerTodo_(sesion, 'product.product', [['product_tmpl_id', 'in', lote]],
-      ['id', 'product_tmpl_id'], 'id asc')
-      .forEach(v => { plantillaPorVariante[v.id] = stkId_(v.product_tmpl_id); });
-  });
-
-  const metaQuant = stkCamposDe_(sesion, 'stock.quant');
-  const hayValor = Boolean(metaQuant.value);
-  const valorPorPlantilla = {};
-  stkLeerTodo_(sesion, 'stock.quant', [
-    ['company_id', '=', empresa.id],
-    ['location_id.usage', '=', 'internal'],
-  ], stkCamposQueExisten_(metaQuant, ['id', 'product_id', 'quantity', 'value']), 'id asc')
-    .forEach(q => {
-      const plantilla = plantillaPorVariante[stkId_(q.product_id)];
-      if (!plantilla) return;
-      const monto = hayValor ? stkNum_(q.value) : stkNum_(q.quantity) * costoPorPlantilla[plantilla];
-      valorPorPlantilla[plantilla] = (valorPorPlantilla[plantilla] || 0) + monto;
+      return 0;
     });
+  filas = ordenar(filas, orden.cal.k, orden.cal.asc);
+  marcarOrden("#tbl-cal", orden.cal);
 
-  /* Reordenar la hoja conservando las correcciones ya hechas a mano. */
-  const filas = hoja.getDataRange().getValues().slice(1)
-    .filter(f => stkNum_(f[0]))
-    .map(f => ({ fila: f.slice(0, 6), valor: valorPorPlantilla[stkNum_(f[0])] || 0 }))
-    .sort((a, b) => b.valor - a.valor);
+  var sec = document.getElementById("sec-cal");
+  var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
+  sec.hidden = reales.length === 0;
+  if (sec.hidden) return;
 
-  const total = filas.reduce((suma, f) => suma + f.valor, 0);
-  let acumulado = 0;
-  let hasta95 = 0;
-  let pendientes95 = 0;
-
-  const salida = filas.map((f, i) => {
-    acumulado += f.valor;
-    const pct = total ? acumulado / total * 100 : 100;
-    if (pct <= 95) {
-      hasta95 = i + 1;
-      const marca = String(f.fila[4] || '');
-      const criterio = String(f.fila[5] || '');
-      if (marca === 'SIN MARCA' || criterio.indexOf('REVISAR') === 0) pendientes95 += 1;
-    }
-    return f.fila.concat([Math.round(f.valor), pct.toFixed(2) + '%']);
+  var max = filas[0] ? filas[0].v : 0;
+  var tb = document.querySelector("#tbl-cal tbody"), tf = document.querySelector("#tbl-cal tfoot");
+  tb.innerHTML = filas.map(function(r){
+    var t = Object.keys(r.tipos);
+    var w = max ? r.v/max*100 : 0;
+    var color = r.k === "Sin calibre" ? "var(--SC)" : "var(--ink2)";
+    return '<tr data-cal="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
+      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
+      '<td class="num">'+pct(r.v, T)+'</td>'+
+      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+color+'"></i></div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
+      document.getElementById("f-cal").value = f.cal;
+      pintar();
+    });
   });
-
-  stkEscribir_(STK.HOJAS.MARCAS,
-    ['Producto ID', 'Referencia interna', 'Producto', 'Categoría de producto',
-     'MARCA', 'CRITERIO', 'Valor a costo (Gs.)', '% acumulado'],
-    salida, [7]);
-  stkResaltar_(stkHoja_(STK.HOJAS.MARCAS), salida.length);
-  stkSS_().setActiveSheet(stkHoja_(STK.HOJAS.MARCAS));
-
-  const gs = n => new Intl.NumberFormat('es-PY').format(Math.round(n));
-  stkAvisar_('Prioridad de revisión', [
-    `Artículos en la hoja: ${salida.length}`,
-    `Valor total: Gs. ${gs(total)}`,
-    '',
-    `El 95% del valor está en los primeros ${hasta95} artículos.`,
-    `De esos, quedan ${pendientes95} por revisar (fila de color).`,
-    '',
-    `Los ${salida.length - hasta95} restantes suman el 5% y pueden quedar como están.`,
-    '',
-    'La hoja quedó ordenada de mayor a menor valor. Revisá de arriba hacia abajo.',
-  ].join('\n'));
 }
 
+/* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
+function celda(v, k){
+  var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
+  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
+}
 
-/* ==========================================================================
-   3. ACTUALIZAR DATOS
-   ========================================================================== */
+function tortas(filas){
+  filas = filas.filter(function(r){ return suma(r) > 0; });
+  var top = filas.slice(0, 24);
+  document.getElementById("nota-pies").textContent = filas.length > 24
+    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
+    : "Mismo esquema replicado para cada marca";
+  if (!top.length) {
+    document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
+    return;
+  }
+  document.getElementById("pies").innerHTML = top.map(function(r){
+    var T = suma(r);
+    var activa = (f.marca === r.k);
+    var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
+      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+    }).join("");
+    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
+      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
+      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
+  }).join("");
 
-/**
- * Extrae de Odoo, escribe las hojas y DEVUELVE los datos armados en memoria.
- *
- * El valor devuelto es lo que se publica. No se vuelve a leer de la planilla:
- * Google Sheets convierte textos como "30-06" o "5.11" en fechas, y ese
- * viaje de ida y vuelta era lo que ensuciaba marcas y calibres.
- * Las hojas quedan para consultar a mano, no como fuente del reporte.
- */
-function stkActualizarDatos() {
-  const lock = LockService.getScriptLock();
-  if (!lock.tryLock(1000)) { stkAvisar_('Reporte de Stock', 'Ya hay otra ejecución en curso.'); return null; }
-  try {
-    stkToast_('Conectando con Odoo...');
-    const sesion = stkSesion_();
-    const empresa = stkEmpresa_(sesion);
-    sesion.companyIds = [empresa.id];
-
-    stkToast_('Leyendo productos...');
-    const productos = stkProductos_(sesion, empresa);
-
-    stkToast_('Leyendo existencias valorizadas...');
-    const stock = stkStock_(sesion, empresa, productos);
-    stkEscribir_(STK.HOJAS.STOCK,
-      ['Marca', 'Tipo', 'Depósito', 'Categoría', 'Calibre', 'Monto a costo (Gs.)'], stock.filas, [6]);
-    stkEscribir_(STK.HOJAS.ARTICULOS,
-      ['Referencia', 'Producto', 'Marca', 'Tipo', 'Depósito', 'Categoría', 'Calibre',
-       'Cantidad', 'Monto a costo (Gs.)'], stock.articulos, [8, 9]);
-
-    stkToast_('Leyendo salidas a cliente...');
-    const salidas = stkSalidas_(sesion, empresa, productos);
-    stkEscribir_(STK.HOJAS.ROTACION,
-      ['Marca', `Costo de venta ${STK.MESES_ROTACION} meses (Gs.)`],
-      Object.keys(salidas.cmv).sort().map(m => [m, Math.round(salidas.cmv[m])]), [2]);
-
-    stkToast_('Reconstruyendo el histórico...');
-    const hist = stkHistorico_(sesion, empresa, productos, stock.valorPorMarca);
-    const columnas = [];
-    for (let i = 2; i <= hist.cierres.length + 1; i++) columnas.push(i);
-    stkEscribir_(STK.HOJAS.HISTORICO,
-      ['Marca'].concat(hist.cierres.map(c => c.etiqueta)), hist.filas, columnas);
-    /* Que Sheets no interprete "ene 26" como fecha. */
-    stkHoja_(STK.HOJAS.HISTORICO)
-      .getRange(1, 1, 1, hist.cierres.length + 1).setNumberFormat('@');
-
-    SpreadsheetApp.flush();
-
-    /* Datos para el reporte, tomados de memoria y no de las hojas. */
-    const aM = v => Math.round((stkNum_(v) / 1000000) * 10) / 10;
-    const D = {
-      CATS: STK_CATS, GENERADO: stkAhora_(), EMPRESA: STK.EMPRESA,
-      MESES: hist.cierres.map(c => c.etiqueta),
-      STOCK: stock.filas.map(r => ({
-        m: r[0], tipo: r[1], dep: r[2], cat: r[3], cal: r[4] || 'Sin calibre', v: aM(r[5]),
-      })),
-      ARTICULOS: stock.articulos.map(a => [
-        a[0], a[1], a[2], a[3], a[4], String(a[5]).toUpperCase(), a[6] || 'Sin calibre',
-        stkNum_(a[7]), aM(a[8]),
-      ]),
-      SERIES: {}, CMV6: {},
+  Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
+    var elegir = function(){
+      f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
+      document.getElementById("f-marca").value = f.marca;
+      pintar(); sincronizarSerie();
     };
-    hist.filas.forEach(fila => {
-      D.SERIES[fila[0]] = fila.slice(1, hist.cierres.length + 1).map(aM);
-    });
-    Object.keys(salidas.cmv).forEach(m => { D.CMV6[m] = aM(salidas.cmv[m]); });
-
-    PropertiesService.getScriptProperties()
-      .setProperty('STK_ULTIMA_EXTRACCION', D.GENERADO);
-
-    stkAvisar_('Datos actualizados', [
-      `Filas de stock: ${stock.filas.length}`,
-      `Líneas de venta: ${salidas.lineas.length}`,
-      `Marcas con histórico: ${hist.filas.length}`,
-      '',
-      'Revisá las hojas STOCK, ARTICULOS, HISTORICO y ROTACION.',
-    ].join('\n'));
-    return D;
-  } catch (error) {
-    stkError_('Falló la actualización', error);
-    throw error;
-  } finally {
-    lock.releaseLock();
-  }
-}
-
-function stkProductos_(sesion, empresa) {
-  const meta = stkCamposDe_(sesion, 'product.template');
-  const campoTipo = meta.detailed_type ? 'detailed_type' : 'type';
-  const hayCampoMarca = Boolean(meta[STK.CAMPO_MARCA]);
-
-  const plantillas = stkLeerTodo_(sesion, 'product.template', [
-    ['active', '=', true],
-    [campoTipo, '=', 'product'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], stkCamposQueExisten_(meta, [
-    'id', 'name', 'default_code', 'categ_id', 'standard_price',
-    'product_tag_ids', STK.CAMPO_ABC, STK.CAMPO_MARCA,
-  ]), 'id asc');
-
-  /* Las etiquetas de producto guardan el calibre. Es la única clasificación
-     que tienen armas y municiones, que son el 63% del capital y quedan fuera
-     del ABC por regla. Sin esto, ese 63% es un bloque gris sin lectura. */
-  const calibrePorPlantilla = stkCalibres_(sesion, plantillas);
-
-  const marcasHoja = hayCampoMarca ? {} : stkMarcasCorregidas_();
-
-  const porPlantilla = {};
-  const ids = [];
-  plantillas.forEach(t => {
-    const marcaBase = hayCampoMarca
-      ? (stkLimpiar_(stkNombre_(t[STK.CAMPO_MARCA]) || t[STK.CAMPO_MARCA] || '') || 'SIN MARCA')
-      : (marcasHoja[t.id] || 'SIN MARCA');
-    const marca = stkSubdividir_(marcaBase, t.name || '');
-    const categoriaProducto = stkNombre_(t.categ_id);
-    if (stkExcluida_(categoriaProducto)) return;   /* no es mercadería de venta */
-    const clas = stkTipo_(categoriaProducto, t.name);
-    porPlantilla[t.id] = {
-      id: t.id,
-      referencia: String(t.default_code || '').trim(),
-      nombre: stkLimpiar_(t.name || ''),
-      categoriaProducto,
-      marca,
-      tipo: clas.tipo,
-      sigla: clas.sigla || '',
-      fueraABC: clas.fuera_abc,
-      abc: stkVisible_(meta[STK.CAMPO_ABC], t[STK.CAMPO_ABC]),
-      calibre: calibrePorPlantilla[t.id] ||
-               stkCalibreDelNombre_(t.name) || 'Sin calibre',
-      costo: stkNum_(t.standard_price),
-    };
-    ids.push(t.id);
-  });
-
-  /* El stock vive en las variantes, no en la plantilla. */
-  const plantillaPorVariante = {};
-  stkLotes_(ids, STK.LOTE_API).forEach(lote => {
-    stkLeerTodo_(sesion, 'product.product', [['product_tmpl_id', 'in', lote]],
-      ['id', 'product_tmpl_id'], 'id asc')
-      .forEach(v => { plantillaPorVariante[v.id] = stkId_(v.product_tmpl_id); });
-  });
-
-  return { porPlantilla, plantillaPorVariante };
-}
-
-/** Etiqueta de producto -> calibre. Si tiene varias, se toma la primera. */
-function stkCalibres_(sesion, plantillas) {
-  const ids = {};
-  plantillas.forEach(t => (t.product_tag_ids || []).forEach(id => { ids[id] = true; }));
-  const lista = Object.keys(ids).map(Number);
-  if (!lista.length) return {};
-
-  const nombre = {};
-  stkLotes_(lista, STK.LOTE_API).forEach(lote => {
-    stkEjecutar_(sesion, 'product.tag', 'read', [lote], { fields: ['id', 'name'] })
-      .forEach(t => { nombre[t.id] = stkLimpiar_(t.name || ''); });
-  });
-
-  const salida = {};
-  plantillas.forEach(t => {
-    const etiquetas = (t.product_tag_ids || []).map(id => nombre[id]).filter(Boolean);
-    if (etiquetas.length) salida[t.id] = etiquetas[0];
-  });
-  return salida;
-}
-
-
-/**
- * Arregla el UTF-8 que Odoo devuelve mal decodificado: "CÃ³nico" -> "Cónico".
- * Es el mismo problema que corrige el reporte de lista de precios.
- */
-function stkLimpiar_(texto) {
-  if (!texto) return '';
-  return String(texto)
-    .replace(/Ã±/g, 'ñ').replace(/Ã‘/g, 'Ñ')
-    .replace(/Ã¡/g, 'á').replace(/Ã©/g, 'é').replace(/Ã­/g, 'í')
-    .replace(/Ã³/g, 'ó').replace(/Ãº/g, 'ú').replace(/Ã¼/g, 'ü')
-    .replace(/Ã\u0081/g, 'Á').replace(/Ã‰/g, 'É').replace(/Ã/g, 'Í')
-    .replace(/Ã“/g, 'Ó').replace(/Ãš/g, 'Ú')
-    .replace(/Â°/g, '°').replace(/Âº/g, 'º').replace(/Â/g, '')
-    .trim();
-}
-
-/**
- * Calibre a partir del nombre del producto, cuando no hay etiqueta cargada.
- *
- * En el catálogo aparece de varias formas: "cal 5.5mm", "cal.43", "cal 50",
- * "5,5mm", "cal 9mm". Se normaliza para que 5.5mm y 5,5mm sean lo mismo.
- * Airsoft, aire comprimido y marcadoras casi nunca tienen etiqueta, y ahí
- * el nombre es la única fuente.
- */
-function stkCalibreDelNombre_(nombre) {
-  const n = String(nombre || '');
-
-  /* Munición de escopeta: 12GA, cal 20, 36GA. */
-  const ga = n.match(/\bcal\.?\s*(12|16|20|24|28|32|36|410)\s*(?:ga|gauge)?\b/i);
-  if (ga && /escopeta|cartucho|ga\b/i.test(n)) return ga[1].toUpperCase() + 'GA';
-
-  /* Formato "cal 5.5mm" / "cal.43" / "cal 9x19" / "cal 223REM". */
-  let m = n.match(/\bcal\.?\s*([0-9]+(?:[.,][0-9]+)?)\s*(mm|x\s*[0-9]+)?/i);
-  if (!m) m = n.match(/\b([0-9]+[.,][0-9]+)\s*mm\b/i);
-  if (!m) return '';
-
-  let num = m[1].replace(',', '.');
-  const sufijo = (m[2] || '').toLowerCase().replace(/\s+/g, '');
-
-  if (sufijo.indexOf('x') === 0) return num + sufijo;      /* 9x19 */
-  if (sufijo === 'mm' || Number(num) < 10) return num + 'mm';
-  return 'cal ' + num;                                     /* cal 43, cal 50, cal 68 */
-}
-
-
-/**
- * Abre una marca en subrubros cuando está configurada en STK.SUBDIVIDIR.
- * "Rifle PCP DOBERMAN P35X" -> "DOBERMAN RIFLES".
- * Si ninguna palabra coincide, la marca queda como está.
- */
-function stkSubdividir_(marca, nombreProducto) {
-  const reglas = STK.SUBDIVIDIR[stkNorm_(marca)] || STK.SUBDIVIDIR[marca];
-  if (!reglas) return marca;
-  const n = stkNorm_(nombreProducto);
-  for (let i = 0; i < reglas.length; i++) {
-    if (n.indexOf(stkNorm_(reglas[i].palabra)) >= 0) {
-      return marca + ' ' + reglas[i].sufijo;
-    }
-  }
-  return marca;
-}
-
-
-/**
- * SC = fuera del alcance ABC por regla del negocio (armas, municiones).
- * NC = debería tener categoría y no la tiene.
- * Mezclarlas es lo que vuelve inútil la torta del reporte.
- */
-function stkCategoria_(p) {
-  if (p.fueraABC) return p.sigla || 'SC';
-  const abc = stkNorm_(p.abc);
-  return (abc === 'A' || abc === 'B' || abc === 'C') ? abc : 'NC';
-}
-
-function stkHojaCategoria_(rutaCompleta) {
-  const partes = String(rutaCompleta || '').split('/');
-  return partes[partes.length - 1].trim();
-}
-
-function stkTipo_(categoriaProducto, nombreProducto) {
-  const hoja = stkNorm_(stkHojaCategoria_(categoriaProducto));
-  for (let i = 0; i < STK.TIPOS.length; i++) {
-    if (STK.TIPOS[i].categorias.some(c => stkNorm_(c) === hoja)) {
-      return STK.TIPOS[i];
-    }
-  }
-  /* Cargadores: viven en ACCESORIO DE ARMA, se reconocen por el nombre.
-     Un porta cargador o una base de cargador no son un cargador. */
-  const n = stkNorm_(nombreProducto);
-  const esCargador = STK.CARGADOR_INCLUYE.some(p => n.indexOf(stkNorm_(p)) >= 0) &&
-                     !STK.CARGADOR_EXCLUYE.some(p => n.indexOf(stkNorm_(p)) >= 0);
-  if (esCargador) return STK.TIPOS.filter(t => t.sigla === 'CARG')[0];
-  return { tipo: STK.TIPO_DEFECTO, sigla: '', fuera_abc: false };
-}
-
-function stkExcluida_(categoriaProducto) {
-  const hoja = stkNorm_(stkHojaCategoria_(categoriaProducto));
-  return STK.CATEGORIAS_EXCLUIDAS.some(c => stkNorm_(c) === hoja);
-}
-
-/**
- * Ubicación interna -> nombre del depósito.
- * stock.quant guarda la ubicación exacta (un estante, un pasillo). El depósito
- * al que pertenece cuelga de warehouse_id; si no está, se usa la primera rama
- * del árbol de ubicaciones, que en la práctica es el almacén.
- */
-function stkDepositos_(sesion, empresa) {
-  const meta = stkCamposDe_(sesion, 'stock.location');
-  const campos = stkCamposQueExisten_(meta,
-    ['id', 'complete_name', 'display_name', 'warehouse_id']);
-  const ubicaciones = stkLeerTodo_(sesion, 'stock.location', [
-    ['usage', '=', 'internal'],
-    '|', ['company_id', '=', false], ['company_id', '=', empresa.id],
-  ], campos, 'id asc');
-
-  const porUbicacion = {};
-  ubicaciones.forEach(u => {
-    const almacen = stkNombre_(u.warehouse_id);
-    if (almacen) { porUbicacion[u.id] = almacen; return; }
-    const ruta = String(u.complete_name || u.display_name || '').split('/');
-    porUbicacion[u.id] = (ruta[0] || 'Sin depósito').trim();
-  });
-  return porUbicacion;
-}
-
-function stkStock_(sesion, empresa, productos) {
-  const meta = stkCamposDe_(sesion, 'stock.quant');
-  const hayValor = Boolean(meta.value);
-  const depositoPorUbicacion = stkDepositos_(sesion, empresa);
-
-  const quants = stkLeerTodo_(sesion, 'stock.quant', [
-    ['company_id', '=', empresa.id],
-    ['location_id.usage', '=', 'internal'],
-  ], stkCamposQueExisten_(meta, ['id', 'product_id', 'location_id', 'quantity', 'value']), 'id asc');
-
-  const acumulado = {};
-  const valorPorMarca = {};
-  const depositos = {};
-  const porArticulo = {};
-  quants.forEach(q => {
-    const p = productos.porPlantilla[productos.plantillaPorVariante[stkId_(q.product_id)]];
-    if (!p) return;
-    const monto = hayValor ? stkNum_(q.value) : stkNum_(q.quantity) * p.costo;
-    if (!monto) return;
-    const deposito = depositoPorUbicacion[stkId_(q.location_id)] || 'Sin depósito';
-    depositos[deposito] = true;
-    const cat = stkCategoria_(p);
-    const clave = `${p.marca}|${p.tipo}|${deposito}|${cat}|${p.calibre}`;
-    acumulado[clave] = (acumulado[clave] || 0) + monto;
-    valorPorMarca[p.marca] = (valorPorMarca[p.marca] || 0) + monto;
-
-    /* Detalle por artículo: lo que permite pasar de "Gs. 572 M sin
-       categorizar" a la lista concreta de productos a revisar. */
-    const claveArt = `${p.id}|${deposito}`;
-    if (!porArticulo[claveArt]) {
-      porArticulo[claveArt] = {
-        ref: p.referencia, nombre: p.nombre, marca: p.marca, tipo: p.tipo,
-        dep: deposito, cat: cat, cal: p.calibre, cant: 0, v: 0,
-      };
-    }
-    porArticulo[claveArt].cant += stkNum_(q.quantity);
-    porArticulo[claveArt].v += monto;
-  });
-
-  const filas = Object.keys(acumulado).sort().map(clave => {
-    const p = clave.split('|');
-    return [p[0], p[1], p[2], p[3], p[4], Math.round(acumulado[clave])];
-  });
-  const articulos = Object.keys(porArticulo).map(k => porArticulo[k])
-    .filter(a => a.v > 0)
-    .sort((a, b) => b.v - a.v)
-    .slice(0, STK.TOP_ARTICULOS)
-    .map(a => [a.ref, a.nombre, a.marca, a.tipo, a.dep, a.cat, a.cal,
-               Math.round(a.cant * 100) / 100, Math.round(a.v)]);
-
-  return { filas, articulos, valorPorMarca, depositos: Object.keys(depositos).sort() };
-}
-
-/**
- * El costo real de una venta está en la capa de valorización de la salida,
- * no en el precio de la línea de pedido. La línea guarda el costo teórico
- * del momento de cotizar; la capa, el costo con el que salió del depósito.
- */
-function stkSalidas_(sesion, empresa, productos) {
-  const desde = stkMesesAtras_(STK.MESES_ROTACION);
-  const movimientos = stkLeerTodo_(sesion, 'stock.move', [
-    ['company_id', '=', empresa.id],
-    ['state', '=', 'done'],
-    ['date', '>=', `${desde} 00:00:00`],
-    ['location_dest_id.usage', '=', 'customer'],
-  ], ['id', 'product_id', 'picking_id', 'location_id'], 'id asc');
-  if (!movimientos.length) return { lineas: [], cmv: {} };
-
-  const depositoPorUbicacion = stkDepositos_(sesion, empresa);
-
-  const clientePorAlbaran = {};
-  const idsAlbaran = Array.from(new Set(movimientos.map(m => stkId_(m.picking_id)).filter(Boolean)));
-  stkLotes_(idsAlbaran, STK.LOTE_API).forEach(lote => {
-    stkEjecutar_(sesion, 'stock.picking', 'read', [lote], { fields: ['id', 'partner_id'] })
-      .forEach(a => { clientePorAlbaran[a.id] = stkNombre_(a.partner_id) || 'Sin cliente asignado'; });
-  });
-
-  const movPorId = {};
-  movimientos.forEach(m => { movPorId[m.id] = m; });
-
-  const capas = [];
-  stkLotes_(movimientos.map(m => m.id), STK.LOTE_API).forEach(lote => {
-    capas.push(...stkLeerTodo_(sesion, 'stock.valuation.layer', [['stock_move_id', 'in', lote]],
-      ['id', 'stock_move_id', 'product_id', 'quantity', 'value'], 'id asc'));
-  });
-
-  const agrupado = {};
-  const cmv = {};
-  capas.forEach(capa => {
-    const valor = stkNum_(capa.value);
-    if (valor >= 0) return;
-    const mov = movPorId[stkId_(capa.stock_move_id)];
-    const p = productos.porPlantilla[productos.plantillaPorVariante[stkId_(capa.product_id)]];
-    if (!mov || !p) return;
-
-    const cliente = clientePorAlbaran[stkId_(mov.picking_id)] || 'Sin cliente asignado';
-    const deposito = depositoPorUbicacion[stkId_(mov.location_id)] || 'Sin depósito';
-    const clave = `${p.id}|${cliente}|${deposito}`;
-    if (!agrupado[clave]) {
-      agrupado[clave] = {
-        articulo: p.nombre, marca: p.marca, categoria: stkCategoria_(p),
-        composicion: p.categoriaProducto, cliente, deposito, cantidad: 0, costo: 0,
-      };
-    }
-    agrupado[clave].cantidad += Math.abs(stkNum_(capa.quantity));
-    agrupado[clave].costo += Math.abs(valor);
-    cmv[p.marca] = (cmv[p.marca] || 0) + Math.abs(valor);
-  });
-
-  const lineas = Object.keys(agrupado).map(k => agrupado[k])
-    .sort((a, b) => b.costo - a.costo)
-    .slice(0, STK.TOP_VENTAS)
-    .map(l => [l.articulo, l.marca, l.categoria, l.composicion, l.cliente, l.deposito,
-      Math.round(l.cantidad * 100) / 100,
-      l.cantidad ? Math.round(l.costo / l.cantidad) : 0]);
-
-  return { lineas, cmv };
-}
-
-/**
- * Odoo no guarda la foto del stock de un martes de noviembre; guarda cada
- * movimiento de valor. Entonces se parte del valor de hoy y se resta hacia
- * atrás: saldo(cierre de mes M) = valor actual − Σ movimientos posteriores.
- */
-function stkHistorico_(sesion, empresa, productos, valorPorMarca) {
-  const meta = stkCamposDe_(sesion, 'stock.valuation.layer');
-  const campoFecha = meta.create_date ? 'create_date' : 'date';
-  const cierres = stkCierres_(STK.MESES_HISTORICO);
-
-  const capas = stkLeerTodo_(sesion, 'stock.valuation.layer', [
-    ['company_id', '=', empresa.id],
-    [campoFecha, '>=', `${cierres[0].inicio} 00:00:00`],
-  ], ['id', 'product_id', 'value', campoFecha], `${campoFecha} asc`);
-
-  const porMarcaMes = {};
-  capas.forEach(capa => {
-    const p = productos.porPlantilla[productos.plantillaPorVariante[stkId_(capa.product_id)]];
-    if (!p) return;
-    const mes = String(capa[campoFecha]).substring(0, 7);
-    if (!porMarcaMes[p.marca]) porMarcaMes[p.marca] = {};
-    porMarcaMes[p.marca][mes] = (porMarcaMes[p.marca][mes] || 0) + stkNum_(capa.value);
-  });
-
-  const filas = Object.keys(valorPorMarca).sort().map(marca => {
-    const movimientos = porMarcaMes[marca] || {};
-    const serie = new Array(cierres.length);
-    let saldo = valorPorMarca[marca] || 0;
-    for (let i = cierres.length - 1; i >= 0; i--) {
-      serie[i] = Math.round(Math.max(saldo, 0));
-      saldo -= stkNum_(movimientos[cierres[i].mes]);
-    }
-    return [marca].concat(serie);
-  });
-
-  return { cierres, filas };
-}
-
-
-/* ==========================================================================
-   4. PUBLICAR
-   ========================================================================== */
-
-/**
- * Sube datos.js al repositorio.
- *
- * Si se lo llama con datos ya armados (desde "Actualizar y publicar"), usa
- * esos. Si se lo llama solo, los reconstruye leyendo las hojas — más frágil,
- * porque Sheets pudo haber convertido calibres o marcas en fechas.
- */
-function stkPublicar(datosEnMemoria) {
-  const token = PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN');
-  if (!token) {
-    throw new Error('Falta GITHUB_TOKEN en las propiedades del script.');
-  }
-  const datos = datosEnMemoria || stkArmarDatos_();
-  const contenido =
-    `/* Generado desde la planilla el ${stkAhora_()}.\n` +
-    '   No editar a mano: la próxima publicación lo sobrescribe. */\n\n' +
-    `var DATOS = ${JSON.stringify(datos, null, 2)};\n`;
-
-  const url = `https://api.github.com/repos/${STK.GITHUB_OWNER}/${STK.GITHUB_REPO}/contents/${STK.GITHUB_ARCHIVO}`;
-  const cab = { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json' };
-
-  let sha = null;
-  const actual = UrlFetchApp.fetch(`${url}?ref=${STK.GITHUB_RAMA}`, { headers: cab, muteHttpExceptions: true });
-  if (actual.getResponseCode() === 200) sha = JSON.parse(actual.getContentText()).sha;
-  else if (actual.getResponseCode() !== 404) {
-    throw new Error(`GitHub respondió ${actual.getResponseCode()}: ${actual.getContentText().substring(0, 400)}`);
-  }
-
-  const cuerpo = {
-    message: `Actualización de datos — ${stkAhora_()}`,
-    content: Utilities.base64Encode(contenido, Utilities.Charset.UTF_8),
-    branch: STK.GITHUB_RAMA,
-  };
-  if (sha) cuerpo.sha = sha;
-
-  const r = UrlFetchApp.fetch(url, {
-    method: 'put', headers: cab, contentType: 'application/json',
-    payload: JSON.stringify(cuerpo), muteHttpExceptions: true,
-  });
-  if (r.getResponseCode() >= 300) {
-    throw new Error(`No se pudo publicar (${r.getResponseCode()}): ${r.getContentText().substring(0, 400)}`);
-  }
-  stkAvisar_('Publicado',
-    [
-      `${new Set(datos.STOCK.map(r => r.m)).size} marcas`,
-      `${new Set(datos.STOCK.map(r => r.dep)).size} depósitos`,
-      '',
-      `Subido a ${STK.GITHUB_OWNER}/${STK.GITHUB_REPO}.`,
-    ].join('\n'));
-}
-
-function stkArmarDatos_() {
-  const D = {
-    CATS: STK_CATS, GENERADO: stkAhora_(), EMPRESA: STK.EMPRESA,
-    MESES: [], STOCK: [], ARTICULOS: [], SERIES: {}, CMV6: {},
-  };
-  const aMillones = v => stkNum_(v) / 1000000;
-
-  /* STOCK: una fila por marca + tipo + depósito + categoría.
-     El reporte agrega del lado del navegador según los filtros elegidos,
-     así el depósito filtra de verdad y no de adorno. */
-  stkFilasDe_(STK.HOJAS.STOCK).forEach(f => {
-    const marca = stkTexto_(f[0]);
-    if (!marca) return;
-    D.STOCK.push({
-      m: marca,
-      tipo: stkTexto_(f[1]) || STK.TIPO_DEFECTO,
-      dep: stkTexto_(f[2]) || 'Sin depósito',
-      cat: stkTexto_(f[3]).toUpperCase(),
-      cal: stkTexto_(f[4]) || 'Sin calibre',
-      v: Math.round(aMillones(f[5]) * 10) / 10,
+    el.addEventListener("click", elegir);
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
     });
   });
-
-  /* Las etiquetas se generan acá y NO se leen de la planilla: Google Sheets
-     convierte "ene 26" en una fecha y el reporte terminaba imprimiendo
-     "Mon Jan 26 2026 03:00:00 GMT-0300" en el eje del gráfico. */
-  stkFilasDe_(STK.HOJAS.ARTICULOS).forEach(f => {
-    const nombre = stkTexto_(f[1]);
-    if (!nombre) return;
-    D.ARTICULOS.push([
-      stkTexto_(f[0]), nombre, stkTexto_(f[2]), stkTexto_(f[3]), stkTexto_(f[4]),
-      stkTexto_(f[5]).toUpperCase(), stkTexto_(f[6]),
-      stkNum_(f[7]), Math.round(aMillones(f[8]) * 10) / 10,
-    ]);
-  });
-
-  const valores = stkHoja_(STK.HOJAS.HISTORICO).getDataRange().getValues();
-  D.MESES = stkCierres_(STK.MESES_HISTORICO).map(c => c.etiqueta);
-  valores.slice(1).forEach(f => {
-    const marca = stkTexto_(f[0]);
-    if (marca) {
-      D.SERIES[marca] = f.slice(1, D.MESES.length + 1)
-        .map(v => Math.round(aMillones(v) * 10) / 10);
-    }
-  });
-
-  stkFilasDe_(STK.HOJAS.ROTACION).forEach(f => {
-    const marca = stkTexto_(f[0]);
-    if (!marca) return;
-    D.CMV6[marca] = Math.round(aMillones(f[1]) * 10) / 10;
-  });
-
-  if (!D.STOCK.length) throw new Error('La hoja STOCK no produjo ninguna fila.');
-  return D;
 }
 
+/* ---------------- Parte 2 ---------------- */
+function marcasConSerie(){
+  /* Respeta el tipo y el depósito elegidos arriba: si filtraste Municiones,
+     acá aparecen solo las marcas de munición. */
+  var visibles = {};
+  STOCK.forEach(function(r){
+    if ((f.dep === "*" || r.dep === f.dep) && (f.tipo === "*" || r.tipo === f.tipo)) visibles[r.m] = true;
+  });
+  return Object.keys(SERIES)
+    .filter(function(m){ return (SERIES[m]||[]).length && visibles[m]; })
+    .sort(function(a,b){ return (CMV6[b]||0) - (CMV6[a]||0); });
+}
 
-const STK_CATS = [
-  { k: 'A',    lab: 'A – Potenciar',   col: 'var(--A)',    raw: '#B08A2E' },
-  { k: 'B',    lab: 'B – Mantener',    col: 'var(--B)',    raw: '#3D6E8C' },
-  { k: 'C',    lab: 'C – Liquidar',    col: 'var(--C)',    raw: '#A6432E' },
-  { k: 'ARM',  lab: 'ARM – Armas',     col: 'var(--ARM)',  raw: '#4A5560' },
-  { k: 'MUN',  lab: 'MUN – Municiones',col: 'var(--MUN)',  raw: '#6E7B84' },
-  { k: 'CARG', lab: 'CARG – Cargadores', col: 'var(--CARG)', raw: '#93A0A6' },
-  { k: 'NC',   lab: 'Sin categorizar', col: 'url(#hatch)', raw: '#8C7A57' },
-];
+/** Deja los selects y chips coincidiendo con el estado de filtros. */
+function reflejarFiltros(){
+  document.getElementById("f-dep").value = f.dep;
+  document.getElementById("f-marca").value = f.marca;
+  document.getElementById("f-cat").value = f.cat;
+  document.getElementById("f-cal").value = f.cal;
+  Array.prototype.forEach.call(document.querySelectorAll("#f-tipo .chip"), function(x){
+    x.setAttribute("aria-pressed", x.dataset.v === f.tipo);
+  });
+}
 
+/** Barra de filtros activos: cada uno con su X, más "quitar todos". */
+function pintarActivos(){
+  var etiquetaCat = {};
+  CATS.forEach(function(c){ etiquetaCat[c.k] = c.lab; });
+  var partes = [];
+  if (f.dep   !== "*") partes.push(["dep",   "Depósito",  f.dep]);
+  if (f.tipo  !== "*") partes.push(["tipo",  "Tipo",      f.tipo]);
+  if (f.cat   !== "*") partes.push(["cat",   "Categoría", etiquetaCat[f.cat] || f.cat]);
+  if (f.marca !== "*") partes.push(["marca", "Marca",     f.marca]);
+  if (f.cal   !== "*") partes.push(["cal",   "Calibre",   f.cal]);
 
-/* ==========================================================================
-   ACTUALIZACIÓN AUTOMÁTICA
-   ==========================================================================
-   El reporte no se "consulta en vivo": los datos son los de la última
-   extracción, y la fecha figura arriba en "DATOS AL". Con esto se programa
-   una corrida diaria de madrugada, así el reporte amanece al día sin que
-   nadie toque nada.
-   ========================================================================== */
+  var caja = document.getElementById("f-activos");
+  if (!partes.length) { caja.innerHTML = ""; return; }
+  caja.innerHTML = partes.map(function(p){
+    return '<span class="tag"><span>'+p[1]+': <b>'+esc(p[2])+'</b></span>'+
+           '<button data-quitar="'+p[0]+'" title="Quitar este filtro" aria-label="Quitar '+p[1]+'">×</button></span>';
+  }).join("") +
+  '<span class="tag all"><span>'+partes.length+' filtro'+(partes.length>1?"s":"")+'</span>'+
+  '<button data-quitar="todos" title="Quitar todos" aria-label="Quitar todos los filtros" '+
+  'style="background:var(--line);color:var(--ink)">×</button></span>';
+}
 
-const STK_HORA_ACTUALIZACION = 6;   /* madrugada, hora de Paraguay */
+/** Los meses disponibles según lo que trajo Odoo. */
+function armarPeriodo(){
+  var opt = MESES.map(function(m,i){ return '<option value="'+i+'">'+esc(m)+'</option>'; }).join("");
+  var d = document.getElementById("f-desde"), h = document.getElementById("f-hasta");
+  d.innerHTML = opt; h.innerHTML = opt;
+  d.value = per.desde; h.value = per.hasta;
 
-/** Extrae de Odoo y publica, en un solo paso. Apto para disparador. */
-function stkAutomatico() {
-  const inicio = new Date();
-  try {
-    const datos = stkActualizarDatos();
-    stkPublicar(datos);
-    PropertiesService.getScriptProperties()
-      .setProperty('STK_ULTIMA_CORRIDA', `${stkAhora_()} · OK`);
-    Logger.log(`Actualización completa en ${Math.round((new Date() - inicio)/1000)} s.`);
-  } catch (error) {
-    const mensaje = error && error.message ? error.message : String(error);
-    PropertiesService.getScriptProperties()
-      .setProperty('STK_ULTIMA_CORRIDA', `${stkAhora_()} · ERROR: ${mensaje.substring(0, 200)}`);
-    Logger.log(`FALLÓ: ${mensaje}`);
-    throw error;   /* que quede registrado en el panel de ejecuciones */
+  d.addEventListener("change", function(){
+    per.desde = parseInt(this.value, 10);
+    if (per.desde > per.hasta) { per.hasta = per.desde; h.value = per.hasta; }
+    evolucion(); rotacion();
+  });
+  h.addEventListener("change", function(){
+    per.hasta = parseInt(this.value, 10);
+    if (per.hasta < per.desde) { per.desde = per.hasta; d.value = per.desde; }
+    evolucion(); rotacion();
+  });
+  document.getElementById("f-periodo-reset").addEventListener("click", function(){
+    per.desde = 0; per.hasta = MESES.length - 1;
+    d.value = per.desde; h.value = per.hasta;
+    evolucion(); rotacion();
+  });
+}
+
+/** La serie recortada al período elegido. */
+function serieDe(marca){
+  return (SERIES[marca] || []).slice(per.desde, per.hasta + 1);
+}
+function mesesDe(){ return MESES.slice(per.desde, per.hasta + 1); }
+
+/** Mantiene la marca de la Parte 2 alineada con el filtro de la Parte 1. */
+function sincronizarSerie(){
+  var lista = marcasConSerie();
+  var sel = document.getElementById("f-serie");
+  if (!lista.length) {
+    sel.innerHTML = '<option>Sin histórico</option>';
+    serieActiva = null;
+    evolucion(); rotacion();
+    return;
   }
+  if (f.marca !== "*" && lista.indexOf(f.marca) >= 0) serieActiva = f.marca;
+  if (!serieActiva || lista.indexOf(serieActiva) < 0) serieActiva = lista[0];
+
+  sel.innerHTML = lista.map(function(m){
+    return '<option value="'+esc(m)+'"'+(m===serieActiva?' selected':'')+'>'+esc(m)+'</option>';
+  }).join("");
+  evolucion(); rotacion();
 }
 
-function stkProgramar() {
-  const id = stkSS_().getId();
-  PropertiesService.getScriptProperties().setProperty('SPREADSHEET_ID', id);
-  stkQuitarDisparadores_();
-  ScriptApp.newTrigger('stkAutomatico')
-    .timeBased()
-    .atHour(STK_HORA_ACTUALIZACION)
-    .everyDays(1)
-    .inTimezone(STK.ZONA_HORARIA)
-    .create();
-  stkAvisar_('Actualización programada', [
-    `Todos los días alrededor de las ${String(STK_HORA_ACTUALIZACION).padStart(2, '0')}:00.`,
-    '',
-    'Extrae de Odoo y publica el reporte, en ese orden.',
-    'Si falla, no publica nada: el reporte queda con los últimos datos buenos.',
-    '',
-    'Google puede correrlo hasta una hora antes o después. Es normal.',
-  ].join('\n'));
-}
-
-function stkCancelarProgramacion() {
-  const cantidad = stkQuitarDisparadores_();
-  stkAvisar_('Actualización automática',
-    cantidad ? 'Programación cancelada.' : 'No había ninguna programación activa.');
-}
-
-function stkQuitarDisparadores_() {
-  let cantidad = 0;
-  ScriptApp.getProjectTriggers().forEach(t => {
-    if (t.getHandlerFunction() === 'stkAutomatico') { ScriptApp.deleteTrigger(t); cantidad += 1; }
-  });
-  return cantidad;
-}
-
-function stkEstadoProgramacion() {
-  const activos = ScriptApp.getProjectTriggers()
-    .filter(t => t.getHandlerFunction() === 'stkAutomatico').length;
-  const ultima = PropertiesService.getScriptProperties().getProperty('STK_ULTIMA_CORRIDA');
-  stkAvisar_('Estado de la actualización', [
-    `Programación: ${activos ? 'ACTIVA' : 'inactiva'}`,
-    `Hora prevista: ${String(STK_HORA_ACTUALIZACION).padStart(2, '0')}:00 (${STK.ZONA_HORARIA})`,
-    `Última corrida: ${ultima || 'sin registro'}`,
-  ].join('\n'));
-}
-
-
-/* ==========================================================================
-   UTILIDADES
-   ========================================================================== */
-
-function stkHoja_(nombre) {
-  const ss = stkSS_();
-  return ss.getSheetByName(nombre) || ss.insertSheet(nombre);
-}
-
-function stkFilasDe_(nombre) {
-  const h = stkSS_().getSheetByName(nombre);
-  if (!h || h.getLastRow() < 2) throw new Error(`La hoja ${nombre} está vacía. Ejecutá "3. Actualizar datos".`);
-  return h.getDataRange().getValues().slice(1);
-}
-
-function stkEscribir_(nombre, titulos, filas, columnasNumericas) {
-  const h = stkHoja_(nombre);
-  if (h.getFilter()) h.getFilter().remove();
-  h.setConditionalFormatRules([]);
-  h.clear();
-
-  /* Formato TEXTO en todo lo que no sea número, ANTES de escribir.
-     Si no, Google Sheets convierte "5.11" en una fecha y la marca aparece
-     como "Thu Nov 05 2026". Igual con calibres tipo "30-06". */
-  const numericas = columnasNumericas || [];
-  const filasFormato = Math.max(h.getMaxRows(), filas.length + 1);
-  for (let col = 1; col <= titulos.length; col++) {
-    if (numericas.indexOf(col) < 0) h.getRange(1, col, filasFormato, 1).setNumberFormat('@');
+function evolucion(){
+  var caja = document.getElementById("evo-chart");
+  var resumen = document.getElementById("serie-resumen");
+  var d = serieActiva ? serieDe(serieActiva) : [];
+  var etiquetasMes = mesesDe();
+  if (d.length < 2) {
+    caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>';
+    resumen.textContent = "";
+    return;
   }
 
-  h.getRange(1, 1, 1, titulos.length).setValues([titulos]);
-  if (filas.length) {
-    h.getRange(2, 1, filas.length, titulos.length).setValues(filas);
-    (columnasNumericas || []).forEach(c => h.getRange(2, c, filas.length, 1).setNumberFormat('#,##0'));
-    h.getRange(1, 1, filas.length + 1, titulos.length).createFilter();
+  var W = 1040, H = 320, P = {t:26, r:26, b:42, l:82};
+  var iw = W-P.l-P.r, ih = H-P.t-P.b;
+  var max = Math.max.apply(null, d);
+  var tope = max > 0 ? max*1.15 : 1;
+  var X = function(i){ return P.l + i*(iw/(d.length-1)); };
+  var Y = function(v){ return P.t + ih - (v/tope)*ih; };
+  var linea = d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
+  var area = linea + " L"+X(d.length-1).toFixed(1)+" "+(P.t+ih)+" L"+P.l+" "+(P.t+ih)+" Z";
+
+  var grid = "";
+  for (var g=0; g<=4; g++){
+    var v = tope*g/4, y = Y(v);
+    grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+
+      '" stroke="#E6E9E9"/><text class="axis" x="'+(P.l-10)+'" y="'+(y+3.5).toFixed(1)+
+      '" text-anchor="end">'+fmt(Math.round(v))+'</text>';
   }
-  h.getRange(1, 1, 1, titulos.length)
-    .setBackground('#12161A').setFontColor('#FFFFFF').setFontWeight('bold').setWrap(true);
-  h.setFrozenRows(1);
-  h.autoResizeColumns(1, titulos.length);
+
+  /* Con muchos meses se saltean etiquetas para que no se pisen. */
+  var paso = d.length > 14 ? 2 : 1;
+  var etiquetas = d.map(function(_,i){
+    if (i % paso !== 0 && i !== d.length-1) return "";
+    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-14)+'" text-anchor="middle">'+
+      esc(etiquetasMes[i] || "") + '</text>';
+  }).join("");
+
+  var puntos = d.map(function(v,i){
+    return '<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="3.4" fill="#fff" '+
+      'stroke="#12161A" stroke-width="1.6"><title>'+esc(etiquetasMes[i]||"")+': '+gsM(v)+'</title></circle>';
+  }).join("");
+
+  /* Valor del último mes, rotulado sobre el punto. */
+  var ult = d[d.length-1];
+  var rotulo = '<text class="axis" x="'+(X(d.length-1)).toFixed(1)+'" y="'+(Y(ult)-14).toFixed(1)+
+    '" text-anchor="end" fill="#12161A" stroke="#fff" stroke-width="3.5" paint-order="stroke"'+
+    ' style="font-weight:600">'+fmt(Math.round(ult))+' M</text>';
+
+  var rep = Math.round((CMV6[serieActiva]||0)/6*1.8);
+  var lineaRep = (rep > 0 && rep < tope)
+    ? '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
+      '<text class="axis" x="'+(P.l+6)+'" y="'+(Y(rep)-7).toFixed(1)+'" fill="#A6432E">'+
+      'Reposición estimada · '+fmt(rep)+' M</text>'
+    : "";
+
+  caja.innerHTML =
+    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(serieActiva)+'">'+
+    '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
+      '<stop offset="0%" stop-color="#12161A" stop-opacity=".13"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
+    '</linearGradient></defs>'+ grid +
+    '<path d="'+area+'" fill="url(#fade)"/>'+
+    '<path d="'+linea+'" fill="none" stroke="#12161A" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'+
+    lineaRep + puntos + rotulo + etiquetas + '</svg>';
+
+  /* Resumen al lado del selector: de dónde a dónde fue el stock. */
+  var ini0 = d[0];
+  var variacion = ini0 ? (ult - ini0) / ini0 * 100 : 0;
+  var pico = Math.max.apply(null, d), piso = Math.min.apply(null, d);
+  resumen.textContent =
+    etiquetasMes[0] + " → " + etiquetasMes[etiquetasMes.length-1] + "   ·   " +
+    gsM(ini0) + " → " + gsM(ult) +
+    "  (" + (variacion >= 0 ? "+" : "") + variacion.toFixed(0) + "%)" +
+    "   ·   máx " + fmt(Math.round(pico)) + " · mín " + fmt(Math.round(piso));
 }
 
-function stkVisible_(metaCampo, valor) {
-  if (!metaCampo || !valor) return '';
-  if (metaCampo.type === 'selection' && Array.isArray(metaCampo.selection)) {
-    const par = metaCampo.selection.filter(p => p[0] === valor)[0];
-    return par ? par[1] : valor;
-  }
-  return valor;
-}
+function rotacion(){
+  var actual = {};
+  STOCK.forEach(function(r){ if (pasa(r)) actual[r.m] = (actual[r.m]||0) + r.v; });
 
-function stkMesesAtras_(meses) {
-  const hoy = new Date();
-  return Utilities.formatDate(
-    new Date(Date.UTC(hoy.getFullYear(), hoy.getMonth() - meses, 1, 12)), 'UTC', 'yyyy-MM-dd');
-}
+  /* El período elegido cambia el stock promedio, así que la rotación se
+     recalcula sobre los meses visibles. El costo de venta y el de compra
+     son de los últimos 6 meses y no dependen del período. */
+  var meses = per.hasta - per.desde + 1;
 
-function stkCierres_(cantidad) {
-  const nombres = ['ene', 'feb', 'mar', 'abr', 'may', 'jun', 'jul', 'ago', 'sep', 'oct', 'nov', 'dic'];
-  const hoy = new Date();
-  const salida = [];
-  for (let i = cantidad - 1; i >= 0; i--) {
-    const d = new Date(Date.UTC(hoy.getFullYear(), hoy.getMonth() - i, 1, 12));
-    const anio = d.getUTCFullYear();
-    const mes = d.getUTCMonth();
-    salida.push({
-      mes: `${anio}-${String(mes + 1).padStart(2, '0')}`,
-      inicio: `${anio}-${String(mes + 1).padStart(2, '0')}-01`,
-      etiqueta: (i === cantidad - 1 || mes === 0) ? `${nombres[mes]} ${String(anio).slice(-2)}` : nombres[mes],
+  var filas = marcasConSerie().map(function(m){
+    var s = serieDe(m);
+    var prom = s.length ? s.reduce(function(a,b){return a+b;},0)/s.length : 0;
+    var cmv = CMV6[m] || 0;
+    var rot = prom > 0 ? (cmv*2)/prom : 0;
+    return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot };
+  });
+  filas = ordenar(filas, orden.rot.k, orden.rot.asc);
+  marcarOrden("#tbl-rot", orden.rot);
+
+  document.getElementById("nota-rot").textContent =
+    "Rotación = costo de venta anualizado ÷ stock promedio · " +
+    "stock promedio sobre " + meses + (meses === 1 ? " mes" : " meses") +
+    " · clic en una marca para ver sus artículos";
+
+  var tb = document.querySelector("#tbl-rot tbody");
+  if (!filas.length) { tb.innerHTML = '<tr><td colspan="6" class="empty">Sin datos de rotación.</td></tr>'; return; }
+
+  tb.innerHTML = filas.map(function(r){
+    /* Con stock promedio muy chico la división se dispara y el número deja de
+       significar algo: una marca que vendió una unidad y quedó en cero puede
+       dar rotación 50. Esos casos se marcan en vez de mostrar un número falso. */
+    var sinBase = r.prom < 5 || r.cmv < 5;
+    var cls = sinBase ? "" : (r.rot >= 2 ? "r-hi" : (r.rot >= 1 ? "r-md" : "r-lo"));
+    var lec;
+    if (r.cmv === 0)      lec = "Sin ventas en el período";
+    else if (sinBase)     lec = "Volumen muy bajo para medir";
+    else if (r.rot >= 2)  lec = "Sana";
+    else if (r.rot >= 1)  lec = "Ajustada";
+    else                  lec = "Inmovilizada";
+
+    return '<tr data-marca="'+esc(r.m)+'" style="cursor:pointer" '+
+      'title="Ver los artículos de '+esc(r.m)+'"><td><b>'+esc(r.m)+'</b></td>'+
+      '<td class="num">'+gs(r.cmv)+'</td>'+
+      '<td class="num">'+gs(r.prom)+'</td><td class="num">'+gs(r.act)+'</td>'+
+      '<td class="num">'+(sinBase
+        ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
+        : '<span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span>')+'</td>'+
+      '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
+  }).join("");
+
+  /* Clic en la marca: filtra por ella y lleva a la lista de artículos. */
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.marca = tr.dataset.marca;
+      reflejarFiltros();
+      pintar(); sincronizarSerie();
+      irA(0);
+      var sec = document.getElementById("q-art").closest("section");
+      sec.classList.remove("plegada");
+      sec.querySelector(".shead").classList.remove("closed");
+      sec.scrollIntoView({ behavior:"smooth", block:"start" });
     });
-  }
-  return salida;
+  });
 }
 
-function stkLotes_(items, tamano) {
-  const lotes = [];
-  for (let i = 0; i < items.length; i += tamano) lotes.push(items.slice(i, i + tamano));
-  return lotes;
+/* ---------------- navegación ---------------- */
+var tabs = [document.getElementById("t1"), document.getElementById("t2")];
+var panes = [document.getElementById("p1"), document.getElementById("p2")];
+function irA(i){
+  tabs.forEach(function(x,j){ x.setAttribute("aria-selected", j===i); });
+  panes.forEach(function(p,j){ p.hidden = j!==i; });
 }
+tabs.forEach(function(t,i){
+  t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
+});
 
-function stkAhora_() {
-  return Utilities.formatDate(new Date(), STK.ZONA_HORARIA, 'dd/MM/yyyy HH:mm');
-}
-
-function stkId_(v) { return Array.isArray(v) ? v[0] : (v || ''); }
-function stkNombre_(v) { return Array.isArray(v) ? v[1] : ''; }
-function stkNum_(v) { const n = Number(v); return Number.isFinite(n) ? n : 0; }
-/** Una fecha acá significa que Sheets convirtió un texto: se avisa, no se adivina. */
-function stkTexto_(v) {
-  if (v instanceof Date) return 'REVISAR FORMATO';
-  return String(v === null || v === undefined ? '' : v).trim();
-}
-
-function stkNorm_(v) {
-  return String(v || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .toUpperCase().replace(/[^A-Z0-9]/g, '');
-}
-function stkError_(titulo, error) {
-  const m = error && error.message ? error.message : String(error);
-  console.error(error && error.stack ? error.stack : error);
-  stkAvisar_(titulo, m.substring(0, 3000));
-}
-
-
-/* ==========================================================================
-   COMPATIBILIDAD DE CONTEXTO
-   ==========================================================================
-   getUi() solo existe cuando la ejecución tiene una planilla adelante. Desde
-   el editor, desde un disparador o en un proyecto suelto, no existe y tirar
-   una alerta rompe todo. Entonces: si hay interfaz se muestra la ventana, y
-   si no, el mismo texto va al registro de ejecución. El resultado real
-   siempre queda escrito en las hojas, no en la ventanita.
-   ========================================================================== */
-
-/** Avisa por ventana si se puede; si no, al registro. Nunca corta la ejecución. */
-function stkAvisar_(titulo, cuerpo) {
-  const texto = String(cuerpo);
-  Logger.log(`=== ${titulo} ===\n${texto}`);
-  try {
-    SpreadsheetApp.getUi().alert(titulo, texto, SpreadsheetApp.getUi().ButtonSet.OK);
-  } catch (sinInterfaz) {
-    /* Sin interfaz disponible. El registro ya tiene el mensaje. */
-  }
-}
-
-/** Aviso corto en la planilla. Silencioso si no hay contexto. */
-function stkToast_(mensaje) {
-  try { stkSS_().toast(mensaje, 'Reporte de Stock', 8); } catch (e) {}
-}
-
-/**
- * La planilla de trabajo.
- * Si el proyecto no está vinculado a ninguna (fue creado desde
- * script.google.com en vez de Extensiones → Apps Script), se usa la
- * propiedad SPREADSHEET_ID.
- */
-function stkSS_() {
-  const activa = SpreadsheetApp.getActiveSpreadsheet();
-  if (activa) return activa;
-  const id = PropertiesService.getScriptProperties().getProperty('SPREADSHEET_ID');
-  if (!id) {
-    throw new Error(
-      'Este proyecto no está vinculado a ninguna planilla.\n\n' +
-      'Opción 1 (recomendada): abrí la planilla y entrá por Extensiones → Apps Script.\n' +
-      'Opción 2: agregá la propiedad SPREADSHEET_ID con el id de la planilla ' +
-      '(está en la URL, entre /d/ y /edit).'
-    );
-  }
-  return SpreadsheetApp.openById(id);
-}
+armarFiltros();
+armarPeriodo();
+document.getElementById("f-serie").addEventListener("change", function(){
+  serieActiva = this.value;
+  evolucion();
+});
+pintar();
+sincronizarSerie();
+})();
+</script>
+</body>
+</html>
