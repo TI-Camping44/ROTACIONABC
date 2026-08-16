@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 15/08/2026 06:13.
+/* Generado desde la planilla el 16/08/2026 06:13.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -46,7 +46,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "15/08/2026 06:13",
+  "GENERADO": "16/08/2026 06:13",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "MESES": [
