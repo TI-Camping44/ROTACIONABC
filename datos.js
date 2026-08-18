@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 18/08/2026 16:33.
+/* Generado desde la planilla el 18/08/2026 16:39.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -46,7 +46,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "18/08/2026 16:33",
+  "GENERADO": "18/08/2026 16:39",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [
@@ -147,17 +147,17 @@ var DATOS = {
     },
     {
       "m": "AEG",
-      "tipo": "Cargadores",
+      "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "CARG",
+      "cat": "C",
       "cal": "Sin calibre",
       "v": 0.6
     },
     {
       "m": "AEG",
-      "tipo": "Cargadores",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "CARG",
+      "cat": "C",
       "cal": "Sin calibre",
       "v": 0.2
     },
@@ -220,14 +220,6 @@ var DATOS = {
     {
       "m": "ASG",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.1
-    },
-    {
-      "m": "ASG",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "6mm",
@@ -279,7 +271,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 7.1
+      "v": 7.2
     },
     {
       "m": "ASG",
@@ -527,7 +519,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "5.5mm",
-      "v": 276.1
+      "v": 276
     },
     {
       "m": "Apolo",
@@ -1459,22 +1451,6 @@ var DATOS = {
     },
     {
       "m": "Crosman",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 15.2
-    },
-    {
-      "m": "Crosman",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 2.9
-    },
-    {
-      "m": "Crosman",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
@@ -1495,7 +1471,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 32.5
+      "v": 47.3
     },
     {
       "m": "Crosman",
@@ -1512,6 +1488,14 @@ var DATOS = {
       "cat": "NC",
       "cal": "6mm",
       "v": 0.7
+    },
+    {
+      "m": "Crosman",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "v": 0.3
     },
     {
       "m": "Crosman",
@@ -1543,7 +1527,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 5.8
+      "v": 8.7
     },
     {
       "m": "Crosman",
@@ -1731,27 +1715,11 @@ var DATOS = {
     },
     {
       "m": "Doberman LINTERNAS",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 59.1
-    },
-    {
-      "m": "Doberman LINTERNAS",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 1
-    },
-    {
-      "m": "Doberman LINTERNAS",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 88.4
+      "v": 147.5
     },
     {
       "m": "Doberman LINTERNAS",
@@ -1775,7 +1743,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 1
+      "v": 2
     },
     {
       "m": "Doberman LINTERNAS",
@@ -1872,14 +1840,6 @@ var DATOS = {
       "cat": "CARG",
       "cal": "5.5mm",
       "v": 2
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0
     },
     {
       "m": "Doberman",
@@ -2020,26 +1980,10 @@ var DATOS = {
     {
       "m": "Fab Defense",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.2
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "223REM",
       "v": 1
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.2
     },
     {
       "m": "Fab Defense",
@@ -2063,7 +2007,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 117.4
+      "v": 117.6
     },
     {
       "m": "Fab Defense",
@@ -2095,7 +2039,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 32.9
+      "v": 33
     },
     {
       "m": "Fab Defense",
@@ -2628,14 +2572,6 @@ var DATOS = {
     {
       "m": "Glock",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0
-    },
-    {
-      "m": "Glock",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": ".40",
@@ -2679,7 +2615,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 92.1
+      "v": 92.2
     },
     {
       "m": "Glock",
@@ -3371,22 +3307,6 @@ var DATOS = {
     },
     {
       "m": "Nitecore",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 5.2
-    },
-    {
-      "m": "Nitecore",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.6
-    },
-    {
-      "m": "Nitecore",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
@@ -3399,7 +3319,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 110.5
+      "v": 115.7
     },
     {
       "m": "Nitecore",
@@ -3415,7 +3335,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 47.2
+      "v": 47.8
     },
     {
       "m": "Norinco",
@@ -4436,14 +4356,6 @@ var DATOS = {
     {
       "m": "Sin Marca",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.1
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": "12GA",
@@ -4687,7 +4599,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 378.7
+      "v": 378.9
     },
     {
       "m": "Sin Marca",
@@ -5132,14 +5044,6 @@ var DATOS = {
     {
       "m": "Tanfoglio",
       "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.5
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Cargadores",
       "dep": "Showroom",
       "cat": "CARG",
       "cal": ".40",
@@ -5183,7 +5087,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 5.9
+      "v": 6.4
     },
     {
       "m": "Tanfoglio",
@@ -5414,14 +5318,6 @@ var DATOS = {
       "tipo": "Cargadores",
       "dep": "Central",
       "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 3.7
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
       "cal": "cal 43",
       "v": 20.6
     },
@@ -5527,7 +5423,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
-      "v": 499.8
+      "v": 501.5
     },
     {
       "m": "Umarex",
@@ -5607,7 +5503,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 25.3
+      "v": 27.4
     },
     {
       "m": "Umarex",
@@ -6059,22 +5955,6 @@ var DATOS = {
     },
     {
       "m": "Winchester",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 3.1
-    },
-    {
-      "m": "Winchester",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "CARG",
-      "cal": "Sin calibre",
-      "v": 0.5
-    },
-    {
-      "m": "Winchester",
       "tipo": "Municiones",
       "dep": "Central",
       "cat": "MUN",
@@ -6088,6 +5968,22 @@ var DATOS = {
       "cat": "MUN",
       "cal": "270WIN",
       "v": 0.3
+    },
+    {
+      "m": "Winchester",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 3.1
+    },
+    {
+      "m": "Winchester",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "v": 0.5
     },
     {
       "m": "utas",
@@ -7412,9 +7308,9 @@ var DATOS = {
       "680652",
       "Reflector DOBERMAN Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "A",
       "Sin calibre",
       736,
       36.6
@@ -8402,9 +8298,9 @@ var DATOS = {
       "680650",
       "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "A",
       "Sin calibre",
       834,
       22.4
@@ -8872,17 +8768,6 @@ var DATOS = {
       19.5
     ],
     [
-      "400251",
-      "Balines APOLO 5,5mm Domed 1,6 gr 25GRAINS 200 x 30 #E19918",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      1134,
-      19.5
-    ],
-    [
       "901610",
       "Magnetico DOBERMAN 35lbs #SDMGunMag-2 x 1",
       "Doberman",
@@ -8902,6 +8787,17 @@ var DATOS = {
       "A",
       "Sin calibre",
       85,
+      19.4
+    ],
+    [
+      "400251",
+      "Balines APOLO 5,5mm Domed 1,6 gr 25GRAINS 200 x 30 #E19918",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      1132,
       19.4
     ],
     [
@@ -10228,9 +10124,9 @@ var DATOS = {
       "DES321202",
       "Cargador CROSMAN 300 tiros para Mod. DPMS/SBR #CFAHCM (copia)",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       24,
       10.7
@@ -13220,9 +13116,9 @@ var DATOS = {
       "DES321201",
       "Cargador CROSMAN para Mod. AK #CAKFAM (copia)",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       12,
       4.1
@@ -13308,9 +13204,9 @@ var DATOS = {
       "901150",
       "Cargador NITECORE Mod. UI1 para Bat. Recargable",
       "Nitecore",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       61,
       4.1
@@ -14683,9 +14579,9 @@ var DATOS = {
       "4501140",
       "Cargador Rapido Winchester para Escopeta",
       "Winchester",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       12,
       3.1
@@ -16476,9 +16372,9 @@ var DATOS = {
       "321094",
       "Cargador UMAREX Para Mod. ICONIX #2.4324.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "NC",
       "Sin calibre",
       26,
       2.1
@@ -17378,9 +17274,9 @@ var DATOS = {
       "DES321202",
       "Cargador CROSMAN 300 tiros para Mod. DPMS/SBR #CFAHCM (copia)",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       4,
       1.8
@@ -17873,9 +17769,9 @@ var DATOS = {
       "321079",
       "Cargador PCP UMAREX cl 5,5 Mod. KOMPLETE",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       25,
       1.6
@@ -20623,9 +20519,9 @@ var DATOS = {
       "DES901152",
       "Cargador NITECORE Mod. UI2 para Bat. Recargable",
       "Nitecore",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       14,
       1
@@ -20733,9 +20629,9 @@ var DATOS = {
       "DES321201",
       "Cargador CROSMAN para Mod. AK #CAKFAM (copia)",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       3,
       1
@@ -25914,9 +25810,9 @@ var DATOS = {
       "901150",
       "Cargador NITECORE Mod. UI1 para Bat. Recargable",
       "Nitecore",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       8,
       0.5
@@ -26310,9 +26206,9 @@ var DATOS = {
       "4501140",
       "Cargador Rapido Winchester para Escopeta",
       "Winchester",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "B",
       "Sin calibre",
       2,
       0.5
@@ -26420,9 +26316,9 @@ var DATOS = {
       "680652",
       "Reflector DOBERMAN Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "A",
       "Sin calibre",
       10,
       0.5
@@ -26541,9 +26437,9 @@ var DATOS = {
       "900947",
       "Elevador de Cargador Tanfoglio",
       "Tanfoglio",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       12,
       0.5
@@ -26893,9 +26789,9 @@ var DATOS = {
       "680650",
       "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "A",
       "Sin calibre",
       17,
       0.5
@@ -27300,9 +27196,9 @@ var DATOS = {
       "900808",
       "Repuesto Bateria con cargador para Rifles AEG Airsoft 11.1 V 1300 mAh",
       "AEG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       2,
       0.4
@@ -30237,9 +30133,9 @@ var DATOS = {
       "321200",
       "Cargador Crosman SBR/BUSHMASTER 25 tiros",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "NC",
       "Sin calibre",
       1,
       0.3
@@ -32756,9 +32652,9 @@ var DATOS = {
       "900808",
       "Repuesto Bateria con cargador para Rifles AEG Airsoft 11.1 V 1300 mAh",
       "AEG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0.2
@@ -33152,9 +33048,9 @@ var DATOS = {
       "900799",
       "Repuesto Bateria con cargador para Rifles AEG Airsoft 9.6V 1100 mAh",
       "AEG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       2,
       0.2
@@ -35671,9 +35567,9 @@ var DATOS = {
       "270900",
       "Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC",
       "Fab Defense",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       2,
       0.2
@@ -35891,9 +35787,9 @@ var DATOS = {
       "920380",
       "N-Prolongador Cargador P.O. Metal",
       "Sin Marca",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0.1
@@ -39400,9 +39296,9 @@ var DATOS = {
       "270250",
       "Extensor de Cargador Fab Defense Glock M43 +4T #43-10",
       "Fab Defense",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0.1
@@ -40489,9 +40385,9 @@ var DATOS = {
       "270900",
       "Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC",
       "Fab Defense",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0.1
@@ -40577,9 +40473,9 @@ var DATOS = {
       "DES901152",
       "Cargador NITECORE Mod. UI2 para Bat. Recargable",
       "Nitecore",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0.1
@@ -40808,9 +40704,9 @@ var DATOS = {
       "LIQ680652",
       "Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "A",
       "Sin calibre",
       1,
       0.1
@@ -42777,9 +42673,9 @@ var DATOS = {
       "321070",
       "Cargador p/ Pist.AC ASG 4,5 CO2 Bersa BP9CC GNB #17300",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       2,
       0.1
@@ -42843,9 +42739,9 @@ var DATOS = {
       "321065",
       "Cargador Neg. Steyr M9-A1 4,5 #16088",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "C",
       "Sin calibre",
       2,
       0.1
@@ -45054,9 +44950,9 @@ var DATOS = {
       "LIQ680650",
       "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USb",
       "Doberman LINTERNAS",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "A",
       "Sin calibre",
       1,
       0
@@ -45384,9 +45280,9 @@ var DATOS = {
       "REP900866",
       "Repuesto Cargador p/Pist.AC Crosman Phantom 4,5 CO2#P10KT",
       "Crosman",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
-      "CARG",
+      "C",
       "Sin calibre",
       1,
       0
@@ -47815,9 +47711,9 @@ var DATOS = {
       "900664",
       "Boton Extractor de Cargador p/Glock M19 #287",
       "Glock",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       3,
       0
@@ -48079,9 +47975,9 @@ var DATOS = {
       "4500480",
       "Cargador rapido Glock",
       "Glock",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       2,
       0
@@ -52622,9 +52518,9 @@ var DATOS = {
       "900230",
       "Kit de reparo cargador Polimero Multishot GR1000X",
       "Doberman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
-      "CARG",
+      "B",
       "Sin calibre",
       74,
       0
