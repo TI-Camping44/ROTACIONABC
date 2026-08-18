@@ -194,7 +194,6 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 /* ---------- parte 2 ---------- */
 .evo{display:grid; grid-template-columns:1fr; gap:10px}
 .axis{font-family:var(--mono); font-size:10.5px; fill:var(--muted)}
-.repline{stroke:var(--C); stroke-width:1.2; stroke-dasharray:5 4}
 .rotpill{
   font-family:var(--mono); font-size:11.5px; padding:2px 8px; border-radius:11px;
   display:inline-block; min-width:58px; text-align:center;
@@ -415,12 +414,10 @@ td.dim{opacity:.32}
           <div class="stamp" id="serie-resumen"></div>
         </div>
         <div id="evo-chart"></div>
-        <p class="formula" style="margin:12px 0 0">
-          La línea punteada marca el <b>punto de reposición estimado</b>: el consumo promedio
-          de los últimos seis meses proyectado sobre el plazo de reposición.
-          <code>consumo mensual × plazo de reposición</code>.
-          <span id="nota-plazo"></span>
-          El histórico abarca todos los depósitos: la valorización de Odoo no separa por almacén.
+        <p class="sub" style="margin:12px 0 0">
+          Reconstruido desde las capas de valorización de Odoo, restando los movimientos
+          de cada mes al valor actual. Abarca todos los depósitos: la valorización de Odoo
+          no separa por almacén.
         </p>
       </div>
     </section>
@@ -435,7 +432,6 @@ td.dim{opacity:.32}
           El costo de venta sale de las capas de valorización de Odoo: lo que salió
           del depósito hacia un cliente, al costo real con que estaba registrado.
           El stock promedio es el promedio de los meses del período elegido arriba.
-          <br><b>Lectura:</b> <span id="nota-umbral"></span>
         </p>
         <div class="scroll"><table id="tbl-rot">
         <thead><tr>
@@ -444,7 +440,6 @@ td.dim{opacity:.32}
           <th class="ord" data-k="prom">Stock promedio (Gs.)</th>
           <th class="ord" data-k="act">Stock actual (Gs.)</th>
           <th class="ord" data-k="rot">Rotación (veces/año)</th>
-          <th class="l">Lectura</th>
         </tr></thead><tbody></tbody>
       </table></div></div>
     </section>
@@ -468,13 +463,7 @@ if (typeof DATOS === "undefined" || !DATOS.STOCK) {
 var CATS = DATOS.CATS;
 var STOCK = DATOS.STOCK;
 var ARTICULOS = DATOS.ARTICULOS || [];
-/* Parámetros cargados por Gerencia. Vacío = se usan los valores de relleno. */
-var PARAMS = DATOS.PARAMS || {};
-var PLAZO_DEFECTO = 1.8, SANA_DEFECTO = 2, AJUSTADA_DEFECTO = 1;
-var paramDe = function(m, k, porDefecto){
-  return (PARAMS[m] && PARAMS[m][k] > 0) ? PARAMS[m][k] : porDefecto;
-};
-var hayParams = function(){ return Object.keys(PARAMS).length > 0; };
+
 var MESES = DATOS.MESES || [];
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
@@ -1368,13 +1357,6 @@ function evolucion(){
     '" text-anchor="end" fill="#12161A" stroke="#fff" stroke-width="3.5" paint-order="stroke"'+
     ' style="font-weight:600">'+fmt(Math.round(ult))+' M</text>';
 
-  var rep = Math.round((CMV6[serieActiva]||0)/6 * paramDe(serieActiva, "plazo", PLAZO_DEFECTO));
-  var lineaRep = (rep > 0 && rep < tope)
-    ? '<line class="repline" x1="'+P.l+'" y1="'+Y(rep).toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+Y(rep).toFixed(1)+'"/>'+
-      '<text class="axis" x="'+(P.l+6)+'" y="'+(Y(rep)-7).toFixed(1)+'" fill="#A6432E">'+
-      'Reposición estimada · '+fmt(rep)+' M</text>'
-    : "";
-
   caja.innerHTML =
     '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(serieActiva)+'">'+
     '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
@@ -1382,7 +1364,7 @@ function evolucion(){
     '</linearGradient></defs>'+ grid +
     '<path d="'+area+'" fill="url(#fade)"/>'+
     '<path d="'+linea+'" fill="none" stroke="#12161A" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'+
-    lineaRep + puntos + rotulo + etiquetas + '</svg>';
+    puntos + rotulo + etiquetas + '</svg>';
 
   /* Resumen al lado del selector: de dónde a dónde fue el stock. */
   var ini0 = d[0];
@@ -1420,31 +1402,25 @@ function rotacion(){
     " · clic en una marca para ver sus artículos";
 
   var tb = document.querySelector("#tbl-rot tbody");
-  if (!filas.length) { tb.innerHTML = '<tr><td colspan="6" class="empty">Sin datos de rotación.</td></tr>'; return; }
+  if (!filas.length) { tb.innerHTML = '<tr><td colspan="5" class="empty">Sin datos de rotación.</td></tr>'; return; }
 
   tb.innerHTML = filas.map(function(r){
     /* Con stock promedio muy chico la división se dispara y el número deja de
        significar algo: una marca que vendió una unidad y quedó en cero puede
        dar rotación 50. Esos casos se marcan en vez de mostrar un número falso. */
+    /* Con stock promedio o venta muy chicos la división se dispara y el número
+       deja de significar algo. Esos casos se marcan en vez de mostrar un valor
+       que parece bueno y no lo es. */
     var sinBase = r.prom < 5 || r.cmv < 5;
-    var uSana = paramDe(r.m, "sana", SANA_DEFECTO);
-    var uAjus = paramDe(r.m, "ajustada", AJUSTADA_DEFECTO);
-    var cls = sinBase ? "" : (r.rot >= uSana ? "r-hi" : (r.rot >= uAjus ? "r-md" : "r-lo"));
-    var lec;
-    if (r.cmv === 0)         lec = "Sin ventas en el período";
-    else if (sinBase)        lec = "Volumen muy bajo para medir";
-    else if (r.rot >= uSana) lec = "Sana";
-    else if (r.rot >= uAjus) lec = "Ajustada";
-    else                     lec = "Inmovilizada";
 
     return '<tr data-marca="'+esc(r.m)+'" style="cursor:pointer" '+
       'title="Ver los artículos de '+esc(r.m)+'"><td><b>'+esc(r.m)+'</b></td>'+
       '<td class="num">'+gs(r.cmv)+'</td>'+
       '<td class="num">'+gs(r.prom)+'</td><td class="num">'+gs(r.act)+'</td>'+
       '<td class="num">'+(sinBase
-        ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
-        : '<span class="rotpill '+cls+'">'+r.rot.toFixed(2).replace(".",",")+'</span>')+'</td>'+
-      '<td class="l" style="color:var(--ink2)">'+lec+'</td></tr>';
+        ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px" '+
+          'title="Volumen muy bajo: la rotación no es representativa">sin base</span>'
+        : '<span class="mono">'+r.rot.toFixed(2).replace(".",",")+'</span>')+'</td></tr>';
   }).join("");
 
   /* Clic en la marca: filtra por ella y lleva a la lista de artículos. */
@@ -1472,21 +1448,6 @@ function irA(i){
 tabs.forEach(function(t,i){
   t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
 });
-
-/* Los textos cambian según Gerencia haya cargado los parámetros o no. */
-document.getElementById("nota-plazo").innerHTML = hayParams()
-  ? 'El plazo sale de la hoja PARAMETROS; las marcas sin valor cargado usan ' +
-    PLAZO_DEFECTO.toString().replace(".", ",") + ' meses.'
-  : '<span class="aviso">El plazo usado es ' + PLAZO_DEFECTO.toString().replace(".", ",") +
-    ' meses, igual para todas las marcas. Es un valor de relleno: no sale de ningún ' +
-    'proveedor, y hasta que se cargue el plazo real esta línea no sirve para disparar una compra.</span>';
-
-document.getElementById("nota-umbral").innerHTML = hayParams()
-  ? 'los umbrales salen de la hoja PARAMETROS; las marcas sin valor usan sana ≥ ' +
-    SANA_DEFECTO + ' y ajustada ≥ ' + AJUSTADA_DEFECTO + '.'
-  : 'sana ≥ ' + SANA_DEFECTO + ' · ajustada entre ' + AJUSTADA_DEFECTO + ' y ' + SANA_DEFECTO +
-    ' · inmovilizada &lt; ' + AJUSTADA_DEFECTO + '. <span class="aviso">Todavía no están ' +
-    'definidos por Camping 44: son referencias generales de retail.</span>';
 
 armarFiltros();
 armarPeriodo();
