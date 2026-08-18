@@ -146,6 +146,11 @@ section.plegada > *:not(.shead){display:none}
 }
 .nota-cat b{color:var(--ink)}
 .nota-cat.gris{background:#F1F3F3; border-left-color:var(--SC)}
+.bloq{
+  font-family:var(--disp); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  background:#F4E2DD; color:#8A3524; border:1px solid #E4C4BC; padding:1px 6px;
+  border-radius:2px; margin-left:7px; white-space:nowrap;
+}
 
 /* ---------- panel torta principal ---------- */
 .hero{display:grid; grid-template-columns:minmax(300px,1fr) 1.15fr; gap:10px}
@@ -342,7 +347,7 @@ td.dim{opacity:.32}
 
     <section>
       <div class="shead"><h2>Por depósito</h2><div class="rule"></div>
-        <div class="note">Millones de guaraníes · mismo criterio, abierto por ubicación física</div></div>
+        <div class="note" id="nota-dep">Millones de guaraníes · mismo criterio, abierto por ubicación física</div></div>
       <div class="card"><div style="overflow-x:auto"><table id="tbl-dep">
         <thead><tr>
           <th class="ord l" data-k="k">Depósito</th>
@@ -439,6 +444,7 @@ td.dim{opacity:.32}
           El costo de venta sale de las capas de valorización de Odoo: lo que salió
           del depósito hacia un cliente, al costo real con que estaba registrado.
           El stock promedio es el promedio de los meses del período elegido arriba.
+          <span id="nota-rot-bloq"></span>
         </p>
         <div class="scroll"><table id="tbl-rot">
         <thead><tr>
@@ -470,6 +476,14 @@ if (typeof DATOS === "undefined" || !DATOS.STOCK) {
 var CATS = DATOS.CATS;
 var STOCK = DATOS.STOCK;
 var ARTICULOS = DATOS.ARTICULOS || [];
+/* Depósitos cuyo stock existe pero no se puede vender. */
+var NO_COMERCIAL = DATOS.NO_COMERCIAL || [];
+var esNoComercial = function(d){ return NO_COMERCIAL.indexOf(d) >= 0; };
+var totalNoComercial = function(){
+  var t = 0;
+  STOCK.forEach(function(r){ if (esNoComercial(r.dep)) t += r.v; });
+  return t;
+};
 
 var MESES = DATOS.MESES || [];
 var SERIES = DATOS.SERIES || {};
@@ -754,13 +768,23 @@ function pintar(){
   var t = totales(), T = suma(t);
   var alcance = T - sumaFuera(t);
   var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
+  var bloqueado = 0;
+  STOCK.forEach(function(r){ if (pasa(r) && esNoComercial(r.dep)) bloqueado += r.v; });
 
   pintarActivos();
 
   document.getElementById("kpis").innerHTML = [
-    kpi("Stock a costo", gsM(T), etiquetaFiltro(), "", "todo",
+    kpi("Stock a costo", gsM(T),
+        bloqueado > 0
+          ? etiquetaFiltro() + " · " + gsM(bloqueado) + " no comercializable"
+          : etiquetaFiltro(),
+        "", "todo",
         "Suma del valor de las existencias en depósitos internos, valuadas al costo " +
-        "que registra Odoo. No es precio de venta."),
+        "que registra Odoo. No es precio de venta." +
+        (bloqueado > 0
+          ? " Incluye " + gsM(bloqueado) + " en " + NO_COMERCIAL.join(", ") +
+            ", que existe en stock pero hoy no se puede vender."
+          : "")),
     kpi("Dentro del alcance ABC", gsM(alcance),
         sumaFuera(t) ? "excluye armas, municiones y cargadores (" + pct(sumaFuera(t),T) + " del total)"
                      : "sin exclusiones", "", "alcance",
@@ -826,6 +850,10 @@ function pintar(){
   });
   tablaMarcas(agrupar("m"), T);
   tablaDepositos(agrupar("dep"), T);
+  document.getElementById("nota-dep").textContent = NO_COMERCIAL.length
+    ? "Millones de guaraníes · " + NO_COMERCIAL.join(" y ") +
+      " guarda stock que no se puede vender: clic para ver el detalle"
+    : "Millones de guaraníes · mismo criterio, abierto por ubicación física";
   tablaCalibres(T);
   tablaArticulos();
   tortas(agrupar("m"));
@@ -915,7 +943,8 @@ function tablaDepositos(filas, T){
   var s = Object.assign({}, vacio);
   tb.innerHTML = filas.map(function(r){
     CATS.forEach(function(c){ s[c.k] += r[c.k]; });
-    return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
+    return '<tr data-dep="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b>'+
+      (esNoComercial(r.k) ? '<span class="bloq" title="Stock que no se puede vender">no vendible</span>' : '')+'</td>'+
       CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
       '<td class="num"><b>'+fmt(suma(r))+'</b></td>'+
       '<td class="num">'+pct(suma(r), T)+'</td></tr>';
@@ -1016,6 +1045,20 @@ function pintarAvisoCategoria(filas){
     A: '<b>Categoría A</b> son los productos de mayor rotación según la matriz vigente.',
     B: '<b>Categoría B</b> son los productos de rotación intermedia según la matriz vigente.',
   };
+
+  /* El depósito bloqueado tiene prioridad: explica por qué ese stock no rota. */
+  if (esNoComercial(f.dep)) {
+    caja.hidden = false;
+    caja.className = "nota-cat";
+    caja.innerHTML =
+      '<b>' + esc(f.dep) + '</b> guarda mercadería que existe en stock pero <b>hoy no se ' +
+      'puede vender</b>. Son dos situaciones distintas: producto devuelto por nota de crédito ' +
+      'que sigue registrado a nombre del cliente en el sistema SID de DIMABEL y no puede ' +
+      'volver a comercializarse hasta que se dé de baja ahí; y producto que está en la ' +
+      'gráfica esperando el armado de blíster. En los dos casos es capital inmovilizado ' +
+      'que no va a rotar hasta que se libere.';
+    return;
+  }
 
   if (f.cat === "*" || !textos[f.cat]) { caja.hidden = true; return; }
 
@@ -1509,6 +1552,14 @@ function irA(i){
 tabs.forEach(function(t,i){
   t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
 });
+
+if (NO_COMERCIAL.length) {
+  document.getElementById("nota-rot-bloq").innerHTML =
+    '<br><span class="aviso">La rotación incluye el stock de ' +
+    NO_COMERCIAL.join(" y ") + ', que no se puede vender: la valorización de Odoo no ' +
+    'separa por depósito. Las marcas con mercadería ahí van a mostrar una rotación ' +
+    'peor que la real.</span>';
+}
 
 armarFiltros();
 armarPeriodo();
