@@ -41,6 +41,14 @@ header.top{background:var(--paper); border-bottom:1px solid var(--line)}
 .top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
 .mark{
   height:46px; flex:0 0 auto; display:grid; place-items:center;
+  cursor:pointer; transition:opacity .15s;
+}
+.mark:hover{opacity:.72}
+.mark:focus-visible{outline:2px solid var(--B); outline-offset:4px; border-radius:2px}
+.atajo{font-family:var(--mono); font-size:10px; color:var(--muted); margin-left:8px}
+kbd{
+  font-family:var(--mono); font-size:10px; border:1px solid var(--line);
+  border-bottom-width:2px; border-radius:3px; padding:1px 4px; background:#FAFBFB;
 }
 .mark img{height:46px; width:auto; display:block}
 /* Si el logo no carga, queda el cuadro con el 44 en su lugar. */
@@ -265,7 +273,8 @@ td.dim{opacity:.32}
 
 <header class="top">
   <div class="top-in">
-    <div class="mark">
+    <div class="mark" id="ir-inicio" role="button" tabindex="0"
+         title="Volver al inicio y quitar todos los filtros">
       <img src="LOGOC44.png" alt="Camping 44"
            onerror="this.outerHTML='&lt;span class=\'fallback\'&gt;44&lt;/span&gt;'">
     </div>
@@ -657,6 +666,33 @@ function armarFiltros(){
       pintar(); sincronizarSerie();
     });
   });
+  /* Volver al estado inicial: sin filtros, sin búsquedas, arriba de todo. */
+  function reiniciar(){
+    f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
+    var qm = document.getElementById("q-marca"), qa = document.getElementById("q-art");
+    if (qm) qm.value = "";
+    if (qa) qa.value = "";
+    var qc = document.getElementById("q-cat");
+    if (qc) qc.value = "*";
+    reflejarFiltros();
+    pintar(); sincronizarSerie();
+    irA(0);
+    window.scrollTo({ top:0, behavior:"smooth" });
+  }
+
+  document.getElementById("ir-inicio").addEventListener("click", reiniciar);
+  document.getElementById("ir-inicio").addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reiniciar(); }
+  });
+
+  /* Esc quita los filtros desde cualquier parte del reporte. */
+  document.addEventListener("keydown", function(e){
+    if (e.key !== "Escape") return;
+    var enBusqueda = e.target && e.target.tagName === "INPUT" && e.target.type === "search";
+    if (enBusqueda && e.target.value) { e.target.value = ""; pintar(); return; }
+    if (hayFiltro() || enBusqueda) { e.preventDefault(); reiniciar(); }
+  });
+
   document.getElementById("f-activos").addEventListener("click", function(e){
     var b = e.target.closest("button[data-quitar]");
     if (!b) return;
@@ -1361,8 +1397,9 @@ function pintarActivos(){
            '<button data-quitar="'+p[0]+'" title="Quitar este filtro" aria-label="Quitar '+p[1]+'">×</button></span>';
   }).join("") +
   '<span class="tag all"><span>'+partes.length+' filtro'+(partes.length>1?"s":"")+'</span>'+
-  '<button data-quitar="todos" title="Quitar todos" aria-label="Quitar todos los filtros" '+
-  'style="background:var(--line);color:var(--ink)">×</button></span>';
+  '<button data-quitar="todos" title="Quitar todos (Esc)" aria-label="Quitar todos los filtros" '+
+  'style="background:var(--line);color:var(--ink)">×</button></span>' +
+  '<span class="atajo"><kbd>Esc</kbd> para quitar todos</span>';
 }
 
 /** Los meses disponibles según lo que trajo Odoo. */
