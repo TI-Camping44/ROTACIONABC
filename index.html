@@ -37,7 +37,27 @@ body{
 .flag b{color:#D9B65C; font-weight:700}
 
 /* ---------- header ---------- */
-header.top{background:var(--paper); border-bottom:1px solid var(--line)}
+header.top{
+  background:var(--paper); border-bottom:1px solid var(--line);
+  position:sticky; top:0; z-index:50;
+}
+/* Al bajar, el encabezado se compacta para no comerse la pantalla. */
+header.top.min .ttl p,
+header.top.min .meta{display:none}
+header.top.min .top-in{padding-top:8px; padding-bottom:2px; align-items:center}
+header.top.min .ttl h1{font-size:17px; line-height:1.1}
+header.top.min .mark,
+header.top.min .mark img{height:30px}
+header.top.min .tabs{padding-top:6px; padding-bottom:0}
+header.top.min .tab{padding:7px 15px 6px; font-size:13.5px}
+header.top.min{box-shadow:0 2px 6px rgba(18,22,26,.08)}
+header.top .top-in,
+header.top .mark,
+header.top .mark img,
+header.top .ttl h1{transition:all .16s ease}
+
+/* Los filtros quedan pegados debajo del encabezado. */
+.filters{position:sticky; z-index:49; margin-top:-1px}
 .top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
 .mark{
   height:46px; flex:0 0 auto; display:grid; place-items:center;
@@ -82,6 +102,7 @@ kbd{
   background:var(--paper); border:1px solid var(--line); border-top:none;
   padding:12px 16px; display:flex; gap:22px; flex-wrap:wrap; align-items:center;
 }
+.activos{position:sticky; z-index:48; background:var(--bg); padding:8px 0 4px}
 .fgroup{display:flex; align-items:center; gap:8px}
 .flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 #f-serie{min-width:190px}
@@ -108,6 +129,7 @@ section{margin-top:22px}
 section.plegada > *:not(.shead){display:none}
 .scroll{max-height:520px; overflow-y:auto; overflow-x:auto}
 .scroll thead th{position:sticky; top:0; background:var(--paper); z-index:2; box-shadow:0 1px 0 var(--line)}
+.scroll{scroll-padding-top:0}
 .scroll table{border-collapse:separate; border-spacing:0}
 .scroll td{border-bottom:1px solid var(--line2)}
 .shead h2{
@@ -240,7 +262,7 @@ th.ord.desc::after{content:"▼"; font-size:8px; color:var(--ink)}
 th.sel:hover{color:var(--B); text-decoration:underline}
 th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
 td.dim{opacity:.32}
-.activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:10px 0 0}
+.activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:0}
 .tag{
   display:inline-flex; align-items:center; gap:6px; font-size:12px;
   background:var(--ink); color:#fff; border-radius:20px; padding:3px 6px 3px 11px;
@@ -784,6 +806,7 @@ function armarFiltros(){
       var sec = h.closest("section");
       sec.classList.toggle("plegada");
       h.classList.toggle("closed");
+      if (window.stkAcomodar) window.stkAcomodar();
     };
     h.addEventListener("click", alternar);
     h.addEventListener("keydown", function(e){
@@ -1597,6 +1620,36 @@ if (NO_COMERCIAL.length) {
     'separa por depósito. Las marcas con mercadería ahí van a mostrar una rotación ' +
     'peor que la real.</span>';
 }
+
+/* El encabezado se achica al bajar y los filtros lo siguen: así se puede
+   quitar un filtro o volver al inicio sin subir hasta arriba. */
+(function(){
+  var enc = document.querySelector("header.top");
+  var filtros = document.querySelector(".filters");
+  var activos = document.getElementById("f-activos");
+
+  function acomodar(){
+    var h = enc.offsetHeight;
+    filtros.style.top = h + "px";
+    activos.style.top = (h + filtros.offsetHeight) + "px";
+  }
+
+  var ultimo = 0;
+  function alScrollear(){
+    var y = window.scrollY || 0;
+    var compacto = y > 90;
+    if (compacto !== enc.classList.contains("min")) {
+      enc.classList.toggle("min", compacto);
+    }
+    if (Math.abs(y - ultimo) > 4) { acomodar(); ultimo = y; }
+  }
+
+  window.addEventListener("scroll", alScrollear, { passive:true });
+  window.addEventListener("resize", acomodar);
+  acomodar();
+  setTimeout(acomodar, 300);
+  window.stkAcomodar = acomodar;
+})();
 
 armarFiltros();
 armarPeriodo();
