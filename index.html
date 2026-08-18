@@ -140,6 +140,12 @@ section.plegada > *:not(.shead){display:none}
 }
 .formula b{color:var(--ink)}
 .formula .aviso{color:#8A3524}
+.nota-cat{
+  margin:0 0 12px; padding:10px 13px; background:#FBF6E4; border-left:3px solid var(--NC);
+  font-size:12.5px; color:var(--ink2); line-height:1.55;
+}
+.nota-cat b{color:var(--ink)}
+.nota-cat.gris{background:#F1F3F3; border-left-color:var(--SC)}
 
 /* ---------- panel torta principal ---------- */
 .hero{display:grid; grid-template-columns:minmax(300px,1fr) 1.15fr; gap:10px}
@@ -373,6 +379,7 @@ td.dim{opacity:.32}
           <span class="count" id="q-art-n"></span>
           <button class="clear" id="art-csv">descargar lista</button>
         </div>
+        <p class="nota-cat" id="aviso-cat" hidden></p>
         <div class="scroll"><table id="tbl-art">
           <thead><tr>
             <th class="ord l" data-k="0">Referencia</th>
@@ -947,6 +954,8 @@ function tablaArticulos(){
   document.getElementById("nota-art").textContent = hayFiltro()
     ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
     : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
+  pintarAvisoCategoria(filas);
+
   document.getElementById("q-art-n").textContent =
     filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
 
@@ -980,6 +989,56 @@ function tablaArticulos(){
   (filas.length > top.length
     ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
     : "");
+}
+
+/**
+ * Explica por qué los artículos de la lista están en la categoría filtrada.
+ * "Sin categorizar" es lo que más se malinterpreta: no significa que falte
+ * un dato del producto, sino que el ciclo semestral no le asignó A, B o C.
+ */
+function pintarAvisoCategoria(filas){
+  var caja = document.getElementById("aviso-cat");
+  var textos = {
+    NC: '<b>Sin categorizar</b> quiere decir que el producto todavía no tiene ' +
+        'asignada una categoría A, B o C en Odoo. No es un dato que falte del artículo: ' +
+        'es que el ciclo semestral del MP-MIS-01 no lo alcanzó, sea porque entró después ' +
+        'de la última matriz o porque quedó fuera de ella. La columna <b>Cat.</b> ' +
+        'es la clasificación ABC y no tiene relación con el calibre.',
+    ARM: '<b>ARM</b> son armas de fuego. Por regla del negocio no llevan clasificación ' +
+         'A, B o C: quedan fuera del alcance del ABC y por eso no aparecen en la cobertura ' +
+         'de la matriz.',
+    MUN: '<b>MUN</b> son municiones. Igual que las armas, no llevan clasificación A, B o C ' +
+         'por regla del negocio.',
+    CARG: '<b>CARG</b> son cargadores. Se reconocen por el nombre del producto, porque en ' +
+          'Odoo están dentro de Accesorio de arma. Tampoco llevan clasificación ABC.',
+    C: '<b>Categoría C</b> es la mercadería marcada para liquidar según la matriz vigente. ' +
+       'Es capital inmovilizado que el MP-MIS-01 pide liberar.',
+    A: '<b>Categoría A</b> son los productos de mayor rotación según la matriz vigente.',
+    B: '<b>Categoría B</b> son los productos de rotación intermedia según la matriz vigente.',
+  };
+
+  if (f.cat === "*" || !textos[f.cat]) { caja.hidden = true; return; }
+
+  var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
+  var extra = "";
+
+  /* Con muchos artículos de una sola marca, casi siempre es una línea entera
+     que quedó fuera del ciclo, y eso conviene decirlo. */
+  if (f.cat === "NC" && filas.length > 5) {
+    var porMarca = {};
+    filas.forEach(function(a){ porMarca[a[A_MAR]] = (porMarca[a[A_MAR]]||0) + a[A_VAL]; });
+    var top = Object.keys(porMarca).sort(function(a,b){ return porMarca[b]-porMarca[a]; })[0];
+    if (top && porMarca[top] / total > 0.5) {
+      extra = ' En esta selección, más de la mitad del monto es de <b>' + esc(top) +
+              '</b>: probablemente sea una línea completa que quedó fuera del ciclo, ' +
+              'y no productos sueltos.';
+    }
+  }
+
+  caja.hidden = false;
+  caja.className = (f.cat === "ARM" || f.cat === "MUN" || f.cat === "CARG")
+    ? "nota-cat gris" : "nota-cat";
+  caja.innerHTML = textos[f.cat] + extra;
 }
 
 function tablaCalibres(T){
@@ -1093,6 +1152,8 @@ function tablaArticulos(){
   document.getElementById("nota-art").textContent = hayFiltro()
     ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
     : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
+  pintarAvisoCategoria(filas);
+
   document.getElementById("q-art-n").textContent =
     filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
 
