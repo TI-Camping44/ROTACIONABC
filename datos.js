@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 18/08/2026 16:39.
+/* Generado desde la planilla el 18/08/2026 16:47.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -46,7 +46,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "18/08/2026 16:39",
+  "GENERADO": "18/08/2026 16:47",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [
@@ -4695,7 +4695,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 1.4
+      "v": 0.2
     },
     {
       "m": "Smith & Wesson",
@@ -19589,17 +19589,6 @@ var DATOS = {
       "C",
       "Sin calibre",
       9,
-      1.2
-    ],
-    [
-      "993000",
-      "Servicio Premium",
-      "Sin Marca",
-      "No reglamentado",
-      "Showroom",
-      "NC",
-      "Sin calibre",
-      6,
       1.2
     ],
     [
@@ -55577,24 +55566,24 @@ var DATOS = {
       197.9
     ],
     "Sin Marca": [
-      3646.5,
-      3647.8,
-      3665.1,
-      3661.5,
-      3651.7,
-      3605.1,
-      585.5,
-      584.2,
-      583.5,
-      572.7,
-      566.9,
-      565.9,
-      564.6,
-      563.8,
-      562.9,
-      557.1,
-      554.4,
-      555.1
+      3645.3,
+      3646.6,
+      3663.9,
+      3660.3,
+      3650.5,
+      3604,
+      584.3,
+      583,
+      582.3,
+      571.5,
+      565.8,
+      564.7,
+      563.4,
+      562.6,
+      561.7,
+      555.9,
+      553.2,
+      553.9
     ],
     "Smith & Wesson": [
       18.9,
