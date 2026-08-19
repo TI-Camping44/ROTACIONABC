@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 19/08/2026 06:13.
+/* Generado desde la planilla el 19/08/2026 09:51.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -46,7 +46,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "19/08/2026 06:13",
+  "GENERADO": "19/08/2026 09:49",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [
@@ -239,7 +239,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "4.5mm",
-      "v": 342.4
+      "v": 339.3
     },
     {
       "m": "ASG",
@@ -311,7 +311,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "4.5mm",
-      "v": 8.5
+      "v": 8.3
     },
     {
       "m": "ASG",
@@ -511,7 +511,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "4.5mm",
-      "v": 75
+      "v": 74.8
     },
     {
       "m": "Apolo",
@@ -519,7 +519,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "5.5mm",
-      "v": 276
+      "v": 275.6
     },
     {
       "m": "Apolo",
@@ -543,7 +543,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "4.5mm",
-      "v": 61.6
+      "v": 61.5
     },
     {
       "m": "Apolo",
@@ -1079,7 +1079,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "ARM",
       "cal": "9mm",
-      "v": 909.3
+      "v": 917.4
     },
     {
       "m": "Beretta",
@@ -1703,7 +1703,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 964.9
+      "v": 964.8
     },
     {
       "m": "Doberman BOTAS",
@@ -1711,7 +1711,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 4.4
+      "v": 4.8
     },
     {
       "m": "Doberman LINTERNAS",
@@ -1847,7 +1847,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 28.1
+      "v": 27.5
     },
     {
       "m": "Doberman",
@@ -3295,7 +3295,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
-      "v": 365.9
+      "v": 365
     },
     {
       "m": "NTK",
@@ -4807,7 +4807,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "5.5mm",
-      "v": 1062
+      "v": 1053.9
     },
     {
       "m": "TSS",
@@ -4831,7 +4831,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "4.5mm",
-      "v": 17.6
+      "v": 17.2
     },
     {
       "m": "TSS",
@@ -4847,7 +4847,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "cal 50",
-      "v": 114.8
+      "v": 114.2
     },
     {
       "m": "TSS",
@@ -5359,7 +5359,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "9mm",
-      "v": 221.1
+      "v": 220.9
     },
     {
       "m": "Umarex",
@@ -5367,7 +5367,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 190
+      "v": 189.8
     },
     {
       "m": "Umarex",
@@ -5399,7 +5399,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "4.5mm",
-      "v": 78.9
+      "v": 78.2
     },
     {
       "m": "Umarex",
@@ -5487,7 +5487,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "4.5mm",
-      "v": 144.8
+      "v": 144.5
     },
     {
       "m": "Umarex",
@@ -5495,7 +5495,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "5.5mm",
-      "v": 49.7
+      "v": 48.2
     },
     {
       "m": "Umarex",
@@ -5503,7 +5503,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "NC",
       "cal": "Sin calibre",
-      "v": 27.4
+      "v": 27.3
     },
     {
       "m": "Umarex",
@@ -5831,7 +5831,7 @@ var DATOS = {
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 171.5
+      "v": 170.6
     },
     {
       "m": "Vector Optics",
@@ -5879,7 +5879,7 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "A",
       "cal": "Sin calibre",
-      "v": 17.7
+      "v": 18.5
     },
     {
       "m": "Vector Optics",
@@ -6124,8 +6124,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      2125,
-      409.6
+      2095,
+      403.8
     ],
     [
       "700312",
@@ -6234,8 +6234,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      1245,
-      265.9
+      1242,
+      265.2
     ],
     [
       "700990",
@@ -6322,8 +6322,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      40641,
-      167
+      40611,
+      166.9
     ],
     [
       "261411",
@@ -6454,8 +6454,8 @@ var DATOS = {
       "Central",
       "C",
       "cal 50",
-      398,
-      114.8
+      396,
+      114.2
     ],
     [
       "600810",
@@ -6586,8 +6586,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      417,
-      93.8
+      416,
+      93.6
     ],
     [
       "400263",
@@ -6597,8 +6597,8 @@ var DATOS = {
       "Central",
       "A",
       "9mm",
-      51778,
-      92.6
+      51680,
+      92.4
     ],
     [
       "324005",
@@ -6623,17 +6623,6 @@ var DATOS = {
       87.2
     ],
     [
-      "320077",
-      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
-      "TSS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      399,
-      85.5
-    ],
-    [
       "4501157",
       "Cargador DERYA para Modelos MK 21 tiros",
       "Derya",
@@ -6654,6 +6643,17 @@ var DATOS = {
       "Sin calibre",
       14,
       85.1
+    ],
+    [
+      "320077",
+      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
+      "TSS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      392,
+      84
     ],
     [
       "700970",
@@ -6678,17 +6678,6 @@ var DATOS = {
       77.7
     ],
     [
-      "400299",
-      "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "4.5mm",
-      4228,
-      75
-    ],
-    [
       "501591",
       "Cartuchos SAGA 36-65 #5 11gr T1",
       "Saga",
@@ -6698,6 +6687,17 @@ var DATOS = {
       "36GA",
       19125,
       75
+    ],
+    [
+      "400299",
+      "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "4.5mm",
+      4217,
+      74.8
     ],
     [
       "260243",
@@ -6887,17 +6887,6 @@ var DATOS = {
       57.8
     ],
     [
-      "320019",
-      "Pistola AC CO2 ASG 4,5mm Mod. Bersa BP9CC NonBlow #17300",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "B",
-      "4.5mm",
-      164,
-      57
-    ],
-    [
       "700184",
       "Escopeta Safir 36 T14 SemiAuto Pav 2C 10T/5T Compact",
       "Safir",
@@ -6907,6 +6896,17 @@ var DATOS = {
       "36GA",
       14,
       56.3
+    ],
+    [
+      "320019",
+      "Pistola AC CO2 ASG 4,5mm Mod. Bersa BP9CC NonBlow #17300",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "B",
+      "4.5mm",
+      161,
+      56
     ],
     [
       "320775",
@@ -6986,17 +6986,6 @@ var DATOS = {
       50
     ],
     [
-      "322211",
-      "Rifle PCP UMAREX 5,5mm Mod. ICONIX Multishot 40 Joules #2.4325",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
-      "5.5mm",
-      65,
-      49.7
-    ],
-    [
       "600849",
       "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
       "Beretta",
@@ -7017,6 +7006,17 @@ var DATOS = {
       "9mm",
       11,
       49
+    ],
+    [
+      "322211",
+      "Rifle PCP UMAREX 5,5mm Mod. ICONIX Multishot 40 Joules #2.4325",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "5.5mm",
+      63,
+      48.2
     ],
     [
       "320091",
@@ -7048,8 +7048,8 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      490,
-      47.7
+      489,
+      47.6
     ],
     [
       "DES322210",
@@ -7294,17 +7294,6 @@ var DATOS = {
       37
     ],
     [
-      "320461",
-      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "B",
-      "4.5mm",
-      171,
-      36.9
-    ],
-    [
       "680652",
       "Reflector DOBERMAN Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
       "Doberman LINTERNAS",
@@ -7336,6 +7325,17 @@ var DATOS = {
       "4.5mm",
       49,
       36.3
+    ],
+    [
+      "320461",
+      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "B",
+      "4.5mm",
+      168,
+      36.2
     ],
     [
       "320780",
@@ -7415,6 +7415,17 @@ var DATOS = {
       34.6
     ],
     [
+      "681104",
+      "Linterna NITECORE Mod. SRT7GT 1000Lm Multicolor",
+      "Nitecore",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      79,
+      34.4
+    ],
+    [
       "501048",
       "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
       "Saga",
@@ -7424,17 +7435,6 @@ var DATOS = {
       "12GA",
       10796,
       34.3
-    ],
-    [
-      "681104",
-      "Linterna NITECORE Mod. SRT7GT 1000Lm Multicolor",
-      "Nitecore",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      78,
-      34
     ],
     [
       "505462",
@@ -7734,17 +7734,6 @@ var DATOS = {
       27.7
     ],
     [
-      "940168",
-      "Inflador para PCP DOBERMAN",
-      "Doberman",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      94,
-      27.6
-    ],
-    [
       "700942",
       "Escopeta BOITO cal 12 Mod. MIURA I Estandar 28'' #196",
       "Boito",
@@ -7822,6 +7811,17 @@ var DATOS = {
       27
     ],
     [
+      "940168",
+      "Inflador para PCP DOBERMAN",
+      "Doberman",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      92,
+      27
+    ],
+    [
       "260053",
       "Binocular KONUS Mod. SPY19 HD 1,5x-12x 400mts #7940",
       "Konus",
@@ -7833,17 +7833,6 @@ var DATOS = {
       26.8
     ],
     [
-      "942192",
-      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 40",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      118,
-      26.8
-    ],
-    [
       "272063",
       "Correa Fab Defense Elastica Mod. One Point Bungee",
       "Fab Defense",
@@ -7852,17 +7841,6 @@ var DATOS = {
       "C",
       "Sin calibre",
       339,
-      26.7
-    ],
-    [
-      "260570",
-      "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
-      "Vector Optics",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      31,
       26.7
     ],
     [
@@ -7890,6 +7868,17 @@ var DATOS = {
     [
       "942195",
       "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 43",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      117,
+      26.5
+    ],
+    [
+      "942192",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 40",
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
@@ -7965,6 +7954,17 @@ var DATOS = {
       26
     ],
     [
+      "260570",
+      "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
+      "Vector Optics",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      30,
+      25.8
+    ],
+    [
       "400212",
       "Balines APOLO 4,5mm Cónico 0,45gr. Carton*200 x150/250",
       "Apolo",
@@ -7972,8 +7972,8 @@ var DATOS = {
       "Central",
       "C",
       "4.5mm",
-      9249,
-      25.9
+      9225,
+      25.8
     ],
     [
       "DES750315",
@@ -8049,19 +8049,8 @@ var DATOS = {
       "Central",
       "NC",
       "5.5mm",
-      1358,
+      1355,
       24.7
-    ],
-    [
-      "942203",
-      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      115,
-      24.6
     ],
     [
       "942204",
@@ -8117,6 +8106,17 @@ var DATOS = {
       "Sin calibre",
       108,
       24.5
+    ],
+    [
+      "942203",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      114,
+      24.4
     ],
     [
       "942174",
@@ -8181,8 +8181,8 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      107,
-      23.7
+      108,
+      23.9
     ],
     [
       "400296",
@@ -8225,8 +8225,8 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      200,
-      23.1
+      199,
+      23
     ],
     [
       "322061",
@@ -8317,17 +8317,6 @@ var DATOS = {
       22.3
     ],
     [
-      "322000",
-      "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
-      "4.5mm",
-      138,
-      22.2
-    ],
-    [
       "600617",
       "Pistola Tanfoglio 40SW Force DA/SA Azul 2C 12T",
       "Tanfoglio",
@@ -8337,6 +8326,17 @@ var DATOS = {
       ".40",
       5,
       22
+    ],
+    [
+      "322000",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "4.5mm",
+      136,
+      21.9
     ],
     [
       "400389",
@@ -8460,17 +8460,6 @@ var DATOS = {
       21.1
     ],
     [
-      "400384",
-      "Balines APOLO 5,5mm Mod. Jumbo 1.4gr 250x30 #E19921",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      1033,
-      21.1
-    ],
-    [
       "942185",
       "Bota DOBERMAN Mod. COMBAT READY Dessert 43",
       "Doberman BOTAS",
@@ -8490,6 +8479,17 @@ var DATOS = {
       "A",
       "Sin calibre",
       83,
+      21
+    ],
+    [
+      "400384",
+      "Balines APOLO 5,5mm Mod. Jumbo 1.4gr 250x30 #E19921",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      1028,
       21
     ],
     [
@@ -9021,17 +9021,6 @@ var DATOS = {
       17.6
     ],
     [
-      "320016",
-      "Pistola AC TSS 4.5mm M:S2 *20",
-      "TSS",
-      "No reglamentado",
-      "Central",
-      "C",
-      "4.5mm",
-      210,
-      17.6
-    ],
-    [
       "942157",
       "Bota DOBERMAN Mod. COMBAT READY Negro 44",
       "Doberman BOTAS",
@@ -9095,6 +9084,17 @@ var DATOS = {
       "C",
       "Sin calibre",
       112,
+      17.2
+    ],
+    [
+      "320016",
+      "Pistola AC TSS 4.5mm M:S2 *20",
+      "TSS",
+      "No reglamentado",
+      "Central",
+      "C",
+      "4.5mm",
+      205,
       17.2
     ],
     [
@@ -9285,17 +9285,6 @@ var DATOS = {
       16
     ],
     [
-      "322097",
-      "Pistola AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M&P9L Performance #5.8404",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "B",
-      "4.5mm",
-      23,
-      15.8
-    ],
-    [
       "942177",
       "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
       "Doberman BOTAS",
@@ -9349,6 +9338,17 @@ var DATOS = {
       "Sin calibre",
       4599,
       15.3
+    ],
+    [
+      "322097",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M&P9L Performance #5.8404",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "B",
+      "4.5mm",
+      22,
+      15.1
     ],
     [
       "151425",
@@ -9472,17 +9472,6 @@ var DATOS = {
       14.3
     ],
     [
-      "400202",
-      "Gas CO2 UMAREX 12G #4.1685",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      8866,
-      14.3
-    ],
-    [
       "700992",
       "Rifle marca TINCK cal 223REM Mod. PERUN X16 14,5 '' 1 carg 30 tiros",
       "Tinck",
@@ -9513,6 +9502,17 @@ var DATOS = {
       "B",
       "Sin calibre",
       48,
+      14.1
+    ],
+    [
+      "400202",
+      "Gas CO2 UMAREX 12G #4.1685",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      8739,
       14.1
     ],
     [
@@ -9956,17 +9956,6 @@ var DATOS = {
       11.8
     ],
     [
-      "400310",
-      "Balines de Practica UMAREX cal 50 Bolsa de 100 #2.4502",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
-      "cal 50",
-      572,
-      11.7
-    ],
-    [
       "270457",
       "Cargador Fab Defense 223REM/5.56NATO p/ M:M16/M4/AR15 30T Verde #ULTIMAG30",
       "Fab Defense",
@@ -9975,6 +9964,17 @@ var DATOS = {
       "CARG",
       "223REM",
       114,
+      11.6
+    ],
+    [
+      "400310",
+      "Balines de Practica UMAREX cal 50 Bolsa de 100 #2.4502",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "cal 50",
+      570,
       11.6
     ],
     [
@@ -10074,17 +10074,6 @@ var DATOS = {
       "B",
       "Sin calibre",
       156,
-      11.1
-    ],
-    [
-      "320462",
-      "Pistola AC CO2 ASG cal 4,5mm Mod. STEYR M9A1 #16088",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "B",
-      "4.5mm",
-      46,
       11.1
     ],
     [
@@ -10319,17 +10308,6 @@ var DATOS = {
       10.2
     ],
     [
-      "681112",
-      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
-      "Nitecore",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      57,
-      10.2
-    ],
-    [
       "400231",
       "Balines APOLO 5,5mm Mod. MONSTER 1,65gr 200 x 30 #E19931",
       "Apolo",
@@ -10440,6 +10418,17 @@ var DATOS = {
       9.9
     ],
     [
+      "681112",
+      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
+      "Nitecore",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      55,
+      9.9
+    ],
+    [
       "942169",
       "Bota DOBERMAN Mod. COMBAT READY Negro 45",
       "Doberman BOTAS",
@@ -10493,6 +10482,17 @@ var DATOS = {
       "9mm",
       2976,
       9.7
+    ],
+    [
+      "320462",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. STEYR M9A1 #16088",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "B",
+      "4.5mm",
+      40,
+      9.6
     ],
     [
       "942182",
@@ -10914,6 +10914,17 @@ var DATOS = {
     ],
     [
       "600849CARU",
+      "Pistola Beretta I Cal .9mm I Negra I Mod. APX A1 I 2 C. I 17 T.",
+      "Beretta",
+      "Armas",
+      "Central",
+      "ARM",
+      "9mm",
+      1,
+      8.1
+    ],
+    [
+      "600850CARU",
       "Pistola Beretta I Cal .9mm I Negra I Mod. APX A1 I 2 C. I 17 T.",
       "Beretta",
       "Armas",
@@ -11936,17 +11947,6 @@ var DATOS = {
       5.8
     ],
     [
-      "400379",
-      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      497,
-      5.8
-    ],
-    [
       "942165",
       "Bota DOBERMAN Mod. COMBAT READY Dessert 6''",
       "Doberman BOTAS",
@@ -12046,17 +12046,6 @@ var DATOS = {
       5.7
     ],
     [
-      "DES750302",
-      "Carpa NTK Mod. PANDA 4 personas #155152",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      40,
-      5.6
-    ],
-    [
       "151410",
       "Navaja UMAREX Mod. Walther TFW4 #5.0835",
       "Umarex",
@@ -12109,6 +12098,17 @@ var DATOS = {
       "A",
       "Sin calibre",
       40,
+      5.6
+    ],
+    [
+      "400379",
+      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      482,
       5.6
     ],
     [
@@ -12285,6 +12285,17 @@ var DATOS = {
       "B",
       "Sin calibre",
       49,
+      5.4
+    ],
+    [
+      "DES750302",
+      "Carpa NTK Mod. PANDA 4 personas #155152",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      38,
       5.4
     ],
     [
@@ -12519,17 +12530,6 @@ var DATOS = {
       5
     ],
     [
-      "160190",
-      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "NC",
-      "Sin calibre",
-      306,
-      5
-    ],
-    [
       "701491",
       "Escopeta Palanca DERYA cal 36/410 Mod. MD100 5+1 t 20´´",
       "Derya",
@@ -12560,6 +12560,17 @@ var DATOS = {
       "C",
       "Sin calibre",
       1386,
+      4.9
+    ],
+    [
+      "160190",
+      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "NC",
+      "Sin calibre",
+      304,
       4.9
     ],
     [
@@ -21352,17 +21363,6 @@ var DATOS = {
       0.9
     ],
     [
-      "DES650225",
-      "Bolsa de dormir NTK Mod. BUGGY 200g #230120",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      13,
-      0.9
-    ],
-    [
       "DES920155",
       "Inflador PCP CROSMAN Mod. Benjamin de 3-500 #HPP2KU",
       "Crosman",
@@ -21897,6 +21897,17 @@ var DATOS = {
       "No reglamentado",
       "Showroom",
       "B",
+      "Sin calibre",
+      1,
+      0.9
+    ],
+    [
+      "260570",
+      "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
+      "Vector Optics",
+      "No reglamentado",
+      "Showroom",
+      "A",
       "Sin calibre",
       1,
       0.9
@@ -23761,17 +23772,6 @@ var DATOS = {
       0.7
     ],
     [
-      "751003",
-      "Set de varillas para carpas NTK PANDA 3 #654520",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      33,
-      0.7
-    ],
-    [
       "DES750335",
       "Carpa NTK Mod. FOX 4/5 personas #155340",
       "NTK",
@@ -24421,6 +24421,17 @@ var DATOS = {
       0.7
     ],
     [
+      "751003",
+      "Set de varillas para carpas NTK PANDA 3 #654520",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      31,
+      0.7
+    ],
+    [
       "920105",
       "Exibidor para caña de pescar",
       "Sin Marca",
@@ -24440,17 +24451,6 @@ var DATOS = {
       "C",
       "Sin calibre",
       29,
-      0.6
-    ],
-    [
-      "320461",
-      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
-      "ASG",
-      "No reglamentado",
-      "Showroom",
-      "B",
-      "4.5mm",
-      3,
       0.6
     ],
     [
@@ -24517,6 +24517,17 @@ var DATOS = {
       "C",
       "Sin calibre",
       2,
+      0.6
+    ],
+    [
+      "DES650225",
+      "Bolsa de dormir NTK Mod. BUGGY 200g #230120",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      9,
       0.6
     ],
     [
@@ -27245,6 +27256,17 @@ var DATOS = {
       "A",
       "Sin calibre",
       1,
+      0.4
+    ],
+    [
+      "320461",
+      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
+      "ASG",
+      "No reglamentado",
+      "Showroom",
+      "B",
+      "4.5mm",
+      2,
       0.4
     ],
     [
@@ -32286,6 +32308,17 @@ var DATOS = {
       0.2
     ],
     [
+      "942192",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 40",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Showroom",
+      "A",
+      "Sin calibre",
+      1,
+      0.2
+    ],
+    [
       "723015",
       "Camisa Cardume Siena Masc Verde Agua G2 #93200-4",
       "Sin Marca",
@@ -32451,6 +32484,17 @@ var DATOS = {
       0.2
     ],
     [
+      "942183",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Showroom",
+      "A",
+      "Sin calibre",
+      1,
+      0.2
+    ],
+    [
       "4500130",
       "Cargador Ruger 9MM LC9 7T #90363",
       "Ruger",
@@ -32491,17 +32535,6 @@ var DATOS = {
       "Showroom",
       "CARG",
       "45ACP",
-      1,
-      0.2
-    ],
-    [
-      "942183",
-      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Showroom",
-      "A",
-      "Sin calibre",
       1,
       0.2
     ],
@@ -32745,6 +32778,17 @@ var DATOS = {
       "C",
       "Sin calibre",
       9,
+      0.2
+    ],
+    [
+      "942203",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Showroom",
+      "A",
+      "Sin calibre",
+      1,
       0.2
     ],
     [
@@ -33042,17 +33086,6 @@ var DATOS = {
       "C",
       "Sin calibre",
       1,
-      0.2
-    ],
-    [
-      "751005",
-      "Set de varillas para carpas NTK Falcon 2 #654600",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      10,
       0.2
     ],
     [
@@ -34835,6 +34868,17 @@ var DATOS = {
       "C",
       "Sin calibre",
       1,
+      0.2
+    ],
+    [
+      "751005",
+      "Set de varillas para carpas NTK Falcon 2 #654600",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      8,
       0.2
     ],
     [
@@ -52500,7 +52544,7 @@ var DATOS = {
       "Central",
       "B",
       "Sin calibre",
-      74,
+      73,
       0
     ],
     [
@@ -53292,7 +53336,7 @@ var DATOS = {
       536.4,
       511.3,
       890.7,
-      842.8
+      839.5
     ],
     "ATA": [
       3.4,
@@ -53375,15 +53419,15 @@ var DATOS = {
       27.8
     ],
     "Akkar": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      136,
-      113,
-      97.7,
-      97.7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      135.8,
+      112.8,
+      97.5,
+      97.5,
       74.5,
       74.5,
       74.5,
@@ -53472,7 +53516,7 @@ var DATOS = {
       607.5,
       589.3,
       561.3,
-      540.7
+      540
     ],
     "Armadillo": [
       0,
@@ -53495,15 +53539,15 @@ var DATOS = {
       6.1
     ],
     "Armed": [
+      139.5,
+      140.1,
       137.3,
-      137.9,
-      135.2,
-      127.7,
-      125.1,
-      116.2,
-      109.6,
-      114,
-      119.6,
+      129.8,
+      127.3,
+      118.4,
+      111.8,
+      116.1,
+      121.7,
       127.4,
       127.4,
       126.8,
@@ -53595,15 +53639,15 @@ var DATOS = {
       16.4
     ],
     "BWC": [
-      199.8,
-      197.4,
-      189.4,
-      176.8,
-      169.4,
-      176.1,
-      169.9,
-      167.4,
-      163.2,
+      199.4,
+      197,
+      189,
+      176.4,
+      169,
+      175.7,
+      169.5,
+      167,
+      162.8,
       158.1,
       153.8,
       151.9,
@@ -53652,7 +53696,7 @@ var DATOS = {
       1119.9,
       1077.3,
       1027.2,
-      1035.9
+      1044
     ],
     "Beretta Mod": [
       81.9,
@@ -53715,15 +53759,15 @@ var DATOS = {
       0.7
     ],
     "Boito": [
-      179.2,
-      173,
-      166.1,
-      156.7,
-      147.5,
-      150.1,
-      147.8,
-      144.6,
-      138.9,
+      177.9,
+      171.7,
+      164.8,
+      155.4,
+      146.2,
+      148.9,
+      146.5,
+      143.4,
+      137.6,
       134.6,
       134.6,
       135.9,
@@ -53755,15 +53799,15 @@ var DATOS = {
       0.2
     ],
     "CYA Supply Co.": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0.4,
       0.4,
       0.4,
@@ -54015,15 +54059,15 @@ var DATOS = {
       0.2
     ],
     "Derya": [
-      1158.1,
-      1153.4,
-      1070,
-      995.2,
-      975.8,
-      870.6,
-      834.6,
-      832.7,
-      830.4,
+      1164.1,
+      1159.4,
+      1076.1,
+      1001.2,
+      981.8,
+      876.7,
+      840.6,
+      838.7,
+      836.4,
       824.8,
       827.5,
       827.5,
@@ -54052,7 +54096,7 @@ var DATOS = {
       273.2,
       224,
       189.8,
-      179.1
+      178.5
     ],
     "Doberman BALINES": [
       0,
@@ -54072,7 +54116,7 @@ var DATOS = {
       287.6,
       263.7,
       239.9,
-      233
+      232.9
     ],
     "Doberman BOTAS": [
       0,
@@ -54092,7 +54136,7 @@ var DATOS = {
       166.4,
       161.3,
       154.8,
-      969.3
+      969.6
     ],
     "Doberman LINTERNAS": [
       108.4,
@@ -54275,15 +54319,15 @@ var DATOS = {
       7.6
     ],
     "Fab Defense": [
-      60.9,
-      56.7,
-      8,
+      60.6,
+      56.4,
+      7.7,
       0,
       0,
-      300.9,
-      291.6,
-      290,
-      285.5,
+      300.6,
+      291.3,
+      289.7,
+      285.2,
       283.5,
       279.5,
       280.4,
@@ -54375,15 +54419,15 @@ var DATOS = {
       0.2
     ],
     "Fobus": [
-      19.8,
-      19.6,
-      71.1,
-      66.8,
-      83.6,
-      120.8,
-      100.7,
-      96.6,
-      82.6,
+      19.2,
+      19,
+      70.5,
+      66.2,
+      83,
+      120.2,
+      100.1,
+      96.1,
+      82,
       80.2,
       77.5,
       76.2,
@@ -54495,15 +54539,15 @@ var DATOS = {
       255.4
     ],
     "Glock": [
-      318.3,
-      325.5,
-      307.9,
-      274.6,
-      236.9,
-      201.1,
-      202.3,
-      202.1,
-      201.4,
+      236.7,
+      243.9,
+      226.3,
+      193,
+      155.3,
+      119.5,
+      120.7,
+      120.5,
+      119.8,
       255.6,
       255.5,
       255.5,
@@ -54715,15 +54759,15 @@ var DATOS = {
       20.8
     ],
     "Indunaylon": [
-      4.8,
-      4.8,
-      4.8,
-      10.1,
-      9.8,
-      9.7,
-      9.6,
-      9.6,
-      9.5,
+      0,
+      0,
+      0,
+      1,
+      0.8,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
       4.8,
       4.7,
       4.7,
@@ -54799,11 +54843,11 @@ var DATOS = {
       0,
       0,
       0,
-      491.4,
-      484.2,
-      469.2,
-      458.1,
-      453.6,
+      490.8,
+      483.5,
+      468.6,
+      457.5,
+      453,
       435.1,
       671.9,
       670.1,
@@ -54915,15 +54959,15 @@ var DATOS = {
       12
     ],
     "Marlin": [
-      11.2,
-      11.2,
-      11.2,
-      10.8,
-      10.8,
-      3.8,
-      3.8,
-      3.8,
-      3.8,
+      11.4,
+      11.4,
+      11.4,
+      11,
+      11,
+      3.9,
+      3.9,
+      3.9,
+      3.9,
       3.9,
       3.8,
       3.8,
@@ -54941,8 +54985,8 @@ var DATOS = {
       4.9,
       4.9,
       5.3,
-      3.1,
-      3.1,
+      3.2,
+      3.2,
       2.6,
       2.6,
       2.3,
@@ -54955,15 +54999,15 @@ var DATOS = {
       2.3
     ],
     "Mendoza": [
-      1339.7,
-      1338,
-      1334.6,
-      1319.2,
-      1233.8,
-      1214.4,
-      1197.2,
-      1178.7,
-      1165.4,
+      1340.7,
+      1339,
+      1335.6,
+      1320.2,
+      1234.8,
+      1215.4,
+      1198.2,
+      1179.7,
+      1166.4,
       1159.7,
       1164.9,
       1166.7,
@@ -55052,18 +55096,18 @@ var DATOS = {
       416.4,
       412.2,
       391.5,
-      384.9
+      384
     ],
     "Nitecore": [
-      331.6,
-      339.4,
-      296.7,
-      267.9,
-      247.8,
-      210.5,
-      199.4,
-      363.6,
-      348,
+      328.7,
+      336.4,
+      293.8,
+      265,
+      244.8,
+      207.6,
+      196.4,
+      360.7,
+      345.1,
       346.5,
       343.8,
       331,
@@ -55072,7 +55116,7 @@ var DATOS = {
       301.6,
       298.5,
       203.8,
-      163.3
+      163.4
     ],
     "Norinco": [
       6.6,
@@ -55095,15 +55139,15 @@ var DATOS = {
       3.3
     ],
     "Olight": [
-      11.6,
-      11.6,
-      11.6,
-      11.6,
-      11.6,
-      10.6,
-      10.6,
-      10.6,
-      7.1,
+      7.7,
+      7.7,
+      7.7,
+      7.7,
+      7.7,
+      6.6,
+      6.6,
+      6.6,
+      3.2,
       4.1,
       4.1,
       4.1,
@@ -55295,15 +55339,15 @@ var DATOS = {
       0
     ],
     "Rexio": [
-      10.1,
-      10.1,
-      8.9,
-      8.9,
-      9.5,
-      10,
-      10,
-      10,
-      10,
+      9.8,
+      9.8,
+      8.6,
+      8.6,
+      9.2,
+      9.7,
+      9.7,
+      9.7,
+      9.7,
       8.5,
       8.5,
       8.5,
@@ -55555,15 +55599,15 @@ var DATOS = {
       197.9
     ],
     "Sin Marca": [
-      3670.3,
-      3671.7,
-      3689,
-      3685.4,
-      3675.6,
-      3629,
-      609.4,
-      608,
-      607.3,
+      3556.1,
+      3557.5,
+      3574.8,
+      3571.1,
+      3561.3,
+      3514.8,
+      495.1,
+      493.8,
+      493.1,
       571.5,
       565.8,
       564.7,
@@ -55575,15 +55619,15 @@ var DATOS = {
       553.9
     ],
     "Smith & Wesson": [
-      18.9,
-      18.9,
-      18.9,
-      18.9,
-      18.9,
-      18.9,
-      4.9,
-      4.9,
-      4.9,
+      17.9,
+      17.9,
+      17.9,
+      17.9,
+      17.9,
+      17.9,
+      3.9,
+      3.9,
+      3.9,
       4.9,
       4.9,
       4.9,
@@ -55672,18 +55716,18 @@ var DATOS = {
       1935.6,
       1792.8,
       1424.2,
-      1332.4
+      1323.3
     ],
     "Tanfoglio": [
-      1251.9,
-      1251.6,
-      1161.2,
-      1107.5,
-      1023.9,
-      1013.9,
-      979.4,
-      908.1,
-      825.7,
+      1249.3,
+      1248.9,
+      1158.5,
+      1104.9,
+      1021.3,
+      1011.3,
+      976.7,
+      905.4,
+      823,
       784.8,
       803.7,
       811.9,
@@ -55835,15 +55879,15 @@ var DATOS = {
       7.7
     ],
     "Umarex": [
-      2082.5,
-      1979.3,
-      1387.5,
-      1305.4,
-      1505.7,
-      1461.6,
-      1337.5,
-      1241.2,
-      2809.8,
+      2060.5,
+      1957.3,
+      1365.4,
+      1283.3,
+      1483.6,
+      1439.6,
+      1315.5,
+      1219.1,
+      2787.8,
       2686.1,
       2572.1,
       2490.9,
@@ -55852,18 +55896,18 @@ var DATOS = {
       3585.1,
       3435.1,
       3262,
-      3094.6
+      3091.6
     ],
     "Uzkon": [
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
       2.4,
       2.4,
       2.4,
@@ -55917,10 +55961,10 @@ var DATOS = {
     "Vector Optics": [
       0,
       0,
-      247.1,
-      215.7,
-      198.1,
-      29.8,
+      114.6,
+      83.2,
+      65.7,
+      0,
       0,
       0,
       0,
@@ -55996,23 +56040,23 @@ var DATOS = {
     ]
   },
   "CMV6": {
-    "NTK": 67.7,
-    "ASG": 337.4,
-    "Umarex": 1355.8,
-    "Doberman": 167.8,
+    "NTK": 68.5,
+    "ASG": 340.7,
+    "Umarex": 1359.6,
+    "Doberman": 168.4,
     "Snake": 13.5,
     "Sin Marca": 8.3,
     "Armadillo": 12.7,
     "Crosman": 80,
-    "Doberman BALINES": 129.7,
+    "Doberman BALINES": 129.8,
     "BWC": 33.4,
-    "TSS": 1593.9,
-    "Nitecore": 121,
-    "Apolo": 152.7,
+    "TSS": 1603.1,
+    "Nitecore": 121.4,
+    "Apolo": 153.4,
     "Sumax": 3.9,
     "Mustad": 0.1,
     "Doberman MOCHILAS": 129.9,
-    "Doberman BOTAS": 341.7,
+    "Doberman BOTAS": 342,
     "Vector Optics": 136.2,
     "Doberman LINTERNAS": 38.4,
     "Coleman": 18.3,
@@ -56107,5 +56151,22218 @@ var DATOS = {
     "DK": 1.5,
     "Smith & Wesson": 6.1,
     "Baikal": 2.7
-  }
+  },
+  "ROT_ART": [
+    [
+      "320083",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. P35X 2 carg 9 tiros Madera 1000fps 250 bar 280cc",
+      "TSS",
+      347.2,
+      0
+    ],
+    [
+      "600849",
+      "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
+      "Beretta",
+      333.5,
+      843.4
+    ],
+    [
+      "320089",
+      "Rifle PCP DOBERMAN cal 5,5mm Mod M60B 2 carg 20 tiros con cilindro de carbono de 700cc",
+      "TSS",
+      290.6,
+      2.8
+    ],
+    [
+      "320092",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. PR900S-GEN2 2 carg 7 tiros Polimero 900fps 200 bar 100cc",
+      "TSS",
+      288.2,
+      0
+    ],
+    [
+      "160140",
+      "Esposas UMAREX Mod. HC500 #2.1709",
+      "Umarex",
+      282.5,
+      14
+    ],
+    [
+      "700995",
+      "Rifle marca TINCK cal 223REM Mod. ARX15-MS 14,5'' 1 carg 30 tiros",
+      "Tinck",
+      255.1,
+      10.6
+    ],
+    [
+      "940168",
+      "Inflador para PCP DOBERMAN",
+      "Doberman",
+      157.3,
+      27.6
+    ],
+    [
+      "602851",
+      "Pistola BERETTA cal 9mm Mod. APX A1 COMPACT 2 carg 15 tiros",
+      "Beretta",
+      149.4,
+      111.4
+    ],
+    [
+      "320081",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. PR900W-GEN2 2 carg 7 tiros Madera 900fps 200 bar 100cc",
+      "TSS",
+      146.3,
+      0
+    ],
+    [
+      "320086",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. T-REX 2 carg 10 tiros Polímero 950fps 230cc",
+      "TSS",
+      135.1,
+      0
+    ],
+    [
+      "320780",
+      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Negro #311.02.00",
+      "Umarex",
+      121.2,
+      37.1
+    ],
+    [
+      "501121",
+      "Cartuchos GB 12 #5 Rapid 32g 250/25",
+      "GB",
+      104.3,
+      18.2
+    ],
+    [
+      "320082",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. P35 2 carg 9 tiros Polímero 900fps 250 bar 280cc",
+      "Doberman RIFLES",
+      94.9,
+      0
+    ],
+    [
+      "505163",
+      "Balas IMI 9MM 158GR SubSonica PNormalCobreada 1000/50",
+      "IMI",
+      87.5,
+      10
+    ],
+    [
+      "600600",
+      "Pistola TANFOGLIO cal 9mm Mod. Combat F  2 cargadores 15 tiros",
+      "Tanfoglio",
+      83.4,
+      15.2
+    ],
+    [
+      "700300",
+      "Rifle Mendoza 22LR Puma SemiAuto Madera MirasReflect 17T",
+      "Mendoza",
+      78.5,
+      443.7
+    ],
+    [
+      "501145",
+      "Cartuchos Mirage 12 #7 30,5GR 25x10",
+      "Mirage",
+      77.1,
+      0
+    ],
+    [
+      "600601",
+      "Pistola TANFOGLIO cal 9mm Mod. Combat R  2 cargadores 15 tiros",
+      "Tanfoglio",
+      75.4,
+      441.2
+    ],
+    [
+      "320088",
+      "Rifle PCP DOBERMAN cal 5,5mm Mod. M16 2 carg 10 tiros Madera 900fps 210cc",
+      "TSS",
+      73.7,
+      97.7
+    ],
+    [
+      "320069",
+      "Rifle AC TSS/Doberman 5.5mm B2-4P Polimero",
+      "TSS",
+      70,
+      404.4
+    ],
+    [
+      "324085",
+      "Pistola Marcadora de Paintball UMAREX T4E cal 50 Mod. TP 50 GEN2 13 Joules #2.4066",
+      "Umarex",
+      69.3,
+      168
+    ],
+    [
+      "320077",
+      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
+      "TSS",
+      68.6,
+      84.2
+    ],
+    [
+      "324095",
+      "Escopeta Marcadora de Paintball UMAREX T4E cal 68 Mod. TB 68 16 Joules #2.4711",
+      "Umarex",
+      67.1,
+      162.5
+    ],
+    [
+      "320071",
+      "Rifle AC TSS/Doberman 5.5mm B2-4 Madera",
+      "TSS",
+      66,
+      265.7
+    ],
+    [
+      "600700",
+      "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
+      "Girsan",
+      63.7,
+      42.4
+    ],
+    [
+      "700534CARU",
+      "Pistola SigSauer 9MM MPX SemiAuto",
+      "Sig Sauer",
+      60,
+      0
+    ],
+    [
+      "320461",
+      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
+      "ASG",
+      59.4,
+      36.6
+    ],
+    [
+      "322000",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
+      "Umarex",
+      59.4,
+      22.2
+    ],
+    [
+      "320070",
+      "Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca",
+      "TSS",
+      53.8,
+      94.1
+    ],
+    [
+      "400333",
+      "Balines DOBERMAN 5,5mm Mod. DOMED 1,15gr 250 x 30 #D19911",
+      "Doberman BALINES",
+      49,
+      24.8
+    ],
+    [
+      "320770",
+      "Pistola a Fogueo UMAREX cal 9mm P.A.K. Mod. WALTHER PPQ M2 Gris #310.02.09",
+      "Umarex",
+      47.1,
+      1
+    ],
+    [
+      "322211",
+      "Rifle PCP UMAREX 5,5mm Mod. ICONIX Multishot 40 Joules #2.4325",
+      "Umarex",
+      45.1,
+      49
+    ],
+    [
+      "320019",
+      "Pistola AC CO2 ASG 4,5mm Mod. Bersa BP9CC NonBlow #17300",
+      "ASG",
+      44.5,
+      56.7
+    ],
+    [
+      "324090",
+      "Revolver Marcadora de Paintball UMAREX T4E cal 50 Mod. TR 50 GEN2 13 Joules #2.4058",
+      "Umarex",
+      44,
+      202.6
+    ],
+    [
+      "320462",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. STEYR M9A1 #16088",
+      "ASG",
+      42.4,
+      10.1
+    ],
+    [
+      "320855",
+      "Escopeta UMAREX T4E cal 68 Mod. HDX68 16 Joules c/QPS #2.3011",
+      "Umarex",
+      42.2,
+      66.2
+    ],
+    [
+      "320775",
+      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04",
+      "Umarex",
+      41,
+      55.3
+    ],
+    [
+      "324005",
+      "Pistola Marcadora de Paintball UMAREX T4E cal 43 Mod. GLOCK 17 GEN 5 #211.00.00",
+      "Umarex",
+      40.7,
+      90.2
+    ],
+    [
+      "320084",
+      "Rifle PCP DOBERMAN cal 5.5mm Mod. T-REX BULLPUP 2 carg 9 tiros Polímero 800fps 250bar 120 cc",
+      "Doberman RIFLES",
+      39.7,
+      0
+    ],
+    [
+      "400384",
+      "Balines APOLO 5,5mm Mod. Jumbo 1.4gr 250x30 #E19921",
+      "Apolo",
+      38.5,
+      21.4
+    ],
+    [
+      "322054",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. GLOCK17 GEN 5 MOS #5.8450",
+      "Umarex",
+      37.9,
+      1.5
+    ],
+    [
+      "501048",
+      "Cartuchos SAGA 12 #1 EXPORT 32gr T2",
+      "Saga",
+      37.7,
+      38.5
+    ],
+    [
+      "600617",
+      "Pistola Tanfoglio 40SW Force DA/SA Azul 2C 12T",
+      "Tanfoglio",
+      35.2,
+      26.4
+    ],
+    [
+      "505070",
+      "Balas SELLIER n BELLOT cal 38SPL LRN 158gr 50x20 #V311012NK",
+      "Sellier & Bellot",
+      35.1,
+      1717.3
+    ],
+    [
+      "400202",
+      "Gas CO2 UMAREX 12G #4.1685",
+      "Umarex",
+      34.4,
+      14.7
+    ],
+    [
+      "DES320270",
+      "Rifle AC NP Crosman Remington E. H. 5,5 c/mira4x32 #REHNP22SX (copia)",
+      "Crosman",
+      31.7,
+      0
+    ],
+    [
+      "320073",
+      "Rifle AC DOBERMAN cal 5.5mm Mod. B1-4P Polimero",
+      "TSS",
+      30.9,
+      207.6
+    ],
+    [
+      "600024CARU",
+      "Pistola Glock 9mm G19 Gen4 AUSTRIA 2C 15T Carry #33320",
+      "Glock",
+      30.3,
+      0
+    ],
+    [
+      "700993",
+      "Rifle marca TINCK cal 223REM Mod. ARX15-MS 8,5'' 1 carg 30 tiros",
+      "Tinck",
+      30.1,
+      70.2
+    ],
+    [
+      "600838",
+      "Pistola BERETTA cal 9mm Mod. 92FS 2 cargadores 15 tiros",
+      "Beretta",
+      29.7,
+      0
+    ],
+    [
+      "600890",
+      "Pistola BRG cal 9mm Mod. BRG9 Tactical 3 carg. 18+1 / 20+1",
+      "BRG",
+      27.3,
+      16.4
+    ],
+    [
+      "260293",
+      "Mira KONUS Mod. FIGHTER 4-12x40 A.O. reitcula balistica con anillas #7353",
+      "Konus",
+      27.1,
+      3.5
+    ],
+    [
+      "700991",
+      "Rifle marca TINCK cal 223REM Mod. PERUN X16 10,5 '' 1 carg 30 tiros",
+      "Tinck",
+      27,
+      324.1
+    ],
+    [
+      "400330",
+      "Balines DOBERMAN 5,5mm Mod. MAGNUM 1gr. Carton*100X250 #D13001",
+      "Doberman BALINES",
+      26.9,
+      0
+    ],
+    [
+      "320029",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. Bersa BP9CC Blowback #17301",
+      "ASG",
+      26.5,
+      69.8
+    ],
+    [
+      "400334",
+      "Balines DOBERMAN 5,5mm Mod. JUMBO 1.4gr 250x30 #D19921",
+      "Doberman BALINES",
+      26.5,
+      47.5
+    ],
+    [
+      "261413",
+      "Cámara KONUS Mod. FLAME 0,6x-2.4x res 160x120 #7953",
+      "Konus",
+      26.3,
+      60.8
+    ],
+    [
+      "600914",
+      "Pistola BERETTA cal 9mm Mod. APX A1 FDE 2 cargadores 17 tiros",
+      "Beretta",
+      25.8,
+      10.4
+    ],
+    [
+      "320706",
+      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Nickel #722.02.06",
+      "Umarex",
+      25.6,
+      4.1
+    ],
+    [
+      "600030CARU",
+      "Pistola Glock 9MM M17 Gen4 2C 17T #33317",
+      "Glock",
+      25.3,
+      0
+    ],
+    [
+      "603205CARU",
+      "Pistola FN l Cal. 45ACP l Negro l Mod. FNX l 3C. L 15T. l Punto rojo.",
+      "FN",
+      25.2,
+      0
+    ],
+    [
+      "260292",
+      "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
+      "Konus",
+      25,
+      38.9
+    ],
+    [
+      "DES320259",
+      "Rifle AC NP CROSMAN cal 5,5mm Mod. Vital Shot #CTN2S (copia)",
+      "Crosman",
+      24.4,
+      0
+    ],
+    [
+      "DES322210",
+      "Rifle AC UMAREX 5,5mm M. RUGER Impact Max Elite c/mira 4x32 #2230196",
+      "Umarex",
+      24.2,
+      51.6
+    ],
+    [
+      "942184",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 42",
+      "Doberman BOTAS",
+      23.8,
+      20.5
+    ],
+    [
+      "320023",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY Blowback #16728",
+      "ASG",
+      23.4,
+      40.8
+    ],
+    [
+      "681100",
+      "Linterna NITECORE Mod. P10i 1800Lm Bat21700 4000mAh",
+      "Nitecore",
+      23.1,
+      22.4
+    ],
+    [
+      "501425",
+      "Cartuchos Rio Posta Cal 20 4x4",
+      "Rio",
+      22.8,
+      0.3
+    ],
+    [
+      "603207CARU",
+      "Pistola Glock I Cal. 9mm I Negra I Mod. 17 Gen 5 I 2 C. I 17 T.",
+      "Glock",
+      22.7,
+      0
+    ],
+    [
+      "942175",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 42",
+      "Doberman BOTAS",
+      22.2,
+      24.3
+    ],
+    [
+      "320021",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY DT Blowback #16533",
+      "ASG",
+      21.7,
+      7.7
+    ],
+    [
+      "942174",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
+      "Doberman BOTAS",
+      21.6,
+      24.3
+    ],
+    [
+      "501113",
+      "Cartuchos GB 12 #3 Express 34g 250/25",
+      "GB",
+      21.6,
+      6.5
+    ],
+    [
+      "320225",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ Shadow 2 Azul GBB #19485",
+      "ASG",
+      20.9,
+      33.7
+    ],
+    [
+      "942176",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 43",
+      "Doberman BOTAS",
+      20.9,
+      24.3
+    ],
+    [
+      "320079",
+      "Marcadora de Paintball DOBERMAN cal .50 Mod. CP300",
+      "TSS",
+      20.8,
+      115.6
+    ],
+    [
+      "700994",
+      "Rifle marca TINCK cal 223REM Mod. ARX15-MS 10,5'' 1 carg 30 tiros",
+      "Tinck",
+      20.7,
+      124
+    ],
+    [
+      "602510",
+      "Pistola ROCK ISLAND cal 9mm Mod STK100 2 cargadores 17+1",
+      "Rock Island",
+      20.2,
+      0
+    ],
+    [
+      "700426CARU",
+      "Carabina  Rossi 38 SPL Puma 077",
+      "Rossi",
+      20.2,
+      0
+    ],
+    [
+      "400237",
+      "Balines APOLO cal 5,5mm Mod. SLUG  1,36gr LATA 250x30 #E19300",
+      "Apolo",
+      19.6,
+      16.8
+    ],
+    [
+      "260234",
+      "Mira Telescopica VICOPTICS Mod. B3 4x40 con anillas de 11mm #OPSL38",
+      "Vector Optics",
+      19.3,
+      0.1
+    ],
+    [
+      "501527",
+      "Cartuchos SAGA 28 BUCK 9P T3",
+      "Saga",
+      19,
+      20.5
+    ],
+    [
+      "111580",
+      "Funda Externa CYTAC-FOBUS Mod. APXA1/92A1/STK/Universal c/retensor #1-UT100",
+      "Fobus",
+      18.9,
+      1.3
+    ],
+    [
+      "600652",
+      "Pistola CZ 9mm Mod P-10C 2C.15T",
+      "CZ",
+      18.6,
+      0
+    ],
+    [
+      "320760",
+      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. WALTHER PPQ M2 Negro #310.02.00",
+      "Umarex",
+      18.5,
+      0
+    ],
+    [
+      "400299",
+      "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
+      "Apolo",
+      17.9,
+      75
+    ],
+    [
+      "320815",
+      "Revolver UMAREX T4E cal 68 Mod. TR 68 Gen2 #2.4018",
+      "Umarex",
+      17.5,
+      115.2
+    ],
+    [
+      "322080",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174",
+      "Umarex",
+      16.8,
+      22.2
+    ],
+    [
+      "600013CARU",
+      "PISTOLA GLOCK CAL. .40ACP MOD.22",
+      "Glock",
+      16.7,
+      0
+    ],
+    [
+      "942183",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
+      "Doberman BOTAS",
+      16.4,
+      24.1
+    ],
+    [
+      "942177",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
+      "Doberman BOTAS",
+      16.4,
+      15.7
+    ],
+    [
+      "942173",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 40",
+      "Doberman BOTAS",
+      15.9,
+      24.5
+    ],
+    [
+      "322055",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 17 Gen5 Blowback #5.8369",
+      "Umarex",
+      15.7,
+      51.6
+    ],
+    [
+      "400265",
+      "Balas Fogeo UMAREX 9mm P.A.K. 600x75",
+      "Umarex",
+      15.7,
+      10.4
+    ],
+    [
+      "701304",
+      "Escopeta Superpuesta DERYA cal 12 Mod. MERIVA MRS2 30´´",
+      "Derya",
+      15.7,
+      0
+    ],
+    [
+      "600810",
+      "Pistola WALTHER 22Lr. M.P22Q 10T Ng. 1Carg. #2853205",
+      "Walther",
+      15.6,
+      119.2
+    ],
+    [
+      "260235",
+      "Mira Telescopica VECTOR OPTICS Mod. FORESTER JR. 3-9x40 #SCOM-35",
+      "Vector Optics",
+      15.4,
+      0
+    ],
+    [
+      "600143CARU",
+      "Revolver Colt I Cal. 38SPL I Madera I Mod. Police Positive I 2 P. I 6T.",
+      "Colt",
+      15.2,
+      0
+    ],
+    [
+      "260238",
+      "Mira Telescopica VECTOR OPTICS Mod. MUSTANG 1-4x24 FFP #SCFF-36",
+      "Vector Optics",
+      15.1,
+      0.8
+    ],
+    [
+      "600615",
+      "Pistola Tanfoglio 40SW Stock2 DA/SA Inox 2C 12T",
+      "Tanfoglio",
+      15,
+      30
+    ],
+    [
+      "603204CARU",
+      "Pistola Glock l Cal.9mm l Full FDE l Mod. G19X l 3C.l 1T.",
+      "Glock",
+      15,
+      0
+    ],
+    [
+      "322060",
+      "LQN-Pistola AC CO2 UMAREX 4,5mm Mod. Glock 19X Blowback #5.8367 (copia)",
+      "Umarex",
+      14.9,
+      27.4
+    ],
+    [
+      "600918",
+      "Pistola BERETTA cal 9mm Mod. APX A1 COMPACT FDE CRTK 2 carg 15 tiros",
+      "Beretta",
+      14.8,
+      23
+    ],
+    [
+      "681106",
+      "Linterna NITECORE Mod. NPL25 900Lm Bat Li-on",
+      "Nitecore",
+      14.7,
+      5.7
+    ],
+    [
+      "501577",
+      "Cartuchos SAGA 36-65 #1 11gr T1",
+      "Saga",
+      14.6,
+      121.3
+    ],
+    [
+      "600135",
+      "Pistola CZ 9mm Mod SHADOW 2C 19T",
+      "CZ",
+      14.6,
+      0
+    ],
+    [
+      "600133",
+      "Pistola CZ Cal. 9mm Mod. Shadow 2 Grey 3C. 19T",
+      "CZ",
+      14.6,
+      0
+    ],
+    [
+      "603200CARU",
+      "Revolver Ruger l Cal. 357 MAG l Niquel l Mod. Speed-Six l 2P. l 6T.",
+      "Ruger",
+      14.5,
+      0
+    ],
+    [
+      "700870",
+      "Escopeta  BOITO cal 12 Mod. REUNA 28\" #00012",
+      "Boito",
+      14.2,
+      23.6
+    ],
+    [
+      "680652",
+      "Reflector DOBERMAN Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
+      "Doberman LINTERNAS",
+      14,
+      37.1
+    ],
+    [
+      "942185",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 43",
+      "Doberman BOTAS",
+      14,
+      21.3
+    ],
+    [
+      "602583",
+      "Pistola BERETTA cal 9mm Mod. 92FS INOX CRKT 2 cargadores 15 tiros",
+      "Beretta",
+      13.6,
+      0
+    ],
+    [
+      "400191",
+      "Green Gas ASG Mod PSI 570ml c/ Silicona #19893",
+      "ASG",
+      13.5,
+      112.3
+    ],
+    [
+      "320022",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726",
+      "ASG",
+      13.5,
+      36.8
+    ],
+    [
+      "942153",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 41",
+      "Doberman BOTAS",
+      13.3,
+      33.5
+    ],
+    [
+      "681115",
+      "Linterna NITECORE Mod. EDC23 2500Lm Bat1500mAh",
+      "Nitecore",
+      12.9,
+      1.2
+    ],
+    [
+      "942182",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 40",
+      "Doberman BOTAS",
+      12.6,
+      9.8
+    ],
+    [
+      "602585CARU",
+      "Pistola BERETTA cal 9mm Mod. 92COMPACT L 2 carg 13 tiros",
+      "Beretta",
+      12.6,
+      0
+    ],
+    [
+      "322150",
+      "Rifle UMAREX T4E cal 68 Mod. TC68 16 Joules c/QPS #2.4063X",
+      "Umarex",
+      12.3,
+      132.7
+    ],
+    [
+      "324000",
+      "Pistola UMAREX T4E cal 43 Mod. Walther PPQ #2.4760",
+      "Umarex",
+      12.2,
+      12.2
+    ],
+    [
+      "600661",
+      "Pistola CZ 9mm Mod. P-10F 2C. 19T",
+      "CZ",
+      12.2,
+      0
+    ],
+    [
+      "700961",
+      "Rifle semiautomico Winchester 22LR M. wildcat 16.5P 1 cargador 10Tiros",
+      "Winchester",
+      12.1,
+      0
+    ],
+    [
+      "400335",
+      "Balines DOBERMAN 5,5mm Mod. ARROW 1.05gr 250 x 30 #D19941",
+      "Doberman BALINES",
+      12,
+      35
+    ],
+    [
+      "260570",
+      "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
+      "Vector Optics",
+      12,
+      26.7
+    ],
+    [
+      "261414",
+      "Cámara KONUS Mod. FIERY 2x-16x res 400×300 #7957",
+      "Konus",
+      11.8,
+      91.2
+    ],
+    [
+      "601631",
+      "Pistola Canik 9mm TP9 Elite Combat Des/Neg. 2C",
+      "Canik",
+      11.8,
+      0
+    ],
+    [
+      "320016",
+      "Pistola AC TSS 4.5mm M:S2 *20",
+      "TSS",
+      11.6,
+      19.5
+    ],
+    [
+      "942156",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 43",
+      "Doberman BOTAS",
+      11.4,
+      33.1
+    ],
+    [
+      "510752",
+      "Mochila DOBERMAN 60L DELTA BLACK #BL130BL",
+      "Doberman MOCHILAS",
+      11.4,
+      17.2
+    ],
+    [
+      "270457",
+      "Cargador Fab Defense 223REM/5.56NATO p/ M:M16/M4/AR15 30T Verde #ULTIMAG30",
+      "Fab Defense",
+      11.4,
+      12.7
+    ],
+    [
+      "320707",
+      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
+      "Umarex",
+      11.3,
+      21
+    ],
+    [
+      "400251",
+      "Balines APOLO 5,5mm Domed 1,6 gr 25GRAINS 200 x 30 #E19918",
+      "Apolo",
+      11.3,
+      19.6
+    ],
+    [
+      "600035CARU",
+      "Pistola Glock l Cal. 9mm l Negra l Mod. 45 GEN 5 l 2 C. l 17 T.",
+      "Glock",
+      11.3,
+      0
+    ],
+    [
+      "600032CARU",
+      "Pistola Glock 9MM G17 Gen4 2C 17T #33317",
+      "Glock",
+      11.1,
+      0
+    ],
+    [
+      "600034CARU",
+      "Pistola Glock 9MM G17 Gen4 2C 17T #33317",
+      "Glock",
+      11.1,
+      0
+    ],
+    [
+      "600701",
+      "Pistola GIRSAN cal 9mm Mod. MC28SV2 Negro #4521 2 carg 17 tiros",
+      "Girsan",
+      10.9,
+      141.5
+    ],
+    [
+      "602825",
+      "Pistola HK 9mm M:USP-C 2carg",
+      "HK",
+      10.9,
+      16.4
+    ],
+    [
+      "322058",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 19 NON BlowBack #5.8358",
+      "Umarex",
+      10.6,
+      38.1
+    ],
+    [
+      "942154",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 42",
+      "Doberman BOTAS",
+      10.6,
+      34.8
+    ],
+    [
+      "600844CARU",
+      "Pistola Beretta 9mm M92-9A1 (92FS)",
+      "Beretta",
+      10.6,
+      0
+    ],
+    [
+      "320227",
+      "Revolver AC CO2 ASG cal 4,5mm Mod. Dan Wesson 715 6'' #18192",
+      "ASG",
+      10.5,
+      29.5
+    ],
+    [
+      "322065",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Colt M45A1 Blowback #5.8176",
+      "Umarex",
+      10.5,
+      22.5
+    ],
+    [
+      "510750",
+      "Mochila DOBERMAN 60L DELTA GREEN #BL130GR",
+      "Doberman MOCHILAS",
+      10.4,
+      10.1
+    ],
+    [
+      "320229",
+      "Revolver AC CO2 ASG cal 4,5mm Mod. SCHOFIELD 6\" Plateado #19794",
+      "ASG",
+      10.4,
+      0.9
+    ],
+    [
+      "602859CARU",
+      "Pistola Beretta inox mod. 92FS calibre 9mm 2C",
+      "Beretta",
+      10.1,
+      0
+    ],
+    [
+      "602852CARU",
+      "Pistola Beretta l Cal. 9mm l Negra l Mod. 92A1 l 2C. l 17T.",
+      "Beretta",
+      10.1,
+      0
+    ],
+    [
+      "322216",
+      "Rifle PCP UMAREX cal 5,5 Mod. KOMPLETE con mira 4x32 #2251558",
+      "Umarex",
+      10,
+      139.6
+    ],
+    [
+      "505154",
+      "Balas IMI 9mm 115GR DI-CUT P. Hueca 1000/50",
+      "IMI",
+      9.8,
+      979.3
+    ],
+    [
+      "323115",
+      "Pistola Airsoft CO2 UMAREX 6mm Mod. Walther P99 DAO Blowback #2.5684",
+      "Umarex",
+      9.7,
+      2.6
+    ],
+    [
+      "942152",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 40",
+      "Doberman BOTAS",
+      9.6,
+      21.2
+    ],
+    [
+      "600839CARU",
+      "Pistola Beretta I Cal. 9mm I Negra I Mod. 92FS I 2 C. I 15 T.",
+      "Beretta",
+      9.6,
+      0
+    ],
+    [
+      "601911",
+      "Pistola KOR cal 9mm Mod. FX-9 FDE 2 Cargadores 17 Tiros",
+      "KOR",
+      9.5,
+      2.4
+    ],
+    [
+      "505536",
+      "Balas IMI 5.56/223 62Gr M855 FMJ BT1200/30",
+      "IMI",
+      9.4,
+      2090.6
+    ],
+    [
+      "504997",
+      "Balas GOLDEN EAGLE cal 22LR Punta Cobreada Hueca 50x40 #1B2220324",
+      "Golden Eagle",
+      9.2,
+      279.5
+    ],
+    [
+      "260565",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOS MOJ 1x22x26  #SCRD-M36",
+      "Vector Optics",
+      9.2,
+      9.7
+    ],
+    [
+      "600755CARU",
+      "Pistola Ruger 380ACP LCP DAO 1C 7T c/Cartuc #3701",
+      "Ruger",
+      9.2,
+      0
+    ],
+    [
+      "603206CARU",
+      "Pistola kor l Cal. 9mm l FDE l Mod. FX-9 SAND l 2C. l 17T.",
+      "KOR",
+      9.2,
+      0
+    ],
+    [
+      "601902CARU",
+      "Pistola AHSS l Cal. 9mm l Negra l Mod. FXS-9 l 2 C. l 17T.",
+      "AHSS",
+      9.2,
+      0
+    ],
+    [
+      "501366",
+      "Cartuchos SAGA 20 #3 GOLD 28gr T2",
+      "Saga",
+      9.1,
+      121.3
+    ],
+    [
+      "600078CARU",
+      "Pistola Glock 9mm G19",
+      "Glock",
+      9.1,
+      0
+    ],
+    [
+      "260557",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY TEK 1x17x24 #SCRD-19II",
+      "Vector Optics",
+      9,
+      1.1
+    ],
+    [
+      "400238",
+      "Balines APOLO cal 5,5mm Mod. HUNTER 1,2gr LATA 250x30 #E19971",
+      "Apolo",
+      8.9,
+      7.7
+    ],
+    [
+      "942165",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 6''",
+      "Doberman BOTAS",
+      8.8,
+      5.8
+    ],
+    [
+      "700970",
+      "Escopeta Pajera ESCORT cal 12 Mod. FIELDHUNTER 28\" 4+1",
+      "Escort",
+      8.7,
+      84.4
+    ],
+    [
+      "510753",
+      "Mochila DOBERMAN 60L DELTA DARK BLUE #BL130DB",
+      "Doberman MOCHILAS",
+      8.7,
+      5.8
+    ],
+    [
+      "601925CARU",
+      "PISTOLA MARCA PARA ORDNANCE MODELO ESPERT CALIBRE .45 ACP",
+      "Ordnance",
+      8.6,
+      0
+    ],
+    [
+      "501421",
+      "Cartuchos GB 20 9Postas Buckshot 25 X250",
+      "GB",
+      8.5,
+      7.6
+    ],
+    [
+      "600509CARU",
+      "Revolver Taurus calibre 38SPL 4¨  Modelo L95",
+      "Taurus",
+      8.5,
+      0
+    ],
+    [
+      "680686",
+      "Linterna DOBERMAN Mod. LP-234026 5000 Lumenes Bat 26650 Recargable",
+      "Doberman LINTERNAS",
+      8.4,
+      71.4
+    ],
+    [
+      "160190",
+      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
+      "Umarex",
+      8.3,
+      42.1
+    ],
+    [
+      "681104",
+      "Linterna NITECORE Mod. SRT7GT 1000Lm Multicolor",
+      "Nitecore",
+      8.3,
+      41.8
+    ],
+    [
+      "942186",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
+      "Doberman BOTAS",
+      8.3,
+      9.1
+    ],
+    [
+      "700051CARU",
+      "Rifle Sabatti 223 REM ROVER 600DL Cul.Sint.1C",
+      "Sabatti",
+      8.3,
+      0
+    ],
+    [
+      "601900CARU",
+      "Pistola AHSS cal 9mm Mod. FXS-9 Negro 2 cargadores 17 tiros",
+      "AHSS",
+      8.2,
+      0
+    ],
+    [
+      "600130",
+      "Pistola CZ Cal. 9mm Mod.75 2C. 15T",
+      "CZ",
+      8.2,
+      0
+    ],
+    [
+      "400331",
+      "Balines DOBERMAN cal 5,5mm Mod. SLUG  1,36gr LATA 250x30 #D19300",
+      "Doberman BALINES",
+      8.1,
+      60
+    ],
+    [
+      "322212",
+      "Rifle AC CO2 UMAREX 4,5mm Mod. HK MP5 #5.8159",
+      "Umarex",
+      8.1,
+      37
+    ],
+    [
+      "SID4520100",
+      "Cargador KCI cal 9mm Mod. Glock 33 tiros",
+      "KCI",
+      8.1,
+      25.3
+    ],
+    [
+      "700960",
+      "Rifle semiautomico Winchester 22LR M. wildcat 16.5'' 1 cargador  Tiros",
+      "Winchester",
+      8.1,
+      0
+    ],
+    [
+      "603203CARU",
+      "Pistola CZ l Cal. 9mm l Negro l Mod. P-10C l 2C. l 15T.",
+      "CZ",
+      8.1,
+      0
+    ],
+    [
+      "960160",
+      "Kit de aerosoles GSM-BWC Limpia Armas, Disolvedor, Protector #33309",
+      "BWC",
+      8,
+      33
+    ],
+    [
+      "320228",
+      "Revolver AC CO2 ASG cal 4,5mm Mod. SCHOFIELD 6\" Negro #18911",
+      "ASG",
+      8,
+      1.6
+    ],
+    [
+      "260271",
+      "Mira KONUS PRO-F30 4-16x52 Primer plano focal con retícula iluminada 550 yardas #7299",
+      "Konus",
+      8,
+      0
+    ],
+    [
+      "400316",
+      "Balines de Practica UMAREX cal 68 Bolsa de 250 #2.4503",
+      "Umarex",
+      7.9,
+      2.5
+    ],
+    [
+      "400230",
+      "Balines APOLO 5,5mm Mod. POINTED 1,15gr 250 x 30 #E19601",
+      "Apolo",
+      7.9,
+      0
+    ],
+    [
+      "700912",
+      "Escopeta semiautomica Armsan verde 12 M. RS-S1 20´´ 2C.5-10tiros",
+      "Armsan",
+      7.9,
+      0
+    ],
+    [
+      "510756",
+      "Mochila DOBERMAN 60L DELTA CAMO BLACK #BL130BCP",
+      "Doberman MOCHILAS",
+      7.7,
+      20.7
+    ],
+    [
+      "942157",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 44",
+      "Doberman BOTAS",
+      7.7,
+      18
+    ],
+    [
+      "DES320850",
+      "LQN-Escopeta UMAREX T4E cal 68 Mod. HDS68 #2.4764 (copia)",
+      "Umarex",
+      7.6,
+      9.3
+    ],
+    [
+      "681108",
+      "Linterna NITECORE Mod. TM9KPro 9900Lm Bat 5000 mAh",
+      "Nitecore",
+      7.6,
+      8.3
+    ],
+    [
+      "322056",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 17 Gen5 FDE Blowback #5.8470",
+      "Umarex",
+      7.5,
+      52.2
+    ],
+    [
+      "400332",
+      "Balines DOBERMAN cal 5,5mm Mod. HUNTER 1,2gr LATA 250x30 #D19971",
+      "Doberman BALINES",
+      7.3,
+      65.7
+    ],
+    [
+      "703100CARU",
+      "Rifle Semiautomico Ruger l Cal. 22LR l Mod. 10/22 l 2C. l 25T.",
+      "Ruger",
+      7.3,
+      7.3
+    ],
+    [
+      "942160",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 8''",
+      "Doberman BOTAS",
+      7.2,
+      17.2
+    ],
+    [
+      "501810",
+      "Cartuchos Valor 12 #5 32gr *25",
+      "Valor",
+      7.2,
+      5.8
+    ],
+    [
+      "942181",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 39",
+      "Doberman BOTAS",
+      7.1,
+      5.8
+    ],
+    [
+      "501531",
+      "Cartuchos SAGA 32 #1 GOLD 14gr T1",
+      "Saga",
+      7.1,
+      1
+    ],
+    [
+      "700925",
+      "Escopeta Armed 36 Monotiro CulMad 28''",
+      "Armed",
+      7,
+      35.5
+    ],
+    [
+      "942172",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 39",
+      "Doberman BOTAS",
+      7,
+      17.2
+    ],
+    [
+      "942178",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 45",
+      "Doberman BOTAS",
+      7,
+      8.2
+    ],
+    [
+      "4520455",
+      "Cargador KCI cal .40 Mod. Glock 50 tiros",
+      "KCI",
+      7,
+      0.7
+    ],
+    [
+      "510755",
+      "Mochila DOBERMAN 60L DELTA GREY #BL130GY",
+      "Doberman MOCHILAS",
+      6.9,
+      7.3
+    ],
+    [
+      "170356",
+      "Tubo de Gas Butano NTK Campgas 227g #280550",
+      "NTK",
+      6.9,
+      0
+    ],
+    [
+      "700973",
+      "Escopeta Pajera HATSAN cal 12 Mod. ESCORT MPS 20´´ 7+1 tiros + pistol",
+      "Hatsan",
+      6.8,
+      16.9
+    ],
+    [
+      "700497CARU",
+      "Rifle Sig Sauer 22LR R522 C 16\" 1C 10T CantGoma",
+      "Sig Sauer",
+      6.8,
+      0
+    ],
+    [
+      "601617",
+      "Pistola Canik 9mm Mod. TP9 SFX RIVAL Black 1c. 18T y 2c. 20T",
+      "Canik",
+      6.8,
+      0
+    ],
+    [
+      "320091",
+      "Pistola PCP DOBERMAN cal 5,5mm Mod. PP750L 800fps 2 carg 7 tiros 66cc",
+      "Doberman/Pistola",
+      6.7,
+      49.3
+    ],
+    [
+      "270812",
+      "Funda interna FAB DEFENSE Mod. Scorpus Covert #sc-cg9b",
+      "Fab Defense",
+      6.7,
+      47.2
+    ],
+    [
+      "260053",
+      "Binocular KONUS Mod. SPY19 HD 1,5x-12x 400mts #7940",
+      "Konus",
+      6.7,
+      31.3
+    ],
+    [
+      "400389",
+      "Balines APOLO AIRBOSS 5,5mm Mod. Match Comp 1.1gr 250x30 #E30302",
+      "Apolo",
+      6.7,
+      22.1
+    ],
+    [
+      "DES750305",
+      "Carpa NTK Mod. PANDA 6 personas #155154",
+      "NTK",
+      6.7,
+      6.1
+    ],
+    [
+      "702080",
+      "Rifle Semiautomático ISSC Cal.22LR Mod. MK22 FDE 2C. 25T",
+      "ISSC",
+      6.7,
+      0
+    ],
+    [
+      "323145",
+      "Pistola Airsoft Green Gas UMAREX Mod. GLOCK 17 GEN5 GBB #2276344",
+      "Umarex",
+      6.6,
+      39.8
+    ],
+    [
+      "260566",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MRS MOJ Gen II 1x19x26  #SCRD-SM64",
+      "Vector Optics",
+      6.6,
+      14
+    ],
+    [
+      "601820CARU",
+      "Pistola EMTAN 9mm M:RAMON Negro 2Carg. 15Tiros",
+      "Emtan",
+      6.6,
+      0
+    ],
+    [
+      "601302CARU",
+      "Pistola CZ l Cal 9mm l Negro l Mod P-09 l 2 C. l 19T.",
+      "CZ",
+      6.6,
+      0
+    ],
+    [
+      "602845",
+      "Pistola Walther 9mm M:P99-AS 2 carg",
+      "Walther",
+      6.5,
+      18.2
+    ],
+    [
+      "681107",
+      "Linterna NITECORE Mod. TM20K 20.000Lm Bat 2x21700",
+      "Nitecore",
+      6.5,
+      7.9
+    ],
+    [
+      "400385",
+      "Balines APOLO 5,5mm Arrow 1.05gr 250 x 30 #E19941",
+      "Apolo",
+      6.5,
+      0.1
+    ],
+    [
+      "323005",
+      "Pistola Airsoft Green Gas UMAREX Mod. GLOCK 19X GBB #2276328",
+      "Umarex",
+      6.4,
+      25.6
+    ],
+    [
+      "700110CARU",
+      "Esc.Maverick 12 Pajera Pav 5+1T 18'' #31023",
+      "Maverick",
+      6.4,
+      0
+    ],
+    [
+      "400223",
+      "Balines APOLO 5,5mm Cónico 0,77gr. Carton*100X250 #E11001",
+      "Apolo",
+      6.3,
+      167
+    ],
+    [
+      "501581",
+      "Cartuchos SAGA 36-65 #3 11gr T1",
+      "Saga",
+      6.3,
+      109.8
+    ],
+    [
+      "320226",
+      "Revolver AC CO2 ASG cal 4,5mm Mod. Dan Wesson 715 4'' #18611",
+      "ASG",
+      6.3,
+      23.4
+    ],
+    [
+      "510751",
+      "Mochila DOBERMAN 60L DELTA COYOTE #BL130KH",
+      "Doberman MOCHILAS",
+      6.3,
+      0.7
+    ],
+    [
+      "DES325000",
+      "Pistola lanza pimienta UMAREX Mod. PGS incluido 1Cart.#2.2050-1",
+      "Umarex",
+      6.2,
+      3.2
+    ],
+    [
+      "DES750186",
+      "Toldo NTK Mod. TRIXX 3x3x2.5mts #352000",
+      "NTK",
+      6.1,
+      9.8
+    ],
+    [
+      "600142CARU",
+      "REVOLVER COLT. MOD POLICE POSITIVE CAL 38SPL",
+      "Colt",
+      6.1,
+      6.1
+    ],
+    [
+      "260048",
+      "Binocular KONUS Mod. SPY11 NV 3X- 4.5X- 6X #7932",
+      "Konus",
+      6.1,
+      0
+    ],
+    [
+      "DES920284",
+      "Silla COLEMAN Mod. Quad Rojo #2000032009",
+      "Coleman",
+      6.1,
+      0
+    ],
+    [
+      "600665CARU",
+      "Pistola CZ 9mm P-10S",
+      "CZ",
+      6.1,
+      0
+    ],
+    [
+      "603202CARU",
+      "Pistola Canik l Cal. 9mm l Negro l Mod. TP9SF Sub Elite l 2C. l 14/15T.",
+      "Canik",
+      6.1,
+      0
+    ],
+    [
+      "601621CARU",
+      "Pistola Canik l Cal. 9mm l FDE l Mod. TP9 l 2 C. l 15/18 T.",
+      "SIN MARCA",
+      6.1,
+      0
+    ],
+    [
+      "600501CARU",
+      "Revolver Smith & Wesson I Cal. 38SPL I Mod. 637-2 I 2 P. I 5 T.",
+      "Smith & Wesson",
+      6.1,
+      0
+    ],
+    [
+      "DES750300",
+      "Carpa NTK Mod. PANDA 2 personas #155100",
+      "NTK",
+      6,
+      49.9
+    ],
+    [
+      "600753CARU",
+      "Pistola Ruger 9mm P95 2C 15T DT#13014",
+      "Ruger",
+      6,
+      0
+    ],
+    [
+      "510447",
+      "Mochila DOBERMAN 40L ALFA BLACK #BL133",
+      "Doberman MOCHILAS",
+      5.9,
+      17.8
+    ],
+    [
+      "510759",
+      "Mochila DOBERMAN 75L SIERRA BLACK #BL069BL",
+      "Doberman MOCHILAS",
+      5.9,
+      16.1
+    ],
+    [
+      "681109",
+      "Linterna NITECORE Mod. MT2APro 1000Lm Bat 1600 mAh y 2xAA",
+      "Nitecore",
+      5.9,
+      0.4
+    ],
+    [
+      "700940CARU",
+      "Escopeta BOITO cal 12 Mod. PUMP",
+      "Boito",
+      5.9,
+      0
+    ],
+    [
+      "501860",
+      "Cartuchos Valor 16 9Postas 7.65mm*25",
+      "Valor",
+      5.8,
+      21.9
+    ],
+    [
+      "260573",
+      "Punto Rojo para Rifle VECTOR OPTICS Mod. PARAGON 4x24 #SCPS-M04",
+      "Vector Optics",
+      5.8,
+      13.5
+    ],
+    [
+      "DES681101",
+      "Linterna NITECORE Mod. P10 V2 1100Lm SinBat",
+      "Nitecore",
+      5.8,
+      2.6
+    ],
+    [
+      "942187",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 45",
+      "Doberman BOTAS",
+      5.8,
+      1.5
+    ],
+    [
+      "701374",
+      "Escopeta Semiautomático DERYA Cal 12 Mod. VR70 20P 3 Cargadores Camo 151",
+      "Derya",
+      5.8,
+      0
+    ],
+    [
+      "400314",
+      "Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503",
+      "Umarex",
+      5.7,
+      17.7
+    ],
+    [
+      "400370",
+      "Balines APOLO cal 6,35mm Mod. DOMED 1,6 grams 25 grains 200x30 #E13501",
+      "Apolo",
+      5.7,
+      10.1
+    ],
+    [
+      "942150",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 8''",
+      "Doberman BOTAS",
+      5.6,
+      11.6
+    ],
+    [
+      "701293",
+      "Rifle DERYA cal 9mm Mod. ZY9 Negro 14,5'' 2 carg 17 tiros",
+      "Derya",
+      5.6,
+      11.2
+    ],
+    [
+      "DES750302",
+      "Carpa NTK Mod. PANDA 4 personas #155152",
+      "NTK",
+      5.6,
+      5.8
+    ],
+    [
+      "721101",
+      "Chaleco Antibala B.E. Armor 4000 M NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      5.6,
+      2.8
+    ],
+    [
+      "400312",
+      "Balines de Practica UMAREX cal 50 Bolsa de 250 #2.4502",
+      "Umarex",
+      5.6,
+      2.9
+    ],
+    [
+      "680685",
+      "Linterna DOBERMAN Mod. LP-8504-UV Bat 3XAAA",
+      "Doberman LINTERNAS",
+      5.5,
+      17.9
+    ],
+    [
+      "260233",
+      "Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
+      "Vector Optics",
+      5.5,
+      4.4
+    ],
+    [
+      "600449CARU",
+      "Revolver Ruger 38SPL SP101 DA/SA Inox CachaGoma 5T 3'' #5737",
+      "Ruger",
+      5.5,
+      0
+    ],
+    [
+      "260558",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY TEK FDE 1x17x24 #SCRD-F19II",
+      "Vector Optics",
+      5.5,
+      0
+    ],
+    [
+      "601633",
+      "Pistola Canik 9mm Mod. TP9 Sub Elite CAS Black 2C 12/15",
+      "Canik",
+      5.5,
+      0
+    ],
+    [
+      "700307",
+      "Rifle Mendoza 22LR Puma SemiAuto Commander MirasReflect 17T",
+      "Mendoza",
+      5.4,
+      121
+    ],
+    [
+      "501880",
+      "Cartuchos Valor 20 #5 28gr 70mm*25",
+      "Valor",
+      5.4,
+      26.1
+    ],
+    [
+      "700974",
+      "Escopeta pajera Remington 12 Mod M887 NITROMAG 28´´ 5+1 tiros",
+      "Remington",
+      5.4,
+      0
+    ],
+    [
+      "501493",
+      "Cartuchos SAGA 28 #1 GOLD 15gr T1",
+      "Saga",
+      5.3,
+      31.9
+    ],
+    [
+      "DES149010",
+      "KIT Miguel Nieto x 3 cuchillos Gaucho + Funda + Tabla",
+      "Miguel Nieto",
+      5.3,
+      2.3
+    ],
+    [
+      "260289",
+      "Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274",
+      "Konus",
+      5.3,
+      1.5
+    ],
+    [
+      "505533",
+      "Balas PPU. 223 EM FMJ. BT 55 GR (20/1000)",
+      "PPU",
+      5.3,
+      0
+    ],
+    [
+      "601611",
+      "Pistola Canik 9mm Mod. TP9 SF Desert/Negro 20T 2C",
+      "Canik",
+      5.3,
+      0
+    ],
+    [
+      "400296",
+      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,25g, 3300 unid #19411",
+      "ASG",
+      5.2,
+      24
+    ],
+    [
+      "111560",
+      "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Full Size #WHLSBOR0331-842717113914",
+      "Fobus",
+      5.2,
+      5.3
+    ],
+    [
+      "311015",
+      "Pistola Airsoft Resorte ASG cal 6mm Mod. CZ 75D DT-FDE #50141",
+      "ASG",
+      5.2,
+      3.2
+    ],
+    [
+      "DES320042",
+      "Pistola AC CROSMAN cal 4,5mm Mod. A4-P Full Auto #CFAA4PX (copia)",
+      "Crosman",
+      5.2,
+      2.6
+    ],
+    [
+      "601201",
+      "Pistola WALTHER cal 22LR. Mod. PPK/S Negro 2 carg. 10T. #2853248",
+      "Walther",
+      5.2,
+      0
+    ],
+    [
+      "601202",
+      "Pistola WALTHER cal 22LR. Mod. PPK /S Nickel WA 2 carg.10T. #2853256",
+      "Walther",
+      5.2,
+      0
+    ],
+    [
+      "701050CARU",
+      "Rifle TOZ-TULA 22 LR",
+      "Tula",
+      5.1,
+      0
+    ],
+    [
+      "600470CARU",
+      "Revolver Taurus 38SPL M838  8T",
+      "Taurus",
+      5.1,
+      0
+    ],
+    [
+      "601610CARU",
+      "Pistola Canik Modelo TP9DA calibre 9mm 3 cargadores",
+      "Canik",
+      5.1,
+      0
+    ],
+    [
+      "600367CARU",
+      "Pistola DERYA cal 9mm Mod DY9 C150K Full Camo 2 carg de 15/17T",
+      "Derya",
+      5.1,
+      0
+    ],
+    [
+      "603201CARU",
+      "Pistola Canik l Cal. 9mm l Negro l Mod. TP9SF l 1C. l 18T.",
+      "Canik",
+      5.1,
+      0
+    ],
+    [
+      "600305CARU",
+      "Pistola Sig Sauer I Cal. 380 ACP I Negra I Mod. P 238 I 2 C. I 5 T.",
+      "Sig Sauer",
+      5.1,
+      0
+    ],
+    [
+      "505577",
+      "Balas SELLIER n BELLOT cal 30-30WIN SP 150gr 20x25 #V330352",
+      "Sellier & Bellot",
+      5,
+      54.4
+    ],
+    [
+      "DES750301",
+      "Carpa NTK Mod. PANDA 3 personas #155150",
+      "NTK",
+      5,
+      23.4
+    ],
+    [
+      "510477",
+      "Mochila DOBERMAN 55L ECHO BLACK #BL012BL",
+      "Doberman MOCHILAS",
+      5,
+      15.8
+    ],
+    [
+      "322057",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 17 Gen5 Green Blowback #5.8471",
+      "Umarex",
+      5,
+      0
+    ],
+    [
+      "600114CARU",
+      "Revolver Rexio mod. Pucara calibre 38SPL",
+      "Rexio",
+      5,
+      0
+    ],
+    [
+      "DES750422",
+      "Carpa NTK Mod FLASH 8 Personas 400x270cm # NTK-HC-FLA8",
+      "NTK",
+      4.9,
+      8.2
+    ],
+    [
+      "700803",
+      "Escopeta pareja Akkar 12GA M. karatay 28´´ 5+1 tiros",
+      "Akkar",
+      4.9,
+      2.5
+    ],
+    [
+      "900901",
+      "Compresor ARMADILLO para rifle PCP Mod. ARM/GX  250W 300Bar/4500PSI #534413",
+      "Armadillo",
+      4.9,
+      1.6
+    ],
+    [
+      "600528CARU",
+      "Revolver taurus calibre 38 SPL 4´´ Modelo 85S",
+      "Taurus",
+      4.9,
+      0
+    ],
+    [
+      "260584",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY GIN/RTS 1X26X32 #SCRD-79",
+      "Vector Optics",
+      4.8,
+      26.6
+    ],
+    [
+      "550303",
+      "Kit de limpieza GSM-BWC para armas cortas #BC-HNDGCLN-KIT",
+      "BWC",
+      4.8,
+      19.3
+    ],
+    [
+      "681122",
+      "Reflector NITECORE Mod. NWL30 3000Lm Bat18000mAh",
+      "Nitecore",
+      4.8,
+      4.4
+    ],
+    [
+      "400310",
+      "Balines de Practica UMAREX cal 50 Bolsa de 100 #2.4502",
+      "Umarex",
+      4.7,
+      11.8
+    ],
+    [
+      "510486",
+      "Mochila DOBERMAN 35L BRAVO BLACK #BL080BL",
+      "Doberman MOCHILAS",
+      4.7,
+      10.5
+    ],
+    [
+      "111570",
+      "Funda BERETTA Mod. UNIFORM PRO SOFT Azul #FO491T1932054VUNI",
+      "Beretta Mod",
+      4.7,
+      6.5
+    ],
+    [
+      "260270",
+      "Mira electrónica KONUS PRO EL30 4-16x44 con 10 reticulas cambiables #7330",
+      "Konus",
+      4.7,
+      1.6
+    ],
+    [
+      "600866CARU",
+      "Pistola Ruger I Cal. 40 I Two Tone I Mod. SR40C I 2 C. I 9/15 T.",
+      "Ruger",
+      4.7,
+      0
+    ],
+    [
+      "940167",
+      "Inflador de mano PCP UMAREX #2.0046",
+      "Umarex",
+      4.6,
+      30.8
+    ],
+    [
+      "400212",
+      "Balines APOLO 4,5mm Cónico 0,45gr. Carton*200 x150/250",
+      "Apolo",
+      4.6,
+      25.9
+    ],
+    [
+      "501495",
+      "Cartuchos GB 28 #3 15g*25 x250",
+      "GB",
+      4.6,
+      2.3
+    ],
+    [
+      "600499CARU",
+      "Revolver Rossi 357MAG",
+      "Rossi",
+      4.6,
+      0
+    ],
+    [
+      "600782CARU",
+      "Pistola Bersa Thunder 380ACP",
+      "Bersa",
+      4.6,
+      0
+    ],
+    [
+      "600529CARU",
+      "Revolver taurus calibre 38 SPL 4¨",
+      "Taurus",
+      4.6,
+      0
+    ],
+    [
+      "600126CARU",
+      "Revolver Alfa - Proj mod. 291 calibre 22LR",
+      "Alfa",
+      4.6,
+      0
+    ],
+    [
+      "505071",
+      "Balas SELLIER n BELLOT cal 38SPL FMJ 158gr 50x20 #V311412",
+      "Sellier & Bellot",
+      4.5,
+      1124.7
+    ],
+    [
+      "505327",
+      "Balas SELLIER n BELLOT cal 357MAG FMJ 158gr 50x20 #V311392",
+      "Sellier & Bellot",
+      4.5,
+      173.7
+    ],
+    [
+      "680650",
+      "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB",
+      "Doberman LINTERNAS",
+      4.5,
+      22.9
+    ],
+    [
+      "700405CARU",
+      "ESCOPETA VALTRO R05 CAL12",
+      "Valtro",
+      4.5,
+      0
+    ],
+    [
+      "SID4520150",
+      "Cargador KCI cal 9mm Mod. Glock 50 tiros #KCI-218",
+      "KCI",
+      4.4,
+      24.3
+    ],
+    [
+      "DES710422",
+      "Conservadora COLEMAN 36QT Rojo #6281A703G",
+      "Coleman",
+      4.4,
+      2.2
+    ],
+    [
+      "701120CARU",
+      "Rifle CZ 22MAG M:455",
+      "CZ",
+      4.3,
+      0
+    ],
+    [
+      "700230",
+      "Escopeta Semi Auto Girsan Cal. 12 Camu rayado Mod. MS312 28P 5+1 tiros",
+      "Girsan",
+      4.3,
+      0
+    ],
+    [
+      "700231",
+      "Escopeta Semi Auto Girsan Cal. 12 camuflado Mod. MS312 28P 5+1 tiros",
+      "Girsan",
+      4.3,
+      0
+    ],
+    [
+      "322215",
+      "Rifle PCP UMAREX Mod. AIRSABER #2.2336",
+      "Umarex",
+      4.2,
+      51.4
+    ],
+    [
+      "260583",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOJ 1X24X29 MRS GENII #SCRD-76",
+      "Vector Optics",
+      4.2,
+      23.9
+    ],
+    [
+      "510749",
+      "Mochila DOBERMAN 60L DELTA PINK #BL130PINK",
+      "Doberman MOCHILAS",
+      4.2,
+      17.9
+    ],
+    [
+      "681113",
+      "Linterna Cabeza NITECORE Mod. NU53 1800Lm Bat6000mAh",
+      "Nitecore",
+      4.2,
+      8.7
+    ],
+    [
+      "440154",
+      "Lentes BERETTA Mod. Clash Amarillo #OC031A23540229UNI",
+      "Beretta Mod",
+      4.2,
+      7.8
+    ],
+    [
+      "440162",
+      "Lentes BERETTA Mod. Clash Transparente #OC031A2354014HUNI",
+      "Beretta Mod",
+      4.2,
+      3
+    ],
+    [
+      "701502",
+      "Escopeta pajera Winchester cal 12 Mod. SXP Defender 5+1T #10155",
+      "Winchester",
+      4.2,
+      0
+    ],
+    [
+      "322096",
+      "Revoler AC CO2 UMAREX 4,5mm Mod. Smith & Wesson 629 Classic 6,5\" #5.8387",
+      "Umarex",
+      4.1,
+      30.8
+    ],
+    [
+      "510757",
+      "Mochila DOBERMAN 75L SIERRA GREEN #BL069GR",
+      "Doberman MOCHILAS",
+      4.1,
+      7.2
+    ],
+    [
+      "400379",
+      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
+      "Apolo",
+      4.1,
+      5.9
+    ],
+    [
+      "322205",
+      "Rifle Palanquero UMAREX 4,5mm Mod. MARLIN #5.8396",
+      "Umarex",
+      4.1,
+      1
+    ],
+    [
+      "110243",
+      "Funda para Rifle DOBERMAN MIKE BLACK #BL056BL",
+      "Doberman RIFLES",
+      4.1,
+      0
+    ],
+    [
+      "601920CARU",
+      "Pistola AHSS cal 9mm Mod. FXS-9 Verde 2 cargadores 17 tiros",
+      "AHSS",
+      4.1,
+      0
+    ],
+    [
+      "600793CARU",
+      "Pistola Bersa 9mm TPR9 2C 17T",
+      "Bersa",
+      4.1,
+      0
+    ],
+    [
+      "601901CARU",
+      "Pistola KOR cal 9mm Mod. FX-9 Negro 2 Cargadores 17 Tiros",
+      "KOR",
+      4.1,
+      0
+    ],
+    [
+      "700016CARU",
+      "Rifle Browning .22LR SA 22 BL",
+      "Browning",
+      4.1,
+      0
+    ],
+    [
+      "601911CARU",
+      "Pistola KOR l Cal. 9mm l FDE l Mod.FX-9 SAND l 2 C. l 17 T.",
+      "KOR",
+      4.1,
+      0
+    ],
+    [
+      "323120",
+      "Pistola Airsoft Green Gas UMAREX Mod. GLOCK 45 GBB #2276345",
+      "Umarex",
+      4,
+      40.4
+    ],
+    [
+      "942158",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 45",
+      "Doberman BOTAS",
+      4,
+      11.6
+    ],
+    [
+      "DES650225",
+      "Bolsa de dormir NTK Mod. BUGGY 200g #230120",
+      "NTK",
+      4,
+      1
+    ],
+    [
+      "400103",
+      "Balines ARMADILLO cal 4,5mm BB Bronze botella 1500unid  (copia)",
+      "Armadillo",
+      4,
+      0.2
+    ],
+    [
+      "400396",
+      "Balines de gas pimienta UMAREX cal 50 x 10 unid #2.4784",
+      "Umarex",
+      3.9,
+      32.6
+    ],
+    [
+      "510754",
+      "Mochila DOBERMAN 60L DELTA CAMO DESSERT #BL130SH",
+      "Doberman MOCHILAS",
+      3.9,
+      17.6
+    ],
+    [
+      "701400",
+      "Escopeta Pajera DERYA cal 12 Mod. CR101S 18,5´´ 5+1 tiros",
+      "Derya",
+      3.9,
+      0
+    ],
+    [
+      "701340",
+      "Esc.DERYA cal 12 Mod. Carina QR-201 14\" 4+1 tiros tactical acabado madera",
+      "Derya",
+      3.9,
+      0
+    ],
+    [
+      "601301CARU",
+      "Pistola Bull l Cal. 9mm l Mod. Cherokee l Negro l 1C l 15T",
+      "Bull",
+      3.9,
+      0
+    ],
+    [
+      "DES320522",
+      "Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas",
+      "Crosman",
+      3.8,
+      34.3
+    ],
+    [
+      "DES750325",
+      "Carpa NTK Mod. FOX 2/3 personas #155300",
+      "NTK",
+      3.8,
+      17.7
+    ],
+    [
+      "510701",
+      "Mochila DOBERMAN 40L CHARLIE COYOTE #BL076KH",
+      "Doberman MOCHILAS",
+      3.8,
+      6.2
+    ],
+    [
+      "721142",
+      "Remera Antibala B.E. Armor Elite NIJ 010106 IIA 357MAG L",
+      "B.E. Armor",
+      3.8,
+      7.6
+    ],
+    [
+      "260275",
+      "Mira KONUS PRO M30 12.5-50x56 reticula iluminada 1/2 Mil-Dot #7289",
+      "Konus",
+      3.8,
+      3.8
+    ],
+    [
+      "721143",
+      "Remera Antibala B.E. Armor Elite NIJ 010106 IIA 357MAG XL",
+      "B.E. Armor",
+      3.8,
+      3.8
+    ],
+    [
+      "721141",
+      "Remera Antibala B.E. Armor Elite NIJ 010106 IIA 357MAG M",
+      "B.E. Armor",
+      3.8,
+      3.8
+    ],
+    [
+      "700802",
+      "Escopeta Pajera AKKAR cal 12 6+1 18,5\" Negro Pistol Grip",
+      "Akkar",
+      3.8,
+      0
+    ],
+    [
+      "681111",
+      "Linterna NITECORE Mod. DL30",
+      "Nitecore",
+      3.8,
+      0
+    ],
+    [
+      "DES260039",
+      "Binocular KONUS Mod. NEWZOOM 10-30x60 #2124",
+      "Konus",
+      3.7,
+      3.7
+    ],
+    [
+      "DES160190",
+      "Gas Pimienta UMAREX Mod. STOP ATTACK 40 ml #2.1904",
+      "Umarex",
+      3.7,
+      1.5
+    ],
+    [
+      "7000042UC",
+      "Rifle Remington 308 770",
+      "Remington",
+      3.7,
+      0
+    ],
+    [
+      "400101",
+      "Balines ARMADILLO cal 4,5mm BB Bronze botella 1500unid",
+      "Armadillo",
+      3.7,
+      0
+    ],
+    [
+      "701335",
+      "Esc.DERYA cal 12 Mod. Carina QR-101 14\" 4+1 tiros tactical",
+      "Derya",
+      3.7,
+      0
+    ],
+    [
+      "400263",
+      "Balas Fogueo UMAREX 9mm R.K. 50x500",
+      "Umarex",
+      3.6,
+      93.1
+    ],
+    [
+      "400295",
+      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,28g, 3300 unid #19412",
+      "ASG",
+      3.6,
+      32.9
+    ],
+    [
+      "942193",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 41",
+      "Doberman BOTAS",
+      3.6,
+      26.5
+    ],
+    [
+      "942194",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 42",
+      "Doberman BOTAS",
+      3.6,
+      26.5
+    ],
+    [
+      "942195",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 43",
+      "Doberman BOTAS",
+      3.6,
+      26.5
+    ],
+    [
+      "323130",
+      "Pistola Airsoft Green Gas UMAREX Mod. BERETTA M9A3 GBB FDE #2274310",
+      "Umarex",
+      3.6,
+      27.2
+    ],
+    [
+      "440161",
+      "Lentes BERETTA Mod. Clash Fume #OC031A23540959UNI",
+      "Beretta Mod",
+      3.6,
+      4.8
+    ],
+    [
+      "324020",
+      "Pistola Marcadora de Paintball UMAREX T4E cal 43 Mod. SW M&P9 M2.0 Negro #2.4767",
+      "Umarex",
+      3.6,
+      1.8
+    ],
+    [
+      "440158",
+      "Lentes BERETTA Mod. Clash Marrón #OC031A2354087WUNI",
+      "Beretta Mod",
+      3.6,
+      1.2
+    ],
+    [
+      "320007",
+      "Pistola Airsoft Green Gas ASG 6mm Mod.CZ P-09 GBB FDE #18137",
+      "ASG",
+      3.6,
+      0.6
+    ],
+    [
+      "700477CARU",
+      "Rifle Mossberg 22LR #37206",
+      "Mossberg",
+      3.6,
+      0
+    ],
+    [
+      "600150CARU",
+      "Revolver Armscor calibre 38 SPL",
+      "Armscor",
+      3.6,
+      0
+    ],
+    [
+      "600616CARU",
+      "Pistola Tanfoglio I Cal. 380 ACP I Negra I Mod. FT9F I 2 C. I 14 T.",
+      "Tanfoglio",
+      3.6,
+      0
+    ],
+    [
+      "681090",
+      "Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh",
+      "Nitecore",
+      3.5,
+      4.8
+    ],
+    [
+      "700950CARU",
+      "Rifle Mauser cal 22Mag Werke",
+      "Mauser",
+      3.5,
+      0
+    ],
+    [
+      "300098",
+      "Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS Negro",
+      "Fab Defense",
+      3.5,
+      0
+    ],
+    [
+      "600489CARU",
+      "REVOLVER ROSSI MOD. 274 CAL 38 SPL",
+      "Rossi",
+      3.5,
+      0
+    ],
+    [
+      "601030",
+      "Revolver Alfa Proj Cal. 22LR Mod. 261 6 Pulgada 9T",
+      "Alfa",
+      3.5,
+      0
+    ],
+    [
+      "942151",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 39",
+      "Doberman BOTAS",
+      3.4,
+      14.2
+    ],
+    [
+      "321091",
+      "Silenciador para rifles AC UMAREX Mod. SD5 #5.8491",
+      "Umarex",
+      3.4,
+      0.8
+    ],
+    [
+      "300099",
+      "Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS FDE",
+      "Fab Defense",
+      3.4,
+      0
+    ],
+    [
+      "322076",
+      "Revoler AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M29 6,5\" #5,8384",
+      "Umarex",
+      3.4,
+      0
+    ],
+    [
+      "942164",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 41",
+      "Doberman BOTAS",
+      3.3,
+      27.2
+    ],
+    [
+      "400371",
+      "Balines APOLO cal 6,35mm Mod. SLUG 2,14 grams 33 grains 200x30 #E19303",
+      "Apolo",
+      3.3,
+      17.8
+    ],
+    [
+      "510758",
+      "Mochila DOBERMAN 75L SIERRA COYOTE #BL069KH",
+      "Doberman MOCHILAS",
+      3.3,
+      9
+    ],
+    [
+      "300100",
+      "Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS Verde",
+      "Fab Defense",
+      3.3,
+      5
+    ],
+    [
+      "510700",
+      "Mochila DOBERMAN 40L CHARLIE GREEN #BL076GR",
+      "Doberman MOCHILAS",
+      3.3,
+      2.7
+    ],
+    [
+      "350200",
+      "Target GSM-SME con reseteo automatico para cal 22 #SME-ST22RES",
+      "BWC",
+      3.3,
+      1.2
+    ],
+    [
+      "700658",
+      "Rifle semiautomatico Marlin 22Lr.M:60SN 19\"#70650Pav.Cul.Pol. 14tiros",
+      "Marlin",
+      3.3,
+      0
+    ],
+    [
+      "942192",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 40",
+      "Doberman BOTAS",
+      3.2,
+      26.8
+    ],
+    [
+      "942196",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 44",
+      "Doberman BOTAS",
+      3.2,
+      17.7
+    ],
+    [
+      "942159",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 46",
+      "Doberman BOTAS",
+      3.2,
+      3
+    ],
+    [
+      "942161",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 47",
+      "Doberman BOTAS",
+      3.2,
+      3
+    ],
+    [
+      "DES750429",
+      "Carpa para baño NTK Mod. PODPOTY Gris #NTK-VP-SL1",
+      "NTK",
+      3.2,
+      0
+    ],
+    [
+      "311002",
+      "Pistola Airsoft Resorte ASG cal 6mm Mod. CZ SHADOW SP-01 #50083",
+      "ASG",
+      3.1,
+      15.7
+    ],
+    [
+      "400395",
+      "Balines Pimienta UMAREX cal 43 caja de 10 unid #2.4776",
+      "Umarex",
+      3.1,
+      7.8
+    ],
+    [
+      "260360",
+      "Alza y Punto de mira TRUGLO de Fibra Optica para GLOCK mod LOW #TG131G1",
+      "Truglo",
+      3.1,
+      9
+    ],
+    [
+      "111562",
+      "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Compact #WHLSBOR0491-842717125962",
+      "Fobus",
+      3.1,
+      1.9
+    ],
+    [
+      "600798",
+      "Pistola WALTHER cal 22LR. Mod. PPK 10 tiros Negro 1 carg. #2853248",
+      "Walther",
+      3.1,
+      0
+    ],
+    [
+      "322075",
+      "Revoler AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M29 3\" #5.8383",
+      "Umarex",
+      3.1,
+      0
+    ],
+    [
+      "600250CARU",
+      "PISTOLA BENELLI MOD. B80 CAL. 9MM",
+      "Benelli",
+      3.1,
+      0
+    ],
+    [
+      "600808CARU",
+      "PISTOLA WALTHER 22LR",
+      "Walther",
+      3.1,
+      0
+    ],
+    [
+      "700650CARU",
+      "Rifle Marlin 22LR M60 SemiAuto Pav CulMad 15T #70620",
+      "Marlin",
+      3.1,
+      0
+    ],
+    [
+      "700077",
+      "Escopeta pajera Aksa 12 arms M. PA 1201 28´´ 5+1tiros",
+      "AKSA",
+      3.1,
+      0
+    ],
+    [
+      "700078",
+      "Escopeta pajera Aksa 12 arms M. PA 1204 20´´ 7+1 tiros",
+      "AKSA",
+      3.1,
+      0
+    ],
+    [
+      "700079",
+      "Escopeta pajera Aksa 12 arms M. PA 1205 20´´ 5+1tiros",
+      "AKSA",
+      3.1,
+      0
+    ],
+    [
+      "701401CARU",
+      "Escopeta Pajera Derya l Cal. 12 l Polimero l Mod. CR101S l 18,5P. l 5+1 T.",
+      "Derya",
+      3.1,
+      0
+    ],
+    [
+      "260572",
+      "Magnificador VECTOR OPTICS Mod. PARAGON 5x30 #SCMF-34",
+      "Vector Optics",
+      3,
+      22.4
+    ],
+    [
+      "261406",
+      "Camara GSM-STEALTHCAM Mod. BROWTINE 18MP #STC-BT18",
+      "BWC",
+      3,
+      14.4
+    ],
+    [
+      "260291",
+      "Mira KONUS Mod. ABSOLUTE 5-40x56 Vidrio ED #7179",
+      "Konus",
+      3,
+      12.1
+    ],
+    [
+      "510488",
+      "Mochila DOBERMAN 35L BRAVO GREEN #BL080GR",
+      "Doberman MOCHILAS",
+      3,
+      8.3
+    ],
+    [
+      "300131",
+      "Maleta ASG 100x35x14cm FDE #19835",
+      "ASG",
+      3,
+      0.6
+    ],
+    [
+      "600811",
+      "Pistola WALTHER 22Lr. M.P22Q 10 T.DT 1Carg. #2853213",
+      "Walther",
+      3,
+      0
+    ],
+    [
+      "600771CARU",
+      "PISTOLA  BERSA MOD 23  CAL 22LR",
+      "Bersa",
+      3,
+      0
+    ],
+    [
+      "901411",
+      "Bateria NITECORE Mod. NL1823 18650 2300 mAh",
+      "Nitecore",
+      2.9,
+      0.7
+    ],
+    [
+      "700008CARU",
+      "Esc.Maverick 12 M:88",
+      "Maverick",
+      2.9,
+      0
+    ],
+    [
+      "700972CARU",
+      "Escopeta Hatsan calibre 12 Modelo Escort",
+      "Hatsan",
+      2.9,
+      0
+    ],
+    [
+      "701288",
+      "Rifle Semi Automatico DERYA cal 22LR Mod. TM22 C101 18'' 2 carg 10 tiros",
+      "Derya",
+      2.9,
+      0
+    ],
+    [
+      "DES750330",
+      "Carpa NTK Mod. FOX 3/4 personas #155320",
+      "NTK",
+      2.8,
+      31.2
+    ],
+    [
+      "721102",
+      "Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      2.8,
+      25.3
+    ],
+    [
+      "322050",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Beretta M9A3 FDE Blowback #5.8347",
+      "Umarex",
+      2.8,
+      19.4
+    ],
+    [
+      "680675",
+      "Linterna Bastón DOBERMAN 3AAA 150L #LP-8392E",
+      "Doberman LINTERNAS",
+      2.8,
+      10.6
+    ],
+    [
+      "721100",
+      "Chaleco Antibala B.E. Armor 4000 S NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      2.8,
+      8.4
+    ],
+    [
+      "322020",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 19X NonBlow #5.8367",
+      "Umarex",
+      2.8,
+      0
+    ],
+    [
+      "260568",
+      "Punto Rojo VECTOR OPTICS Mod. FRENZY PLUS 1x18x20 #SCRD-63 VOD",
+      "Vector Optics",
+      2.7,
+      9.4
+    ],
+    [
+      "510487",
+      "Mochila DOBERMAN 35L BRAVO COYOTE #BL080KH",
+      "Doberman MOCHILAS",
+      2.7,
+      5
+    ],
+    [
+      "942180",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 47",
+      "Doberman BOTAS",
+      2.7,
+      3.6
+    ],
+    [
+      "900653",
+      "Placa para punto rojo BERETTA Mod. APXA1 N2",
+      "Vector Optics",
+      2.7,
+      4.3
+    ],
+    [
+      "700285CARU",
+      "Escopeta Baikal cal.12 M:18EM",
+      "Baikal",
+      2.7,
+      0
+    ],
+    [
+      "320270",
+      "Rifle AC NP Crosman Remington E. H. 5,5 c/mira4x32 #REHNP22SX",
+      "Crosman",
+      2.7,
+      0
+    ],
+    [
+      "DES750315",
+      "Carpa NTK Mod. FALCON 3 personas #150640",
+      "NTK",
+      2.6,
+      26.2
+    ],
+    [
+      "250111",
+      "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
+      "BWC",
+      2.6,
+      9.2
+    ],
+    [
+      "323110",
+      "Pistola Airsoft CO2 UMAREX 6mm Mod. Beretta APX Blowback #2.6302",
+      "Umarex",
+      2.6,
+      2
+    ],
+    [
+      "700479CARU",
+      "Rifle Mossberg calibre 22LR",
+      "Mossberg",
+      2.6,
+      0
+    ],
+    [
+      "701051CARU",
+      "TOZ-TULA mod.TOZ-17 calibre 22lr",
+      "TOZ -TULA",
+      2.6,
+      0
+    ],
+    [
+      "505164",
+      "Balas IMI 9mm 124GR DI-CUT P. Hueca 1000/50",
+      "IMI",
+      2.5,
+      311.7
+    ],
+    [
+      "942166",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 42",
+      "Doberman BOTAS",
+      2.5,
+      27.2
+    ],
+    [
+      "510448",
+      "Mochila DOBERMAN 40L ALFA GREEN #BL133",
+      "Doberman MOCHILAS",
+      2.5,
+      20.8
+    ],
+    [
+      "770504",
+      "Tapa oidos BERETTA Mod. Stand Verde #CF1000000207SS",
+      "Beretta Mod",
+      2.5,
+      2.4
+    ],
+    [
+      "501505",
+      "Cartuchos GB 28 #5 15g 250/25",
+      "GB",
+      2.4,
+      39.9
+    ],
+    [
+      "510478",
+      "Mochila DOBERMAN 55L ECHO COYOTE #BL012KH",
+      "Doberman MOCHILAS",
+      2.4,
+      8.3
+    ],
+    [
+      "510476",
+      "Mochila DOBERMAN 55L ECHO MULTI CAMO GREEN #BL012CP",
+      "Doberman MOCHILAS",
+      2.4,
+      4.8
+    ],
+    [
+      "942179",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 46",
+      "Doberman BOTAS",
+      2.4,
+      3.6
+    ],
+    [
+      "600363CARU",
+      "Pistola DERYA cal 9mm Mod DY9 C111F Full FDE 2 carg de 15/17T (copia)",
+      "Derya",
+      2.4,
+      0
+    ],
+    [
+      "700942",
+      "Escopeta BOITO cal 12 Mod. MIURA I Estandar 28'' #196",
+      "Boito",
+      2.3,
+      29.7
+    ],
+    [
+      "400397",
+      "Balines de gas pimienta UMAREX cal 68 x 10 unid #2.4792",
+      "Umarex",
+      2.3,
+      25
+    ],
+    [
+      "942168",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 44",
+      "Doberman BOTAS",
+      2.3,
+      19.7
+    ],
+    [
+      "322010",
+      "Pistola AC CO2 UMAREX 4,5 mm Mod PX4 Storm#5.8078",
+      "Umarex",
+      2.3,
+      10.5
+    ],
+    [
+      "681112",
+      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
+      "Nitecore",
+      2.3,
+      10.6
+    ],
+    [
+      "DES941058",
+      "Hamaca NTK Mod. HARPIA 1 persona #293050",
+      "NTK",
+      2.3,
+      7.6
+    ],
+    [
+      "260574",
+      "Punto Rojo para Rifle VECTOR OPTICS Mod. MAVERICK II GEN ii 1x22 #SCRD-12II",
+      "Vector Optics",
+      2.3,
+      0.3
+    ],
+    [
+      "601931",
+      "Pistola KOR cal 9mm Mod. FX-9 Verde Cargadores 17 Tiros",
+      "KOR",
+      2.3,
+      0
+    ],
+    [
+      "700076CARU",
+      "Escopeta AKSA ARMS CAL.12 MODELO PA1204",
+      "AKSA",
+      2.3,
+      0
+    ],
+    [
+      "323125",
+      "Pistola Airsoft Green Gas UMAREX Mod. GLOCK 18C GEN3 GBB Full Auto #2276332",
+      "Umarex",
+      2.2,
+      88.3
+    ],
+    [
+      "510702",
+      "Mochila DOBERMAN 40L CHARLIE BLACK #BL076BL",
+      "Doberman MOCHILAS",
+      2.2,
+      12.1
+    ],
+    [
+      "400401",
+      "Balines de Paintball UMAREX cal 43 x125 unid",
+      "Umarex",
+      2.2,
+      5.9
+    ],
+    [
+      "510771",
+      "Mochila DOBERMAN c/ Bolso de Agua Coyote #BL019KH",
+      "Doberman MOCHILAS",
+      2.2,
+      4.9
+    ],
+    [
+      "681120",
+      "Reflector NITECORE Mod. NWL20 600Lm Bat21700",
+      "Nitecore",
+      2.2,
+      4.8
+    ],
+    [
+      "260683",
+      "Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415",
+      "Konus",
+      2.2,
+      0.7
+    ],
+    [
+      "7000012UC",
+      "Escopeta Boito 16 Miura II",
+      "Boito",
+      2.2,
+      0
+    ],
+    [
+      "200135",
+      "Culata Polímero Maverick/Mossberg",
+      "Maverick",
+      2.2,
+      0
+    ],
+    [
+      "600363",
+      "Pistola DERYA cal 9mm Mod DY9 C111F Full FDE 2 carg de 15/17T",
+      "Derya",
+      2.2,
+      0
+    ],
+    [
+      "260047",
+      "Binocular KONUS Mod. SPY11 NV 3-6x32 #7932",
+      "Konus",
+      2.2,
+      0
+    ],
+    [
+      "4520355",
+      "Cargador KCI cal 223 Mod. AR15 100 tiros",
+      "KCI",
+      2.1,
+      111.3
+    ],
+    [
+      "260290",
+      "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
+      "Konus",
+      2.1,
+      8.3
+    ],
+    [
+      "260272",
+      "Mira KONUS PRO-F30 8-32x56 Primer plano focal reticula iluminada Mil-Dot #7298",
+      "Konus",
+      2.1,
+      4.2
+    ],
+    [
+      "322090",
+      "Revoler AC CO2 UMAREX 4,5mm Mod. Smith & Wesson 629 Competitor #5.8440",
+      "Umarex",
+      2.1,
+      3.1
+    ],
+    [
+      "DES320275",
+      "Rifle AC CO2 CROSMAN 4,5mm Mod. #DSBRFDE Full auto  (copia)",
+      "Crosman",
+      2.1,
+      1
+    ],
+    [
+      "942189",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 47",
+      "Doberman BOTAS",
+      2.1,
+      0.7
+    ],
+    [
+      "600115CARU",
+      "Revolver Rexio I Cal. 38SPL I Negro I Mod. Pucara I 4 P. I 6 T.",
+      "Rexio",
+      2.1,
+      0
+    ],
+    [
+      "942167",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 43",
+      "Doberman BOTAS",
+      2,
+      27.2
+    ],
+    [
+      "400372",
+      "Balines APOLO cal 6,35mm Mod. PUNCHER 2,4 grams 37 grains 200x30 #E19972",
+      "Apolo",
+      2,
+      16.6
+    ],
+    [
+      "510772",
+      "Mochila DOBERMAN c/ Bolso de Agua Negro #BL019BL",
+      "Doberman MOCHILAS",
+      2,
+      12
+    ],
+    [
+      "DES750340",
+      "Carpa NTK Mod. FOX 5/6 personas #155360",
+      "NTK",
+      2,
+      9.2
+    ],
+    [
+      "510770",
+      "Mochila DOBERMAN c/ Bolso de Agua Verde #BL019GR",
+      "Doberman MOCHILAS",
+      2,
+      5
+    ],
+    [
+      "260575",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK TEK #SCRDM-01",
+      "Vector Optics",
+      2,
+      3.8
+    ],
+    [
+      "320005",
+      "Pistola Airsoft Green Gas ASG 6mm Mod. M9 IA, GBB #14835",
+      "ASG",
+      2,
+      1.4
+    ],
+    [
+      "4501157",
+      "Cargador DERYA para Modelos MK 21 tiros",
+      "Derya",
+      1.9,
+      85.4
+    ],
+    [
+      "904005",
+      "Balines de Practica UMAREX T4E cal 43 x 500 unid #2.4505",
+      "Umarex",
+      1.9,
+      12.7
+    ],
+    [
+      "721140",
+      "Remera Antibala B.E. Armor Elite NIJ 010106 IIA 357MAG S",
+      "B.E. Armor",
+      1.9,
+      3.8
+    ],
+    [
+      "160189",
+      "Gas Nitro UMAREX para KOMPLETE x2 unidades #2211382",
+      "Umarex",
+      1.8,
+      138.9
+    ],
+    [
+      "272063",
+      "Correa Fab Defense Elastica Mod. One Point Bungee",
+      "Fab Defense",
+      1.8,
+      27.3
+    ],
+    [
+      "510449",
+      "Mochila DOBERMAN 40L ALFA COYOTE #BL133",
+      "Doberman MOCHILAS",
+      1.8,
+      14.5
+    ],
+    [
+      "DES321202",
+      "Cargador CROSMAN 300 tiros para Mod. DPMS/SBR #CFAHCM (copia)",
+      "Crosman",
+      1.8,
+      12.5
+    ],
+    [
+      "322015",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Colt Defender NonBlow #5.8310",
+      "Umarex",
+      1.8,
+      10.3
+    ],
+    [
+      "942169",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 45",
+      "Doberman BOTAS",
+      1.8,
+      10.1
+    ],
+    [
+      "942188",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 46",
+      "Doberman BOTAS",
+      1.8,
+      0.4
+    ],
+    [
+      "710510",
+      "Caja de seguridad para empotrar en mueble para resguardo 22x39x40cm",
+      "SIN MARCA",
+      1.8,
+      0
+    ],
+    [
+      "300132",
+      "Maleta ASG 100x35x15cm Negro #19834",
+      "ASG",
+      1.7,
+      9.9
+    ],
+    [
+      "DES323500",
+      "Cartucho Gel Pimienta UMAREX p/ HDR50 HDS68 y PDP #2.2050.2",
+      "Umarex",
+      1.7,
+      7.8
+    ],
+    [
+      "DES750420",
+      "Carpa para bolsa de dormir NTK Mod. SLEEPOD #NTK-HC-SLPO1",
+      "NTK",
+      1.7,
+      6.1
+    ],
+    [
+      "4500050",
+      "Cargador Ruger 22LR BX25TX2 10-22/SR22/AmericanRimfire/77Series 50T #90398",
+      "Ruger",
+      1.7,
+      3.8
+    ],
+    [
+      "4520490",
+      "Cargador KCI cal 45ACP Mod. 1911 8 tiros",
+      "KCI",
+      1.7,
+      3.6
+    ],
+    [
+      "LIQ150983",
+      "LQN-Cuchillo Aitor Jungle King INegro Vaina Negra  #16016N",
+      "Aitor",
+      1.7,
+      5
+    ],
+    [
+      "400267",
+      "Balas Fogueo UMAREX 9mm P.A.K. 600x75 Caja Cerrada",
+      "Umarex",
+      1.7,
+      2.3
+    ],
+    [
+      "260363",
+      "Alza y Punto de mira Truglo de Tritium Pro para Ruger SR series con circulo blanco #TG231R1W",
+      "Truglo",
+      1.7,
+      2.2
+    ],
+    [
+      "400217",
+      "Balines APOLO 4,5mm Hollow Point Cobreado 0.6gr 400 x 40 #E19990",
+      "Apolo",
+      1.7,
+      2.3
+    ],
+    [
+      "7000061UC",
+      "Rifle Sabatti .22 LR Sporter",
+      "Sabatti",
+      1.7,
+      0
+    ],
+    [
+      "320012",
+      "Pistola Airsoft Green Gas ASG 6mm Mod. G18C Blowback #16077",
+      "ASG",
+      1.7,
+      0
+    ],
+    [
+      "320511",
+      "Arco y Flecha Compuesto Crosman 55lbs Typhon con reel de pesca #AVCT40KT",
+      "Crosman",
+      1.7,
+      0
+    ],
+    [
+      "323135",
+      "Pistola Airsoft Green Gas UMAREX Mod. WALTHER PPQ TAC #2272808",
+      "Umarex",
+      1.6,
+      28.5
+    ],
+    [
+      "400253",
+      "Balines APOLO 4,5mm Predator Cobreado 0.7gr 400 x 40 #E19950",
+      "Apolo",
+      1.6,
+      20.9
+    ],
+    [
+      "DES260044",
+      "Binocular KONUS GIANT 20x60 #2125",
+      "Konus",
+      1.6,
+      19.7
+    ],
+    [
+      "110900",
+      "Strike Systems Airsoft rifle case, 105x32x10cm, Black #18664",
+      "ASG",
+      1.6,
+      18.6
+    ],
+    [
+      "260571",
+      "Magnificador VECTOR OPTICS Mod. MAVERICK III 3x22 #SCMF-31",
+      "Vector Optics",
+      1.6,
+      10.7
+    ],
+    [
+      "720678",
+      "Kepi BERETTA Mod. 92X Performance #BT131T20070999UNI",
+      "Beretta Mod",
+      1.6,
+      6.4
+    ],
+    [
+      "260277",
+      "Mira táctica KONUS PRO M30 1-4x24 reticula iluminada Center Dot #7184",
+      "Konus",
+      1.6,
+      5.7
+    ],
+    [
+      "681116",
+      "Linterna NITECORE Mod. MH10V2 1200 Lm BatNL2140 4000mAh",
+      "Nitecore",
+      1.6,
+      4
+    ],
+    [
+      "270813",
+      "Funda Fab Defense p/ M:1911 Level 1 #M1-1911",
+      "Fab Defense",
+      1.6,
+      2.3
+    ],
+    [
+      "DES901152",
+      "Cargador NITECORE Mod. UI2 para Bat. Recargable",
+      "Nitecore",
+      1.6,
+      1.1
+    ],
+    [
+      "320485",
+      "Rifle Cerrojo ASG cal. 6mm Mod. M40A3 #18556",
+      "ASG",
+      1.6,
+      1.2
+    ],
+    [
+      "720689",
+      "Kepi BERETTA Mod. Sanded EVO FDE #BC192T1675086YUNI",
+      "Beretta Mod",
+      1.6,
+      0.1
+    ],
+    [
+      "501400",
+      "Cartuchos GB 20 #7 28GR 25 X250",
+      "GB",
+      1.6,
+      0.1
+    ],
+    [
+      "4520400",
+      "Cargador KCI cal .40 Mod. Glock 31 tiros",
+      "KCI",
+      1.6,
+      0
+    ],
+    [
+      "260369",
+      "Alza y Punto de mira Truglo TFX para Glock Fast Set#TG13GLFST",
+      "Truglo",
+      1.6,
+      0
+    ],
+    [
+      "904006",
+      "Balines de Practica UMAREX T4E cal 50 Performance x 500 unid #2.4781",
+      "Umarex",
+      1.5,
+      64.1
+    ],
+    [
+      "510479",
+      "Mochila DOBERMAN 55L ECHO GREEN #BL012GR",
+      "Doberman MOCHILAS",
+      1.5,
+      20.6
+    ],
+    [
+      "510430",
+      "Morral DOBERMAN 5L FOXTROX BLACK #BL011BL",
+      "Doberman MOCHILAS",
+      1.5,
+      10.5
+    ],
+    [
+      "DES880071",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 9 - 42",
+      "Rocky Boots",
+      1.5,
+      5.1
+    ],
+    [
+      "DES680467",
+      "Linterna COLEMAN Mod. BATTERYGUARD 250M #2000032707",
+      "Coleman",
+      1.5,
+      3.8
+    ],
+    [
+      "400400",
+      "Balines de Paintball UMAREX cal 68 x 500 unid",
+      "Umarex",
+      1.5,
+      1.3
+    ],
+    [
+      "115704",
+      "Funda Arma Larga Doberman Cuero x 135CM",
+      "Doberman",
+      1.5,
+      0.5
+    ],
+    [
+      "260357",
+      "Alza y Punto de mira TRUGLO de Tritium PRO para GLOCK con circulo blanco mod LOW #TG231G1W",
+      "Truglo",
+      1.5,
+      0.5
+    ],
+    [
+      "721032",
+      "Chaleco Antibala DK 360  Estándar Desert L",
+      "DK",
+      1.5,
+      0
+    ],
+    [
+      "151595",
+      "Cuchillo Nieto Linea Cervato #8701",
+      "Miguel Nieto",
+      1.5,
+      0
+    ],
+    [
+      "320280",
+      "Rifle AC NPE CROSMAN 5,5mm Mod. Mag-Fire Extreme con mira 4x32 #CME2SXS",
+      "Crosman",
+      1.5,
+      0
+    ],
+    [
+      "700920",
+      "Escopeta Armed 20 SemiAuto SAS CulPoli BandaRef 7+1T 28''",
+      "Armed",
+      1.4,
+      48.3
+    ],
+    [
+      "DES750335",
+      "Carpa NTK Mod. FOX 4/5 personas #155340",
+      "NTK",
+      1.4,
+      31.1
+    ],
+    [
+      "322097",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M&P9L Performance #5.8404",
+      "Umarex",
+      1.4,
+      15.1
+    ],
+    [
+      "680655",
+      "Linterna DOBERMAN 180L c/Magnetico USB #LP-9515",
+      "Doberman LINTERNAS",
+      1.4,
+      8.6
+    ],
+    [
+      "681101",
+      "Linterna NITECORE Mod. P10 V2 1100Lm SinBat",
+      "Nitecore",
+      1.4,
+      4.7
+    ],
+    [
+      "DES880070",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 8 - 41",
+      "Rocky Boots",
+      1.4,
+      2.2
+    ],
+    [
+      "110583",
+      "Funda interna FOBUS Mod. #SWC p/ APX/MASADA/S n W/PPQ/Taurus/otros",
+      "Fobus",
+      1.4,
+      1.8
+    ],
+    [
+      "DES880075",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 13 - 47",
+      "Rocky Boots",
+      1.4,
+      0.7
+    ],
+    [
+      "260680",
+      "Montante para rifles KONUS de 25.4mm Alto para Picattiny / Weaver #7400",
+      "Konus",
+      1.4,
+      0.9
+    ],
+    [
+      "260579",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. S&W M&P TEK #SCRDM-06",
+      "Vector Optics",
+      1.4,
+      0.3
+    ],
+    [
+      "250050",
+      "Pasta 60ml GSM-BWC Perma BlueÍ† para rayaduras de armas con terminado azul/negro #13322",
+      "BWC",
+      1.4,
+      0
+    ],
+    [
+      "600537",
+      "Pistola Alfa Proj cal. 6.35 Mod. ATC 2cargadores 7Tiros",
+      "Alfa",
+      1.4,
+      0
+    ],
+    [
+      "324006",
+      "Pistola UMAREX T4E cal.43 Mod. Glock 17 Gen5 Coyote #211.00.04",
+      "Umarex",
+      1.3,
+      150.7
+    ],
+    [
+      "942163",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 40",
+      "Doberman BOTAS",
+      1.3,
+      27.2
+    ],
+    [
+      "321092",
+      "Adaptador UMAREX T4E para TC68 2x 12g CO2 #2.4747.4",
+      "Umarex",
+      1.3,
+      20.6
+    ],
+    [
+      "720687",
+      "Kepi BERETTA Mod. Sanded EVO Azul Marino #BC192T16750504UNI",
+      "Beretta Mod",
+      1.3,
+      9.6
+    ],
+    [
+      "151605",
+      "Navaja UMAREX EF102 1x10 #50976-1",
+      "Umarex",
+      1.3,
+      6.9
+    ],
+    [
+      "270650",
+      "Manija de Cerrojado Fab Defense Glock #FCH",
+      "Fab Defense",
+      1.3,
+      7.2
+    ],
+    [
+      "151415",
+      "Navaja UMAREX Mod. Walther BNK5 #5.0859",
+      "Umarex",
+      1.3,
+      2.7
+    ],
+    [
+      "260366",
+      "Alza y Punto de mira TRUGLO TFO para GLOCK mod LOW Alza Amarilla #TG131GT1Y",
+      "Truglo",
+      1.3,
+      2.6
+    ],
+    [
+      "850560",
+      "Reel MolinetePB Abu Garcia RevoToro S T2S51 blc zurdo#1365389",
+      "Abu Garcia",
+      1.3,
+      1.3
+    ],
+    [
+      "260681",
+      "Montante para rifles KONUS de 25.4mm Medio para Picattiny / Weaver #7401",
+      "Konus",
+      1.3,
+      1.5
+    ],
+    [
+      "270801",
+      "Funda Fab Defense Glock ZURDO #M1G-9LH",
+      "Fab Defense",
+      1.3,
+      1.2
+    ],
+    [
+      "270055",
+      "Bipode Fab Defense Porta Linterna #T-PODFA",
+      "Fab Defense",
+      1.3,
+      0.7
+    ],
+    [
+      "510797",
+      "Porta vaso termico / hoppie DOBERMAN JULIETT BLACK #BL051BL",
+      "Doberman",
+      1.3,
+      0.8
+    ],
+    [
+      "770503",
+      "Tapa oidos BERETTA Mod. Stand Azul #CF1000000205SS",
+      "Beretta Mod",
+      1.3,
+      0.4
+    ],
+    [
+      "501361",
+      "Cartuchos GB 20 #1 28g *25 X250",
+      "GB",
+      1.3,
+      0.1
+    ],
+    [
+      "270251",
+      "Porta cargador Fab Defense 223REM/5.56NATO #556pouch",
+      "Fab Defense",
+      1.2,
+      19
+    ],
+    [
+      "LIQ300115",
+      "LQN-N-Caja p/2Rifles Lujoso Negro #10252",
+      "Sin Marca",
+      1.2,
+      13.1
+    ],
+    [
+      "400231",
+      "Balines APOLO 5,5mm Mod. MONSTER 1,65gr 200 x 30 #E19931",
+      "Apolo",
+      1.2,
+      10.7
+    ],
+    [
+      "720694",
+      "Kepi BERETTA Mod. Sanded EVO Negro #BC192T16750999UNI",
+      "Beretta Mod",
+      1.2,
+      9.9
+    ],
+    [
+      "151435",
+      "Navaja UMAREX Mod. Walther Mod. GNK2 #5.0868",
+      "Umarex",
+      1.2,
+      9
+    ],
+    [
+      "510432",
+      "Morral DOBERMAN 5L FOXTROX GREEN #BL011GR",
+      "Doberman MOCHILAS",
+      1.2,
+      8.7
+    ],
+    [
+      "324162",
+      "Pistola Airsoft Resorte UMAREX Mod. BERETTA 92FS #2274005",
+      "Umarex",
+      1.2,
+      6.7
+    ],
+    [
+      "270150",
+      "Culata Fab Defense Glock M17 #GLR-17",
+      "Fab Defense",
+      1.2,
+      8.8
+    ],
+    [
+      "151661",
+      "Cuchillo UMAREX Mod. Ancho Knife con Display de 16 NARANJA  #5.0998-4",
+      "Umarex",
+      1.2,
+      4
+    ],
+    [
+      "260682",
+      "Montante para rifles KONUS de 25.4mm Bajo para Picattiny / Weaver #7402",
+      "Konus",
+      1.2,
+      4.7
+    ],
+    [
+      "550304",
+      "Kit de limpieza GSM-BWC para Rifles AR15 #BC-ARCLN-KIT",
+      "BWC",
+      1.2,
+      3.1
+    ],
+    [
+      "400382",
+      "Balines APOLO 5,5mm Mod. Hollow Point Cobreado 1.15gr 200x40 #E19991",
+      "Apolo",
+      1.2,
+      1.6
+    ],
+    [
+      "300091",
+      "Kit de Precisión Fab Defense Ruger 10-22 PRO Retractil #M4PROR10/22",
+      "Fab Defense",
+      1.2,
+      1.2
+    ],
+    [
+      "920414",
+      "Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-L#20426",
+      "Coleman",
+      1.2,
+      1.4
+    ],
+    [
+      "151570",
+      "Cuchillo Nieto  Linea Combate (Forprene) #185",
+      "Miguel Nieto",
+      1.2,
+      0.6
+    ],
+    [
+      "320006",
+      "Pistola Airsoft Green Gas ASG 6mm Mod.CZ P-09 GBB Negro #18116",
+      "ASG",
+      1.2,
+      0
+    ],
+    [
+      "870815",
+      "Bota 5.11 Tactica 6\" Mod. A/T Non-Zip 12440-106 Dark Coyote US 10",
+      "5.11",
+      1.2,
+      0
+    ],
+    [
+      "870817",
+      "Bota 5.11 Tactica 6\" Mod. A/T Non-Zip 12440-106 Dark Coyote US 11,5",
+      "5.11",
+      1.2,
+      0
+    ],
+    [
+      "7000121UC",
+      "Rifle Savage .22 LR 64F",
+      "Savage",
+      1.2,
+      0
+    ],
+    [
+      "501591",
+      "Cartuchos SAGA 36-65 #5 11gr T1",
+      "Saga",
+      1.1,
+      75
+    ],
+    [
+      "400386",
+      "Balines APOLO 5,5mm Predator Cobreado 1.36gr 200 x 40 #E19951",
+      "Apolo",
+      1.1,
+      32.5
+    ],
+    [
+      "942204",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 41",
+      "Doberman BOTAS",
+      1.1,
+      24.6
+    ],
+    [
+      "942205",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 42",
+      "Doberman BOTAS",
+      1.1,
+      24.6
+    ],
+    [
+      "942206",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 43",
+      "Doberman BOTAS",
+      1.1,
+      24.6
+    ],
+    [
+      "942203",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
+      "Doberman BOTAS",
+      1.1,
+      24.6
+    ],
+    [
+      "942190",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 38",
+      "Doberman BOTAS",
+      1.1,
+      17.9
+    ],
+    [
+      "942191",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 39",
+      "Doberman BOTAS",
+      1.1,
+      17.9
+    ],
+    [
+      "942207",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 44",
+      "Doberman BOTAS",
+      1.1,
+      16
+    ],
+    [
+      "324170",
+      "Pistola Airsoft Resorte UMAREX Mod. WALTHER PPQ FDE #2272542",
+      "Umarex",
+      1.1,
+      9.3
+    ],
+    [
+      "510441",
+      "Mochila DOBERMAN 30L NAVY CAMO BLACK / YELLOW #LP970BLCP",
+      "Doberman MOCHILAS",
+      1.1,
+      7.1
+    ],
+    [
+      "270680",
+      "Kepi Fab Defense c/Empuñadura de Defensa #GOTCHA",
+      "Fab Defense",
+      1.1,
+      7.3
+    ],
+    [
+      "151410",
+      "Navaja UMAREX Mod. Walther TFW4 #5.0835",
+      "Umarex",
+      1.1,
+      5.9
+    ],
+    [
+      "720679",
+      "Kepi BERETTA Mod. Velcro Negro  #BT151T20070999UNI",
+      "Beretta Mod",
+      1.1,
+      6.1
+    ],
+    [
+      "942198",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 46",
+      "Doberman BOTAS",
+      1.1,
+      4.3
+    ],
+    [
+      "942199",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 47",
+      "Doberman BOTAS",
+      1.1,
+      4.3
+    ],
+    [
+      "901150",
+      "Cargador NITECORE Mod. UI1 para Bat. Recargable",
+      "Nitecore",
+      1.1,
+      4.6
+    ],
+    [
+      "260677",
+      "Montante para rifles KONUS de 30mm Bajo para Picattiny / Weaver #7405",
+      "Konus",
+      1.1,
+      4.9
+    ],
+    [
+      "400266",
+      "Balas Fogueo UMAREX 9mm R.K. 50x500 Caja Cerrada",
+      "Umarex",
+      1.1,
+      3.4
+    ],
+    [
+      "260676",
+      "Montante para rifles KONUS de 30mm Mediano para Picattiny / Weaver #7404",
+      "Konus",
+      1.1,
+      2.6
+    ],
+    [
+      "510799",
+      "Porta vaso termico / hoppie DOBERMAN JULIETT COYOTE #BL051KH",
+      "Doberman",
+      1.1,
+      1.5
+    ],
+    [
+      "510798",
+      "Porta vaso termico / hoppie DOBERMAN JULIETT GREEN #BL051GR",
+      "Doberman",
+      1.1,
+      1.4
+    ],
+    [
+      "501550",
+      "Cartuchos GB 32 #7 14g 250/25",
+      "GB",
+      1.1,
+      1.1
+    ],
+    [
+      "270816",
+      "Funda Fab Defense M24 Jerico941F Holster For Paddle",
+      "Fab Defense",
+      1.1,
+      0.7
+    ],
+    [
+      "901268",
+      "Kit profesional de Herramientas GSM-BWC WeekenderÍ´ para armeros #42021",
+      "BWC",
+      1.1,
+      1.1
+    ],
+    [
+      "110562",
+      "Funda FOBUS Mod. #GL-2ND p/ G17/19 Paddle",
+      "Fobus",
+      1.1,
+      0.6
+    ],
+    [
+      "140188",
+      "Correa táctica DOBERMAN BLACK #BL066BL",
+      "Doberman",
+      1.1,
+      0.7
+    ],
+    [
+      "160057",
+      "Detector de metal  MD-3003B1",
+      "Sin Marca",
+      1.1,
+      0
+    ],
+    [
+      "320265",
+      "Rifle AC NPE Crosman Valiant 5,5 c/mira4x32 #CVH22RDNS-WX",
+      "Crosman",
+      1.1,
+      0
+    ],
+    [
+      "323140",
+      "Pistola Airsoft Green Gas UMAREX Mod. S&W M&P9 Performance Center GBB #2275911",
+      "Umarex",
+      1,
+      32.3
+    ],
+    [
+      "322061",
+      "Pistola AC CO2 UMAREX 4,5mm Mod Glock 17 Gen5 Gris #5.8472",
+      "Umarex",
+      1,
+      23.4
+    ],
+    [
+      "400250",
+      "Balines APOLO cal 5,5mm Mod. SLUG STAR 1,36gr 21 grains LATA 200x30 #E19312",
+      "Apolo",
+      1,
+      17.5
+    ],
+    [
+      "324152",
+      "Pistola Airsoft Resorte UMAREX Mod. BERETTA PX4 STORM #2274020",
+      "Umarex",
+      1,
+      10
+    ],
+    [
+      "400399",
+      "Balines de Paintball UMAREX cal 50 x 500 unid",
+      "Umarex",
+      1,
+      5.4
+    ],
+    [
+      "942170",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 46",
+      "Doberman BOTAS",
+      1,
+      4.5
+    ],
+    [
+      "LIQ300214",
+      "LQN-N-Caja p/2Pistolas Neg. #10402",
+      "Sin Marca",
+      1,
+      4.3
+    ],
+    [
+      "300090",
+      "Kit de Precisión Fab Defense Ruger 10-22 PRO Delta #UASPROR10/22",
+      "Fab Defense",
+      1,
+      3
+    ],
+    [
+      "260674",
+      "Montante para rifles KONUS de 30mm Alto  para Picattiny / Weaver #7403",
+      "Konus",
+      1,
+      3.1
+    ],
+    [
+      "901415",
+      "Bateria NL2140i para Mod. P10i",
+      "Nitecore",
+      1,
+      1
+    ],
+    [
+      "250108",
+      "Aerosol 300ml GSM-BWC Disolvente Bore Scrubber (copia)",
+      "BWC",
+      1,
+      0.3
+    ],
+    [
+      "260577",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. SIG P226 TEK #SCRDM-03",
+      "Vector Optics",
+      1,
+      0.5
+    ],
+    [
+      "260578",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. SPRINGFIELD XD TEK #SCRD-05",
+      "Vector Optics",
+      1,
+      0.5
+    ],
+    [
+      "260580",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. HK USP TEK #SCRDM-07",
+      "Vector Optics",
+      1,
+      0.5
+    ],
+    [
+      "730367",
+      "Remera BERETTA Mod. Trident Verde Olivo Mediano  #TS542T1557072AM",
+      "Beretta Mod",
+      1,
+      0.4
+    ],
+    [
+      "260684",
+      "Montante para rifles KONUS de 25.4mm Medio para Rifles 22LR y AC #7416",
+      "Konus",
+      1,
+      0.1
+    ],
+    [
+      "260368",
+      "Alza y Punto de mira TRUGLO TFX PRO para GLOCK mod LOW con circulo Naranja #TG13GL1PC",
+      "Truglo",
+      1,
+      0
+    ],
+    [
+      "505569",
+      "Balas SELLIER n BELLOT cal 30-06SPRING FMJ 124gr 20x20 #V340772",
+      "Sellier & Bellot",
+      0.9,
+      819.6
+    ],
+    [
+      "260294",
+      "Telémetro KONUS Mod. RF1200 6x25 1200 mts #7316",
+      "Konus",
+      0.9,
+      42.8
+    ],
+    [
+      "311020",
+      "Pistola Airsoft Resorte ASG cal 6mm Mod. CZ 75D Negro #50015",
+      "ASG",
+      0.9,
+      21.3
+    ],
+    [
+      "720682",
+      "Kepi BERETTA Mod. Tech Cap Azul #BC791T19360504UNI",
+      "Beretta Mod",
+      0.9,
+      12.3
+    ],
+    [
+      "DES710031",
+      "Termo COLEMAN Mod. GROWLER 2Litros Negro #2016926",
+      "Coleman",
+      0.9,
+      7.6
+    ],
+    [
+      "400226",
+      "Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901",
+      "Apolo",
+      0.9,
+      6.4
+    ],
+    [
+      "510442",
+      "Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL",
+      "Doberman MOCHILAS",
+      0.9,
+      5
+    ],
+    [
+      "350202",
+      "Target GSM-SME 8'' auto curable para diferentes calibres #SME-80SHGNG",
+      "BWC",
+      0.9,
+      4.3
+    ],
+    [
+      "151539",
+      "Cuchillo Nieto Linea Guerrilla (Bokote) #13200-B",
+      "Miguel Nieto",
+      0.9,
+      2.7
+    ],
+    [
+      "151538",
+      "Cuchillo Nieto  Linea Guerrilla (Oliva) #13100-0",
+      "Miguel Nieto",
+      0.9,
+      1.8
+    ],
+    [
+      "270602",
+      "Punto y alza de mira FAB DEFENSE Mod. OFFSET #fx-frbsosb",
+      "Fab Defense",
+      0.9,
+      2.2
+    ],
+    [
+      "LIQ320264",
+      "LQN-Rifle AC NPE CROSMAN 5,5mm Mod. Thrasher c/mira4x32 #CTH22TDNS-SX",
+      "Crosman",
+      0.9,
+      0.9
+    ],
+    [
+      "151502",
+      "Cuchillo Nieto Linea Chaman Micra Mikarta 136-MK",
+      "Miguel Nieto",
+      0.9,
+      1.2
+    ],
+    [
+      "350201",
+      "Target GSM-SME de metal para cal 22 #SME-ST22FLD",
+      "BWC",
+      0.9,
+      1
+    ],
+    [
+      "DES901411",
+      "Bateria NITECORE Mod. NL1823 18650 2300 mAh",
+      "Nitecore",
+      0.9,
+      0.7
+    ],
+    [
+      "110582",
+      "Funda FOBUS Mod. #320C-ND p/ SIGP250/320  #320C-ND",
+      "Fobus",
+      0.9,
+      0.9
+    ],
+    [
+      "LIQ150991",
+      "LQN-Cuchillo Aitor Jungle King  Camo #16071",
+      "Aitor",
+      0.9,
+      0
+    ],
+    [
+      "110566",
+      "Funda FOBUS Mod. #BRS p/ PX4/M9/92/otros Paddle",
+      "Fobus",
+      0.9,
+      0
+    ],
+    [
+      "270822",
+      "Porta Cargadores FAB DEFENSE Glock 9mm/.40 Cinto/Paddle FDE #PG-9",
+      "Fab Defense",
+      0.9,
+      0
+    ],
+    [
+      "321085",
+      "Cargador UMAREX T4E de emergencia para cal 43 mod SW MP9 #2.4767.2",
+      "Umarex",
+      0.9,
+      0
+    ],
+    [
+      "151542",
+      "Cuchillo Nieto Linea Warfare (Mikarta) 196-N",
+      "Miguel Nieto",
+      0.9,
+      0
+    ],
+    [
+      "320262",
+      "Rifle AC NPE Crosman 5,5 Diamondback c/mira4x32 #CDH22TDSS-SX",
+      "Crosman",
+      0.9,
+      0
+    ],
+    [
+      "901601",
+      "Magnetico DOBERMAN 30 lbs #SDMGunMag-1 pack x 10",
+      "Doberman",
+      0.8,
+      42.6
+    ],
+    [
+      "901611",
+      "Magnetico DOBERMAN 35lbs #SDMGunMag-2 pack x 10",
+      "Doberman",
+      0.8,
+      27.5
+    ],
+    [
+      "320518",
+      "Flechas UMAREX Mod. AIRSABER x6 unidades #2.2337",
+      "Umarex",
+      0.8,
+      20.2
+    ],
+    [
+      "942155",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 6''",
+      "Doberman BOTAS",
+      0.8,
+      18.1
+    ],
+    [
+      "300133",
+      "Maleta ASG 102x35x15cm Mod. TACTICAL #19489",
+      "ASG",
+      0.8,
+      13.6
+    ],
+    [
+      "501350",
+      "Cartuchos GB 16 Breneke 25x20",
+      "GB",
+      0.8,
+      16.9
+    ],
+    [
+      "720684",
+      "Kepi BERETTA Mod. Tech Cap Ebony #BC791T193609ORUNI",
+      "Beretta Mod",
+      0.8,
+      12.5
+    ],
+    [
+      "720683",
+      "Kepi BERETTA Mod. Tech Cap Gris #BC791T19360911UNI",
+      "Beretta Mod",
+      0.8,
+      12.4
+    ],
+    [
+      "DES680470",
+      "Linterna COLEMAN Mod. BATTERYGUARD 50M #2000032705",
+      "Coleman",
+      0.8,
+      11.1
+    ],
+    [
+      "DES190001",
+      "Alarma Sónica UMAREX Mod. Shrill Alarm SA 120dB #2.209",
+      "Umarex",
+      0.8,
+      7.7
+    ],
+    [
+      "DES880052",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 10 - 43",
+      "Rocky Boots",
+      0.8,
+      7.1
+    ],
+    [
+      "DES941059",
+      "Hamaca NTK. Mod. KOKUN 1 persona",
+      "NTK",
+      0.8,
+      5.5
+    ],
+    [
+      "260567",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK MOJ #SCRDM-08",
+      "Vector Optics",
+      0.8,
+      5.2
+    ],
+    [
+      "720685",
+      "Kepi BERETTA Mod. Tech Cap Gris Claro #BC791T193609SUUNI",
+      "Beretta Mod",
+      0.8,
+      5.8
+    ],
+    [
+      "320515",
+      "Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
+      "Umarex",
+      0.8,
+      2.7
+    ],
+    [
+      "DES260046",
+      "Binocular KONUS Mod. ACTION Verde 10x25 #2041",
+      "Konus",
+      0.8,
+      3.1
+    ],
+    [
+      "DES680549",
+      "Linterna Caterpillar 200 LM Utilidad con cuellera #CT7100 (copia)",
+      "Caterpillar",
+      0.8,
+      2.4
+    ],
+    [
+      "110567",
+      "Funda FOBUS Mod. #APN43X p/ G43X Apendix Ambidiestro",
+      "Fobus",
+      0.8,
+      1.9
+    ],
+    [
+      "260278",
+      "Mira compacta KONUS PRO T30 3-12x44 reticula iluminada 550 yardas #7291",
+      "Konus",
+      0.8,
+      1.5
+    ],
+    [
+      "720686",
+      "Kepi BERETTA Mod. Tech Cap Naranja #BC791T19360021UNI",
+      "Beretta Mod",
+      0.8,
+      2.5
+    ],
+    [
+      "260563",
+      "Punto Rojo KONUS FISSION 2,0 c/ 5 Inten. y Montante Duo #7245",
+      "Konus",
+      0.8,
+      0.8
+    ],
+    [
+      "DES880050",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 8 - 41",
+      "Rocky Boots",
+      0.8,
+      0.8
+    ],
+    [
+      "322027",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. SW MP9 Blowback #5.8371",
+      "Umarex",
+      0.8,
+      1.5
+    ],
+    [
+      "260675",
+      "Montante para rifles KONUS de 30mm Alto de saque rápido para Picattiny / Weaver #7409",
+      "Konus",
+      0.8,
+      0.9
+    ],
+    [
+      "901408",
+      "Bateria NITECORE Mod. PLB500 para NPL25 500mAh",
+      "Nitecore",
+      0.8,
+      0.4
+    ],
+    [
+      "730382",
+      "Remera BERETTA Mod. Bullseye Azul Grande #TS971T21450560L",
+      "Beretta Mod",
+      0.8,
+      0.4
+    ],
+    [
+      "151609",
+      "Cuchillo UMAREX Mod. Walther BWK6 #5.0843",
+      "Umarex",
+      0.8,
+      0.3
+    ],
+    [
+      "901350",
+      "Riel Picattiny VECTOR OPTICS para MLOK 5\" Mod. SCRAAM-54",
+      "Vector Optics",
+      0.8,
+      0.2
+    ],
+    [
+      "610967",
+      "Caña Snake Mamba Neg 1.54m 8-17LB Medium Light Molinete MC-C#511",
+      "Snake",
+      0.8,
+      0.2
+    ],
+    [
+      "901412",
+      "Bateria NITECORE CR23V",
+      "Nitecore",
+      0.8,
+      0.1
+    ],
+    [
+      "320331",
+      "Rifle PCP MAHELY 5,5mm Mod. M71 Niquelado",
+      "Mahely",
+      0.8,
+      0
+    ],
+    [
+      "LIQ150997",
+      "LQN-Cuchillo Aitor Zero Black #16127",
+      "Aitor",
+      0.8,
+      0
+    ],
+    [
+      "260685",
+      "Montante para rifles KONUS de 25.4mm Bajo para Rifles 22LR y AC #7417",
+      "Konus",
+      0.8,
+      0
+    ],
+    [
+      "270809",
+      "Funda Fab Defense M1 SigSauer P226/P229 Rotativo Cinto/Paddle #M1226S",
+      "Fab Defense",
+      0.8,
+      0
+    ],
+    [
+      "260273",
+      "Mira táctica electrónica KONUS PRO AS34 2-6x28 reticula iluminada Mil-Dot #7170",
+      "Konus",
+      0.8,
+      0
+    ],
+    [
+      "DES680459",
+      "Lampara COLEMAN Mod. Personal4D 400LM #2000038049 (copia)",
+      "Coleman",
+      0.8,
+      0
+    ],
+    [
+      "260367",
+      "Alza y Punto de mira Truglo TFX para Glock mod Low#TG13GL1A",
+      "Truglo",
+      0.8,
+      0
+    ],
+    [
+      "505376",
+      "Balas Federal 40SW 180GR PNormalCobreada 50x20 #AE40R1",
+      "Federal",
+      0.7,
+      247.2
+    ],
+    [
+      "505477",
+      "Balas Blazer 45ACP 230GR PNormalCobreada CasqAluminio 50x20 #3571",
+      "Federal",
+      0.7,
+      67
+    ],
+    [
+      "DES750310",
+      "Carpa NTK Mod. FALCON 2 personas #150620 (copia)",
+      "NTK",
+      0.7,
+      12.7
+    ],
+    [
+      "680660",
+      "Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA",
+      "Doberman LINTERNAS",
+      0.7,
+      6.7
+    ],
+    [
+      "151420",
+      "Navaja UMAREX Mod. Walther Classic Drop 1 #5.2053",
+      "Umarex",
+      0.7,
+      6.1
+    ],
+    [
+      "510431",
+      "Morral DOBERMAN 5L FOXTROX COYOTE #BL011KH",
+      "Doberman MOCHILAS",
+      0.7,
+      5.3
+    ],
+    [
+      "DES880073",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 11 - 44,5",
+      "Rocky Boots",
+      0.7,
+      5.1
+    ],
+    [
+      "4500752",
+      "Cargador BERETTA cal 9mm Mod. APX A1 17 tiros",
+      "Beretta",
+      0.7,
+      4.5
+    ],
+    [
+      "350203",
+      "Target GSM-SME Mod. Molino auto curable #SME-SHW",
+      "BWC",
+      0.7,
+      4.9
+    ],
+    [
+      "501333",
+      "Cartuchos SAGA 16 BUCK 9P T3",
+      "Saga",
+      0.7,
+      8
+    ],
+    [
+      "DES880072",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 10 - 43",
+      "Rocky Boots",
+      0.7,
+      4.4
+    ],
+    [
+      "200183",
+      "Bipode KONUS 22-33cm #1948",
+      "Konus",
+      0.7,
+      4.2
+    ],
+    [
+      "4520700",
+      "Cargador AHSS cal 9mm Mod. FXS-9 / CZ75 - 17 tiros",
+      "AHSS",
+      0.7,
+      3.7
+    ],
+    [
+      "300093",
+      "Kit de Precisión Fab Defense Ruger 10-22 Retractil #M4R10/22",
+      "Fab Defense",
+      0.7,
+      2.8
+    ],
+    [
+      "DES880074",
+      "Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 12 - 46",
+      "Rocky Boots",
+      0.7,
+      2.2
+    ],
+    [
+      "270550",
+      "Cobertor de Corredera Fab Defense Glock M19/23/25/32/38 Negro",
+      "Fab Defense",
+      0.7,
+      2.2
+    ],
+    [
+      "DES191100",
+      "Catraca Caterpillar de 2Pie.300x2,54cm (181/544 kg)  #980179N (copia)",
+      "Caterpillar",
+      0.7,
+      1.1
+    ],
+    [
+      "760060",
+      "Parches de limpieza GSM-BWC pack de 300 p/ escop cal 12 a 20 #41168",
+      "BWC",
+      0.7,
+      1.4
+    ],
+    [
+      "151501",
+      "Cuchillo Nieto Linea Bosque 145- G10",
+      "Miguel Nieto",
+      0.7,
+      1.1
+    ],
+    [
+      "324156",
+      "Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891",
+      "Umarex",
+      0.7,
+      1.5
+    ],
+    [
+      "680665",
+      "Linterna DOBERMAN Bat18650 100W #LP-8142-1LI",
+      "Doberman LINTERNAS",
+      0.7,
+      1.3
+    ],
+    [
+      "681210",
+      "Linterna Olight p/Arma Pl-Pro Valkyrie Desert D#284480-0",
+      "Olight",
+      0.7,
+      0.7
+    ],
+    [
+      "270151",
+      "Culata Fab Defense Glock M19 #GLR-440",
+      "Fab Defense",
+      0.7,
+      0.7
+    ],
+    [
+      "730366",
+      "Remera BERETTA Mod. Trident Verde Olivo Chico  #TS542T1557072AS",
+      "Beretta Mod",
+      0.7,
+      0.7
+    ],
+    [
+      "110589",
+      "Funda interna/externa FOBUS Mod. #WPDP p/ WALTHER PDP",
+      "Fobus",
+      0.7,
+      0.3
+    ],
+    [
+      "730378",
+      "Remera BERETTA Mod. Fir Ebony Grande #TS782T155709ORL",
+      "Beretta Mod",
+      0.7,
+      0.1
+    ],
+    [
+      "323510",
+      "Cartucho Spray Pimienta PDP UMAREX p/ HDR50 HDS68 y PDP #2.2050.1",
+      "Umarex",
+      0.7,
+      0.1
+    ],
+    [
+      "151500",
+      "Cuchillo Nieto Linea Bosque (Granadillo) 145-G",
+      "Miguel Nieto",
+      0.7,
+      0
+    ],
+    [
+      "323000",
+      "Pistola Airsoft CO2 UMAREX 6mm Mod. Glock 19X Blowback #2.6435",
+      "Umarex",
+      0.7,
+      0
+    ],
+    [
+      "505051",
+      "Balas SELLIER n BELLOT cal 32S n W LONG LRN 100gr 50x30 #V311312",
+      "Sellier & Bellot",
+      0.6,
+      300.1
+    ],
+    [
+      "324024",
+      "Kit táctico para Macadora UMAREX T4E para Mod. TR50 #2.406",
+      "Umarex",
+      0.6,
+      32.2
+    ],
+    [
+      "942201",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 36",
+      "Doberman BOTAS",
+      0.6,
+      16.5
+    ],
+    [
+      "942202",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 39",
+      "Doberman BOTAS",
+      0.6,
+      16.5
+    ],
+    [
+      "SID4520055",
+      "Cargador KCI cal 9mm Mod. Glock 17 tiros",
+      "KCI",
+      0.6,
+      14.9
+    ],
+    [
+      "250094",
+      "Granada de Airsoft ASG Mod. Storm D-Tonartor Rojo #19832",
+      "ASG",
+      0.6,
+      17
+    ],
+    [
+      "250091",
+      "Granada de Airsoft ASG Mod. Storm Apocalipse Naranja #19642",
+      "ASG",
+      0.6,
+      16.8
+    ],
+    [
+      "250092",
+      "Granada de Airsoft ASG Mod. Storm Apocalipse Negro #19641",
+      "ASG",
+      0.6,
+      16.8
+    ],
+    [
+      "250093",
+      "Granada de Airsoft ASG Mod. Storm D-Tonartor Amarillo #19831",
+      "ASG",
+      0.6,
+      17
+    ],
+    [
+      "510443",
+      "Mochila DOBERMAN 30L NAVY CAMO GREY / RED #LP97NVYRED",
+      "Doberman MOCHILAS",
+      0.6,
+      11.2
+    ],
+    [
+      "510429",
+      "Morral DOBERMAN 5L FOXTROX DIGITAL CAMO GREY #BL011ACU",
+      "Doberman MOCHILAS",
+      0.6,
+      10.5
+    ],
+    [
+      "324165",
+      "Pistola Airsoft Resorte UMAREX Mod. WALTHER PPQ #2272540",
+      "Umarex",
+      0.6,
+      9.4
+    ],
+    [
+      "350022",
+      "Blanco de Cartulina Recicl. 58x81cm",
+      "Sin Marca",
+      0.6,
+      10.4
+    ],
+    [
+      "510520",
+      "Bolson BERETTA Mod. Uniform Pro EVO Azul #BS142T1932054VUNI",
+      "Beretta Mod",
+      0.6,
+      8.7
+    ],
+    [
+      "942208",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 45",
+      "Doberman BOTAS",
+      0.6,
+      7.9
+    ],
+    [
+      "270080",
+      "Agarre táctico Fab Defense Mod. MOJO para modelos AR15, con cobertor táctico",
+      "Fab Defense",
+      0.6,
+      4.9
+    ],
+    [
+      "300092",
+      "Kit de Precisión Fab Defense Ruger 10-22 Delta #UASR10/22",
+      "Fab Defense",
+      0.6,
+      3.9
+    ],
+    [
+      "942209",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 46",
+      "Doberman BOTAS",
+      0.6,
+      3.6
+    ],
+    [
+      "942210",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 47",
+      "Doberman BOTAS",
+      0.6,
+      3.6
+    ],
+    [
+      "270202",
+      "Montante Táctico Fab Defense Pistola Universal Aluminio #USM",
+      "Fab Defense",
+      0.6,
+      3.7
+    ],
+    [
+      "380015",
+      "Accesorio de Práctica de Goma Mod. 9mm #SCSC-04",
+      "Vector Optics",
+      0.6,
+      2.2
+    ],
+    [
+      "510425",
+      "Morral DOBERMAN 5L FOXTROX JUNGLE CAMO DIGITAL #BL011JGDIG",
+      "Doberman MOCHILAS",
+      0.6,
+      2.2
+    ],
+    [
+      "260671",
+      "Montante para rifles KONUS de 30mm Alto para Rifles 22LR y AC  #7418",
+      "Konus",
+      0.6,
+      2.8
+    ],
+    [
+      "260370",
+      "Punto de mira TRUGLO para escopetas universal verde HD SGT 12-20GA GRN #TG93HA",
+      "Truglo",
+      0.6,
+      2.6
+    ],
+    [
+      "DES750100",
+      "Kit de Carpa COLEMAN #2000016526",
+      "Coleman",
+      0.6,
+      2.2
+    ],
+    [
+      "250690",
+      "Montante NITECORE Mod. GM02 para picattinys",
+      "Nitecore",
+      0.6,
+      1.5
+    ],
+    [
+      "DES880091",
+      "Bota ROCKY BOOTS Mod. Snake Country RKS0232 Talle 9 - 42",
+      "Rocky Boots",
+      0.6,
+      1.8
+    ],
+    [
+      "320517",
+      "Flecha UMAREX Mod. NXG 26'' x3 unidades",
+      "Umarex",
+      0.6,
+      1.5
+    ],
+    [
+      "730380",
+      "Remera BERETTA Mod. Bullseye Azul Chico #TS971T21450560S",
+      "Beretta Mod",
+      0.6,
+      1.5
+    ],
+    [
+      "730381",
+      "Remera BERETTA Mod. Bullseye Azul Mediano #TS971T21450560M",
+      "Beretta Mod",
+      0.6,
+      1.5
+    ],
+    [
+      "610968",
+      "Caña Snake Mamba Neg 1.60m 10-20LB Medium Light Molinete MC-C#531",
+      "Snake",
+      0.6,
+      1.3
+    ],
+    [
+      "DES880092",
+      "Bota ROCKY BOOTS Mod. Snake Country RKS0232 Talle 10 - 43",
+      "Rocky Boots",
+      0.6,
+      0.6
+    ],
+    [
+      "730376",
+      "Remera BERETTA Mod. Fir Ebony Chico #TS782T155709ORS",
+      "Beretta Mod",
+      0.6,
+      0.9
+    ],
+    [
+      "730377",
+      "Remera BERETTA Mod. Fir Ebony Mediano #TS782T155709ORM",
+      "Beretta Mod",
+      0.6,
+      0.9
+    ],
+    [
+      "720132",
+      "Chaleco Salvavidas Sumax Neoprene Azul #NPS XXXL 100-120kg.",
+      "Sumax",
+      0.6,
+      0.9
+    ],
+    [
+      "270575",
+      "Cobertor Fab Defense Mod. MOJO Vigilante",
+      "Fab Defense",
+      0.6,
+      0.6
+    ],
+    [
+      "610966",
+      "Caña Snake Mamba Neg 1.40m 6-12LB Light Molinete MC-C#471",
+      "Snake",
+      0.6,
+      0.6
+    ],
+    [
+      "730383",
+      "Remera BERETTA Mod. Bullseye Azul Extra Grande #TS971T21450560XL",
+      "Beretta Mod",
+      0.6,
+      0.4
+    ],
+    [
+      "320516",
+      "Arco y Flecha UMAREX Mod. NXG Compuesto Cadet4 85cm 15lbs #2.2347",
+      "Umarex",
+      0.6,
+      0.6
+    ],
+    [
+      "270570",
+      "Cobertor Fab Defense Mod. MOJO Phalanx",
+      "Fab Defense",
+      0.6,
+      0.5
+    ],
+    [
+      "321200",
+      "Cargador Crosman SBR/BUSHMASTER 25 tiros",
+      "Crosman",
+      0.6,
+      0.3
+    ],
+    [
+      "730371",
+      "Remera BERETTA Mod. Trident Gris Extra Grande  #TS542T155709ORXL",
+      "Beretta Mod",
+      0.6,
+      0.3
+    ],
+    [
+      "730374",
+      "Remera BERETTA Mod. Fir Azul Grande #TS782T155705E2L",
+      "Beretta Mod",
+      0.6,
+      0.3
+    ],
+    [
+      "110584",
+      "Funda FOBUS Mod. #WP-22 p/ WaltherP22 Paddle",
+      "Fobus",
+      0.6,
+      0.5
+    ],
+    [
+      "7000112UC",
+      "Rifle Savage .22 LR 64 G",
+      "Savage",
+      0.6,
+      0
+    ],
+    [
+      "610731",
+      "Kit Caña + Reel Abu Garcia. Jordan Lee JLEELP-L/701MH 1501053 10-20LB",
+      "Abu Garcia",
+      0.6,
+      0
+    ],
+    [
+      "270456",
+      "Cargador Fab Defense 223REM/5.56NATO p/ M:M16/M4/AR15 30T FDE #ULTIMAG30",
+      "Fab Defense",
+      0.6,
+      0
+    ],
+    [
+      "260560",
+      "Punto Rojo/Verde KONUS SIGHT-PRO R8 Recar. c/8 reticulas #7376",
+      "Konus",
+      0.6,
+      0
+    ],
+    [
+      "320281",
+      "Rifle AC NPE Crosman 5,5 Diamondback sin mira #CDH22TDSS-S",
+      "Crosman",
+      0.6,
+      0
+    ],
+    [
+      "510484",
+      "Mochila DOBERMAN 40L KHAKI 51*38*18 #BL003KH",
+      "Doberman MOCHILAS",
+      0.6,
+      0
+    ],
+    [
+      "320460",
+      "Pistola AC ASG 4.5mm CZ SP-01 SHADOW GNB CO2 #17526",
+      "ASG",
+      0.5,
+      37.5
+    ],
+    [
+      "610937",
+      "Caña Telescopica Snake Prisma 2.70M Dive",
+      "Snake",
+      0.5,
+      25.6
+    ],
+    [
+      "260562",
+      "Punto Rojo KONUS SIGHT-PRO PTS2 3x30 c/Reticulas RO/AZ #7203",
+      "Konus",
+      0.5,
+      17.6
+    ],
+    [
+      "200182",
+      "Bipode KONUS 15-22cm #1947",
+      "Konus",
+      0.5,
+      10.8
+    ],
+    [
+      "942197",
+      "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 45",
+      "Doberman BOTAS",
+      0.5,
+      8.8
+    ],
+    [
+      "154105",
+      "Navaja UMAREX Mod. Walther TFW1 #5.0603",
+      "Umarex",
+      0.5,
+      7.2
+    ],
+    [
+      "320101",
+      "Rifle AC Cometa 5,5 50Mad MiraReg.Cul.Ant.Seg.Gat.",
+      "Cometa",
+      0.5,
+      9.7
+    ],
+    [
+      "830281",
+      "Hilo Snake Mult. 4X Fullpowe 0.40MM 100M",
+      "Snake",
+      0.5,
+      5.6
+    ],
+    [
+      "110586",
+      "Funda interna FOBUS Mod. #IWBMCC Universal tamaño M corte combate",
+      "Fobus",
+      0.5,
+      4.5
+    ],
+    [
+      "720688",
+      "Kepi BERETTA Mod. Sanded EVO Azul Claro #BC192T167505E2UNI",
+      "Beretta Mod",
+      0.5,
+      4.9
+    ],
+    [
+      "680850",
+      "Cable Tactico NITECORE Mod. RSW2i para mod. P10",
+      "Nitecore",
+      0.5,
+      3.5
+    ],
+    [
+      "DES655125",
+      "Microfiltro para agua AZTEQ #NTK-EHC-FAA1",
+      "NTK",
+      0.5,
+      3
+    ],
+    [
+      "270056",
+      "Empuñadura Fab Defense Ergonomica c/MontLinternaTáctica #MIKI1",
+      "Fab Defense",
+      0.5,
+      1.9
+    ],
+    [
+      "DES680507",
+      "Linterna Caterpillar 100 LM LED Aluminio de Bolsillo #CT221016 (copia)",
+      "Caterpillar",
+      0.5,
+      1.9
+    ],
+    [
+      "140707",
+      "Cinto táctico FOBUS Mod. #AR-BELTXL tamaño XXXL",
+      "Fobus",
+      0.5,
+      1.6
+    ],
+    [
+      "920420",
+      "Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-XL#20427",
+      "Coleman",
+      0.5,
+      1.9
+    ],
+    [
+      "110569",
+      "Funda FOBUS Mod. #CZ-DUTY p/ 75/SHADOW2/P07/P09/otros Paddle",
+      "Fobus",
+      0.5,
+      1.3
+    ],
+    [
+      "151537",
+      "Cuchillo Nieto Linea Guerrilla (Katex Marron) #13100-KM",
+      "Miguel Nieto",
+      0.5,
+      1.4
+    ],
+    [
+      "720691",
+      "Kepis con nuquera sumax SB-1303A UV AZUL",
+      "Sumax",
+      0.5,
+      1.2
+    ],
+    [
+      "4500792U",
+      "Cargador Tanfoglio 38SUPER Stock2 Standard 17T #usado",
+      "Tanfoglio",
+      0.5,
+      0.8
+    ],
+    [
+      "901345",
+      "Riel Picattiny VECTOR OPTICS para MLOK 4\" Mod. SCRAAM-53",
+      "Vector Optics",
+      0.5,
+      1.1
+    ],
+    [
+      "140704",
+      "Cinto táctico FOBUS Mod. #AR-BELTS tamaño S",
+      "Fobus",
+      0.5,
+      0.8
+    ],
+    [
+      "110503",
+      "Pistolera para Traumatica INDUNAYLON",
+      "Indunaylon",
+      0.5,
+      0.7
+    ],
+    [
+      "940182",
+      "Cargador PCP DOBERMAN cal 5.5mm para Mod. M16",
+      "Doberman",
+      0.5,
+      0.5
+    ],
+    [
+      "REP900865",
+      "Repuesto para PR900-GEN2",
+      "Umarex",
+      0.5,
+      0.5
+    ],
+    [
+      "550400",
+      "Sujetador GSM-BWC para Rifles Mod. Echo #BC-ESR",
+      "BWC",
+      0.5,
+      0.5
+    ],
+    [
+      "140705",
+      "Cinto táctico FOBUS Mod. #AR-BELTM tamaño M",
+      "Fobus",
+      0.5,
+      0.8
+    ],
+    [
+      "270565",
+      "Cobertor Fab Defense Mod. MOJO Havoc",
+      "Fab Defense",
+      0.5,
+      0.5
+    ],
+    [
+      "270560",
+      "Cobertor Fab Defense Mod. MOJO Cavalier",
+      "Fab Defense",
+      0.5,
+      0.5
+    ],
+    [
+      "770522",
+      "Tapa Oidos GSM-WALKER Mod. Camuflado Rosa #GWP-FPM1-PKMO",
+      "BWC",
+      0.5,
+      0.4
+    ],
+    [
+      "110568",
+      "Funda FOBUS Mod #VPQ p/ varios modelos Paddle",
+      "Fobus",
+      0.5,
+      0.2
+    ],
+    [
+      "610516",
+      "Caña Hummer Rods #SHM-561M",
+      "Sumax",
+      0.5,
+      0.3
+    ],
+    [
+      "920415",
+      "Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-M # 20425",
+      "Coleman",
+      0.5,
+      0.2
+    ],
+    [
+      "111564",
+      "Funda Interna CYASUPPLY-FOBUS para Cargador Double Stack 9mm/.40 #WHLSMAG0021-427171318710",
+      "Fobus",
+      0.5,
+      0.1
+    ],
+    [
+      "500806",
+      "Casquillos 9mm Pack *1000",
+      "Sin Marca",
+      0.5,
+      0
+    ],
+    [
+      "321095",
+      "Cargador UMAREX para Mod. HDR50 x 2 unid. #2.4757.1",
+      "Umarex",
+      0.5,
+      0
+    ],
+    [
+      "681103",
+      "Linterna NITECORE Mod. MT06MD 180Lm Primeros Aux.",
+      "Nitecore",
+      0.5,
+      0
+    ],
+    [
+      "260045",
+      "Binocular KONUS ARMY 10X50 #2172",
+      "Konus",
+      0.5,
+      0
+    ],
+    [
+      "4520752",
+      "Cargador AC UMAREX cal 4,5mm para Mod GLOCK 17 GEN5 #5.8369.1",
+      "Umarex",
+      0.5,
+      0
+    ],
+    [
+      "151531",
+      "Cuchillo Nieto Linea Fighter (Bokote) #13000-B",
+      "Miguel Nieto",
+      0.5,
+      0
+    ],
+    [
+      "940169",
+      "Cargador PCP DOBERMAN cal 5.5mm para Mod. PR900S-GEN2",
+      "Doberman",
+      0.5,
+      0
+    ],
+    [
+      "940181",
+      "Cargador PCP DOBERMAN cal 5.5mm para Mod. T-REX",
+      "Doberman",
+      0.5,
+      0
+    ],
+    [
+      "324100",
+      "Pistola T4E UMAREX Mod. HDP cal 50 traumática #2.4766",
+      "Umarex",
+      0.5,
+      0
+    ],
+    [
+      "270600",
+      "Alza de Mira Fab Defense ArmaLarga Universal Polimero #RBS",
+      "Fab Defense",
+      0.5,
+      0
+    ],
+    [
+      "505107",
+      "Balas Armscor 380ACP 95GR PNormalCobreada 50x20",
+      "Armscor",
+      0.4,
+      643.1
+    ],
+    [
+      "505382",
+      "Balas Blazer 40SW 180GR PNormalCobreada 50x20 #3477",
+      "Federal",
+      0.4,
+      235.8
+    ],
+    [
+      "400291",
+      "Balines APOLO 6mm Hollow Point 1,15gr. Lata*200x30",
+      "Apolo",
+      0.4,
+      16.7
+    ],
+    [
+      "321093",
+      "Cargador de Emergencia UMAREX T4E cal 43 Mod. GLOCK 17 GEN 5 #211.101",
+      "Umarex",
+      0.4,
+      15.8
+    ],
+    [
+      "151425",
+      "Navaja UMAREX Mod. Walther AFW2 #5.0831",
+      "Umarex",
+      0.4,
+      15.5
+    ],
+    [
+      "151430",
+      "Navaja UMAREX Mod. Walther AFW3 #5.0861",
+      "Umarex",
+      0.4,
+      15.5
+    ],
+    [
+      "920127",
+      "Llavero GLOCK Gen5 Polimero - 47544",
+      "Glock",
+      0.4,
+      15.3
+    ],
+    [
+      "400290",
+      "Balines APOLO 6mm Pointed 1,15gr. Lata*200x30",
+      "Apolo",
+      0.4,
+      12.3
+    ],
+    [
+      "400218",
+      "Balines APOLO 4,5mm Esférico 0,60gr. Plastico*500X60",
+      "Apolo",
+      0.4,
+      12.1
+    ],
+    [
+      "830293",
+      "Hilo Snake Mult. 4X Fullpowe.0.26MM 100M",
+      "Snake",
+      0.4,
+      10.5
+    ],
+    [
+      "510428",
+      "Morral DOBERMAN 5L FOXTROX MULTI CAMO GREEN #BL011CP",
+      "Doberman MOCHILAS",
+      0.4,
+      10.3
+    ],
+    [
+      "830295",
+      "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
+      "Snake",
+      0.4,
+      9.3
+    ],
+    [
+      "510426",
+      "Morral DOBERMAN 5L FOXTROX JUNGLE CAMO GREEN #BL011JGCAM",
+      "Doberman MOCHILAS",
+      0.4,
+      8.1
+    ],
+    [
+      "110585",
+      "Funda interna FOBUS Mod. #IWBL Universal tamaño L",
+      "Fobus",
+      0.4,
+      8.6
+    ],
+    [
+      "510521",
+      "Bolson BERETTA Mod. Challenge Cart. Bag 100 Ebony #BS532T226209T7UNI",
+      "Beretta Mod",
+      0.4,
+      6.1
+    ],
+    [
+      "110587",
+      "Funda interna FOBUS Mod. #IWBMLH Universal tamaño M para Zurdo",
+      "Fobus",
+      0.4,
+      4.1
+    ],
+    [
+      "680848",
+      "Cable NITECORE Mod. RSW2i WL Wireless",
+      "Nitecore",
+      0.4,
+      5.5
+    ],
+    [
+      "260581",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. UNIVERSAL OFFSET PICATINNY #SCFRM-29",
+      "Vector Optics",
+      0.4,
+      3
+    ],
+    [
+      "830283",
+      "Hilo Snake Mult. 4X Fullpowe 0.50MM 100M",
+      "Snake",
+      0.4,
+      2.7
+    ],
+    [
+      "510440",
+      "Mochila DOBERMAN 35L BRAVO MULTI CAMO GREEN #BL080CP",
+      "Doberman MOCHILAS",
+      0.4,
+      2.3
+    ],
+    [
+      "400467",
+      "Balines de Paintball UMAREX cal 68 x 250 unid",
+      "Umarex",
+      0.4,
+      2
+    ],
+    [
+      "110588",
+      "Funda interna FOBUS Mod. #IWBS Universal tamaño S",
+      "Fobus",
+      0.4,
+      2.5
+    ],
+    [
+      "320514",
+      "Arco y Flecha UMAREX Mod. NXG Recurvado Set1 95cm 10lbs #2.2348",
+      "Umarex",
+      0.4,
+      2.5
+    ],
+    [
+      "250180",
+      "Lubricante ASG 220ml. #16286",
+      "ASG",
+      0.4,
+      1.8
+    ],
+    [
+      "901355",
+      "Riel Picattiny VECTOR OPTICS Mod. OFFSET #SCRA-34",
+      "Vector Optics",
+      0.4,
+      1.4
+    ],
+    [
+      "4500754",
+      "Cargador BERETTA cal 9mm Mod. 92X Performance 18 tiros",
+      "Beretta",
+      0.4,
+      1.3
+    ],
+    [
+      "901340",
+      "Riel Picattiny VECTOR OPTICS para MLOK 2\" Mod. SCRAAM-52",
+      "Vector Optics",
+      0.4,
+      1.4
+    ],
+    [
+      "840316",
+      "Bolsa p/ Pesca SUMAX #SM-701",
+      "Sumax",
+      0.4,
+      1.1
+    ],
+    [
+      "110500",
+      "Revolvera para Traumatica INDUNAYLON 6\"",
+      "Indunaylon",
+      0.4,
+      1.1
+    ],
+    [
+      "151607",
+      "Cuchillo UMAREX Mod. Walther BNK6 #5.0845",
+      "Umarex",
+      0.4,
+      1.3
+    ],
+    [
+      "940183",
+      "Cargador PCP DOBERMAN cal 5.5mm para Mod. M60B",
+      "Doberman",
+      0.4,
+      0.8
+    ],
+    [
+      "115702",
+      "Funda Arma Larga Doberman Cuero x 110CM",
+      "Doberman",
+      0.4,
+      0.8
+    ],
+    [
+      "550301",
+      "Kit de limpieza GSM-BWC para rifles #BC-RIFCLN-KIT",
+      "BWC",
+      0.4,
+      1.2
+    ],
+    [
+      "730362",
+      "Remera BERETTA Mod. Trident Azul Chico  #TS542T155705E2S",
+      "Beretta Mod",
+      0.4,
+      1
+    ],
+    [
+      "730363",
+      "Remera BERETTA Mod. Trident Azul Mediano  #TS542T155705E2M",
+      "Beretta Mod",
+      0.4,
+      1
+    ],
+    [
+      "730372",
+      "Remera BERETTA Mod. Fir Azul Chico #TS782T155705E2S",
+      "Beretta Mod",
+      0.4,
+      1
+    ],
+    [
+      "730373",
+      "Remera BERETTA Mod. Fir Azul Mediano #TS782T155705E2M",
+      "Beretta Mod",
+      0.4,
+      1
+    ],
+    [
+      "621050",
+      "Esmerillon Snake Negro Nickel 6 c/15 NS-1707",
+      "Snake",
+      0.4,
+      0.7
+    ],
+    [
+      "260672",
+      "Montante para rifles KONUS de 30mm Mediano para Rifles 22LR y AC  #7419",
+      "Konus",
+      0.4,
+      0.9
+    ],
+    [
+      "260673",
+      "Montante para rifles KONUS de 30mm Bajo para Rifles 22LR y AC  #7420",
+      "Konus",
+      0.4,
+      0.7
+    ],
+    [
+      "260564",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. BERETTA 92 TEK #SCRDM-04",
+      "Vector Optics",
+      0.4,
+      0.5
+    ],
+    [
+      "321080",
+      "Cargador UMAREX T4E de emergencia para cal 43 mod Walther PPQ #2.4760.2",
+      "Umarex",
+      0.4,
+      0.4
+    ],
+    [
+      "760041",
+      "Parche 5.11 Mod. PARAGUAY 92199PY",
+      "5.11",
+      0.4,
+      0.4
+    ],
+    [
+      "730379",
+      "Remera BERETTA Mod. Fir Ebony Extra Grande #TS782T155709ORXL",
+      "Beretta Mod",
+      0.4,
+      0.3
+    ],
+    [
+      "730365",
+      "Remera BERETTA Mod. Trident Azul Extra Grande  #TS542T155705E2XL",
+      "Beretta Mod",
+      0.4,
+      0.3
+    ],
+    [
+      "730375",
+      "Remera BERETTA Mod. Fir Azul Extra Grande #TS782T155705E2XL",
+      "Beretta Mod",
+      0.4,
+      0.3
+    ],
+    [
+      "710418",
+      "Conservadora COLEMAN 16QT Rueda Rojo #3000003884",
+      "Coleman",
+      0.4,
+      0.2
+    ],
+    [
+      "100063",
+      "Anillo porta correa Topping #S-4032",
+      "Sin Marca",
+      0.4,
+      0.3
+    ],
+    [
+      "751005",
+      "Set de varillas para carpas NTK Falcon 2 #654600",
+      "NTK",
+      0.4,
+      0.2
+    ],
+    [
+      "400392",
+      "Balines de Goma UMAREX cal 43 caja de 100 unid #2.4773",
+      "Umarex",
+      0.4,
+      0.2
+    ],
+    [
+      "720446",
+      "Sombrero con nuquera SUMAX Mod. SB-1308V Verde",
+      "Sumax",
+      0.4,
+      0.1
+    ],
+    [
+      "110504",
+      "Pistolera para Traumatica INDUNAYLON p/MOLLE",
+      "Indunaylon",
+      0.4,
+      0.1
+    ],
+    [
+      "830319",
+      "Hilo Snake Mult. 4X Motion 0.40MM 300M",
+      "Snake",
+      0.4,
+      0
+    ],
+    [
+      "620622",
+      "Anzuelo Snake Ba. Niquel #2 c/20.",
+      "Snake",
+      0.4,
+      0
+    ],
+    [
+      "400282",
+      "Balines de Goma UMAREX cal 68 caja de 25unid.#2.4789",
+      "Umarex",
+      0.4,
+      0
+    ],
+    [
+      "510501",
+      "Morral 5.11 Mod. Push Pack Negro 5L #56635-019",
+      "5.11",
+      0.4,
+      0
+    ],
+    [
+      "400190",
+      "Green Gas ASG 570ml ULTRAIR Power 36 botellas #14571",
+      "ASG",
+      0.4,
+      0
+    ],
+    [
+      "901152",
+      "Cargador NITECORE Mod. UI2 para Bat. Recargable",
+      "Nitecore",
+      0.4,
+      0
+    ],
+    [
+      "770521",
+      "Tapa Oidos GSM-WALKER Mod. Camuflado #GWP-FPM1-CMO",
+      "GSM",
+      0.4,
+      0
+    ],
+    [
+      "770520",
+      "Tapa Oidos GSM-WALKER Mod. Max Protec 28 #GWP-PTM28",
+      "BWC",
+      0.4,
+      0
+    ],
+    [
+      "321202",
+      "Cargador CROSMAN 300 tiros para Mod. DPMS/SBR #CFAHCM",
+      "Crosman",
+      0.4,
+      0
+    ],
+    [
+      "505584",
+      "Balas IMI 308WIN 150GR FMJ BT *500/20",
+      "IMI",
+      0.3,
+      538.8
+    ],
+    [
+      "505009",
+      "Balas SELLIER n BELLOT cal 6,35mm/25AUTO FMJ 50gr 50x40 #V310022",
+      "Sellier & Bellot",
+      0.3,
+      306.1
+    ],
+    [
+      "610936",
+      "Caña Telescopica Snake Prisma 2.40M Dive",
+      "Snake",
+      0.3,
+      26.3
+    ],
+    [
+      "901610",
+      "Magnetico DOBERMAN 35lbs #SDMGunMag-2 x 1",
+      "Doberman",
+      0.3,
+      19.5
+    ],
+    [
+      "942162",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 39",
+      "Doberman BOTAS",
+      0.3,
+      18.1
+    ],
+    [
+      "830294",
+      "Hilo Snake Mult. 4X Fullpowe.0.28MM 100M",
+      "Snake",
+      0.3,
+      13.5
+    ],
+    [
+      "610935",
+      "Caña Telescopica Snake Prisma 2.10M Dive",
+      "Snake",
+      0.3,
+      12.3
+    ],
+    [
+      "400106",
+      "Balas Federal 22LR 25GR BirdShot 50x50 #716",
+      "Federal",
+      0.3,
+      11.5
+    ],
+    [
+      "901621",
+      "Magnetico DOBERMAN 2 piezas 25 lbs  #SDMGunMag-3 pack x 10",
+      "Doberman",
+      0.3,
+      10.5
+    ],
+    [
+      "324175",
+      "Pistola Airsoft Resorte UMAREX Mod. HK VP9 #2273030",
+      "Umarex",
+      0.3,
+      9.3
+    ],
+    [
+      "830282",
+      "Hilo Snake Mult. 4X Fullpowe 0.45MM 100M",
+      "Snake",
+      0.3,
+      9.1
+    ],
+    [
+      "DES151564",
+      "Cuchillo Nieto Linea Gaucho(Madera) G-26",
+      "Miguel Nieto",
+      0.3,
+      9
+    ],
+    [
+      "830296",
+      "Hilo Snake Mult. 4X Fullpowe.0.35MM 100M",
+      "Snake",
+      0.3,
+      5.5
+    ],
+    [
+      "510439",
+      "Mochila DOBERMAN 35L BRAVO JUNGLE CAMO #BL080JC",
+      "Doberman MOCHILAS",
+      0.3,
+      5.2
+    ],
+    [
+      "830285",
+      "Hilo Snake Mult. 4X Fullpowe 0.60MM 100M",
+      "Snake",
+      0.3,
+      5.1
+    ],
+    [
+      "830291",
+      "Hilo Snake Mult. 4X Fullpowe.0.20MM 100M",
+      "Snake",
+      0.3,
+      5.1
+    ],
+    [
+      "830286",
+      "Hilo Snake Mult. 4X Fullpowe 0.70MM 100M",
+      "Snake",
+      0.3,
+      3.8
+    ],
+    [
+      "710590",
+      "Bolso Termico Flexible c/ Porta Latas Pequeño Camu",
+      "Sin Marca",
+      0.3,
+      4.1
+    ],
+    [
+      "LIQ321000",
+      "LQN - Accesorio Lanza pimienta UMAREX T4E p/ HDR50 HDS68 #2.4757.2",
+      "Umarex",
+      0.3,
+      3.9
+    ],
+    [
+      "270204",
+      "Montante Táctico Fab Defense para Glock #GIS",
+      "Fab Defense",
+      0.3,
+      3.4
+    ],
+    [
+      "270203",
+      "Montante Linterna Fab Defense Izquierdo Pistola FAB 1'' #PLG",
+      "Fab Defense",
+      0.3,
+      3.3
+    ],
+    [
+      "501368",
+      "Cartuchos Valor 20 #3 28gr *25",
+      "Valor",
+      0.3,
+      2.4
+    ],
+    [
+      "262000",
+      "Rueda de Parallax KONUS p/Miras Telescopicas p/Modelos Varios #7199",
+      "Konus",
+      0.3,
+      2.5
+    ],
+    [
+      "321094",
+      "Cargador UMAREX Para Mod. ICONIX #2.4324.1",
+      "Umarex",
+      0.3,
+      2.1
+    ],
+    [
+      "321079",
+      "Cargador PCP UMAREX cl 5,5 Mod. KOMPLETE",
+      "Umarex",
+      0.3,
+      1.6
+    ],
+    [
+      "321062",
+      "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. CZ P-09 Green Gas #17658",
+      "ASG",
+      0.3,
+      1.9
+    ],
+    [
+      "720153",
+      "Chaleco Salvavidas Sumax Neoprene Azul #NP-M 50-60 Kg.",
+      "Sumax",
+      0.3,
+      2
+    ],
+    [
+      "400462",
+      "Balines de Paintball UMAREX cal 50 x 250 unid",
+      "Umarex",
+      0.3,
+      1.2
+    ],
+    [
+      "DES680561",
+      "Linterna Caterpillar 300 LM Utilidad con cuellera #CT7105 (copia)",
+      "Caterpillar",
+      0.3,
+      0.9
+    ],
+    [
+      "900302",
+      "Pila Duracell Alcalina - AAAx6 CHICA",
+      "Duracell",
+      0.3,
+      1
+    ],
+    [
+      "730370",
+      "Remera BERETTA Mod. Trident Gris Grande  #TS542T155709ORL",
+      "Beretta Mod",
+      0.3,
+      1.2
+    ],
+    [
+      "250109",
+      "Aerosol 300ml GSM-BWC Disolvente Bore Scrubber",
+      "BWC",
+      0.3,
+      0.7
+    ],
+    [
+      "380005",
+      "Accesorio de Práctica de Goma Mod. 223REM #SCSC-01",
+      "Vector Optics",
+      0.3,
+      0.9
+    ],
+    [
+      "940180",
+      "Cargador PCP DOBERMAN cal 5.5mm para Mod. P35",
+      "Doberman",
+      0.3,
+      0.7
+    ],
+    [
+      "720152",
+      "Chaleco Salvavidas Sumax Neoprene Rojo #NP-M 50-60 kg",
+      "Sumax",
+      0.3,
+      0.8
+    ],
+    [
+      "610360",
+      "N-Kit de Pesca Portatil",
+      "Sin Marca",
+      0.3,
+      1
+    ],
+    [
+      "151620",
+      "Afilador de cuchillo UMAREX Compacto#5.0773",
+      "Umarex",
+      0.3,
+      0.4
+    ],
+    [
+      "4500382",
+      "Cargador Tanfoglio 40SW Pav Standard Limited/Force/Stock2/Stock3/Combat 12T #C006",
+      "Tanfoglio",
+      0.3,
+      0.5
+    ],
+    [
+      "620685",
+      "Anzuelo Snake Maruseigo Niquel #14 c/20.",
+      "Snake",
+      0.3,
+      0.3
+    ],
+    [
+      "730364",
+      "Remera BERETTA Mod. Trident Azul Grande  #TS542T155705E2L",
+      "Beretta Mod",
+      0.3,
+      0.6
+    ],
+    [
+      "260690",
+      "Montante KONUS CANTILEVER #7219",
+      "Konus",
+      0.3,
+      0.5
+    ],
+    [
+      "DES770700",
+      "Guante Caterpillar de alta visibilidad Mediano #CAT017411M (copia)",
+      "Caterpillar",
+      0.3,
+      0.3
+    ],
+    [
+      "4500411U",
+      "Cargador Tanfoglio 45ACP Witness1911 10T #usado",
+      "Tanfoglio",
+      0.3,
+      0.2
+    ],
+    [
+      "270601",
+      "Punto de Mira Fab Defense ArmaLarga Universal Polimero #FBS",
+      "Fab Defense",
+      0.3,
+      0.3
+    ],
+    [
+      "650532",
+      "COLCHON INFLABLE BESTWAY 67002/2 - 191x137x22",
+      "Bestway",
+      0.3,
+      0.1
+    ],
+    [
+      "400460",
+      "Balines de Paintball UMAREX cal 50 x 100 unid",
+      "Umarex",
+      0.3,
+      0.1
+    ],
+    [
+      "501490",
+      "Cartuchos GB 28 #1 15g 250/25",
+      "GB",
+      0.3,
+      0.1
+    ],
+    [
+      "620114",
+      "Tanza Doble J.A. x 5Und.",
+      "Sin Marca",
+      0.3,
+      0
+    ],
+    [
+      "620631",
+      "Anzuelo Snake Ba. Niquel #2/0 c/20.",
+      "Snake",
+      0.3,
+      0
+    ],
+    [
+      "151543",
+      "Cuchillo Nieto Linea Warfare (Olivo) 194-O",
+      "Miguel Nieto",
+      0.3,
+      0
+    ],
+    [
+      "260044",
+      "Binocular KONUS GIANT 20x60 #2125",
+      "Konus",
+      0.3,
+      0
+    ],
+    [
+      "440153",
+      "Lentes BERETTA Negro #OCA10020999",
+      "Beretta",
+      0.3,
+      0
+    ],
+    [
+      "505586",
+      "Balas IMI 308WIN 175GR Francotirador King OTM BT *500/20",
+      "IMI",
+      0.2,
+      290.5
+    ],
+    [
+      "712116",
+      "Vaso COLEMAN 590ML Gris #2038328",
+      "Coleman",
+      0.2,
+      41.7
+    ],
+    [
+      "400293",
+      "Balines BB  ASG Alpha Blaster Tracer GRN 0,25G 3300 pcs #20187",
+      "ASG",
+      0.2,
+      25.9
+    ],
+    [
+      "830264",
+      "Hilo Snake Nevada 0.80mm 100M",
+      "Snake",
+      0.2,
+      20
+    ],
+    [
+      "610948",
+      "Caña Telescopica Snake Escarlate 5.40M",
+      "Snake",
+      0.2,
+      19.8
+    ],
+    [
+      "830259",
+      "Hilo Snake Nevada 0.40mm 100M",
+      "Snake",
+      0.2,
+      17
+    ],
+    [
+      "830263",
+      "Hilo Snake Nevada 0.70mm 100M",
+      "Snake",
+      0.2,
+      14.1
+    ],
+    [
+      "610946",
+      "Caña Telescopica Snake Escarlate 4.50M",
+      "Snake",
+      0.2,
+      13.7
+    ],
+    [
+      "830262",
+      "Hilo Snake Nevada 0.60mm 100M",
+      "Snake",
+      0.2,
+      12.8
+    ],
+    [
+      "830280",
+      "Hilo Snake Mult. 4X Fullpowe 0.23MM 100M",
+      "Snake",
+      0.2,
+      11.8
+    ],
+    [
+      "680661",
+      "Linterna DOBERMAN 3W LED 1XAA #LP7043B",
+      "Doberman LINTERNAS",
+      0.2,
+      9.6
+    ],
+    [
+      "830261",
+      "Hilo Snake Nevada 0.50mm 100M",
+      "Snake",
+      0.2,
+      7.9
+    ],
+    [
+      "151400",
+      "Herramienta Multiple UMAREX Mod. Walther GMT50 #5.0796",
+      "Umarex",
+      0.2,
+      7
+    ],
+    [
+      "DES151563",
+      "Cuchillo Nieto Linea Gaucho(Madera) G-18",
+      "Miguel Nieto",
+      0.2,
+      6.1
+    ],
+    [
+      "550252",
+      "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22MAG a 308WIN #41405",
+      "BWC",
+      0.2,
+      4.6
+    ],
+    [
+      "505534",
+      "Balas PPU 300 WIN MAG SP 180 GR",
+      "PPU",
+      0.2,
+      3.7
+    ],
+    [
+      "621156",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 6 c/6",
+      "Snake",
+      0.2,
+      2.5
+    ],
+    [
+      "250691",
+      "Montante NITECORE Mod. GM03 para escopetas",
+      "Nitecore",
+      0.2,
+      3.2
+    ],
+    [
+      "250205",
+      "Botella 90ml GSM-BWC Cleaner-Degreaser limpia el arma antes del pavonado #16225",
+      "BWC",
+      0.2,
+      1.7
+    ],
+    [
+      "720692",
+      "Kepis con nuquera sumax SB-1303K UV KAKI",
+      "Sumax",
+      0.2,
+      1.6
+    ],
+    [
+      "510427",
+      "Morral DOBERMAN 5L FOXTROX DIGITAL CAMO DESSERT #BL011DSDG",
+      "Doberman MOCHILAS",
+      0.2,
+      1.6
+    ],
+    [
+      "900321",
+      "PILA Duracell Alcalina- Grande Dx2(48)",
+      "Duracell",
+      0.2,
+      1.8
+    ],
+    [
+      "820260",
+      "Plomadas",
+      "Sin Marca",
+      0.2,
+      1.4
+    ],
+    [
+      "250105",
+      "Aerosol 300ml GSM-BWC Limpia Arma Gun Scrubber#33340",
+      "BWC",
+      0.2,
+      1.3
+    ],
+    [
+      "680532",
+      "Linterna Caterpillar Led Recargable #CT1205",
+      "Caterpillar",
+      0.2,
+      1.4
+    ],
+    [
+      "400465",
+      "Balines de Paintball UMAREX cal 68 x 100 unid",
+      "Umarex",
+      0.2,
+      1.1
+    ],
+    [
+      "270200",
+      "Montante Linterna Fab Defense Lado Izquierdo Universal 1'' #PLS",
+      "Fab Defense",
+      0.2,
+      2
+    ],
+    [
+      "LIQ680555",
+      "Linterna Dual Caterpillar 1200/100 LM LED #CT6315",
+      "Caterpillar",
+      0.2,
+      1.1
+    ],
+    [
+      "505152",
+      "Balas SELLIER n BELLOT cal 9mm FMJ 115gr 50x20 #V310452",
+      "Sellier & Bellot",
+      0.2,
+      1.1
+    ],
+    [
+      "720532",
+      "Kepi Glock 19X Coyote - 31588",
+      "Glock",
+      0.2,
+      1.1
+    ],
+    [
+      "751007",
+      "Set de varillas para carpas NTK FOX 2/3 #654660",
+      "NTK",
+      0.2,
+      0.8
+    ],
+    [
+      "380025",
+      "Accesorio de Práctica de Goma Mod. 22LR #SCSC-10",
+      "Vector Optics",
+      0.2,
+      0.9
+    ],
+    [
+      "140706",
+      "Cinto táctico FOBUS Mod. #AR-BELTL tamaño L -XL",
+      "Fobus",
+      0.2,
+      0.8
+    ],
+    [
+      "260362",
+      "Punto de mira Truglo de Tritium para Ruger SR series #TG231R1",
+      "Truglo",
+      0.2,
+      0.9
+    ],
+    [
+      "151606",
+      "Navaja UMAREX Mod. Walther FFK #5.0856",
+      "Umarex",
+      0.2,
+      1
+    ],
+    [
+      "830288",
+      "Hilo Snake Mult. 4X Fullpowe 0.90MM 100M",
+      "Snake",
+      0.2,
+      0.7
+    ],
+    [
+      "751003",
+      "Set de varillas para carpas NTK PANDA 3 #654520",
+      "NTK",
+      0.2,
+      0.7
+    ],
+    [
+      "4520756",
+      "Cargador AC UMAREX cal 4,5mm para Mod XBG #5.8173.1",
+      "Umarex",
+      0.2,
+      0.6
+    ],
+    [
+      "110563",
+      "Funda FOBUS Mod. #RBT17GBUNDLE p/ G17 c/ linterna",
+      "Fobus",
+      0.2,
+      0.5
+    ],
+    [
+      "501590",
+      "Cartuchos GB 36-65 #5 11g*25 x250",
+      "GB",
+      0.2,
+      0.5
+    ],
+    [
+      "720142",
+      "Chaleco Salvavidas Sumax Rojo XXL 120KG",
+      "Sumax",
+      0.2,
+      0.4
+    ],
+    [
+      "DES151611",
+      "Cuchillo Nieto L.Gaucho(Madera) G-18 en Funda de Cuero#151563",
+      "Miguel Nieto",
+      0.2,
+      0.6
+    ],
+    [
+      "111566",
+      "Funda Interna CYASUPPLY-FOBUS para Cargador Large Single Stack 9mm/.40/357SIG/45ACP #WHLSMAG0022-427171318888",
+      "Fobus",
+      0.2,
+      0.4
+    ],
+    [
+      "270070",
+      "Agarre Frontal Fab Defense s/CubreGatillo Universal #FGG-S",
+      "Fab Defense",
+      0.2,
+      0.3
+    ],
+    [
+      "250062",
+      "Envase 45ml GSM-BWC RIGÍ†+PÍ´ protege armas de acero inoxidable #40051",
+      "BWC",
+      0.2,
+      0.5
+    ],
+    [
+      "250061",
+      "Envase 45ml GSM-BWC RIGÍ† Grasa universal protege armas de fuego #40020",
+      "BWC",
+      0.2,
+      0.4
+    ],
+    [
+      "850160",
+      "N-Reel Frontal Monico Mr-6521 F.T.",
+      "Sin Marca",
+      0.2,
+      0.4
+    ],
+    [
+      "510261",
+      "Mochila NITECORE Mod. BP20 Porta Arma Larga y Cobertor",
+      "Nitecore",
+      0.2,
+      0.2
+    ],
+    [
+      "250204",
+      "Botella 90ml GSM-BWC Blue n Rust remueve pavonado y óxido #16125",
+      "BWC",
+      0.2,
+      0.4
+    ],
+    [
+      "270050",
+      "Empuñadura Fab Defense Ergonomica #PTK",
+      "Fab Defense",
+      0.2,
+      0.2
+    ],
+    [
+      "270900",
+      "Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC",
+      "Fab Defense",
+      0.2,
+      0.2
+    ],
+    [
+      "900305",
+      "Pila DURACELL Mod. 2032 x 5 unidades",
+      "Duracell",
+      0.2,
+      0.1
+    ],
+    [
+      "250060",
+      "Envase 22ml GSM-BWC lubricante/protector de choke p/ Esc. Choke Tube #40015",
+      "BWC",
+      0.2,
+      0.1
+    ],
+    [
+      "270250",
+      "Extensor de Cargador Fab Defense Glock M43 +4T #43-10",
+      "Fab Defense",
+      0.2,
+      0.1
+    ],
+    [
+      "901410",
+      "Bateria NITECORE NL2140 Mod. 21700 4000 mAh",
+      "Nitecore",
+      0.2,
+      0.1
+    ],
+    [
+      "151658",
+      "Cuchillos UMAREX EF103 #5.0904-1",
+      "Umarex",
+      0.2,
+      0.1
+    ],
+    [
+      "900360",
+      "PILA Duracell AAx4 Chica",
+      "Duracell",
+      0.2,
+      0
+    ],
+    [
+      "610245",
+      "Caña Marine Sport Brisa BR-C661MH 12-25LB",
+      "Marine Sports",
+      0.2,
+      0
+    ],
+    [
+      "750579",
+      "N-Loneta 8x6 Azul #6960426",
+      "Sin Marca",
+      0.2,
+      0
+    ],
+    [
+      "611055",
+      "Bomba de Agua Rule 500GPH #25D",
+      "Sin Marca",
+      0.2,
+      0
+    ],
+    [
+      "720172",
+      "Chaleco Salvavidas Sumax Naranja #XL 100 Kg.#D45-XL",
+      "Sumax",
+      0.2,
+      0
+    ],
+    [
+      "320600",
+      "Rifle AC TSS 4.5mm c/alsa y punto de mira sin palanca",
+      "TSS",
+      0.2,
+      0
+    ],
+    [
+      "110241",
+      "Funda para Rifle DOBERMAN MIKE GREEN #BL056GR",
+      "Doberman RIFLES",
+      0.2,
+      0
+    ],
+    [
+      "270823",
+      "Porta Cargadores Fab Defense Glock 9mm/.40 Cinto/Paddle Verde #PG-9",
+      "Fab Defense",
+      0.2,
+      0
+    ],
+    [
+      "110564",
+      "Funda FOBUS Mod. #RBT19GBUNDLE p/ G19 c/ linterna",
+      "Fobus",
+      0.2,
+      0
+    ],
+    [
+      "4500352",
+      "Cargador TANFOGLIO cal 9mm Mod. Combat R/F 15 tiros",
+      "Tanfoglio",
+      0.2,
+      0
+    ],
+    [
+      "325000",
+      "Pistola lanza pimienta UMAREX Mod. PGS incluido 1Cart.#2.2050-1",
+      "Umarex",
+      0.2,
+      0
+    ],
+    [
+      "270817",
+      "Funda interna FAB DEFENSE Mod. Scorpus Covert para Glock 43 #sc-cg43b",
+      "Fab Defense",
+      0.2,
+      0
+    ],
+    [
+      "720484",
+      "Sombrero 5.11 Mod. BOONIE 89076-251 Negro",
+      "5.11",
+      0.2,
+      0
+    ],
+    [
+      "270814",
+      "Funda Interna Fab Defense ZURDO Glock/GZ/Walther/FN/RUGER",
+      "Fab Defense",
+      0.2,
+      0
+    ],
+    [
+      "260043",
+      "Binocular KONUS NEW ZOOM 8-24x50 #2122",
+      "Konus",
+      0.2,
+      0
+    ],
+    [
+      "680680",
+      "Linterna DOBERMAN 300L Bat Recargable Luz Lateral #LP-8381C",
+      "Doberman LINTERNAS",
+      0.2,
+      0
+    ],
+    [
+      "320506",
+      "Arco y Flecha Crosman Augusta 20lbs #AYR2026",
+      "Crosman",
+      0.2,
+      0
+    ],
+    [
+      "505053",
+      "Balas SELLIER n BELLOT cal 7.65mm/32AUTO FMJ 73gr 50x40 #V310232",
+      "Sellier & Bellot",
+      0.1,
+      340.1
+    ],
+    [
+      "505256",
+      "Balas Armscor 38SUPER 125GR PNormalCobreada 50x20",
+      "Armscor",
+      0.1,
+      40.4
+    ],
+    [
+      "400292",
+      "Balines BB  ASG Beta Blaster 0,25G 3300 pcs #20170",
+      "ASG",
+      0.1,
+      21.4
+    ],
+    [
+      "830265",
+      "Hilo Snake Nevada 0.90mm 100M",
+      "Snake",
+      0.1,
+      20.4
+    ],
+    [
+      "830257",
+      "Hilo Snake Nevada 0.35mm 100M",
+      "Snake",
+      0.1,
+      18.3
+    ],
+    [
+      "505315",
+      "Balas CCI 38SPL/357MAG 81GR Shotshell 10x20 #3738",
+      "Federal",
+      0.1,
+      16.5
+    ],
+    [
+      "830256",
+      "Hilo Snake Nevada 0.30mm 100M",
+      "Snake",
+      0.1,
+      15.3
+    ],
+    [
+      "115019",
+      "Porta Carg. 2ble P229/226/250 sp2022 Tanfoglio Taurus",
+      "Tanfoglio",
+      0.1,
+      15.1
+    ],
+    [
+      "830260",
+      "Hilo Snake Nevada 0.45mm 100M",
+      "Snake",
+      0.1,
+      12.1
+    ],
+    [
+      "710591",
+      "Bolso Termico Flexible Mediano Camu",
+      "Sin Marca",
+      0.1,
+      6.3
+    ],
+    [
+      "550251",
+      "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22LR #41403",
+      "BWC",
+      0.1,
+      6.1
+    ],
+    [
+      "830287",
+      "Hilo Snake Mult. 4X Fullpowe 0.80MM 100M",
+      "Snake",
+      0.1,
+      5
+    ],
+    [
+      "DES680512",
+      "Linterna Dual Caterpillar 250/300 LM LED Aluminio Tactico #CT3410",
+      "Caterpillar",
+      0.1,
+      5
+    ],
+    [
+      "830290",
+      "Hilo Snake Mult. 4X Fullpowe.0.16MM 100M",
+      "Snake",
+      0.1,
+      4.2
+    ],
+    [
+      "321097",
+      "Cargador UMAREX T4E cal 68 2 unidades #2.4717.1",
+      "Umarex",
+      0.1,
+      4.3
+    ],
+    [
+      "830284",
+      "Hilo Snake Mult. 4X Fullpowe 0.55MM 100M",
+      "Snake",
+      0.1,
+      4.1
+    ],
+    [
+      "510800",
+      "Bolsa de Agua DOBERMAN 2L",
+      "Doberman",
+      0.1,
+      3.8
+    ],
+    [
+      "4500753",
+      "Cargador BERETTA cal 9mm Mod. APX A1 15 tiros",
+      "Beretta",
+      0.1,
+      3.2
+    ],
+    [
+      "620660",
+      "Anzuelo Snake Crystal Niquel #08 c/50.",
+      "Snake",
+      0.1,
+      2.2
+    ],
+    [
+      "260559",
+      "Placa para Punto Rojo VECTOR OPTICS Mod. M1911 TEK #SCRDM-02",
+      "Vector Optics",
+      0.1,
+      2.7
+    ],
+    [
+      "620656",
+      "Anzuelo Snake Crystal Niquel #01 c/50.",
+      "Snake",
+      0.1,
+      2.2
+    ],
+    [
+      "620657",
+      "Anzuelo Snake Crystal Niquel #02 c/50.",
+      "Snake",
+      0.1,
+      2.1
+    ],
+    [
+      "720163",
+      "Chaleco Salvavidas Fishing #L  80 Kg.",
+      "Sin Marca",
+      0.1,
+      2.1
+    ],
+    [
+      "DES680531",
+      "Linterna Caterpillar 175 LM LED COB de Bolsillo Camo  #CT1200 Sin Pilas / Sin Blíster",
+      "Caterpillar",
+      0.1,
+      2.4
+    ],
+    [
+      "DES680540",
+      "Linterna Caterpillar 200 LM LED #CTRACK Sin Pilas / Sin Blíster",
+      "Caterpillar",
+      0.1,
+      2.2
+    ],
+    [
+      "920120",
+      "Llavero NTK Mod. DECOKEY #901070",
+      "NTK",
+      0.1,
+      1.9
+    ],
+    [
+      "150803",
+      "Cuchillo De Caza Hk-803B",
+      "Sin Marca",
+      0.1,
+      1.8
+    ],
+    [
+      "620659",
+      "Anzuelo Snake Crystal Niquel #06 c/50.",
+      "Snake",
+      0.1,
+      1.8
+    ],
+    [
+      "621040",
+      "Esmerillon Snake Negro Nickel 1 c/8 NS-1707",
+      "Snake",
+      0.1,
+      1.7
+    ],
+    [
+      "680477",
+      "Lampara COLEMAN Mod. BATTERYGUARD 200LM Verde #2000033980",
+      "Coleman",
+      0.1,
+      2
+    ],
+    [
+      "250206",
+      "Botella 90ml GSM-BWC Tru-OilÍ† renueva terminación culata madera #23123",
+      "BWC",
+      0.1,
+      1.9
+    ],
+    [
+      "830358",
+      "Hilo Snake Mult. 4X Motion 0.90MM 300M",
+      "Snake",
+      0.1,
+      1.7
+    ],
+    [
+      "250692",
+      "Montante NITECORE Mod. GM04 18mm para escopetas",
+      "Nitecore",
+      0.1,
+      2.3
+    ],
+    [
+      "110501",
+      "Revolvera para Traumatica INDUNAYLON 4\"",
+      "Indunaylon",
+      0.1,
+      1.3
+    ],
+    [
+      "270501",
+      "Acople Carg. Fab Defense con Agarre Frontal Tanfoglio #GMF-9",
+      "Fab Defense",
+      0.1,
+      1.8
+    ],
+    [
+      "620308",
+      "Anzuelo Mustad #7/0*4 92259",
+      "Mustad",
+      0.1,
+      1.3
+    ],
+    [
+      "751000",
+      "Set de varillas para carpas NTK Panda 2 6.9 MM #654500",
+      "NTK",
+      0.1,
+      1.2
+    ],
+    [
+      "250694",
+      "Montante NITECORE GM06 para picattinys costado",
+      "Nitecore",
+      0.1,
+      1.4
+    ],
+    [
+      "170224",
+      "Set de Cuchillo/Ten/CucAI STAND SPORT #343",
+      "Sin Marca",
+      0.1,
+      1.1
+    ],
+    [
+      "920270",
+      "N-Motor Inflador STAND SPORT 4 pilas G #437",
+      "Sin Marca",
+      0.1,
+      1.2
+    ],
+    [
+      "830251",
+      "Hilo Snake Magnum 0.80mm 400M",
+      "Snake",
+      0.1,
+      0.8
+    ],
+    [
+      "800170",
+      "Caja Pesca POLYMER Grande 1 Bandeja c/2 Estuches Tapa Negra #4035",
+      "Polymer",
+      0.1,
+      0.8
+    ],
+    [
+      "250693",
+      "Montante NITECORE Mod. GM05 para miras telescopicas",
+      "Nitecore",
+      0.1,
+      1.3
+    ],
+    [
+      "830252",
+      "Hilo Snake Magnum 0.90mm 300M",
+      "Snake",
+      0.1,
+      0.7
+    ],
+    [
+      "901500",
+      "Soplador NTK Mod. Ikon #145608-0",
+      "NTK",
+      0.1,
+      0.6
+    ],
+    [
+      "REP900872",
+      "Repuesto para Bomba HP300",
+      "Doberman",
+      0.1,
+      0.6
+    ],
+    [
+      "800173",
+      "Caja Pesca POLYMER Grande 1 Bandeja Tapa Negra #4030",
+      "Polymer",
+      0.1,
+      0.6
+    ],
+    [
+      "730368",
+      "Remera BERETTA Mod. Trident Verde Olivo Grande  #TS542T1557072AL",
+      "Beretta Mod",
+      0.1,
+      0.7
+    ],
+    [
+      "501535",
+      "Cartuchos GB 32 #3 14g 250/25",
+      "GB",
+      0.1,
+      0.5
+    ],
+    [
+      "680466",
+      "Linterna Coleman Packaway Negro 4AA/105Lm/7m/7h High # 20184",
+      "Coleman",
+      0.1,
+      0.4
+    ],
+    [
+      "AVE320016",
+      "Pistola AC TSS 4.5mm M:S2 *20",
+      "TSS",
+      0.1,
+      0.4
+    ],
+    [
+      "270500",
+      "Acople Carg. Fab Defense con AgarreFrontal Glock #GMFG",
+      "Fab Defense",
+      0.1,
+      0.3
+    ],
+    [
+      "711054",
+      "Chaleco p/Pesca Verde Sumax M #SC004M",
+      "Sumax",
+      0.1,
+      0.3
+    ],
+    [
+      "160100",
+      "Tonfa de Polimero #TP02",
+      "Sin Marca",
+      0.1,
+      0.5
+    ],
+    [
+      "DES710240",
+      "Bolson para Agua NTK para Mod. HYDRA 2 Litros #301280",
+      "NTK",
+      0.1,
+      0.3
+    ],
+    [
+      "920520",
+      "Manga p/Brazo Scorpion Blanco #L",
+      "Sumax",
+      0.1,
+      0.4
+    ],
+    [
+      "DES400258",
+      "Balines Crosman 5,5 14,3GR Desroyer 175x12 #DES22",
+      "Crosman",
+      0.1,
+      0.2
+    ],
+    [
+      "920259",
+      "Choke Para Caño Medio Esc. Boito Calibre 12",
+      "Boito",
+      0.1,
+      0.2
+    ],
+    [
+      "941107",
+      "Kit de Supervivencia #YQS-110",
+      "Sin Marca",
+      0.1,
+      0.2
+    ],
+    [
+      "100067",
+      "Anillo porta correa Topping #S-4046",
+      "Sin Marca",
+      0.1,
+      0.3
+    ],
+    [
+      "610558",
+      "Caña Hummer Rods Sumax 6-12 LBS#SHM561ML",
+      "Sumax",
+      0.1,
+      0.3
+    ],
+    [
+      "550261",
+      "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
+      "BWC",
+      0.1,
+      0.3
+    ],
+    [
+      "150785",
+      "Navaja Tram. M/Acero 14Func. #26367/102E",
+      "Tramontina",
+      0.1,
+      0.3
+    ],
+    [
+      "550500",
+      "Liquido Limpia Lente 2Oz#32122",
+      "Sin Marca",
+      0.1,
+      0.2
+    ],
+    [
+      "270057",
+      "Soporte Tactico Versatil Fab Defense #VTS",
+      "Fab Defense",
+      0.1,
+      0.1
+    ],
+    [
+      "830325",
+      "Hilo Snake Mult. 4X Wild 0.30MM 150M",
+      "Snake",
+      0.1,
+      0.1
+    ],
+    [
+      "760042",
+      "Parche 5.11 Logo 5.11 #81251-999",
+      "5.11",
+      0.1,
+      0.1
+    ],
+    [
+      "621370",
+      "Anzuelo Preparado Nylon Nro1 x 25 unid",
+      "Sin Marca",
+      0.1,
+      0.1
+    ],
+    [
+      "110013",
+      "Funda P/Arma Larga Camu.- 85 X 20 F08",
+      "Otros",
+      0.1,
+      0.1
+    ],
+    [
+      "751008",
+      "Set de varillas para carpas NTK FOX 3/4 #653000",
+      "NTK",
+      0.1,
+      0.1
+    ],
+    [
+      "751010",
+      "Set de varillas para carpas NTK FOX 5/6 #653150",
+      "NTK",
+      0.1,
+      0
+    ],
+    [
+      "400236",
+      "Balines APOLO 5,5mm MAGNUM 1gr. Carton*100X250 #E13001",
+      "Apolo",
+      0.1,
+      0
+    ],
+    [
+      "760101",
+      "Mosqueton 5.11 m2 56595-134 kangaroo",
+      "5.11",
+      0.1,
+      0
+    ],
+    [
+      "LIQ610901",
+      "Caña Snake Coral 1.54m 8-17LB Medium Light Molinete MC-C #511",
+      "Snake",
+      0.1,
+      0
+    ],
+    [
+      "650531",
+      "COLCHON INFLABLE BESTWAY 67001/1,5 - 188x99x22",
+      "Bestway",
+      0.1,
+      0
+    ],
+    [
+      "150760",
+      "Cuchillo Frilley Artesanal 21cm. Mango Madera/Hueso",
+      "Frilley",
+      0.1,
+      0
+    ],
+    [
+      "400246",
+      "Balines BBs APOLO 4,5mm 500 unid.x 64 #E19983",
+      "Apolo",
+      0.1,
+      0
+    ],
+    [
+      "751009",
+      "Set de varillas para carpas NTK FOX 4/5 #653100",
+      "NTK",
+      0.1,
+      0
+    ],
+    [
+      "901273",
+      "Herramienta TRUGLO para cambiar punto de mira #TG970GF",
+      "Truglo",
+      0.1,
+      0
+    ],
+    [
+      "190001",
+      "Alarma Sónica UMAREX Mod. Shrill Alarm SA 120dB #2.209",
+      "Umarex",
+      0.1,
+      0
+    ],
+    [
+      "900777",
+      "Repuestos TRUGLO de Fibra Optica Escopeta 2mm x 5 unid #TG05E",
+      "Truglo",
+      0.1,
+      0
+    ],
+    [
+      "110242",
+      "Funda para Rifle DOBERMAN MIKE COYOTE #BL056KH",
+      "Doberman RIFLES",
+      0.1,
+      0
+    ],
+    [
+      "151610",
+      "Cuchillo Nieto L.Gaucho(Madera) G-12 en Funda de Cuero#151562",
+      "Miguel Nieto",
+      0.1,
+      0
+    ],
+    [
+      "400391",
+      "Balines de Goma UMAREX cal 43 caja de 250 unid #2.4773",
+      "Umarex",
+      0.1,
+      0
+    ],
+    [
+      "4500751",
+      "Cargador BERETTA cal 9mm Mod. 92A1/FS 17 tiros",
+      "Beretta",
+      0.1,
+      0
+    ],
+    [
+      "270450",
+      "Cargador Fab Defense 223REM/5.56NATO p/ M:M16/M4/AR15 30T Negro #ULTIMAG30",
+      "Fab Defense",
+      0.1,
+      0
+    ],
+    [
+      "DES321203",
+      "Cargador CROSMAN cal 5,5mm Mod. MAG FIRE EXTREME (copia)",
+      "Crosman",
+      0.1,
+      0
+    ],
+    [
+      "100059",
+      "N-Anillo + Correa p/ Esc. Maverick",
+      "Maverick",
+      0.1,
+      0
+    ],
+    [
+      "701305",
+      "Rifle DERYA cal 9mm Mod. B610AR 5.9''  2 cargadores 17 tiros",
+      "Derya",
+      0,
+      553.6
+    ],
+    [
+      "700312",
+      "Rifle Mendoza 22LR Puma SemiAuto Safari MirasReflect 17T",
+      "Mendoza",
+      0,
+      376
+    ],
+    [
+      "700992",
+      "Rifle marca TINCK cal 223REM Mod. PERUN X16 14,5 '' 1 carg 30 tiros",
+      "Tinck",
+      0,
+      327.6
+    ],
+    [
+      "700990",
+      "Rifle marca TINCK cal 223REM Mod. PERUN X16 8,5 '' 1 carg 30 tiros",
+      "Tinck",
+      0,
+      275.1
+    ],
+    [
+      "700305",
+      "Rifle Mendoza 22LR Puma SemiAuto Squad MirasReflect 17T",
+      "Mendoza",
+      0,
+      175.5
+    ],
+    [
+      "261411",
+      "Cámara KONUS Mod. FLAME 1,5x-3x res 384×288 #7954",
+      "Konus",
+      0,
+      200.2
+    ],
+    [
+      "505426",
+      "Balas Blazer 44MAG 240GR PHuecaCobreada 50x20 #3564",
+      "Federal",
+      0,
+      159.5
+    ],
+    [
+      "DES750185",
+      "Toldo NTK Mod. DUXX 3x3x3 #351970",
+      "NTK",
+      0,
+      112.7
+    ],
+    [
+      "505556",
+      "Balas SELLIER n BELLOT cal 270WIN SP 130gr 20x20 #V340752",
+      "Sellier & Bellot",
+      0,
+      105.2
+    ],
+    [
+      "505632",
+      "Balas SELLIER n BELLOT cal 7mmREM. MAG. SP 140gr 20x20 #V332772",
+      "Sellier & Bellot",
+      0,
+      101.1
+    ],
+    [
+      "505548",
+      "Balas SELLIER n BELLOT cal 243WIN SP 100gr 20x25 #V330812",
+      "Sellier & Bellot",
+      0,
+      77.9
+    ],
+    [
+      "260243",
+      "Mira telescopica nocturna VECTOR OPTICS Mod. OWLSET 3-8x 1920x1080 #OWNVS-03",
+      "Vector Optics",
+      0,
+      80.2
+    ],
+    [
+      "400132",
+      "Balas Armscor 22Corto 29GR PNormalCobreada 50x100",
+      "Armscor",
+      0,
+      75.2
+    ],
+    [
+      "260242",
+      "Mira telescopica térmica VECTOR OPTICS Mod. OWLSET RSM50 3,2-12,8x 1024x768 multireticula #VEOT-RS01",
+      "Vector Optics",
+      0,
+      89.8
+    ],
+    [
+      "4500290",
+      "Cargador SigSauer 380ACP P250Compact 15T #MAG-250-380-15",
+      "Sig Sauer",
+      0,
+      71.1
+    ],
+    [
+      "501593",
+      "Cartuchos SAGA 36-65 #7 11gr T1",
+      "Saga",
+      0,
+      66.8
+    ],
+    [
+      "712115",
+      "Vaso COLEMAN 590ML Verde #2010818",
+      "Coleman",
+      0,
+      68.6
+    ],
+    [
+      "SID4520455",
+      "Cargador KCI cal .40 Mod. Glock 50 tiros",
+      "KCI",
+      0,
+      62.9
+    ],
+    [
+      "300095",
+      "Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS Verde",
+      "Fab Defense",
+      0,
+      59.4
+    ],
+    [
+      "700184",
+      "Escopeta Safir 36 T14 SemiAuto Pav 2C 10T/5T Compact",
+      "Safir",
+      0,
+      60.3
+    ],
+    [
+      "322213",
+      "Rifle AC CO2 UMAREX 4,5mm Mod. Beretta CX4 Storm XT #475.00.10",
+      "Umarex",
+      0,
+      53.3
+    ],
+    [
+      "600627",
+      "Pistola Tanfoglio 38SUPER Stock2 DA/SA Inox 2C 17T",
+      "Tanfoglio",
+      0,
+      64.5
+    ],
+    [
+      "505578",
+      "Balas SELLIER n BELLOT cal 300 BLACKOUT AAC FMJ 124gr 20x50 #V341282",
+      "Sellier & Bellot",
+      0,
+      47.8
+    ],
+    [
+      "602846",
+      "Pistola Walther 9mm M:P99 2 carg",
+      "Walther",
+      0,
+      53
+    ],
+    [
+      "700800",
+      "Escopeta Semiauto AKKAR cal 12 5+1 18,5\" Camuflada",
+      "Akkar",
+      0,
+      51.4
+    ],
+    [
+      "600702",
+      "Pistola GIRSAN cal 9mm Mod. MC28SV2OD Verde #4521 2 carg 17 tiros",
+      "Girsan",
+      0,
+      53.4
+    ],
+    [
+      "505125",
+      "Balas Federal 380ACP 90GR Hydrashock 20x10 #PD380HS1",
+      "Federal",
+      0,
+      39.2
+    ],
+    [
+      "4520350",
+      "Cargador KCI cal 223 Mod. AR15  50 tiros",
+      "KCI",
+      0,
+      42.6
+    ],
+    [
+      "700180",
+      "Escopeta Safir 36 T14 SemiAuto Pav 2C 10T Classic",
+      "Safir",
+      0,
+      41.6
+    ],
+    [
+      "4500250",
+      "Cargador SigSauer 9MM SP2022 15T #MAG-2022-9-15",
+      "Sig Sauer",
+      0,
+      35.9
+    ],
+    [
+      "701491",
+      "Escopeta Palanca DERYA cal 36/410 Mod. MD100 5+1 t 20´´",
+      "Derya",
+      0,
+      39.5
+    ],
+    [
+      "505462",
+      "Balas CCI 45ACP 120GR Shotshell 10x20 #3745",
+      "Federal",
+      0,
+      33.7
+    ],
+    [
+      "700801",
+      "Escopeta Semiauto AKKAR cal 12 5+1 18,5\" Negro",
+      "Akkar",
+      0,
+      36.8
+    ],
+    [
+      "900906",
+      "Punto de Mira Glock de Acero 4,1 Luminiscente #7082",
+      "Glock",
+      0,
+      33.6
+    ],
+    [
+      "702202",
+      "702202",
+      "CZ",
+      0,
+      28.8
+    ],
+    [
+      "900926",
+      "Alza de Mira GLOCK Gen4 6,5 auto-luminoso - 6879",
+      "Glock",
+      0,
+      31.9
+    ],
+    [
+      "702600",
+      "Rifle Sarsilmaz .223 SAR 223C 5Carg.Black",
+      "Sarsilmaz",
+      0,
+      28.5
+    ],
+    [
+      "600422",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav 6T 5'' #0621",
+      "Ruger",
+      0,
+      30.4
+    ],
+    [
+      "DES680514",
+      "Linterna Dual Caterpillar 275/200 LM LED Aluminio Tactico - Display 9 unidades #CT34109 (copia)",
+      "Caterpillar",
+      0,
+      27.9
+    ],
+    [
+      "505156",
+      "Balas CCI 9MM 53GR Shotshell 10x20 #3790",
+      "Federal",
+      0,
+      29.5
+    ],
+    [
+      "702505",
+      "Rifle Luvo .223 Rem Semi-Auto LA -15 Black Lion 10,5\" 2Carg.",
+      "Luvo",
+      0,
+      26.5
+    ],
+    [
+      "400297",
+      "Balines BB Beta Blaster 0.28G 3300 pcs #20171",
+      "ASG",
+      0,
+      26.4
+    ],
+    [
+      "701290",
+      "Rifle DERYA cal 9mm Mod. ZY9 Negro 10'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      30.1
+    ],
+    [
+      "700884",
+      "Escopeta BOITO cal 20 Mod. A681 DEFENSE 20'' #M497",
+      "Boito",
+      0,
+      25.5
+    ],
+    [
+      "702506",
+      "Rifle Semiautomático Luvo Cal.223 Rem Mod. LA -15 Black Lion 10,5P 1C. 30T",
+      "Luvo",
+      0,
+      24.1
+    ],
+    [
+      "901600",
+      "Magnetico DOBERMAN 30 lbs #SDMGunMag-1 x 1",
+      "Doberman",
+      0,
+      22.9
+    ],
+    [
+      "4500428",
+      "Cargador Glock M25 .380ACP 15 Tiros #2099 - 1679-01",
+      "Glock",
+      0,
+      22.1
+    ],
+    [
+      "600431",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav MiraBlade 6T 4'' #0629",
+      "Ruger",
+      0,
+      24.1
+    ],
+    [
+      "610947",
+      "Caña Telescopica Snake Escarlate 5.00M",
+      "Snake",
+      0,
+      21.3
+    ],
+    [
+      "501604",
+      "Cartuchos SAGA 36-65 BUCK 2P T3",
+      "Saga",
+      0,
+      20.8
+    ],
+    [
+      "DES680509",
+      "Linterna Caterpillar 175 LM LED COB de Bolsillo - Display 12 unidades #CT100012 (copia)",
+      "Caterpillar",
+      0,
+      20.8
+    ],
+    [
+      "4500422",
+      "Cargador Glock 9MM M19 15T #1084 - 1594-01",
+      "Glock",
+      0,
+      21
+    ],
+    [
+      "260246",
+      "Mira Larga Distancia Norinco 15x45 TiroPractico Tripode #LBW15",
+      "Sin Marca",
+      0,
+      20.2
+    ],
+    [
+      "501119",
+      "Cartucho GB 12 GOMA 1 Posta 250/25",
+      "GB",
+      0,
+      20.1
+    ],
+    [
+      "600270CARU",
+      "PISTOLA SIG SUGER MOD. EMPEROR SCORPION CAL .45ACP",
+      "Sig Sauer",
+      0,
+      20.1
+    ],
+    [
+      "702650",
+      "Rifle Semiautomático Utas Cal.223Rem Mod. UT223 10,5P 2Carg. 30T",
+      "utas",
+      0,
+      20.1
+    ],
+    [
+      "749100",
+      "Alfombra de mesa GLOCK Gen5 - 31717",
+      "Glock",
+      0,
+      20.2
+    ],
+    [
+      "830258",
+      "Hilo Snake Nevada 0.37mm 100M",
+      "Snake",
+      0,
+      19.6
+    ],
+    [
+      "700918",
+      "Escopeta Armed 20 SemiAuto SAS CulPoli BandaRef ApLlama 7+1 20''",
+      "Armed",
+      0,
+      18.6
+    ],
+    [
+      "505390",
+      "Balas Federal 10MM 180GR PNormalCobreada 50x20",
+      "Federal",
+      0,
+      17.1
+    ],
+    [
+      "4500150",
+      "Cargador Ruger 40SW SR40/SR40C 15T #90350",
+      "Ruger",
+      0,
+      16.4
+    ],
+    [
+      "400298",
+      "Balines BB ASG Beta Blaster 0,30 3300 pcs #20172",
+      "ASG",
+      0,
+      15.1
+    ],
+    [
+      "DES680516",
+      "Linterna Caterpillar 175 LM LED COB de Bolsillo Camo - Display 12 unidades #CT120012 (copia)",
+      "Caterpillar",
+      0,
+      14.3
+    ],
+    [
+      "LIQ300118",
+      "LQN-Caja PLANO p/2Rifles/Escop.c/Port. Cart. Ng#10527",
+      "Sin Marca",
+      0,
+      15.3
+    ],
+    [
+      "700853",
+      "Escopeta BOITO cal 20/28 Mod. YUXTA A681 2 Caños 26''/28'' #M355",
+      "Boito",
+      0,
+      16.5
+    ],
+    [
+      "900929",
+      "Alza de Mira GLOCK Gen5 6,5 auto-luminoso - 39745",
+      "Glock",
+      0,
+      16.7
+    ],
+    [
+      "701303",
+      "Escopeta Superpuesta DERYA cal 12 Mod. MERIVA MRS1 30´´",
+      "Derya",
+      0,
+      19.8
+    ],
+    [
+      "701291CARU",
+      "Rifle DERYA cal 9mm Mod. ZY9 10'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      13.1
+    ],
+    [
+      "DES680517",
+      "Linterna Caterpillar 220 LM LED de Bolsillo - Display 8 unidades #CT51208 (copia)",
+      "Caterpillar",
+      0,
+      12.9
+    ],
+    [
+      "4500120",
+      "Cargador Ruger 9MM P89/P93/P94/P95 10T #90088",
+      "Ruger",
+      0,
+      13
+    ],
+    [
+      "901620",
+      "Magnetico DOBERMAN 2 piezas 25 lbs  #SDMGunMag-3",
+      "Doberman",
+      0,
+      13.1
+    ],
+    [
+      "4500437",
+      "Cargador GLOCK 9mm M19X 17 tiros Coyote - 1587-01",
+      "Glock",
+      0,
+      12.8
+    ],
+    [
+      "900927",
+      "Alza de Mira GLOCK Gen4 6,9 auto-luminoso - 6883",
+      "Glock",
+      0,
+      15.6
+    ],
+    [
+      "322121",
+      "Revolver AC CO2 UMAREX 4,5mm Mod. S&W629 Trustme Blanco 6\" #5.8179",
+      "Umarex",
+      0,
+      13
+    ],
+    [
+      "750142",
+      "N-Carpa HKK F-15-A 4,35x3,55x1,80 4P 2 HABIT.",
+      "Sin Marca",
+      0,
+      12.2
+    ],
+    [
+      "LIQ300113",
+      "LQN-Caja p/Rifle Lujoso Negro #10101",
+      "Sin Marca",
+      0,
+      13
+    ],
+    [
+      "600423",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav 6T 6'' #0622",
+      "Ruger",
+      0,
+      14.2
+    ],
+    [
+      "4500210",
+      "Cargador SigSauer 22LR 522 25T #MAG-522-22-25",
+      "Sig Sauer",
+      0,
+      11.9
+    ],
+    [
+      "701296",
+      "Rifle DERYA cal 9mm Mod. ZY9 C111F Full FDE 14,5'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      17.7
+    ],
+    [
+      "AVE320085",
+      "Rifle AC TSS 5.5mm B6C Polymero M:Tactico",
+      "TSS",
+      0,
+      11.4
+    ],
+    [
+      "DES680518",
+      "Linterna Caterpillar 200 LM LED - Display 9 unidades #CTRACK9 (copia)",
+      "Caterpillar",
+      0,
+      11.3
+    ],
+    [
+      "600663CARU",
+      "Pistola CZ I Cal 9mm I Negra I Mod P-10F I 2 C. I 19T. + Kit Roni CAA",
+      "CZ",
+      0,
+      11.1
+    ],
+    [
+      "750144",
+      "N-Carpa HKK C-1B 4,50x2,40x2 4P C/HALL",
+      "Sin Marca",
+      0,
+      10.8
+    ],
+    [
+      "701291",
+      "Rifle DERYA cal 9mm Mod. ZY9 C111 FDE 10'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      21.3
+    ],
+    [
+      "501567",
+      "Cartuchos SAGA 32 BUCK 16P T3",
+      "Saga",
+      0,
+      10.5
+    ],
+    [
+      "600599CARU",
+      "Pistola TANFOGLIO cal 9mm Mod. Stock III",
+      "Tanfoglio",
+      0,
+      10.4
+    ],
+    [
+      "600838CARU",
+      "Pistola BERETTA cal 9mm Mod. 92FS 2 cargadores 15 tiros",
+      "Beretta",
+      0,
+      10.1
+    ],
+    [
+      "505379",
+      "Balas CCI 40SW 88GR Shotshell 10x20 #3740",
+      "Federal",
+      0,
+      9.8
+    ],
+    [
+      "4500680",
+      "Cargador Akdal 22LR MINI06 5T",
+      "Akdal",
+      0,
+      9.7
+    ],
+    [
+      "600700CARU",
+      "Pistola GIRSAN cal 9mm Mod. MC28V2 Negro #4521 2 carg 17 tiros",
+      "Girsan",
+      0,
+      9.5
+    ],
+    [
+      "701298",
+      "Rifle Semiautomático DERYA cal 9mm Mod. ZY9 C154K Camo 14,5P 2 carg 17 tiros",
+      "Derya",
+      0,
+      9.4
+    ],
+    [
+      "4520050",
+      "Cargador KCI cal 9mm Mod. Glock 15 tiros",
+      "KCI",
+      0,
+      9.7
+    ],
+    [
+      "4500220",
+      "Cargador SigSauer 9MM P250/P320Compact 15T #MAG-320-9-15",
+      "Sig Sauer",
+      0,
+      9.4
+    ],
+    [
+      "830255",
+      "Hilo Snake Nevada 0.28mm 100M",
+      "Snake",
+      0,
+      9.2
+    ],
+    [
+      "505054",
+      "Balas PMC 7.65/32Auto FMJ 71Gr. *50",
+      "PMC",
+      0,
+      9.1
+    ],
+    [
+      "710113",
+      "Termo de 2Comp 3Gal Lila#6655",
+      "Sin Marca",
+      0,
+      9.2
+    ],
+    [
+      "EXH600849",
+      "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
+      "Beretta",
+      0,
+      8.9
+    ],
+    [
+      "900907",
+      "Punto de Mira Glock de Acero 4,9 Luminiscente  #33580",
+      "Glock",
+      0,
+      11.4
+    ],
+    [
+      "DES880051",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 9 - 42",
+      "Rocky Boots",
+      0,
+      8.7
+    ],
+    [
+      "700231CARU",
+      "Escopeta Semiautomatica Girsan I Cal. 12 I Camuflado I Mod. MC312 I 28 P. I 5+1 T.",
+      "Girsan",
+      0,
+      8.5
+    ],
+    [
+      "920102",
+      "Exhibidor P/Caña De Pescar #12Rr1",
+      "Sin Marca",
+      0,
+      8.6
+    ],
+    [
+      "4500270",
+      "Cargador SigSauer 40SW P250Compact 13T #MAG-250-40-13",
+      "Sig Sauer",
+      0,
+      8.7
+    ],
+    [
+      "4500690",
+      "Cargador Akdal 9MM Ghost 15T",
+      "Akdal",
+      0,
+      8.1
+    ],
+    [
+      "600849CARU",
+      "Pistola Beretta I Cal .9mm I Negra I Mod. APX A1 I 2 C. I 17 T.",
+      "Beretta",
+      0,
+      8.1
+    ],
+    [
+      "600850CARU",
+      "Pistola Beretta I Cal .9mm I Negra I Mod. APX A1 I 2 C. I 17 T.",
+      "Beretta",
+      0,
+      8.1
+    ],
+    [
+      "601615",
+      "Pistola Canik cal. 9mm Mod. TP9SF negro 2 cargadores 20Tiros",
+      "Canik",
+      0,
+      8
+    ],
+    [
+      "748000",
+      "Parche GLOCK - 2195",
+      "Sin Marca",
+      0,
+      8
+    ],
+    [
+      "600930",
+      "Pistola WALTHER 22Lr. M.P22Q 10T Rosa/Blanco 1Carg. #2853205",
+      "Walther",
+      0,
+      7.9
+    ],
+    [
+      "680599",
+      "Linterna IMALENT BG10 2.300 lumenes",
+      "Imalent",
+      0,
+      8.2
+    ],
+    [
+      "600424",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav 6T 4'' #0623",
+      "Ruger",
+      0,
+      10.2
+    ],
+    [
+      "4500670",
+      "Cargador Akdal 25ACP MINI03 5T",
+      "Akdal",
+      0,
+      7.8
+    ],
+    [
+      "600112CARU",
+      "Revolver FN I Cal. 38SPL / 357 Mag. I Madera I Mod. Barracuda I 3P.6 T.",
+      "FN",
+      0,
+      7.6
+    ],
+    [
+      "505700",
+      "Balas Ultramasx 500 SW2 440GR 50",
+      "Ultramasx",
+      0,
+      7.7
+    ],
+    [
+      "630036",
+      "Cabo de Acero Snake 50LB 10M",
+      "Snake",
+      0,
+      7.3
+    ],
+    [
+      "621209",
+      "Esmerillon Snake c/Snap Negro Nickel 5/0 NS-3702",
+      "Snake",
+      0,
+      7.2
+    ],
+    [
+      "770300",
+      "Protec.de Oido PELLER#90581",
+      "Sin Marca",
+      0,
+      7.2
+    ],
+    [
+      "630038",
+      "Cabo de Acero Snake 60LB 10M",
+      "Snake",
+      0,
+      7.2
+    ],
+    [
+      "505573",
+      "Balas EG del Sur 30-06 180gr. SP",
+      "EG",
+      0,
+      7.1
+    ],
+    [
+      "600617CARU",
+      "Pistola Canik I Cal. 9mm I Negra I Mod. TP9 SF  I  1 C.18T. y 2 C. 20T.",
+      "Canik",
+      0,
+      7.1
+    ],
+    [
+      "4500221",
+      "Cargador SigSauer 9MM P226 20T #MAG-226-9-20",
+      "Sig Sauer",
+      0,
+      7.3
+    ],
+    [
+      "600304CARU",
+      "Pistola SigSauer 9MM P320 Pav SS 2C 17T #320F-9-BSS",
+      "Sig Sauer",
+      0,
+      7
+    ],
+    [
+      "830305",
+      "Liñada #F-5C Con Boya Madera",
+      "Sin Marca",
+      0,
+      6.9
+    ],
+    [
+      "320102",
+      "Rifle AC COMETA 5,5mm Mod. 220",
+      "Cometa",
+      0,
+      9.6
+    ],
+    [
+      "900931",
+      "Alza de Mira GLOCK Gen5 6,9 auto-luminoso - 39746",
+      "Glock",
+      0,
+      10
+    ],
+    [
+      "321055",
+      "Cargador ASG cal. 6mm para modelos AEG M16 130 tiros #17616",
+      "ASG",
+      0,
+      6.9
+    ],
+    [
+      "AVE600854CARU",
+      "Pistola WALTHER 22Lr. M.P22Q 10T Ng. 1Carg. #2853205",
+      "Walther",
+      0,
+      6.7
+    ],
+    [
+      "920271",
+      "Motor Inflador Elec. AIR 12volt STAND SPORT #0440",
+      "Sin Marca",
+      0,
+      7.2
+    ],
+    [
+      "600656CARU",
+      "Pistola CZ 9mm MODELO P-10C",
+      "CZ",
+      0,
+      6.6
+    ],
+    [
+      "700637CARU",
+      "Rifle Palanquero Marlin I  Cal. 30-30 Win I Madera I Mod. 336 I 20P. I 6 T.",
+      "Marlin",
+      0,
+      6.6
+    ],
+    [
+      "600661CARU",
+      "Pistola CZ 9mm P-10F 19T 2 CARG",
+      "CZ",
+      0,
+      6.6
+    ],
+    [
+      "300101",
+      "Kit Conversor de carabina Fab Defense KPOS G2 M4 Glock 17/19",
+      "Fab Defense",
+      0,
+      6.5
+    ],
+    [
+      "610450",
+      "N-Caña Tianjin #3.00M Sp10021",
+      "Sin Marca",
+      0,
+      6.6
+    ],
+    [
+      "4500330",
+      "Cargador SigSauer 40SW P226 12T #MAG-226-40-12",
+      "Sig Sauer",
+      0,
+      6.8
+    ],
+    [
+      "DES880053",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 11 - 44,5",
+      "Rocky Boots",
+      0,
+      6.2
+    ],
+    [
+      "LIQ750018",
+      "Carpa Igloo DT 9PERS. 190X295X190 #5101204",
+      "Sin Marca",
+      0,
+      6.2
+    ],
+    [
+      "700920CARU",
+      "Escopeta Armed 20 SemiAuto SAS CulPoli BandaRef 7+1T 28p",
+      "Armed",
+      0,
+      6.2
+    ],
+    [
+      "610945",
+      "Caña Telescopica Snake Escarlate 4.00M",
+      "Snake",
+      0,
+      6.3
+    ],
+    [
+      "AVE601500",
+      "Pistola Mendoza 380 ACP M: PM-1 c/3Carg. 19T",
+      "Mendoza",
+      0,
+      6.1
+    ],
+    [
+      "602845CARU",
+      "Pistola Walther 9mm M:P99-AS 2 carg",
+      "Walther",
+      0,
+      6.1
+    ],
+    [
+      "700424CARU",
+      "Rifle Palanquero Rossi I Cal.38SPL I Madera I Mod. G70 I Carg. Tubular I 8T.",
+      "Rossi",
+      0,
+      6.1
+    ],
+    [
+      "602825CARU",
+      "Pistola HK 9mm M:USP-C 2carg",
+      "HK",
+      0,
+      6.1
+    ],
+    [
+      "600672",
+      "Pistola CZ 22LR Mod. P-07 Black 2C. 10T",
+      "CZ",
+      0,
+      6.1
+    ],
+    [
+      "600671",
+      "Pistola CZ 22LR Mod. P-09  Urban Grey 2C 10Tiros",
+      "CZ",
+      0,
+      6.1
+    ],
+    [
+      "600601CARU",
+      "Pistola Tanfoglio 9mm Combat 919R D.A. Decoker 2Carg. Pav.2Cep.",
+      "Tanfoglio",
+      0,
+      6
+    ],
+    [
+      "900722",
+      "Tubo Cañon p/Glock M19 9mm D.D. STS",
+      "Glock",
+      0,
+      5.8
+    ],
+    [
+      "621207",
+      "Esmerillon Snake c/Snap Negro Nickel 4/0 NS-3702",
+      "Snake",
+      0,
+      5.8
+    ],
+    [
+      "DES611034",
+      "Gomon para deportes NTK Mod. POKER CHIP 1 persona",
+      "NTK",
+      0,
+      6.1
+    ],
+    [
+      "920407",
+      "Equipo de Lluvia  OR53P15 #3XL",
+      "Sin Marca",
+      0,
+      5.7
+    ],
+    [
+      "600751CARU",
+      "Pistola Ruger l Cal. 9mm l Two Tone l Mod. SR9 l 2 C. l 17 T.",
+      "Ruger",
+      0,
+      5.6
+    ],
+    [
+      "602857CARU",
+      "Pistola Prieto Beretta calibre 9mm modelo px4 17tiros",
+      "Beretta",
+      0,
+      5.6
+    ],
+    [
+      "710114",
+      "Termo de 2Comp 3Gal AZ#6655",
+      "Sin Marca",
+      0,
+      5.7
+    ],
+    [
+      "110440",
+      "N-Canillera p/Armas Compactas 380/9mm#21202",
+      "Sin Marca",
+      0,
+      5.6
+    ],
+    [
+      "200030",
+      "Culata DERYA Polímero para Mod. Carina Q101",
+      "Derya",
+      0,
+      6
+    ],
+    [
+      "701297",
+      "Rifle DERYA cal 9mm Mod. ZY9 C154K Camo 14,5'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      5.4
+    ],
+    [
+      "701297ST",
+      "Rifle DERYA cal 9mm Mod. ZY9 C154K Camo 14,5'' 2 carg 17 tiros",
+      "Derya",
+      0,
+      5.4
+    ],
+    [
+      "4500280",
+      "Cargador SigSauer 40SW P250 14T #MAG-250-40-14",
+      "Sig Sauer",
+      0,
+      5.8
+    ],
+    [
+      "601614",
+      "Pistola Canik cal. 9mm Mod. TP9SF Camu 2 cargadores 20Tiros",
+      "Canik",
+      0,
+      5.3
+    ],
+    [
+      "610422",
+      "N-Caña Tianjin #2.10M Sp2102",
+      "Sin Marca",
+      0,
+      5.3
+    ],
+    [
+      "321090",
+      "Cargador UMAREX T4E de emergencia para cal 43 mod TPM1 #2.4768.2",
+      "Umarex",
+      0,
+      5.6
+    ],
+    [
+      "702301",
+      "Rifle Palanquero CHIAPPA Cal 22LR Mod. LA322 15+1 tiros",
+      "Chiappa",
+      0,
+      5.1
+    ],
+    [
+      "830304",
+      "Liñada #F-4C Con Boya Plastica",
+      "Sin Marca",
+      0,
+      5.1
+    ],
+    [
+      "505421",
+      "Balas CCI 44SPL/44MAG 140GR Shotshell 10x20 #3744",
+      "Federal",
+      0,
+      5.4
+    ],
+    [
+      "LIQ150982",
+      "LQN-Cuchillo Aitor Jungle King INegro Vaina verde #16016",
+      "Aitor",
+      0,
+      5
+    ],
+    [
+      "700894",
+      "Escopeta BOITO cal 36 Mod. A680 26'' #M098",
+      "Boito",
+      0,
+      6.2
+    ],
+    [
+      "630035",
+      "Cabo de Acero Snake 40LB 10M",
+      "Snake",
+      0,
+      5
+    ],
+    [
+      "920190",
+      "Llavero De Metal 2 #6021380",
+      "Sin Marca",
+      0,
+      5.1
+    ],
+    [
+      "261300",
+      "Protector de Red Dots ASG para rifles AEG #18433",
+      "ASG",
+      0,
+      5
+    ],
+    [
+      "AVE700180CAR",
+      "Escopeta Safir 36 T14 SemiAuto Negro 2C 10T Classic",
+      "Safir",
+      0,
+      4.8
+    ],
+    [
+      "900928",
+      "Alza de Mira GLOCK Gen4 7.3 auto-luminoso - 6960",
+      "Glock",
+      0,
+      7.7
+    ],
+    [
+      "400320",
+      "Dardos Punta Plastic*3 Hgsd",
+      "Sin Marca",
+      0,
+      4.8
+    ],
+    [
+      "621205",
+      "Esmerillon Snake c/Snap Negro Nickel 3/0 NS-3702",
+      "Snake",
+      0,
+      4.8
+    ],
+    [
+      "701503CARU",
+      "Escopeta Pajera Winchester I Cal. 12 I Madera I Mod. 1300 I 18P. I 7+1 T.",
+      "Winchester",
+      0,
+      4.6
+    ],
+    [
+      "702350CARU",
+      "RIFLE DELIZLE MOD.45 CAL. 45ACP",
+      "DELIZLE",
+      0,
+      4.6
+    ],
+    [
+      "942171",
+      "Bota DOBERMAN Mod. COMBAT READY Negro 47",
+      "Doberman BOTAS",
+      0,
+      4.5
+    ],
+    [
+      "620205",
+      "Esmerillon #1/0  Art.202 x 5Und.",
+      "Sin Marca",
+      0,
+      4.8
+    ],
+    [
+      "620584",
+      "Anzuelo Snake Brecha amplia Negro #01 c/50",
+      "Snake",
+      0,
+      4.6
+    ],
+    [
+      "712117",
+      "Vaso COLEMAN 590ML Verde Lima #2148886",
+      "Coleman",
+      0,
+      6.3
+    ],
+    [
+      "610420",
+      "N-Caña Tianj#1.8 1802 Sc6021",
+      "Sin Marca",
+      0,
+      4.5
+    ],
+    [
+      "600617ST",
+      "Pistola Tanfoglio 40SW Force DA/SA Azul 2C 12T",
+      "Tanfoglio",
+      0,
+      4.4
+    ],
+    [
+      "4500240",
+      "Cargador SigSauer 9MM P250SubCompact 12T #MAG-250-9-12",
+      "Sig Sauer",
+      0,
+      4.4
+    ],
+    [
+      "REP920041",
+      "N-Repuesto p/Esc.SetCula/Guard.M:S3112 Semi/Poly ARMED",
+      "Armed",
+      0,
+      4.2
+    ],
+    [
+      "DES321201",
+      "Cargador CROSMAN para Mod. AK #CAKFAM (copia)",
+      "Crosman",
+      0,
+      5.2
+    ],
+    [
+      "4500204",
+      "Cargador Ruger 5.56 Nato#90384 p/SR-556 Metal 10T",
+      "Ruger",
+      0,
+      4.4
+    ],
+    [
+      "REP4501120",
+      "N-Cargador Safir de Repuesto T14",
+      "Sin Marca",
+      0,
+      4.3
+    ],
+    [
+      "700913CARU",
+      "Escopeta Semiautomatica Armsan I Cal. 12 I Two-tone I Mod. RS-X2 I 18,5 P. I 5+1 T.",
+      "Armsan",
+      0,
+      4.1
+    ],
+    [
+      "700900CARU",
+      "Escopeta Pajera Savage l Cal. 12 l Polimero l Mod. 320 Pump l 18,5 P. l 5+1 T.",
+      "Savage",
+      0,
+      4.1
+    ],
+    [
+      "501230",
+      "Cartucho Fire quest 12 GA salt",
+      "Fire quest",
+      0,
+      4.1
+    ],
+    [
+      "621200",
+      "Esmerillon Snake c/Snap Negro Nickel 1 NS-3702",
+      "Snake",
+      0,
+      4.2
+    ],
+    [
+      "700150",
+      "Rifle Tanfoglio 22LR Appeal SemiAuto Pav 2C 10T",
+      "Tanfoglio",
+      0,
+      7.9
+    ],
+    [
+      "260450",
+      "Mira Laser Leupold #48806",
+      "Sin Marca",
+      0,
+      4.9
+    ],
+    [
+      "701135CARU",
+      "RIFLE WINCHESTER MOD.290 CAL.22LR",
+      "Winchester",
+      0,
+      3.9
+    ],
+    [
+      "DES880054",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 12 - 46",
+      "Rocky Boots",
+      0,
+      4.7
+    ],
+    [
+      "620697",
+      "Anzuelo Snake Mutsu Negro #12 c/50.",
+      "Snake",
+      0,
+      3.9
+    ],
+    [
+      "830254",
+      "Hilo Snake Nevada 0.25mm 100M",
+      "Snake",
+      0,
+      3.9
+    ],
+    [
+      "4500371",
+      "Cargador Tanfoglio 22LR ForcePocket 10T #C009",
+      "Tanfoglio",
+      0,
+      4.1
+    ],
+    [
+      "600951",
+      "Pistola ISSC Cal. 22LR Mod. M22 2C. 10T",
+      "ISSC",
+      0,
+      3.8
+    ],
+    [
+      "LIQ920350",
+      "N-Visor C-More",
+      "Sin Marca",
+      0,
+      3.8
+    ],
+    [
+      "4500640",
+      "Cargador Armscor 22MAG M1500 5T",
+      "Armscor",
+      0,
+      4
+    ],
+    [
+      "621202",
+      "Esmerillon Snake c/Snap Negro Nickel 2 25 PCS NS-3702",
+      "Snake",
+      0,
+      3.8
+    ],
+    [
+      "7000071UCCARU",
+      "Rifle Savage .22 MAG 305",
+      "Savage",
+      0,
+      3.8
+    ],
+    [
+      "620207",
+      "Esmerillon #2  Art.202 x 5Und",
+      "Sin Marca",
+      0,
+      3.8
+    ],
+    [
+      "850591",
+      "Reel Abu Garcia Revo Beast Revo-Beast-40-HS 1485121 8BB D",
+      "Abu Garcia",
+      0,
+      3.7
+    ],
+    [
+      "210090",
+      "N-Balanza Lyman #1000  Electrico",
+      "Sin Marca",
+      0,
+      4.9
+    ],
+    [
+      "300094",
+      "Kit Conversor KPOS Fab Defense G2D Delta Jericho 941F",
+      "Fab Defense",
+      0,
+      3.7
+    ],
+    [
+      "900731D",
+      "N-Transform.220/12Vp/Conserv.F/C#6878",
+      "Sin Marca",
+      0,
+      3.7
+    ],
+    [
+      "601031",
+      "Revolver Alfa Proj Cal. 22Mag Mod. 361 6 Pulgada 8T",
+      "Alfa",
+      0,
+      3.7
+    ],
+    [
+      "500812",
+      "Casquillos .45 Pack *500",
+      "Sin Marca",
+      0,
+      3.8
+    ],
+    [
+      "700689",
+      "Rifle Ruger 22MAG 77Series Cerrojo Inox CulMad c/Mont 1C 9T #7015",
+      "Ruger",
+      0,
+      7.3
+    ],
+    [
+      "620698",
+      "Anzuelo Snake Mutsu Negro #14 c/50.",
+      "Snake",
+      0,
+      3.7
+    ],
+    [
+      "501216",
+      "Cartucho ELEY cal 12 16 Postas 32gr 25x10",
+      "Eley",
+      0,
+      3.6
+    ],
+    [
+      "621203",
+      "Esmerillon Snake c/Snap Negro Nickel 2/0 15 PCS NS-3702",
+      "Snake",
+      0,
+      3.7
+    ],
+    [
+      "620696",
+      "Anzuelo Snake Mutsu Negro #10 c/50.",
+      "Snake",
+      0,
+      3.7
+    ],
+    [
+      "700685",
+      "Rifle Ruger 22MAG 77Series Cerrojo Inox CulPoli c/Mont 1C 9T #7016",
+      "Ruger",
+      0,
+      7.2
+    ],
+    [
+      "4500230",
+      "Cargador SigSauer 9MM P250/P320 17T #MAG-320-9-17",
+      "Sig Sauer",
+      0,
+      3.9
+    ],
+    [
+      "505600",
+      "Balas Federal 338WINMAG 225GR PNormalCobreada 20x10 #F338FS1",
+      "Federal",
+      0,
+      3.9
+    ],
+    [
+      "620694",
+      "Anzuelo Snake Mutsu Negro #08 c/50.",
+      "Snake",
+      0,
+      3.6
+    ],
+    [
+      "200125",
+      "Pistol Grip BOITO Madera",
+      "Boito",
+      0,
+      3.6
+    ],
+    [
+      "610426",
+      "N-Caña Tianjin #2.70M Sp2702",
+      "Sin Marca",
+      0,
+      3.7
+    ],
+    [
+      "300096",
+      "Kit Conversor KPOS Fab Defense G2C Retractil Jericho 941F",
+      "Fab Defense",
+      0,
+      3.5
+    ],
+    [
+      "AVE320075",
+      "Rifle AC TSS 5.5mm B5Culata Retractil Madera AK",
+      "TSS",
+      0,
+      3.8
+    ],
+    [
+      "630034",
+      "Cabo de Acero Snake 30LB 10M",
+      "Snake",
+      0,
+      3.6
+    ],
+    [
+      "620591",
+      "Anzuelo Snake Wide Gap Negro #3/0 c/40",
+      "Snake",
+      0,
+      3.6
+    ],
+    [
+      "LIQ322055",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Glock 17 Gen5 Blowback #5.8369",
+      "Umarex",
+      0,
+      3.5
+    ],
+    [
+      "830253",
+      "Hilo Snake Nevada 0.20mm 100M",
+      "Snake",
+      0,
+      3.5
+    ],
+    [
+      "620693",
+      "Anzuelo Snake Mutsu Negro #06 c/50.",
+      "Snake",
+      0,
+      3.5
+    ],
+    [
+      "320307",
+      "Rifle PCP GAMO 5,5mm Mod. Coyote #1472",
+      "Gamo",
+      0,
+      3.5
+    ],
+    [
+      "620690",
+      "Anzuelo Snake Mutsu Negro #01 c/50.",
+      "Snake",
+      0,
+      3.4
+    ],
+    [
+      "110710D",
+      "N-Cartuc.#78051 Sz5 Michng R",
+      "Sin Marca",
+      0,
+      3.5
+    ],
+    [
+      "600430",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav 6T 9'' #0624",
+      "Ruger",
+      0,
+      3.3
+    ],
+    [
+      "620691",
+      "Anzuelo Snake Mutsu Negro #02 c/50.",
+      "Snake",
+      0,
+      3.4
+    ],
+    [
+      "620692",
+      "Anzuelo Snake Mutsu Negro #04 c/50.",
+      "Snake",
+      0,
+      3.4
+    ],
+    [
+      "DES320207",
+      "Pistola AC CO2 CROSMAN 4,5mm Mod. Target #2300T (copia)",
+      "Crosman",
+      0,
+      4.9
+    ],
+    [
+      "4500970",
+      "Cargador Marlin 22MAG/17HMR 7T",
+      "Marlin",
+      0,
+      3.6
+    ],
+    [
+      "620607",
+      "Anzuelo Snake/Octopus 12146 #2/0 c/50.Ngr",
+      "Snake",
+      0,
+      3.4
+    ],
+    [
+      "4501080",
+      "Cargador Intratec 9MM 20T",
+      "Intratec",
+      0,
+      3.3
+    ],
+    [
+      "620611",
+      "Anzuelo Snake/Octopus 12146 #6/0 c/10.",
+      "Snake",
+      0,
+      3.3
+    ],
+    [
+      "621201",
+      "Esmerillon Snake c/Snap Negro Nickel 1/0 NS-3702",
+      "Snake",
+      0,
+      3.3
+    ],
+    [
+      "700310",
+      "Rifle Mendoza 22LR Puma SemiAuto NegroGrafit MirasReflect 17T",
+      "Mendoza",
+      0,
+      3.2
+    ],
+    [
+      "AVE600865CAR",
+      "Pistola Ruger 45ACP SR45B Pav 2C 10T #3800",
+      "Ruger",
+      0,
+      3.2
+    ],
+    [
+      "250150",
+      "Desengrasante ASG  150 ml 24botellas#16136",
+      "ASG",
+      0,
+      3.4
+    ],
+    [
+      "620665",
+      "Anzuelo Snake Maruseigo Sure Negro #06 c/50.",
+      "Snake",
+      0,
+      3.2
+    ],
+    [
+      "AVE600865",
+      "Pistola Ruger 45ACP SR45B Pav 2C 10T #3800",
+      "Ruger",
+      0,
+      3.2
+    ],
+    [
+      "400322",
+      "Dardos Punta Metal*6 Hd610",
+      "Sin Marca",
+      0,
+      3.2
+    ],
+    [
+      "600253ST",
+      "Pistola Smith and Wesson Mod 22A Cal 22 LR C/2Carg",
+      "Smith & Wesson",
+      0,
+      3.1
+    ],
+    [
+      "500816",
+      "Casquillos .380 Pack *1000",
+      "Sin Marca",
+      0,
+      3.1
+    ],
+    [
+      "680000",
+      "Linterna De Pared #8912 Chico",
+      "Sin Marca",
+      0,
+      3.1
+    ],
+    [
+      "620206",
+      "Esmerillon #1 Art.202 x 5 Und.",
+      "Sin Marca",
+      0,
+      3.1
+    ],
+    [
+      "620590",
+      "Anzuelo Snake Wide Gap Negro #2/0 c/40",
+      "Snake",
+      0,
+      3.1
+    ],
+    [
+      "4501140",
+      "Cargador Rapido Winchester para Escopeta",
+      "Winchester",
+      0,
+      3.6
+    ],
+    [
+      "4520754",
+      "Cargador AC UMAREX cal 4,5mm para Mod GLOCK 19X BlowBack #5.8367.1",
+      "Umarex",
+      0,
+      3
+    ],
+    [
+      "4501000",
+      "Cargador Norinco 380ACP 59A 8T",
+      "Norinco",
+      0,
+      3.1
+    ],
+    [
+      "150469",
+      "Kit de Asador Reysol Tipo Golf 4 Pc #GJ-5J",
+      "Reysol",
+      0,
+      3.1
+    ],
+    [
+      "4501010",
+      "Cargador Sundance 25AUTO/6.35ACP Nickelado 8T",
+      "Sundance",
+      0,
+      3
+    ],
+    [
+      "260910",
+      "N-Mira Rifle Polvora Ng90Mjt Lym",
+      "Sin Marca",
+      0,
+      3
+    ],
+    [
+      "620619",
+      "Anzuelo Snake Akita Kitsune Oro #11 c/50.",
+      "Snake",
+      0,
+      3
+    ],
+    [
+      "150060",
+      "N-Cuch.Sevillanamangclaro#Pk702-O",
+      "Sin Marca",
+      0,
+      3
+    ],
+    [
+      "620667",
+      "Anzuelo Snake Marus Sure Negro #10 c/50.",
+      "Snake",
+      0,
+      3
+    ],
+    [
+      "620620",
+      "Anzuelo Snake Akita  Kitsune Oro #9 c/50.",
+      "Snake",
+      0,
+      2.9
+    ],
+    [
+      "620662",
+      "Anzuelo Snake Crystal Niquel #10 c/50.",
+      "Snake",
+      0,
+      2.9
+    ],
+    [
+      "4501150",
+      "Cargador DERYA de 5 tiros para Mod. VR90 and MK12",
+      "Derya",
+      0,
+      2.9
+    ],
+    [
+      "160175",
+      "GAS P/ DEFENSA 60CC #PS00760",
+      "Sin Marca",
+      0,
+      2.9
+    ],
+    [
+      "620666",
+      "Anzuelo Snake Marus Sure Negro #08 c/50.",
+      "Snake",
+      0,
+      2.9
+    ],
+    [
+      "600751ST",
+      "Pistola Ruger 9mm SR9 2C 17T DT #3301 Carg. Rap.",
+      "Ruger",
+      0,
+      2.8
+    ],
+    [
+      "721103",
+      "Chaleco Antibala B.E. Armor 4000 XL NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      0,
+      2.8
+    ],
+    [
+      "962012",
+      "Kit de reparo ASG Tubo cañon acero inox 6,03x300mm #17920",
+      "ASG",
+      0,
+      2.8
+    ],
+    [
+      "260556",
+      "Punto Rojo HAWKE 1x3 MOA LG DIGITAL WEAVER #12144",
+      "Hawke",
+      0,
+      2.8
+    ],
+    [
+      "REP900798",
+      "Repuesto TSS Anillo de Plastico para Rifles",
+      "TSS",
+      0,
+      2.8
+    ],
+    [
+      "620618",
+      "Anzuelo Snake Akita Kitsune Oro #8 c/50.",
+      "Snake",
+      0,
+      2.8
+    ],
+    [
+      "621204",
+      "Esmerillon Snake c/Snap Negro Nickel 3 NS-3702",
+      "Snake",
+      0,
+      2.8
+    ],
+    [
+      "901281",
+      "Argolla Base de Cargador p/Sujetar el Cordon #39002",
+      "Sin Marca",
+      0,
+      2.7
+    ],
+    [
+      "710506",
+      "Caja de Seguridad Digital Noble 35x22x25cm#SWSL33EW",
+      "Sin Marca",
+      0,
+      3.4
+    ],
+    [
+      "110654",
+      "N-Cartuc.#78361 Sz36Michngr",
+      "Sin Marca",
+      0,
+      4
+    ],
+    [
+      "REP901140",
+      "N-Repuesto p/Rifle AC TSS Sello Pistón de Cuero a rosca",
+      "TSS",
+      0,
+      2.7
+    ],
+    [
+      "210705",
+      "N-Dado Dillon 45Acp Sd-Jr #20123",
+      "Sin Marca",
+      0,
+      2.6
+    ],
+    [
+      "260252",
+      "Montante TSS 25mm Montura Simple 3 Tornillos",
+      "TSS",
+      0,
+      3
+    ],
+    [
+      "701800CARU",
+      "Escopeta Pajera Boito I Cal. 12 I Mod. 371 I 20 P. I 7+1 T. I Culata Retráctil",
+      "Boito",
+      0,
+      2.6
+    ],
+    [
+      "701400CARU",
+      "Escopeta Pajera DERYA cal 12 Mod. CR101S 18,5p 5+1 tiros",
+      "Derya",
+      0,
+      2.6
+    ],
+    [
+      "600609CARU",
+      "Pistola Tanfoglio 7.65 Gt32 7T Pav",
+      "Tanfoglio",
+      0,
+      2.6
+    ],
+    [
+      "610418",
+      "N-Caña Tianjin#1.65Mspd16502",
+      "Sin Marca",
+      0,
+      2.6
+    ],
+    [
+      "920210",
+      "Banquito Plegable p/ Pesca #QF170",
+      "Sin Marca",
+      0,
+      2.6
+    ],
+    [
+      "621206",
+      "Esmerillon Snake c/Snap Negro Nickel 4 NS-3702",
+      "Snake",
+      0,
+      2.6
+    ],
+    [
+      "600482",
+      "Pistolon Rexio 22MAG Lady Monotiro Pav 6''",
+      "Rexio",
+      0,
+      3.1
+    ],
+    [
+      "621155",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 5 c/7",
+      "Snake",
+      0,
+      2.6
+    ],
+    [
+      "7000161UC",
+      "Rifle Tikka 308 T3",
+      "Tikka",
+      0,
+      2.5
+    ],
+    [
+      "620616",
+      "Anzuelo Snake  Akita  Kitsune Oro #6 c/50.",
+      "Snake",
+      0,
+      2.6
+    ],
+    [
+      "600428",
+      "Revolver Ruger 22LR/MAG SingleSix SAO Pav MiraBlade 6T 6'' #0646",
+      "Ruger",
+      0,
+      2.5
+    ],
+    [
+      "4520520",
+      "Cargador KCI cal 45ACP Mod. Glock 26 tiros",
+      "KCI",
+      0,
+      3.4
+    ],
+    [
+      "300160",
+      "N-Estuche p/Balas Fusil*9 Sm70",
+      "Sin Marca",
+      0,
+      2.7
+    ],
+    [
+      "620617",
+      "Anzuelo Snake Akita Kitsune Oro #7 c/50.",
+      "Snake",
+      0,
+      2.5
+    ],
+    [
+      "4500900",
+      "Cargador Tisas 9MM 20T.",
+      "Tisas",
+      0,
+      2.5
+    ],
+    [
+      "7000086UC",
+      "Rifle Tikka 308 T3",
+      "Tikka",
+      0,
+      2.5
+    ],
+    [
+      "700935",
+      "Esc. BOITO cal 36 Mod. REUNA 26\" #42",
+      "Boito",
+      0,
+      5
+    ],
+    [
+      "500809",
+      "Casquillos .40 Pack *500",
+      "Sin Marca",
+      0,
+      2.5
+    ],
+    [
+      "150129",
+      "N-Corta Pluma Dk-129B",
+      "Sin Marca",
+      0,
+      2.5
+    ],
+    [
+      "260552",
+      "Punto Rojo Hawke 1x5 M.O.A Reticula Ilum.Rojo Sensor aut.de brillo #12133",
+      "Sin Marca",
+      0,
+      3.3
+    ],
+    [
+      "621044",
+      "Esmerillon Snake Negro Nickel 3 c/12 NS-1707",
+      "Snake",
+      0,
+      2.5
+    ],
+    [
+      "620600",
+      "Anzuelo Snake/Octopus 12146 #01 c/50. Ngr",
+      "Snake",
+      0,
+      2.5
+    ],
+    [
+      "620664",
+      "Anzuelo Snake Crystal Niquel #3/0 c/25.",
+      "Snake",
+      0,
+      2.5
+    ],
+    [
+      "830040",
+      "Caja Redonda Giratoria",
+      "Sin Marca",
+      0,
+      2.5
+    ],
+    [
+      "610424",
+      "N-Caña Tianjin #2.40M Sp2402",
+      "Sin Marca",
+      0,
+      2.5
+    ],
+    [
+      "700804CARU",
+      "Escopeta Pajera Akkar l Cal. 12 l Polimero l Mod. Karatay l 18,5 P. l 6+1 T. l Pistol grip",
+      "Akkar",
+      0,
+      2.4
+    ],
+    [
+      "200360",
+      "N-Cacha Hoge Ruger P85 Etc.85000",
+      "Sin Marca",
+      0,
+      3.2
+    ],
+    [
+      "260555",
+      "Punto Rojo HAWKE 1x3 MOA Mod. Sport Optics #12141",
+      "Hawke",
+      0,
+      2.4
+    ],
+    [
+      "4500360",
+      "Cargador Tanfoglio 22LR Force 10T #C44A",
+      "Tanfoglio",
+      0,
+      2.6
+    ],
+    [
+      "170254",
+      "N-Candado #403 60x12",
+      "Sin Marca",
+      0,
+      2.4
+    ],
+    [
+      "620609",
+      "Anzuelo Snake/Octopus 12146 #4/0 c/25.",
+      "Snake",
+      0,
+      2.4
+    ],
+    [
+      "620585",
+      "Anzuelo Snake Brecha amplia Negro #02 c/50",
+      "Snake",
+      0,
+      2.4
+    ],
+    [
+      "4500320",
+      "Cargador SigSauer 9MM P229 15T #MAG-229-9-15",
+      "Sig Sauer",
+      0,
+      2.6
+    ],
+    [
+      "170252",
+      "N-Candado #314 25x12",
+      "Sin Marca",
+      0,
+      2.3
+    ],
+    [
+      "260221",
+      "Mira Telescopica BSA QK8-32X56 BWF30",
+      "Sin Marca",
+      0,
+      2.3
+    ],
+    [
+      "110712D",
+      "N-Cartuc.#78191 Sz19 Michngr",
+      "Sin Marca",
+      0,
+      2.9
+    ],
+    [
+      "150953",
+      "N-Cuch.Mb-16M Espanol",
+      "Sin Marca",
+      0,
+      2.9
+    ],
+    [
+      "4501090",
+      "Cargador Lorcin 9MM LH 13T",
+      "Lorcin",
+      0,
+      2.3
+    ],
+    [
+      "110668",
+      "N-Cartuc.#95181 Sz18Michael",
+      "Sin Marca",
+      0,
+      2.3
+    ],
+    [
+      "620606",
+      "Anzuelo Snake/Octopus 12146 #10 c/50 Ngr.",
+      "Snake",
+      0,
+      2.3
+    ],
+    [
+      "LIQ680558",
+      "Linterna Caterpillar CT34109 275/200Lu s/blister",
+      "Caterpillar",
+      0,
+      3.5
+    ],
+    [
+      "620589",
+      "Anzuelo Snake Wide Gap Negro #1/0 c/40",
+      "Snake",
+      0,
+      2.3
+    ],
+    [
+      "7000013UC",
+      "Esc. Boito 36 Miura I",
+      "Boito",
+      0,
+      2.2
+    ],
+    [
+      "621150",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 0 c/10",
+      "Snake",
+      0,
+      2.3
+    ],
+    [
+      "620605",
+      "Anzuelo Snake/Octupos 12146 #1/0 c/50.Ngr",
+      "Snake",
+      0,
+      2.2
+    ],
+    [
+      "630033",
+      "Cabo de Acero Snake 20LB 10M",
+      "Snake",
+      0,
+      2.2
+    ],
+    [
+      "610052",
+      "N-Porta Caña A Ventosa",
+      "Sin Marca",
+      0,
+      2.3
+    ],
+    [
+      "900900",
+      "Compresor ARMADILLO para rifle PCP Mod. ARM/GX 325W 320Bar/4640PSI 220V #565769",
+      "Armadillo",
+      0,
+      4.4
+    ],
+    [
+      "620649",
+      "Anzuelo Snake Chinu-Sure Negro #01 c/50",
+      "Snake",
+      0,
+      2.2
+    ],
+    [
+      "962010",
+      "Kit de reparo ASG Micro SMD Mosfet #18426",
+      "ASG",
+      0,
+      2.2
+    ],
+    [
+      "210700",
+      "N-Dado Dillon 44Splmgsd-Jr#20242",
+      "Sin Marca",
+      0,
+      2.2
+    ],
+    [
+      "621042",
+      "Esmerillon Snake Negro Nickel 2 c/10 NS-1707",
+      "Snake",
+      0,
+      2.1
+    ],
+    [
+      "700111CARU",
+      "Escopeta Pajera Maverick I Cal. 12 I Polimero I Mod. 88 I 18,5P I 5+1T.",
+      "Maverick",
+      0,
+      2.1
+    ],
+    [
+      "702302CARU",
+      "Escopeta Monotiro Chiappa I Cal. 410/22LR I Polimero I Mod. Badger I Cañon superpuestas I 19 P.",
+      "Chiappa",
+      0,
+      2.1
+    ],
+    [
+      "703000CARU",
+      "Rifle Taurus l Cal. 22LR l Polímero l Mod. Circuit Judge l 18 P. l 9 T.",
+      "Taurus",
+      0,
+      2.1
+    ],
+    [
+      "200138",
+      "Culata de madera TSS  p/ B3-3",
+      "TSS",
+      0,
+      2.1
+    ],
+    [
+      "150061",
+      "N-Sevillana Mango Claro Chico#Pk702-1",
+      "Sin Marca",
+      0,
+      2.1
+    ],
+    [
+      "4500760",
+      "Cargador Beretta 380ACP M85F 8T",
+      "Beretta",
+      0,
+      2.6
+    ],
+    [
+      "610506",
+      "Caña Fenwick HMX 1383243  15-30LB CT 1P",
+      "Sin Marca",
+      0,
+      3.1
+    ],
+    [
+      "260603",
+      "Punto Rojo Titan Tactica #TT-553 c/Pila",
+      "Sin Marca",
+      0,
+      2
+    ],
+    [
+      "700930",
+      "Esc. BOITO cal 12 Mod. REUNA 30\" #19",
+      "Boito",
+      0,
+      2
+    ],
+    [
+      "621041",
+      "Esmerillon Snake Negro Nickel 1/0 c/8 NS-1707",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "680003",
+      "Linterna Reysol  72 Led Recarg. #MG-1072L",
+      "Reysol",
+      0,
+      2
+    ],
+    [
+      "621210",
+      "Esmerillon Snake c/Snap Negro Nickel 6 NS-3702",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "900898",
+      "Punto de Mira Xtreme 2.5x5.5 p/Pistola Tanfoglio #X023",
+      "Tanfoglio",
+      0,
+      2.3
+    ],
+    [
+      "4500260",
+      "Cargador SigSauer 40SW P229 12T #MAG-229-40-12",
+      "Sig Sauer",
+      0,
+      2.5
+    ],
+    [
+      "REP920043",
+      "N-Repuesto p/Tanfoglio Sear Hounsing Assy",
+      "Tanfoglio",
+      0,
+      2
+    ],
+    [
+      "620202",
+      "Esmerillon Snake Negro Nickel 5c/15 NS-1707",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "321057",
+      "Cargador ASG de BB cal. 6mm rápido para 1200 unid. #17476",
+      "ASG",
+      0,
+      2
+    ],
+    [
+      "920258",
+      "N-Caño De Extension 9Mm Intrat",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "4500660",
+      "Cargador Akdal 380ACP F92 15T",
+      "Akdal",
+      0,
+      2.2
+    ],
+    [
+      "900723",
+      "Tubo Cañon p/Glock M19 9mm D.D Dorado",
+      "Glock",
+      0,
+      1.9
+    ],
+    [
+      "621043",
+      "Esmerillon Snake Negro Nickel 2/0 c/8 NS-1707",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "620658",
+      "Anzuelo Snake Crystal Niquel #04 c/50.",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "4521610",
+      "Cargador WALTHER 22Lr M.PPK/S 10 T#2853264",
+      "Walther",
+      0,
+      1.9
+    ],
+    [
+      "620601",
+      "Anzuelo Snake/Octopus 12146 #02 c/50. Ngr.",
+      "Snake",
+      0,
+      2
+    ],
+    [
+      "260760",
+      "Montante weaver de 30 mm EXTRA HIGH",
+      "Gamo",
+      0,
+      1.9
+    ],
+    [
+      "260757",
+      "Montante Gamo TS-300 30mm High p/ Riel Rfle",
+      "Gamo",
+      0,
+      2.3
+    ],
+    [
+      "260444",
+      "Mira Laser CAT Bersa Thunder 9mm/40SW/45ACP",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "AVE700863",
+      "Escopeta Boito 12 Pajera Pav CulPoli C/Anillo 2Chokes 7+1 28'' #M617",
+      "Boito",
+      0,
+      1.9
+    ],
+    [
+      "750196",
+      "Carpa Sumax p/2P BAR-2P 250x160x130",
+      "Sumax",
+      0,
+      2.1
+    ],
+    [
+      "250210",
+      "Botella 90ml GSM-BWC Gun Stock Wax para proteger madera y metal #23723",
+      "BWC",
+      0,
+      2.2
+    ],
+    [
+      "270101",
+      "Guardamano Fab Defense M:H y K G3 Aluminio #G3-RS",
+      "Fab Defense",
+      0,
+      1.9
+    ],
+    [
+      "400261",
+      "Cartuchos P/Bengala Cal.12 *3",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "260442",
+      "Mira Laser CAT Taurus PT92/99",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "610539",
+      "Caña Abu Garcia Virtual 1519528 12-20LB CT 1P",
+      "Abu Garcia",
+      0,
+      1.9
+    ],
+    [
+      "550151",
+      "Equipo Limp. 6.35 Pistol#96412",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "630037",
+      "Cabo de Acero Snake 5LB 10M",
+      "Snake",
+      0,
+      1.9
+    ],
+    [
+      "4520770",
+      "Cargador Airsoft UMAREX cal 6mm para Mod GLOCK 17 GEN5 #2.6439.1",
+      "Umarex",
+      0,
+      1.9
+    ],
+    [
+      "712118",
+      "Vaso COLEMAN 590ML Verde - Club C44",
+      "Coleman",
+      0,
+      1.8
+    ],
+    [
+      "DES680513",
+      "Linterna Caterpillar 100 LM LED Aluminio de Bolsillo - Display 16 unidades #CT221016 (copia)",
+      "Caterpillar",
+      0,
+      1.8
+    ],
+    [
+      "321058",
+      "Cargador ASG de BB cal. 6mm rápido para pistolas Airsoft #14847",
+      "ASG",
+      0,
+      1.9
+    ],
+    [
+      "7000135UC",
+      "Rifle Savage .22 LR 93 G",
+      "Savage",
+      0,
+      1.8
+    ],
+    [
+      "620604",
+      "Anzuelo Snake/Octopus 12146 #08 c/50. Ngr.",
+      "Snake",
+      0,
+      1.9
+    ],
+    [
+      "620663",
+      "Anzuelo Snake Crystal Niquel #2/0 c/25.",
+      "Snake",
+      0,
+      1.9
+    ],
+    [
+      "962013",
+      "Kit de reparo ASG Hop-up chamber, M15/M16 #16635",
+      "ASG",
+      0,
+      1.8
+    ],
+    [
+      "700301",
+      "Rifle Mendoza 22LR Puma SemiAuto Madera MirasReflect 17T c/ Mira Telescópica",
+      "Mendoza",
+      0,
+      1.8
+    ],
+    [
+      "600484",
+      "Pistolon Rexio 22MAG Lady Monotiro Nickelado 6''",
+      "Rexio",
+      0,
+      2.4
+    ],
+    [
+      "210458",
+      "Dado Lyman P/45Acp 7680107",
+      "Sin Marca",
+      0,
+      1.8
+    ],
+    [
+      "711050",
+      "Chaleco p/Pesca Verde Oscuro Sumax L #SC002L",
+      "Sumax",
+      0,
+      1.9
+    ],
+    [
+      "620608",
+      "Anzuelo Snake/Octopus 12146 #3/0 c/25.",
+      "Snake",
+      0,
+      1.8
+    ],
+    [
+      "820270",
+      "Plomada Redonda N°3 x10kg",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "850590",
+      "Reel Abu Garcia Revo Beast Revo-Beast-40 1479946 8BB DER",
+      "Abu Garcia",
+      0,
+      1.8
+    ],
+    [
+      "AVE320188",
+      "Rifle Airsoft Bateria ASG 6mm Mod. Arsenal SLR105 Full Auto Kit #15921",
+      "ASG",
+      0,
+      1.8
+    ],
+    [
+      "AVE700477CAR",
+      "Rifle Mossberg 22LR Táctico SemiAuto 25T #37206",
+      "Mossberg",
+      0,
+      1.8
+    ],
+    [
+      "AVE700477CARU",
+      "Rifle Mossberg 22LR Táctico SemiAuto 25T #37206",
+      "Mossberg",
+      0,
+      1.8
+    ],
+    [
+      "4500870",
+      "Cargador Llama 380ACP IIIA 7T",
+      "Llama",
+      0,
+      1.9
+    ],
+    [
+      "630030",
+      "Cabo de Acero Snake 10LB 10M",
+      "Snake",
+      0,
+      1.8
+    ],
+    [
+      "621208",
+      "Esmerillon Snake c/Snap Negro Nickel 5 NS-3702",
+      "Snake",
+      0,
+      1.8
+    ],
+    [
+      "200139",
+      "Culata de madera TSS p/ B2-4",
+      "TSS",
+      0,
+      1.7
+    ],
+    [
+      "620661",
+      "Anzuelo Snake Crystal Niquel #1/0 c/25.",
+      "Snake",
+      0,
+      1.8
+    ],
+    [
+      "151590",
+      "Cuchillo Nieto Linea Toro #1064",
+      "Miguel Nieto",
+      0,
+      1.7
+    ],
+    [
+      "210715",
+      "N-Dado Dillon 380Autosd-Jr#20246",
+      "Sin Marca",
+      0,
+      1.7
+    ],
+    [
+      "621154",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 4 c/8",
+      "Snake",
+      0,
+      1.8
+    ],
+    [
+      "REP900112",
+      "N-Repuesto Guia y Traba de Cerrojo Boito #G12344",
+      "Boito",
+      0,
+      1.7
+    ],
+    [
+      "505552",
+      "Balas Winchester 270WIN 150GR PSuaveCobreada 20x10 #X2704",
+      "Winchester",
+      0,
+      2
+    ],
+    [
+      "772000",
+      "Tapa Boca s/Metal c/Goma 8/M=50/ SM7401",
+      "Sin Marca",
+      0,
+      1.7
+    ],
+    [
+      "261405",
+      "Camara GSM-STEALTHCAM Mod. GMAX 32MP #STC-GMAX32V",
+      "BWC",
+      0,
+      1.7
+    ],
+    [
+      "620602",
+      "Anzuelo Snake/Octopus 12146 #04 c/50. Ngr",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "7000002UC",
+      "Escopeta Ata 12 Neo Synthetic",
+      "ATA",
+      0,
+      1.7
+    ],
+    [
+      "7000003UC",
+      "Escopeta Ata 12 Neo Synthetic",
+      "ATA",
+      0,
+      1.7
+    ],
+    [
+      "710504",
+      "Caja de Seguridad Digital Noble 33x21,2x23cm#SW30E",
+      "Sin Marca",
+      0,
+      2.1
+    ],
+    [
+      "621062",
+      "Esmerillon Snake Negro Nickel 12 c/30 NS-1707",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "4520753",
+      "Cargador AC UMAREX cal 4,5mm para Mod GLOCK 19X NonBlow #5.8368.1",
+      "Umarex",
+      0,
+      1.7
+    ],
+    [
+      "720224",
+      "Equipo Antimotín FBF-09",
+      "Sin Marca",
+      0,
+      1.7
+    ],
+    [
+      "4500750",
+      "Cargador Beretta 22LR Negro 7T",
+      "Beretta",
+      0,
+      1.7
+    ],
+    [
+      "400422",
+      "N-Punta Normal Cal. 40 200grs(Brasil)",
+      "Sin Marca",
+      0,
+      1.7
+    ],
+    [
+      "850162",
+      "Reel Marine Sports Titan Pro 6000SHI 6Rol",
+      "Marine Sports",
+      0,
+      1.9
+    ],
+    [
+      "900398",
+      "Baterias IMALENT para MS18",
+      "Imalent",
+      0,
+      1.6
+    ],
+    [
+      "620204",
+      "Esmerillon #2/0  Art.202 x 5 Und.",
+      "Sin Marca",
+      0,
+      1.6
+    ],
+    [
+      "621218",
+      "Esmerillon Snake c/Snap Negro Nickel 10 NS-3702",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "621072",
+      "Esmerillon Snake Negro Nickel 2 c/6 1703",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "4520771",
+      "Cargador Airsoft UMAREX cal 6mm para Mod GLOCK 19X  #2.6435.1",
+      "Umarex",
+      0,
+      1.6
+    ],
+    [
+      "620695",
+      "Anzuelo Snake Mutsu Negro #1/0 c/30.",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "620583",
+      "Anzuelo Snake Mutsu Negro #6/0 c/20.",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "621076",
+      "Esmerillon Snake Negro Nickel 4 c/8 1703",
+      "Snake",
+      0,
+      1.7
+    ],
+    [
+      "4500105",
+      "Cargador Ruger 9MM AmericanPistol 17T #90510",
+      "Ruger",
+      0,
+      1.8
+    ],
+    [
+      "260972",
+      "Mira Telescopica Bushnell  1-4x24 #AR91424BI",
+      "Sin Marca",
+      0,
+      1.6
+    ],
+    [
+      "620613",
+      "Anzuelo Snake/Octopus 12146 #8/0 c/10.",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "700080",
+      "Escopeta monotiro Aksa 12 arms M. SB1 W madera 28´´",
+      "AKSA",
+      0,
+      3.1
+    ],
+    [
+      "REP920040",
+      "N-Repuesto p/Esc.SetCula/Guard.M:S1112 Semi/Mad. ARMED",
+      "Armed",
+      0,
+      1.9
+    ],
+    [
+      "AVE700940",
+      "Escopeta BOITO cal 12 Mod. PUMP 14'' 5+1 #539",
+      "Boito",
+      0,
+      1.6
+    ],
+    [
+      "620603",
+      "Anzuelo Snake/Octopus 12146 #06 c/50. Ngr",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "LIQ150995",
+      "LQN-Cuchillo Aitor Tercio Black  #16104",
+      "Aitor",
+      0,
+      2.3
+    ],
+    [
+      "DES880055",
+      "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 13 - 47",
+      "Rocky Boots",
+      0,
+      1.6
+    ],
+    [
+      "620699",
+      "Anzuelo Snake Mutsu Negro #2/0 c/30.",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "620648",
+      "Anzuelo Snake C. Negro #11 c/20.",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "620646",
+      "Anzuelo Snake C. Negro #09 c/20.",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "620141",
+      "Anzuelo Prep. c/ Cabo Simple #7/0 *1x100",
+      "Sin Marca",
+      0,
+      1.5
+    ],
+    [
+      "750046",
+      "Carpa Canadiense 2P Impermeable verde con cubre techo y Mosquitero",
+      "Sin Marca",
+      0,
+      1.8
+    ],
+    [
+      "830277",
+      "Hilo Snake Skyline 0.80mm 300M",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "721033",
+      "Chaleco Antibala DK 360  Estándar Desert XL",
+      "DK",
+      0,
+      3
+    ],
+    [
+      "150659",
+      "N-Bandeja Cromada #237/2",
+      "Sin Marca",
+      0,
+      1.5
+    ],
+    [
+      "4500840",
+      "Cargador HiPoint 45ACP 7T",
+      "Hipoint",
+      0,
+      1.6
+    ],
+    [
+      "170400",
+      "Abre LataGi#1618 Americamp",
+      "Sin Marca",
+      0,
+      1.5
+    ],
+    [
+      "870798",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-42 #213231-0",
+      "5.11",
+      0,
+      2.2
+    ],
+    [
+      "170355",
+      "N-Estufa A Gas Americamper #1098",
+      "Sin Marca",
+      0,
+      1.4
+    ],
+    [
+      "621071",
+      "Esmerillon Snake Negro Nickel 1/0 c/0 1703",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "621084",
+      "Esmerillon Snake Negro Nickel 8 c/12 1703",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "320280EGF",
+      "Rifle AC NPE CROSMAN 5,5mm Mod. Mag-Fire Extreme con mira 4x32 #CME2SXS",
+      "Crosman",
+      0,
+      1.4
+    ],
+    [
+      "830357",
+      "Hilo Snake Mult. 4X Motion 0.80MM 300M",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "210400",
+      "N-Molde P/Punta Sc180G 452374 Hp",
+      "Sin Marca",
+      0,
+      1.4
+    ],
+    [
+      "4520755",
+      "Cargador AC UMAREX cal 4,5mm para Mod JERICHO #5.8174.1",
+      "Umarex",
+      0,
+      1.4
+    ],
+    [
+      "630040",
+      "Cabo de Acero Snake 90LB 10M",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "LIQ680597",
+      "Linterna IMALENT DM70 4.500 lumens",
+      "Imalent",
+      0,
+      1.4
+    ],
+    [
+      "115703",
+      "Funda Arma Larga Doberman Cuero x 120CM",
+      "Doberman",
+      0,
+      1.4
+    ],
+    [
+      "630031",
+      "Cabo de Acero Snake 120LB 10M",
+      "Snake",
+      0,
+      1.5
+    ],
+    [
+      "510490",
+      "Mochila 5.11 Rush 72 56565-169",
+      "5.11",
+      0,
+      1.4
+    ],
+    [
+      "621073",
+      "Esmerillon Snake Negro Nickel 2/0 c/5 1703",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "920273",
+      "N-Inflador de Pie STAND SPORT #430",
+      "Sin Marca",
+      0,
+      1.4
+    ],
+    [
+      "210317",
+      "N-Ensamblador Para Dado Sd/Jr  #20113",
+      "Sin Marca",
+      0,
+      1.4
+    ],
+    [
+      "700895",
+      "Escopeta BOITO cal 36 Mod. MIURA II 26'' #M354",
+      "Boito",
+      0,
+      2.7
+    ],
+    [
+      "LIQ680554",
+      "Linterna Dual Caterpillar 700/100 LM LED #CT6215",
+      "Caterpillar",
+      0,
+      1.3
+    ],
+    [
+      "110712",
+      "N-Cartuc.#78191 Sz19 Michngr",
+      "Sin Marca",
+      0,
+      2.3
+    ],
+    [
+      "620612",
+      "Anzuelo Snake/Octopus 12146 #7/0 c/10.",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "210348",
+      "N-Shell Holder Lee #19 No.90023",
+      "Sin Marca",
+      0,
+      1.3
+    ],
+    [
+      "621058",
+      "Esmerillon Snake Negro Nickel 10 c/30 NS-1707",
+      "Snake",
+      0,
+      1.3
+    ],
+    [
+      "260553",
+      "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum Rojo10 ajustes #12135",
+      "Sin Marca",
+      0,
+      2.6
+    ],
+    [
+      "850046",
+      "Reel MolientePB Abu Garcia MAXTORO51 gris zurdo #1400539",
+      "Abu Garcia",
+      0,
+      2
+    ],
+    [
+      "820274",
+      "Plomada Redonda N°7 x10kg",
+      "Sin Marca",
+      0,
+      1.4
+    ],
+    [
+      "760051",
+      "Parche ASG Mod. EVO3A1 Gris #19968",
+      "ASG",
+      0,
+      1.3
+    ],
+    [
+      "941105",
+      "Kit Sobrevivencia Bravo #2510022",
+      "Sin Marca",
+      0,
+      1.6
+    ],
+    [
+      "760052",
+      "Parche ASG Mod. CZSHADOW2 #19967",
+      "ASG",
+      0,
+      1.3
+    ],
+    [
+      "620586",
+      "Anzuelo Snake Brecha amplia Negro #04 c/50",
+      "Snake",
+      0,
+      1.4
+    ],
+    [
+      "260611",
+      "Punto Rojo/Triji #JM9240 c/Pila",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "REP920019",
+      "N-REPUESTOp/Rifle Mendoza JUEGOdelTAPON DE MEC.",
+      "Mendoza",
+      0,
+      1.3
+    ],
+    [
+      "830278",
+      "Hilo Snake Skyline 0.90mm 300M",
+      "Snake",
+      0,
+      1.6
+    ],
+    [
+      "110292",
+      "Pistolera Personalizada p/Pistola Tanfoglio #FO002",
+      "Tanfoglio",
+      0,
+      1.3
+    ],
+    [
+      "AVE750160",
+      "AVE-Toldo Reysol c/Mosquitero 2,4x2,4m #HBP87002",
+      "Reysol",
+      0,
+      1.3
+    ],
+    [
+      "820272",
+      "Plomada Redonda N°5 x10kg",
+      "Sin Marca",
+      0,
+      1.3
+    ],
+    [
+      "550271",
+      "Cepillo de lana GSM-BWC para escopeta 20/28/30/36 #41332",
+      "BWC",
+      0,
+      1.4
+    ],
+    [
+      "260554",
+      "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum Rojo 10 ajustes #12136",
+      "Sin Marca",
+      0,
+      1.3
+    ],
+    [
+      "620310",
+      "Anzuelo Mustad #6/0*6 92259",
+      "Mustad",
+      0,
+      1.3
+    ],
+    [
+      "620312",
+      "Anzuelo Mustad #5/0*6 92259",
+      "Mustad",
+      0,
+      1.4
+    ],
+    [
+      "210412",
+      "N-Molde P/H.Punta Dc200G 452460",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "4500201",
+      "Cargador Ruger 223REM Mini14 Acero 30T #90035",
+      "Ruger",
+      0,
+      1.5
+    ],
+    [
+      "4500429",
+      "Cargador Glock 9MM M26 10+2T #6782",
+      "Glock",
+      0,
+      1.4
+    ],
+    [
+      "7000009UC",
+      "Escopeta Boito 12 Pump",
+      "Boito",
+      0,
+      1.2
+    ],
+    [
+      "7000052UC",
+      "Rifle Remington 308 770",
+      "Remington",
+      0,
+      1.2
+    ],
+    [
+      "260608",
+      "Punto Rojo c/ Linterna",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "210619",
+      "N-Shell Plate 550 44Spl Mag #20136",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "621080",
+      "Esmerillon Snake Negro Nickel 6 c/10 1703",
+      "Snake",
+      0,
+      1.2
+    ],
+    [
+      "210401",
+      "N-Molde P/H.Punta Sc125G 356637Ph",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "700870CARU",
+      "Escopeta Boito12 28\"M012Reuna 1TMadPav.",
+      "Boito",
+      0,
+      1.2
+    ],
+    [
+      "DES151202",
+      "Pala COLEMAN Mod. RUGGED #2000025200",
+      "Coleman",
+      0,
+      1.6
+    ],
+    [
+      "400450",
+      "Punta Ojival Cal. 9mm/380 120gr x50",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "820271",
+      "Plomada Redonda N°4 x10kg",
+      "Sin Marca",
+      0,
+      1.3
+    ],
+    [
+      "AVE320470",
+      "Rifle AEG ASG cal. 6mm Mod. Combat MXR18 #18901",
+      "ASG",
+      0,
+      1.2
+    ],
+    [
+      "900376",
+      "Baterias p/Linterna IMALENT DX80 (8*3000mAh 18650)",
+      "Imalent",
+      0,
+      1.6
+    ],
+    [
+      "850551",
+      "Reel Molinete Abu Garcia Ambass 4600C4 Diestro #1292713 D",
+      "Abu Garcia",
+      0,
+      1.8
+    ],
+    [
+      "620588",
+      "Anzuelo Snake Brecha amplia Negro #08 c/50",
+      "Snake",
+      0,
+      1.2
+    ],
+    [
+      "270103",
+      "Guardamano Fab Defense 12.5\" de Aluminio para modelo M4/M16/AR15 #NFR RL",
+      "Fab Defense",
+      0,
+      1.2
+    ],
+    [
+      "700985",
+      "Escopeta Monotiro Dulonay armas cal. 410GA Mod. dulonay dsb410 28",
+      "Dulonay",
+      0,
+      1.2
+    ],
+    [
+      "4500356U",
+      "Cargador Tanfoglio 9MM Force 15T #usado",
+      "Tanfoglio",
+      0,
+      1.5
+    ],
+    [
+      "4500910",
+      "Cargador Tisas 40SW 13T",
+      "Tisas",
+      0,
+      2.1
+    ],
+    [
+      "870814",
+      "Bota 5.11 Tactica 6\" Mod. A/T Non-Zip 12440-106 Dark Coyote US 9,5",
+      "5.11",
+      0,
+      1.2
+    ],
+    [
+      "620252",
+      "Terminal #10  No.Pk 4034 *8",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "200352",
+      "N-Cacha Hoge SW 5906,4006 40010",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "620587",
+      "Anzuelo Snake Wide Gap Negro #06 c/50",
+      "Snake",
+      0,
+      1.3
+    ],
+    [
+      "DES680539",
+      "Linterna Caterpillar 200 LM Utilidad Recargable #CT6525",
+      "Caterpillar",
+      0,
+      1.5
+    ],
+    [
+      "DES750190",
+      "Kit de conexión para Modelos de Toldos NTK GREEN/FIESTA #351050",
+      "NTK",
+      0,
+      1.2
+    ],
+    [
+      "210626",
+      "N-Shell Plate Dillon 22Hornet #20150",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "870812",
+      "Bota 5.11 Tactica 6\" Mod. A/T Non-Zip 12440-106 Dark Coyote US 8,5",
+      "5.11",
+      0,
+      1.2
+    ],
+    [
+      "4500202",
+      "Cargador Ruger 223REM AmericanRifle 5T #90440",
+      "Ruger",
+      0,
+      1.5
+    ],
+    [
+      "4501110",
+      "Cargador Survival 22LR 25T",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "170251",
+      "N-Candado #312 50x12",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "4500140",
+      "Cargador Ruger 9MM LC9 c/Extensor 9T #90404",
+      "Ruger",
+      0,
+      1.4
+    ],
+    [
+      "830276",
+      "Hilo Snake Skyline 0.70mm 300M",
+      "Snake",
+      0,
+      1.3
+    ],
+    [
+      "210600",
+      "N-Shell Plate Dillon 38-357P550 20132",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "962011",
+      "Kit de reparo ASG Motor, BOOST, 40K Custom, long axle #18936",
+      "ASG",
+      0,
+      1.1
+    ],
+    [
+      "830161",
+      "Hilo de Pesca Century Avan. Mult.0,26mm100M#ADV4-026",
+      "Sumax",
+      0,
+      1.2
+    ],
+    [
+      "7000010UC",
+      "Escopeta Boito 12 Pump",
+      "Boito",
+      0,
+      1.1
+    ],
+    [
+      "700081CARU",
+      "Escopeta Monotiro AKSA ARMS I Cal. 12 I Polimero I Mod. SB1 S I  28 P.",
+      "AKSA",
+      0,
+      1.1
+    ],
+    [
+      "680597",
+      "Linterna IMALENT DM70 4.500 lumens",
+      "Imalent",
+      0,
+      1.1
+    ],
+    [
+      "620610",
+      "Anzuelo Snake/Octopus 12146 #5/0 c/10.",
+      "Snake",
+      0,
+      1.2
+    ],
+    [
+      "4500110",
+      "Cargador Ruger 9MM P89/P93/P94/P95 15T #90233",
+      "Ruger",
+      0,
+      1.3
+    ],
+    [
+      "200350",
+      "N-Cacha Hoge SW 1006,4506 06010",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "830355",
+      "Hilo Snake Mult. 4X Motion 0.60MM 300M",
+      "Snake",
+      0,
+      1.3
+    ],
+    [
+      "830356",
+      "Hilo Snake Mult. 4X Motion 0.70MM 300M",
+      "Snake",
+      0,
+      1.5
+    ],
+    [
+      "680090",
+      "Linterna C/RADIO SOLAR M:STANSPORT 01-517",
+      "Sin Marca",
+      0,
+      1.7
+    ],
+    [
+      "REP900877",
+      "Repuesto Aguja percutora con resorte p/ Escopeta Armed",
+      "Armed",
+      0,
+      1.2
+    ],
+    [
+      "210407",
+      "N-Molde P/H.Punta Dc245G 429244",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "621070",
+      "Esmerillon Snake Negro Nickel 1 c/5 1703",
+      "Snake",
+      0,
+      1.1
+    ],
+    [
+      "500821",
+      "Casquillos 223 REM Pack *500",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "680383",
+      "Linterna Recargable LDS 15000W #657 (8721)",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "510504",
+      "Mochila 5.11 Mod. Rush 24 2.0 37L FDE #56563-134",
+      "5.11",
+      0,
+      1.1
+    ],
+    [
+      "630039",
+      "Cabo de Acero Snake 75LB 10M",
+      "Snake",
+      0,
+      1.1
+    ],
+    [
+      "720226",
+      "Casco Antibala FDK-02",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "621054",
+      "Esmerillon Snake Negro Nickel 8 c/25 NS-1707",
+      "Snake",
+      0,
+      1.1
+    ],
+    [
+      "AVE700735",
+      "Escopeta Armscor 12 Pajera Pav CulMad 3Chokes 5+1 28'' #30DIC",
+      "Armscor",
+      0,
+      1.1
+    ],
+    [
+      "850563",
+      "Reel Molinete Abu Garcia Rvo3 WINCH negro Diestro  #1265428",
+      "Abu Garcia",
+      0,
+      1.1
+    ],
+    [
+      "250209",
+      "Botella 90ml GSM-BWC Gun Stock Sealer y  Filler para sellar los poros de las culatas/mango #23323",
+      "BWC",
+      0,
+      1.3
+    ],
+    [
+      "510503",
+      "Mochila 5.11 Mod. Rush 2.0 24L Negro #56563-019",
+      "5.11",
+      0,
+      1
+    ],
+    [
+      "210002",
+      "N-Ensamblador Para Dado P/Prensa Sq Dillon",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "260113",
+      "Punto Rojo BSA 1x45 #SP15580",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "LIQ300225",
+      "Caja p/2Pistolas Neg. #10088",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "650160",
+      "Bolsa p/Dormir SB2175 1,5kg - Camu OTTONI",
+      "Ottoni",
+      0,
+      1
+    ],
+    [
+      "4500791U",
+      "Cargador 1911 38Sup 9T #usado",
+      "1911",
+      0,
+      1.2
+    ],
+    [
+      "620203",
+      "Esmerillon #14 Pk 4013",
+      "Sin Marca",
+      0,
+      1.1
+    ],
+    [
+      "400216",
+      "Balines APOLO 4,5mm Esférico 0,60gr. Carton*100X300",
+      "Apolo",
+      0,
+      1
+    ],
+    [
+      "260111",
+      "Punto Rojo BSA 1x30 #SP15578",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "620629",
+      "Anzuelo Snake Ba. Niquel #14 c/20.",
+      "Snake",
+      0,
+      1
+    ],
+    [
+      "4500920",
+      "Cargador Tisas 45ACP 9T",
+      "Tisas",
+      0,
+      1.7
+    ],
+    [
+      "REP920042",
+      "N-Repuesto p/Esc.SetCula/Guard.M:S4112 PumAcPoly ARMED",
+      "Armed",
+      0,
+      1.1
+    ],
+    [
+      "772010",
+      "Tapa Boca c/Logo y Goma s/Metal 8/M=50/ SM07301P",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "904000",
+      "Banderines NTK",
+      "NTK",
+      0,
+      1.1
+    ],
+    [
+      "920078",
+      "FORROS p/CHALECOS \"G\" C/PORT.RADIO",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "620683",
+      "Anzuelo Snake Maruseigo Niquel #12 c/20.",
+      "Snake",
+      0,
+      1
+    ],
+    [
+      "720693",
+      "Kepis con nuquera sumax SB-1303V UV VERDE",
+      "Sumax",
+      0,
+      1.1
+    ],
+    [
+      "550302",
+      "Kit de limpieza GSM-BWC para escopetas #BC-SHGCLN-KIT",
+      "BWC",
+      0,
+      1
+    ],
+    [
+      "681216",
+      "Linterna OLIGHT Mod. BaldrPro 1350 Lm Negro",
+      "Olight",
+      0,
+      1
+    ],
+    [
+      "680572",
+      "Linterna IMALENT MS03 13000 LM 1x21700",
+      "Imalent",
+      0,
+      1
+    ],
+    [
+      "900816",
+      "N-Valvula p/pistola co2 Repeat Air 1008 #10600",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "680592",
+      "Linterna IMALENT R70C 6.500 Lumenes Baterias Incluidas",
+      "Imalent",
+      0,
+      1.9
+    ],
+    [
+      "500840",
+      "Casquillos. 32 Auto Pack *1000",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "900920",
+      "Alza de Mira Regulable Tanfoglio #TM001",
+      "Tanfoglio",
+      0,
+      0.9
+    ],
+    [
+      "400540",
+      "N-Punta Hornady #3200 32 71Gr Fmj-Rn",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "621222",
+      "Esmerillon Snake c/Snap Negro Nickel 12 NS-3702",
+      "Snake",
+      0,
+      1
+    ],
+    [
+      "110293",
+      "Pistolera Deportiva p/Pistola Tanfoglio #FO003",
+      "Tanfoglio",
+      0,
+      0.9
+    ],
+    [
+      "AVE700917",
+      "Escopeta Armed 20 Monotiro CulMad 30''",
+      "Armed",
+      0,
+      0.9
+    ],
+    [
+      "4520750",
+      "Cargador AC UMAREX cal 4,5mm para Mod BERETTA ELITE II #5.8090.1",
+      "Umarex",
+      0,
+      0.9
+    ],
+    [
+      "260550",
+      "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum.Rojo 6 ajustes#12134",
+      "Sin Marca",
+      0,
+      1.9
+    ],
+    [
+      "DES920155",
+      "Inflador PCP CROSMAN Mod. Benjamin de 3-500 #HPP2KU",
+      "Crosman",
+      0,
+      0.9
+    ],
+    [
+      "4500353",
+      "Cargador Tanfoglio 9MM Force 15T #C006A",
+      "Tanfoglio",
+      0,
+      1.1
+    ],
+    [
+      "4500370",
+      "Cargador Tanfoglio 22LR GT22 10T #C44B",
+      "Tanfoglio",
+      0,
+      1.1
+    ],
+    [
+      "4500381",
+      "Cargador Tanfoglio 40SW Cromado Limited/Force/Stock2/Stock3/Combat 12T #C000",
+      "Tanfoglio",
+      0,
+      1.4
+    ],
+    [
+      "900322",
+      "PILA Duracell 9V 1 x 48",
+      "Duracell",
+      0,
+      1.1
+    ],
+    [
+      "620628",
+      "Anzuelo Snake Ba. Niquel #12 c/20.",
+      "Snake",
+      0,
+      0.9
+    ],
+    [
+      "LIQ322050",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Beretta M9A3 FDE Blowback #5.8347",
+      "Umarex",
+      0,
+      0.9
+    ],
+    [
+      "920165",
+      "Mesa De Camping 80x60x70cm #HXT-8829T",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "LIQ700870",
+      "Escopeta  BOITO cal 12 Mod. REUNA 28\" #00012",
+      "Boito",
+      0,
+      0.9
+    ],
+    [
+      "900397",
+      "Baterias IMALENT para MS12",
+      "Imalent",
+      0,
+      0.9
+    ],
+    [
+      "110300",
+      "Cartuchera P/Revolver Naa 22-7",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "321061",
+      "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. M9 IA Green Gas #16863",
+      "ASG",
+      0,
+      1.4
+    ],
+    [
+      "200370",
+      "N-Cacha Hoge Handall Jr. #18000",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "170255",
+      "N-Candado #7240 5x12",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "4501060",
+      "Cargador AmericaArms 22LR CX22 8T",
+      "American Arms",
+      0,
+      1.1
+    ],
+    [
+      "260361",
+      "ALZA Y PUNTO DE MIRA TRUGLO DE TRITIUM PARA GLOCK MOD LOW#1",
+      "Truglo",
+      0,
+      1.3
+    ],
+    [
+      "610538",
+      "Caña Abu Garcia Veritas 1519238 14-30LB CT 1P",
+      "Abu Garcia",
+      0,
+      0.9
+    ],
+    [
+      "AVE322500",
+      "Pistola CO2 CROSMAN 4,5mm Mod. PFAM9B Full Auto BB #PFAM9B (copia)",
+      "Crosman",
+      0,
+      0.9
+    ],
+    [
+      "210402",
+      "N-Molde P/H.Punta Sc250G 429640Ph",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "550250",
+      "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
+      "BWC",
+      0,
+      1.1
+    ],
+    [
+      "270152",
+      "Culata Fab Defense Mod. M4/M16/AR15 #RAPS",
+      "Fab Defense",
+      0,
+      0.9
+    ],
+    [
+      "621122",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN2006 00 C/20",
+      "Snake",
+      0,
+      0.9
+    ],
+    [
+      "7000106UC",
+      "Rifle Savage .22 LR 64 G",
+      "Savage",
+      0,
+      0.9
+    ],
+    [
+      "110713",
+      "N-Cartuc.#78011 Sz1 Michngr",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "621046",
+      "Esmerillon Snake Negro Nickel 4 c/12 NS-1707",
+      "Snake",
+      0,
+      0.9
+    ],
+    [
+      "681213",
+      "Linterna Olight p/Arma Odini Mini Preto Black D#284487-9",
+      "Olight",
+      0,
+      0.9
+    ],
+    [
+      "200345",
+      "Cacha Hoge Bereta 92Wfgr 92000",
+      "Beretta",
+      0,
+      0.9
+    ],
+    [
+      "110112",
+      "Sobaquera #77360 Sz36 Unkle Mikes",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "830158",
+      "Hilo de Pesca Century Avan. Mult.0,18mm100M#ADV4-018",
+      "Sumax",
+      0,
+      1.2
+    ],
+    [
+      "LIQ800170",
+      "LQN - Caja Pesca POLYMER Grande 1 Bandeja c/2 Estuches Tapa Negra #4035",
+      "Polymer",
+      0,
+      0.9
+    ],
+    [
+      "LIQ320850",
+      "LQN-Escopeta UMAREX T4E cal 68 Mod. HDS68 #2.4764",
+      "Umarex",
+      0,
+      0.8
+    ],
+    [
+      "REP200142",
+      "N-Culata de madera de Repuesto TSS  para B2-1",
+      "TSS",
+      0,
+      0.8
+    ],
+    [
+      "830052",
+      "Hilo Sufix #0,35mmx150M",
+      "Sumax",
+      0,
+      1
+    ],
+    [
+      "4520751",
+      "Cargador AC UMAREX cal 4,5mm para Mod BERETTA APX #5.8327.1",
+      "Umarex",
+      0,
+      0.8
+    ],
+    [
+      "620682",
+      "Anzuelo Snake Maruseigo Niquel #10 c/20.",
+      "Snake",
+      0,
+      0.9
+    ],
+    [
+      "170253",
+      "N-Candado #402 30x12",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "LIQREP900772",
+      "LQN-Repuesto - Aitor Jungle King I #16050",
+      "Aitor",
+      0,
+      0.8
+    ],
+    [
+      "210415",
+      "N-Mango P/Molde #2735793",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "210356",
+      "N-Shell Holder #1P/38-357 7738040",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "510262",
+      "Mochila NITECORE Mod. WDB20 Impermeable",
+      "Nitecore",
+      0,
+      1.2
+    ],
+    [
+      "4500200",
+      "Cargador Ruger 223REM/5.56 GunsiteScout Acero 10T #90458",
+      "Ruger",
+      0,
+      1.2
+    ],
+    [
+      "REP902050",
+      "Repuesto - Kit aguja percutora con Resorte Uzkon",
+      "Uzkon",
+      0,
+      0.8
+    ],
+    [
+      "AVE700915MD",
+      "Escopeta Armed 20 Monotiro CulMad 28''",
+      "Armed",
+      0,
+      0.8
+    ],
+    [
+      "510516",
+      "Mochila 5.11 Mod. RUSH 12 2.0 56561-134 Kangaroo",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "620582",
+      "Anzuelo Snake Mutsu Negro #5/0 c/20.",
+      "Snake",
+      0,
+      0.8
+    ],
+    [
+      "900950",
+      "Retensor de la Corredera p/Pistola Tanfoglio #PR015",
+      "Tanfoglio",
+      0,
+      0.8
+    ],
+    [
+      "920189",
+      "Llavero H.M.Gerb#48103Negro",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "LIQ800190",
+      "LQN - Caja Pesca POLYMER Premium Grande 1 Bandeja c/2 Estuches Tapa Color #4036",
+      "Polymer",
+      0,
+      0.9
+    ],
+    [
+      "AVE700915D",
+      "Escopeta Armed 20 Monotiro CulMad 28''",
+      "Armed",
+      0,
+      0.8
+    ],
+    [
+      "210359",
+      "N-Shell Holder #12P/9M/38Sp7738051",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "DES151612",
+      "Cuchillo Nieto L.Gaucho(Madera) G-26 en Funda de Cuero#151564",
+      "Miguel Nieto",
+      0,
+      0.8
+    ],
+    [
+      "115020",
+      "Porta Carg.Doble #88310 Camu",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "110760",
+      "Porta Carg.Doble FOBUS p/Pist. 357/40 #6900BHS",
+      "Fobus",
+      0,
+      0.8
+    ],
+    [
+      "200069",
+      "Culata EXT. p/GLOCK TI2461",
+      "Glock",
+      0,
+      0.8
+    ],
+    [
+      "150952",
+      "Cuchillo Mb-9AEspañol",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "920269",
+      "Mesa pegable Marron 60x40x26cm Maaron",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "151565",
+      "Cuchillo Nieto Linea Cetreria (Olivo) #2402",
+      "Miguel Nieto",
+      0,
+      0.8
+    ],
+    [
+      "870782",
+      "Bota 5.11Tactica 8\" 12393 Atac 2.0 Dark Coyote-40 #200687-1",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "870806",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-46 #213231-0",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "681211",
+      "Linterna Olight p/Arma Odini Mini Desert Tan D#284485-5",
+      "Olight",
+      0,
+      0.8
+    ],
+    [
+      "621151",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 1 c/10",
+      "Snake",
+      0,
+      0.8
+    ],
+    [
+      "LIQ150996",
+      "LQN-Cuchillo Aitor Zero White #16126",
+      "Aitor",
+      0,
+      0.8
+    ],
+    [
+      "610081",
+      "N-Tablas Plasticas Eco 20cmX57,5mm",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "611300",
+      "Tanque de Combustible  Plastico Blanco 28Litros",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "610093",
+      "N-Portabrazoladas-Plano a Goma Largo30X0,68cm",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "210620",
+      "N-Shell Plate Dillon 9M38Sp550 20127",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "260443",
+      "Mira Laser CAT Bersa Thunder Pro 9mm/40SW/45ACP",
+      "Sin Marca",
+      0,
+      1.2
+    ],
+    [
+      "210346",
+      "N-Shell Holder Lee #11 No.90211",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "510517",
+      "Mochila 5.11 Mod. RUSH 12 2.0 56561-019 Negro",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "611250",
+      "Porta Bandera 40cm.con luz LED popa p/ embarcación #U26051",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "870764",
+      "Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-47.5 #200688-8",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "870761",
+      "Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote 48.5 #200688-8",
+      "5.11",
+      0,
+      0.8
+    ],
+    [
+      "920255",
+      "N-Rabisa corte de arranque",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "750044",
+      "Carpa Canadiense 2P Azul c/techo lienzo y cubre tecgo Impermeable",
+      "Sin Marca",
+      0,
+      1
+    ],
+    [
+      "4500530",
+      "Cargador Taurus 45ACP PT145 10T",
+      "Taurus",
+      0,
+      1
+    ],
+    [
+      "749000",
+      "Alfombra NTK MAT",
+      "NTK",
+      0,
+      0.9
+    ],
+    [
+      "210352",
+      "N-Shell Holder X26 Lyman#7738063",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "4500880",
+      "Cargador Llama 9MM XTRAEA 9T",
+      "Llama",
+      0,
+      0.8
+    ],
+    [
+      "260551",
+      "Punto Rojo Hawke 1x5 M.O.A Ret Iluminada Rojo 5 ajustes #12131",
+      "Sin Marca",
+      0,
+      1.5
+    ],
+    [
+      "320160",
+      "Rifle AC Mendoza 4.5mm RM10 M A.Refl.MD14\"",
+      "Mendoza",
+      0,
+      0.8
+    ],
+    [
+      "900303",
+      "Pila Duracell Alcalina - 2032",
+      "Duracell",
+      0,
+      0.9
+    ],
+    [
+      "260500",
+      "Alza de Mira Millet Regulable Smith y Wesson #SW40505",
+      "Smith & Wesson",
+      0,
+      1
+    ],
+    [
+      "LIQ680595",
+      "Linterna IMALENT DM21TW calida 1.000 lumenes",
+      "Imalent",
+      0,
+      0.7
+    ],
+    [
+      "4500160",
+      "Cargador Ruger 40SW SR40C 9T #90368",
+      "Ruger",
+      0,
+      1.2
+    ],
+    [
+      "200132",
+      "N-Cacha SW 3Rd Gen #59511 Michaels",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "720223",
+      "Equipo Antimotín FBF-04",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "REP901130",
+      "N-Repuesto p/Rifle AC TSS Punto de mira metal.",
+      "TSS",
+      0,
+      0.7
+    ],
+    [
+      "110753",
+      "Cartuchera FOBUS p/Browning",
+      "Fobus",
+      0,
+      0.7
+    ],
+    [
+      "681105EGF",
+      "Linterna NITECORE Mod. DL20 Sumergible",
+      "Nitecore",
+      0,
+      0.7
+    ],
+    [
+      "850562",
+      "Reel MolinetePB Abu Garcia REVO S blc zurdo #1265426",
+      "Abu Garcia",
+      0,
+      0.7
+    ],
+    [
+      "502000",
+      "Bengalas de Seguridad C5005",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "620689",
+      "Anzuelo Snake Maruseigo Niquel #20 c/20.",
+      "Snake",
+      0,
+      0.8
+    ],
+    [
+      "900560",
+      "Traba de Corred.Ext.p/Pist. 9x19.40.380.357 #7496",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "830318",
+      "Hilo Snake Mult. 4X Motion 0.10MM 300M",
+      "Snake",
+      0,
+      0.9
+    ],
+    [
+      "900885",
+      "Resorte de Corredera Ensamblado p/Glock M19 #8703",
+      "Glock",
+      0,
+      0.7
+    ],
+    [
+      "681105",
+      "Linterna NITECORE Mod. DL20 Sumergible",
+      "Nitecore",
+      0,
+      0.7
+    ],
+    [
+      "621214",
+      "Esmerillon Snake c/Snap Negro Nickel 8 NS-3702",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "901270",
+      "Herramienta Montante Universal p/Alza de Mira GLOCK #5161",
+      "Glock",
+      0,
+      0.7
+    ],
+    [
+      "110106",
+      "N-Sobaquera #83051 Sz5 Michaels",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "870802",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-44 #213231-0",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "870763",
+      "Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-41 #200688-8",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "920054",
+      "N-Caño C/Roscap/Compensador 45Acp",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "620681",
+      "Anzuelo Snake Maruseigo Niquel #08 c/20.",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "700854ST",
+      "Escopeta Boito12 24\"M613 7+1 Pj.2Ch.Polimero",
+      "Boito",
+      0,
+      0.7
+    ],
+    [
+      "870811",
+      "Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-40.5 #200688-8",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "870754",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-45 #200686-4",
+      "5.11",
+      0,
+      1.4
+    ],
+    [
+      "AVEREP920028",
+      "REPUESTOp/Rifle Mendoza CULATA BAR.c/ACC.",
+      "Mendoza",
+      0,
+      0.7
+    ],
+    [
+      "870776",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-44 #200686-4",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "870768",
+      "Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-44,5",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "900864",
+      "Cilindro de Nitro Pistón para GR1000",
+      "Doberman",
+      0,
+      0.7
+    ],
+    [
+      "870809",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-47,5 #213231-0",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "680227",
+      "Linterna #JL15-9T PLATA",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "920185",
+      "N-Llavero H.M.Gerb#48100Verde",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "870785",
+      "Bota 5.11 Tactica 8\" 12393 Atac 2.0 Dark Coyote-43 #200687-1",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "LIQ680598",
+      "LQN-Linterna IMALENT HR70 3.000 lumenes",
+      "Imalent",
+      0,
+      0.7
+    ],
+    [
+      "262",
+      "N-Cacha Rhk 41-44Mag Pachmayer",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "870752",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-43 #200686-4",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "720690",
+      "Kepis con nuquera sumax SB-1303UV GRIS",
+      "Sumax",
+      0,
+      0.7
+    ],
+    [
+      "930500",
+      "Jardinera SW36-70D Wader #39",
+      "Sumax",
+      0,
+      0.7
+    ],
+    [
+      "4500952U",
+      "Cargador 1911 45ACP 7T #usado",
+      "1911",
+      0,
+      0.9
+    ],
+    [
+      "830345",
+      "Hilo Snake Mult. 4X Wild 0.55MM 150M",
+      "Snake",
+      0,
+      0.8
+    ],
+    [
+      "720141",
+      "Chaleco Salvavidas Sumax #SV20 XXXL 140Kg.- Gris",
+      "Sumax",
+      0,
+      0.9
+    ],
+    [
+      "272022",
+      "Culata s/tubo Fab Defense Retractil y Rebatible p/ FN FAL #M4 FAL J",
+      "Fab Defense",
+      0,
+      0.7
+    ],
+    [
+      "140171V",
+      "Correa Porta Fusil c/Homb.Verde CP04",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "870756",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-42,5 #200686-4",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "870753",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-44,5 #200686-4",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "870779",
+      "Bota 5.11 Tactica 6\" 12394 Atac 2.0 Ng-47,5 #200686-4",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "LIQ920110",
+      "Llavero Prendedor Aitor #16024",
+      "Aitor",
+      0,
+      0.7
+    ],
+    [
+      "830088",
+      "Hilo de Pesca Super Strong 0,80mmx100M #14",
+      "Sumax",
+      0,
+      0.7
+    ],
+    [
+      "REP900807",
+      "Repuesto TSS - Punto de Mira p/Rifle  B2-1",
+      "TSS",
+      0,
+      0.7
+    ],
+    [
+      "505305",
+      "Balas Federal 38SUP.+P130Gr.FMJ#AE38S1*50X20",
+      "Federal",
+      0,
+      1.6
+    ],
+    [
+      "4500379U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 10T #usado",
+      "Tanfoglio",
+      0,
+      1
+    ],
+    [
+      "621153",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 3 c/8",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "680071",
+      "Linterna Titan Tactica Led #TL-T9 c/Pila",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "4500180",
+      "Cargador Ruger 45ACP SR45 10T #90412",
+      "Ruger",
+      0,
+      1.1
+    ],
+    [
+      "210301",
+      "N-Shell Holder Lee #1 No.90201",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "110016M",
+      "Funda P/Arma Larga Negro-110 X 20 F03/Mendoza",
+      "Mendoza",
+      0,
+      0.7
+    ],
+    [
+      "870804",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-45 #213231-0",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "921125",
+      "Culata BOITO para Escopeta Pajera #1388",
+      "Boito",
+      0,
+      0.7
+    ],
+    [
+      "870799",
+      "Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-42,5 #213231-0",
+      "5.11",
+      0,
+      0.7
+    ],
+    [
+      "AVE320217",
+      "Revolver Airsoft CO2 CROSMAN 6mm Mod. #GF357",
+      "Crosman",
+      0,
+      0.7
+    ],
+    [
+      "850595",
+      "Reel Abu Garcia Revo S RVO4-S-HS 1430433 9BB DE",
+      "Abu Garcia",
+      0,
+      0.7
+    ],
+    [
+      "210411",
+      "N-Molde P/H.Punta Dc51Gr 252435",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "920063",
+      "N-Compensador CZ 75D Compacto #15924",
+      "ASG",
+      0,
+      0.7
+    ],
+    [
+      "LIQREP900770",
+      "LQN-Repuesto - Kit de Supervivencia Aitor Jungle King II #16049",
+      "Aitor",
+      0,
+      0.7
+    ],
+    [
+      "170260",
+      "CANDADO UNIVERSAL p/ARMA 1EA #1002",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "620000",
+      "Anzuelo Selection",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "621126",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2006 4 C/15",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "750045",
+      "Carpa Canadiense 2P Impermeable verde (tiene Mosquitero)",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "920105",
+      "Exibidor para caña de pescar",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "4500800",
+      "Cargador Colt 40SW Negro 8T",
+      "Colt",
+      0,
+      0.7
+    ],
+    [
+      "800809",
+      "Estuche p/Pesca Transp. #H0303",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "LIQREP900773",
+      "LQN-Repuesto - Goma Elastica Aitor  #16051",
+      "Aitor",
+      0,
+      0.6
+    ],
+    [
+      "610220",
+      "Caña Marine Sport Lubina #C601MH",
+      "Marine Sports",
+      0,
+      0.6
+    ],
+    [
+      "7000022UC",
+      "Rifle Howa 223 Hunter Combo",
+      "Howa",
+      0,
+      0.6
+    ],
+    [
+      "620668",
+      "Anzuelo Snake Marus Sure Negro #12 c/30.",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "270198",
+      "Montante Fab Defense p/Miras Telescopicas M:H y K G-3 #G3-SM",
+      "Fab Defense",
+      0,
+      0.6
+    ],
+    [
+      "REP901120",
+      "N-Repuesto p/Rifle AC TSS Punto de mira metal perforado",
+      "TSS",
+      0,
+      0.6
+    ],
+    [
+      "261100",
+      "Llave para Rifle Ruger Mini14 para Ajustar Alza de Mira #90049",
+      "Ruger",
+      0,
+      0.6
+    ],
+    [
+      "260900",
+      "N-Mira Rifle #3572087 Ng57Sme Lyma",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "AVE7000045UC",
+      "Rifle Remington .270 WIN 700",
+      "Remington",
+      0,
+      0.6
+    ],
+    [
+      "7000047UC",
+      "Rifle Remington 300 770",
+      "Remington",
+      0,
+      0.6
+    ],
+    [
+      "620633",
+      "Anzuelo Snake Ba. Niquel #4/0 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "210338",
+      "N-Shell Holder Lee #10 No.90210",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "600474",
+      "Pistolon Rexio 36 Lady Monotiro Pav 6''",
+      "Rexio",
+      0,
+      1.2
+    ],
+    [
+      "620627",
+      "Anzuelo Snake Ba. Niquel #10 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "4500340",
+      "Cargador SigSauer 40SW P250SubCompact 10T #MAG-250-40-10",
+      "Sig Sauer",
+      0,
+      0.6
+    ],
+    [
+      "920150",
+      "Exhibidor Crosman #BIAPDQ",
+      "Crosman",
+      0,
+      0.9
+    ],
+    [
+      "110800",
+      "N-Bolso Police #88941Ngrgrande",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "210358",
+      "N-Shell Holder #7P/44Spl/Mg7738046",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "150475",
+      "N-Juego de Cubiertos#DSC-14 Asado Caja 3P",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "830328",
+      "Hilo Snake Mult. 4X Wild 0.45MM 150M",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "322035",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Walther PPQ NonBlow #5.8160",
+      "Umarex",
+      0,
+      0.6
+    ],
+    [
+      "505344",
+      "Balas Federal 357Sig PT.FMJ#AE357S2.125Gr*50X20",
+      "Federal",
+      0,
+      0.7
+    ],
+    [
+      "250207",
+      "Botella 90ml GSM-BWC Stock Sheen y Conditioner limpia protege culata madera #23623",
+      "BWC",
+      0,
+      0.8
+    ],
+    [
+      "EGF320007",
+      "Pistola Airsoft Green Gas ASG 6mm Mod.CZ P-09 GBB FDE #18137",
+      "ASG",
+      0,
+      0.6
+    ],
+    [
+      "680004",
+      "Linterna Reysol  60 Led.Colgable Recarg.#MG-1061L",
+      "Reysol",
+      0,
+      0.6
+    ],
+    [
+      "620251",
+      "Terminal #3  Pk 4031",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "4500810",
+      "Cargador Colt 40SW Nickelado 8T",
+      "Colt",
+      0,
+      0.7
+    ],
+    [
+      "750170",
+      "Carpa Canadiense S/112 2P.c/CU.TE",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "830352",
+      "Hilo Snake Mult. 4X Motion 0.55MM 150M",
+      "Snake",
+      0,
+      0.7
+    ],
+    [
+      "260609",
+      "Punto Rojo c/ Linterna Ijk Optics Co.",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "620687",
+      "Anzuelo Snake Maruseigo Niquel #16 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "340118",
+      "Revista Al Aire Libre 1-18",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "260902",
+      "N-Mira Rifle Polvora Ng57Wjs Lym",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "260906",
+      "N-Mira Rifle Polvora Ng66La Lym",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "711305",
+      "Chaleco BERETTA L#GT671T15530560L",
+      "Beretta Mod",
+      0,
+      0.6
+    ],
+    [
+      "210339",
+      "N-Shell Holder Lee #2 No.90202",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "621132",
+      "Gancho p/ Esmerillon  Snake Negro Nickel SN2007 5 C/15",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "711307",
+      "Chaleco BERETTA XL #GT671T15530560XL",
+      "Beretta",
+      0,
+      0.9
+    ],
+    [
+      "711300",
+      "Chaleco BERETTA M #GT671T15530560M",
+      "Beretta Mod",
+      0,
+      0.6
+    ],
+    [
+      "920521",
+      "Manga p/Brazo Scorpion Blanco #M",
+      "Sumax",
+      0,
+      0.8
+    ],
+    [
+      "901271",
+      "Herramientas Manuales p/Mant.Pistola Glock#2987",
+      "Glock",
+      0,
+      0.9
+    ],
+    [
+      "900731",
+      "N-Transform.220/12Vp/Conserv.F/C#6878",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "250660",
+      "Montante Bushnell Tactical  #260600",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "620673",
+      "Anzuelo Snake Maruseigo Negro #10 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "110592",
+      "Pistolera p/9mm Guardamonte Grande Diestro #P31",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "670125",
+      "Manta Antiaderente p/Cocina",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "150009",
+      "Cuchillo Tiger Knife#Jy-1009A/Hk9261",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "901201",
+      "Kit Clavija de Seguridad + Resorte del Disparador Glock 17/19#77",
+      "Glock",
+      0,
+      0.6
+    ],
+    [
+      "900149",
+      "N-Tapa c/Vertedero P/Termo De 2 Litros",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "510513",
+      "Bolson VANCHARLI Mod. VCL240104-03 KHAKI",
+      "Vancharli",
+      0,
+      0.6
+    ],
+    [
+      "620580",
+      "Anzuelo Snake Mutsu Negro #3/0 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "610532",
+      "Caña Laguna LAY-C701MH20-40LB Amarillo",
+      "Marine Sports",
+      0,
+      0.6
+    ],
+    [
+      "600483",
+      "Pistolon Rexio 22MAG Lady Monotiro DuoTono 6''",
+      "Rexio",
+      0,
+      0.5
+    ],
+    [
+      "210163",
+      "N-Dosificador De Polvora Lee #90578",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "900955",
+      "Seguro del Fiador Ambidiestro Ext.p/Pistola Tanfoglio #PR017",
+      "Tanfoglio",
+      0,
+      0.5
+    ],
+    [
+      "720669",
+      "Kepi 5.11 Stuntman Trucker Multi 303737-9",
+      "5.11",
+      0,
+      0.5
+    ],
+    [
+      "DES191110",
+      "Catraca Caterpillar  de 2Pie.360x2,54cm (272/816 kg) #980166N (copia)",
+      "Caterpillar",
+      0,
+      0.5
+    ],
+    [
+      "941106",
+      "Kit Sobrevivencia Selva #2510001",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "320400",
+      "Rifle Airsoft Bateria CROSMAN 6mm Mod. GFSMG #ASRGTH",
+      "Crosman",
+      0,
+      0.5
+    ],
+    [
+      "620688",
+      "Anzuelo Snake Maruseigo Niquel #18 c/20.",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "901240",
+      "Disparador con Barra de Gatillo p/Glock M17/22/31/34/35/37 #3608",
+      "Glock",
+      0,
+      0.5
+    ],
+    [
+      "900960",
+      "Gatillo de Doble Accion p/Pistola Tanfoglio #PR021",
+      "Tanfoglio",
+      0,
+      0.5
+    ],
+    [
+      "940133",
+      "Encendedor - Zippo Camping",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "4500820",
+      "Cargador HiPoint 9MM 8T",
+      "Hipoint",
+      0,
+      0.5
+    ],
+    [
+      "620650",
+      "Anzuelo Snake Chinu-Sure Negro #03 c/50",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "260715",
+      "Montante CZ ASG 75D Compacto #15926",
+      "ASG",
+      0,
+      0.6
+    ],
+    [
+      "655056",
+      "N-Chaleco Inflable",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "621152",
+      "Gancho p/ Esmerillon Snake Negro Nickel SN3804 2 c/8",
+      "Snake",
+      0,
+      0.6
+    ],
+    [
+      "620219",
+      "Destorcedor marine sport BBS 100pcs 3/0",
+      "Marine Sports",
+      0,
+      0.5
+    ],
+    [
+      "261065",
+      "Puntera de baqueta GSM-BWC para parches escopeta 10, 12, 16, 20 #41372",
+      "BWC",
+      0,
+      0.5
+    ],
+    [
+      "REP900870",
+      "Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 12",
+      "Armed",
+      0,
+      0.5
+    ],
+    [
+      "4500205U",
+      "Cargador Peine 222REM 5T #usado",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "260601",
+      "Punto de Mira Millet Rojo Beretta 92S, 84, 85",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "4500386U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 13T #usado",
+      "Tanfoglio",
+      0,
+      0.9
+    ],
+    [
+      "4500654U",
+      "Cargador Fino 32Auto 9T #usado",
+      "Sin Marca",
+      0,
+      0.9
+    ],
+    [
+      "150288",
+      "Juego Asador Tramontina c/TablaA 3P #21198/762",
+      "Tramontina",
+      0,
+      0.7
+    ],
+    [
+      "4500030",
+      "Cargador Ruger 22LR MKIII/MKIV 10T #90231",
+      "Ruger",
+      0,
+      0.6
+    ],
+    [
+      "610570",
+      "Caña Abu Garcia 1324163 VRTCM70-6 12-20LB",
+      "Abu Garcia",
+      0,
+      1
+    ],
+    [
+      "950354",
+      "N-Señuelo #Tj5510 Jabali",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "4520500",
+      "Cargador KCI cal 45ACP Mod. 1911 15 tiros",
+      "KCI",
+      0,
+      0.7
+    ],
+    [
+      "REP920017",
+      "N-REPUESTOp/Rifle Mendoza JUEGO DEL CERROJO",
+      "Mendoza",
+      0,
+      0.5
+    ],
+    [
+      "620625",
+      "Anzuelo Snake Ba. Niquel #8 c/20.",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "900947",
+      "Elevador de Cargador Tanfoglio",
+      "Tanfoglio",
+      0,
+      0.5
+    ],
+    [
+      "260300",
+      "N-Mont.M.Leupold Ruger 49029",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "550272",
+      "Cepillo de lana GSM-BWC para escopeta 12/16 #41333",
+      "BWC",
+      0,
+      0.6
+    ],
+    [
+      "840320",
+      "Bolso p/Pesca Sumax Negro #SM-1620",
+      "Sumax",
+      0,
+      0.8
+    ],
+    [
+      "LIQ150985",
+      "LQN-Cuchillo Aitor Botero white #16018",
+      "Aitor",
+      0,
+      0.5
+    ],
+    [
+      "900660",
+      "Boton Ovalado Corto, Extrator de Carg. p/Pist. #2025",
+      "Glock",
+      0,
+      0.5
+    ],
+    [
+      "990023",
+      "Carrito GUEPARDO Mod. Roller Verde #394998-6",
+      "Guepardo",
+      0,
+      0.5
+    ],
+    [
+      "DES320154",
+      "Rifle AC Crosman 4,5 Spring Raven CulPoliDeportiva MirasReflectivas #CY6M77 (copia)",
+      "Crosman",
+      0,
+      0.9
+    ],
+    [
+      "620306",
+      "Anzuelo Mustad #8/0*4 92259",
+      "Mustad",
+      0,
+      0.5
+    ],
+    [
+      "4500351",
+      "Cargador Tanfoglio 9MM ChapaDeGoma Stock2/Stock3/Combat 15T #C003",
+      "Tanfoglio",
+      0,
+      0.5
+    ],
+    [
+      "621131",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2007 4 C/15",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "110028",
+      "Pistolera p/ 9mm P18 S/Rapido",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "610012",
+      "Caña bambu largo",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "830249",
+      "Hilo Snake Magnum 0.60mm 600M",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "210004",
+      "N-Funda Para Prensa Dillon",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "920045",
+      "N-Choque Esc. ARMED cal16  28\" 3PCS",
+      "Armed",
+      0,
+      0.5
+    ],
+    [
+      "4501040",
+      "Cargador SW 9MM 10075BM Blue 19T",
+      "Smith & Wesson",
+      0,
+      0.5
+    ],
+    [
+      "210354",
+      "N-Shell Holder X15 Lyman#7738055",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "611040",
+      "Flotador defensa Attwood Blanco 4\" x 16 G2",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "140171",
+      "Correa Porta Fusil c/Homb.Negro CP04",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "200118",
+      "N-Cacha SW 469Auto #59504",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "110672",
+      "N-Cartuc.P/Arma C/Laser#73021",
+      "Sin Marca",
+      0,
+      0.8
+    ],
+    [
+      "4500170",
+      "Cargador Ruger 45ACP P345 8T #90230",
+      "Ruger",
+      0,
+      0.9
+    ],
+    [
+      "4500190",
+      "Cargador Ruger 45ACP SR1911 8T #90365",
+      "Ruger",
+      0,
+      0.7
+    ],
+    [
+      "260620",
+      "Punto de Mira p/Armed Semiautomatico/Monotiro",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "110031",
+      "Revolvera p/ 38 2' R01/1 S/Rapido",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "901260",
+      "Piso de Cargador Glock M17/19 Calib 9x19 #3206",
+      "Glock",
+      0,
+      0.4
+    ],
+    [
+      "920064",
+      "N-Compensador ventilado CZ75D Comp. #15925",
+      "ASG",
+      0,
+      0.4
+    ],
+    [
+      "900808",
+      "Repuesto Bateria con cargador para Rifles AEG Airsoft 11.1 V 1300 mAh",
+      "AEG",
+      0,
+      0.7
+    ],
+    [
+      "610255",
+      "Caña Marine Sport River Power RP-C651M 10-20 LB 1,95M",
+      "Marine Sports",
+      0,
+      0.4
+    ],
+    [
+      "260268",
+      "Punto Rojo/Verde KONU SIGHT 1x35 4MOA c/ 4 reticulas #7378",
+      "Konus",
+      0,
+      0.4
+    ],
+    [
+      "111569",
+      "Funda Externa P/ BERETTA APX A1 CYA SUPPLY CO.",
+      "CYA Supply Co.",
+      0,
+      0.4
+    ],
+    [
+      "210616",
+      "N-Shell Plate Dillon 3030 550#20139",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "260250",
+      "Soporte RedField para Remington  #MIRAJR700LA",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "620581",
+      "Anzuelo Snake Mutsu Negro #4/0 c/20.",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "621440",
+      "Anzuelo exori maruseigo 100pcs 20",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "620448",
+      "Anzuelo Mustad #6/0*25 92623",
+      "Mustad",
+      0,
+      0.6
+    ],
+    [
+      "LIQ320800",
+      "Revolver UMAREX T4E cal 50 Mod. HDR50 #2.4758",
+      "Umarex",
+      0,
+      0.4
+    ],
+    [
+      "4500012",
+      "Cargador Ruger 308WIN PrecisionRifle/GunsiteScout 10T #90563",
+      "Ruger",
+      0,
+      0.4
+    ],
+    [
+      "610080",
+      "Tablas Plasticas p/Lineas 85X 27,5mm",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "LIQ170135",
+      "LQN-Pedernal Magnecio Aitor #16052",
+      "Aitor",
+      0,
+      0.4
+    ],
+    [
+      "501545",
+      "Cartuchos GB 32 #5 14g 250/25",
+      "GB",
+      0,
+      0.5
+    ],
+    [
+      "610438",
+      "N-Caña Tianjin #1.50M Sp5021",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "110047",
+      "Pistolera p/ 9mm P12Z p/ Zurdo Multiples",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "920330",
+      "N-Casquillos Cono Rush",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "110042",
+      "Revolvera p/ 38 2' Barracuda R05",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "260223",
+      "Mira Telescopica GAMO 4x20 TV WA-N",
+      "Gamo",
+      0,
+      0.4
+    ],
+    [
+      "4500930",
+      "Cargador AMT 22MAG 9T #90600",
+      "AMT",
+      0,
+      0.4
+    ],
+    [
+      "610804",
+      "Caña Abu Garcia 1324166  12-20LB #VRTCM73-6",
+      "Abu Garcia",
+      0,
+      0.4
+    ],
+    [
+      "905000",
+      "Bolsa TNT 40x45",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "900140",
+      "N-Switch On-Off P/Mira  Laser",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "260129",
+      "Mira Telescopica c/ Laser #LS3,5-10x40E c/Pila",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "200171",
+      "Cacha p/Revolver Pucara 38SPL",
+      "Rexio",
+      0,
+      0.4
+    ],
+    [
+      "110012",
+      "Riñonera Rp02 P/Arma - Mediano",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "4500011",
+      "Cargador Ruger 308WIN AmericanRifle 4T #90436",
+      "Ruger",
+      0,
+      0.8
+    ],
+    [
+      "600090CARU",
+      "Revolver Doberman Cal 32L",
+      "Doberman/Pistola",
+      0,
+      0.4
+    ],
+    [
+      "110375",
+      "Muslera p/ Pistola cal.9mm #P11",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "AVE770525",
+      "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Mod. Punisher #GWP-RSEMFSSB-PUN",
+      "BWC",
+      0,
+      0.4
+    ],
+    [
+      "LIQ770525",
+      "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Mod. Punisher #GWP-RSEMFSSB-PUN",
+      "BWC",
+      0,
+      0.4
+    ],
+    [
+      "110102",
+      "Revolvera p/ 38 2' R01 c/velcro",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "680482",
+      "Linterna Fenix PD35 Led TAC-1000Lm-200m c/ pilas",
+      "Fenix",
+      0,
+      0.4
+    ],
+    [
+      "830327",
+      "Hilo Snake Mult. 4X Wild 0.40MM 150M",
+      "Snake",
+      0,
+      0.5
+    ],
+    [
+      "920187",
+      "N-Llavero H.M.Gerb#48101Marron",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "501565",
+      "Cartuchos GB 32 16P BUCKSHOT 98g 250/25",
+      "GB",
+      0,
+      0.5
+    ],
+    [
+      "110714",
+      "N-Cartuc.#81011/Sz1 Michaels",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "4501020",
+      "Cargador Sundance 25AUTO/6.35ACP Negro 8T",
+      "Sundance",
+      0,
+      0.5
+    ],
+    [
+      "150750",
+      "Juego Cuchillo CEPO 6PZAS-#22399/020",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "REP902076",
+      "Repuesto - Uña Estractor para Escopeta Uzkon",
+      "Uzkon",
+      0,
+      0.4
+    ],
+    [
+      "REP902055",
+      "Repuesto - Kit Alza y Punto de Mira Picotiny p/Esc. Uzkon",
+      "Uzkon",
+      0,
+      0.4
+    ],
+    [
+      "620630",
+      "Anzuelo Snake Ba. Niquel #16 c/20.",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "440012",
+      "Lente Berkley Poli.AzuOscuro#BSZEPGBSM",
+      "Berkley",
+      0,
+      0.4
+    ],
+    [
+      "261400",
+      "Camara GSM-STEALTHCAM Mod. BROWTINE 16MP #STC-BT16",
+      "BWC",
+      0,
+      0.4
+    ],
+    [
+      "115305",
+      "Pistolera p/asiento de cuero Negro",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "620623",
+      "Anzuelo Snake Ba. Niquel #4 c/20.",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "920456",
+      "Conjunto de Lluvia Century c/ Forro #3 XL",
+      "Sumax",
+      0,
+      0.6
+    ],
+    [
+      "150001",
+      "N-Cuchillo de Goma Blanco/Negro #270086",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "DES750428",
+      "Carpa para baño NTK Mod. PODPOTY Verde #NTK-VP-GR1",
+      "NTK",
+      0,
+      0.4
+    ],
+    [
+      "850068",
+      "Reel Frontal Abu Garcia BLACK MAX 40 #1398089",
+      "Abu Garcia",
+      0,
+      0.6
+    ],
+    [
+      "4500400",
+      "Cargador 380ACP Llama IIIA/XA/Mujica105G 6T",
+      "Llama",
+      0,
+      0.5
+    ],
+    [
+      "261060",
+      "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
+      "BWC",
+      0,
+      0.4
+    ],
+    [
+      "LIQ150970",
+      "LQN-Navaja AITOR Mod. Turista #16001",
+      "Aitor",
+      0,
+      0.4
+    ],
+    [
+      "610592",
+      "Caña Thunder Rojo 2 tramos 6-12lb #TD-56SC",
+      "Marine Sports",
+      0,
+      0.5
+    ],
+    [
+      "720456",
+      "Sombrero con nuquera SUMAX Mod. SB-2303P Rosado",
+      "Sumax",
+      0,
+      0.5
+    ],
+    [
+      "210706",
+      "N-Dado Scuare-Dillon 9Mm #20241",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "170229",
+      "SET OLLAS CAMPIN Coleman 16413  8P #C001707",
+      "Coleman",
+      0,
+      0.4
+    ],
+    [
+      "620621",
+      "Anzuelo Snake Ba. Niquel #1 c/20.",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "621127",
+      "Gancho p/ Esmerillon  Snake Negro Nickel 2007 0 C/20",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "110738",
+      "N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 #BR2",
+      "Fobus",
+      0,
+      0.4
+    ],
+    [
+      "620482",
+      "Anzuelo Mustad 10/0  Dorado Surubi #92611-10/0 x 5Unid",
+      "Mustad",
+      0,
+      0.4
+    ],
+    [
+      "REP900876",
+      "Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 20",
+      "Armed",
+      0,
+      0.4
+    ],
+    [
+      "140203",
+      "Cinto Cañamo Verde CC01",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "610475",
+      "Caña Fiber Solid Century#TCF-15302*4,5a11,5",
+      "Sumax",
+      0,
+      0.4
+    ],
+    [
+      "DES320202",
+      "DES320202",
+      "Crosman",
+      0,
+      0.4
+    ],
+    [
+      "320202",
+      "Pistola AC CO2 CROSMAN 4,5mm Mod. C11Tactica NonBlow #TACC11KT2",
+      "Crosman",
+      0,
+      0.4
+    ],
+    [
+      "620107",
+      "Tanza 6´´p/30LB",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "110450",
+      "N-Pistolera c/ Porta cargador y balera#59105",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "620672",
+      "Anzuelo Snake Maruseigo Negro #08 c/20.",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "4500354U",
+      "Cargador Tanfoglio 9MM Force 10T #usado",
+      "Tanfoglio",
+      0,
+      0.4
+    ],
+    [
+      "4500413U",
+      "Cargador Tanfoglio 45ACP Witness1911 17T #usado",
+      "Tanfoglio",
+      0,
+      0.4
+    ],
+    [
+      "4500385U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 12T #usado",
+      "Tanfoglio",
+      0,
+      0.4
+    ],
+    [
+      "4500387U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 14T #usado",
+      "Tanfoglio",
+      0,
+      0.4
+    ],
+    [
+      "4500389U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 9T #usado",
+      "Tanfoglio",
+      0,
+      0.4
+    ],
+    [
+      "900661",
+      "Boton Ovalado Largo, Extrator de Carg. p/Pist. #3294",
+      "Glock",
+      0,
+      0.4
+    ],
+    [
+      "900132",
+      "Cuerda P/Mini Ballesta Mka1",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "4500860",
+      "Cargador Llama 22LR XV 9T",
+      "Llama",
+      0,
+      0.5
+    ],
+    [
+      "REP900858",
+      "Repuesto TSS - Resorte de 24 cm",
+      "TSS",
+      0,
+      0.4
+    ],
+    [
+      "440013",
+      "Lente Berkley Poli.Blanco#BLSCRYSGWS",
+      "Berkley",
+      0,
+      0.4
+    ],
+    [
+      "770523",
+      "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Negro #GWP-RSEM",
+      "BWC",
+      0,
+      0.4
+    ],
+    [
+      "210349",
+      "N-Shell Holder Lee #4 No.90204",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "680225",
+      "Linterna #JL41-G14 PLATA",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "4500653U",
+      "Cargador Fino 32Auto 8T #usado",
+      "Sin Marca",
+      0,
+      0.7
+    ],
+    [
+      "4500357U",
+      "Cargador Tanfoglio 9MM Force 17T #usado",
+      "Tanfoglio",
+      0,
+      0.3
+    ],
+    [
+      "830324",
+      "Hilo Snake Mult. 4X Wild 0.28MM 150M",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "110655",
+      "N-Cartuc.#78021 Sz2 Michngr",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "510455",
+      "Bolso 5.11 Mod. Bail Out Negro #56026-019",
+      "5.11",
+      0,
+      0.3
+    ],
+    [
+      "4500358U",
+      "Cargador Tanfoglio 9MM Force 24T #usado",
+      "Tanfoglio",
+      0,
+      0.5
+    ],
+    [
+      "901230",
+      "Ejector del Mecanismo de Disparo p/Glock M17 #30275",
+      "Glock",
+      0,
+      0.3
+    ],
+    [
+      "731102",
+      "Abrigo Moleton Bordado S.W.A.T. 4210007 #G",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "210357",
+      "N-Shell Holder #2 P/45Acp 7738041",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "4500414U",
+      "Cargador Tanfoglio 45ACP Witness1911 8T #usado",
+      "Tanfoglio",
+      0,
+      0.3
+    ],
+    [
+      "710014",
+      "Termo de 2Ltros.c/1 Termito + 6 vasitos",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "260260",
+      "N-Mont.Sig Sauer #45712",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "610325",
+      "Caña #Ce-608 Selection",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "550185",
+      "Cordel Limp. Hoppe's Cal.16 #24034",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "901302",
+      "Filtro p/ Luz Tactica Laser GTL21/22 Glock #5878",
+      "Glock",
+      0,
+      0.3
+    ],
+    [
+      "501530",
+      "Cartuchos GB 32 #1 14g 250/25",
+      "GB",
+      0,
+      0.4
+    ],
+    [
+      "350000D",
+      "N-Blanco De Papel #1989",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "REP900600",
+      "N-Tubo Para Primer-Repuestop/Prensa",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "720651",
+      "Kepi 5.11 Purpose Built Navy Azul/Marino 303776-8",
+      "5.11",
+      0,
+      0.3
+    ],
+    [
+      "830411",
+      "Hilo de Pesca Vexter 0.25 mm 100 metros verde",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "621450",
+      "Anzuelo Marine Sport 100pcs 8/0 #1971S",
+      "Marine Sports",
+      0,
+      0.3
+    ],
+    [
+      "110113",
+      "Sobaquera p/380/765 c/1 Porta Carg.Cuero",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "DES680554",
+      "Linterna Dual Caterpillar 700/100 LM LED #CT6215",
+      "Caterpillar",
+      0,
+      0.3
+    ],
+    [
+      "620680",
+      "Anzuelo Snake Maruseigo Negro #20 c/20.",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "940008",
+      "N-Reloj Infantry Military Army Camu Nylon#1004",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "680598",
+      "Linterna IMALENT HR70 3.000 lumenes",
+      "Imalent",
+      0,
+      0.3
+    ],
+    [
+      "151523",
+      "Cuchillo Nieto Linea Yesca (Palo Violeta) 1049-V",
+      "Miguel Nieto",
+      0,
+      0.3
+    ],
+    [
+      "AVE900395",
+      "N-Bateria 7,4 V 1300 mAh, LI-PO, sticks #17206",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "905005",
+      "Bolsa TNT 60x55",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "4500430",
+      "Cargador Glock 9MM M26 10T",
+      "Glock",
+      0,
+      0.3
+    ],
+    [
+      "110711",
+      "N-Pistolera c/Padded Cañamo Uncle Mikes#78151",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "321098",
+      "Cargador CO2 T4E GLOCK 17 Gen5 cal 43 #211.100",
+      "Umarex",
+      0,
+      0.3
+    ],
+    [
+      "REP902072",
+      "Repuesto - Interno del Cierre del Disparador",
+      "Uzkon",
+      0,
+      0.3
+    ],
+    [
+      "680537",
+      "Linterna Caterpillar Led Recarg. Foc #CT4205",
+      "Caterpillar",
+      0,
+      0.3
+    ],
+    [
+      "681102",
+      "Linterna/Laser NITECORE Mod. NPL10 300Lm BatCR23V",
+      "Nitecore",
+      0,
+      0.3
+    ],
+    [
+      "200137",
+      "Pistol Grip Crosman 1377C #1399",
+      "Crosman",
+      0,
+      0.3
+    ],
+    [
+      "DES150080",
+      "Hacha COLEMAN Mod. RUGGED #2000038217",
+      "Coleman",
+      0,
+      0.3
+    ],
+    [
+      "152059",
+      "Cuchillo Deshuesar 6 Century #24006/006",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "AVE7000141UC",
+      "Rifle Savage .22LR MARK IIG",
+      "Savage",
+      0,
+      0.3
+    ],
+    [
+      "AVE7000134UC",
+      "Rifle Savage .22 LR 93 G",
+      "Savage",
+      0,
+      0.3
+    ],
+    [
+      "AVE7000132UC",
+      "Rifle Savage .22 LR 93 G",
+      "Savage",
+      0,
+      0.3
+    ],
+    [
+      "7000011UC",
+      "Escopeta Boito 12 Pump",
+      "Boito",
+      0,
+      0.3
+    ],
+    [
+      "730060",
+      "Remera Tanfoglio Basic Cotton XL #AS007",
+      "Tanfoglio",
+      0,
+      0.3
+    ],
+    [
+      "620634",
+      "Anzuelo Snake Ba. Niquel #5/0 c/20.",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "620091",
+      "Anzuelos Nikel #12 c/50 Cart. Maruseigo",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "REP900859",
+      "Repuesto TSS - Resorte de 25,5 cm",
+      "TSS",
+      0,
+      0.3
+    ],
+    [
+      "510260",
+      "Mochila NITECORE Mod. BP25 Tactica Multiproposito",
+      "Nitecore",
+      0,
+      0.6
+    ],
+    [
+      "901241",
+      "Disparador con Barra de Gatillo p/Glock M19/23 #4497",
+      "Glock",
+      0,
+      0.3
+    ],
+    [
+      "621130",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2007 3 C/15",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "260190",
+      "N-Mira Angular #CL1-0164BK",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "613000",
+      "Sombrilla Maxgo 1.90 X 2.00M UV Azul",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "621404",
+      "Anzuelo Marine Sport caja de 100pcs 6/0 #4330",
+      "Marine Sports",
+      0,
+      0.3
+    ],
+    [
+      "840141",
+      "Medio Mundo Telesc. Circular Inox Nylon Amarillo 44#54CM",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "680564",
+      "Lampara NTK Mod. Cairo #417167-6",
+      "NTK",
+      0,
+      0.3
+    ],
+    [
+      "900812",
+      "N-Valvula p/Revolver CO2 Mod. Antig. #11378",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "620104",
+      "Tanza c/ Anzuelo WL809 9\" 5/0 10 Piezas",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110211",
+      "Porta Radio/Handy M:320",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "830089",
+      "Hilo de Pesca Super Strong 0,90mmx90M #16",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "110502",
+      "Revolvera para Traumatica INDUNAYLON 4\" p/MOLLE",
+      "Indunaylon",
+      0,
+      0.4
+    ],
+    [
+      "4500830",
+      "Cargador HiPoint 9MM CLP9C 8T",
+      "Hipoint",
+      0,
+      0.3
+    ],
+    [
+      "260175",
+      "N-Mont.p/Pistolon Rexio",
+      "Rexio",
+      0,
+      0.3
+    ],
+    [
+      "200131",
+      "N-Cacha SW 59Auto #59505",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110280",
+      "N-Estuche Porta Gas #88771 Micha.",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "830412",
+      "Hilo de Pesca Vexter 0.25 mm 100 metros gris",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "940032",
+      "Reloj Smith and Wesson SW 45M Correa de Metal",
+      "Smith & Wesson",
+      0,
+      0.3
+    ],
+    [
+      "750202",
+      "Carpa Canadiense S-124 2P.c/C.T.c/M.P.",
+      "Sin Marca",
+      0,
+      0.6
+    ],
+    [
+      "260920",
+      "N-Mira Rifle Polv.540P/Base-Mont.Negrolym3",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "711007",
+      "Chaleco Caza Negro Py #3XL",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "110755",
+      "Cartuchera c/PADDED p/PT24/7 #SP26151",
+      "Taurus",
+      0,
+      0.4
+    ],
+    [
+      "115602",
+      "Esposera Tactico E04",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "REP902075",
+      "Repuesto - Conjunto de Cierre Escopeta Uzkon",
+      "Uzkon",
+      0,
+      0.3
+    ],
+    [
+      "REP920016",
+      "N-REPUESTOp/Rifle Mendoza JUEGO DE MUELLE",
+      "Mendoza",
+      0,
+      0.3
+    ],
+    [
+      "621013",
+      "Esmerillon Snake Negro Nickel 2/0 c/8 NS-1901",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "750047",
+      "Carpa Canadiense 2P Impermeable azul  (tiene Mosquitero)",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "900364",
+      "Pila Duracell Alcalina AAX6 Chica",
+      "Duracell",
+      0,
+      0.3
+    ],
+    [
+      "170223",
+      "Set de Cuchillo/Ten./Cuc PICNIC STAND SPORT #340",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "830410",
+      "Hilo de Pesca Vexter 0.19 mm 100 metros",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "500860",
+      "Casquillos .25 Auto. Pack x 1000",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "621451",
+      "Anzuelo Marine Sport 100pcs 9/0 #1971S",
+      "Marine Sports",
+      0,
+      0.3
+    ],
+    [
+      "LIQ770301",
+      "Tapa oidos electronico GSM-BWC eKrestÍ´ negro carbonizado 26 NRR #43250",
+      "BWC",
+      0,
+      0.3
+    ],
+    [
+      "830090",
+      "Hilo de Pesca Super Strong #0,70mmx100M#12",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "REP900304",
+      "Bateria de repuesto para Mod. 236240 Doberman",
+      "Doberman",
+      0,
+      0.3
+    ],
+    [
+      "920060",
+      "N-Compensador Tanfoglio 9Mm Dobl",
+      "Tanfoglio",
+      0,
+      0.3
+    ],
+    [
+      "REP920018",
+      "N-REPUESTOp/Rifle Mendoza JUEGO RESORTE MEC.",
+      "Mendoza",
+      0,
+      0.3
+    ],
+    [
+      "400458",
+      "N-Punta Redonda Cal. 10mm 180grs*100",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "611020",
+      "Cevador para atraer peces Acero Negro",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110653",
+      "N-Cartuc.#78001 Szo Michngr",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "150617",
+      "Corta Pluma M.A.G.I.C Assist w/Linner Lock 4034 SW6000MB",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "150084",
+      "N-Sevillana Art.#K106",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110011",
+      "Riñonera Rp03 P/Arma - Chico",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "320130",
+      "N-Rifle CROSMAN AcMarksman Laser Bb #2015",
+      "Crosman",
+      0,
+      0.3
+    ],
+    [
+      "AVE750030",
+      "AVE-Carpa Igloo Ottoni #YY2020-3A-A CamAut.200x200x135",
+      "Ottoni",
+      0,
+      0.3
+    ],
+    [
+      "REP900871",
+      "Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 20",
+      "Armed",
+      0,
+      0.3
+    ],
+    [
+      "115050",
+      "N-Porta Carg.Doble p/Sobaquera Houston #113S",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "140251",
+      "Cinto para cartucho cal 32",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "REP900838",
+      "Repuesto Resorte de 60 cm p/Carg. de Escopeta",
+      "Mendoza",
+      0,
+      0.3
+    ],
+    [
+      "REP900841",
+      "Repuesto - Apagallama Armed 12 Semi Auto",
+      "Armed",
+      0,
+      0.3
+    ],
+    [
+      "170149",
+      "Alicate Rapala RCP11 28CM",
+      "Rapala",
+      0,
+      0.3
+    ],
+    [
+      "620160",
+      "Anzuelo Prep. c/ Naylon #8 x 5 Und.",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "115530",
+      "N-Chaleco-Pechera Tactico #546",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "4500090",
+      "Cargador Ruger 9MM SR9C 10T #M90369",
+      "Ruger",
+      0,
+      0.5
+    ],
+    [
+      "DES680557",
+      "Linterna Caterpillar 300 LM LED Aluminio con Foco #CT2500 Sin Pilas / Sin Blíster",
+      "Caterpillar",
+      0,
+      0.5
+    ],
+    [
+      "AVE320198",
+      "Rifle Airsoft Bateria ASG 6mm Mod. DLV BT5A5 Full Auto Kit #17274",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "770903",
+      "Guantes 5.11 Tacticos 245260-9 L",
+      "5.11",
+      0,
+      0.2
+    ],
+    [
+      "901280",
+      "Cordon p/Glock con Clip #1764",
+      "Glock",
+      0,
+      0.4
+    ],
+    [
+      "400438",
+      "N-Punta Normal Cal.44Mag  240gr*100(No Lubricado)",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "670133",
+      "Parrilla California c/rueda MOR #3011",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "621422",
+      "Anzuelo Marine Sport caja de 100pcs 7/0 #12147",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "900970",
+      "Resorte de Retroceso p/Pistola Tanfoglio #PR031",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500405",
+      "Cargador Tanfoglio 38SUPER Stock2 Standard 17T #C010",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "110045",
+      "Revolvera p/ 38 6' c/Broche R16",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "650606",
+      "Catre plegable BESTWAY 190x64x42cm #68065",
+      "Bestway",
+      0,
+      0.2
+    ],
+    [
+      "510251",
+      "Mochila Tactica Modular Ng. 40Lts #2410005",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "610505",
+      "Caña Berkley Lightning Rod 1429003 8-14LB CT 1P",
+      "Berkley",
+      0,
+      0.2
+    ],
+    [
+      "110010",
+      "Riñonera Rp01 P/Arma - Grande",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "210470",
+      "N-Dado Mec Cal.20 600Mk #845220",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "830267",
+      "Hilo Snake Skyline 0.25mm 300M",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "4500943",
+      "Cargador Taurus 9mm PT24/7 10T",
+      "Taurus",
+      0,
+      0.2
+    ],
+    [
+      "900655",
+      "Set Adaptador 01 p/Configuracion MOS (montantes) #33531",
+      "Glock",
+      0,
+      0.2
+    ],
+    [
+      "110006",
+      "Funda P/Arma Larga Negro-130 X 20 F02",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "LIQREP611063",
+      "LQN-Repuesto - Cuerda Aitor  Jungle King #16053",
+      "Aitor",
+      0,
+      0.4
+    ],
+    [
+      "680067",
+      "Linterna Tactica Sniper Surefire A206013 C/Resp. #SNP0539",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "680008",
+      "Linterna Reysol  Led Recarg.#MG-8803L1",
+      "Reysol",
+      0,
+      0.2
+    ],
+    [
+      "620644",
+      "Anzuelo Snake C. Negro #07 c/20.",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "680571",
+      "Linterna IMALENT LD70 4000 lumenes 1x18350",
+      "Imalent",
+      0,
+      0.2
+    ],
+    [
+      "320502",
+      "Arco Nautika Tupy Balanceado",
+      "NTK",
+      0,
+      0.2
+    ],
+    [
+      "920192",
+      "Llavero De Cuero #6101400",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "610468",
+      "Caña Cavalier Century#TCA-18002*13,5a27",
+      "Sumax",
+      0,
+      0.3
+    ],
+    [
+      "110196",
+      "N-Cartuchera Tiro Practico #SNP0232",
+      "Sin Marca",
+      0,
+      0.5
+    ],
+    [
+      "723006",
+      "Camisa Cardume Siena Masc Arena G3 #93045-1",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "210161",
+      "N-Top Punch G Only 374 #2786719",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "720228",
+      "Escudo Antimotín DPL-02",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "723015",
+      "Camisa Cardume Siena Masc Verde Agua G2 #93200-4",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "550264",
+      "Cepillo de bronze GSM-BWC para escopeta 20 #41268",
+      "BWC",
+      0,
+      0.3
+    ],
+    [
+      "151544",
+      "Cuchillo Nieto Linea Warfare (Forprene) 194",
+      "Miguel Nieto",
+      0,
+      0.2
+    ],
+    [
+      "150119",
+      "Corta Pluma Ejecut.c/Tijera/Clips#3507",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "LIQ710031",
+      "Termo COLEMAN Mod. GROWLER 2Litros Negro #2016926",
+      "Coleman",
+      0,
+      0.2
+    ],
+    [
+      "620265",
+      "Anzuelo Mustad Preparado #6/0  92623",
+      "Mustad",
+      0,
+      0.2
+    ],
+    [
+      "900930",
+      "Palanca de Fiador Version p/Pistola Tanfoglio #PR002",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500130",
+      "Cargador Ruger 9MM LC9 7T #90363",
+      "Ruger",
+      0,
+      0.4
+    ],
+    [
+      "830266",
+      "Hilo Snake Skyline 0.20mm 300M",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "620684",
+      "Anzuelo Snake Maruseigo Niquel #13 c/20.",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "210405",
+      "N-Molde P/H.Punta Dc210G 429215",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "840301",
+      "Bolso p/Pesca Sumax Ngr.(s/c)#SM-705B",
+      "Sumax",
+      0,
+      0.4
+    ],
+    [
+      "620224",
+      "Destorcedor engante 100pcs 9",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "621420",
+      "Anzuelo Marine Sport caja de 100pcs 8/0 #12147",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "110410",
+      "N-Pistolera con Cinto Velcro p/ colt 45 #50199",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "505629",
+      "Balas Federal /Hanse 30-06 Springfield 150gr.",
+      "Federal",
+      0,
+      0.2
+    ],
+    [
+      "830160",
+      "Hilo de Pesca Century Avan. Mult.0,23mm100M#ADV4-023",
+      "Sumax",
+      0,
+      0.4
+    ],
+    [
+      "751002",
+      "Set de varillas para carpas NTK Falcon 4 9.5MM #654540",
+      "NTK",
+      0,
+      0.3
+    ],
+    [
+      "210335",
+      "N-Shell Holder Lee #9 No.90209",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "760075",
+      "Parches Argentina",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "610476",
+      "Caña Fiber Solid Century#TCF-16502*4,5a8",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "210623",
+      "N-Shell Plate Dillon 380Acp #20133",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "260602",
+      "Punto de Mira Millet Rojo Browning #DC34022",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "440165",
+      "Lente Protec. JACKSON NEMESIS TRANSP. #25679",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "LIQ800173",
+      "LQN - Caja Pesca POLYMER Grande 1 Bandeja Tapa Negra #4030",
+      "Polymer",
+      0,
+      0.2
+    ],
+    [
+      "711014",
+      "Chaleco Caza Beige Py #XL",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "4501100",
+      "Cargador Lorcin 22LR L22 9T",
+      "Lorcin",
+      0,
+      0.2
+    ],
+    [
+      "400146",
+      "Balas CCI 22LR MiniMag 36GR PHuecaCobreada 100x50 #31",
+      "Federal",
+      0,
+      0.2
+    ],
+    [
+      "AVE260285",
+      "Mira KONUS FIRE 3-9x32 con montante #7351",
+      "Konus",
+      0,
+      0.2
+    ],
+    [
+      "200375",
+      "Grips antideslizante Butler Creek #50543",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "4500630",
+      "Cargador Armscor 22LR M20P/M20C 15T",
+      "Armscor",
+      0,
+      0.3
+    ],
+    [
+      "900799",
+      "Repuesto Bateria con cargador para Rifles AEG Airsoft 9.6V 1100 mAh",
+      "AEG",
+      0,
+      0.2
+    ],
+    [
+      "670134",
+      "Parrilla Rodeio c/rueda MOR 134x44#3013",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "210410",
+      "N-Molde P/H.Punta Dc225G 452374",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "621358",
+      "Anzuelo Marine Sport Nro. 6/0 #1971N",
+      "Marine Sports",
+      0,
+      0.3
+    ],
+    [
+      "680065",
+      "Linterna Tactica de Xenon  #16085",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110705",
+      "Funda para pistola Derya 9mm #F08",
+      "Derya",
+      0,
+      0.3
+    ],
+    [
+      "500847",
+      "Casquillos. 32 Long Pack x 750",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "621400",
+      "Anzuelo Marine Sport caja de 50pcs 12/0 #4330",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "830250",
+      "Hilo Snake Magnum 0.70mm 480M",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "740600",
+      "Remera ML Softline Fem Rosa XP #144097-3",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "610053",
+      "Porta Caña Azul #TS-G3",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "260736",
+      "Montante p/ Escopeta con Picattini #5066",
+      "Sin Marca",
+      0,
+      0.4
+    ],
+    [
+      "760046",
+      "Parche 5.11 Candy #92192-372",
+      "5.11",
+      0,
+      0.2
+    ],
+    [
+      "LIQ680599",
+      "LQN - Linterna IMALENT BG10 2.300 lumenes",
+      "Imalent",
+      0,
+      0.2
+    ],
+    [
+      "REP900117",
+      "N-Repuesto-Muelle del disparador - Mendoza FS-06",
+      "Mendoza",
+      0,
+      0.2
+    ],
+    [
+      "920184",
+      "Llavero Abridor 4 en 1 Coleman",
+      "Coleman",
+      0,
+      0.2
+    ],
+    [
+      "140121",
+      "Clip para Glock Just It and Go",
+      "Glock",
+      0,
+      0.2
+    ],
+    [
+      "4500359U",
+      "Cargador Tanfoglio 9MM Force 26T #usado",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500384U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 11T #usado",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500388U",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 15T #usado",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500412U",
+      "Cargador Tanfoglio 45ACP Witness1911 12T #usado",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500086U",
+      "Cargador Fino 9Kurt/.380ACP 9T #usado",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "4500085U",
+      "Cargador Fino 9Kurt/.380ACP 8T #usado",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "770800",
+      "Guantes Para Tiros Med#89992",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "900832",
+      "N-Corredera de Metal DT CZ 75 P-07 Duty 4,5 y 6mm #16688",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "900833",
+      "N-Corredera de Metal STI Duty One DT 4,5 y 6mm #16841",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "900835",
+      "N-Corredera de Metal DT Steyr M9-A1 4,5  #16570",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "610280",
+      "Caña Marine Sports Venza Car VNZ-C702H 20-50LB 2,13m",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "920245",
+      "Mesa Portátil Pleg. c/2posa vaso #QF209",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "620543",
+      "Anzuelo Sumax Soft Bait BC- 4/0-25",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "620217",
+      "Destorcedor marine sport BBS 100pcs 1/0",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "115035",
+      "Porta Carg.Doble Israeli p/Taurus 24/7 9mm #6-0065",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "550263",
+      "Cepillo de bronze GSM-BWC para escopeta 28 #41267",
+      "BWC",
+      0,
+      0.2
+    ],
+    [
+      "4500650U",
+      "Cargador Fino 32Auto 13T #usado",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "4500651U",
+      "Cargador Fino 32Auto 17T #usado",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "4500652U",
+      "Cargador Fino 32Auto 7T #usado",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "4500793U",
+      "Cargador Tanfoglio 38SUPER Stock2 Standard 22T #usado",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500436U",
+      "Cargador 1911 9mm 12T #usado",
+      "1911",
+      0,
+      0.2
+    ],
+    [
+      "620626",
+      "Anzuelo Snake Ba. Niquel #1/0 c/20.",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "200141",
+      "Cacha COLT 10440",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "140810",
+      "Cinto IPSC 4 p/carg+ funda pistola",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "620020",
+      "Anzuelo Preparado Maruseigo #12 c/10",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "110739",
+      "N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 ROT #BR2RT",
+      "Fobus",
+      0,
+      0.2
+    ],
+    [
+      "260255",
+      "N-Mont.M.Laser SW Sw44S Rev",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "611022",
+      "Cevador para atraer peces Grande",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "900831",
+      "N-Corredera de Metal DT CZ 75D Comp. #16557",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "830353",
+      "Hilo Snake Mult. 4X Motion 0.60MM 150M",
+      "Snake",
+      0,
+      0.4
+    ],
+    [
+      "4500960",
+      "N-Cargador Marlin P/Escopeta Cal. 12",
+      "Sin Marca",
+      0,
+      0.3
+    ],
+    [
+      "LIQ151190",
+      "Pala NTK Mod. FRONTERA #901068",
+      "NTK",
+      0,
+      0.2
+    ],
+    [
+      "920444",
+      "Conjunto p/Lluvia Century #3XL",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "730343",
+      "REMERA ABU GARCIA FOR LIFE #1368747 NEGRO -M",
+      "Abu Garcia",
+      0,
+      0.2
+    ],
+    [
+      "150478",
+      "N-Juego de Cubiertos#BBQ032 Asado G.c/Cep.10P",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "930501",
+      "N-Jardinera SW37-70D Wader #40",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "110370",
+      "Muslera p/ Revolver cal.38/4\" #R22",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "140002",
+      "Cinto P/Cartucho CAL.12 Negro -CP01",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "270808",
+      "Funda Fab Defense M1 SigSauer P226/P229 Cinto/Paddle #M1226",
+      "Fab Defense",
+      0,
+      0.2
+    ],
+    [
+      "REP900779",
+      "Repuesto IMALENT parte inferior DM70",
+      "Imalent",
+      0,
+      0.2
+    ],
+    [
+      "LIQ920229",
+      "Silla Plegable Tela 100% Politileno #TA02002",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "270821",
+      "Porta Cargadores FAB DEFENSE Glock 9mm/.40 Cinto/Paddle Negro #PG-9",
+      "Fab Defense",
+      0,
+      0.2
+    ],
+    [
+      "620615",
+      "Anzuelo Snake Akita Kitsune Oro #5 c/50.",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "621407",
+      "Anzuelo Marine Sport caja de 100pcs 3/0 #4330",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "4500383",
+      "Cargador Tanfoglio 40SW Pav Combat/Force 12T #C006A",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "4500020",
+      "Cargador Ruger 22LR SR22 c/Extensor 10T #90382",
+      "Ruger",
+      0,
+      0.4
+    ],
+    [
+      "4500951U",
+      "Cargador 1911 45ACP 13T #usado",
+      "1911",
+      0,
+      0.4
+    ],
+    [
+      "550260",
+      "Cepillo de bronze GSM-BWC para calibres .17 #41241",
+      "BWC",
+      0,
+      0.2
+    ],
+    [
+      "900393",
+      "Bateria p/ Linterna 6Volts 4 Amph- #660G",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "260612",
+      "N-Mont.Beamshot Glock P1A Silver(Sop)",
+      "Beamshot",
+      0,
+      0.2
+    ],
+    [
+      "200150",
+      "Culata sin Folding para Kit Kpos #UFN",
+      "Fab Defense",
+      0,
+      0.2
+    ],
+    [
+      "620193",
+      "Pateca Snake Nickel 4/0 c/100",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "210416",
+      "N-Cacha de goma extensora para SR9 Ruger #90341",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "830246",
+      "Hilo Snake Magnum 0.43mm 600M",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "160185",
+      "GAS p/Defensa Prosegure Body Guard PS007-110ml",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "620223",
+      "Destorcedor engante 100pcs 5",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "850106",
+      "Caña MARINE Mod. Versus 1.83m 12-25LB",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "150477",
+      "N-Juego de Cubiertos#DSG-12Asado Caja 4P.MPV",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "110121",
+      "Sobaquera p/7,65 -380 Horiz C/P CargS15",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "150002",
+      "Cuchillo de Goma Negro Completo",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "721051",
+      "Chaqueta Camu. Urbana 2210012 #G",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "830342",
+      "Hilo Snake Mult. 8X Colossus 0.55MM 150M",
+      "Snake",
+      0,
+      0.3
+    ],
+    [
+      "4500990",
+      "Cargador Norinco 22MAG JW23 5T",
+      "Norinco",
+      0,
+      0.2
+    ],
+    [
+      "650538",
+      "COLCHON AUTOINFLABLE BESTWAY ELEC.#67462 191x137x30cm",
+      "Bestway",
+      0,
+      0.2
+    ],
+    [
+      "150070",
+      "Cuchillo Hachitac/Manopla#Hk983-A",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "720649",
+      "Kepi 5.11 Mod. FLAG BEARER 89406-645 Canyon Sunset",
+      "Flag Bearer",
+      0,
+      0.2
+    ],
+    [
+      "115523",
+      "Pistolera Sig Sauer 9MM #P229",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "610229",
+      "Caña Daiwa Aird #561MHXB-BR",
+      "Daiwa",
+      0,
+      0.2
+    ],
+    [
+      "170228",
+      "Cuchillo WINCH. 22-41231 2PCS y 1EstucCamu",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "4500950U",
+      "Cargador 1911 45ACP 11T #usado",
+      "1911",
+      0,
+      0.3
+    ],
+    [
+      "AVE740100",
+      "AVE-Remera con estampa",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "680539",
+      "Linterna Caterpillar 200 LM Utilidad Recargable #CT6525",
+      "Caterpillar",
+      0,
+      0.2
+    ],
+    [
+      "REP900116",
+      "Repuesto-Tornillo para culata - Mendoza FS-69-PAV",
+      "Mendoza",
+      0,
+      0.2
+    ],
+    [
+      "170206",
+      "Alicate con Balanza para 22K",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "REP900303",
+      "Foco de repuesto para Mod. 236240 Doberman",
+      "Doberman",
+      0,
+      0.2
+    ],
+    [
+      "REP920110",
+      "Repuesto amortiguador para Marlin",
+      "Marlin",
+      0,
+      0.2
+    ],
+    [
+      "850585",
+      "Reel New Ventura VT-5 SHI 5ROL 7.0:1",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "REP900220",
+      "Repuesto - Maglite /Vidrio p/DyC#109384",
+      "Maglite",
+      0,
+      0.2
+    ],
+    [
+      "REP902070",
+      "Repuesto - Pin para Escopeta Uzkon",
+      "Uzkon",
+      0,
+      0.2
+    ],
+    [
+      "621425",
+      "Anzuelo Marine Sport caja de 100pcs 9/0 #12147",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "621403",
+      "Anzuelo Marine Sport caja de 100pcs 7/0 #4330",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "900945",
+      "Elevador del Tirante del Disp. p/Pistola Tanfoglio#PR011",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "502001",
+      "Bengalas de Humo UC5002A",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "680382",
+      "Linterna Recargable LDS 68000W #657",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "140861",
+      "Cinto 5.11 Double Duty TDU 59568-120 Coyote M #238401-6",
+      "5.11",
+      0,
+      0.2
+    ],
+    [
+      "621375",
+      "Anzuelo Preparada Nylon Nro 6 x 25 unid",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "621129",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2007 2 C/18",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "620220",
+      "Destorcedor marine sport BBS 100pcs 5/0",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "611050",
+      "Bomba de Agua Rule 360GPH #24",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "260607",
+      "Punto de Mira Millet Rojo Ruger P85 #RP85006",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "750171",
+      "Carpa Canadiense 2P.S/121 T.IM.c/M.P",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "REP900853",
+      "Repuesto TSS - Culata Pistola AC 4.5",
+      "TSS",
+      0,
+      0.2
+    ],
+    [
+      "621390",
+      "Anzuelo Preparado Nylon Nro 1/0 x 25 unid",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "260354",
+      "Alza y Punto de mira para GLOCK GEN 3",
+      "Glock",
+      0,
+      0.2
+    ],
+    [
+      "920460",
+      "Toallita p/ Limp. Camuflaje Facial",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "920702",
+      "Inflador Intex Electrico 220 240",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "620632",
+      "Anzuelo Snake Ba. Niquel #3/0 c/20.",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "621128",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2007 1 C/20",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "621371",
+      "Anzuelo Preprado Nylon Nro2 x 25 unid",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "830350",
+      "Hilo Snake Mult. 4X Motion 0.45MM 150M",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "900902",
+      "Punto de Mira Personalizada p/Pistola Tanfoglio #TM008",
+      "Tanfoglio",
+      0,
+      0.3
+    ],
+    [
+      "270157",
+      "Pistol grip Fab Defense p/ FN FAL #AG FAL",
+      "Fab Defense",
+      0,
+      0.2
+    ],
+    [
+      "210155",
+      "N-Size Die H I 400 #2766501",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "830080",
+      "Hilo de Pesca Super Strong #0,25mmx100M",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "850445",
+      "N-Reel MolinetePB STILLUS SUMAX #SL4000L - Zurdo -20%OFF",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "4500423",
+      "Cargador Glock 9MM M19 15+2T #1112",
+      "Glock",
+      0,
+      0.3
+    ],
+    [
+      "610914",
+      "Caña Snake Mamba Neg 1.76m 20-40LB Medium Molinete MC-JIG-4C 581",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "200145",
+      "Pistol para Maverick",
+      "Maverick",
+      0,
+      0.2
+    ],
+    [
+      "621406",
+      "Anzuelo Marine Sport caja de 100pcs 4/0 #4330",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "REP900875",
+      "Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 12",
+      "Armed",
+      0,
+      0.2
+    ],
+    [
+      "260224",
+      "Mira Telescopica GAMO 3-7x28 TV",
+      "Gamo",
+      0,
+      0.2
+    ],
+    [
+      "4500710",
+      "Cargador Browning 9MM 10111BM Niquel 15T",
+      "Browning",
+      0,
+      0.2
+    ],
+    [
+      "900975",
+      "Guia de Retroceso p/PistolaTanfoglio #PR030",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "900980",
+      "Seguro Aut.delPercutor p/Pistola Tanfoglio #PR032",
+      "Tanfoglio",
+      0,
+      0.2
+    ],
+    [
+      "1084",
+      "Copitos P/Recarga De Cartuchos",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "613001",
+      "Sombrilla Aluminio 2,00mm#TA003707",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "680250",
+      "Linterna Solar C/ Panel p/Carga Cel. #SOL-EYE",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "720187",
+      "Chaleco Salvavidas Sumax #F009L",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "920380",
+      "N-Prolongador Cargador P.O. Metal",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP901100",
+      "N-Repuesto p/Rifle AC TSS Guía Plástico alza de mira.",
+      "TSS",
+      0,
+      0.1
+    ],
+    [
+      "620227",
+      "Destorcedor marine sport BBS N°7 100 pcs",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621125",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2006 3 C/15",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "711051",
+      "Chaleco p/Pesca Camu Sumax XL #SC0022XL",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "200146",
+      "Pistol para Akkar",
+      "Akkar",
+      0,
+      0.1
+    ],
+    [
+      "270",
+      "N-Cacha Rs-6L Ruger Pachmayer",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP900115",
+      "Repuesto - p/Faros Ml:329",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830220",
+      "Hilo Samuray x8Multif Amar.*0,27x300m 40LBS #SMY027X8Y",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "900441",
+      "Pila Panasonic Lithium 3 Vol CR2",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610530",
+      "Caña Laguna LAG561MHFB-BR Nova",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "210102",
+      "N-Gascheks Lyman 44Spl-Mag",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "680890",
+      "Line Spooler MARINE para carretilla",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "720094",
+      "PANTALON p/CACERIA PLOMO #XXL",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620131",
+      "Empate largo",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110013V",
+      "Funda P/Arma Larga Camu.- 85 X 20 F08",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "260117",
+      "Mira Mini Red Dot  SNIPER  1x 30EG #TI0568",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "4500195",
+      "Cargador Ruger JMX-1  22MG",
+      "Ruger",
+      0,
+      0.3
+    ],
+    [
+      "210347",
+      "N-Shell Holder Lee #6 No.90206",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "400442",
+      "Punta Ojival Cal.45 230gr *100(No Lubricado)",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "941050",
+      "Red Camuflada Simple EB #3010004",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110027",
+      "Funda Especial 1,30 Rectangular",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830323",
+      "Hilo Snake Mult. 4X Wild 0.26MM 150M",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "500859",
+      "Casquillos .25 Auto. Pack x 500",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610587",
+      "Caña Akita 10-20LB #AKT-561M 5,6",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "DES680529",
+      "Linterna Caterpillar 175 LM LED COB de Bolsillo #CT1000 (copia)",
+      "Caterpillar",
+      0,
+      0.2
+    ],
+    [
+      "400434",
+      "N-Punta Normal Cal.44SPL  210gr*100(No Lubricado)",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "210434",
+      "N-Size Die H I 429 Lyman 2766509",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "260600",
+      "Punto de Mira Millet Rojo Smith and Wesson #SW40508",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621442",
+      "Anzuelo Mustad caja de 25pcs 5/0",
+      "Mustad",
+      0,
+      0.1
+    ],
+    [
+      "REP900221",
+      "Repuesto - Maglite Reflector p/DyC#109385",
+      "Maglite",
+      0,
+      0.2
+    ],
+    [
+      "620225",
+      "Destorcedor engante 100pcs 7",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "680534",
+      "Linterna Caterpillar Led C/Base Magnectic #CT3110",
+      "Caterpillar",
+      0,
+      0.1
+    ],
+    [
+      "610350",
+      "Caña Brisa BR-C601MHC (nova) 12-25LB",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621391",
+      "Anzuelo Preparado Nylon Nro 2/0",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP900846",
+      "Repuesto - Empuñadura ASG - G-17",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "REP900847",
+      "Repuesto - Empuñadura ASG - G-18C",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "LIQ750428",
+      "Carpa Baño/Vestidor NTK Mod. PODPOTY Verde #NTK-VP-GR1",
+      "NTK",
+      0,
+      0.1
+    ],
+    [
+      "DES750427",
+      "Carpa para baño NTK Mod. PODPOTY Negro #NTK-VP-BK1",
+      "NTK",
+      0,
+      0.1
+    ],
+    [
+      "720225",
+      "Casco Antimotín FBK-03",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900910",
+      "Aguja Percutora p/Pistola Tanfoglio - Version R #PR027",
+      "Tanfoglio",
+      0,
+      0.1
+    ],
+    [
+      "900911",
+      "Aguja Percutora p/Pistola Tanfoglio - Ver. Standard #PR028",
+      "Tanfoglio",
+      0,
+      0.1
+    ],
+    [
+      "110734",
+      "N-Cartuch.FOBUS p/Pist.Glock Walther380 #GL2ND",
+      "Fobus",
+      0,
+      0.1
+    ],
+    [
+      "830162",
+      "Hilo de Pesca C.A.M.0,30mm100M#ADV4-030",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "110173",
+      "Riñonera Simple Chica  RP05",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110674",
+      "N-Cartuc.P/Arma C/Laser#73151",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "LIQ510434",
+      "Mochila DOBERMAN 35L 43*32*20 KHAKI #BL029KH",
+      "Doberman MOCHILAS",
+      0,
+      0.1
+    ],
+    [
+      "920703",
+      "Inflador Intex Electronico 110-120V 12V",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "260582",
+      "Kit de repuesto para placas de punto rojo VECTOR OPTICS #SCKRS",
+      "Vector Optics",
+      0,
+      0.1
+    ],
+    [
+      "900830",
+      "N-Corredera de Metal Neg CZ 75D Comp.#16556",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "820281",
+      "Plomada ovalada N°4 x10Kg",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "620624",
+      "Anzuelo Snake Ba. Niquel #6 c/20.",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "110273",
+      "Pistolera 635 c/Clips",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "110228V",
+      "N-Funda para Escop/Rifle 1,10cm Verde",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "160186",
+      "GAS p/Defensa NATO 60ml.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610979",
+      "Caña Snake Toscana 4004",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "550177",
+      "Equipo Limp. Hoppe's Rifle 22lr  #VOB",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150765",
+      "Cuchillo Frilley Artesanal 25,5cm. Mango Madera/Hueso",
+      "Frilley",
+      0,
+      0.1
+    ],
+    [
+      "830354",
+      "Hilo Snake Mult. 4X Motion 0.50MM 300M",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "680802",
+      "Lampara Reysol 60 Led Recarg.#MG-1360L",
+      "Reysol",
+      0,
+      0.2
+    ],
+    [
+      "840112",
+      "Medio Mundo CenturyRedGomaTranspMangoAluminio #A118",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "LIQ680465",
+      "Lampara Coleman Clasica CLT10 Rojo 4D/100Lm/ 6m/136h # 24141",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "610927",
+      "Caña Snake Mamba Neg 1.83m 15-30LB Medium Heavy Frontal  MC-M#601",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "210445",
+      "N-Top Punch G Only #460",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610010",
+      "Caña Solara 10-20LB Azul#SB-1802M",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "610170",
+      "Caña Evolucion G3 CAR C651MH 1,95m 15-30LB",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "260616",
+      "Montante Beamshot S y W P2 Silver(Sop)",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "650052",
+      "Bolsa p/Dormir Saco 185+30*75 #048 Rojo",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110675",
+      "N-Cartuc.P/Arma C/Laser#73051",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "512003",
+      "Cartera con Accesorio #YQS88 Camu",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610173",
+      "Caña Evolucion G3 CAR C601MH 1,83m 15-30LB",
+      "Marine Sports",
+      0,
+      0.2
+    ],
+    [
+      "709950",
+      "Conservadora Inflable Bestway Cooler Z #43191 49L",
+      "Bestway",
+      0,
+      0.1
+    ],
+    [
+      "900834",
+      "N-Corredera de Metal Neg. Steyr M9-A1 4,5 #16562",
+      "ASG",
+      0,
+      0.2
+    ],
+    [
+      "620036",
+      "Anzuelo Triple M:8 #3553 x 25 pcs",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "DES151562",
+      "Cuchillo Nieto Linea Gaucho(Madera) G-12",
+      "Miguel Nieto",
+      0,
+      0.1
+    ],
+    [
+      "720637",
+      "Kepi Shimano Ahatflatlxlnv L/XL Marino",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "400440",
+      "N-Punta Hueca Cal.44Mag  240gr *100",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "500870",
+      "Casquillos .38 Super Pack x 500",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "140253",
+      "Cinto para cartucho cal 36",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "760074",
+      "Parches Paraguay",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "711055",
+      "Chaleco p/Pesca Verde Sumax L #SC004L",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "550270",
+      "Cepillo de bronze GSM-BWC para armas cortas 45/12mm #41283",
+      "BWC",
+      0,
+      0.1
+    ],
+    [
+      "152056",
+      "Cuchillo Laser ATHUS Tramontina #23088/005",
+      "Tramontina",
+      0,
+      0.1
+    ],
+    [
+      "620132",
+      "Empate mediano",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610006",
+      "Caña Tipo Bambu 4,5mts #4510",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "200261",
+      "Cacha de Goma Butler Creek MEDIO #50542",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621317",
+      "Tanza Rapida 0,60 x 5 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620232",
+      "Destorcedor engante N°1/0",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "650051",
+      "Bolsa p/Dormir Saco 190+30*75  #040 Celeste",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150181",
+      "Cuchillo p/ Pesca OTTONI #F102",
+      "Ottoni",
+      0,
+      0.1
+    ],
+    [
+      "610752",
+      "Kit Caña /Reel Marin Sport 3000 Elite #EL-S502M",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "440163",
+      "Lentes BERETTA Mod. Evo Naranja #OC061A28540407UNI",
+      "Beretta Mod",
+      0,
+      0.1
+    ],
+    [
+      "440168",
+      "Lentes BERETTA Mod. Evo LILA #OC061A28540316UNI",
+      "Beretta Mod",
+      0,
+      0.1
+    ],
+    [
+      "210344",
+      "N-Shell Holder Lee #R9 No.90526",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610575",
+      "Caña de Pesca Lubinax 2 tramos #LUX-C562M 1.68m 10-16LB",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "610180",
+      "Caña Titan TTX -C602M 1.83M 8-17LB",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "720015V",
+      "Chaleco de Caza Cam.#CH01",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621373",
+      "Anzuelo Preparado Nylon Nro 4 x 25 unid",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP920021",
+      "N-REPUESTOp/Rifle Mendoza PALANCA RETENIDA",
+      "Mendoza",
+      0,
+      0.1
+    ],
+    [
+      "210351",
+      "N-Shell Holder X09 Lyman",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621405",
+      "Anzuelo Marine Sport caja de 100pcs 5/0 #4330",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621402",
+      "Anzuelo Marine Sport caja de 100pcs 8/0 #19715",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "610219",
+      "Caña Marine Sport Lubina #C561MH 1.68m 12-25LB",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "830156",
+      "Hilo de Pesca CombatSuperEstroAma.0,45 9Kg -100M CBL997045",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "4500460U",
+      "Cargador Glock 40SW M23 13T",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "4500475U",
+      "Cargador Glock 45ACP 6T",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "920398",
+      "PILOTO+PANTALON Coleman Camo  L #C001882",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "900382",
+      "Baterias p/Linterna IMALENT BG10 2000mAh 3.7 V #26350",
+      "Imalent",
+      0,
+      0.1
+    ],
+    [
+      "720082",
+      "N-PANTALON CAMU VERDE #G",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "650533",
+      "COLCHON INFLABLE 67374/2,5 - 203x152x22",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "920295",
+      "Llavero Sumax de Pez #SM90",
+      "Sumax",
+      0,
+      0.2
+    ],
+    [
+      "921018",
+      "Choke BOITO Mod. Cilindrico Incrementado cal 12 #33203",
+      "Boito",
+      0,
+      0.1
+    ],
+    [
+      "100060",
+      "Anillo porta correa Topping #S-4512",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900965",
+      "Placa de Fijacion del Seguro Perc. p/Pistola Tanfoglio#PR029",
+      "Tanfoglio",
+      0,
+      0.1
+    ],
+    [
+      "921016",
+      "Choke BOITO Mod. Modificado Incrementado cal 12 #33201",
+      "Boito",
+      0,
+      0.1
+    ],
+    [
+      "900882",
+      "Resorte de Corredera Ensamblado p/Glock M17#8284",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "260632",
+      "N-Mont.Beamshot Sig Sauer P5A Silver(Sop)",
+      "Beamshot",
+      0,
+      0.1
+    ],
+    [
+      "900105",
+      "N-Foco p/Lint.Maglite p/5 PILAS LMXA501",
+      "Maglite",
+      0,
+      0.1
+    ],
+    [
+      "440255",
+      "Lentes de sol california Premium bambu",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "4500325U",
+      "Cargador Meg-Gar 9mm 17T p/SigSauer P226",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "800416",
+      "Piola Multicolor 8mm 258mts. #66761108",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "740601",
+      "Remera ML Softline Fem Rosa P #144097-3",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "680084",
+      "N-Linterna C/RADIO S/BATERIA UGS MS 93595",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "900880",
+      "Resorte de Disparador 28N (Rojo) #1049",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900881",
+      "Resorte de Disparador 31N (Azul) #3724",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "840140",
+      "Medio Mundo Telesc. Circular Alu. Blanco 20#54CM",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900080",
+      "Foco p/Lint.Maglitep/Solitairex2 #LK3A001",
+      "Maglite",
+      0,
+      0.1
+    ],
+    [
+      "800410",
+      "Piola Marina 8,0mm-5/16\"x360m #6678108",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830243",
+      "Hilo Snake Magnum 0.30mm 600M",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "621320",
+      "Anzuelo P/Boga no:16 x 7 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "940178",
+      "Encendedor Doberman - Mech Spark Laberinto Negro",
+      "Doberman",
+      0,
+      0.2
+    ],
+    [
+      "621443",
+      "Anzuelo Mustad caja de 25pcs 2/0",
+      "Mustad",
+      0,
+      0.1
+    ],
+    [
+      "840441",
+      "Medio Mundo Chico #Y-441",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "920250",
+      "N-SEGURO DE GOMAS P/Armas-Chico-",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "680439",
+      "Linterna bailong kf387",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110232",
+      "Canillera Universal C03",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "550220",
+      "Cepillo de bronce 16 Escop.  #91989/41989",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "710715",
+      "N-Hoppy Hydrapak Compacto SF750",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "730345",
+      "REMERA ABU GARCIA FOR LIFE #1368775 NEGRO -M",
+      "Abu Garcia",
+      0,
+      0.2
+    ],
+    [
+      "730344",
+      "REMERA ABU GARCIA FOR LIFE #1368776 NEGRO -L",
+      "Abu Garcia",
+      0,
+      0.1
+    ],
+    [
+      "680690",
+      "Linterna Montante tactical tec. y caja",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "200190",
+      "Cerrojo blow Back completo para Kit Kpos",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "962005",
+      "Kit de reparo Rifle Airsoft ASG 6mm DLV BT5 A5 Full Auto c/Acc#17274",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "920141",
+      "Exhibidor  KONUS PVC para  mira telescopica #2966",
+      "Konus",
+      0,
+      0.1
+    ],
+    [
+      "160095",
+      "BASTON DE DEFENSA #NS-021",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "800403",
+      "Piola Marina 16mm-5/8\"x115m #6678116",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "260850",
+      "Binoculares Coleman 10x25 #16458 Salon",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "830351",
+      "Hilo Snake Mult. 4X Motion 0.50MM 150M",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "940123",
+      "Encendedor - 207 Reg.StreetSpiderAndWeb#207.CI400",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900935",
+      "Interruptor p/Pistola Tanfoglio #PR007",
+      "Tanfoglio",
+      0,
+      0.1
+    ],
+    [
+      "AVE7000036UC",
+      "Escopeta Mossberg 12 500",
+      "Mossberg",
+      0,
+      0.1
+    ],
+    [
+      "100062",
+      "Anillo porta correa Topping #S-0712",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620231",
+      "Destorcedor engante x624 N°3",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "921063",
+      "Resorte y Limpador UMAREX p/Pistola de Goma T4E TPMT1",
+      "Umarex",
+      0,
+      0.1
+    ],
+    [
+      "REP900862",
+      "Repuesto -  Cilindro Ret. c/aros Esc. Armed 12\"",
+      "Armed",
+      0,
+      0.1
+    ],
+    [
+      "710987",
+      "CHALECO CAZA  BEIGE XL",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110096",
+      "N-Revolvera de Muslo #516",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610579",
+      "Caña de Pesca Lubina X 2 tramos #LUX-S562M",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "610216",
+      "Caña Marine Sport Lubina #C531M",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621377",
+      "Anzuelo Preparado Nylon Nro 8 x 25 unid",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620297",
+      "Anzuelo Marine Sport Nro. 12 100psc #4330",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "AVE610962",
+      "Caña Snake Mamba Neg 1.68m 15-30LB Medium Heavy Frontal MC-M#561",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "LIQ610962",
+      "Caña Snake Mamba Neg 1.68m 15-30LB Medium Heavy Frontal MC-M#561",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "260072",
+      "Binocular Sniper 20x21#TI2914",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "510036",
+      "Mochila Camel Back Ng. #SNP0276",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "115306",
+      "Pistolera p/asiento de cuero Marron",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621421",
+      "Anzuelo Marine Sport caja de 100pcs 6/0 #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621423",
+      "Anzuelo Marine Sport caja de 100pcs 4/0 #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "740702",
+      "Remera ML Cardume Teenager Masc Verde Jade 12años#144113-0",
+      "Cardume",
+      0,
+      0.1
+    ],
+    [
+      "AVE350050",
+      "Blanco c/ Reseteo Automatico #ASTLG",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP900791",
+      "Repuesto IMALENT Tapa Trasera de BG10",
+      "Imalent",
+      0,
+      0.1
+    ],
+    [
+      "920094",
+      "N-Exhibidor Gerber Sing#100023",
+      "Gerber",
+      0,
+      0.1
+    ],
+    [
+      "620226",
+      "Destorcedor engante x 582 N°11",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621321",
+      "Anzuelo C/Cabo no:10/0 x 3 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621426",
+      "Anzuelo Marine Sport caja de 100pcs 3/0 #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "680216",
+      "Linterna LED Táctica Cree Swat 9500w #7089",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "940150",
+      "Plaqueta Ident. c/Proy.Dorado #3610003",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621121",
+      "Gancho p/ Esmerillon Snake Negro Nickel SN2006 0 C/20",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "REP210003",
+      "N-Repuesto P/Dosific.Prensa Sq Dillon",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "901276",
+      "Adaptador p/Glock 43- 9x19 Herra. Mont.Univ.p/Alza Mira#33550",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "901275",
+      "Adaptador p/Glock 42- Herr.Mont.Univ. p/Alza de Mira#33549",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "711017",
+      "Chaleco Caza Beige Py #4XL",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610932",
+      "Caña Snake Python 1.83m 15-30LB Medium Heavy Molinete MC-C#601",
+      "Snake",
+      0,
+      0.2
+    ],
+    [
+      "920174",
+      "Inflador Electrico  HPM86007",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "920394",
+      "PILOTO+PANTALON Coleman Refor L#14983",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "620523",
+      "Anzuelo Marine Sports#12146 4/0 c/25",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "820282",
+      "Plomada ovalada N°5 x10Kg",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "210350",
+      "N-Shell Holder X23 Lyman",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "210353",
+      "N-Shell Holder X32 Lyman",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621410",
+      "Anzuelo Marine Sport caja de 100pcs 10 #4330",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "DES510130",
+      "Mochila NTK c/Bolsa de Agua Mod. HYDRA BACKPACK #202000",
+      "NTK",
+      0,
+      0.1
+    ],
+    [
+      "260735",
+      "Montante c/Picattiny Sniper #TI2232",
+      "Sin Marca",
+      0,
+      0.2
+    ],
+    [
+      "REP900844",
+      "Repuesto - Corredera ASG - G-17",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "REP900845",
+      "Repuesto - Corredera ASG - G-18C",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "730580",
+      "Medias 5.11 1 Par 10033-106 Dark Coyote S #200992-6",
+      "5.11",
+      0,
+      0.1
+    ],
+    [
+      "920421",
+      "N-Conjunto p/Lluvia OTTONI #P1016/V13 #L",
+      "Ottoni",
+      0,
+      0.1
+    ],
+    [
+      "621307",
+      "Tanza Semi Loca 0,60 x 5 Und.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110166",
+      "Pistolera Titan #M1911 C4-1911",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610233",
+      "Caña Marine Sports Evolution #MSC561M-10-20LB",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "140801",
+      "Cinturon Cartuchera 28/12 1810010 #G",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "160257",
+      "N-Cartuchos p/Taser #5360",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621393",
+      "Anzuelo Preparado Nylon Nro 4/0",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150131",
+      "N-Corta Pluma Camuf.Remington#19065",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "NSE610235",
+      "Caña Marine Sports Evolution#C561ML",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "110020",
+      "Pistolera p/9mm P17 Universal",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110209",
+      "Porta Cargador UNIV.SIMPLE PC01",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "670090",
+      "Remo de Regulables 1,24m Bestway 62015 283784-0",
+      "Bestway",
+      0,
+      0.1
+    ],
+    [
+      "REP920035",
+      "N-Repuesto p/Esc.Gatillo de Resp.p/Semi Auto ARMED",
+      "Armed",
+      0,
+      0.1
+    ],
+    [
+      "720138",
+      "Chaleco Verde Limon  extra grande",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830153",
+      "Hilo de Pesca Sumax CombatSuperEstroAma.0,35 7,5Kg -100M CBL997035",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "620271",
+      "Anzuelo Marine Sport Nro. 04 100pcs #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "110029",
+      "Pistolera p/ 380-7,65 P19",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "151516",
+      "Navaja Nieto Mod. Ninhja (Epoxi )#324-N",
+      "Miguel Nieto",
+      0,
+      0.1
+    ],
+    [
+      "760071",
+      "Parche Grupo sanguineo 0-",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "610082",
+      "N-Tablas Plasticas p/Lineas 203X54mm",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "250680",
+      "Montante Visor DHHR 9-11 MM ALTA1\"",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900705",
+      "Conector 1 de Gatillo p/Glock (2,5Kg) M17/19 #343",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "170122",
+      "Brujula Tipo Militar c/ estuche",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "400200",
+      "Gas GAMO CO2 12 Gr.",
+      "Gamo",
+      0,
+      0.1
+    ],
+    [
+      "900081",
+      "Foco p/Lint.Maglitep/AAx2 #LM3A001",
+      "Maglite",
+      0,
+      0.1
+    ],
+    [
+      "670117",
+      "Cocinita Portable MA100",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "941053",
+      "Red para pesca Hilo 0,25 AH 1,30  6Mts",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP900868",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout FDE L",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "REP900869",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout Verde L",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "621461",
+      "Anzuelo Marine Sport 100pcs 4/0 #1971N",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "620090",
+      "Anzuelos Nikel #10 c/50 Cart.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "940220",
+      "Mechas p/ Encendedor #2425",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "100061",
+      "Anillo porta correa Topping #S-5312",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "LIQ680652",
+      "Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
+      "Doberman LINTERNAS",
+      0,
+      0.1
+    ],
+    [
+      "REP900836",
+      "Repuesto - Riel p/Alza de Mira Rifle Mendoza-Puma - KRCU624",
+      "Mendoza",
+      0,
+      0.1
+    ],
+    [
+      "740710",
+      "Remera ML Cardume Teenager Masc Violeta 10años#144114-6",
+      "Cardume",
+      0,
+      0.1
+    ],
+    [
+      "110208",
+      "Porta Cargador UNIV.DOBLE PC02",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "100065",
+      "Anillo p/ Mira 25mm c/ abert. simple 6 tornillos#TI2146",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "720227",
+      "Codera y Rodillera Antimotín HX-02",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620524",
+      "Anzuelo Marine Sports Negro #12146 5/0 c/10",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "150284",
+      "Juego Asador 3P Tram. Trad. #22299/046",
+      "Tramontina",
+      0,
+      0.1
+    ],
+    [
+      "900883",
+      "Resorte de Gatillo p/Glock M 17/19 #350",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "920076",
+      "Forros p/Chalecos \"M\" c/Port..Radio",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900651",
+      "Muelle de Gatillo NY 2Nara.Tirador de Gatillo 5,0Kg #7412",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "180360",
+      "Prolongador 3mts Tramontina con ficha macho hembra #57418/270",
+      "Tramontina",
+      0,
+      0.1
+    ],
+    [
+      "840135",
+      "Medio Mundo Telesc. Triang. Alu. Nylon Rojo 11#54CM",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900704",
+      "Conector 8 (3,5Kg) Fino #33847 para GLOCK",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "110225",
+      "Funda p/Rifle c/Mira Ng. 1,10 - F06",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830346",
+      "Hilo Snake Mult. 4X Wild 0.60MM 150M",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "210337",
+      "N-Shell Holder Lee #7 No.90207",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830051",
+      "Hilo Sufix #0,40mmx150M",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "LIQ800175",
+      "Caja Pesca POLYMER Kit 5 Tapa Negra #4032",
+      "Polymer",
+      0,
+      0.1
+    ],
+    [
+      "REP900767",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout Negro R",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "621105",
+      "Sabiki Snake ZSD3 10 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "140460",
+      "Cinto de cuero para catucho",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621409",
+      "Anzuelo Marine Sport caja de 100pcs 8 #4330",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "REP900792",
+      "Repuesto IMALENT Tapa para Dm70",
+      "Imalent",
+      0,
+      0.1
+    ],
+    [
+      "350140",
+      "Blanco Adhesivo x unid B27 34925",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "REP900850",
+      "Repuesto - Tubo Cañon  ASG - G-17",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "REP900851",
+      "Repuesto - Tubo Cañon  ASG - G-18C",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "150506",
+      "NAVAJA T.BAY c/ Clips 4´´#2028",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "LIQ610964",
+      "Caña Snake Mamba Neg 1.40m 8-15LB Light Frontal MC-M#471 (copia)",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "901250",
+      "Cabeza de Cargador p/Glock M17/19 #1812",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "840136",
+      "Medio Mundo Telesc. Triang. Alu. Nylon Amarillo 11#45CM",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620218",
+      "Destorcedor marine sport BBS 100pcs 5",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "611260",
+      "Puntera p/Tanque de Combustible J / E",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150072",
+      "Cuchillo Ja P/Caza #839",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "200377",
+      "Grips Frontal p/Mossberg-SigSauer #HI2459",
+      "Mossberg",
+      0,
+      0.1
+    ],
+    [
+      "500820",
+      "Casquillos 223 Pack *250",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621104",
+      "Sabiki Snake ZSD3 08 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "115601",
+      "Esposera CERRADO E03",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "800310",
+      "Viveros Nylon Verde / Amarillo 50x50cm",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "760076",
+      "Parches Alemania",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "501310",
+      "Cartuchos GB 16 #7,5 28GR 25x20",
+      "GB",
+      0,
+      0.1
+    ],
+    [
+      "901265",
+      "Herramienta multifunción NTK Mod. MINITEK #320920",
+      "NTK",
+      0,
+      0.1
+    ],
+    [
+      "110751",
+      "Cartuchera FOBUS p/Beretta/Taurus -92",
+      "Fobus",
+      0,
+      0.1
+    ],
+    [
+      "680552",
+      "Linterna Caterpillar CT1200 175 Lu Pocket s/blis",
+      "Caterpillar",
+      0,
+      0.1
+    ],
+    [
+      "621106",
+      "Sabiki Snake ZSD3 12 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "REP900863",
+      "Repuesto - Cilindro Ret. c/aros Esc. Armed 20\"",
+      "Armed",
+      0,
+      0.1
+    ],
+    [
+      "180350",
+      "Triple Tramontina #57418/920",
+      "Tramontina",
+      0,
+      0.1
+    ],
+    [
+      "REP920023",
+      "N-REPUESTOp/Rifle Mendoza ELEVADOR",
+      "Mendoza",
+      0,
+      0.1
+    ],
+    [
+      "AVE610901",
+      "Caña Snake Coral 1.54m 8-17LB Medium Light Molinete MC-C #511",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "REP900768",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout FDE R",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "REP900769",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout Verde R",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "REP900867",
+      "Repuesto Fab Defense picatinny frontal KPOS Scout Negro L",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "210440",
+      "N-Top Punch G Only #226",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "140104",
+      "Porta Cartucho Cal.12 - cuero",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "140252",
+      "Cinto para cartucho cal 16",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "820275",
+      "Plomada Redonda N°8 x10kg",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "LIQ610902",
+      "Caña Snake Coral 1.60m 10-20LB Medium Molinete MC-C #531",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "820205",
+      "Balde p/ Carnada #HW-L005",
+      "Ottoni",
+      0,
+      0.1
+    ],
+    [
+      "110460",
+      "N-Porta Cargador Triple 9mm#50613",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620541",
+      "Anzuelo Sumax Soft Bait BC- 2/0-25",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "620298",
+      "Anzuelo Marine Sport Nro. 12 100pcs  #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "620262",
+      "Anzuelo Mustad Preparado #4/0  92623",
+      "Mustad",
+      0,
+      0.1
+    ],
+    [
+      "140250",
+      "Cinto para cartucho cal 28",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830432",
+      "Hilo de Pesca Raiglon 0.330 mm 100 metros blanco",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "621308",
+      "Tanza corrediza 0,50 x 5 Und.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150612",
+      "Corta Pluma Smith n Wesson 3\" Plain Reflective Blade CKLPR",
+      "Smith & Wesson",
+      0,
+      0.1
+    ],
+    [
+      "670103",
+      "Remo Intex Doble #69627 Negro",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830157",
+      "Hilo de Pesca C.A.M.0,50mm100M#ADV4-050",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "110720",
+      "Cartuchera #81101Sz10Michngr",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "750",
+      "N-Cartuc. Negra P/Nunchaku",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "611070",
+      "Conector p/Manguera Combustible",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621316",
+      "Tanza Rapida 0,50 x 5 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "620230",
+      "Destorcedor engante x 369 N°1",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "501209",
+      "Cartuchos GB 12 12P BUCKSHOT 98g 250/10",
+      "GB",
+      0,
+      0.1
+    ],
+    [
+      "900383",
+      "Baterias p/Linterna IMALENT DM70 5000mAh 3.6 V USB",
+      "Imalent",
+      0,
+      0.1
+    ],
+    [
+      "900650",
+      "Muelle de Gatillo NY 1Verd.Tirador de Gatillo 4,5Kg #7405",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "621107",
+      "Sabiki Snake ZSD3 14 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "920249",
+      "N-Rabiza Retracil Anti-Perdida p/Pistola RAB-01",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "830440",
+      "Hilo Platinium XT Ottoni 0.30mm 100 metros",
+      "Ottoni",
+      0,
+      0.1
+    ],
+    [
+      "920392",
+      "PILOTO+PANTALON Coleman Leve L#C00186",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "140200",
+      "Correa completa para Kit Kpos",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "300140",
+      "Maletin de tela con correa para Kit Kpos",
+      "Fab Defense",
+      0,
+      0.1
+    ],
+    [
+      "900621",
+      "Vaina de Cuero para Cuchillo Nieto",
+      "Miguel Nieto",
+      0,
+      0.1
+    ],
+    [
+      "621441",
+      "Anzuelo exori maruseigo 100pcs 10",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621445",
+      "Anzuelo Marine Sports wide gap 100pcs 1/0",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621447",
+      "Anzuelo Marine Sports wide gap 100pcs 2",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621401",
+      "Anzuelo Marine Sport caja de 50pcs 9/0 #4330",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "770950",
+      "Guantes Jack Safety G40 Poliuretano T9",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621100",
+      "Sabiki Snake Lambari 578-SLSC-4",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "620220R",
+      "Destorcedor marine sport BBS 98pcs 5/0",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "621324",
+      "Anzuelo C/Cabo  no:7/0 x 3 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "611100",
+      "Oxigenador 12V Azul #MS-SAP",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "900886",
+      "Resorte de Cargador Glock M19 Calib 9x19 #33509",
+      "Glock",
+      0,
+      0.1
+    ],
+    [
+      "620134",
+      "Empate chico",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "400357",
+      "N-Balines GAMO 4,5 PBA BULLET x125",
+      "Gamo",
+      0,
+      0.1
+    ],
+    [
+      "720081",
+      "PANTALON CAMU VERDE #M",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "110347",
+      "Sobaquera p/ 38,357 c/ Balera",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "400315",
+      "BALINES Marksman177#1297 Laser 4,5mm*150",
+      "Crosman",
+      0,
+      0.1
+    ],
+    [
+      "321070",
+      "Cargador p/ Pist.AC ASG 4,5 CO2 Bersa BP9CC GNB #17300",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "115000",
+      "Porta Cargador Simple #88301 Ngr",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "921140",
+      "Maso de Goma Coleman #2000025211",
+      "Coleman",
+      0,
+      0.1
+    ],
+    [
+      "321065",
+      "Cargador Neg. Steyr M9-A1 4,5 #16088",
+      "ASG",
+      0,
+      0.1
+    ],
+    [
+      "620299",
+      "Anzuelo Marine Sport Nro. 1/0 100pcs #12147",
+      "Marine Sports",
+      0,
+      0.1
+    ],
+    [
+      "400214",
+      "Balines APOLO 4,5mm Cónico 0,45gr. Caja Plast*500x60",
+      "Apolo",
+      0,
+      0.1
+    ],
+    [
+      "160296",
+      "Linterna Electrica Police 1.000KV #1101",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621318",
+      "Anzuelo P/Boga no:12 x 7 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "901255",
+      "Base de Cargador Glock M17/19 Calib 9x19 #1693",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "611340",
+      "Tubo de Succion c/Valvula p/Tanque/Comb.Fijo de Metal#U17084",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "940179",
+      "Encendedor Doberman - Mech Spark Revolver Sombra Blanco",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "830340",
+      "Hilo Snake Mult. 8X Colossus 0.45MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830242",
+      "Hilo Snake Magnum 0.28mm 600M",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "680035",
+      "N-Linterna BALIZA #1501 p/ 6 PiMed.c/En.12 V.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "740220",
+      "N-Porta Cubierto p/Camping Negro #PC04",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621471",
+      "Anzuelo Marine Sports wide gap 100pcs N°1",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621472",
+      "Anzuelo Marine Sport 100pcs N°7/0",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "110400",
+      "Revolvera p/38 3' Barracuda R12",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620525",
+      "Anzuelo Marine Sports#12146 6/0 c/10",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "110137",
+      "Riñonera c/TERMITO c/PICO #1030",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "170146",
+      "Alicate Rapala RCPC6BX 16,5CM S/C",
+      "Rapala",
+      0,
+      0
+    ],
+    [
+      "730463",
+      "Remera Mascara Ng. 1110099 #GG",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610583",
+      "Caña de Pesca Potenza 2 Tramos #S502M 1.52m 8-17LB",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "830240",
+      "Hilo Snake Magnum 0.23mm 600M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621124",
+      "Gancho p/ Esmerillon Snake Negro Nickel 2006 2 C/18",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "830241",
+      "Hilo Snake Magnum 0.26mm 600M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "900702",
+      "Conector 3 (3,5Kg) #735 para GLOCK",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "610470",
+      "N-Caña Century Telescopica Princesa 20LBS#SPI-2104",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "260050",
+      "N-Monocular #1040",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "501270",
+      "Cartuchos GB 16 #5 28gr. *25 X250",
+      "GB",
+      0,
+      0
+    ],
+    [
+      "110231",
+      "Funda p/Cadera 9mm Q04",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621110",
+      "Sabiki Snake ZSD3 20 C/ Gancho",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "REP900775",
+      "Repuestos TRUGLO  de Fibra Optica Pistolas 1.5mm x 5 unid #TG05C",
+      "Imalent",
+      0,
+      0.1
+    ],
+    [
+      "REP900777",
+      "Repuesto IMALENT DM 21 T Cuerpo con tapa y boton de Encendido",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "620110",
+      "Tanza c/Anzuelo 1/0 -3/0-5/0 (30piezas)#WL70008",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "112000",
+      "Estuches con cables IMALENT para DM70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "501602",
+      "Cartuchos Rio  36-35 Breneke",
+      "Rio",
+      0,
+      0
+    ],
+    [
+      "621465",
+      "Anzuelo Marine Sport 100pcs 5/0 #1971N",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "900410",
+      "PILA COMUN EVEREADY.AA x4 (DISP)",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "680085",
+      "Luz para Nevera Portatil Coleman ·2000027455",
+      "Coleman",
+      0,
+      0
+    ],
+    [
+      "621109",
+      "Sabiki Snake ZSD3 18 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "310010",
+      "N-Faro Manual 12Volt. M:TL11736",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "850008",
+      "Reel Frontal Marine Sport Prisma 2000 F. T.",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "904100",
+      "Boligrafos NTK Mod. AK PEN Exhibidor c/50 #901510",
+      "NTK",
+      0,
+      0.1
+    ],
+    [
+      "830150",
+      "Hilo de Pesca CombatSuperEstroAma.0,23 4,5g -100M CBL99023",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "962000",
+      "Kit de reparo Escopeta Airsoft ASG 6mm Franchi Tac c/accesorios #15913",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "710009",
+      "Termo AguaCalienteD-250 1T.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "160305",
+      "N-Alarma Sonica A Pila #80152",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "840242",
+      "Canasta para carnada Ottoni #8",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "610546",
+      "Caña potenza 10 a 20 libras",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621323",
+      "Anzuelo C/Cabo No:8/0 x 3 Und",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "150138",
+      "NAVAJA c/Estuche#1733",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900794",
+      "Repuesto Tapa trasera para DN70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "LIQ800075",
+      "LQN - Caja p/Pesca REPLAST MAXI BOX 19\" #5003",
+      "Replast",
+      0,
+      0
+    ],
+    [
+      "900822",
+      "N-Valvula p/Rifle AC corto Mod. Antig #11078",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "730570",
+      "Remera Sniper Ng 1110085 #P",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "720463",
+      "Kepi MARINE Elementos #7460",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "REP920032",
+      "N-Repuesto p/Esc.Aguja del Percutor ARMED Semiauto",
+      "Armed",
+      0,
+      0
+    ],
+    [
+      "621302",
+      "Tanza loca 1 anz 0,60 x 6 Und.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "920229",
+      "Silla de Pesca Ottoni Camuflada #ST121B",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "620718",
+      "Carnada Arf.CenturyAgressol. 130mm45g.#130L17",
+      "Sumax",
+      0,
+      0.1
+    ],
+    [
+      "900662",
+      "Boton Extendido, Extrator de Carg. p/Pist. 9x19 #1981",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "833230",
+      "Hilo Araty 0.40mm 100 metros colorido",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "730461",
+      "Remera Mascara Ng. 1110099 #M",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "210345",
+      "N-Shell Holder Lee #R11 No.90528",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "270660",
+      "Cuchillo Fab Defense de Polímero #LO",
+      "Fab Defense",
+      0,
+      0
+    ],
+    [
+      "621311",
+      "Tanza p/Surubi 0,80 x 4 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830329",
+      "Hilo Snake Mult. 4X Wild 0.50MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "730404",
+      "Remera Airsofl Like Blanco 1110196 #XGG",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "730450",
+      "Remera Evolucion Airsoft Gris 1110191 #P",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "820286",
+      "Plomada ovalada N°9 x10Kg",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "820280",
+      "Plomada ovalada N°3 x10Kg",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "820283",
+      "Plomada ovalada N°6 x10Kg",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110224V",
+      "N-Funda para Escop/Rifle 1,00cm  Verde",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900224",
+      "N-Repuesto -Maglite Resorte p/D#109401",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "621011",
+      "Esmerillon Snake Negro Nickel 1/0 c/8 NS-1901",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "550153",
+      "Equipo Limp. 36(410) Escp. #96311",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620267",
+      "Anzuelo Mustad Preparado #7/0  92259",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "840241",
+      "Canasta para carnada Ottoni #12",
+      "Ottoni",
+      0,
+      0.1
+    ],
+    [
+      "170272",
+      "N-Candado Yale 20mm #Y11020",
+      "Otros",
+      0,
+      0
+    ],
+    [
+      "830084",
+      "Hilo de Pesca Super Strong #0,45mmx100M#7.0",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "621463",
+      "Anzuelo Marine Sport 100pcs 9/0 #1971N",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "941070",
+      "Cordon Elastico #720003",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "720565",
+      "Kepi Daiwa Negro",
+      "Daiwa",
+      0,
+      0
+    ],
+    [
+      "150054",
+      "Machete Corneta",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "619299",
+      "Quita Anzuelo SUMAX #HR-M",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "110403",
+      "Revolvera 38 c/ balera",
+      "Tanfoglio",
+      0,
+      0.1
+    ],
+    [
+      "621309",
+      "Tanza corrediza 0,60 x 5 Und.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "621114",
+      "Sabiki Snake ZSD6 10 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "151150",
+      "Cubierto Art. Polimero Ng. #2660002",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "751004",
+      "Set de varillas para carpas NTK PANDA 6 #654535",
+      "NTK",
+      0,
+      0
+    ],
+    [
+      "110258",
+      "Pistolera Universal c/ Porta Cargador Doble",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900460",
+      "FOQ.p/LINT.EVER.ROS.2E-2,5V Nº1161",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610591",
+      "Caña Thunder Azul 2 tramos 6-12lb #TD-56SC",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621429",
+      "Anzuelo Marine Sport caja de 100pcs N°2/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "REP900223",
+      "Repuesto - Maglite Switch p/D#109399",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "DES440220",
+      "Lente Táctico Crosman #SAG01 (copia)",
+      "Crosman",
+      0,
+      0
+    ],
+    [
+      "621464",
+      "Anzuelo Marine Sport 100pcs 3/0 #1971N",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "920418",
+      "Conjunto de capa de lluvia azul maruri XXXL",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "310033",
+      "Faro Minero TL009",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "152250",
+      "Corta Pluma Lujo en Caja #AH3348",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830444",
+      "Hilo Platinium XT Ottoni 0.90mm 100 metros",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "920705",
+      "Inflador de Mano 48cmm Bestway #62030",
+      "Bestway",
+      0,
+      0
+    ],
+    [
+      "620544",
+      "Anzuelo Sumax Soft Bait BC- 5/0-25",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "901001",
+      "Corredera p/ Pistola Airsoft ASG 6mm CO2 Sport106 GNB #15524",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "901005",
+      "Corredera p/ Pist.AC ASG 4,5 CO2 Bersa BP9CC GNB #17300",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "901010",
+      "Corredera p/ Pistola AC ASG 4,5 CO2 Bersa BP9CC GBB #17301",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "800300",
+      "Viveros Nylon Rojo 50x50cm",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610950",
+      "Caña Snake Mustang SSM-180 1.80M Azul",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "680228",
+      "Linterna #JL15-9T DORADO",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920173",
+      "N-INFLADOR DE PIE #P103C",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "152057",
+      "Cuchillo Legumbres Century 3 #24000/003",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "LIQ680650",
+      "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USb",
+      "Doberman LINTERNAS",
+      0,
+      0
+    ],
+    [
+      "900991",
+      "Resorte de Aguja Xtreme Medium p/Pist.Tanfoglio#X028",
+      "Tanfoglio",
+      0,
+      0
+    ],
+    [
+      "501315",
+      "Cartuchos GB 16 #8 28GR 25x20",
+      "GB",
+      0,
+      0
+    ],
+    [
+      "152058",
+      "Cuchillo Moldeador 3 Century #24001/003",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "990060",
+      "Botella Deportiva de Aluminio Coleman 473ml #16355",
+      "Coleman",
+      0,
+      0
+    ],
+    [
+      "200320",
+      "Cacha para Pist.AC Crosman Phantom 4,5 CO2 #P10KT",
+      "Crosman",
+      0,
+      0
+    ],
+    [
+      "152150",
+      "Puñal #MT-0804",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621460",
+      "Anzuelo Marine Sport 100pcs 7/0 #1971N",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621314",
+      "Tanza Ojito 0,60 x 5 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "300156",
+      "Porta Fusil #YQS103 Kaki",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "151153",
+      "Conjunto Cubierto Campamento AZTEQ",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110401",
+      "Revolvera 38SPL-44 8´´ #R27",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "833231",
+      "Hilo Araty 0.80mm 100 metros colorido",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "901215",
+      "Embolo Depresor del Extrator p/Glock M17/19 #3449",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "REP900866",
+      "Repuesto Cargador p/Pist.AC Crosman Phantom 4,5 CO2#P10KT",
+      "Crosman",
+      0,
+      0
+    ],
+    [
+      "621112",
+      "Sabiki Snake ZSD6 06 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620092",
+      "Anzuelos Nikel #14 c/50 Cart.",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "921031",
+      "Guardamanos de Madera p/Esc Pajera Cal.12 BOITO #1390",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "210443",
+      "N-Top Punch G Only #421",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "921019",
+      "Choke BOITO Mod. Cilindrico cal 12 #33204",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "500865",
+      "Casquillos .10 Auto. Pack x 150",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621322",
+      "Anzuelo C/Cabo no: 9/0 x 3 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621103",
+      "Sabiki Snake ZSD3 06 C/ Gancho",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "830314",
+      "Hilo Snake Mult. 4X Motion 0.30MM 150M",
+      "Snake",
+      0,
+      0.1
+    ],
+    [
+      "800408",
+      "N-Piola Marina 5,0mm-3/16\"x330m #6678105",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830313",
+      "Hilo Snake Mult. 4X Motion 0.28MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621325",
+      "Anzuelo C/Cabo  no:6/0 x 3 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "LIQ800186",
+      "Caja Pesca POLYMER Premium 3 Bandejas Tapa Color #4045",
+      "Polymer",
+      0,
+      0
+    ],
+    [
+      "150330",
+      "Cuchillo Rapala 10cm Blanco #RSB4BX",
+      "Rapala",
+      0,
+      0
+    ],
+    [
+      "900379",
+      "Baterias p/Linterna IMALENT DM21T DM21TW 2600mAh 18650",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "760103",
+      "Mosqueton llavero 5.11 FDE #56597-134",
+      "5.11",
+      0,
+      0
+    ],
+    [
+      "151602",
+      "Navaja UMAREX EF102 #50976-1",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "833240",
+      "Hilo Laiglon 600m 43,5mm",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "621422R",
+      "Anzuelo Marine Sport caja de 119pcs 7/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "152100",
+      "Machete #70136",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620228",
+      "Destorcedor engante x 216 N°5/0",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110350",
+      "Sobaquera p/22 6´ S04",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "840225",
+      "Bichero de Metal c/Flot.#3510F Grande",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110203",
+      "Porta Cargador Doble P/9Mm 020",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "160082",
+      "Linterna Coleman Vara Luminosa Kids 1AAA #25912",
+      "Coleman",
+      0,
+      0
+    ],
+    [
+      "621102",
+      "Sabiki Snake Lambari 578-SLSC-6",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "400242",
+      "Balines Target 5.5mm",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "850474",
+      "Reel Frontal Sumax Legend #LG40A F.D.",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "830070",
+      "Hilo de Pesca Ottoni Ultra #0,50 mm x100M",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "610478",
+      "Caña Fiber Solid Century#TCF-18002*4,5a8",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "610406",
+      "CañaTelescopica Carbonix 2,3#ACA2305",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110406",
+      "Revolvera c/muslera 38 4\" indunaylon",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620522",
+      "Anzuelo Marine Sports#12146 3/0 c/25",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "350142",
+      "Blanco Adhesivo B24 7'34750",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "504998",
+      "Balas GOLDEN EAGLE cal 22LR Punta Cobreada 50x40 #1B222422",
+      "Golden Eagle",
+      0,
+      0
+    ],
+    [
+      "110573",
+      "Funda de cuero p/ .25",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110572",
+      "Funda de cuero p/765 o 380acp",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620023",
+      "Anzuelo Preparado Maruseigo #18 c/10",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830421",
+      "Hilo de Pesca Gyro 0.21mm 150 metros",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "150180",
+      "Cuchillo p/ Pesca OTTONI #F101 c/BRUJULA",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "621101",
+      "Sabiki Snake Lambari 578-SLSC-5",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "670113",
+      "Servilletas de Campamento Coleman Biodegradables",
+      "Coleman",
+      0,
+      0
+    ],
+    [
+      "620135",
+      "Empate con anzuelo",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "550023",
+      "Cepillo de Nylon cal. 16/20/28",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "140500",
+      "Cinto de Cuero Liso Marron #95 -033",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621310",
+      "Tanza p/Surubi 0,70 x 4 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900300",
+      "Repuesto p/ Linterna DOBERMAN Cuerpo y Tapa #680670",
+      "Doberman LINTERNAS",
+      0,
+      0
+    ],
+    [
+      "REP900301",
+      "Repuesto p/ Linterna DOBERMAN Tapa y Boton de Encendido #680665",
+      "Doberman LINTERNAS",
+      0,
+      0
+    ],
+    [
+      "830159",
+      "Hilo de Pesca C.A.M.0,20mm100M#ADV4-020",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "621420R",
+      "Anzuelo Marine Sport caja de 101pcs 8/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "140605",
+      "Cinto de Cuero Negro  #95 -045",
+      "Otros",
+      0,
+      0
+    ],
+    [
+      "140002V",
+      "Cinto P/Cartucho CAL.12 Verde -CP01",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "152303",
+      "Chaira Albainox Top Cutlery 30cm #21226",
+      "Albainox",
+      0,
+      0
+    ],
+    [
+      "200201",
+      "Perno Quick release de encastre delantero Kit Kpos",
+      "Fab Defense",
+      0,
+      0
+    ],
+    [
+      "200700",
+      "Encastre trasero p/Glock Kit Kpos #SG2-401",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "920408",
+      "Equipo de Lluvia  OR53P15 #L",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "140598",
+      "Cinto de Cuero Liso Negro #95",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "740220V",
+      "N-Porta Cubierto p/Camping Verde #PC04",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830204",
+      "Bobina de Hilo Combat Az.0,40m730m #CBL939",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "830334",
+      "Hilo Snake Mult. 8X Colossus 0.26MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "920163",
+      "Porta Tonfa Pp02 C/Argolla",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830335",
+      "Hilo Snake Mult. 8X Colossus 0.28MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "152153",
+      "Puñal Decorativa Grande #MT2567",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900330",
+      "PILA Rayovac-ZN/C-GDE-\"D\" x 24u(12)",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "140152",
+      "Correa P/Arma Larga c/Balera Negro -CP03",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900884",
+      "Resorte de Cargador Glock M17/19 Calib 9x19 #33510",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "621425R",
+      "Anzuelo Marine Sport caja de 48pcs 9/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620838",
+      "Carnada Rebel D7660 Deep Wee stream cra",
+      "Rebel",
+      0,
+      0
+    ],
+    [
+      "620839",
+      "Carnada Rebel D7665 Deep Wee nest robber",
+      "Rebel",
+      0,
+      0
+    ],
+    [
+      "REP900793",
+      "Repuesto IMALENT Malla de PVC P/BG10",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900795",
+      "Repuesto Cable sujetador y clip p/ Imalent DM70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "610005",
+      "Caña Tipo Bambu 4,0mts #4009",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "550210",
+      "N-Cepillo De Lana 44-45",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830337",
+      "Hilo Snake Mult. 8X Colossus 0.33MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "110078",
+      "Pistolera 9mm HK -P21 SR9 SR40 SR45",
+      "Sin Marca",
+      0,
+      0.1
+    ],
+    [
+      "900300",
+      "PILA Duracell Alcalina - Mediana Cx2",
+      "Duracell",
+      0,
+      0
+    ],
+    [
+      "140602",
+      "Cinto de Cuero Negro  #85 -045",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620490",
+      "Anzuelo Mustad 6/0 variado #92611 -6/0 x 5Unid",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "680805",
+      "Lampara 12 Led. Ottoni Recargable JL-XT01",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "621411",
+      "Anzuelo Mustad caja de 25pcs 3/0",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "400221",
+      "Balines APOLO 5,5mm Hollow Point 0,84gr. Carton*100x250",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "620123",
+      "Tanza Snake Negro Nickel 6´´ 40LB",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "110246",
+      "Pistolera p/9mm c/tapa indunaylon",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621108",
+      "Sabiki Snake ZSD3 16 C/ Gancho",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "140325",
+      "Porta Cartucho Cal.12 - cañamo M:519",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920195",
+      "Llavero Con Pluma Silver #Pk003",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "440130",
+      "N-Lente Para Tiro Transparente 03 IND.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "152078",
+      "Cuchillo Fileteador MARINE",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621115",
+      "Sabiki Snake ZSD6 12 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620122",
+      "Tanza Snake Negro Nickel 4´´ 20LB",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620215",
+      "Ball Bearing Swivel 15 piezas 01",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "980500",
+      "Monja  Bravo Ng. 550004",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900302",
+      "Repuesto p/ Linterna DOBERMAN Cable USB #680650",
+      "Doberman LINTERNAS",
+      0,
+      0
+    ],
+    [
+      "980502",
+      "Monja Lisa 550001",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900776",
+      "Repuesto IMALENT DM 70 Funda de seguridad",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "731113",
+      "Abridor verde c/abre latas",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900848",
+      "Repuesto - Guia y Resorte de Retroceso ASG - G-17",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "REP900849",
+      "Repuesto - Guia y Resorte de Retroceso ASG - G-18C",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "110008",
+      "Canillera P/635 C02",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "630032",
+      "Cabo de Acero Snake 200LB 10M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620535",
+      "Anzuelo Supe Maruseigo Blacknickel #24 c/15",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900784",
+      "Repuesto IMALENT Tapa Trasera de DM21T",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "830004",
+      "Boyas Blancas Nª3",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "260245",
+      "Soporte para luneta (para mira telescopica)",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830442",
+      "Hilo Platinium XT Ottoni 0.50mm 100 metros",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "400247",
+      "Balines crosman 4.5 pointed",
+      "Crosman",
+      0,
+      0
+    ],
+    [
+      "620133",
+      "Empate grande",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621408",
+      "Anzuelo Marine Sport caja de 100pcs 2/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621424",
+      "Anzuelo Marine Sport caja de 100pcs 5/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621123",
+      "Gancho p/ Esmerillon Snake Negro Nickel SN2006 1 C/20",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "REP900797",
+      "Repuesto Arnes de cabeza para HR70",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "LIQ800160",
+      "Caja Pesca POLYMER 1 Bandeja Tapa Negra #4048",
+      "Polymer",
+      0,
+      0
+    ],
+    [
+      "900664",
+      "Boton Extractor de Cargador p/Glock M19 #287",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "621402R",
+      "Anzuelo Marine Sport caja de 76pcs 8/0 #19715",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "110007",
+      "Canillera para calibre 38",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620059",
+      "Anzuelo Marine Sports Nickel size 8 x 5pcs",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "150010",
+      "Cuchillo c/Cabezadetigredorado#Ck050G",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620722",
+      "Carnada Arf.CenturyAgressol. 130mm45g.#130x50",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "621116",
+      "Sabiki Snake ZSD6 14 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620224R",
+      "Destorcedor engante 92pcs 9",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "150021",
+      "Cuchillo OsoColorBronMader#Hk990-1",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830247",
+      "Hilo Snake Magnum 0.47mm 600M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "900500",
+      "PILA MAXELL CR2032 3V",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110230",
+      "N-Funda p/Cadera Universal Q03",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "LIQ680670",
+      "LQN - Linterna DOBERMAN 2AA 3W #LP-8367",
+      "Doberman LINTERNAS",
+      0,
+      0
+    ],
+    [
+      "4500480",
+      "Cargador rapido Glock",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "310040",
+      "Faro Minero Recargable #LT2219",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110159",
+      "Revolvera 4' p/Pucara c/ Balera #R14/1",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900428",
+      "PILA COMUN EVEREADY D GDE x1",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110066",
+      "Pistolera P/ Glock c/Mira #P02/1",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "621400R",
+      "Anzuelo Marine Sport caja de 23pcs 12/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621404R",
+      "Anzuelo Marine Sport caja de 86pcs 6/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "100066",
+      "Anillo Porta Correa p/ Esc. Maverick",
+      "Maverick",
+      0,
+      0
+    ],
+    [
+      "550237",
+      "Cepillo 38 Tornado Brushes #1307",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "901285",
+      "Clip de Cinturon p/Glock #1449",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "150085",
+      "N-Sevillana Art.#K107",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621315",
+      "Tanza Rapida 0,40 x 5 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621313",
+      "Tanza Ojito 0,50 x 5 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "152154",
+      "Puñal #MT-0805",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621341",
+      "Anzuelo Worm 3/0 x 5 Und",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "900396",
+      "Bateria 3,7V Art. 14.500 3000MAH",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620526",
+      "Anzuelo Marine Sports#12146 7/0 c/10",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "140470",
+      "Cinto FOBUS #FOB-LBLT",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "900104",
+      "N-Foco p/Lint.Maglite p/6 PILAS LMXA601",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "115059",
+      "N-Llavero c/Tapa #112TF",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "150139",
+      "NAVAJA Mg.Ng.c/Clips 5´´ #1701",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110306",
+      "Funda IMALENT para DM 21T",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "870260",
+      "Parche VECTOR OPTICS Mod. #SCRP-L01",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "870261",
+      "Parche VECTOR OPTICS Mod. SCRP-V01",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "110019",
+      "Pistolera p/9mm P12 Multiple",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "150534",
+      "NAVAJA Mg Az Hoja Labrada#3374",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610941",
+      "Caña Telescopica Snake Prisma 4.50M Dive",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "900368",
+      "PILA Rayovac Alk-Bateria 9V",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110101",
+      "Revolvera p/ 38 4' R14Z p/Zurdo",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620545",
+      "Anzuelo Maruseigo Marine Sport Nro.10",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620245",
+      "Anzuelo Cristal Nro. 6",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "170127",
+      "Brujula Shilba",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "680445",
+      "Lampara auto 12Volts",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621446",
+      "Anzuelo Marine Sports wide gap 100pcs 3/0",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "610002",
+      "Caña Tipo Bambu 2,3mts #2305",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621450R",
+      "Anzuelo Marine Sport 58pcs 8/0 #1971S",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "110034",
+      "N-Revolvera Interna p/ 357 4' 011-Cuero",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "152450",
+      "Deshuesador c/Estuche Negro #12282",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621395",
+      "Anzuelo Preparado Nylon Nro 6/0 x 25 unid",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110080",
+      "Pistolera p/6,35 022",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900750",
+      "Tope de Resorte Anfibio, de la Aguja Persutora #3073",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "LIQ920225",
+      "AVE-Banquito 4 Patas #QF166 (copia)",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620218R",
+      "Destorcedor marine sport BBS 69pcs 5",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "921120",
+      "Kit de Cerrojo p/Esc. Pajera Cal. 12 BOITO #1400",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "621403R",
+      "Anzuelo Marine Sport caja de 55pcs 7/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620229",
+      "Destorcedor engante x 1 N°3/0",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620225R",
+      "Destorcedor engante 68pcs 7",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800191",
+      "Caja Organizadora de Pesca MARINE Mod. TACKLE BOX 250",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "LIQ920223",
+      "Banquito 3 Patas #QF161",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610980",
+      "Caña Telescopica Snake Toscana Slim 3604",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621300",
+      "Tanza Loca 0,60 x 5 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "942200",
+      "Brazalete Tactico Special Forces #YQS Hard Drope Kaki",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "833227",
+      "Hilo Araty 0.80mm 100 metros blanco",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "115057",
+      "N-Porta Llave #112",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "440170",
+      "Lente Protec. JACKSON Saf eye V10 Element CRL AF#A00069",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "440241",
+      "Antiparra Simple",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621401R",
+      "Anzuelo Marine Sport caja de 25pcs 9/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621394",
+      "Anzuelo Preparado Nylon Nro 5/0",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830268",
+      "Hilo Snake Skyline 0.28mm 300M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621407R",
+      "Anzuelo Marine Sport caja de 82pcs 3/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "150128",
+      "NAVAJA Mg VerdHoja Lab.c/Clips #3141",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620853",
+      "Carnada Big Game 85cm 451 8gr. PT Prismat",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "610939",
+      "Caña Telescopica Snake Prisma 3.60M Dive",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620115",
+      "Tanza Simple  x 5Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830015",
+      "Ottoni HY15F 10 piezas (multicolor) p/boya",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "620219R",
+      "Destorcedor marine sport BBS 37pcs 3/0",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620533",
+      "Anzuelo Super Maruseigo #20 c/25",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621301",
+      "Tanza Loca 0,50 x 5 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900787",
+      "Repuesto IMALENT Funda mod. DX80",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "150142",
+      "Corta Pluma  Nº1937 MANGO ROJO c/CLIP",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800405",
+      "Piola Marina 2,0mm x500m #6678102",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620653",
+      "Anzuelo Snake Chinu-Sure Negro #09 c/30",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "611254",
+      "PORTA LATITAS Coleman Reflect  #C00243",
+      "Coleman",
+      0,
+      0
+    ],
+    [
+      "621405R",
+      "Anzuelo Marine Sport caja de 56pcs 5/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621392",
+      "Anzuelo Preparado Nylon Nro 3/0",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900394",
+      "Bateria 9V Normal",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "110556",
+      "Funda Interna CAL 9mm#I10",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800400",
+      "Piola Marina 10mm-3/8\"x270m #6678110",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "770960",
+      "Guante blanco",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "150550",
+      "NAVAJA Mg Mad. Metal c/Clips #3371",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900778",
+      "Repuesto Linterna IMALENT DM21TW Funda de seguridad",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "621421R",
+      "Anzuelo Marine Sport caja de 52pcs 6/0 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "REP900000",
+      "FOQ.Repuestop/Linterna Univ.(Comun)",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920143",
+      "Exhibidor  KONUS PRO",
+      "Konus",
+      0,
+      0
+    ],
+    [
+      "621319",
+      "Anzuelo P/Boga no:14 x 7 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621335",
+      "Anzuelo 1971 Simple no: 6 x 10 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "610407",
+      "CañaTelescopica Carbonix 2,7#ACA2706",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900100",
+      "Foco p/Lint.Maglitep/AA#LM2A001",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "920117",
+      "Prendedor con dos atajador AD-010",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "748052",
+      "Parche UMAREX Mod. HDR #3.2158",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "830434",
+      "Hilo de Pesca Raiglon 0.310 mm 100 metros verde",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "620546",
+      "Anzuelo Maruseigo Marine Sport Nro.12",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621364",
+      "Anzuelo Marine Sport Nro. 10 #12146",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620560",
+      "Anzuelo encostado rigido Marine Sport #18",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620670",
+      "Anzuelo Snake Marus Sure Negro #16 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621440R",
+      "Anzuelo exori maruseigo 98pcs 20",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620285",
+      "Anzuelo Marine Sport Nro. 16 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621413",
+      "Anzuelo Marine Sport caja de 100pcs 10/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "150023",
+      "Cuchillo MangMaderac/Dorado#Hk20D",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830273",
+      "Hilo Snake Skyline 0.45mm 300M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "610003",
+      "Caña de Pesca Bambo Telescopica#2706",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "901290",
+      "Manual de Usuario Glock Ingles / Español #30887",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "REP900843",
+      "Repuesto - Accesorios ASG - G-18C",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "655052",
+      "N-Botecito Flotador",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "950350",
+      "N-Señuelo #Flm5998Sg 30",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800413",
+      "Piola Multicolor 4mm 360mts.#66761104",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800407",
+      "N-Piola Marina 4,0mm-5/32\"x510m #6678104",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900106",
+      "Foco p/Lint.Maglite p/6 PILAS LWSA601",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "550238",
+      "Cepillo 45 Tornado Brushes #1308",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "150571",
+      "Navaja tramontina",
+      "Tramontina",
+      0,
+      0
+    ],
+    [
+      "830002",
+      "Boyas Pera Plasticas x10 #30",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830151",
+      "Hilo de Pesca CombatSuperEstroAma.0,26 5Kg -100M CBL997026",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "730459",
+      "Remera FOBUS #FOB-TSH",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "110559",
+      "Display para miras telescopicas VECTOR OPTICS #SCDAS-RS01",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "110307",
+      "Funda IMALENT para DN70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "170348",
+      "Tubo de Gas Butano Max 227gr",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830270",
+      "Hilo Snake Skyline 0.35mm 300M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830431",
+      "Hilo de Pesca Raiglon 0.310 mm 100 metros blanco",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "620222R",
+      "Destorcedor marine sport BBS 53pcs 1",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "501575",
+      "Cartuchos GB 36-65 #1 11g*25 x250",
+      "GB",
+      0,
+      0
+    ],
+    [
+      "550228",
+      "N-Cepillo de bronce 25ACP KLEEN-BORE A-162",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "501379",
+      "Cartuchos GB 20 #5 28GR 25x250",
+      "GB",
+      0,
+      0
+    ],
+    [
+      "621406R",
+      "Anzuelo Marine Sport caja de 38pcs 4/0 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620494",
+      "Anzuelo Mustad 9/0 Dorado Surubi #92611-9/0 x 5Unid",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "621119",
+      "Sabiki Snake ZSD6 20 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621118",
+      "Sabiki Snake ZSD6 18 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620102",
+      "Tanza c/ Anzuelo Ottoni WL806 6\" 1/0 10 Piezas",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "830269",
+      "Hilo Snake Skyline 0.30mm 300M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830091",
+      "Hilo de Pesca Super Strong #0,50 mmx1000m SS-3100-915-050",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "620075",
+      "Anzuelo Nro 10/0 x10pcs",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620113",
+      "Tanza Bigote J.A. x 5Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP920030",
+      "N-Repuesto p/Esc. ARMED Bloque de Cierre Pajera / Semi",
+      "Armed",
+      0,
+      0
+    ],
+    [
+      "115152",
+      "Soporte para armas UMAREX bolsa de 10 unid. #3.1782",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "748050",
+      "Parche UMAREX Mod. UMAREX #3.2162",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "940210",
+      "Piedras p/Encendedor c/6 Und.#2406N",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "REP900222",
+      "Repuesto - Maglite Goma de Encendido#109391",
+      "Maglite",
+      0,
+      0
+    ],
+    [
+      "621470",
+      "Anzuelo Mustad caja de 25pcs 6/0 *92247",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "621305",
+      "Tanza Comun 1 anz 0,60 x 5 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830359",
+      "Hilo Astronhg Daiwa 0.23Mm 150M",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900801",
+      "Recuperador de Gatillo ASG #11370",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "920145",
+      "Exhibidor lateral Duracell",
+      "Duracell",
+      0,
+      0
+    ],
+    [
+      "621022",
+      "Esmerillon Snake Negro Nickel 7 c/20 NS-1901",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830363",
+      "Hilo de Pesca Araty 0,40m-9,1Kg",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620493",
+      "Anzuelo Mustad 8/0  Dorado Surubi #92611 -8/0 x 5Unid",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "900462",
+      "N-FOQ.p/LINT.EVER.ROS.3E-3,7V Nº1162",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621304",
+      "Tanza Comun 0,70 x 4 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620521",
+      "Anzuelo Marine Sports#12146 2/0 c/50",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620221R",
+      "Destorcedor marine sport BBS 39pcs 9",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "760077",
+      "Parches Estados Unidos",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "760078",
+      "Parches Paraguay",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620217R",
+      "Destorcedor marine sport BBS 25pcs 1/0",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "920265",
+      "N-Polichoke 12 Maver.Modifie",
+      "Maverick",
+      0,
+      0
+    ],
+    [
+      "748051",
+      "Parche UMAREX Mod. 1972 #3.2161",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "772020",
+      "Tapa Boca s/Metal c/Goma Rosa 8/M=7/ SM7502",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "800414",
+      "Piola Multicolor 5mm 250mts. #66761105",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620519",
+      "Anzuelo Chinu Marine Sport Nro. 03",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "731114",
+      "Abridor de botellas UMAREX Mod. HDR T4E #3.2199",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "620651",
+      "Anzuelo Snake Chinu-Sure Negro #05 c/50",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "630061",
+      "Cabo de aso inox 20 libras 10m marine sport",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621363",
+      "Anzuelo Marine Sport Nro. 08 #12146",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620283",
+      "Anzuelo Marine Sport Nro. 10 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620273",
+      "Anzuelo Marine Sport Nro. 10 #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "621336",
+      "Anzuelo 1971 Simple no: 8 x 10 Und",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "550267",
+      "Cepillo de bronze GSM-BWC para armas cortas 380, 38/357 9mm #41280",
+      "BWC",
+      0,
+      0
+    ],
+    [
+      "900501",
+      "PILA MAXELL CR2025 3V",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "351100",
+      "Adhesivo Glock #110070",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "620520",
+      "Anzuelo Marine Sports#12146 1/0 c/50",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "AVE830081",
+      "Hilo de Pesca Super Strong #0,30mmx100M",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "620655",
+      "Anzuelo Snake Chinu-Sure Negro #13 c/20",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620223R",
+      "Destorcedor engante 21pcs 5",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620674",
+      "Anzuelo Snake Maruseigo Negro #12 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "550259",
+      "Baqueta FOBUS #FOB-PRO",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "720710",
+      "Kepi VECTOR OPTICS Mod #SCCAP-01",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "840240",
+      "Canasta para carnada Ottoni #6",
+      "Ottoni",
+      0,
+      0
+    ],
+    [
+      "830005",
+      "Boyas Blancas Nª4",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "621117",
+      "Sabiki Snake ZSD6 16 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "920140",
+      "Exhibidor KONUS de mesa para 24 pares de anillas para rifles #2980",
+      "Konus",
+      0,
+      0
+    ],
+    [
+      "620410",
+      "Anzuelo Mustad #2/0*25 1665",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "630021",
+      "Cabo de acero p/Anzuelo #30LB",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920142",
+      "Exhibidor  KONUS F-30 para rifles de primer plano focal #2960",
+      "Konus",
+      0,
+      0
+    ],
+    [
+      "621120",
+      "Sabiki Snake ZSD6 22 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "170250",
+      "N-Candado #2203",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "971005",
+      "Catalogo ASG 4,5 #18871",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "620676",
+      "Anzuelo Snake Maruseigo Negro #14 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621111",
+      "Sabiki Snake ZSD3 22 C/ Gancho",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620536",
+      "Anzuelo Super Maruseigo Blacknickel #26 c/15",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900024",
+      "FOQ.p/LINT.EVER.PRE 4E-4 8V #1420",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620266",
+      "Anzuelo Mustad Preparado #6/0  92259",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "620268",
+      "Anzuelo Mustad Preparado #8/0  92259",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "621010",
+      "Esmerillon Snake Negro Nickel 1 c/10 NS-1901",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830020",
+      "Pescamil regulador p/boia e chumbada #6",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620686",
+      "Anzuelo Snake Maruseigo Niquel #15 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621409R",
+      "Anzuelo Marine Sport caja de 53pcs 8 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620986",
+      "Sabiki N°06 12LBS",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900053",
+      "N-Foco .p/Linterna Ever  p/3 Elementos Press #1405",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620539",
+      "Anzuelo Maruseigo Marine Sport Nro.14",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "850447",
+      "Alfombra de mesa VECTOR OPTICS 110X70cm #SCTC-02",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "620076",
+      "Anzuelo Nro 6 x10pcs",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620562",
+      "Anzuelo Marine Sports super maruseigo encostado N°16",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "500811",
+      "Casquillos .45 Pack *300",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920147",
+      "Signo de metal FOBUS #FOB-MSI",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "621427",
+      "Anzuelo Marine Sport #12147 06 50pcs",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "620679",
+      "Anzuelo Snake Maruseigo Negro #18 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "800151",
+      "Cascabel p/Caño 2x100 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "900503",
+      "PILA MAXELL ALKALINA LR44 1,5 V",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830033",
+      "Boia N 4",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "270689",
+      "Kepi FOBUS #FOB-HAT",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "712120",
+      "Taza FOBUS #FOB-BCUP",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "921062",
+      "Resorte de Uña Extractora p/Esc. Pajera Cal. 12 BOITO #15019",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "921086",
+      "Aguja de Tope de Cargador p/Esc. Pajera Cal. 12 BOITO #1405",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620677",
+      "Anzuelo Snake Maruseigo Negro #15 c/20.",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "749101",
+      "Alfombra para mesa UMAREX #3.2168",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "850408",
+      "Remera VECTOR OPTICS Tamaño G #SCTS-02-L",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "850409",
+      "Remera VECTOR OPTICS Tamaño G #BL-SCTS-03-L",
+      "Vector Optics",
+      0,
+      0
+    ],
+    [
+      "620483",
+      "Anzuelo Mustad 2 pata larga variado #92611 -2 x 5Unid",
+      "Mustad",
+      0,
+      0
+    ],
+    [
+      "REP900789",
+      "Repuesto IMALENT cable USB Mod.DM70-DM21-DT70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "800150",
+      "Cascabel p/Caño 1x100 Und.",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620184",
+      "Pateca Snake Nickel 08 c/100",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "760055",
+      "Parche ASG Mod. Ultrair",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760063",
+      "Parche ASG Mod. Black",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760064",
+      "Parche ASG mod. Desert",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760065",
+      "Parche ASG Mod Green",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "720552",
+      "Kepi ASG Mod. Camo",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "720553",
+      "Kepi ASG Mod. Multicam",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "621410R",
+      "Anzuelo Marine Sport caja de 23pcs 10 #4330",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "760054",
+      "Parche ASG Mod. Botella Blaster BB",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760062",
+      "Parche ASG Mod. Blue",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760053",
+      "Parche ASG Mod. Lapiz Labial #19971",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "760056",
+      "Parche ASG Mod. Ultimate motor",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "921061",
+      "Resorte de Aguja Percutora p/Esc.Pajera Cal. 12 BOITO #1401",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "921080",
+      "Tornillo del Ejector p/Esc.Pajera Cal. 12 BOITO #1399",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "620272",
+      "Anzuelo Marine Sports Nro.08  100pcs #12147",
+      "Marine Sports",
+      0,
+      0
+    ],
+    [
+      "136",
+      "Kabbalah,el poder de cambiarlo todo",
+      "SIN MARCA",
+      0,
+      0
+    ],
+    [
+      "904200",
+      "Boligrafo UMAREX #5.8119-1",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "760058",
+      "Parche ASG Mod. Denmark",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "620195",
+      "Galatea varios tamaños",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "510790",
+      "Mochila UMAREX Lima 35 Gris #3.9024",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "760057",
+      "Parche ASG Mod. Rosa",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "350153",
+      "Blanco p/Pellets de 14cm x 100 piezas #16928",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "920146",
+      "Exhibidor FOBUS #FOB-WCO",
+      "Fobus",
+      0,
+      0
+    ],
+    [
+      "904001",
+      "Banner UMAREX 147*87cm #8.1100",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "REP900780",
+      "Repuesto IMALENT Lente mod. DX80",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900781",
+      "Repuesto IMALENT Lente mod. MS12",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900782",
+      "Repuesto IMALENT Botón mod. RT70",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900783",
+      "Repuesto IMALENT Botón mod. DM21T",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900785",
+      "Repuesto IMALENT Anilla de agarre mod. DX80",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900786",
+      "Repuesto IMALENT Anilla de Goma  Mod. MS18",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900788",
+      "Repuesto IMALENT cable sujetador DX80",
+      "Imalent",
+      0,
+      0
+    ],
+    [
+      "REP900113",
+      "Repuesto Boito Bolt Acction M: Pump",
+      "Boito",
+      0,
+      0
+    ],
+    [
+      "720533",
+      "Kepi UMAREX #5.8401",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "620189",
+      "Pateca Snake Nickel 16 c/100",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620182",
+      "Pateca Snake Nickel 04 c/100",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "620233",
+      "Destorcedor N°3 BBS",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "100100",
+      "Sticker UMAREX 85 x 24 mm #8.1071",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "100101",
+      "Sticker UMAREX 160 x 35 mm # 8.1071.1",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "942101",
+      "Pulsera Apolo l Negra",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "900230",
+      "Kit de reparo cargador Polimero Multishot GR1000X",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "100102",
+      "Sticker UMAREX 240 x 50 mm # 8.1071.2",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "100103",
+      "Sticker UMAREX  Authorized Dealer #8.1140",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "748053",
+      "Parche UMAREX Mod. Glock 17 GEN5,SSW #3.2167",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "748054",
+      "Parche UMAREX Mod. T4E HDR Gen2 #3.2165",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "904201",
+      "Bolígrafo Apolo l  Negro",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "970057",
+      "Display UMAREX para T4E TR 50 Gen2 #8.0051",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "970056",
+      "Display UMAREX para T4E TP 50 Gen2 #8.0050",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "260375",
+      "Alza para Punto de mira AC/TSS",
+      "TSS",
+      0,
+      0
+    ],
+    [
+      "904210",
+      "Workmat UMAREX #3,2168",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "100104",
+      "Sticker UMAREX  Mod. Walther 85 x 24 mm #8.1070",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "100105",
+      "Sticker UMAREX  Mod. Walther 160 x 46,5 mm #8.1070.1",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "100106",
+      "Sticker UMAREX  Mod. Walther 240 x 69,5 mm #8.1070.2",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "720695",
+      "kepi Apolo l Negro",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "945000",
+      "Cordones Negro para Bota 6p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "945001",
+      "Cordones Negro para Bota 8p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "945002",
+      "Cordones Dessert para Bota 6p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "945003",
+      "Cordones Dessert para Bota 8p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "945004",
+      "Cordones Dessert Arena para Bota 6p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "945005",
+      "Cordones Dessert Arena para Bota 8p",
+      "Doberman BOTAS",
+      0,
+      0
+    ],
+    [
+      "900241",
+      "REPUESTO- TAPÓN DE GAS N#20  TRAUMATICA UMAREX",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "720534",
+      "Kepi UMAREX #8.1818",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "730061",
+      "Remera Apolo l Negra l Tamaño M",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "900891",
+      "Válvula con Deposito de CO2 UMAREX 16 Joules # 81.60.0123",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "944000",
+      "Plantilla ANTIGERM 36",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944001",
+      "Plantilla ANTIGERM 39",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944002",
+      "Plantilla ANTIGERM 40",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944003",
+      "Plantilla ANTIGERM 41",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944004",
+      "Plantilla ANTIGERM 42",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944005",
+      "Plantilla ANTIGERM 43",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944006",
+      "Plantilla ANTIGERM 44",
+      "1911",
+      0,
+      0
+    ],
+    [
+      "944007",
+      "Plantilla ANTIGERM 45",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944008",
+      "Plantilla ANTIGERM 46",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "944009",
+      "Plantilla ANTIGERM 47",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "900890",
+      "Válvula con Deposito de CO2 UMAREX 11 Joules # 2.4766.60.01",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "900240",
+      "REPUESTO- TAPÓN DE GAS N#8  TRAUMATICA UMAREX",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "REP920038",
+      "N-Repuesto p/Esc. ARMED Bloque de Cierre Pajera / Semi CAL 20",
+      "Armed",
+      0,
+      0
+    ],
+    [
+      "920151",
+      "Exhibidor Apolo l Metal l Negro",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "REP944010",
+      "Plantilla Antigerm Dóberman calce 38",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944011",
+      "Plantilla Antigerm Doberman calce 41 color marron",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944012",
+      "Plantilla Antigerm Doberman calce 42 color marron",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944013",
+      "Plantilla Antigerm Doberman calce 43 color marron",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944014",
+      "Plantilla Antigerm Doberman calce 45 color marron",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944015",
+      "Plantilla Antigerm Doberman Calce 39 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944016",
+      "Plantilla Antigerm Doberman Calce 40 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944017",
+      "Plantilla Antigerm Doberman Calce 41 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944018",
+      "Plantilla Antigerm Doberman Calce 42 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944019",
+      "Plantilla Antigerm Doberman Calce 43 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944020",
+      "Plantilla Antigerm Doberman Calce 44 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "REP944021",
+      "Plantilla Antigerm Doberman Calce 45 Color Negro",
+      "Doberman",
+      0,
+      0
+    ],
+    [
+      "200052",
+      "Fore Grip para Picatinny",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "260117U",
+      "Mira Mini Red Dot  SNIPER  1x 30EG #TI0568",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "261055",
+      "Puntero Laser p/pistola Picatiny",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "270151U",
+      "Culata Fab Defense Glock M19 #GLR-440",
+      "Fab Defense",
+      0,
+      0
+    ],
+    [
+      "270204U",
+      "Montante Linterna Fab Defense Glock #GIS",
+      "Fab Defense",
+      0,
+      0
+    ],
+    [
+      "300158",
+      "Porta accesorios de tela de 3 componentes",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "300221",
+      "Caja de arma corta simil cuero marron",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "4500435",
+      "Cargador extendido p/Glock M19 20T",
+      "Glock",
+      0,
+      0
+    ],
+    [
+      "620534",
+      "Anzuelo Supe Maruseigo Blacknickel #22 c/25",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830203",
+      "Bobina de Hilo Combat Az.0,30m1.250m #CBL939",
+      "Sumax",
+      0,
+      0
+    ],
+    [
+      "750561",
+      "Loneta 2x2 Azul #6960400",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "160101",
+      "Tonfa De Madera #TM01",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "321075",
+      "Cargador p/ Pistola AC ASG 4,5 CO2 Bersa BP9CC GBB #17301",
+      "ASG",
+      0,
+      0
+    ],
+    [
+      "621012",
+      "Esmerillon Snake Negro Nickel 2 c/12 NS-1901",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "621113",
+      "Sabiki Snake ZSD6 08 C/ Cebo",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830244",
+      "Hilo Snake Magnum 0.35mm 600M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "400219",
+      "Balines APOLO 4,5mm Hollow Point 0,65gr. Lata*250x48",
+      "Apolo",
+      0,
+      0
+    ],
+    [
+      "550266",
+      "Cepillo de bronze GSM-BWC para escopeta 12 #41270",
+      "BWC",
+      0,
+      0
+    ],
+    [
+      "830322",
+      "Hilo Snake Mult. 4X Wild 0.23MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "830326",
+      "Hilo Snake Mult. 4X Wild 0.35MM 150M",
+      "Snake",
+      0,
+      0
+    ],
+    [
+      "550116",
+      "Equipo Limp. 20/28 Escop.#96308",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "830038",
+      "Boia blanco largo",
+      "Sin Marca",
+      0,
+      0
+    ],
+    [
+      "940184",
+      "Cargador para Rifle de Aire Multitiro G1250",
+      "Doberman RIFLES",
+      0,
+      0
+    ],
+    [
+      "920055",
+      "Garra de Rotación de Tambor",
+      "SIN MARCA",
+      0,
+      0
+    ],
+    [
+      "110412",
+      "Revolvera Umarex T4E HDR .50",
+      "Umarex",
+      0,
+      0
+    ],
+    [
+      "550269",
+      "Cepillo de bronze GSM-BWC para armas cortas 44/11mm #41282",
+      "GSM",
+      0,
+      0
+    ]
+  ]
 };
