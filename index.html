@@ -150,7 +150,11 @@ section.plegada > *:not(.shead){display:none}
 .kpi.click{cursor:pointer; transition:border-color .15s, box-shadow .15s}
 .kpi.click:hover{border-color:var(--ink2); box-shadow:0 1px 0 var(--line)}
 .kpi.click:focus-visible{outline:2px solid var(--B); outline-offset:2px}
-.kpi .ver{display:block; font-size:11px; color:var(--B); margin-top:7px}
+.kpi .ver{
+  display:inline-block; font-size:11px; color:var(--B); margin-top:7px;
+  border-bottom:1px solid transparent; cursor:pointer;
+}
+.kpi .ver:hover{border-bottom-color:var(--B)}
 .slice{cursor:pointer}
 .slice:hover{opacity:.82}
 .legend li.click{cursor:pointer; border-radius:2px}
@@ -262,6 +266,7 @@ th.ord.desc::after{content:"▼"; font-size:8px; color:var(--ink)}
 th.sel:hover{color:var(--B); text-decoration:underline}
 th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
 td.dim{opacity:.32}
+tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:0}
 .tag{
   display:inline-flex; align-items:center; gap:6px; font-size:12px;
@@ -454,6 +459,7 @@ td.dim{opacity:.32}
           <div class="fgroup"><label class="flab" for="f-hasta">Hasta</label>
             <select id="f-hasta"></select></div>
           <div class="fgroup"><button class="clear" id="f-periodo-reset">período completo</button></div>
+          <div class="fgroup"><button class="clear" id="volver-marca" hidden>ver la marca completa</button></div>
           <div class="stamp" id="serie-resumen"></div>
         </div>
         <div id="evo-chart"></div>
@@ -507,6 +513,7 @@ td.dim{opacity:.32}
             <th class="ord" data-k="3">Costo de venta (Gs.)</th>
             <th class="ord" data-k="4">Stock actual (Gs.)</th>
             <th class="ord" data-k="5">Rotación (veces/año)</th>
+            <th></th>
           </tr></thead><tbody></tbody>
         </table></div>
       </div>
@@ -532,6 +539,9 @@ var CATS = DATOS.CATS;
 var STOCK = DATOS.STOCK;
 var ARTICULOS = DATOS.ARTICULOS || [];
 var ROT_ART = DATOS.ROT_ART || [];
+var SERIES_ART = DATOS.SERIES_ART || {};
+/* Cuando hay un artículo elegido, el gráfico muestra su serie y no la de la marca. */
+var articuloActivo = null;
 /* Depósitos cuyo stock existe pero no se puede vender. */
 var NO_COMERCIAL = DATOS.NO_COMERCIAL || [];
 var esNoComercial = function(d){ return NO_COMERCIAL.indexOf(d) >= 0; };
@@ -620,7 +630,7 @@ function totales(){
   STOCK.forEach(function(r){ if (pasa(r) && t[r.cat] !== undefined) t[r.cat] += r.v; });
   return t;
 }
-var valores = function(x){ return CATS.map(function(c){ return {v:x[c.k]||0, col:c.col, lab:c.lab}; }); };
+var valores = function(x){ return CATS.map(function(c){ return {v:x[c.k]||0, col:c.col, lab:c.lab, k:c.k}; }); };
 
 /* ---------------- gráficos ---------------- */
 var DEFS = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
@@ -959,20 +969,21 @@ function pintar(){
 
   /* Cada KPI abre el detalle de lo que está contando. */
   Array.prototype.forEach.call(document.querySelectorAll(".kpi.click"), function(el){
-    var ir = function(){
+    var ir = function(irAbajo){
       var d = el.dataset.filtro;
-      if (d === "todo")         f.cat = "*";
-      else if (d === "alcance") f.cat = "*";
-      else                      f.cat = d;
+      f.cat = (d === "todo" || d === "alcance") ? "*" : d;
+      registrar("cat");
       reflejarFiltros(); pintar(); sincronizarSerie();
-      if (d !== "todo" && d !== "alcance") abrirArticulos();
+      /* Solo baja a la lista si se tocó "ver artículos": el resto de la
+         tarjeta filtra y deja la vista donde está. */
+      if (irAbajo) abrirArticulos();
     };
     el.addEventListener("click", function(e){
       if (e.target.closest(".ayuda")) return;
-      ir();
+      ir(Boolean(e.target.closest(".ver")));
     });
     el.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ir(); }
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ir(false); }
     });
   });
 
@@ -994,8 +1005,8 @@ function pintar(){
       el.addEventListener("click", function(){
         var k = el.dataset.cat;
         f.cat = (f.cat === k) ? "*" : k;
+        registrar("cat");
         reflejarFiltros(); pintar(); sincronizarSerie();
-        if (f.cat !== "*") abrirArticulos();
       });
     });
 
@@ -1035,6 +1046,7 @@ function abrirArticulos(){
   var sec = document.getElementById("q-art").closest("section");
   sec.classList.remove("plegada");
   sec.querySelector(".shead").classList.remove("closed");
+  if (window.stkAcomodar) window.stkAcomodar();
   sec.scrollIntoView({ behavior:"smooth", block:"start" });
 }
 function etiquetaFiltro(){
@@ -1501,7 +1513,10 @@ function marcasConSerie(){
      acá aparecen solo las marcas de munición. */
   var visibles = {};
   STOCK.forEach(function(r){
-    if ((f.dep === "*" || r.dep === f.dep) && (f.tipo === "*" || r.tipo === f.tipo)) visibles[r.m] = true;
+    if (f.dep   !== "*" && r.dep  !== f.dep)   return;
+    if (f.tipo  !== "*" && r.tipo !== f.tipo)  return;
+    if (f.marca !== "*" && r.m    !== f.marca) return;
+    visibles[r.m] = true;
   });
   return Object.keys(SERIES)
     .filter(function(m){ return (SERIES[m]||[]).length && visibles[m]; })
@@ -1590,6 +1605,13 @@ function sincronizarSerie(){
     return;
   }
   if (f.marca !== "*" && lista.indexOf(f.marca) >= 0) serieActiva = f.marca;
+  if (articuloActivo && ROT_ART.every(function(a){
+        return (a[0] + "|" + a[1]) !== articuloActivo || a[2] !== serieActiva;
+      })) {
+    articuloActivo = null;
+  }
+  var volver = document.getElementById("volver-marca");
+  if (volver) volver.hidden = !articuloActivo;
   if (!serieActiva || lista.indexOf(serieActiva) < 0) serieActiva = lista[0];
 
   sel.innerHTML = lista.map(function(m){
@@ -1601,10 +1623,15 @@ function sincronizarSerie(){
 function evolucion(){
   var caja = document.getElementById("evo-chart");
   var resumen = document.getElementById("serie-resumen");
-  var d = serieActiva ? serieDe(serieActiva) : [];
+  var esArticulo = Boolean(articuloActivo && SERIES_ART[articuloActivo]);
+  var d = esArticulo
+    ? (SERIES_ART[articuloActivo] || []).slice(per.desde, per.hasta + 1)
+    : (serieActiva ? serieDe(serieActiva) : []);
   var etiquetasMes = mesesDe();
   if (d.length < 2) {
-    caja.innerHTML = '<div class="empty">Sin serie histórica para esta marca.</div>';
+    caja.innerHTML = '<div class="empty">' +
+      (esArticulo ? 'Sin serie histórica para este artículo.' : 'Sin serie histórica para esta marca.') +
+      '</div>';
     resumen.textContent = "";
     return;
   }
@@ -1659,6 +1686,7 @@ function evolucion(){
   var variacion = ini0 ? (ult - ini0) / ini0 * 100 : 0;
   var pico = Math.max.apply(null, d), piso = Math.min.apply(null, d);
   resumen.textContent =
+    (esArticulo ? articuloActivo.split("|")[1] + "   ·   " : "") +
     etiquetasMes[0] + " → " + etiquetasMes[etiquetasMes.length-1] + "   ·   " +
     gsM(ini0) + " → " + gsM(ult) +
     "  (" + (variacion >= 0 ? "+" : "") + variacion.toFixed(0) + "%)" +
@@ -1701,8 +1729,9 @@ function rotacion(){
        que parece bueno y no lo es. */
     var sinBase = r.prom < 5 || r.cmv < 5;
 
-    return '<tr data-marca="'+esc(r.m)+'" style="cursor:pointer" '+
-      'title="Ver los artículos de '+esc(r.m)+'"><td><b>'+esc(r.m)+'</b></td>'+
+    return '<tr data-marca="'+esc(r.m)+'" style="cursor:pointer"'+
+      (r.m === serieActiva ? ' class="sel-fila"' : '')+
+      ' title="Ver los artículos de '+esc(r.m)+'"><td><b>'+esc(r.m)+'</b></td>'+
       '<td class="num">'+gs(r.cmv)+'</td>'+
       '<td class="num">'+gs(r.prom)+'</td><td class="num">'+gs(r.act)+'</td>'+
       '<td class="num">'+(sinBase
@@ -1711,17 +1740,18 @@ function rotacion(){
         : '<span class="mono">'+r.rot.toFixed(2).replace(".",",")+'</span>')+'</td></tr>';
   }).join("");
 
-  /* Clic en la marca: filtra por ella y lleva a la lista de artículos. */
+  /* Clic en la marca: abre el detalle por artículo debajo, sin salir de acá. */
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
     tr.addEventListener("click", function(){
-      f.marca = tr.dataset.marca;
-      reflejarFiltros();
-      pintar(); sincronizarSerie();
-      irA(0);
-      var sec = document.getElementById("q-art").closest("section");
-      sec.classList.remove("plegada");
-      sec.querySelector(".shead").classList.remove("closed");
-      sec.scrollIntoView({ behavior:"smooth", block:"start" });
+      serieActiva = tr.dataset.marca;
+      var sel = document.getElementById("f-serie");
+      if (sel) sel.value = serieActiva;
+      evolucion(); rotacionArticulos();
+      var sec = document.getElementById("sec-rot-art");
+      if (!sec.hidden) {
+        if (window.stkAcomodar) window.stkAcomodar();
+        sec.scrollIntoView({ behavior:"smooth", block:"start" });
+      }
     });
   });
 }
@@ -1756,7 +1786,12 @@ function rotacionArticulos(){
 
   document.querySelector("#tbl-rot-art tbody").innerHTML = filas.map(function(a){
     var sinBase = a[4] < 1 && a[3] < 1;
-    return '<tr><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[0])+'</td>'+
+    var clave = a[0] + "|" + a[1];
+    var hayHist = Boolean(SERIES_ART[clave]);
+    return '<tr data-clave="'+esc(clave)+'"'+
+      (hayHist ? ' style="cursor:pointer" title="Ver su histórico"' : '')+
+      (clave === articuloActivo ? ' class="sel-fila"' : '')+
+      '><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[0])+'</td>'+
       '<td class="l">'+esc(a[1])+'</td>'+
       '<td class="num">'+gs(a[3])+'</td>'+
       '<td class="num">'+gs(a[4])+'</td>'+
@@ -1765,8 +1800,23 @@ function rotacionArticulos(){
           'title="Vendió y no le queda stock">sin stock</span>'
         : (sinBase
           ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
-          : '<span class="mono">'+a[5].toFixed(2).replace(".",",")+'</span>'))+'</td></tr>';
+          : '<span class="mono">'+a[5].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
+      '<td class="num" style="width:40px">'+(hayHist
+        ? '<span style="color:var(--B);font-size:11px">ver ↑</span>' : '')+'</td></tr>';
   }).join("");
+
+  /* Clic en un artículo: el gráfico de arriba pasa a mostrar su histórico. */
+  Array.prototype.forEach.call(
+    document.querySelectorAll("#tbl-rot-art tbody tr[data-clave]"), function(tr){
+      if (!SERIES_ART[tr.dataset.clave]) return;
+      tr.addEventListener("click", function(){
+        articuloActivo = (articuloActivo === tr.dataset.clave) ? null : tr.dataset.clave;
+        document.getElementById("volver-marca").hidden = !articuloActivo;
+        evolucion(); rotacionArticulos();
+        document.getElementById("evo-chart").closest("section")
+          .scrollIntoView({ behavior:"smooth", block:"start" });
+      });
+    });
 }
 
 /* ---------------- navegación ---------------- */
@@ -1845,10 +1895,18 @@ if (NO_COMERCIAL.length) {
   window.stkAcomodar = pedirAcomodar;
 })();
 
+document.getElementById("volver-marca").addEventListener("click", function(){
+  articuloActivo = null;
+  this.hidden = true;
+  evolucion(); rotacionArticulos();
+});
+
 armarFiltros();
 armarPeriodo();
 document.getElementById("f-serie").addEventListener("change", function(){
   serieActiva = this.value;
+  articuloActivo = null;
+  document.getElementById("volver-marca").hidden = true;
   evolucion(); rotacionArticulos();
 });
 pintar();
