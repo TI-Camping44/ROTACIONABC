@@ -37,28 +37,37 @@ body{
 .flag b{color:#D9B65C; font-weight:700}
 
 /* ---------- header ---------- */
-header.top{
-  background:var(--paper); border-bottom:1px solid var(--line);
+/* Encabezado fijo de tamaño constante.
+   No cambia de alto al scrollear: cualquier transformación obligaba a
+   recalcular posiciones y terminaba desincronizándose. Ocupa unos píxeles
+   más, pero se comporta igual siempre. */
+header.top{background:var(--paper)}
+/* Solo pestañas y filtros quedan fijos. El título y los datos del corte se
+   van con el scroll: dejarlos pegados comía media pantalla y no quedaba
+   lugar para el contenido, que es lo que se venía a mirar. */
+.fijo{
   position:sticky; top:0; z-index:50;
+  background:var(--paper); border-bottom:1px solid var(--line);
+  box-shadow:0 1px 4px rgba(18,22,26,.06);
 }
+.fijo .tabs{padding-top:8px}
+.fijo .barra{padding:6px 20px 7px}
+.fijo .mini-logo{
+  display:none; height:22px; width:auto; margin-right:10px; cursor:pointer;
+}
+.fijo.compacto .mini-logo{display:block}
+.tabs-fila{max-width:1260px; margin:0 auto; padding:0 20px; display:flex; align-items:flex-end}
+.tabs-fila .tabs{padding-left:0; padding-right:0; flex:1}
+/* Filtros y filtros activos van DENTRO del encabezado: se apilan solos y
+   no hace falta calcular alturas con JavaScript, que era la causa de que
+   quedaran descolocados hasta recargar la página. */
+.barra{max-width:1260px; margin:0 auto; padding:0 20px 8px}
+.barra .filters{border-radius:0 0 3px 3px}
 /* Al bajar, el encabezado se compacta para no comerse la pantalla. */
-header.top.min .ttl p,
-header.top.min .meta{display:none}
-header.top.min .top-in{padding-top:8px; padding-bottom:2px; align-items:center}
-header.top.min .ttl h1{font-size:17px; line-height:1.1}
-header.top.min .mark,
-header.top.min .mark img{height:30px}
-header.top.min .tabs{padding-top:6px; padding-bottom:0}
-header.top.min .tab{padding:7px 15px 6px; font-size:13.5px}
-header.top.min{box-shadow:0 2px 6px rgba(18,22,26,.08)}
-header.top .top-in,
-header.top .mark,
-header.top .mark img,
-header.top .ttl h1{transition:all .16s ease}
 
 /* Los filtros quedan pegados debajo del encabezado. */
-.filters{position:sticky; z-index:49; margin-top:-1px}
-.top-in{max-width:1260px; margin:0 auto; padding:18px 20px 0; display:flex; flex-wrap:wrap; gap:20px; align-items:flex-start}
+
+.top-in{max-width:1260px; margin:0 auto; padding:10px 20px 0; display:flex; flex-wrap:wrap; gap:18px; align-items:flex-start}
 .mark{
   height:46px; flex:0 0 auto; display:grid; place-items:center;
   cursor:pointer; transition:opacity .15s;
@@ -78,34 +87,40 @@ kbd{
 }
 .ttl{flex:1 1 340px}
 .ttl h1{
-  font-family:var(--disp); font-weight:700; font-size:30px; line-height:1.02;
+  font-family:var(--disp); font-weight:700; font-size:22px; line-height:1.06;
   margin:0; letter-spacing:-.01em; text-transform:uppercase;
 }
-.ttl p{margin:3px 0 0; color:var(--muted); font-size:12.5px}
-.meta{display:flex; gap:26px; flex-wrap:wrap; padding-top:4px}
+.ttl p{margin:2px 0 0; color:var(--muted); font-size:11.5px}
+.meta{display:flex; gap:20px; flex-wrap:wrap; padding-top:2px}
 .meta div{min-width:88px}
 .meta span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
-.meta strong{font-family:var(--mono); font-weight:500; font-size:13.5px}
+.meta strong{font-family:var(--mono); font-weight:500; font-size:12.5px}
 
 /* ---------- tabs ---------- */
-.tabs{max-width:1260px; margin:0 auto; padding:14px 20px 0; display:flex; gap:2px}
+.tabs{max-width:1260px; margin:0 auto; padding:10px 20px 0; display:flex; gap:2px}
 .tab{
   appearance:none; border:1px solid var(--line); border-bottom:none; background:#F4F6F6;
-  font-family:var(--disp); font-size:15px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
-  padding:9px 18px 8px; cursor:pointer; color:var(--muted); border-radius:3px 3px 0 0;
+  font-family:var(--disp); font-size:14px; font-weight:600; letter-spacing:.06em; text-transform:uppercase;
+  padding:7px 15px 6px; cursor:pointer; color:var(--muted); border-radius:3px 3px 0 0;
 }
 .tab[aria-selected="true"]{background:var(--paper); color:var(--ink); box-shadow:inset 0 3px 0 var(--ink)}
 .tab:focus-visible{outline:2px solid var(--B); outline-offset:2px}
 
 /* ---------- filtros ---------- */
 .filters{
-  background:var(--paper); border:1px solid var(--line); border-top:none;
-  padding:12px 16px; display:flex; gap:22px; flex-wrap:wrap; align-items:center;
+  background:none; border:none;
+  padding:0; display:flex; gap:8px; flex-wrap:wrap; align-items:center;
+  font-size:12px;
 }
-.activos{position:sticky; z-index:48; background:var(--bg); padding:8px 0 4px}
+.filters .fgroup{gap:6px}
+.filters select{padding:4px 7px; font-size:12px; max-width:170px}
+.filters .flab{font-size:9.5px; letter-spacing:.08em}
+.filters .chip.sm{font-size:11px; padding:3px 8px}
+
 .fgroup{display:flex; align-items:center; gap:8px}
 .flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 #f-serie{min-width:190px}
+.filters #f-marca{max-width:165px}
 select,input[type=date]{
   font-family:var(--mono); font-size:12.5px; padding:5px 8px; border:1px solid var(--line);
   background:#FAFBFB; border-radius:2px; color:var(--ink);
@@ -129,6 +144,7 @@ section{margin-top:22px}
 section.plegada > *:not(.shead){display:none}
 .scroll{max-height:520px; overflow-y:auto; overflow-x:auto}
 .scroll thead th{position:sticky; top:0; background:var(--paper); z-index:2; box-shadow:0 1px 0 var(--line)}
+section{scroll-margin-top:120px}
 .scroll{scroll-padding-top:0}
 .scroll table{border-collapse:separate; border-spacing:0}
 .scroll td{border-bottom:1px solid var(--line2)}
@@ -267,10 +283,12 @@ th.sel:hover{color:var(--B); text-decoration:underline}
 th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
 td.dim{opacity:.32}
 tr.sel-fila td{background:#F1F3F3; font-weight:600}
-.activos{display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin:0}
+.activos{display:flex; gap:5px; flex-wrap:wrap; align-items:center; margin:6px 0 0}
+.filters + .activos:empty{margin:0}
+.activos:empty{display:none}
 .tag{
   display:inline-flex; align-items:center; gap:6px; font-size:12px;
-  background:var(--ink); color:#fff; border-radius:20px; padding:3px 6px 3px 11px;
+  background:var(--ink); color:#fff; border-radius:20px; padding:2px 5px 2px 10px; font-size:11.5px;
 }
 .tag b{font-weight:600}
 .tag button{
@@ -316,29 +334,30 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
       <div><span>Marcas</span><strong id="nmar">—</strong></div>
     </div>
   </div>
-  <div class="tabs" role="tablist">
-    <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Parte 1 · Situación actual</button>
-    <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">Parte 2 · Histórico y rotación</button>
-  </div>
 </header>
 
-<div class="wrap">
-
+<div class="fijo" id="fijo">
+  <div class="tabs-fila">
+    <img src="LOGOC44.png" alt="Camping 44" class="mini-logo" id="mini-logo"
+         title="Volver al inicio y quitar todos los filtros" onerror="this.style.display='none'">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Parte 1 · Situación actual</button>
+      <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">Parte 2 · Histórico y rotación</button>
+    </div>
+  </div>
+  <div class="barra">
   <div class="filters">
-    <div class="fgroup"><label class="flab" for="f-dep">Depósito</label>
-      <select id="f-dep"></select></div>
-    <div class="sep"></div>
-    <div class="fgroup"><span class="flab">Tipo</span><div class="chips" id="f-tipo"></div></div>
-    <div class="sep"></div>
-    <div class="fgroup"><label class="flab" for="f-cat">Categoría</label>
-      <select id="f-cat"></select></div>
-    <div class="sep"></div>
-    <div class="fgroup"><label class="flab" for="f-marca">Marca</label>
-      <select id="f-marca"></select></div>
-    <div class="fgroup"><label class="flab" for="f-cal">Calibre</label>
-      <select id="f-cal"></select></div>
+    <select id="f-dep" aria-label="Depósito"></select>
+    <div class="chips" id="f-tipo"></div>
+    <select id="f-cat" aria-label="Categoría"></select>
+    <select id="f-marca" aria-label="Marca"></select>
+    <select id="f-cal" aria-label="Calibre"></select>
   </div>
   <div class="activos" id="f-activos"></div>
+  </div>
+</div>
+
+<div class="wrap">
 
   <div id="p1" role="tabpanel" aria-labelledby="t1">
     <section><div class="kpis" id="kpis"></div></section>
@@ -744,21 +763,21 @@ function actualizarOpciones(){
 function armarFiltros(){
   var deps = unicos("dep"), tipos = unicos("tipo"), marcas = unicos("m");
 
-  opciones(document.getElementById("f-dep"), deps, "Todos los depósitos");
-  opciones(document.getElementById("f-marca"), marcas, "Todas las marcas");
+  opciones(document.getElementById("f-dep"), deps, "Depósito: todos");
+  opciones(document.getElementById("f-marca"), marcas, "Marca: todas");
 
   /* Los calibres se ordenan por monto, no alfabéticamente: 9mm arriba. */
   var pesoCal = {};
   STOCK.forEach(function(r){ pesoCal[r.cal] = (pesoCal[r.cal]||0) + r.v; });
   var calibres = Object.keys(pesoCal).sort(function(a,b){ return pesoCal[b]-pesoCal[a]; });
-  opciones(document.getElementById("f-cal"), calibres, "Todos los calibres");
+  opciones(document.getElementById("f-cal"), calibres, "Calibre: todos");
   document.getElementById("f-cal").addEventListener("change", function(){ f.cal = this.value; registrar("cal"); pintar(); });
 
   var presentes = CATS.filter(function(c){
     return STOCK.some(function(r){ return r.cat === c.k; });
   });
   var selCat = document.getElementById("f-cat");
-  selCat.innerHTML = '<option value="*">Todas</option>' +
+  selCat.innerHTML = '<option value="*">Categoría: todas</option>' +
     presentes.map(function(c){ return '<option value="'+c.k+'">'+esc(c.lab)+'</option>'; }).join("");
 
   document.getElementById("f-tipo").innerHTML =
@@ -794,6 +813,25 @@ function armarFiltros(){
   }
 
   document.getElementById("ir-inicio").addEventListener("click", reiniciar);
+  var mini = document.getElementById("mini-logo");
+  if (mini) mini.addEventListener("click", reiniciar);
+
+  /* El mini logo aparece cuando el título ya salió de pantalla. */
+  (function(){
+    var fijo = document.getElementById("fijo");
+    var enc = document.querySelector("header.top");
+    var pendiente = false;
+    function revisar(){
+      pendiente = false;
+      fijo.classList.toggle("compacto", (window.scrollY || 0) > enc.offsetHeight);
+    }
+    window.addEventListener("scroll", function(){
+      if (pendiente) return;
+      pendiente = true;
+      requestAnimationFrame(revisar);
+    }, { passive:true });
+    revisar();
+  })();
   document.getElementById("ir-inicio").addEventListener("keydown", function(e){
     if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reiniciar(); }
   });
@@ -1858,67 +1896,7 @@ if (NO_COMERCIAL.length) {
     'peor que la real.</span>';
 }
 
-/* El encabezado se achica al bajar y los filtros lo siguen, así se puede
-   quitar un filtro o volver al inicio sin subir hasta arriba.
-
-   Las alturas se recalculan con ResizeObserver y no solo al scrollear: el
-   contenido cambia de alto al filtrar, al plegar secciones y al cambiar de
-   pestaña, y con un cálculo único los elementos fijos quedaban descolocados
-   hasta recargar la página. */
-(function(){
-  var enc = document.querySelector("header.top");
-  var filtros = document.querySelector(".filters");
-  var activos = document.getElementById("f-activos");
-  var pendiente = false;
-
-  function acomodar(){
-    pendiente = false;
-    var h = enc.offsetHeight;
-    filtros.style.top = h + "px";
-    activos.style.top = (h + filtros.offsetHeight) + "px";
-  }
-
-  /* Agrupa varias llamadas seguidas en un solo recálculo por cuadro. */
-  function pedirAcomodar(){
-    if (pendiente) return;
-    pendiente = true;
-    requestAnimationFrame(acomodar);
-  }
-
-  function alScrollear(){
-    var compacto = (window.scrollY || 0) > 90;
-    if (compacto !== enc.classList.contains("min")) {
-      enc.classList.toggle("min", compacto);
-      pedirAcomodar();
-    }
-  }
-
-  window.addEventListener("scroll", alScrollear, { passive:true });
-  window.addEventListener("resize", pedirAcomodar);
-
-  /* Cualquier cambio de alto en las barras fijas dispara el recálculo. */
-  if (window.ResizeObserver) {
-    var ro = new ResizeObserver(pedirAcomodar);
-    ro.observe(enc);
-    ro.observe(filtros);
-    ro.observe(activos);
-  } else {
-    setInterval(acomodar, 600);   /* respaldo para navegadores viejos */
-  }
-
-  /* Las fuentes cargan después y cambian las alturas. */
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(pedirAcomodar);
-  window.addEventListener("load", pedirAcomodar);
-
-  acomodar();
-  window.stkAcomodar = pedirAcomodar;
-})();
-
-document.getElementById("volver-marca").addEventListener("click", function(){
-  articuloActivo = null;
-  this.hidden = true;
-  evolucion(); rotacionArticulos();
-});
+window.stkAcomodar = function(){};
 
 armarFiltros();
 armarPeriodo();
