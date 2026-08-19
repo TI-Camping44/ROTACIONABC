@@ -519,19 +519,22 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
       <div class="card">
         <p class="formula" style="margin-top:0">
           <b>Cómo se calcula:</b>
-          <code>rotación = costo de venta 6 meses × 2 ÷ stock actual</code>.
+          <code>rotación = unidades vendidas 6 meses × 2 ÷ unidades en stock</code>.
+          Acá se mide en <b>unidades</b>, no en guaraníes: para un artículo concreto
+          es más directo de leer y no depende de si el costo está bien cargado.
           Odoo no guarda serie mensual por artículo, así que el denominador es el
           stock de hoy y no un promedio. Sirve para <b>comparar artículos entre sí
           dentro de la marca</b>; no tiene por qué coincidir con la rotación de la
-          tabla de arriba, que sí usa promedio.
+          tabla de arriba, que va en guaraníes y usa promedio.
+          Los montos en guaraníes de cada artículo se ven al pasar el mouse.
         </p>
         <div class="scroll"><table id="tbl-rot-art">
           <thead><tr>
             <th class="ord l" data-k="0">Referencia</th>
             <th class="ord l" data-k="1">Producto</th>
-            <th class="ord" data-k="3">Costo de venta (Gs.)</th>
-            <th class="ord" data-k="4">Stock actual (Gs.)</th>
-            <th class="ord" data-k="5">Rotación (veces/año)</th>
+            <th class="ord" data-k="5">Vendidas (unid.)</th>
+            <th class="ord" data-k="6">En stock (unid.)</th>
+            <th class="ord" data-k="7">Rotación (veces/año)</th>
             <th></th>
           </tr></thead><tbody></tbody>
         </table></div>
@@ -593,7 +596,7 @@ var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*" };
 var serieActiva = null;
 var orden_filtros = [];
 /* Orden de cada tabla: columna y sentido. */
-var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:3, asc:false},
+var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:5, asc:false},
               mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
 
 /** Ordena filas por una clave, con texto e números tratados distinto. */
@@ -1816,10 +1819,12 @@ function rotacionArticulos(){
     return;
   }
 
+  /* Para el artículo la rotación se mide en unidades, no en guaraníes: es
+     más directo de leer y no depende de si el costo está bien cargado. */
   var filas = ROT_ART.filter(function(a){ return a[2] === marca; })
     .map(function(a){
-      var venta = a[3], stock = a[4];
-      return [a[0], a[1], a[2], venta, stock, stock > 0 ? (venta * 2) / stock : 0];
+      var qv = a[5] || 0, qs = a[6] || 0;
+      return [a[0], a[1], a[2], a[3], a[4], qv, qs, qs > 0 ? (qv * 2) / qs : 0];
     });
 
   if (!filas.length) {
@@ -1835,14 +1840,14 @@ function rotacionArticulos(){
   filas = ordenar(filas, orden.rota.k, orden.rota.asc);
   marcarOrden("#tbl-rot-art", orden.rota);
 
-  var totalV = filas.reduce(function(t,a){ return t + a[3]; }, 0);
-  var totalS = filas.reduce(function(t,a){ return t + a[4]; }, 0);
+  var totalQV = filas.reduce(function(t,a){ return t + a[5]; }, 0);
+  var totalQS = filas.reduce(function(t,a){ return t + a[6]; }, 0);
   document.getElementById("nota-rot-art").textContent =
-    esc(marca) + " · " + fmt(filas.length) + " artículos · venta " + gsM(totalV) +
-    " · stock " + gsM(totalS);
+    esc(marca) + " · " + fmt(filas.length) + " artículos · " +
+    fmt(totalQV) + " unidades vendidas · " + fmt(totalQS) + " en stock";
 
   document.querySelector("#tbl-rot-art tbody").innerHTML = filas.map(function(a){
-    var sinBase = a[4] < 1 && a[3] < 1;
+    var sinBase = a[5] < 1 && a[6] < 1;
     var clave = a[0] + "|" + a[1];
     var hayHist = Boolean(SERIES_ART[clave]);
     return '<tr data-clave="'+esc(clave)+'"'+
@@ -1850,14 +1855,14 @@ function rotacionArticulos(){
       (clave === articuloActivo ? ' class="sel-fila"' : '')+
       '><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[0])+'</td>'+
       '<td class="l">'+esc(a[1])+'</td>'+
-      '<td class="num">'+gs(a[3])+'</td>'+
-      '<td class="num">'+gs(a[4])+'</td>'+
-      '<td class="num">'+(a[4] <= 0
+      '<td class="num" title="Costo de venta: '+gs(a[3])+' Gs.">'+fmt(a[5])+'</td>'+
+      '<td class="num" title="Valor en stock: '+gs(a[4])+' Gs.">'+fmt(a[6])+'</td>'+
+      '<td class="num">'+(a[6] <= 0
         ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px" '+
           'title="Vendió y no le queda stock">sin stock</span>'
         : (sinBase
           ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
-          : '<span class="mono">'+a[5].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
+          : '<span class="mono">'+a[7].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
       '<td class="num" style="width:40px">'+(hayHist
         ? '<span style="color:var(--B);font-size:11px">ver ↑</span>' : '')+'</td></tr>';
   }).join("");
@@ -1911,4 +1916,4 @@ sincronizarSerie();
 })();
 </script>
 </body>
-</html> 
+</html>
