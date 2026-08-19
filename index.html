@@ -1764,7 +1764,19 @@ function rotacion(){
 function rotacionArticulos(){
   var sec = document.getElementById("sec-rot-art");
   var marca = serieActiva;
-  if (!marca || !ROT_ART.length) { sec.hidden = true; return; }
+  if (!marca) { sec.hidden = true; return; }
+
+  /* Sin datos por artículo la sección quedaba oculta sin explicar por qué:
+     casi siempre es que el datos.js se publicó con una versión anterior. */
+  if (!ROT_ART.length) {
+    sec.hidden = false;
+    document.getElementById("nota-rot-art").textContent = "";
+    document.querySelector("#tbl-rot-art tbody").innerHTML =
+      '<tr><td colspan="6" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+      'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
+      'versión del script, y refrescá con Ctrl+F5.</td></tr>';
+    return;
+  }
 
   var filas = ROT_ART.filter(function(a){ return a[2] === marca; })
     .map(function(a){
@@ -1772,7 +1784,14 @@ function rotacionArticulos(){
       return [a[0], a[1], a[2], venta, stock, stock > 0 ? (venta * 2) / stock : 0];
     });
 
-  if (!filas.length) { sec.hidden = true; return; }
+  if (!filas.length) {
+    sec.hidden = false;
+    document.getElementById("nota-rot-art").textContent = esc(marca);
+    document.querySelector("#tbl-rot-art tbody").innerHTML =
+      '<tr><td colspan="6" class="empty">Sin artículos con stock ni ventas para ' +
+      esc(marca) + '.</td></tr>';
+    return;
+  }
   sec.hidden = false;
 
   filas = ordenar(filas, orden.rota.k, orden.rota.asc);
