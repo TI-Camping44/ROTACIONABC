@@ -255,6 +255,16 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 /* ---------- parte 2 ---------- */
 .evo{display:grid; grid-template-columns:1fr; gap:10px}
 .axis{font-family:var(--mono); font-size:10.5px; fill:var(--muted)}
+.leyenda-serie{
+  display:flex; gap:8px 16px; flex-wrap:wrap; margin:12px 0 0; font-size:12px;
+}
+.leyenda-serie > span{
+  display:inline-flex; align-items:center; gap:6px; cursor:pointer;
+  padding:2px 8px; border:1px solid var(--line2); border-radius:20px; background:#FAFBFB;
+}
+.leyenda-serie > span:hover{border-color:var(--ink2); background:#fff}
+.leyenda-serie i{width:16px; height:3px; border-radius:2px; display:inline-block; flex:0 0 16px}
+.leyenda-serie b{font-family:var(--mono); font-weight:500; color:var(--muted)}
 .rotpill{
   font-family:var(--mono); font-size:11.5px; padding:2px 8px; border-radius:11px;
   display:inline-block; min-width:58px; text-align:center;
@@ -492,6 +502,8 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
             </div>
           </div>
           <div class="fgroup"><select id="f-serie" aria-label="Marca o familia"></select></div>
+          <div class="fgroup"><button class="chip sm" id="f-comparar" aria-pressed="false"
+            title="Mostrar todas juntas en el mismo gráfico">Comparar todas</button></div>
           <div class="sep"></div>
           <div class="fgroup"><label class="flab" for="f-desde">Desde</label>
             <select id="f-desde"></select></div>
@@ -592,6 +604,7 @@ var ROT_ART = DATOS.ROT_ART || [];
 var SERIES_ART = DATOS.SERIES_ART || {};
 /* Cuando hay un artículo elegido, el gráfico muestra su serie y no la de la marca. */
 var articuloActivo = null;
+var comparando = false;
 /* "marca" o "fam": qué nivel se está mirando en la Parte 2. */
 var nivel = "marca";
 var SERIES_FAM = DATOS.SERIES_FAM || {};
@@ -1868,7 +1881,79 @@ function sincronizarSerie(){
   evolucion(); rotacion(); rotacionArticulos();
 }
 
+/* Colores para el modo comparar. Se repiten si hay más de doce series. */
+var PALETA = ["#12161A","#B08A2E","#3D6E8C","#A6432E","#4A5560","#7A6742",
+              "#2F6B4F","#8C5B8C","#6E7B84","#8A3524","#3F7D8C","#9C8F3F"];
+
+function evolucionComparada(){
+  var caja = document.getElementById("evo-chart");
+  var resumen = document.getElementById("serie-resumen");
+  var lista = marcasConSerie().slice(0, 12);
+  var etiquetasMes = mesesDe();
+
+  var series = lista.map(function(m, i){
+    return { nombre:m, d:serieDe(m), col:PALETA[i % PALETA.length] };
+  }).filter(function(x){ return x.d.length > 1; });
+
+  if (!series.length) {
+    caja.innerHTML = '<div class="empty">Sin series para comparar.</div>';
+    resumen.textContent = ""; return;
+  }
+
+  var W = 1040, H = 320, P = {t:26, r:26, b:42, l:82};
+  var iw = W-P.l-P.r, ih = H-P.t-P.b;
+  var max = 0;
+  series.forEach(function(x){ x.d.forEach(function(v){ if (v > max) max = v; }); });
+  var tope = max > 0 ? max*1.12 : 1;
+  var n = series[0].d.length;
+  var X = function(i){ return P.l + i*(iw/(n-1)); };
+  var Y = function(v){ return P.t + ih - (v/tope)*ih; };
+
+  var grid = "";
+  for (var g=0; g<=4; g++){
+    var v = tope*g/4, y = Y(v);
+    grid += '<line x1="'+P.l+'" y1="'+y.toFixed(1)+'" x2="'+(W-P.r)+'" y2="'+y.toFixed(1)+
+      '" stroke="#E6E9E9"/><text class="axis" x="'+(P.l-10)+'" y="'+(y+3.5).toFixed(1)+
+      '" text-anchor="end">'+fmt(Math.round(v))+'</text>';
+  }
+  var paso = n > 14 ? 2 : 1;
+  var etiquetas = etiquetasMes.map(function(t,i){
+    if (i % paso !== 0 && i !== n-1) return "";
+    return '<text class="axis" x="'+X(i).toFixed(1)+'" y="'+(H-14)+'" text-anchor="middle">'+esc(t)+'</text>';
+  }).join("");
+
+  var lineas = series.map(function(x){
+    var d = x.d.map(function(v,i){ return (i?"L":"M")+X(i).toFixed(1)+" "+Y(v).toFixed(1); }).join(" ");
+    return '<path d="'+d+'" fill="none" stroke="'+x.col+'" stroke-width="2" '+
+      'stroke-linejoin="round" stroke-linecap="round"><title>'+esc(x.nombre)+'</title></path>';
+  }).join("");
+
+  caja.innerHTML =
+    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Comparación de series">'+
+    grid + lineas + etiquetas + '</svg>' +
+    '<div class="leyenda-serie">' + series.map(function(x){
+      var ult = x.d[x.d.length-1];
+      return '<span data-serie="'+esc(x.nombre)+'" title="Ver solo esta"><i style="background:'+x.col+'"></i>'+
+        esc(x.nombre)+' <b class="mono" style="font-weight:500">'+fmt(Math.round(ult))+'</b></span>';
+    }).join("") + '</div>';
+
+  /* Clic en la leyenda: pasa a ver solo esa serie. */
+  Array.prototype.forEach.call(caja.querySelectorAll(".leyenda-serie span"), function(el){
+    el.addEventListener("click", function(){
+      comparando = false;
+      document.getElementById("f-comparar").setAttribute("aria-pressed", "false");
+      serieActiva = el.dataset.serie;
+      document.getElementById("f-serie").value = serieActiva;
+      evolucion(); rotacionArticulos();
+    });
+  });
+
+  resumen.textContent = series.length + (nivel === "fam" ? " familias" : " marcas") +
+    " · " + etiquetasMes[0] + " → " + etiquetasMes[etiquetasMes.length-1];
+}
+
 function evolucion(){
+  if (comparando && !articuloActivo) return evolucionComparada();
   var caja = document.getElementById("evo-chart");
   var resumen = document.getElementById("serie-resumen");
   var esArticulo = Boolean(articuloActivo && SERIES_ART[articuloActivo]);
@@ -2032,7 +2117,7 @@ function rotacionArticulos(){
   var sec = document.getElementById("sec-rot-art");
   var marca = serieActiva;
   /* El detalle por artículo se arma por marca: por familia serían miles. */
-  if (!marca || nivel !== "marca") { sec.hidden = true; return; }
+  if (!marca || nivel !== "marca" || comparando) { sec.hidden = true; return; }
 
   /* Sin datos por artículo la sección quedaba oculta sin explicar por qué:
      casi siempre es que el datos.js se publicó con una versión anterior. */
@@ -2152,6 +2237,17 @@ Array.prototype.forEach.call(document.querySelectorAll("#f-nivel .chip"), functi
     document.getElementById("th-nivel").textContent = nivel === "fam" ? "Familia" : "Marca";
     sincronizarSerie();
   });
+});
+
+document.getElementById("f-comparar").addEventListener("click", function(){
+  comparando = !comparando;
+  this.setAttribute("aria-pressed", String(comparando));
+  document.getElementById("f-serie").disabled = comparando;
+  if (comparando) {
+    articuloActivo = null;
+    document.getElementById("volver-marca").hidden = true;
+  }
+  evolucion(); rotacionArticulos();
 });
 
 document.getElementById("volver-marca").addEventListener("click", function(){
