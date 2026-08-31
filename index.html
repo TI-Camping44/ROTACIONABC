@@ -506,6 +506,7 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           Reconstruido desde las capas de valorización de Odoo, restando los movimientos
           de cada mes al valor actual. Abarca todos los depósitos: la valorización de Odoo
           no separa por almacén.
+          <span id="nota-serie-filtro"></span>
         </p>
       </div>
     </section>
@@ -578,7 +579,14 @@ if (typeof DATOS === "undefined" || !DATOS.STOCK) {
 }
 
 var CATS = DATOS.CATS;
-var STOCK = DATOS.STOCK;
+var STOCK = (DATOS.STOCK || []).map(function(r){
+  /* Un datos.js publicado con una versión anterior no trae familia ni
+     control: se completan acá para que los filtros no muestren "undefined". */
+  if (!r.fam) r.fam = "Sin familia";
+  if (!r.ctl) r.ctl = "No controlado";
+  if (!r.cal) r.cal = "Sin calibre";
+  return r;
+});
 var ARTICULOS = DATOS.ARTICULOS || [];
 var ROT_ART = DATOS.ROT_ART || [];
 var SERIES_ART = DATOS.SERIES_ART || {};
@@ -588,9 +596,28 @@ var articuloActivo = null;
 var nivel = "marca";
 var SERIES_FAM = DATOS.SERIES_FAM || {};
 var CMV6_FAM = DATOS.CMV6_FAM || {};
-var serieFuente = function(){ return nivel === "fam" ? SERIES_FAM : SERIES; };
-var cmvFuente = function(){ return nivel === "fam" ? CMV6_FAM : CMV6; };
+/* Series cruzadas con el tipo: cuando se filtra por Cargadores, el gráfico
+   tiene que mostrar los cargadores de esa marca y no toda la marca. */
+var SERIES_MT = DATOS.SERIES_MT || {};
+var SERIES_FT = DATOS.SERIES_FT || {};
+var CMV6_MT = DATOS.CMV6_MT || {};
+var CMV6_FT = DATOS.CMV6_FT || {};
+var SEP = "\u0001";
 var campoNivel = function(){ return nivel === "fam" ? "fam" : "m"; };
+/* Con un tipo filtrado se usa la serie cruzada, si existe. */
+var cruzado = function(){
+  return f.tipo !== "*" &&
+    Object.keys(nivel === "fam" ? SERIES_FT : SERIES_MT).length > 0;
+};
+var claveSerie = function(x){ return cruzado() ? x + SEP + f.tipo : x; };
+var serieFuente = function(){
+  if (cruzado()) return nivel === "fam" ? SERIES_FT : SERIES_MT;
+  return nivel === "fam" ? SERIES_FAM : SERIES;
+};
+var cmvFuente = function(){
+  if (cruzado()) return nivel === "fam" ? CMV6_FT : CMV6_MT;
+  return nivel === "fam" ? CMV6_FAM : CMV6;
+};
 /* Depósitos cuyo stock existe pero no se puede vender. */
 var NO_COMERCIAL = DATOS.NO_COMERCIAL || [];
 var esNoComercial = function(d){ return NO_COMERCIAL.indexOf(d) >= 0; };
@@ -814,10 +841,13 @@ function armarFiltros(){
   STOCK.forEach(function(r){ pesoFam[r.fam] = (pesoFam[r.fam]||0) + r.v; });
   var familias = Object.keys(pesoFam).sort(function(a,b){ return pesoFam[b]-pesoFam[a]; });
   opciones(document.getElementById("f-fam"), familias, "Familia: todas");
+  document.getElementById("f-fam").hidden = familias.length < 2;
 
   /* Controlado / no controlado. Lo controlado —armas, municiones,
      cargadores y accesorios de material controlado— no lleva ABC. */
-  opciones(document.getElementById("f-ctl"), unicos("ctl"), "Control: todo");
+  var ctls = unicos("ctl");
+  opciones(document.getElementById("f-ctl"), ctls, "Control: todo");
+  document.getElementById("f-ctl").hidden = ctls.length < 2;
   document.getElementById("f-ctl").addEventListener("change", function(){
     f.ctl = this.value; registrar("ctl"); pintar(); sincronizarSerie();
   });
@@ -1010,6 +1040,21 @@ function armarFiltros(){
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); alternar(); }
     });
   });
+
+  /* Señal de que el archivo publicado quedó viejo: sin estos campos varias
+     secciones del reporte no tienen de dónde salir. */
+  var faltan = [];
+  if (!STOCK.some(function(r){ return r.fam !== "Sin familia"; })) faltan.push("familia");
+  if (!STOCK.some(function(r){ return r.ctl === "Controlado"; })) faltan.push("control");
+  if (faltan.length) {
+    var av = document.createElement("div");
+    av.className = "nota-cat";
+    av.style.margin = "12px 0 0";
+    av.innerHTML = "El archivo de datos no incluye <b>" + faltan.join(" ni ") + "</b>. " +
+      "En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la " +
+      "última versión del script, y refrescá con Ctrl+F5.";
+    document.querySelector(".wrap").insertBefore(av, document.querySelector(".wrap").firstChild);
+  }
 
   document.getElementById("sello").textContent = (DATOS.GENERADO || "—").split(" ")[0];
   document.getElementById("ndep").textContent = fmt(deps.length);
@@ -1708,9 +1753,17 @@ function marcasConSerie(){
     visibles[r[campo]] = true;
   });
   var cmv = cmvFuente();
+  /* Con serie cruzada las claves llevan el tipo pegado: se recorta para
+     comparar contra lo visible. */
   return Object.keys(fuente)
-    .filter(function(m){ return (fuente[m]||[]).length && visibles[m]; })
-    .sort(function(a,b){ return (cmv[b]||0) - (cmv[a]||0); });
+    .map(function(k){ return cruzado() ? k.split(SEP)[0] : k; })
+    .filter(function(m, i, arr){
+      return arr.indexOf(m) === i && visibles[m] &&
+        (fuente[cruzado() ? m + SEP + f.tipo : m] || []).length;
+    })
+    .sort(function(a,b){
+      return (cmv[claveSerie(b)]||0) - (cmv[claveSerie(a)]||0);
+    });
 }
 
 /** Deja los selects y chips coincidiendo con el estado de filtros. */
@@ -1784,7 +1837,7 @@ function armarPeriodo(){
 
 /** La serie recortada al período elegido. */
 function serieDe(clave){
-  return (serieFuente()[clave] || []).slice(per.desde, per.hasta + 1);
+  return (serieFuente()[claveSerie(clave)] || []).slice(per.desde, per.hasta + 1);
 }
 function mesesDe(){ return MESES.slice(per.desde, per.hasta + 1); }
 
@@ -1902,12 +1955,29 @@ function rotacion(){
   var filas = marcasConSerie().map(function(m){
     var s = serieDe(m);
     var prom = s.length ? s.reduce(function(a,b){return a+b;},0)/s.length : 0;
-    var cmv = cmvSrc[m] || 0;
+    var cmv = cmvSrc[claveSerie(m)] || 0;
     var rot = prom > 0 ? (cmv*2)/prom : 0;
     return { m:m, cmv:cmv, prom:prom, act:actual[m]||0, rot:rot };
   });
   filas = ordenar(filas, orden.rot.k, orden.rot.asc);
   marcarOrden("#tbl-rot", orden.rot);
+
+  /* Decir cuándo la curva no puede respetar un filtro, en vez de mostrar el
+     número de toda la marca como si fuera el del filtro. */
+  var sinRespetar = [];
+  if (f.dep !== "*") sinRespetar.push("depósito");
+  if (f.cal !== "*") sinRespetar.push("calibre");
+  if (f.cat !== "*") sinRespetar.push("categoría");
+  if (f.ctl !== "*" && f.tipo === "*") sinRespetar.push("control");
+  var notaSerie = document.getElementById("nota-serie-filtro");
+  if (notaSerie) {
+    notaSerie.innerHTML = sinRespetar.length
+      ? '<br><span class="aviso">El histórico y el costo de venta no distinguen ' +
+        sinRespetar.join(" ni ") + ': las capas de valorización de Odoo no guardan ese dato. ' +
+        'Los montos de esta sección son de ' + (nivel === "fam" ? "la familia" : "la marca") +
+        (f.tipo !== "*" ? " en " + esc(f.tipo) : "") + ' completa.</span>'
+      : "";
+  }
 
   document.getElementById("nota-rot").textContent =
     "Rotación = costo de venta anualizado ÷ stock promedio · " +
