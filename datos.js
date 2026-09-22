@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 21/09/2026 06:13.
+/* Generado desde la planilla el 22/09/2026 06:13.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -52,7 +52,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "21/09/2026 06:13",
+  "GENERADO": "22/09/2026 06:13",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [],
@@ -285,7 +285,7 @@ var DATOS = {
       "cal": "4.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 239.8
+      "v": 238.5
     },
     {
       "m": "ASG",
@@ -325,7 +325,7 @@ var DATOS = {
       "cal": "6mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 78.8
+      "v": 78.7
     },
     {
       "m": "ASG",
@@ -335,7 +335,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 180.2
+      "v": 180.1
     },
     {
       "m": "ASG",
@@ -745,7 +745,7 @@ var DATOS = {
       "cal": "4.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 66.9
+      "v": 66.7
     },
     {
       "m": "Apolo",
@@ -755,7 +755,7 @@ var DATOS = {
       "cal": "5.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 251.7
+      "v": 251.6
     },
     {
       "m": "Apolo",
@@ -1225,7 +1225,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
-      "v": 36.7
+      "v": 33.9
     },
     {
       "m": "B.E. Armor",
@@ -1545,7 +1545,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 830
+      "v": 834.4
     },
     {
       "m": "Beretta",
@@ -1555,7 +1555,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 111.5
+      "v": 107
     },
     {
       "m": "Beretta",
@@ -2235,7 +2235,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
-      "v": 46.3
+      "v": 45
     },
     {
       "m": "Crosman",
@@ -2495,7 +2495,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
-      "v": 898.6
+      "v": 898
     },
     {
       "m": "Doberman BOTAS",
@@ -2515,7 +2515,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRE LIBRE",
       "ctl": "No controlado",
-      "v": 143.6
+      "v": 143.3
     },
     {
       "m": "Doberman LINTERNAS",
@@ -2585,7 +2585,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
-      "v": 132.1
+      "v": 131.9
     },
     {
       "m": "Doberman MOCHILAS",
@@ -2715,7 +2715,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 5.6
+      "v": 3.5
     },
     {
       "m": "Doberman",
@@ -2855,17 +2855,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "Otro",
       "ctl": "No controlado",
-      "v": 0.6
-    },
-    {
-      "m": "Duracell",
-      "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "Otro",
-      "ctl": "No controlado",
-      "v": 0.1
+      "v": 0.4
     },
     {
       "m": "Duracell",
@@ -2875,7 +2865,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "Otro",
       "ctl": "No controlado",
-      "v": 0.3
+      "v": 0.1
     },
     {
       "m": "EG",
@@ -3355,7 +3345,7 @@ var DATOS = {
       "cal": "12GA",
       "fam": "MUNICION",
       "ctl": "Controlado",
-      "v": 4.3
+      "v": 4.2
     },
     {
       "m": "GB",
@@ -3935,7 +3925,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "MUNICION",
       "ctl": "Controlado",
-      "v": 1266.4
+      "v": 1265.9
     },
     {
       "m": "IMI",
@@ -4025,7 +4015,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 8.2
+      "v": 8
     },
     {
       "m": "Indunaylon",
@@ -4035,7 +4025,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 0.4
+      "v": 0.3
     },
     {
       "m": "Intratec",
@@ -4095,7 +4085,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 70.1
+      "v": 69.4
     },
     {
       "m": "KCI",
@@ -4175,7 +4165,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 461.7
+      "v": 454
     },
     {
       "m": "Konus",
@@ -4455,7 +4445,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 0.1
+      "v": 0
     },
     {
       "m": "Mendoza",
@@ -4465,7 +4455,7 @@ var DATOS = {
       "cal": "22LR",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 1063.3
+      "v": 1058.2
     },
     {
       "m": "Mendoza",
@@ -4695,7 +4685,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRE LIBRE (PROMO)",
       "ctl": "No controlado",
-      "v": 82
+      "v": 81.4
     },
     {
       "m": "Nitecore",
@@ -5755,7 +5745,7 @@ var DATOS = {
       "cal": "357MAG",
       "fam": "MUNICION",
       "ctl": "Controlado",
-      "v": 167.5
+      "v": 167.2
     },
     {
       "m": "Sellier & Bellot",
@@ -6805,7 +6795,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "PESCA (PROMO)",
       "ctl": "No controlado",
-      "v": 671.1
+      "v": 671
     },
     {
       "m": "Snake",
@@ -6975,7 +6965,7 @@ var DATOS = {
       "cal": "5.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 405.9
+      "v": 405.3
     },
     {
       "m": "TSS",
@@ -7185,7 +7175,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 432
+      "v": 439.6
     },
     {
       "m": "Tanfoglio",
@@ -7245,7 +7235,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 26.4
+      "v": 18.9
     },
     {
       "m": "Tanfoglio",
@@ -7725,7 +7715,7 @@ var DATOS = {
       "cal": "4.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 135
+      "v": 134.7
     },
     {
       "m": "Umarex",
@@ -7735,7 +7725,7 @@ var DATOS = {
       "cal": "4.5mm",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 51.5
+      "v": 51.4
     },
     {
       "m": "Umarex",
@@ -7755,7 +7745,7 @@ var DATOS = {
       "cal": "6mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 0.8
+      "v": 0.7
     },
     {
       "m": "Umarex",
@@ -7765,7 +7755,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 247.3
+      "v": 246.5
     },
     {
       "m": "Umarex",
@@ -7775,7 +7765,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 176.3
+      "v": 176.2
     },
     {
       "m": "Umarex",
@@ -7805,7 +7795,7 @@ var DATOS = {
       "cal": "cal 50",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 352.2
+      "v": 350.5
     },
     {
       "m": "Umarex",
@@ -7955,7 +7945,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
-      "v": 5.6
+      "v": 5.3
     },
     {
       "m": "Umarex",
@@ -8045,7 +8035,7 @@ var DATOS = {
       "cal": "cal 50",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 62.8
+      "v": 62.6
     },
     {
       "m": "Umarex",
@@ -8515,7 +8505,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 306
+      "v": 305.9
     },
     {
       "m": "Vector Optics",
@@ -8756,8 +8746,8 @@ var DATOS = {
       "Central",
       "MUN",
       "9mm",
-      325718,
-      955.3,
+      325518,
+      954.7,
       "MUNICION",
       "Controlado"
     ],
@@ -8782,8 +8772,8 @@ var DATOS = {
       "Central",
       "ARM",
       "9mm",
-      167,
-      745.2,
+      168,
+      749.7,
       "ARMA",
       "Controlado"
     ],
@@ -8834,8 +8824,8 @@ var DATOS = {
       "Central",
       "ARM",
       "22LR",
-      249,
-      416.9,
+      248,
+      415.2,
       "ARMA",
       "Controlado"
     ],
@@ -8847,8 +8837,8 @@ var DATOS = {
       "Central",
       "ARM",
       "9mm",
-      109,
-      411,
+      110,
+      414.8,
       "ARMA",
       "Controlado"
     ],
@@ -8860,8 +8850,8 @@ var DATOS = {
       "Central",
       "ARM",
       "22LR",
-      210,
-      363.9,
+      209,
+      362.1,
       "ARMA",
       "Controlado"
     ],
@@ -9042,8 +9032,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      1157,
-      204.6,
+      1156,
+      204.4,
       "AIRGUN",
       "No controlado"
     ],
@@ -9081,8 +9071,8 @@ var DATOS = {
       "Central",
       "MUN",
       "357MAG",
-      50194,
-      167.5,
+      50094,
+      167.2,
       "MUNICION",
       "Controlado"
     ],
@@ -9107,8 +9097,8 @@ var DATOS = {
       "Central",
       "ARM",
       "22LR",
-      94,
-      165,
+      93,
+      163.2,
       "ARMA",
       "Controlado"
     ],
@@ -9172,8 +9162,8 @@ var DATOS = {
       "Central",
       "A",
       "cal 50",
-      365,
-      155.3,
+      361,
+      153.6,
       "NO LETAL",
       "No controlado"
     ],
@@ -9497,7 +9487,7 @@ var DATOS = {
       "Central",
       "A",
       "9mm",
-      36964,
+      36963,
       78.6,
       "NO LETAL",
       "No controlado"
@@ -9536,8 +9526,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      353,
-      75.7,
+      351,
+      75.2,
       "AIRGUN",
       "No controlado"
     ],
@@ -9627,8 +9617,8 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      876,
-      69.7,
+      875,
+      69.6,
       "AIRE LIBRE",
       "No controlado"
     ],
@@ -9640,21 +9630,8 @@ var DATOS = {
       "Central",
       "A",
       "4.5mm",
-      152,
-      67.6,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
-      "400299",
-      "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "4.5mm",
-      3773,
-      66.9,
+      151,
+      67.1,
       "AIRGUN",
       "No controlado"
     ],
@@ -9670,6 +9647,19 @@ var DATOS = {
       66.7,
       "MUNICION",
       "Controlado"
+    ],
+    [
+      "400299",
+      "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "4.5mm",
+      3761,
+      66.7,
+      "AIRGUN",
+      "No controlado"
     ],
     [
       "505477",
@@ -9731,8 +9721,8 @@ var DATOS = {
       "Central",
       "NC",
       "cal 50",
-      289,
-      62.8,
+      288,
+      62.6,
       "NO LETAL",
       "No controlado"
     ],
@@ -9876,19 +9866,6 @@ var DATOS = {
       "38Super",
       7,
       50.1,
-      "ARMA",
-      "Controlado"
-    ],
-    [
-      "600849",
-      "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
-      "Beretta",
-      "Armas",
-      "Showroom",
-      "ARM",
-      "9mm",
-      11,
-      49.1,
       "ARMA",
       "Controlado"
     ],
@@ -10046,6 +10023,19 @@ var DATOS = {
       251,
       45.6,
       "ACCESORIO DE ARMA (PROMO)",
+      "Controlado"
+    ],
+    [
+      "600849",
+      "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
+      "Beretta",
+      "Armas",
+      "Showroom",
+      "ARM",
+      "9mm",
+      10,
+      44.6,
+      "ARMA",
       "Controlado"
     ],
     [
@@ -10348,19 +10338,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "261413",
-      "Cámara KONUS Mod. FLAME 0,6x-2.4x res 160x120 #7953",
-      "Konus",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      18,
-      35.3,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "700925",
       "Escopeta Armed 36 Monotiro CulMad 28''",
       "Armed",
@@ -10387,19 +10364,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "320022",
-      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "A",
-      "4.5mm",
-      100,
-      34.7,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "701491",
       "Escopeta Palanca DERYA cal 36/410 Mod. MD100 5+1 t 20´´",
       "Derya",
@@ -10413,17 +10377,17 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "260292",
-      "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
-      "Konus",
-      "Accesorio controlado",
+      "320022",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726",
+      "ASG",
+      "No reglamentado",
       "Central",
-      "ACC",
-      "Sin calibre",
-      147,
+      "A",
+      "4.5mm",
+      99,
       34.4,
-      "ACCESORIO DE ARMA",
-      "Controlado"
+      "AIRGUN",
+      "No controlado"
     ],
     [
       "680652",
@@ -10433,7 +10397,7 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      691,
+      690,
       34.3,
       "AIRE LIBRE",
       "No controlado"
@@ -10475,6 +10439,19 @@ var DATOS = {
       4364,
       33.6,
       "MUNICION",
+      "Controlado"
+    ],
+    [
+      "260292",
+      "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
+      "Konus",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      143,
+      33.5,
+      "ACCESORIO DE ARMA",
       "Controlado"
     ],
     [
@@ -10621,17 +10598,17 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "320461",
-      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
-      "ASG",
-      "No reglamentado",
+      "261413",
+      "Cámara KONUS Mod. FLAME 0,6x-2.4x res 160x120 #7953",
+      "Konus",
+      "Accesorio controlado",
       "Central",
-      "A",
-      "4.5mm",
-      146,
-      31.5,
-      "AIRGUN",
-      "No controlado"
+      "ACC",
+      "Sin calibre",
+      16,
+      31.4,
+      "ACCESORIO DE ARMA",
+      "Controlado"
     ],
     [
       "323140",
@@ -10643,6 +10620,19 @@ var DATOS = {
       "Sin calibre",
       32,
       31.3,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
+      "320461",
+      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "A",
+      "4.5mm",
+      144,
+      31,
       "AIRGUN",
       "No controlado"
     ],
@@ -10671,19 +10661,6 @@ var DATOS = {
       30.7,
       "ACCESORIO DE ARMA",
       "Controlado"
-    ],
-    [
-      "DES320522",
-      "Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas",
-      "Crosman",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      24,
-      30.5,
-      "AIRGUN (PROMO)",
-      "No controlado"
     ],
     [
       "400386",
@@ -10748,6 +10725,19 @@ var DATOS = {
       68,
       29.6,
       "AIRE LIBRE (PROMO)",
+      "No controlado"
+    ],
+    [
+      "DES320522",
+      "Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas",
+      "Crosman",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      23,
+      29.2,
+      "AIRGUN (PROMO)",
       "No controlado"
     ],
     [
@@ -11232,19 +11222,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "SID4520100",
-      "Cargador KCI cal 9mm Mod. Glock 33 tiros",
-      "KCI",
-      "Cargadores",
-      "Central",
-      "CARG",
-      "9mm",
-      169,
-      23.6,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "942193",
       "Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 41",
       "Doberman BOTAS",
@@ -11297,19 +11274,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "400296",
-      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,25g, 3300 unid #19411",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "B",
-      "6mm",
-      468,
-      23.5,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "323005",
       "Pistola Airsoft Green Gas UMAREX Mod. GLOCK 19X GBB #2276328",
       "Umarex",
@@ -11318,6 +11282,19 @@ var DATOS = {
       "A",
       "Sin calibre",
       22,
+      23.5,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
+      "400296",
+      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,25g, 3300 unid #19411",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "B",
+      "6mm",
+      467,
       23.5,
       "AIRGUN",
       "No controlado"
@@ -11336,6 +11313,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "SID4520100",
+      "Cargador KCI cal 9mm Mod. Glock 33 tiros",
+      "KCI",
+      "Cargadores",
+      "Central",
+      "CARG",
+      "9mm",
+      166,
+      23.2,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
       "942203",
       "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
       "Doberman BOTAS",
@@ -11343,8 +11333,8 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      109,
-      23.3,
+      108,
+      23.1,
       "INDUMENTARIA",
       "No controlado"
     ],
@@ -11538,8 +11528,8 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      814,
-      21.9,
+      810,
+      21.8,
       "AIRE LIBRE",
       "No controlado"
     ],
@@ -11661,19 +11651,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "942183",
-      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      94,
-      20.8,
-      "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
       "DES680509",
       "Linterna Caterpillar 175 LM LED COB de Bolsillo - Display 12 unidades #CT100012 (copia)",
       "Caterpillar",
@@ -11724,6 +11701,19 @@ var DATOS = {
       20.7,
       "ARMA",
       "Controlado"
+    ],
+    [
+      "942183",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      93,
+      20.6,
+      "INDUMENTARIA",
+      "No controlado"
     ],
     [
       "942152",
@@ -11921,19 +11911,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "721102",
-      "Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG",
-      "B.E. Armor",
-      "No reglamentado",
-      "Central",
-      "B",
-      "Sin calibre",
-      7,
-      19.7,
-      "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
       "830264",
       "Hilo Snake Nevada 0.80mm 100M",
       "Snake",
@@ -12061,19 +12038,6 @@ var DATOS = {
       16,
       19,
       "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
-      "600601",
-      "Pistola TANFOGLIO cal 9mm Mod. Combat R  2 cargadores 15 tiros",
-      "Tanfoglio",
-      "Armas",
-      "Showroom",
-      "ARM",
-      "9mm",
-      5,
-      18.9,
-      "ARMA",
       "Controlado"
     ],
     [
@@ -12272,19 +12236,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "680685",
-      "Linterna DOBERMAN Mod. LP-8504-UV Bat 3XAAA",
-      "Doberman LINTERNAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      761,
-      17.5,
-      "AIRE LIBRE",
-      "No controlado"
-    ],
-    [
       "250002",
       "Mira Punto Rojo OSIGHT Mod. K GN Abierta Verde 6 MOA RMSc #OsightKGN",
       "Osight HK",
@@ -12296,6 +12247,19 @@ var DATOS = {
       17.5,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "680685",
+      "Linterna DOBERMAN Mod. LP-8504-UV Bat 3XAAA",
+      "Doberman LINTERNAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      760,
+      17.5,
+      "AIRE LIBRE",
+      "No controlado"
     ],
     [
       "942155",
@@ -12415,19 +12379,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "400314",
-      "Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "cal 68",
-      343,
-      17,
-      "NO LETAL",
-      "No controlado"
-    ],
-    [
       "505390",
       "Balas Federal 10MM 180GR PNormalCobreada 50x20",
       "Federal",
@@ -12441,6 +12392,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "400314",
+      "Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "cal 68",
+      342,
+      16.9,
+      "NO LETAL",
+      "No controlado"
+    ],
+    [
       "830259",
       "Hilo Snake Nevada 0.40mm 100M",
       "Snake",
@@ -12451,6 +12415,19 @@ var DATOS = {
       4621,
       16.9,
       "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "721102",
+      "Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      "No reglamentado",
+      "Central",
+      "B",
+      "Sin calibre",
+      6,
+      16.9,
+      "INDUMENTARIA",
       "No controlado"
     ],
     [
@@ -12490,19 +12467,6 @@ var DATOS = {
       118,
       16.6,
       "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
-      "320707",
-      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "9mm",
-      19,
-      16.6,
-      "NO LETAL",
       "No controlado"
     ],
     [
@@ -12610,6 +12574,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "320707",
+      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "9mm",
+      18,
+      15.7,
+      "NO LETAL",
+      "No controlado"
+    ],
+    [
       "321093",
       "Cargador de Emergencia UMAREX T4E cal 43 Mod. GLOCK 17 GEN 5 #211.101",
       "Umarex",
@@ -12647,6 +12624,19 @@ var DATOS = {
       15.3,
       "AIRGUN",
       "No controlado"
+    ],
+    [
+      "600601",
+      "Pistola TANFOGLIO cal 9mm Mod. Combat R  2 cargadores 15 tiros",
+      "Tanfoglio",
+      "Armas",
+      "Showroom",
+      "ARM",
+      "9mm",
+      4,
+      15.1,
+      "ARMA",
+      "Controlado"
     ],
     [
       "151425",
@@ -12870,19 +12860,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "SID4520055",
-      "Cargador KCI cal 9mm Mod. Glock 17 tiros",
-      "KCI",
-      "Cargadores",
-      "Central",
-      "CARG",
-      "9mm",
-      139,
-      14.3,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "LIQ300118",
       "LQN-Caja PLANO p/2Rifles/Escop.c/Port. Cart. Ng#10527",
       "Sin Marca",
@@ -12972,6 +12949,19 @@ var DATOS = {
       14.1,
       "AIRGUN",
       "No controlado"
+    ],
+    [
+      "SID4520055",
+      "Cargador KCI cal 9mm Mod. Glock 17 tiros",
+      "KCI",
+      "Cargadores",
+      "Central",
+      "CARG",
+      "9mm",
+      136,
+      14,
+      "ACCESORIO DE ARMA",
+      "Controlado"
     ],
     [
       "250091",
@@ -13696,7 +13686,7 @@ var DATOS = {
       "Central",
       "B",
       "cal 50",
-      540,
+      539,
       11,
       "NO LETAL",
       "No controlado"
@@ -14073,7 +14063,7 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      489,
+      488,
       10,
       "AIRGUN",
       "No controlado"
@@ -14248,19 +14238,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "681112",
-      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
-      "Nitecore",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      51,
-      9.2,
-      "AIRE LIBRE (PROMO)",
-      "No controlado"
-    ],
-    [
       "830255",
       "Hilo Snake Nevada 0.28mm 100M",
       "Snake",
@@ -14271,19 +14248,6 @@ var DATOS = {
       3039,
       9.1,
       "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
-      "322080",
-      "Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "4.5mm",
-      30,
-      9.1,
-      "AIRGUN",
       "No controlado"
     ],
     [
@@ -14365,6 +14329,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "681112",
+      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
+      "Nitecore",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      50,
+      9,
+      "AIRE LIBRE (PROMO)",
+      "No controlado"
+    ],
+    [
       "830295",
       "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
       "Snake",
@@ -14404,6 +14381,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "322080",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "4.5mm",
+      29,
+      8.8,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
       "900907",
       "Punto de Mira Glock de Acero 4,9 Luminiscente  #33580",
       "Glock",
@@ -14438,19 +14428,6 @@ var DATOS = {
       "B",
       "4.5mm",
       15,
-      8.7,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
-      "400202",
-      "Gas CO2 UMAREX 12G #4.1685",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      5392,
       8.7,
       "AIRGUN",
       "No controlado"
@@ -14508,6 +14485,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "400202",
+      "Gas CO2 UMAREX 12G #4.1685",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      5302,
+      8.5,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
       "700231CARU",
       "Escopeta Semiautomatica Girsan I Cal. 12 I Camuflado I Mod. MC312 I 28 P. I 5+1 T.",
       "Girsan",
@@ -14518,19 +14508,6 @@ var DATOS = {
       1,
       8.5,
       "ARMA",
-      "Controlado"
-    ],
-    [
-      "250111",
-      "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
-      "BWC",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      181,
-      8.5,
-      "ACCESORIO DE ARMA",
       "Controlado"
     ],
     [
@@ -14545,6 +14522,19 @@ var DATOS = {
       8.4,
       "AIRE LIBRE (PROMO)",
       "No controlado"
+    ],
+    [
+      "250111",
+      "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
+      "BWC",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      180,
+      8.4,
+      "ACCESORIO DE ARMA",
+      "Controlado"
     ],
     [
       "400370",
@@ -14924,19 +14914,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "600600",
-      "Pistola TANFOGLIO cal 9mm Mod. Combat F  2 cargadores 15 tiros",
-      "Tanfoglio",
-      "Armas",
-      "Showroom",
-      "ARM",
-      "9mm",
-      2,
-      7.6,
-      "ARMA",
-      "Controlado"
-    ],
-    [
       "350022",
       "Blanco de Cartulina Recicl. 58x81cm",
       "Sin Marca",
@@ -14944,8 +14921,8 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      3840,
-      7.6,
+      3830,
+      7.5,
       "Otro",
       "No controlado"
     ],
@@ -14957,7 +14934,7 @@ var DATOS = {
       "Central",
       "B",
       "Sin calibre",
-      233,
+      232,
       7.5,
       "AIRE LIBRE",
       "No controlado"
@@ -15418,19 +15395,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "942186",
-      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      29,
-      6.5,
-      "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
       "260294",
       "Telémetro KONUS Mod. RF1200 6x25 1200 mts #7316",
       "Konus",
@@ -15457,19 +15421,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "680660",
-      "Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA",
-      "Doberman LINTERNAS",
-      "No reglamentado",
-      "Central",
-      "B",
-      "Sin calibre",
-      406,
-      6.3,
-      "AIRE LIBRE",
-      "No controlado"
-    ],
-    [
       "4500330",
       "Cargador SigSauer 40SW P226 12T #MAG-226-40-12",
       "Sig Sauer",
@@ -15483,6 +15434,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "680660",
+      "Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA",
+      "Doberman LINTERNAS",
+      "No reglamentado",
+      "Central",
+      "B",
+      "Sin calibre",
+      405,
+      6.3,
+      "AIRE LIBRE",
+      "No controlado"
+    ],
+    [
       "DES880052",
       "Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 10 - 43",
       "Rocky Boots",
@@ -15493,6 +15457,19 @@ var DATOS = {
       8,
       6.3,
       "INDUMENTARIA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "942186",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      28,
+      6.2,
+      "INDUMENTARIA",
       "No controlado"
     ],
     [
@@ -15743,19 +15720,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "322000",
-      "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "4.5mm",
-      37,
-      6,
-      "NO LETAL",
-      "No controlado"
-    ],
-    [
       "701296",
       "Rifle DERYA cal 9mm Mod. ZY9 C111F Full FDE 14,5'' 2 carg 17 tiros",
       "Derya",
@@ -15857,6 +15821,19 @@ var DATOS = {
       722,
       5.8,
       "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "322000",
+      "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "4.5mm",
+      36,
+      5.8,
+      "NO LETAL",
       "No controlado"
     ],
     [
@@ -16079,19 +16056,6 @@ var DATOS = {
       5.6,
       "ARMA",
       "Controlado"
-    ],
-    [
-      "940168",
-      "Inflador para PCP DOBERMAN",
-      "Doberman",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      19,
-      5.6,
-      "AIRGUN",
-      "No controlado"
     ],
     [
       "501350",
@@ -16523,19 +16487,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "400226",
-      "Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "B",
-      "5.5mm",
-      324,
-      5,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "701290",
       "Rifle DERYA cal 9mm Mod. ZY9 Negro 10'' 2 carg 17 tiros",
       "Derya",
@@ -16572,6 +16523,19 @@ var DATOS = {
       3,
       5,
       "AIRE LIBRE (PROMO)",
+      "No controlado"
+    ],
+    [
+      "400226",
+      "Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "B",
+      "5.5mm",
+      322,
+      5,
+      "AIRGUN",
       "No controlado"
     ],
     [
@@ -16705,19 +16669,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "510442",
-      "Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL",
-      "Doberman MOCHILAS",
-      "No reglamentado",
-      "Central",
-      "B",
-      "Sin calibre",
-      61,
-      4.8,
-      "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
       "510771",
       "Mochila DOBERMAN c/ Bolso de Agua Coyote #BL019KH",
       "Doberman MOCHILAS",
@@ -16845,6 +16796,19 @@ var DATOS = {
       681,
       4.7,
       "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "510442",
+      "Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL",
+      "Doberman MOCHILAS",
+      "No reglamentado",
+      "Central",
+      "B",
+      "Sin calibre",
+      59,
+      4.7,
+      "INDUMENTARIA",
       "No controlado"
     ],
     [
@@ -17173,19 +17137,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "501113",
-      "Cartuchos GB 12 #3 Express 34g 250/25",
-      "GB",
-      "Municiones",
-      "Central",
-      "MUN",
-      "12GA",
-      2130,
-      4.2,
-      "MUNICION",
-      "Controlado"
-    ],
-    [
       "440154",
       "Lentes BERETTA Mod. Clash Amarillo #OC031A23540229UNI",
       "Beretta Mod",
@@ -17268,19 +17219,6 @@ var DATOS = {
       "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
       "Konus",
       "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      2,
-      4.2,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
-      "260290",
-      "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
-      "Konus",
-      "Accesorio controlado",
       "Showroom",
       "ACC",
       "Sin calibre",
@@ -17339,6 +17277,19 @@ var DATOS = {
       21,
       4.1,
       "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
+      "501113",
+      "Cartuchos GB 12 #3 Express 34g 250/25",
+      "GB",
+      "Municiones",
+      "Central",
+      "MUN",
+      "12GA",
+      2080,
+      4.1,
+      "MUNICION",
       "Controlado"
     ],
     [
@@ -17763,6 +17714,32 @@ var DATOS = {
       "Tanfoglio",
       "Armas",
       "Deposito DIGEMABEL",
+      "ARM",
+      "9mm",
+      1,
+      3.8,
+      "ARMA",
+      "Controlado"
+    ],
+    [
+      "600600",
+      "Pistola TANFOGLIO cal 9mm Mod. Combat F  2 cargadores 15 tiros",
+      "Tanfoglio",
+      "Armas",
+      "Showroom",
+      "ARM",
+      "9mm",
+      1,
+      3.8,
+      "ARMA",
+      "Controlado"
+    ],
+    [
+      "600600",
+      "Pistola TANFOGLIO cal 9mm Mod. Combat F  2 cargadores 15 tiros",
+      "Tanfoglio",
+      "Armas",
+      "Central",
       "ARM",
       "9mm",
       1,
@@ -18273,6 +18250,19 @@ var DATOS = {
       "A",
       "4.5mm",
       4,
+      3.5,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
+      "940168",
+      "Inflador para PCP DOBERMAN",
+      "Doberman",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      12,
       3.5,
       "AIRGUN",
       "No controlado"
@@ -18876,19 +18866,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "400379",
-      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      268,
-      3.1,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "712115",
       "Vaso COLEMAN 590ML Verde #2010818",
       "Coleman",
@@ -19017,6 +18994,19 @@ var DATOS = {
       3.1,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "400379",
+      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      262,
+      3.1,
+      "AIRGUN",
+      "No controlado"
     ],
     [
       "300090",
@@ -19357,19 +19347,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "110009",
-      "Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.",
-      "Indunaylon",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      45,
-      2.9,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "160175",
       "GAS P/ DEFENSA 60CC #PS00760",
       "Sin Marca",
@@ -19550,6 +19527,19 @@ var DATOS = {
       2.7,
       "PESCA (PROMO)",
       "No controlado"
+    ],
+    [
+      "110009",
+      "Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.",
+      "Indunaylon",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      43,
+      2.7,
+      "ACCESORIO DE ARMA",
+      "Controlado"
     ],
     [
       "942159",
@@ -19864,19 +19854,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "320515",
-      "Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      22,
-      2.6,
-      "AIRGUN (PROMO)",
-      "No controlado"
-    ],
-    [
       "600424",
       "Revolver Ruger 22LR/MAG SingleSix SAO Pav 6T 4'' #0623",
       "Ruger",
@@ -20131,7 +20108,7 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      1387,
+      1386,
       2.5,
       "PESCA (PROMO)",
       "No controlado"
@@ -20446,6 +20423,19 @@ var DATOS = {
       586,
       2.3,
       "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "320515",
+      "Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      20,
+      2.3,
+      "AIRGUN (PROMO)",
       "No controlado"
     ],
     [
@@ -21094,6 +21084,19 @@ var DATOS = {
       "CARG",
       "380ACP",
       8,
+      2.1,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
+      "260290",
+      "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
+      "Konus",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      1,
       2.1,
       "ACCESORIO DE ARMA",
       "Controlado"
@@ -22334,19 +22337,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "620661",
-      "Anzuelo Snake Crystal Niquel #1/0 c/25.",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      675,
-      1.7,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "700312",
       "Rifle Mendoza 22LR Puma SemiAuto Safari MirasReflect 17T",
       "Mendoza",
@@ -22358,6 +22348,19 @@ var DATOS = {
       1.7,
       "ARMA",
       "Controlado"
+    ],
+    [
+      "620661",
+      "Anzuelo Snake Crystal Niquel #1/0 c/25.",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      673,
+      1.7,
+      "PESCA (PROMO)",
+      "No controlado"
     ],
     [
       "620659",
@@ -23257,19 +23260,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "260289",
-      "Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274",
-      "Konus",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      2,
-      1.5,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "620646",
       "Anzuelo Snake C. Negro #09 c/20.",
       "Snake",
@@ -23306,19 +23296,6 @@ var DATOS = {
       12,
       1.5,
       "AIRE LIBRE",
-      "No controlado"
-    ],
-    [
-      "250180",
-      "Lubricante ASG 220ml. #16286",
-      "ASG",
-      "No reglamentado",
-      "Central",
-      "B",
-      "Sin calibre",
-      58,
-      1.5,
-      "AIRGUN",
       "No controlado"
     ],
     [
@@ -23476,19 +23453,6 @@ var DATOS = {
       1.5,
       "AIRE LIBRE",
       "No controlado"
-    ],
-    [
-      "260233",
-      "Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
-      "Vector Optics",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      33,
-      1.5,
-      "ACCESORIO DE ARMA",
-      "Controlado"
     ],
     [
       "324005",
@@ -23777,6 +23741,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "260233",
+      "Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
+      "Vector Optics",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      31,
+      1.4,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
       "151538",
       "Cuchillo Nieto  Linea Guerrilla (Oliva) #13100-0",
       "Miguel Nieto",
@@ -23879,6 +23856,19 @@ var DATOS = {
       1.4,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "250180",
+      "Lubricante ASG 220ml. #16286",
+      "ASG",
+      "No reglamentado",
+      "Central",
+      "B",
+      "Sin calibre",
+      52,
+      1.3,
+      "AIRGUN",
+      "No controlado"
     ],
     [
       "270602",
@@ -24139,19 +24129,6 @@ var DATOS = {
       1.3,
       "ACCESORIO DE ARMA",
       "Controlado"
-    ],
-    [
-      "681090",
-      "Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh",
-      "Nitecore",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      3,
-      1.3,
-      "AIRE LIBRE (PROMO)",
-      "No controlado"
     ],
     [
       "681090",
@@ -24453,19 +24430,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "620310",
-      "Anzuelo Mustad #6/0*6 92259",
-      "Mustad",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      256,
-      1.3,
-      "PESCA",
-      "No controlado"
-    ],
-    [
       "760052",
       "Parche ASG Mod. CZSHADOW2 #19967",
       "ASG",
@@ -24489,6 +24453,19 @@ var DATOS = {
       28,
       1.3,
       "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
+      "620310",
+      "Anzuelo Mustad #6/0*6 92259",
+      "Mustad",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      255,
+      1.3,
+      "PESCA",
       "No controlado"
     ],
     [
@@ -25088,19 +25065,6 @@ var DATOS = {
       1.2,
       "ACCESORIO DE ARMA",
       "Controlado"
-    ],
-    [
-      "320517",
-      "Flecha UMAREX Mod. NXG 26'' x3 unidades",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      28,
-      1.2,
-      "AIRGUN (PROMO)",
-      "No controlado"
     ],
     [
       "320815",
@@ -25776,6 +25740,19 @@ var DATOS = {
       17,
       1.1,
       "AIRE LIBRE",
+      "No controlado"
+    ],
+    [
+      "320517",
+      "Flecha UMAREX Mod. NXG 26'' x3 unidades",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      26,
+      1.1,
+      "AIRGUN (PROMO)",
       "No controlado"
     ],
     [
@@ -27573,6 +27550,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "681090",
+      "Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh",
+      "Nitecore",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      2,
+      0.9,
+      "AIRE LIBRE (PROMO)",
+      "No controlado"
+    ],
+    [
       "320707",
       "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
       "Umarex",
@@ -27584,19 +27574,6 @@ var DATOS = {
       0.9,
       "NO LETAL",
       "No controlado"
-    ],
-    [
-      "550250",
-      "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
-      "BWC",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "22LR",
-      20,
-      0.9,
-      "ACCESORIO DE ARMA",
-      "Controlado"
     ],
     [
       "270152",
@@ -27963,6 +27940,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "550250",
+      "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
+      "BWC",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "22LR",
+      19,
+      0.8,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
       "550303",
       "Kit de limpieza GSM-BWC para armas cortas #BC-HNDGCLN-KIT",
       "BWC",
@@ -28246,19 +28236,6 @@ var DATOS = {
       3,
       0.8,
       "AIRE LIBRE (PROMO)",
-      "No controlado"
-    ],
-    [
-      "324156",
-      "Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "6mm",
-      6,
-      0.8,
-      "AIRGUN",
       "No controlado"
     ],
     [
@@ -28831,6 +28808,19 @@ var DATOS = {
       29,
       0.8,
       "MUNICION",
+      "Controlado"
+    ],
+    [
+      "260289",
+      "Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274",
+      "Konus",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      1,
+      0.8,
+      "ACCESORIO DE ARMA",
       "Controlado"
     ],
     [
@@ -30121,19 +30111,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "621050",
-      "Esmerillon Snake Negro Nickel 6 c/15 NS-1707",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      410,
-      0.7,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "710506",
       "Caja de Seguridad Digital Noble 35x22x25cm#SWSL33EW",
       "Sin Marca",
@@ -30158,6 +30135,19 @@ var DATOS = {
       0.7,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "621050",
+      "Esmerillon Snake Negro Nickel 6 c/15 NS-1707",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      409,
+      0.7,
+      "PESCA (PROMO)",
+      "No controlado"
     ],
     [
       "210301",
@@ -30298,6 +30288,19 @@ var DATOS = {
       "NC",
       "6mm",
       1,
+      0.7,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
+      "324156",
+      "Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "A",
+      "6mm",
+      5,
       0.7,
       "AIRGUN",
       "No controlado"
@@ -31655,19 +31658,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "620687",
-      "Anzuelo Snake Maruseigo Niquel #16 c/20.",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      315,
-      0.6,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "920521",
       "Manga p/Brazo Scorpion Blanco #M",
       "Sumax",
@@ -31678,6 +31668,19 @@ var DATOS = {
       11,
       0.6,
       "INDUMENTARIA",
+      "No controlado"
+    ],
+    [
+      "620687",
+      "Anzuelo Snake Maruseigo Niquel #16 c/20.",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      314,
+      0.6,
+      "PESCA (PROMO)",
       "No controlado"
     ],
     [
@@ -34593,19 +34596,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "830327",
-      "Hilo Snake Mult. 4X Wild 0.40MM 150M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      29,
-      0.4,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "920187",
       "N-Llavero H.M.Gerb#48101Marron",
       "Sin Marca",
@@ -34905,6 +34895,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "830327",
+      "Hilo Snake Mult. 4X Wild 0.40MM 150M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      28,
+      0.4,
+      "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
       "260443",
       "Mira Laser CAT Bersa Thunder Pro 9mm/40SW/45ACP",
       "Sin Marca",
@@ -34939,19 +34942,6 @@ var DATOS = {
       "CARG",
       "380ACP",
       7,
-      0.4,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
-      "261060",
-      "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
-      "BWC",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "223REM",
-      71,
       0.4,
       "ACCESORIO DE ARMA",
       "Controlado"
@@ -35126,6 +35116,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "261060",
+      "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
+      "BWC",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "223REM",
+      70,
+      0.4,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
       "770503",
       "Tapa oidos BERETTA Mod. Stand Azul #CF1000000205SS",
       "Beretta Mod",
@@ -35176,19 +35179,6 @@ var DATOS = {
       0.4,
       "AIRGUN (PROMO)",
       "No controlado"
-    ],
-    [
-      "140188",
-      "Correa táctica DOBERMAN BLACK #BL066BL",
-      "Doberman",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      31,
-      0.4,
-      "ACCESORIO DE ARMA",
-      "Controlado"
     ],
     [
       "830278",
@@ -35371,6 +35361,19 @@ var DATOS = {
       0.4,
       "AIRGUN (PROMO)",
       "No controlado"
+    ],
+    [
+      "140188",
+      "Correa táctica DOBERMAN BLACK #BL066BL",
+      "Doberman",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "Sin calibre",
+      30,
+      0.4,
+      "ACCESORIO DE ARMA",
+      "Controlado"
     ],
     [
       "680466",
@@ -38828,19 +38831,6 @@ var DATOS = {
       2,
       0.3,
       "AIRE LIBRE",
-      "No controlado"
-    ],
-    [
-      "900364",
-      "Pila Duracell Alcalina AAX6 Chica",
-      "Duracell",
-      "No reglamentado",
-      "Showroom",
-      "C",
-      "Sin calibre",
-      9,
-      0.3,
-      "Otro",
       "No controlado"
     ],
     [
@@ -43173,19 +43163,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "550261",
-      "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
-      "BWC",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "223REM",
-      15,
-      0.2,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "750171",
       "Carpa Canadiense 2P.S/121 T.IM.c/M.P",
       "Sin Marca",
@@ -43810,6 +43787,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "550261",
+      "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
+      "BWC",
+      "Accesorio controlado",
+      "Central",
+      "ACC",
+      "223REM",
+      14,
+      0.1,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
       "510750",
       "Mochila DOBERMAN 60L DELTA GREEN #BL130GR",
       "Doberman MOCHILAS",
@@ -44369,6 +44359,19 @@ var DATOS = {
       "Controlado"
     ],
     [
+      "900364",
+      "Pila Duracell Alcalina AAX6 Chica",
+      "Duracell",
+      "No reglamentado",
+      "Showroom",
+      "C",
+      "Sin calibre",
+      5,
+      0.1,
+      "Otro",
+      "No controlado"
+    ],
+    [
       "505071",
       "Balas SELLIER n BELLOT cal 38SPL FMJ 158gr 50x20 #V311412",
       "Sellier & Bellot",
@@ -44419,19 +44422,6 @@ var DATOS = {
       0.1,
       "INDUMENTARIA",
       "No controlado"
-    ],
-    [
-      "260684",
-      "Montante para rifles KONUS de 25.4mm Medio para Rifles 22LR y AC #7416",
-      "Konus",
-      "Accesorio controlado",
-      "Central",
-      "ACC",
-      "Sin calibre",
-      1,
-      0.1,
-      "ACCESORIO DE ARMA",
-      "Controlado"
     ],
     [
       "749000",
@@ -44673,6 +44663,19 @@ var DATOS = {
       "Konus",
       "Accesorio controlado",
       "Showroom",
+      "ACC",
+      "Sin calibre",
+      1,
+      0.1,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
+      "260683",
+      "Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415",
+      "Konus",
+      "Accesorio controlado",
+      "Central",
       "ACC",
       "Sin calibre",
       1,
@@ -46238,19 +46241,6 @@ var DATOS = {
       3,
       0.1,
       "AIRE LIBRE",
-      "No controlado"
-    ],
-    [
-      "900302",
-      "Pila Duracell Alcalina - AAAx6 CHICA",
-      "Duracell",
-      "No reglamentado",
-      "Showroom",
-      "A",
-      "Sin calibre",
-      4,
-      0.1,
-      "Otro",
       "No controlado"
     ],
     [
@@ -48009,19 +47999,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "400460",
-      "Balines de Paintball UMAREX cal 50 x 100 unid",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "B",
-      "cal 50",
-      5,
-      0.1,
-      "NO LETAL",
-      "No controlado"
-    ],
-    [
       "AVE610962",
       "Caña Snake Mamba Neg 1.68m 15-30LB Medium Heavy Frontal MC-M#561",
       "Snake",
@@ -48657,19 +48634,6 @@ var DATOS = {
       0.1,
       "PESCA",
       "No controlado"
-    ],
-    [
-      "110504",
-      "Pistolera para Traumatica INDUNAYLON p/MOLLE",
-      "Indunaylon",
-      "Accesorio controlado",
-      "Showroom",
-      "ACC",
-      "Sin calibre",
-      3,
-      0.1,
-      "ACCESORIO DE ARMA",
-      "Controlado"
     ],
     [
       "110503",
@@ -49803,6 +49767,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "400460",
+      "Balines de Paintball UMAREX cal 50 x 100 unid",
+      "Umarex",
+      "No reglamentado",
+      "Central",
+      "B",
+      "cal 50",
+      4,
+      0.1,
+      "NO LETAL",
+      "No controlado"
+    ],
+    [
       "720227",
       "Codera y Rodillera Antimotín HX-02",
       "Sin Marca",
@@ -50834,19 +50811,6 @@ var DATOS = {
       "Pila DURACELL Mod. 2032 x 5 unidades",
       "Duracell",
       "No reglamentado",
-      "Showroom",
-      "B",
-      "Sin calibre",
-      10,
-      0.1,
-      "Otro",
-      "No controlado"
-    ],
-    [
-      "900305",
-      "Pila DURACELL Mod. 2032 x 5 unidades",
-      "Duracell",
-      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
@@ -51285,19 +51249,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "110016M",
-      "Funda P/Arma Larga Negro-110 X 20 F03/Mendoza",
-      "Mendoza",
-      "Accesorio controlado",
-      "Showroom",
-      "ACC",
-      "Sin calibre",
-      1,
-      0.1,
-      "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
       "610006",
       "Caña Tipo Bambu 4,5mts #4510",
       "Sin Marca",
@@ -51534,6 +51485,19 @@ var DATOS = {
     [
       "110501",
       "Revolvera para Traumatica INDUNAYLON 4\"",
+      "Indunaylon",
+      "Accesorio controlado",
+      "Showroom",
+      "ACC",
+      "Sin calibre",
+      2,
+      0.1,
+      "ACCESORIO DE ARMA",
+      "Controlado"
+    ],
+    [
+      "110504",
+      "Pistolera para Traumatica INDUNAYLON p/MOLLE",
       "Indunaylon",
       "Accesorio controlado",
       "Showroom",
@@ -52140,19 +52104,6 @@ var DATOS = {
       30,
       0.1,
       "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
-      "900322",
-      "PILA Duracell 9V 1 x 48",
-      "Duracell",
-      "No reglamentado",
-      "Showroom",
-      "A",
-      "Sin calibre",
-      2,
-      0.1,
-      "Otro",
       "No controlado"
     ],
     [
@@ -57340,19 +57291,6 @@ var DATOS = {
       1,
       0,
       "PESCA",
-      "No controlado"
-    ],
-    [
-      "400236",
-      "Balines APOLO 5,5mm MAGNUM 1gr. Carton*100X250 #E13001",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      4,
-      0,
-      "AIRGUN",
       "No controlado"
     ],
     [
@@ -64255,10 +64193,10 @@ var DATOS = {
       2.9
     ],
     "5.11": [
-      44.8,
-      34.2,
-      32.1,
-      33.6,
+      39.4,
+      32.9,
+      30.8,
+      32.3,
       37.9,
       32.6,
       32.2,
@@ -64372,7 +64310,7 @@ var DATOS = {
       511.3,
       890.7,
       827.7,
-      820.1
+      818.7
     ],
     "ATA": [
       3.4,
@@ -64395,10 +64333,10 @@ var DATOS = {
       3.4
     ],
     "Abu Garcia": [
-      41.4,
-      39.1,
-      38.1,
-      34.3,
+      42.7,
+      40.3,
+      39.3,
+      35.5,
       24.5,
       20.2,
       20.2,
@@ -64415,10 +64353,10 @@ var DATOS = {
       17.5
     ],
     "Aitor": [
-      59.7,
-      54.7,
-      53.8,
-      49.4,
+      59.9,
+      54.8,
+      54,
+      49.5,
       19.9,
       19.9,
       19.4,
@@ -64435,10 +64373,10 @@ var DATOS = {
       17.6
     ],
     "Akdal": [
-      57.7,
-      57.7,
-      57.7,
-      57.7,
+      75.5,
+      75.5,
+      75.5,
+      75.5,
       27.8,
       27.8,
       27.8,
@@ -64532,7 +64470,7 @@ var DATOS = {
       589.3,
       561.3,
       520.5,
-      494.7
+      494.3
     ],
     "Armadillo": [
       0,
@@ -64555,10 +64493,10 @@ var DATOS = {
       12.2
     ],
     "Armed": [
-      157.7,
-      154.9,
-      147.4,
-      144.9,
+      159.8,
+      157,
+      149.5,
+      147,
       124,
       117.4,
       121.8,
@@ -64632,7 +64570,7 @@ var DATOS = {
       74.4,
       74.4,
       58.4,
-      58.4
+      55.6
     ],
     "BRG": [
       0,
@@ -64655,10 +64593,10 @@ var DATOS = {
       10.9
     ],
     "BWC": [
-      393.9,
-      382.5,
-      369.9,
-      362.5,
+      362.1,
+      351,
+      338.5,
+      331.1,
       175.3,
       169.1,
       166.6,
@@ -64672,7 +64610,7 @@ var DATOS = {
       135.3,
       131.2,
       126.2,
-      125.2
+      125
     ],
     "Beamshot": [
       0.8,
@@ -64715,7 +64653,7 @@ var DATOS = {
       956.4
     ],
     "Beretta Mod": [
-      41.7,
+      50.1,
       28.3,
       28.9,
       22.4,
@@ -64775,15 +64713,15 @@ var DATOS = {
       0.7
     ],
     "Boito": [
-      179.5,
-      172.6,
-      163.2,
-      154,
-      154.8,
-      152.5,
+      183.2,
+      176.3,
+      166.9,
+      157.7,
+      151.7,
       149.3,
-      143.6,
-      138.1,
+      146.2,
+      140.4,
+      135,
       134.6,
       135.9,
       134.1,
@@ -64815,11 +64753,11 @@ var DATOS = {
       0.2
     ],
     "CCI": [
-      436.1,
-      434.2,
-      433.5,
-      432.4,
-      426.5,
+      441.6,
+      439.8,
+      439,
+      438,
+      432,
       563,
       562.1,
       561.7,
@@ -64835,15 +64773,15 @@ var DATOS = {
       556.7
     ],
     "CYA Supply Co.": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.4,
       0.4,
       0.4,
@@ -64915,10 +64853,10 @@ var DATOS = {
       0.2
     ],
     "Caterpillar": [
-      52,
-      109.7,
-      90.6,
-      118.4,
+      47.7,
+      105.4,
+      86.3,
+      114.1,
       121.6,
       119.8,
       120.3,
@@ -64955,10 +64893,10 @@ var DATOS = {
       7.3
     ],
     "Coleman": [
-      233.2,
-      225.8,
-      220.9,
-      208.1,
+      211.8,
+      204.4,
+      199.4,
+      186.7,
       178.4,
       176.3,
       174.9,
@@ -65015,14 +64953,14 @@ var DATOS = {
       17.9
     ],
     "Crosman": [
-      294.5,
-      264.7,
-      239,
-      229.2,
-      207.6,
-      193.2,
-      164.8,
-      141.5,
+      291.9,
+      262.2,
+      236.4,
+      226.6,
+      205.1,
+      190.6,
+      162.3,
+      139,
       135.2,
       129.2,
       123.2,
@@ -65032,10 +64970,10 @@ var DATOS = {
       91.1,
       70.1,
       68.9,
-      67.9
+      66.6
     ],
     "DK": [
-      15.9,
+      17.4,
       8.7,
       7.2,
       4.5,
@@ -65095,10 +65033,10 @@ var DATOS = {
       823.7
     ],
     "Doberman": [
-      134.9,
-      182,
-      163.9,
-      159,
+      225,
+      263.8,
+      245.7,
+      240.8,
       183.7,
       175.5,
       169.8,
@@ -65112,7 +65050,7 @@ var DATOS = {
       224,
       189.8,
       169.5,
-      155.3
+      153.2
     ],
     "Doberman BALINES": [
       0,
@@ -65152,13 +65090,13 @@ var DATOS = {
       161.3,
       154.8,
       914.9,
-      903.9
+      903.2
     ],
     "Doberman LINTERNAS": [
-      209.5,
-      188.8,
-      172,
-      149.5,
+      219.5,
+      198.8,
+      182,
+      159.5,
       80.4,
       71.4,
       65.4,
@@ -65172,10 +65110,10 @@ var DATOS = {
       199.4,
       190.1,
       184.9,
-      182.2
+      181.9
     ],
     "Doberman MOCHILAS": [
-      640.8,
+      667.8,
       547.1,
       465.8,
       409.1,
@@ -65192,7 +65130,7 @@ var DATOS = {
       410.5,
       400.2,
       385.2,
-      378.4
+      378.2
     ],
     "Doberman/Pistola": [
       0.4,
@@ -65252,7 +65190,7 @@ var DATOS = {
       7.3,
       7.1,
       5.1,
-      6.9
+      6.6
     ],
     "EG": [
       14.3,
@@ -65335,14 +65273,14 @@ var DATOS = {
       7.6
     ],
     "Fab Defense": [
-      251.8,
-      203.1,
-      180.4,
-      111.7,
-      300.6,
-      291.3,
-      289.7,
-      285.2,
+      348.4,
+      299.6,
+      277,
+      208.2,
+      300.7,
+      291.4,
+      289.8,
+      285.3,
       283.5,
       279.5,
       280.4,
@@ -65355,11 +65293,11 @@ var DATOS = {
       253.9
     ],
     "Federal": [
-      47.6,
-      47.2,
-      46.6,
-      45.9,
-      45.3,
+      294.5,
+      294.1,
+      293.4,
+      292.7,
+      292.2,
       319.1,
       319.2,
       319,
@@ -65455,15 +65393,15 @@ var DATOS = {
       0.2
     ],
     "Fobus": [
-      91.7,
-      150.4,
-      146.2,
-      162.9,
-      120.5,
-      100.4,
-      96.4,
-      82.3,
-      80.2,
+      81.7,
+      140.4,
+      136.2,
+      152.9,
+      120.8,
+      100.7,
+      96.6,
+      82.6,
+      80.5,
       77.5,
       76.2,
       66.3,
@@ -65495,11 +65433,11 @@ var DATOS = {
       0.1
     ],
     "GB": [
-      1015.7,
-      700.9,
-      602.7,
-      269.6,
-      386.8,
+      810.4,
+      495.5,
+      397.3,
+      64.2,
+      181.4,
       283,
       262.8,
       256.8,
@@ -65512,13 +65450,13 @@ var DATOS = {
       137,
       130.2,
       112.4,
-      111.5
+      111.4
     ],
     "Gamo": [
-      15.1,
-      14.9,
-      14.9,
-      14.7,
+      19.3,
+      19.1,
+      19.1,
+      18.9,
       8.4,
       8.4,
       8.4,
@@ -65575,15 +65513,15 @@ var DATOS = {
       239.5
     ],
     "Glock": [
-      216.5,
-      190.9,
-      157.6,
-      119.9,
-      145.1,
-      146.3,
-      146.2,
-      145.5,
-      162.7,
+      207.8,
+      182.2,
+      149,
+      111.2,
+      148,
+      149.2,
+      149.1,
+      148.4,
+      165.6,
       255.5,
       255.5,
       288.2,
@@ -65735,11 +65673,11 @@ var DATOS = {
       0.6
     ],
     "IMI": [
-      314.2,
-      298.1,
-      257.2,
-      247.1,
-      239.5,
+      626.3,
+      610.2,
+      569.3,
+      559.2,
+      551.5,
       4342.3,
       4337.4,
       4324.5,
@@ -65752,13 +65690,13 @@ var DATOS = {
       4224.9,
       4230.9,
       4213.3,
-      4199.1
+      4198.5
     ],
     "Imalent": [
-      67,
-      66.6,
-      66.2,
-      66.2,
+      69.3,
+      68.8,
+      68.5,
+      68.4,
       21.4,
       21.4,
       20.9,
@@ -65792,7 +65730,7 @@ var DATOS = {
       4.2,
       3.8,
       3.7,
-      8.5
+      8.4
     ],
     "Intratec": [
       0,
@@ -65852,7 +65790,7 @@ var DATOS = {
       297.8,
       299.8,
       299.5,
-      297.7
+      297
     ],
     "KOR": [
       1434.7,
@@ -65878,7 +65816,7 @@ var DATOS = {
       0,
       0,
       0,
-      418.6,
+      371.4,
       483,
       468,
       456.9,
@@ -65892,13 +65830,13 @@ var DATOS = {
       658.2,
       630.6,
       589.7,
-      570.1
+      562.4
     ],
     "Llama": [
-      5.5,
-      5.5,
-      5.5,
-      5.5,
+      4.8,
+      4.8,
+      4.8,
+      4.8,
       3.7,
       3.7,
       3.7,
@@ -65977,8 +65915,8 @@ var DATOS = {
     "Marine Sports": [
       21.8,
       19.4,
-      18.8,
-      16.5,
+      18.9,
+      16.6,
       14.5,
       13.9,
       13.2,
@@ -65995,10 +65933,10 @@ var DATOS = {
       11.9
     ],
     "Marlin": [
-      16.3,
-      16.3,
-      15.9,
-      15.9,
+      16.1,
+      16.1,
+      15.7,
+      15.7,
       3.9,
       3.9,
       3.9,
@@ -66035,10 +65973,10 @@ var DATOS = {
       0.2
     ],
     "Mendoza": [
-      1333.6,
-      1330.2,
-      1314.8,
-      1229.3,
+      1331.8,
+      1328.5,
+      1313.1,
+      1227.6,
       1217.4,
       1200.2,
       1181.8,
@@ -66052,13 +65990,13 @@ var DATOS = {
       1131.1,
       1132.8,
       1129.3,
-      1086
+      1080.8
     ],
     "Miguel Nieto": [
-      52.5,
-      51,
-      50.5,
-      47.6,
+      43,
+      41.5,
+      41,
+      38.1,
       57.8,
       56.2,
       47.8,
@@ -66075,10 +66013,10 @@ var DATOS = {
       29.8
     ],
     "Mossberg": [
-      7.5,
-      7.5,
-      7.5,
-      7.5,
+      7.6,
+      7.6,
+      7.6,
+      7.6,
       7.3,
       4.1,
       4.1,
@@ -66115,10 +66053,10 @@ var DATOS = {
       6.1
     ],
     "NTK": [
-      332.4,
-      308.6,
-      263.4,
-      212.2,
+      339.6,
+      308.2,
+      263.1,
+      211.8,
       514.3,
       495.8,
       487.6,
@@ -66135,10 +66073,10 @@ var DATOS = {
       367.3
     ],
     "Nitecore": [
-      289.9,
-      247.3,
-      218.4,
-      198.3,
+      291.4,
+      248.8,
+      219.9,
+      199.8,
       212.8,
       201.6,
       365.9,
@@ -66152,7 +66090,7 @@ var DATOS = {
       298.5,
       203.8,
       149.2,
-      141.3
+      140.7
     ],
     "Norinco": [
       3.5,
@@ -66175,15 +66113,15 @@ var DATOS = {
       3.3
     ],
     "Olight": [
-      3.7,
-      3.7,
-      3.7,
-      3.7,
-      6.7,
-      6.7,
-      6.7,
-      3.3,
-      3.3,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
+      7.5,
+      7.5,
+      7.5,
+      4.1,
+      4.1,
       4.1,
       4.1,
       4.1,
@@ -66236,7 +66174,7 @@ var DATOS = {
     ],
     "Ottoni": [
       0.8,
-      0.7,
+      0.8,
       0.7,
       0.7,
       2,
@@ -66295,10 +66233,10 @@ var DATOS = {
       3.8
     ],
     "Polymer": [
-      5.5,
       5.2,
-      4.8,
-      4,
+      5,
+      4.6,
+      3.8,
       3.9,
       3.7,
       3.6,
@@ -66395,10 +66333,10 @@ var DATOS = {
       0
     ],
     "Rexio": [
-      10.4,
-      9.2,
-      9.2,
-      9.8,
+      10.3,
+      9.1,
+      9.1,
+      9.7,
       9.7,
       9.7,
       9.7,
@@ -66415,10 +66353,10 @@ var DATOS = {
       7.9
     ],
     "Reysol": [
-      15.2,
-      15.2,
-      15.2,
-      14.8,
+      6.5,
+      6.5,
+      6.5,
+      6.1,
       7.5,
       7.5,
       7.5,
@@ -66435,11 +66373,11 @@ var DATOS = {
       7.5
     ],
     "Rio": [
-      22.7,
-      22.7,
-      22.7,
-      22.5,
-      22.5,
+      23.1,
+      23.1,
+      23.1,
+      22.9,
+      22.9,
       22.7,
       22.6,
       22.6,
@@ -66455,10 +66393,10 @@ var DATOS = {
       0.3
     ],
     "Rocky Boots": [
-      75.8,
-      71.3,
-      70.9,
-      70.2,
+      74.3,
+      77,
+      76.6,
+      75.9,
       60.1,
       59.5,
       59.5,
@@ -66535,11 +66473,11 @@ var DATOS = {
       106.8
     ],
     "Saga": [
-      1045.8,
-      805.3,
-      719.7,
-      612.2,
-      585.4,
+      894.3,
+      653.9,
+      568.3,
+      460.8,
+      433.9,
       761.9,
       739.3,
       719.7,
@@ -66597,9 +66535,9 @@ var DATOS = {
     "Sellier & Bellot": [
       0,
       0,
-      2255,
-      2240.3,
-      2202.7,
+      2024.6,
+      2009.9,
+      1972.3,
       5313,
       5263.4,
       5239.4,
@@ -66612,7 +66550,7 @@ var DATOS = {
       5215.9,
       5193.7,
       5167.4,
-      5144.7
+      5144.4
     ],
     "Sig Sauer": [
       665.8,
@@ -66635,15 +66573,15 @@ var DATOS = {
       197.9
     ],
     "Sin Marca": [
-      3558.7,
-      3555.4,
-      3551.8,
-      3542,
-      3578,
-      564.5,
-      563.3,
-      562.6,
-      571.7,
+      3557.9,
+      3549.6,
+      3546,
+      3536.3,
+      3581.9,
+      566.7,
+      565.4,
+      564.8,
+      573.8,
       565.3,
       564.3,
       563,
@@ -66652,7 +66590,7 @@ var DATOS = {
       555.5,
       552.7,
       553.1,
-      551.8
+      551.7
     ],
     "Smith & Wesson": [
       19.9,
@@ -66675,10 +66613,10 @@ var DATOS = {
       4.9
     ],
     "Snake": [
-      809.8,
-      799.5,
-      796.2,
-      788.1,
+      783.1,
+      772.8,
+      769.4,
+      761.4,
       710.6,
       704.3,
       703.7,
@@ -66695,10 +66633,10 @@ var DATOS = {
       683.6
     ],
     "Sumax": [
-      68.8,
-      46.3,
-      43.4,
-      41,
+      68,
+      46.5,
+      43.6,
+      41.3,
       38.2,
       37.1,
       36.1,
@@ -66715,10 +66653,10 @@ var DATOS = {
       30.4
     ],
     "Sundance": [
-      6.2,
-      6.2,
-      6.2,
-      6.2,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
       3.6,
       3.6,
       3.6,
@@ -66735,10 +66673,10 @@ var DATOS = {
       3.5
     ],
     "TSS": [
-      812.9,
-      1716.4,
-      1738.6,
-      2040.5,
+      809.8,
+      1713.3,
+      1735.5,
+      2037.5,
       1898.6,
       1794.2,
       1703.1,
@@ -66752,18 +66690,18 @@ var DATOS = {
       1792.8,
       1424.2,
       1213.5,
-      1168.7
+      1168.1
     ],
     "Tanfoglio": [
-      1285.1,
-      1194,
-      1140.4,
-      1056.8,
-      1003.7,
-      969.1,
-      897.8,
-      815.4,
-      784.6,
+      1298,
+      1207,
+      1153.3,
+      1069.7,
+      1003.9,
+      969.3,
+      898,
+      815.6,
+      784.7,
       803.7,
       811.9,
       720,
@@ -66775,10 +66713,10 @@ var DATOS = {
       650.6
     ],
     "Taurus": [
-      0,
-      0,
-      6.9,
-      4.4,
+      0.2,
+      0.2,
+      7.1,
+      4.6,
       11.6,
       8.8,
       8.8,
@@ -66875,10 +66813,10 @@ var DATOS = {
       1.3
     ],
     "Truglo": [
-      45.1,
-      43.4,
-      42.5,
-      43.6,
+      58.1,
+      56.4,
+      55.5,
+      56.5,
       25,
       25,
       24.5,
@@ -66915,11 +66853,11 @@ var DATOS = {
       7.7
     ],
     "Umarex": [
-      1644.8,
-      1205.7,
-      1122.4,
-      1320.6,
-      1439.6,
+      1642.7,
+      1203.6,
+      1120.3,
+      1318.5,
+      1438.9,
       1315.5,
       1219.1,
       2787.8,
@@ -66932,13 +66870,13 @@ var DATOS = {
       3435.2,
       3262,
       3011.2,
-      2952.1
+      2948.1
     ],
     "Uzkon": [
-      11.4,
-      11.4,
-      11.4,
-      11.4,
+      11.2,
+      11.2,
+      11.2,
+      11.2,
       2.4,
       2.4,
       2.4,
@@ -67016,14 +66954,14 @@ var DATOS = {
     ],
     "Vector Optics": [
       0,
-      259.7,
-      228.3,
-      210.7,
-      160.5,
-      129,
-      119.2,
-      97.4,
-      316.6,
+      236,
+      204.6,
+      187.1,
+      172.1,
+      140.6,
+      130.8,
+      109,
+      328.2,
       303.5,
       298.7,
       285.6,
@@ -67032,7 +66970,7 @@ var DATOS = {
       397.7,
       381.4,
       359.4,
-      355.4
+      355.3
     ],
     "Walther": [
       370.3,
@@ -67174,7 +67112,7 @@ var DATOS = {
       979.7,
       980.8,
       979.3,
-      975.3
+      974.7
     ],
     "505569|Balas SELLIER n BELLOT cal 30-06SPRING FMJ 124gr 20x20 #V340772": [
       1646.1,
@@ -67314,7 +67252,7 @@ var DATOS = {
       442,
       443.7,
       443.7,
-      420.2
+      418.6
     ],
     "700312|Rifle Mendoza 22LR Puma SemiAuto Safari MirasReflect 17T": [
       408.9,
@@ -67334,7 +67272,7 @@ var DATOS = {
       376,
       376,
       372.5,
-      365.6
+      363.9
     ],
     "320069|Rifle AC TSS/Doberman 5.5mm B2-4P Polimero": [
       115.2,
@@ -67417,11 +67355,11 @@ var DATOS = {
       324.1
     ],
     "505164|Balas IMI 9mm 124GR DI-CUT P. Hueca 1000/50": [
-      311.9,
-      311.8,
-      310.9,
-      310.6,
-      309.2,
+      624,
+      623.8,
+      623,
+      622.7,
+      621.3,
       312,
       312,
       312,
@@ -67437,11 +67375,11 @@ var DATOS = {
       310.9
     ],
     "505009|Balas SELLIER n BELLOT cal 6,35mm/25AUTO FMJ 50gr 50x40 #V310022": [
-      638.1,
-      616.2,
-      619.5,
-      617.5,
-      616,
+      328.5,
+      306.6,
+      309.8,
+      307.9,
+      306.4,
       310.3,
       309.4,
       309.3,
@@ -67537,11 +67475,11 @@ var DATOS = {
       275.1
     ],
     "505376|Balas Federal 40SW 180GR PNormalCobreada 50x20 #AE40R1": [
-      1,
-      0.9,
-      0.2,
-      0.1,
-      0,
+      249.2,
+      249.1,
+      248.4,
+      248.3,
+      248.3,
       248.1,
       248.2,
       248,
@@ -67614,7 +67552,7 @@ var DATOS = {
       217.3,
       211.3,
       206.9,
-      204.9
+      204.7
     ],
     "324090|Revolver Marcadora de Paintball UMAREX T4E cal 50 Mod. TR 50 GEN2 13 Joules #2.4058": [
       136.4,
@@ -67714,27 +67652,7 @@ var DATOS = {
       175.7,
       175.5,
       173.3,
-      169.7
-    ],
-    "700305|Rifle Mendoza 22LR Puma SemiAuto Squad MirasReflect 17T": [
-      200.1,
-      200.1,
-      196.6,
-      180.8,
-      180.8,
-      179,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      175.5,
-      173.8,
-      166.8
+      169.3
     ],
     "400223|Balines APOLO 5,5mm Cónico 0,77gr. Carton*100X250 #E11001": [
       226.4,
@@ -67755,6 +67673,26 @@ var DATOS = {
       168.2,
       166.4,
       166.3
+    ],
+    "700305|Rifle Mendoza 22LR Puma SemiAuto Squad MirasReflect 17T": [
+      200.1,
+      200.1,
+      196.6,
+      180.8,
+      180.8,
+      179,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      175.5,
+      173.8,
+      165
     ],
     "324095|Escopeta Marcadora de Paintball UMAREX T4E cal 68 Mod. TB 68 16 Joules #2.4711": [
       95.5,
@@ -67814,7 +67752,7 @@ var DATOS = {
       190.1,
       178.2,
       165.5,
-      157
+      155.3
     ],
     "324006|Pistola UMAREX T4E cal.43 Mod. Glock 17 Gen5 Coyote #211.00.04": [
       0,
@@ -67937,11 +67875,11 @@ var DATOS = {
       124
     ],
     "501366|Cartuchos SAGA 20 #3 GOLD 28gr T2": [
-      187,
-      175.2,
-      168.7,
-      157.8,
-      151.5,
+      35.5,
+      23.7,
+      17.3,
+      6.4,
+      0,
       144.2,
       138.7,
       130.6,
@@ -68357,11 +68295,11 @@ var DATOS = {
       80.2
     ],
     "400265|Balas Fogeo UMAREX 9mm P.A.K. 600x75": [
-      47.2,
-      42.6,
+      47.3,
+      42.7,
       41,
-      38.7,
-      35.6,
+      38.8,
+      35.7,
       34.5,
       32.5,
       31.4,
@@ -68434,7 +68372,7 @@ var DATOS = {
       110.8,
       96.2,
       82.3,
-      75.9
+      75.4
     ],
     "400132|Balas Armscor 22Corto 29GR PNormalCobreada 50x100": [
       144.5,
@@ -68534,7 +68472,7 @@ var DATOS = {
       72.4,
       71.6,
       70.9,
-      70.5
+      70.4
     ],
     "700993|Rifle marca TINCK cal 223REM Mod. ARX15-MS 8,5'' 1 carg 30 tiros": [
       230.8,
@@ -68594,7 +68532,7 @@ var DATOS = {
       9.7,
       71.1,
       68.4,
-      68
+      67.6
     ],
     "400299|Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980": [
       0,
@@ -68614,7 +68552,7 @@ var DATOS = {
       87.9,
       81.1,
       71.6,
-      67.1
+      66.9
     ],
     "501593|Cartuchos SAGA 36-65 #7 11gr T1": [
       78.3,
@@ -68734,7 +68672,7 @@ var DATOS = {
       64.3,
       64.3,
       64.1,
-      64.1
+      63.9
     ],
     "SID4520455|Cargador KCI cal .40 Mod. Glock 50 tiros": [
       0,
@@ -68874,7 +68812,7 @@ var DATOS = {
       70.6,
       68.7,
       60.8,
-      58.9
+      54.9
     ],
     "505577|Balas SELLIER n BELLOT cal 30-30WIN SP 150gr 20x25 #V330352": [
       60.6,
@@ -69137,11 +69075,11 @@ var DATOS = {
       48
     ],
     "505578|Balas SELLIER n BELLOT cal 300 BLACKOUT AAC FMJ 124gr 20x50 #V341282": [
-      51.4,
-      51.4,
-      51,
-      51,
-      47.8,
+      3.5,
+      3.5,
+      3.1,
+      3.1,
+      0,
       47.8,
       47.8,
       47.8,
@@ -69177,10 +69115,10 @@ var DATOS = {
       47.5
     ],
     "270812|Funda interna FAB DEFENSE Mod. Scorpus Covert #sc-cg9b": [
-      0.4,
-      0.2,
-      0,
-      0,
+      55.4,
+      55.2,
+      55,
+      55,
       54.6,
       53.6,
       53,
@@ -69277,10 +69215,10 @@ var DATOS = {
       42.8
     ],
     "901601|Magnetico DOBERMAN 30 lbs #SDMGunMag-1 pack x 10": [
-      43.6,
-      43.4,
-      43.4,
-      43.4,
+      87.2,
+      87,
+      87,
+      87,
       43.4,
       43.4,
       43.4,
@@ -69477,9 +69415,9 @@ var DATOS = {
       40.4
     ],
     "501505|Cartuchos GB 28 #5 15g 250/25": [
-      90.4,
-      24.3,
-      20,
+      48,
+      0,
+      0,
       0,
       0,
       42.3,
@@ -69676,46 +69614,6 @@ var DATOS = {
       35.9,
       35.9
     ],
-    "320022|Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      19,
-      18,
-      16.6,
-      15.6,
-      14.5,
-      38.6,
-      36.8,
-      35.8
-    ],
-    "260292|Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352": [
-      0,
-      0,
-      0,
-      67,
-      64.4,
-      63.4,
-      62.7,
-      62,
-      61.1,
-      60.4,
-      60.2,
-      58.8,
-      55.9,
-      52.7,
-      48.2,
-      42.6,
-      37.2,
-      35.6
-    ],
     "322212|Rifle AC CO2 UMAREX 4,5mm Mod. HK MP5 #5.8159": [
       0,
       0,
@@ -69756,6 +69654,26 @@ var DATOS = {
       35.5,
       35.5
     ],
+    "320022|Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      19,
+      18,
+      16.6,
+      15.6,
+      14.5,
+      38.6,
+      36.8,
+      35.4
+    ],
     "680652|Reflector DOBERMAN Bat. Recargable c/ Cargador de Cel, Panel Solar #236240": [
       81.3,
       68.9,
@@ -69776,6 +69694,26 @@ var DATOS = {
       36.4,
       34.8
     ],
+    "260292|Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352": [
+      0,
+      0,
+      0,
+      67,
+      64.4,
+      63.4,
+      62.7,
+      62,
+      61.1,
+      60.4,
+      60.2,
+      58.8,
+      55.9,
+      52.7,
+      48.2,
+      42.6,
+      37.2,
+      34.6
+    ],
     "501048|Cartuchos SAGA 12 #1 EXPORT 32gr T2": [
       143.7,
       123.7,
@@ -69795,26 +69733,6 @@ var DATOS = {
       58.6,
       38,
       34.4
-    ],
-    "DES320522|Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas": [
-      47,
-      44.5,
-      41.9,
-      39.4,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      38.1,
-      35.6,
-      34.3,
-      34.3
     ],
     "942154|Bota DOBERMAN Mod. COMBAT READY Negro 42": [
       0,
@@ -69936,6 +69854,26 @@ var DATOS = {
       34.6,
       33.4
     ],
+    "DES320522|Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas": [
+      47,
+      44.5,
+      41.9,
+      39.4,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      38.1,
+      35.6,
+      34.3,
+      33
+    ],
     "942153|Bota DOBERMAN Mod. COMBAT READY Negro 41": [
       0,
       0,
@@ -70036,26 +69974,6 @@ var DATOS = {
       32.2,
       32.2
     ],
-    "320461|Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302": [
-      15.6,
-      28.6,
-      23.7,
-      15.1,
-      3.1,
-      1.6,
-      0,
-      0,
-      0,
-      0,
-      52.8,
-      44.6,
-      35.9,
-      28.5,
-      20.5,
-      42.7,
-      34.3,
-      31.9
-    ],
     "900926|Alza de Mira GLOCK Gen4 6,5 auto-luminoso - 6879": [
       31.9,
       31.9,
@@ -70135,6 +70053,26 @@ var DATOS = {
       0,
       0,
       31.7
+    ],
+    "320461|Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302": [
+      15.6,
+      28.6,
+      23.7,
+      15.1,
+      3.1,
+      1.6,
+      0,
+      0,
+      0,
+      0,
+      52.8,
+      44.6,
+      35.9,
+      28.5,
+      20.5,
+      42.7,
+      34.3,
+      31.5
     ],
     "DES750335|Carpa NTK Mod. FOX 4/5 personas #155340": [
       0,
@@ -70578,9 +70516,9 @@ var DATOS = {
     ],
     "260570|Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67": [
       0,
-      4.3,
-      0.7,
-      0.2,
+      3.3,
+      0,
+      0,
       0.2,
       0.2,
       0.2,
@@ -70738,9 +70676,9 @@ var DATOS = {
     ],
     "DES750315|Carpa NTK Mod. FALCON 3 personas #150640": [
       0,
-      12.7,
-      6.9,
-      0,
+      43.4,
+      37.6,
+      30.7,
       30.1,
       29,
       29,
@@ -70896,26 +70834,6 @@ var DATOS = {
       25.8,
       25.4
     ],
-    "721102|Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG": [
-      28.2,
-      47.7,
-      47.7,
-      56.3,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      28.2,
-      25.3,
-      25.3
-    ],
     "850014786823|Caja de seguridad largo VAULTEK Mod. NRS200i-BK": [
       0,
       0,
@@ -71036,26 +70954,6 @@ var DATOS = {
       24.1,
       24.1
     ],
-    "SID4520100|Cargador KCI cal 9mm Mod. Glock 33 tiros": [
-      0,
-      0,
-      6.9,
-      0,
-      47,
-      35.8,
-      33.6,
-      33.3,
-      33,
-      33,
-      33,
-      30.5,
-      29.2,
-      28.7,
-      28.2,
-      25.5,
-      25.3,
-      24.1
-    ],
     "942192|Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 40": [
       0,
       0,
@@ -71115,6 +71013,26 @@ var DATOS = {
       24.4,
       23.9,
       23.9
+    ],
+    "SID4520100|Cargador KCI cal 9mm Mod. Glock 33 tiros": [
+      0,
+      0,
+      6.9,
+      0,
+      47,
+      35.8,
+      33.6,
+      33.3,
+      33,
+      33,
+      33,
+      30.5,
+      29.2,
+      28.7,
+      28.2,
+      25.5,
+      25.3,
+      23.6
     ],
     "942193|Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 41": [
       0,
@@ -71176,26 +71094,6 @@ var DATOS = {
       23.6,
       23.6
     ],
-    "942203|Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      23.5,
-      23.5
-    ],
     "322061|Pistola AC CO2 UMAREX 4,5mm Mod Glock 17 Gen5 Gris #5.8472": [
       0,
       0,
@@ -71235,6 +71133,26 @@ var DATOS = {
       0,
       23.8,
       23.4
+    ],
+    "942203|Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      23.5,
+      23.3
     ],
     "942205|Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 42": [
       0,
@@ -71297,9 +71215,9 @@ var DATOS = {
       23
     ],
     "901600|Magnetico DOBERMAN 30 lbs #SDMGunMag-1 x 1": [
-      0,
-      0,
-      0,
+      2.4,
+      2.3,
+      2.3,
       0,
       23,
       23,
@@ -71376,6 +71294,26 @@ var DATOS = {
       22.9,
       22.6
     ],
+    "721102|Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG": [
+      28.2,
+      47.7,
+      47.7,
+      56.3,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      28.2,
+      25.3,
+      22.5
+    ],
     "942176|Bota DOBERMAN Mod. COMBAT READY Dessert 43": [
       0,
       0,
@@ -71398,9 +71336,9 @@ var DATOS = {
     ],
     "260572|Magnificador VECTOR OPTICS Mod. PARAGON 5x30 #SCMF-34": [
       0,
-      11.6,
-      9.2,
-      4.5,
+      8,
+      5.6,
+      0.9,
       3.6,
       2.7,
       2.7,
@@ -71414,26 +71352,6 @@ var DATOS = {
       23.9,
       23.2,
       22.4,
-      22.4
-    ],
-    "680650|Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB": [
-      39.6,
-      34.9,
-      29.8,
-      26.1,
-      9.9,
-      8.4,
-      6.2,
-      4.5,
-      0,
-      0,
-      0,
-      0,
-      0,
-      26.1,
-      25.3,
-      23.2,
-      22.8,
       22.4
     ],
     "322060|LQN-Pistola AC CO2 UMAREX 4,5mm Mod. Glock 19X Blowback #5.8367 (copia)": [
@@ -71455,6 +71373,26 @@ var DATOS = {
       29,
       23.2,
       22.4
+    ],
+    "680650|Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB": [
+      39.6,
+      34.9,
+      29.8,
+      26.1,
+      9.9,
+      8.4,
+      6.2,
+      4.5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      26.1,
+      25.3,
+      23.2,
+      22.8,
+      22.3
     ],
     "942174|Bota DOBERMAN Mod. COMBAT READY Dessert 41": [
       0,
@@ -71616,26 +71554,6 @@ var DATOS = {
       21.2,
       21.2
     ],
-    "942183|Bota DOBERMAN Mod. COMBAT READY Dessert 41": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      24.4,
-      22.2,
-      20.3,
-      15.8,
-      15.3,
-      12.4,
-      12,
-      11.2,
-      21.7,
-      21
-    ],
     "4500422|Cargador Glock 9MM M19 15T #1084 - 1594-01": [
       22.1,
       21.9,
@@ -71674,6 +71592,26 @@ var DATOS = {
       20.9,
       20.8,
       20.8,
+      20.8
+    ],
+    "942183|Bota DOBERMAN Mod. COMBAT READY Dessert 41": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      24.4,
+      22.2,
+      20.3,
+      15.8,
+      15.3,
+      12.4,
+      12,
+      11.2,
+      21.7,
       20.8
     ],
     "DES680509|Linterna Caterpillar 175 LM LED COB de Bolsillo - Display 12 unidades #CT100012 (copia)": [
@@ -71957,8 +71895,8 @@ var DATOS = {
       20.1
     ],
     "510756|Mochila DOBERMAN 60L DELTA CAMO BLACK #BL130BCP": [
-      45.4,
-      19.5,
+      24.8,
+      19.3,
       13.2,
       6.3,
       4.4,
@@ -72177,10 +72115,10 @@ var DATOS = {
       19.5
     ],
     "901610|Magnetico DOBERMAN 35lbs #SDMGunMag-2 x 1": [
-      42.2,
-      42.1,
-      42.1,
-      40,
+      62.2,
+      62.1,
+      62,
+      60,
       20,
       19.9,
       19.9,
@@ -72377,11 +72315,11 @@ var DATOS = {
       18.3
     ],
     "501121|Cartuchos GB 12 #5 Rapid 32g 250/25": [
-      353.9,
-      308.2,
-      301.4,
-      156.1,
-      287.9,
+      209.5,
+      163.8,
+      157,
+      11.6,
+      143.5,
       132.6,
       128.1,
       124.8,
@@ -72476,26 +72414,6 @@ var DATOS = {
       17.9,
       17.9
     ],
-    "680685|Linterna DOBERMAN Mod. LP-8504-UV Bat 3XAAA": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      20.6,
-      18.5,
-      18.2,
-      17.9,
-      17.7
-    ],
     "701296|Rifle DERYA cal 9mm Mod. ZY9 C111F Full FDE 14,5'' 2 carg 17 tiros": [
       41.3,
       17.7,
@@ -72514,6 +72432,26 @@ var DATOS = {
       17.7,
       17.7,
       17.7,
+      17.7
+    ],
+    "680685|Linterna DOBERMAN Mod. LP-8504-UV Bat 3XAAA": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20.6,
+      18.5,
+      18.2,
+      17.9,
       17.7
     ],
     "942190|Bota DOBERMAN Mod. COMBAT READY 8p Dessert Arena 38": [
@@ -72596,26 +72534,6 @@ var DATOS = {
       17.6,
       17.6
     ],
-    "400314|Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503": [
-      0,
-      0.6,
-      1.6,
-      0.2,
-      0,
-      0,
-      0,
-      24.1,
-      23.8,
-      23.2,
-      22.7,
-      21.9,
-      21.7,
-      20.4,
-      20.1,
-      19.1,
-      17.6,
-      17.5
-    ],
     "942157|Bota DOBERMAN Mod. COMBAT READY Negro 44": [
       0,
       0,
@@ -72636,6 +72554,26 @@ var DATOS = {
       17.8,
       17.5
     ],
+    "400314|Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503": [
+      0,
+      0.6,
+      1.6,
+      0.2,
+      0,
+      0,
+      0,
+      24.1,
+      23.8,
+      23.2,
+      22.7,
+      21.9,
+      21.7,
+      20.4,
+      20.1,
+      19.1,
+      17.6,
+      17.5
+    ],
     "400250|Balines APOLO cal 5,5mm Mod. SLUG STAR 1,36gr 21 grains LATA 200x30 #E19312": [
       0,
       0,
@@ -72654,26 +72592,6 @@ var DATOS = {
       18.2,
       17.6,
       17.5,
-      17.5
-    ],
-    "320707|Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      36.6,
-      31.4,
-      30.5,
-      30.5,
-      27.9,
-      26.1,
-      25.3,
-      26.2,
-      25.3,
-      18.3,
       17.5
     ],
     "942155|Bota DOBERMAN Mod. COMBAT READY Negro 6''": [
@@ -72857,11 +72775,11 @@ var DATOS = {
       16.9
     ],
     "501350|Cartuchos GB 16 Breneke 25x20": [
-      18.7,
-      18.7,
-      18.7,
-      18.7,
-      18.7,
+      0,
+      0,
+      0,
+      0,
+      0,
       17.7,
       17.7,
       17.7,
@@ -73035,6 +72953,26 @@ var DATOS = {
       17,
       16.7,
       16.7
+    ],
+    "320707|Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      36.6,
+      31.4,
+      30.5,
+      30.5,
+      27.9,
+      26.1,
+      25.3,
+      26.2,
+      25.3,
+      18.3,
+      16.6
     ],
     "700853|Escopeta BOITO cal 20/28 Mod. YUXTA A681 2 Caños 26''/28'' #M355": [
       16.5,
@@ -73377,10 +73315,10 @@ var DATOS = {
       15.2
     ],
     "115019|Porta Carg. 2ble P229/226/250 sp2022 Tanfoglio Taurus": [
-      45.6,
-      45.6,
-      45.6,
-      45.6,
+      60.9,
+      60.9,
+      60.9,
+      60.9,
       15.2,
       15.2,
       15.2,
@@ -73437,7 +73375,7 @@ var DATOS = {
       15
     ],
     "510477|Mochila DOBERMAN 55L ECHO BLACK #BL012BL": [
-      15.8,
+      38.2,
       32.5,
       30.2,
       29.1,
@@ -73475,26 +73413,6 @@ var DATOS = {
       50.8,
       22.3,
       14.9
-    ],
-    "SID4520055|Cargador KCI cal 9mm Mod. Glock 17 tiros": [
-      0.2,
-      0.1,
-      25.3,
-      23.1,
-      16.3,
-      15.7,
-      15.7,
-      15.6,
-      15.6,
-      15.6,
-      15.6,
-      15.6,
-      15.6,
-      15.4,
-      15.4,
-      14.9,
-      14.9,
-      14.8
     ],
     "400372|Balines APOLO cal 6,35mm Mod. PUNCHER 2,4 grams 37 grains 200x30 #E19972": [
       0,
@@ -73556,6 +73474,26 @@ var DATOS = {
       15,
       14.5
     ],
+    "SID4520055|Cargador KCI cal 9mm Mod. Glock 17 tiros": [
+      0.2,
+      0.1,
+      25.3,
+      23.1,
+      16.3,
+      15.7,
+      15.7,
+      15.6,
+      15.6,
+      15.6,
+      15.6,
+      15.6,
+      15.6,
+      15.4,
+      15.4,
+      14.9,
+      14.9,
+      14.5
+    ],
     "322097|Pistola AC CO2 UMAREX 4,5mm Mod. Smith & Wesson M&P9L Performance #5.8404": [
       0,
       0,
@@ -73577,10 +73515,10 @@ var DATOS = {
       14.5
     ],
     "261406|Camara GSM-STEALTHCAM Mod. BROWTINE 18MP #STC-BT18": [
-      35.5,
-      35.5,
-      35.5,
-      35.2,
+      0.7,
+      0.7,
+      0.7,
+      0.4,
       17.4,
       17.4,
       17.4,
@@ -73857,10 +73795,10 @@ var DATOS = {
       13.2
     ],
     "681100|Linterna NITECORE Mod. P10i 1800Lm Bat21700 4000mAh": [
-      26.9,
-      18.9,
-      11.2,
-      0.7,
+      27.6,
+      19.6,
+      11.9,
+      1.4,
       1,
       0.7,
       49.1,
@@ -74017,10 +73955,10 @@ var DATOS = {
       13
     ],
     "DES680517|Linterna Caterpillar 220 LM LED de Bolsillo - Display 8 unidades #CT51208 (copia)": [
-      25.7,
-      25.7,
-      25.7,
-      25.7,
+      12.9,
+      12.9,
+      12.9,
+      12.9,
       12.9,
       12.9,
       12.9,
@@ -74078,9 +74016,9 @@ var DATOS = {
     ],
     "260573|Punto Rojo para Rifle VECTOR OPTICS Mod. PARAGON 4x24 #SCPS-M04": [
       0,
-      15.8,
-      13.1,
-      13.8,
+      6.9,
+      4.2,
+      4.9,
       8.9,
       5.9,
       5.9,
@@ -74517,10 +74455,10 @@ var DATOS = {
       11.4
     ],
     "900907|Punto de Mira Glock de Acero 4,9 Luminiscente  #33580": [
-      11.4,
-      11.4,
-      11.4,
-      11.4,
+      0,
+      0,
+      0,
+      0,
       11.4,
       11.4,
       11.4,
@@ -74557,10 +74495,10 @@ var DATOS = {
       11.4
     ],
     "DES680518|Linterna Caterpillar 200 LM LED - Display 9 unidades #CTRACK9 (copia)": [
-      11.3,
-      11.3,
-      11.3,
-      11.3,
+      22.6,
+      22.6,
+      22.6,
+      22.6,
       11.3,
       11.3,
       11.3,
@@ -74778,9 +74716,9 @@ var DATOS = {
     ],
     "260571|Magnificador VECTOR OPTICS Mod. MAVERICK III 3x22 #SCMF-31": [
       0,
-      19.4,
-      17,
-      16.9,
+      4.5,
+      2.2,
+      2.1,
       14.8,
       14.8,
       14.4,
@@ -74937,7 +74875,7 @@ var DATOS = {
       10.5
     ],
     "510429|Morral DOBERMAN 5L FOXTROX DIGITAL CAMO GREY #BL011ACU": [
-      12.7,
+      25.4,
       12.7,
       12.7,
       12.7,
@@ -75156,26 +75094,6 @@ var DATOS = {
       9.9,
       9.9
     ],
-    "681112|Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      12.9,
-      12.6,
-      12.6,
-      12.6,
-      12.6,
-      12.6,
-      12.7,
-      12.7,
-      12.7,
-      12.2,
-      9.7,
-      9.9
-    ],
     "350022|Blanco de Cartulina Recicl. 58x81cm": [
       7.2,
       7.1,
@@ -75194,7 +75112,7 @@ var DATOS = {
       10.5,
       10.4,
       10.3,
-      9.9
+      9.8
     ],
     "505379|Balas CCI 40SW 88GR Shotshell 10x20 #3740": [
       9.7,
@@ -75215,26 +75133,6 @@ var DATOS = {
       9.8,
       9.8,
       9.8
-    ],
-    "322080|Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174": [
-      28.8,
-      8.7,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      24.1,
-      25,
-      23.2,
-      16.8,
-      9.7
     ],
     "4520050|Cargador KCI cal 9mm Mod. Glock 15 tiros": [
       0,
@@ -75276,11 +75174,31 @@ var DATOS = {
       9.7,
       9.7
     ],
+    "681112|Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12.9,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.6,
+      12.7,
+      12.7,
+      12.7,
+      12.2,
+      9.7,
+      9.7
+    ],
     "4500680|Cargador Akdal 22LR MINI06 5T": [
-      19.4,
-      19.4,
-      19.4,
-      19.4,
+      29,
+      29,
+      29,
+      29,
       9.7,
       9.7,
       9.7,
@@ -75456,6 +75374,26 @@ var DATOS = {
       9.4,
       9.4
     ],
+    "322080|Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174": [
+      28.8,
+      8.7,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      24.1,
+      25,
+      23.2,
+      16.8,
+      9.4
+    ],
     "260568|Punto Rojo VECTOR OPTICS Mod. FRENZY PLUS 1x18x20 #SCRD-63 VOD": [
       0,
       15.5,
@@ -75496,26 +75434,6 @@ var DATOS = {
       9.4,
       9.4
     ],
-    "400202|Gas CO2 UMAREX 12G #4.1685": [
-      88.5,
-      82.4,
-      77.8,
-      74.2,
-      68.5,
-      66.6,
-      60.1,
-      56.9,
-      54.2,
-      48.5,
-      45.7,
-      40.9,
-      35.8,
-      31.2,
-      27.4,
-      17.3,
-      11.4,
-      9.3
-    ],
     "324165|Pistola Airsoft Resorte UMAREX Mod. WALTHER PPQ #2272540": [
       0,
       0,
@@ -75554,6 +75472,26 @@ var DATOS = {
       9.2,
       9.2,
       9.2,
+      9.2
+    ],
+    "400202|Gas CO2 UMAREX 12G #4.1685": [
+      88.5,
+      82.4,
+      77.8,
+      74.2,
+      68.5,
+      66.6,
+      60.1,
+      56.9,
+      54.2,
+      48.5,
+      45.7,
+      40.9,
+      35.8,
+      31.2,
+      27.4,
+      17.3,
+      11.4,
       9.2
     ],
     "260565|Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOS MOJ 1x22x26  #SCRD-M36": [
@@ -75697,10 +75635,10 @@ var DATOS = {
       9
     ],
     "DES151564|Cuchillo Nieto Linea Gaucho(Madera) G-26": [
-      9.3,
-      9.3,
-      9.3,
-      9.3,
+      0,
+      0,
+      0,
+      0,
       9.3,
       9.3,
       9.3,
@@ -75754,7 +75692,7 @@ var DATOS = {
       9.6,
       9.2,
       9.2,
-      9
+      8.9
     ],
     "510758|Mochila DOBERMAN 75L SIERRA COYOTE #BL069KH": [
       23.9,
@@ -75956,26 +75894,6 @@ var DATOS = {
       8.6,
       8.6
     ],
-    "680655|Linterna DOBERMAN 180L c/Magnetico USB #LP-9515": [
-      26.7,
-      25.6,
-      23.8,
-      23.3,
-      11.2,
-      10.8,
-      10.8,
-      10.3,
-      9.9,
-      9.5,
-      9.4,
-      9.3,
-      9.3,
-      9.2,
-      9.2,
-      9,
-      8.5,
-      8.5
-    ],
     "400370|Balines APOLO cal 6,35mm Mod. DOMED 1,6 grams 25 grains 200x30 #E13501": [
       0,
       0,
@@ -75993,6 +75911,26 @@ var DATOS = {
       15.4,
       13,
       10.4,
+      8.5,
+      8.5
+    ],
+    "680655|Linterna DOBERMAN 180L c/Magnetico USB #LP-9515": [
+      26.7,
+      25.6,
+      23.8,
+      23.3,
+      11.2,
+      10.8,
+      10.8,
+      10.3,
+      9.9,
+      9.5,
+      9.4,
+      9.3,
+      9.3,
+      9.2,
+      9.2,
+      9,
       8.5,
       8.5
     ],
@@ -76057,8 +75995,8 @@ var DATOS = {
       8.4
     ],
     "510478|Mochila DOBERMAN 55L ECHO COYOTE #BL012KH": [
-      2.3,
-      23.4,
+      27.5,
+      23.5,
       21,
       19.4,
       18.1,
@@ -76073,26 +76011,6 @@ var DATOS = {
       9.6,
       9.6,
       9.4,
-      8.3,
-      8.3
-    ],
-    "260290|Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183": [
-      35.3,
-      33.3,
-      33.3,
-      33.3,
-      16.6,
-      14.5,
-      14.5,
-      14.5,
-      14.5,
-      10.4,
-      10.4,
-      10.4,
-      10.4,
-      10.4,
-      10.4,
-      10.4,
       8.3,
       8.3
     ],
@@ -76217,10 +76135,10 @@ var DATOS = {
       8.2
     ],
     "4500690|Cargador Akdal 9MM Ghost 15T": [
-      16.3,
-      16.3,
-      16.3,
-      16.3,
+      24.4,
+      24.4,
+      24.4,
+      24.4,
       8.1,
       8.1,
       8.1,
@@ -76677,11 +76595,11 @@ var DATOS = {
       7.5
     ],
     "DES323500|Cartucho Gel Pimienta UMAREX p/ HDR50 HDS68 y PDP #2.2050.2": [
-      11,
-      10.1,
-      10.6,
-      10.3,
+      10.9,
       10,
+      10.5,
+      10.2,
+      9.9,
       9.7,
       9.7,
       9.6,
@@ -77137,7 +77055,7 @@ var DATOS = {
       7
     ],
     "510755|Mochila DOBERMAN 60L DELTA GREY #BL130GY": [
-      31.5,
+      4.9,
       25.7,
       25.4,
       22.9,
@@ -77237,9 +77155,9 @@ var DATOS = {
       6.8
     ],
     "DES750186|Toldo NTK Mod. TRIXX 3x3x2.5mts #352000": [
-      22.8,
-      12.2,
-      6.1,
+      0,
+      0,
+      0,
       0,
       31.2,
       25,
@@ -77296,26 +77214,6 @@ var DATOS = {
       6.7,
       6.7
     ],
-    "942186|Bota DOBERMAN Mod. COMBAT READY Dessert 44": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      12,
-      10,
-      9.3,
-      7.4,
-      6.7,
-      4.3,
-      4.3,
-      3.8,
-      7.3,
-      6.7
-    ],
     "AVE600854CARU|Pistola WALTHER 22Lr. M.P22Q 10T Ng. 1Carg. #2853205": [
       0,
       0,
@@ -77335,26 +77233,6 @@ var DATOS = {
       6.7,
       6.7,
       6.7
-    ],
-    "680660|Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA": [
-      1.7,
-      0.9,
-      0.6,
-      0,
-      9.5,
-      9.4,
-      9.2,
-      8.8,
-      7.2,
-      7.2,
-      7.2,
-      7.2,
-      7.1,
-      7.1,
-      7,
-      6.8,
-      6.7,
-      6.6
     ],
     "610450|N-Caña Tianjin #3.00M Sp10021": [
       13.2,
@@ -77394,6 +77272,26 @@ var DATOS = {
       0,
       0,
       6.6,
+      6.6
+    ],
+    "680660|Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA": [
+      11.6,
+      10.9,
+      10.6,
+      10,
+      9.5,
+      9.4,
+      9.2,
+      8.8,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.1,
+      7.1,
+      7,
+      6.8,
+      6.7,
       6.6
     ],
     "400395|Balines Pimienta UMAREX cal 43 caja de 10 unid #2.4776": [
@@ -77456,6 +77354,26 @@ var DATOS = {
       6.5,
       6.5
     ],
+    "942186|Bota DOBERMAN Mod. COMBAT READY Dessert 44": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      12,
+      10,
+      9.3,
+      7.4,
+      6.7,
+      4.3,
+      4.3,
+      3.8,
+      7.3,
+      6.5
+    ],
     "712117|Vaso COLEMAN 590ML Verde Lima #2148886": [
       13.9,
       13.5,
@@ -77496,26 +77414,6 @@ var DATOS = {
       6.3,
       6.3
     ],
-    "322000|Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173": [
-      69.6,
-      52.7,
-      44.8,
-      34.3,
-      19.3,
-      4.2,
-      4,
-      58.6,
-      37.9,
-      22.5,
-      9.2,
-      0,
-      0,
-      43.9,
-      37.7,
-      27.2,
-      10.1,
-      6.3
-    ],
     "610945|Caña Telescopica Snake Escarlate 4.00M": [
       6.7,
       6.4,
@@ -77554,6 +77452,26 @@ var DATOS = {
       7.1,
       6.9,
       6.4,
+      6.2
+    ],
+    "260290|Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183": [
+      35.3,
+      33.3,
+      33.3,
+      33.3,
+      16.6,
+      14.5,
+      14.5,
+      14.5,
+      14.5,
+      10.4,
+      10.4,
+      10.4,
+      10.4,
+      10.4,
+      10.4,
+      10.4,
+      8.3,
       6.2
     ],
     "DES880053|Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 11 - 44,5": [
@@ -77636,26 +77554,6 @@ var DATOS = {
       6.2,
       6.2
     ],
-    "940168|Inflador para PCP DOBERMAN": [
-      0,
-      41.1,
-      25.5,
-      30.8,
-      22.5,
-      15.4,
-      10.5,
-      10.5,
-      9,
-      2.3,
-      173.6,
-      157.8,
-      143.7,
-      117.6,
-      70.1,
-      37.8,
-      18.8,
-      6.2
-    ],
     "151420|Navaja UMAREX Mod. Walther Classic Drop 1 #5.2053": [
       0,
       0,
@@ -77734,6 +77632,26 @@ var DATOS = {
       0,
       0,
       6.1,
+      6.1
+    ],
+    "322000|Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173": [
+      69.6,
+      52.7,
+      44.8,
+      34.3,
+      19.3,
+      4.2,
+      4,
+      58.6,
+      37.9,
+      22.5,
+      9.2,
+      0,
+      0,
+      43.9,
+      37.7,
+      27.2,
+      10.1,
       6.1
     ],
     "602825CARU|Pistola HK 9mm M:USP-C 2carg": [
@@ -78157,7 +78075,7 @@ var DATOS = {
       5.7
     ],
     "920407|Equipo de Lluvia  OR53P15 #3XL": [
-      5.9,
+      11.8,
       5.9,
       5.9,
       5.9,
@@ -78357,11 +78275,6 @@ var DATOS = {
       5.4
     ],
     "505421|Balas CCI 44SPL/44MAG 140GR Shotshell 10x20 #3744": [
-      0,
-      0,
-      0,
-      0,
-      0,
       5.6,
       5.6,
       5.6,
@@ -78373,26 +78286,11 @@ var DATOS = {
       5.6,
       5.6,
       5.6,
-      5.4,
-      5.4
-    ],
-    "400226|Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901": [
-      0,
-      0,
-      0,
-      8.1,
-      7.9,
-      7.9,
-      7.7,
-      7.7,
-      7.7,
-      7.2,
-      7.2,
-      7.2,
-      7.1,
-      7,
-      7,
-      6.8,
+      5.6,
+      5.6,
+      5.6,
+      5.6,
+      5.6,
       5.4,
       5.4
     ],
@@ -78456,6 +78354,26 @@ var DATOS = {
       5.6,
       5.3
     ],
+    "400226|Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901": [
+      0,
+      0,
+      0,
+      8.1,
+      7.9,
+      7.9,
+      7.7,
+      7.7,
+      7.7,
+      7.2,
+      7.2,
+      7.2,
+      7.1,
+      7,
+      7,
+      6.8,
+      5.4,
+      5.3
+    ],
     "830296|Hilo Snake Mult. 4X Fullpowe.0.35MM 100M": [
       6.1,
       5.9,
@@ -78517,10 +78435,10 @@ var DATOS = {
       5.3
     ],
     "681107|Linterna NITECORE Mod. TM20K 20.000Lm Bat 2x21700": [
-      26.2,
-      20.9,
-      18.3,
-      19.6,
+      6.5,
+      1.3,
+      0,
+      0,
       18.3,
       18.3,
       17,
@@ -78598,14 +78516,14 @@ var DATOS = {
     ],
     "260567|Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK MOJ #SCRDM-08": [
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      1.7,
+      1.7,
+      2,
+      1.4,
+      0.6,
+      0.6,
+      0.6,
+      5.6,
       5.6,
       5.6,
       5.6,
@@ -78757,10 +78675,10 @@ var DATOS = {
       5.1
     ],
     "DES880071|Bota ROCKY BOOTS Mod. Snake RKS0420 Talle 9 - 42": [
-      0.7,
-      0.7,
-      0.7,
       0,
+      7.3,
+      7.3,
+      6.5,
       6.5,
       6.5,
       6.5,
@@ -78878,7 +78796,7 @@ var DATOS = {
     ],
     "DES680512|Linterna Dual Caterpillar 250/300 LM LED Aluminio Tactico #CT3410": [
       0,
-      0.4,
+      0,
       0,
       0,
       5.1,
@@ -78994,26 +78912,6 @@ var DATOS = {
       4.9,
       4.9,
       4.9,
-      4.9
-    ],
-    "510442|Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL": [
-      25.4,
-      11,
-      10.9,
-      9.8,
-      9.2,
-      9.2,
-      9.2,
-      9.2,
-      6.2,
-      6.1,
-      5.8,
-      5.5,
-      5.5,
-      5.5,
-      5.2,
-      5.2,
-      5,
       4.9
     ],
     "510771|Mochila DOBERMAN c/ Bolso de Agua Coyote #BL019KH": [
@@ -79217,10 +79115,10 @@ var DATOS = {
       4.8
     ],
     "620205|Esmerillon #1/0  Art.202 x 5Und.": [
-      4.8,
-      4.8,
-      4.8,
-      4.8,
+      0,
+      0,
+      0,
+      0,
       4.8,
       4.8,
       4.8,
@@ -79254,6 +79152,26 @@ var DATOS = {
       4.2,
       3.6,
       4.8,
+      4.8
+    ],
+    "510442|Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL": [
+      25.4,
+      11,
+      10.9,
+      9.8,
+      9.2,
+      9.2,
+      9.2,
+      9.2,
+      6.2,
+      6.1,
+      5.8,
+      5.5,
+      5.5,
+      5.5,
+      5.2,
+      5.2,
+      5,
       4.8
     ],
     "830287|Hilo Snake Mult. 4X Fullpowe 0.80MM 100M": [
@@ -79317,10 +79235,10 @@ var DATOS = {
       4.7
     ],
     "681101|Linterna NITECORE Mod. P10 V2 1100Lm SinBat": [
-      38.8,
-      35.1,
-      33.2,
-      32.7,
+      22.7,
+      18.9,
+      17.1,
+      16.6,
       15.9,
       15,
       6.1,
@@ -79357,10 +79275,10 @@ var DATOS = {
       4.7
     ],
     "260677|Montante para rifles KONUS de 30mm Bajo para Picattiny / Weaver #7405": [
-      11.5,
-      11.5,
-      11.5,
-      11.5,
+      17.2,
+      17.2,
+      17.2,
+      17.2,
       5.7,
       5.3,
       5.3,
@@ -79517,10 +79435,10 @@ var DATOS = {
       4.5
     ],
     "110586|Funda interna FOBUS Mod. #IWBMCC Universal tamaño M corte combate": [
-      10.7,
-      10.4,
-      10.4,
-      10.1,
+      5.7,
+      5.4,
+      5.4,
+      5,
       5,
       5,
       5,
@@ -79577,10 +79495,10 @@ var DATOS = {
       4.5
     ],
     "260682|Montante para rifles KONUS de 25.4mm Bajo para Picattiny / Weaver #7402": [
-      23.3,
-      23.3,
-      23.3,
-      23.3,
+      17.6,
+      17.6,
+      17.6,
+      17.6,
       5.8,
       5.8,
       4.9,
@@ -79776,26 +79694,6 @@ var DATOS = {
       4.3,
       4.3
     ],
-    "501113|Cartuchos GB 12 #3 Express 34g 250/25": [
-      80.5,
-      50.6,
-      43.5,
-      36.8,
-      28.3,
-      28.1,
-      28.3,
-      27.8,
-      27.6,
-      27.6,
-      27.5,
-      27.2,
-      26.8,
-      25.4,
-      25,
-      17.1,
-      5.1,
-      4.3
-    ],
     "321097|Cargador UMAREX T4E cal 68 2 unidades #2.4717.1": [
       4.6,
       4.6,
@@ -79894,6 +79792,26 @@ var DATOS = {
       4.2,
       4.2,
       4.2,
+      4.2
+    ],
+    "501113|Cartuchos GB 12 #3 Express 34g 250/25": [
+      80.5,
+      50.6,
+      43.5,
+      36.8,
+      28.3,
+      28.1,
+      28.3,
+      27.8,
+      27.6,
+      27.6,
+      27.5,
+      27.2,
+      26.8,
+      25.4,
+      25,
+      17.1,
+      5.1,
       4.2
     ],
     "REP920041|N-Repuesto p/Esc.SetCula/Guard.M:S3112 Semi/Poly ARMED": [
@@ -80036,6 +79954,26 @@ var DATOS = {
       4.3,
       4.1
     ],
+    "940168|Inflador para PCP DOBERMAN": [
+      0,
+      41.1,
+      25.5,
+      30.8,
+      22.5,
+      15.4,
+      10.5,
+      10.5,
+      9,
+      2.3,
+      173.6,
+      157.8,
+      143.7,
+      117.6,
+      70.1,
+      37.8,
+      18.8,
+      4.1
+    ],
     "110587|Funda interna FOBUS Mod. #IWBMLH Universal tamaño M para Zurdo": [
       14.3,
       14.2,
@@ -80117,10 +80055,10 @@ var DATOS = {
       4.1
     ],
     "710590|Bolso Termico Flexible c/ Porta Latas Pequeño Camu": [
-      10.1,
-      10,
-      10,
-      9.9,
+      5.1,
+      5,
+      5,
+      5,
       5,
       5,
       4.8,
@@ -80417,7 +80355,7 @@ var DATOS = {
       3.8
     ],
     "510800|Bolsa de Agua DOBERMAN 2L": [
-      0,
+      4.2,
       4.2,
       4,
       4,
@@ -80517,10 +80455,10 @@ var DATOS = {
       3.8
     ],
     "260275|Mira KONUS PRO M30 12.5-50x56 reticula iluminada 1/2 Mil-Dot #7289": [
-      7.6,
-      7.6,
-      7.6,
-      7.6,
+      5.7,
+      5.7,
+      5.7,
+      5.7,
       1.9,
       1.9,
       1.9,
@@ -80678,14 +80616,14 @@ var DATOS = {
     ],
     "260575|Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK TEK #SCRDM-01": [
       0,
+      0.7,
+      0.5,
+      0.2,
+      0.3,
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      5.2,
       5.2,
       5.2,
       5.2,
@@ -80941,11 +80879,11 @@ var DATOS = {
       3.6,
       3.6,
       3.6,
-      7.1,
-      7.1,
-      7.1,
-      7.1,
-      7.1,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
       3.6,
       3.6,
       3.6,
@@ -81137,10 +81075,10 @@ var DATOS = {
       3.5
     ],
     "110710D|N-Cartuc.#78051 Sz5 Michng R": [
-      7,
-      7,
-      7,
-      7,
+      10.5,
+      10.5,
+      10.5,
+      10.5,
       3.5,
       3.5,
       3.5,
@@ -81194,26 +81132,6 @@ var DATOS = {
       3.6,
       3.6,
       3.4,
-      3.4
-    ],
-    "400379|Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002": [
-      18.4,
-      17.5,
-      16,
-      14.4,
-      12,
-      11.2,
-      11.2,
-      10.9,
-      10.7,
-      10,
-      9.6,
-      8.4,
-      8.3,
-      8,
-      7.2,
-      7.1,
-      4.7,
       3.4
     ],
     "250150|Desengrasante ASG  150 ml 24botellas#16136": [
@@ -81357,10 +81275,10 @@ var DATOS = {
       3.4
     ],
     "680850|Cable Tactico NITECORE Mod. RSW2i para mod. P10": [
-      4.7,
-      4.7,
-      4.6,
-      4,
+      0.8,
+      0.8,
+      0.7,
+      0,
       4,
       4,
       4,
@@ -81414,6 +81332,26 @@ var DATOS = {
       3.4,
       3.4,
       3.4,
+      3.4
+    ],
+    "400379|Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002": [
+      18.4,
+      17.5,
+      16,
+      14.4,
+      12,
+      11.2,
+      11.2,
+      10.9,
+      10.7,
+      10,
+      9.6,
+      8.4,
+      8.3,
+      8,
+      7.2,
+      7.1,
+      4.7,
       3.4
     ],
     "620611|Anzuelo Snake/Octopus 12146 #6/0 c/10.": [
@@ -81477,10 +81415,10 @@ var DATOS = {
       3.3
     ],
     "260552|Punto Rojo Hawke 1x5 M.O.A Reticula Ilum.Rojo Sensor aut.de brillo #12133": [
-      0,
-      0,
-      0,
-      0,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
       3.3,
       3.3,
       3.3,
@@ -81617,10 +81555,10 @@ var DATOS = {
       3.2
     ],
     "250691|Montante NITECORE Mod. GM03 para escopetas": [
-      7.9,
-      7.9,
-      7.7,
-      7.7,
+      4.1,
+      4.1,
+      3.9,
+      3.9,
       3.9,
       4.1,
       3.4,
@@ -81677,10 +81615,10 @@ var DATOS = {
       3.2
     ],
     "681106|Linterna NITECORE Mod. NPL25 900Lm Bat Li-on": [
-      18.9,
-      7.1,
-      4.7,
-      0.4,
+      69.5,
+      57.7,
+      55.4,
+      51.1,
       49.1,
       47.9,
       86.5,
@@ -81797,10 +81735,10 @@ var DATOS = {
       3.2
     ],
     "150469|Kit de Asador Reysol Tipo Golf 4 Pc #GJ-5J": [
-      9.4,
-      9.4,
-      9.4,
-      9.4,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
       3.1,
       3.1,
       3.1,
@@ -81817,10 +81755,10 @@ var DATOS = {
       3.1
     ],
     "680000|Linterna De Pared #8912 Chico": [
-      6.3,
-      6.3,
-      6.3,
-      6.3,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
       3.1,
       3.1,
       3.1,
@@ -81937,10 +81875,10 @@ var DATOS = {
       3.1
     ],
     "620206|Esmerillon #1 Art.202 x 5 Und.": [
-      3.1,
-      3.1,
-      3.1,
-      3.1,
+      0,
+      0,
+      0,
+      0,
       3.1,
       3.1,
       3.1,
@@ -82037,10 +81975,10 @@ var DATOS = {
       3.1
     ],
     "300090|Kit de Precisión Fab Defense Ruger 10-22 PRO Delta #UASPROR10/22": [
-      4.1,
-      4.1,
-      4.1,
-      4.1,
+      8.1,
+      8.1,
+      8.1,
+      8.1,
       4.1,
       4.1,
       4.1,
@@ -82057,10 +81995,10 @@ var DATOS = {
       3
     ],
     "260252|Montante TSS 25mm Montura Simple 3 Tornillos": [
-      3.1,
-      3.1,
-      3.1,
-      3.1,
+      0,
+      0,
+      0,
+      0,
       3,
       3,
       3,
@@ -82217,7 +82155,7 @@ var DATOS = {
       3
     ],
     "440162|Lentes BERETTA Mod. Clash Transparente #OC031A2354014HUNI": [
-      0,
+      8.4,
       0,
       0,
       0,
@@ -82434,26 +82372,6 @@ var DATOS = {
       2.9,
       2.9,
       2.9,
-      2.9
-    ],
-    "110009|Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
       2.9
     ],
     "620666|Anzuelo Snake Marus Sure Negro #08 c/50.": [
@@ -82736,6 +82654,26 @@ var DATOS = {
       2.8,
       2.8
     ],
+    "110009|Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2.7
+    ],
     "260559|Placa para Punto Rojo VECTOR OPTICS Mod. M1911 TEK #SCRDM-02": [
       0,
       1.8,
@@ -82777,15 +82715,15 @@ var DATOS = {
       2.7
     ],
     "901281|Argolla Base de Cargador p/Sujetar el Cordon #39002": [
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
+      8.2,
+      8.2,
+      8.2,
+      8.2,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
       2.7,
       2.7,
       2.7,
@@ -82853,26 +82791,6 @@ var DATOS = {
       2.7,
       2.7,
       2.7,
-      2.7,
-      2.7
-    ],
-    "320515|Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345": [
-      7.3,
-      7.3,
-      7.2,
-      7.2,
-      3.6,
-      3.6,
-      3.6,
-      3.5,
-      3.5,
-      3.5,
-      3.4,
-      3.4,
-      3.3,
-      3.1,
-      3.1,
-      2.8,
       2.7,
       2.7
     ],
@@ -82973,26 +82891,6 @@ var DATOS = {
       2.6,
       2.6,
       2.6,
-      2.6,
-      2.6
-    ],
-    "681090|Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh": [
-      26.2,
-      23.6,
-      23.2,
-      21,
-      10.1,
-      8.7,
-      9.2,
-      8.7,
-      7.4,
-      7.9,
-      7.9,
-      7.4,
-      7.4,
-      7.9,
-      7.9,
-      7,
       2.6,
       2.6
     ],
@@ -83157,10 +83055,10 @@ var DATOS = {
       2.6
     ],
     "260370|Punto de mira TRUGLO para escopetas universal verde HD SGT 12-20GA GRN #TG93HA": [
-      3.8,
-      3.7,
-      3.7,
-      3.4,
+      7.2,
+      7.1,
+      7.1,
+      6.8,
       3.3,
       3.3,
       3.3,
@@ -83277,10 +83175,10 @@ var DATOS = {
       2.5
     ],
     "110588|Funda interna FOBUS Mod. #IWBS Universal tamaño S": [
-      9.5,
-      9.4,
-      9.4,
-      9.4,
+      3.3,
+      3.2,
+      3.2,
+      3.2,
       3,
       2.9,
       2.9,
@@ -83636,6 +83534,26 @@ var DATOS = {
       2.5,
       2.4
     ],
+    "320515|Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345": [
+      3.7,
+      3.7,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
+      3.5,
+      3.5,
+      3.5,
+      3.4,
+      3.4,
+      3.3,
+      3.1,
+      3.1,
+      2.8,
+      2.7,
+      2.4
+    ],
     "830283|Hilo Snake Mult. 4X Fullpowe 0.50MM 100M": [
       4,
       3.7,
@@ -83657,10 +83575,10 @@ var DATOS = {
       2.4
     ],
     "DES680549|Linterna Caterpillar 200 LM Utilidad con cuellera #CT7100 (copia)": [
-      18.9,
-      18.5,
-      18.2,
-      18.2,
+      15.3,
+      14.9,
+      14.6,
+      14.6,
       3.6,
       3.6,
       3.6,
@@ -83777,7 +83695,7 @@ var DATOS = {
       2.4
     ],
     "510700|Mochila DOBERMAN 40L CHARLIE GREEN #BL076GR": [
-      14,
+      28,
       13.5,
       12.1,
       11.3,
@@ -83837,10 +83755,10 @@ var DATOS = {
       2.4
     ],
     "DES680531|Linterna Caterpillar 175 LM LED COB de Bolsillo Camo  #CT1200 Sin Pilas / Sin Blíster": [
-      0.4,
-      0.1,
-      0.1,
-      0,
+      3.1,
+      2.8,
+      2.8,
+      2.7,
       2.7,
       2.6,
       2.5,
@@ -83937,10 +83855,10 @@ var DATOS = {
       2.3
     ],
     "270813|Funda Fab Defense p/ M:1911 Level 1 #M1-1911": [
-      0,
-      0,
-      0,
-      0,
+      3.6,
+      3.6,
+      3.6,
+      3.6,
       3.6,
       3,
       3,
@@ -83977,10 +83895,10 @@ var DATOS = {
       2.3
     ],
     "260221|Mira Telescopica BSA QK8-32X56 BWF30": [
-      2.3,
-      2.3,
-      2.3,
-      2.3,
+      0,
+      0,
+      0,
+      0,
       2.3,
       2.3,
       2.3,
@@ -84037,10 +83955,10 @@ var DATOS = {
       2.3
     ],
     "260757|Montante Gamo TS-300 30mm High p/ Riel Rfle": [
-      5,
-      4.8,
-      4.8,
-      4.6,
+      7.3,
+      7.1,
+      7.1,
+      6.9,
       2.3,
       2.3,
       2.3,
@@ -84117,10 +84035,10 @@ var DATOS = {
       2.3
     ],
     "260676|Montante para rifles KONUS de 30mm Mediano para Picattiny / Weaver #7404": [
-      3.6,
-      3.6,
-      3.4,
-      3.4,
+      0.1,
+      0.1,
+      0,
+      0,
       3.4,
       3,
       3,
@@ -84137,10 +84055,10 @@ var DATOS = {
       2.3
     ],
     "110712|N-Cartuc.#78191 Sz19 Michngr": [
-      2.3,
-      2.3,
-      2.3,
-      2.3,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
       2.3,
       2.3,
       2.3,
@@ -84434,6 +84352,26 @@ var DATOS = {
       2.2,
       2.2,
       2.2,
+      2.2
+    ],
+    "681090|Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh": [
+      26.2,
+      23.6,
+      23.2,
+      21,
+      10.1,
+      8.7,
+      9.2,
+      8.7,
+      7.4,
+      7.9,
+      7.9,
+      7.4,
+      7.4,
+      7.9,
+      7.9,
+      7,
+      2.6,
       2.2
     ],
     "620656|Anzuelo Snake Crystal Niquel #01 c/50.": [
@@ -85037,10 +84975,10 @@ var DATOS = {
       2
     ],
     "680003|Linterna Reysol  72 Led Recarg. #MG-1072L": [
-      2,
-      2,
-      2,
-      2,
+      0,
+      0,
+      0,
+      0,
       2,
       2,
       2,
@@ -85117,10 +85055,10 @@ var DATOS = {
       2
     ],
     "REP920043|N-Repuesto p/Tanfoglio Sear Hounsing Assy": [
-      6,
-      6,
-      6,
-      6,
+      4,
+      4,
+      4,
+      4,
       2,
       2,
       2,
@@ -85157,10 +85095,10 @@ var DATOS = {
       2
     ],
     "260366|Alza y Punto de mira TRUGLO TFO para GLOCK mod LOW Alza Amarilla #TG131GT1Y": [
-      7.9,
-      7.9,
-      7.9,
-      7.9,
+      11.9,
+      11.9,
+      11.9,
+      11.9,
       4,
       4,
       4,
@@ -85337,10 +85275,10 @@ var DATOS = {
       1.9
     ],
     "REP920040|N-Repuesto p/Esc.SetCula/Guard.M:S1112 Semi/Mad. ARMED": [
-      5.8,
-      5.8,
-      5.8,
-      5.8,
+      3.9,
+      3.9,
+      3.9,
+      3.9,
       1.9,
       1.9,
       1.9,
@@ -85497,10 +85435,10 @@ var DATOS = {
       1.9
     ],
     "260760|Montante weaver de 30 mm EXTRA HIGH": [
-      5.8,
-      5.8,
-      5.8,
-      5.8,
+      7.7,
+      7.7,
+      7.7,
+      7.7,
       1.9,
       1.9,
       1.9,
@@ -85738,9 +85676,9 @@ var DATOS = {
     ],
     "920420|Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-XL#20427": [
       0,
-      2.1,
-      2.1,
-      2.1,
+      0,
+      0,
+      0,
       2.1,
       2.1,
       2.1,
@@ -85857,10 +85795,10 @@ var DATOS = {
       1.9
     ],
     "260550|Punto Rojo Hawke 1x5 M.O.A Ret. Ilum.Rojo 6 ajustes#12134": [
-      0,
-      0,
-      0,
-      0,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
       1.9,
       1.9,
       1.9,
@@ -86217,10 +86155,10 @@ var DATOS = {
       1.8
     ],
     "DES880091|Bota ROCKY BOOTS Mod. Snake Country RKS0232 Talle 9 - 42": [
-      5.4,
-      4.8,
-      4.8,
-      4.8,
+      3,
+      2.4,
+      2.4,
+      2.4,
       2.4,
       2.4,
       2.4,
@@ -86337,10 +86275,10 @@ var DATOS = {
       1.8
     ],
     "110583|Funda interna FOBUS Mod. #SWC p/ APX/MASADA/S n W/PPQ/Taurus/otros": [
-      6.9,
-      6.6,
-      6.6,
-      6.7,
+      3.5,
+      3.2,
+      3.2,
+      3.4,
       3.4,
       3.4,
       3.4,
@@ -86356,26 +86294,6 @@ var DATOS = {
       1.8,
       1.8
     ],
-    "250180|Lubricante ASG 220ml. #16286": [
-      2.7,
-      2.6,
-      2.5,
-      2.3,
-      2.3,
-      2.2,
-      2.2,
-      2.1,
-      2.1,
-      2,
-      1.9,
-      1.9,
-      1.9,
-      1.9,
-      1.8,
-      1.8,
-      1.8,
-      1.8
-    ],
     "150803|Cuchillo De Caza Hk-803B": [
       2,
       2,
@@ -86384,26 +86302,6 @@ var DATOS = {
       1.9,
       1.9,
       1.9,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8
-    ],
-    "620661|Anzuelo Snake Crystal Niquel #1/0 c/25.": [
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
-      1.8,
       1.8,
       1.8,
       1.8,
@@ -86441,6 +86339,26 @@ var DATOS = {
       0,
       0,
       0,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
+      1.8
+    ],
+    "620661|Anzuelo Snake Crystal Niquel #1/0 c/25.": [
+      1.8,
+      1.8,
+      1.8,
+      1.8,
       1.8,
       1.8,
       1.8,
@@ -86557,11 +86475,11 @@ var DATOS = {
       1.7
     ],
     "210715|N-Dado Dillon 380Autosd-Jr#20246": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
       1.7,
       1.7,
       1.7,
@@ -86637,10 +86555,10 @@ var DATOS = {
       1.7
     ],
     "REP900112|N-Repuesto Guia y Traba de Cerrojo Boito #G12344": [
-      2,
-      2,
-      2,
-      2,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
       2,
       2,
       2,
@@ -86737,10 +86655,10 @@ var DATOS = {
       1.7
     ],
     "261405|Camara GSM-STEALTHCAM Mod. GMAX 32MP #STC-GMAX32V": [
-      6.7,
-      6.7,
-      6.7,
-      6.7,
+      5,
+      5,
+      5,
+      5,
       1.7,
       1.7,
       1.7,
@@ -87077,10 +86995,10 @@ var DATOS = {
       1.6
     ],
     "DES151202|Pala COLEMAN Mod. RUGGED #2000025200": [
-      2.3,
-      2.2,
-      2.2,
-      1.9,
+      4.3,
+      4.2,
+      4.2,
+      3.9,
       1.9,
       1.9,
       1.8,
@@ -87117,11 +87035,11 @@ var DATOS = {
       1.6
     ],
     "505305|Balas Federal 38SUP.+P130Gr.FMJ#AE38S1*50X20": [
-      1.6,
-      1.6,
-      1.6,
-      1.6,
-      1.6,
+      0,
+      0,
+      0,
+      0,
+      0,
       1.6,
       1.6,
       1.6,
@@ -87174,6 +87092,26 @@ var DATOS = {
       1.6,
       1.6,
       1.6,
+      1.6
+    ],
+    "250180|Lubricante ASG 220ml. #16286": [
+      2.7,
+      2.6,
+      2.5,
+      2.3,
+      2.3,
+      2.2,
+      2.2,
+      2.1,
+      2.1,
+      2,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.8,
+      1.8,
+      1.8,
       1.6
     ],
     "900376|Baterias p/Linterna IMALENT DX80 (8*3000mAh 18650)": [
@@ -87234,46 +87172,6 @@ var DATOS = {
       3.2,
       3.2,
       1.6,
-      1.6
-    ],
-    "260233|Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07": [
-      0,
-      20.4,
-      19.7,
-      19.6,
-      17.4,
-      16.9,
-      13.3,
-      12.9,
-      10.1,
-      9.3,
-      9.3,
-      8.9,
-      8.3,
-      7.6,
-      6.3,
-      5.5,
-      2.7,
-      1.6
-    ],
-    "900364|Pila Duracell Alcalina AAX6 Chica": [
-      0.8,
-      0.7,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.4,
-      0.4,
-      0.3,
       1.6
     ],
     "620613|Anzuelo Snake/Octopus 12146 #8/0 c/10.": [
@@ -87357,7 +87255,7 @@ var DATOS = {
       1.6
     ],
     "720692|Kepis con nuquera sumax SB-1303K UV KAKI": [
-      4.1,
+      2.1,
       2,
       2,
       2,
@@ -87517,10 +87415,10 @@ var DATOS = {
       1.6
     ],
     "DES880055|Bota ROCKY BOOTS Mod. Snake Camo RKS0450 Talle 13 - 47": [
-      1.6,
-      1.6,
-      1.6,
-      1.6,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
       1.6,
       1.6,
       1.6,
@@ -87617,10 +87515,10 @@ var DATOS = {
       1.5
     ],
     "620141|Anzuelo Prep. c/ Cabo Simple #7/0 *1x100": [
-      1.5,
-      1.5,
-      1.5,
-      1.5,
+      0,
+      0,
+      0,
+      0,
       1.5,
       1.5,
       1.5,
@@ -87657,7 +87555,7 @@ var DATOS = {
       1.5
     ],
     "510799|Porta vaso termico / hoppie DOBERMAN JULIETT COYOTE #BL051KH": [
-      3.4,
+      7.5,
       7,
       6.8,
       6.4,
@@ -87696,24 +87594,24 @@ var DATOS = {
       1.5,
       1.5
     ],
-    "260289|Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274": [
-      15.9,
-      14.4,
-      13.6,
-      13.6,
-      5.3,
-      5.3,
-      5.3,
-      4.5,
-      4.5,
-      5.3,
-      5.3,
-      5.3,
-      3.8,
-      3.8,
-      3.8,
-      3.8,
-      1.5,
+    "260233|Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07": [
+      0,
+      20.4,
+      19.7,
+      19.6,
+      17.4,
+      16.9,
+      13.3,
+      12.9,
+      10.1,
+      9.3,
+      9.3,
+      8.9,
+      8.3,
+      7.6,
+      6.3,
+      5.5,
+      2.7,
       1.5
     ],
     "260551|Punto Rojo Hawke 1x5 M.O.A Ret Iluminada Rojo 5 ajustes #12131": [
@@ -87757,11 +87655,11 @@ var DATOS = {
       1.5
     ],
     "DES325000|Pistola lanza pimienta UMAREX Mod. PGS incluido 1Cart.#2.2050-1": [
-      15.6,
-      13.7,
+      15.8,
       13.9,
+      14.1,
+      11.8,
       11.6,
-      11.3,
       10.9,
       10.3,
       9.8,
@@ -87836,24 +87734,24 @@ var DATOS = {
       1.5,
       1.5
     ],
-    "320517|Flecha UMAREX Mod. NXG 26'' x3 unidades": [
-      2.5,
-      2.4,
-      2.3,
-      2.3,
-      2.3,
-      2.2,
-      2.2,
-      2.2,
-      2,
-      2,
-      2,
-      2,
-      2,
-      1.9,
-      1.8,
-      1.5,
-      1.5,
+    "900364|Pila Duracell Alcalina AAX6 Chica": [
+      0.8,
+      0.7,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4,
+      0.4,
+      0.3,
       1.5
     ],
     "730380|Remera BERETTA Mod. Bullseye Azul Chico #TS971T21450560S": [
@@ -88097,10 +87995,10 @@ var DATOS = {
       1.4
     ],
     "250694|Montante NITECORE GM06 para picattinys costado": [
-      3.6,
-      3.6,
-      3.6,
-      3.6,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
       1.8,
       1.5,
       1.5,
@@ -88157,9 +88055,9 @@ var DATOS = {
       1.4
     ],
     "760060|Parches de limpieza GSM-BWC pack de 300 p/ escop cal 12 a 20 #41168": [
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
       0,
       2.2,
       2.1,
@@ -88236,6 +88134,26 @@ var DATOS = {
       1.4,
       1.4
     ],
+    "320517|Flecha UMAREX Mod. NXG 26'' x3 unidades": [
+      4.8,
+      4.7,
+      4.6,
+      4.6,
+      2.3,
+      2.2,
+      2.2,
+      2.2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1.9,
+      1.8,
+      1.5,
+      1.5,
+      1.4
+    ],
     "621073|Esmerillon Snake Negro Nickel 2/0 c/5 1703": [
       1.5,
       1.4,
@@ -88257,10 +88175,10 @@ var DATOS = {
       1.4
     ],
     "920414|Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-L#20426": [
-      2.8,
-      2.6,
-      2.4,
-      2.4,
+      0.3,
+      0.2,
+      0,
+      0,
       2.4,
       2.4,
       2.4,
@@ -88297,10 +88215,10 @@ var DATOS = {
       1.4
     ],
     "4500381|Cargador Tanfoglio 40SW Cromado Limited/Force/Stock2/Stock3/Combat 12T #C000": [
-      2.3,
-      2.3,
-      2.3,
-      2.3,
+      3.4,
+      3.4,
+      3.4,
+      3.4,
       1.1,
       1.1,
       1.1,
@@ -88517,11 +88435,11 @@ var DATOS = {
       1.4
     ],
     "210317|N-Ensamblador Para Dado Sd/Jr  #20113": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       1.4,
       1.4,
       1.4,
@@ -88537,10 +88455,10 @@ var DATOS = {
       1.4
     ],
     "820274|Plomada Redonda N°7 x10kg": [
-      2.8,
-      2.8,
-      2.8,
-      2.8,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       1.4,
       1.4,
       1.4,
@@ -88817,10 +88735,10 @@ var DATOS = {
       1.3
     ],
     "REP920019|N-REPUESTOp/Rifle Mendoza JUEGOdelTAPON DE MEC.": [
-      2.6,
-      2.6,
-      2.6,
-      2.6,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
       1.3,
       1.3,
       1.3,
@@ -88877,10 +88795,10 @@ var DATOS = {
       1.3
     ],
     "110292|Pistolera Personalizada p/Pistola Tanfoglio #FO002": [
-      2.5,
-      2.5,
-      2.5,
-      2.5,
+      3.8,
+      3.8,
+      3.8,
+      3.8,
       1.3,
       1.3,
       1.3,
@@ -89077,9 +88995,9 @@ var DATOS = {
       1.3
     ],
     "260563|Punto Rojo KONUS FISSION 2,0 c/ 5 Inten. y Montante Duo #7245": [
-      0,
-      0,
-      0,
+      3.3,
+      1.7,
+      1.2,
       0,
       3.3,
       2.1,
@@ -89097,10 +89015,10 @@ var DATOS = {
       1.2
     ],
     "200352|N-Cacha Hoge SW 5906,4006 40010": [
-      2.5,
-      2.5,
-      2.5,
-      2.5,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
       1.2,
       1.2,
       1.2,
@@ -89257,10 +89175,10 @@ var DATOS = {
       1.2
     ],
     "510262|Mochila NITECORE Mod. WDB20 Impermeable": [
-      1.8,
-      1.8,
-      1.2,
-      1.2,
+      0.6,
+      0.6,
+      0,
+      0,
       1.2,
       1.6,
       1.2,
@@ -89481,11 +89399,11 @@ var DATOS = {
       0,
       0,
       0,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
       1.2,
       1.2,
       1.2,
@@ -89534,26 +89452,6 @@ var DATOS = {
       2.4,
       2.4,
       1.2,
-      1.2
-    ],
-    "324156|Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891": [
-      6.4,
-      5.2,
-      5,
-      4.6,
-      4.5,
-      4.2,
-      4,
-      3.8,
-      3.7,
-      2.1,
-      2,
-      2,
-      1.9,
-      1.7,
-      1.7,
-      1.6,
-      1.5,
       1.2
     ],
     "830158|Hilo de Pesca Century Avan. Mult.0,18mm100M#ADV4-018": [
@@ -89637,10 +89535,10 @@ var DATOS = {
       1.2
     ],
     "REP900877|Repuesto Aguja percutora con resorte p/ Escopeta Armed": [
-      4.1,
-      4.1,
-      4.1,
-      4.1,
+      6.9,
+      6.9,
+      6.9,
+      6.9,
       1.4,
       1.2,
       1.2,
@@ -89677,7 +89575,7 @@ var DATOS = {
       1.2
     ],
     "720691|Kepis con nuquera sumax SB-1303A UV AZUL": [
-      2.3,
+      4.5,
       2.1,
       2.1,
       1.9,
@@ -89817,10 +89715,10 @@ var DATOS = {
       1.2
     ],
     "260681|Montante para rifles KONUS de 25.4mm Medio para Picattiny / Weaver #7401": [
-      11.4,
-      11.3,
-      11.3,
-      10.8,
+      6.1,
+      6,
+      6,
+      5.6,
       2.6,
       2.6,
       1.8,
@@ -89877,7 +89775,7 @@ var DATOS = {
       1.2
     ],
     "870812|Bota 5.11 Tactica 6\" Mod. A/T Non-Zip 12440-106 Dark Coyote US 8,5": [
-      2.3,
+      1.2,
       1.2,
       1.2,
       1.2,
@@ -89957,10 +89855,10 @@ var DATOS = {
       1.2
     ],
     "300091|Kit de Precisión Fab Defense Ruger 10-22 PRO Retractil #M4PROR10/22": [
-      9.3,
-      9.3,
-      9.3,
-      9.3,
+      6.9,
+      6.9,
+      6.9,
+      6.9,
       2.3,
       2.3,
       2.3,
@@ -90147,26 +90045,6 @@ var DATOS = {
       1.2,
       1.2,
       1.2,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1
-    ],
-    "550250|Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409": [
-      1.4,
-      1.4,
-      1.2,
-      1.2,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
       1.1,
       1.1,
       1.1,
@@ -90377,9 +90255,9 @@ var DATOS = {
       1.1
     ],
     "501550|Cartuchos GB 32 #7 14g 250/25": [
-      10.8,
-      7.1,
-      7.1,
+      12.9,
+      9.3,
+      9.3,
       0,
       0,
       2.2,
@@ -90596,6 +90474,26 @@ var DATOS = {
       1.1,
       1.1
     ],
+    "550250|Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409": [
+      1.4,
+      1.4,
+      1.2,
+      1.2,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1
+    ],
     "720693|Kepis con nuquera sumax SB-1303V UV VERDE": [
       1.7,
       1.6,
@@ -90657,10 +90555,10 @@ var DATOS = {
       1.1
     ],
     "LIQ680555|Linterna Dual Caterpillar 1200/100 LM LED #CT6315": [
-      2.5,
-      2.5,
-      2.3,
-      2.3,
+      1.3,
+      1.3,
+      1.1,
+      1.1,
       1.3,
       1.3,
       1.3,
@@ -90679,9 +90577,9 @@ var DATOS = {
     "505152|Balas SELLIER n BELLOT cal 9mm FMJ 115gr 50x20 #V310452": [
       0,
       0,
-      0,
-      7.8,
-      0,
+      91.1,
+      134.9,
+      115.7,
       27.4,
       19.2,
       13.5,
@@ -90794,6 +90692,26 @@ var DATOS = {
       1.1,
       1.1,
       1.1,
+      1.1
+    ],
+    "324156|Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891": [
+      6.4,
+      5.2,
+      5,
+      4.6,
+      4.5,
+      4.2,
+      4,
+      3.8,
+      3.7,
+      2.1,
+      2,
+      2,
+      1.9,
+      1.7,
+      1.7,
+      1.6,
+      1.5,
       1.1
     ],
     "850563|Reel Molinete Abu Garcia Rvo3 WINCH negro Diestro  #1265428": [
@@ -91097,10 +91015,10 @@ var DATOS = {
       1
     ],
     "260113|Punto Rojo BSA 1x45 #SP15580": [
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
       1,
       1,
       1,
@@ -91277,15 +91195,15 @@ var DATOS = {
       1
     ],
     "260111|Punto Rojo BSA 1x30 #SP15578": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
       1,
       1,
       1,
@@ -91337,10 +91255,10 @@ var DATOS = {
       1
     ],
     "620683|Anzuelo Snake Maruseigo Niquel #12 c/20.": [
-      1.1,
-      1,
-      1,
-      1,
+      2.1,
+      2,
+      2,
+      2,
       1,
       1,
       1,
@@ -91377,10 +91295,10 @@ var DATOS = {
       1
     ],
     "610570|Caña Abu Garcia 1324163 VRTCM70-6 12-20LB": [
-      1.5,
-      1.5,
-      1.5,
-      2,
+      2.5,
+      2.5,
+      2.5,
+      3,
       1,
       1,
       1,
@@ -91417,10 +91335,10 @@ var DATOS = {
       1
     ],
     "550302|Kit de limpieza GSM-BWC para escopetas #BC-SHGCLN-KIT": [
-      3.7,
-      3.1,
-      3,
-      2.4,
+      6.1,
+      5.5,
+      5.3,
+      4.7,
       2.4,
       1.2,
       1,
@@ -91477,10 +91395,10 @@ var DATOS = {
       1
     ],
     "680572|Linterna IMALENT MS03 13000 LM 1x21700": [
-      1,
-      1,
-      1,
-      1,
+      2,
+      2,
+      2,
+      2,
       1,
       1,
       1,
@@ -91514,26 +91432,6 @@ var DATOS = {
       1,
       1,
       1,
-      1
-    ],
-    "900322|PILA Duracell 9V 1 x 48": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      1.2,
-      1.2,
-      1.1,
       1
     ],
     "621222|Esmerillon Snake c/Snap Negro Nickel 12 NS-3702": [
@@ -91677,15 +91575,15 @@ var DATOS = {
       0.9
     ],
     "901271|Herramientas Manuales p/Mant.Pistola Glock#2987": [
-      3.8,
-      3.8,
-      3.8,
-      3.8,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      4.7,
+      4.7,
+      4.7,
+      4.7,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
       0.9,
       0.9,
       0.9,
@@ -91757,10 +91655,10 @@ var DATOS = {
       0.9
     ],
     "620628|Anzuelo Snake Ba. Niquel #12 c/20.": [
-      1,
-      1,
-      1,
-      0.9,
+      0,
+      0,
+      0,
+      0,
       0.9,
       0.9,
       0.9,
@@ -91777,10 +91675,10 @@ var DATOS = {
       0.9
     ],
     "350201|Target GSM-SME de metal para cal 22 #SME-ST22FLD": [
-      7.9,
-      7.9,
-      7.6,
-      7.4,
+      5.4,
+      5.4,
+      5.1,
+      4.9,
       2.5,
       2.3,
       2.3,
@@ -91794,26 +91692,6 @@ var DATOS = {
       1.4,
       1.2,
       0.9,
-      0.9
-    ],
-    "900302|Pila Duracell Alcalina - AAAx6 CHICA": [
-      0.3,
-      0.6,
-      0.8,
-      0.9,
-      0.7,
-      0.6,
-      0.6,
-      0.5,
-      0.3,
-      0.2,
-      0.2,
-      0.2,
-      0.1,
-      0.1,
-      1.4,
-      1.3,
-      1,
       0.9
     ],
     "380005|Accesorio de Práctica de Goma Mod. 223REM #SCSC-01": [
@@ -91894,6 +91772,26 @@ var DATOS = {
       0.9,
       0.9,
       0.9,
+      0.9
+    ],
+    "900322|PILA Duracell 9V 1 x 48": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1.2,
+      1.2,
+      1.1,
       0.9
     ],
     "260675|Montante para rifles KONUS de 30mm Alto de saque rápido para Picattiny / Weaver #7409": [
@@ -91977,10 +91875,10 @@ var DATOS = {
       0.9
     ],
     "900397|Baterias IMALENT para MS12": [
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      1.8,
+      1.8,
+      1.8,
+      1.8,
       0.9,
       0.9,
       0.9,
@@ -92097,9 +91995,9 @@ var DATOS = {
       0.9
     ],
     "DES680561|Linterna Caterpillar 300 LM Utilidad con cuellera #CT7105 (copia)": [
-      0,
-      0,
-      0,
+      0.9,
+      0.3,
+      0.3,
       0,
       1.5,
       1.2,
@@ -92197,11 +92095,11 @@ var DATOS = {
       0.9
     ],
     "210402|N-Molde P/H.Punta Sc250G 429640Ph": [
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      0,
+      0,
+      0,
+      0,
+      0,
       0.9,
       0.9,
       0.9,
@@ -92297,10 +92195,10 @@ var DATOS = {
       0.9
     ],
     "110713|N-Cartuc.#78011 Sz1 Michngr": [
-      1.7,
-      1.7,
-      1.7,
-      1.7,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.9,
       0.9,
       0.9,
@@ -92417,10 +92315,10 @@ var DATOS = {
       0.9
     ],
     "4500654U|Cargador Fino 32Auto 9T #usado": [
-      3.4,
-      3.4,
-      3.4,
-      3.4,
+      2.6,
+      2.6,
+      2.6,
+      2.6,
       0.9,
       0.9,
       0.9,
@@ -92477,10 +92375,10 @@ var DATOS = {
       0.9
     ],
     "830318|Hilo Snake Mult. 4X Motion 0.10MM 300M": [
-      2.9,
-      2.8,
-      2.8,
-      2.8,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
       0.9,
       0.9,
       0.9,
@@ -92637,15 +92535,15 @@ var DATOS = {
       0.8
     ],
     "250660|Montante Bushnell Tactical  #260600": [
-      0,
-      0,
-      0,
-      0,
       0.8,
       0.8,
       0.8,
       0.8,
-      0.8,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
       0.8,
       0.8,
       0.8,
@@ -92817,11 +92715,11 @@ var DATOS = {
       0.8
     ],
     "210415|N-Mango P/Molde #2735793": [
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
+      0,
+      0,
+      0,
+      0,
+      0,
       0.8,
       0.8,
       0.8,
@@ -92996,6 +92894,26 @@ var DATOS = {
       0.8,
       0.8
     ],
+    "900302|Pila Duracell Alcalina - AAAx6 CHICA": [
+      0.3,
+      0.6,
+      0.8,
+      0.9,
+      0.7,
+      0.6,
+      0.6,
+      0.5,
+      0.3,
+      0.2,
+      0.2,
+      0.2,
+      0.1,
+      0.1,
+      1.4,
+      1.3,
+      1,
+      0.8
+    ],
     "110800|N-Bolso Police #88941Ngrgrande": [
       0,
       0.8,
@@ -93057,10 +92975,10 @@ var DATOS = {
       0.8
     ],
     "900950|Retensor de la Corredera p/Pistola Tanfoglio #PR015": [
-      0.8,
-      0.8,
-      0.8,
-      0.8,
+      0,
+      0,
+      0,
+      0,
       0.8,
       0.8,
       0.8,
@@ -93177,10 +93095,10 @@ var DATOS = {
       0.8
     ],
     "115020|Porta Carg.Doble #88310 Camu": [
-      2.3,
-      2.3,
-      2.2,
-      2.2,
+      1.5,
+      1.5,
+      1.5,
+      1.5,
       0.7,
       0.7,
       0.7,
@@ -93197,10 +93115,10 @@ var DATOS = {
       0.8
     ],
     "110760|Porta Carg.Doble FOBUS p/Pist. 357/40 #6900BHS": [
-      2.5,
-      2.5,
-      2.4,
-      2.4,
+      1.7,
+      1.7,
+      1.6,
+      1.6,
       0.8,
       0.8,
       0.8,
@@ -93237,10 +93155,10 @@ var DATOS = {
       0.8
     ],
     "150952|Cuchillo Mb-9AEspañol": [
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+      1.6,
+      1.6,
+      1.6,
+      1.6,
       0.8,
       0.8,
       0.8,
@@ -93381,11 +93299,11 @@ var DATOS = {
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.8,
       0.8,
       0.8,
@@ -93537,11 +93455,11 @@ var DATOS = {
       0.8
     ],
     "210346|N-Shell Holder Lee #11 No.90211": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.8,
       0.8,
       0.8,
@@ -93617,7 +93535,7 @@ var DATOS = {
       0.8
     ],
     "870764|Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-47.5 #200688-8": [
-      0.8,
+      0,
       0.8,
       0.8,
       0.8,
@@ -93637,7 +93555,7 @@ var DATOS = {
       0.8
     ],
     "870761|Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote 48.5 #200688-8": [
-      0.8,
+      0,
       0.8,
       0.8,
       0.8,
@@ -93677,10 +93595,10 @@ var DATOS = {
       0.8
     ],
     "920255|N-Rabisa corte de arranque": [
-      3,
-      3,
-      3,
-      3,
+      4.6,
+      4.6,
+      4.6,
+      4.6,
       0.8,
       0.8,
       0.8,
@@ -93717,11 +93635,11 @@ var DATOS = {
       0.8
     ],
     "501495|Cartuchos GB 28 #3 15g*25 x250": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
       2.1,
       2.1,
       2.1,
@@ -93776,11 +93694,31 @@ var DATOS = {
       0.8,
       0.8
     ],
+    "260289|Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274": [
+      15.9,
+      14.4,
+      13.6,
+      13.6,
+      5.3,
+      5.3,
+      5.3,
+      4.5,
+      4.5,
+      5.3,
+      5.3,
+      5.3,
+      3.8,
+      3.8,
+      3.8,
+      3.8,
+      1.5,
+      0.8
+    ],
     "4500880|Cargador Llama 9MM XTRAEA 9T": [
-      1.5,
-      1.5,
-      1.5,
-      1.5,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.8,
       0.8,
       0.8,
@@ -93857,10 +93795,10 @@ var DATOS = {
       0.7
     ],
     "200132|N-Cacha SW 3Rd Gen #59511 Michaels": [
-      0,
-      0,
-      0,
-      0,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0,
       0,
       0,
@@ -94117,10 +94055,10 @@ var DATOS = {
       0.7
     ],
     "900885|Resorte de Corredera Ensamblado p/Glock M19 #8703": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      0,
+      0,
+      0,
+      0,
       0.7,
       0.7,
       0.7,
@@ -94237,10 +94175,10 @@ var DATOS = {
       0.7
     ],
     "901270|Herramienta Montante Universal p/Alza de Mira GLOCK #5161": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       0.7,
       0.7,
       0.7,
@@ -94297,7 +94235,7 @@ var DATOS = {
       0.7
     ],
     "870763|Bota 5.11 Tactica 6\" 12395 Atac 2.0 Dark Coyote-41 #200688-8": [
-      1.4,
+      0.7,
       0.7,
       0.7,
       0.7,
@@ -94317,10 +94255,10 @@ var DATOS = {
       0.7
     ],
     "751007|Set de varillas para carpas NTK FOX 2/3 #654660": [
-      2,
-      1.9,
-      1.9,
-      1.9,
+      1.1,
+      1,
+      1,
+      1,
       1,
       1,
       1,
@@ -94357,10 +94295,10 @@ var DATOS = {
       0.7
     ],
     "920054|N-Caño C/Roscap/Compensador 45Acp": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      2.2,
+      2.2,
+      2.2,
+      2.2,
       0.7,
       0.7,
       0.7,
@@ -94757,41 +94695,21 @@ var DATOS = {
       0.7
     ],
     "262|N-Cacha Rhk 41-44Mag Pachmayer": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7
-    ],
-    "621050|Esmerillon Snake Negro Nickel 6 c/15 NS-1707": [
       0,
       0,
       0,
       0,
-      1.2,
-      1.2,
-      1.2,
-      1.2,
-      1.2,
-      1.2,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.7,
       0.7,
       0.7
@@ -94832,6 +94750,26 @@ var DATOS = {
       0.7,
       0.7,
       0.7,
+      0.7,
+      0.7,
+      0.7
+    ],
+    "621050|Esmerillon Snake Negro Nickel 6 c/15 NS-1707": [
+      0,
+      0,
+      0,
+      0,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
       0.7,
       0.7,
       0.7
@@ -94877,10 +94815,10 @@ var DATOS = {
       0.7
     ],
     "4500653U|Cargador Fino 32Auto 8T #usado": [
-      2.8,
-      2.8,
-      2.8,
-      2.8,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
       0.7,
       0.7,
       0.7,
@@ -94917,10 +94855,10 @@ var DATOS = {
       0.7
     ],
     "272022|Culata s/tubo Fab Defense Retractil y Rebatible p/ FN FAL #M4 FAL J": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      0,
+      0,
+      0,
+      0,
       0.7,
       0.7,
       0.7,
@@ -95037,10 +94975,10 @@ var DATOS = {
       0.7
     ],
     "270816|Funda Fab Defense M24 Jerico941F Holster For Paddle": [
-      0,
-      0,
-      0,
-      0,
+      1,
+      1,
+      1,
+      1,
       1,
       0.7,
       0.7,
@@ -95217,10 +95155,10 @@ var DATOS = {
       0.7
     ],
     "670125|Manta Antiaderente p/Cocina": [
-      2,
-      2,
-      2,
-      2,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
       0.7,
       0.7,
       0.7,
@@ -95257,7 +95195,7 @@ var DATOS = {
       0.7
     ],
     "870799|Bota 5.11 Tactica 8\" 12391 Atac 2.0 Ng-42,5 #213231-0": [
-      0.7,
+      0,
       0.7,
       0.7,
       0.7,
@@ -95357,10 +95295,10 @@ var DATOS = {
       0.7
     ],
     "270151|Culata Fab Defense Glock M19 #GLR-440": [
-      2,
-      2,
-      2,
-      2,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.7,
       0.7,
       0.7,
@@ -95717,10 +95655,10 @@ var DATOS = {
       0.6
     ],
     "681102|Linterna/Laser NITECORE Mod. NPL10 300Lm BatCR23V": [
-      0,
-      0,
-      0,
-      0,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
       1.9,
       0.3,
       0.3,
@@ -95937,10 +95875,10 @@ var DATOS = {
       0.6
     ],
     "613000|Sombrilla Maxgo 1.90 X 2.00M UV Azul": [
-      1.7,
-      1.7,
-      1.7,
-      1.8,
+      2.6,
+      2.6,
+      2.6,
+      2.7,
       0.9,
       0.8,
       0.8,
@@ -96296,7 +96234,7 @@ var DATOS = {
       0.6,
       0.6
     ],
-    "620687|Anzuelo Snake Maruseigo Niquel #16 c/20.": [
+    "750202|Carpa Canadiense S-124 2P.c/C.T.c/M.P.": [
       0.6,
       0.6,
       0.6,
@@ -96316,7 +96254,7 @@ var DATOS = {
       0.6,
       0.6
     ],
-    "750202|Carpa Canadiense S-124 2P.c/C.T.c/M.P.": [
+    "620687|Anzuelo Snake Maruseigo Niquel #16 c/20.": [
       0.6,
       0.6,
       0.6,
@@ -96497,10 +96435,10 @@ var DATOS = {
       0.6
     ],
     "260906|N-Mira Rifle Polvora Ng66La Lym": [
-      0.6,
-      0.6,
-      0.6,
-      0.6,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
       0.6,
       0.6,
       0.6,
@@ -96597,10 +96535,10 @@ var DATOS = {
       0.6
     ],
     "751003|Set de varillas para carpas NTK PANDA 3 #654520": [
-      3.1,
-      3,
-      2.9,
-      2.9,
+      2.1,
+      2,
+      1.9,
+      1.9,
       0.9,
       0.9,
       0.9,
@@ -96637,10 +96575,10 @@ var DATOS = {
       0.6
     ],
     "900731|N-Transform.220/12Vp/Conserv.F/C#6878": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.6,
       0.6,
       0.6,
@@ -96737,10 +96675,10 @@ var DATOS = {
       0.6
     ],
     "901201|Kit Clavija de Seguridad + Resorte del Disparador Glock 17/19#77": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
       0.6,
       0.6,
       0.6,
@@ -97297,10 +97235,10 @@ var DATOS = {
       0.5
     ],
     "110563|Funda FOBUS Mod. #RBT17GBUNDLE p/ G17 c/ linterna": [
-      1.7,
-      0.3,
-      0,
-      0,
+      4.9,
+      3.5,
+      3.1,
+      3.1,
       2.9,
       2.3,
       1.9,
@@ -97317,10 +97255,10 @@ var DATOS = {
       0.5
     ],
     "830249|Hilo Snake Magnum 0.60mm 600M": [
-      0,
-      0,
-      0,
-      0,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.6,
       0.6,
       0.6,
@@ -97357,10 +97295,10 @@ var DATOS = {
       0.5
     ],
     "REP900870|Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 12": [
-      1.6,
-      1.6,
-      1.6,
-      1.6,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
       0.5,
       0.5,
       0.5,
@@ -97437,10 +97375,10 @@ var DATOS = {
       0.5
     ],
     "115704|Funda Arma Larga Doberman Cuero x 135CM": [
-      11.3,
-      11.3,
-      11.3,
-      11.3,
+      6.7,
+      6.7,
+      6.7,
+      6.7,
       2.1,
       2.1,
       2.1,
@@ -97457,10 +97395,10 @@ var DATOS = {
       0.5
     ],
     "620625|Anzuelo Snake Ba. Niquel #8 c/20.": [
-      0,
-      0,
-      0,
-      0,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -97477,10 +97415,10 @@ var DATOS = {
       0.5
     ],
     "260357|Alza y Punto de mira TRUGLO de Tritium PRO para GLOCK con circulo blanco mod LOW #TG231G1W": [
-      5.1,
-      4.6,
-      4.1,
-      4.1,
+      7.2,
+      6.7,
+      6.2,
+      6.2,
       2.1,
       2.1,
       2.1,
@@ -97537,10 +97475,10 @@ var DATOS = {
       0.5
     ],
     "260690|Montante KONUS CANTILEVER #7219": [
+      4.3,
+      4.3,
       3.6,
-      3.6,
-      2.8,
-      2.3,
+      3.1,
       0.8,
       0.8,
       0.8,
@@ -97574,26 +97512,6 @@ var DATOS = {
       0.8,
       0.5,
       0.5,
-      0.5
-    ],
-    "140188|Correa táctica DOBERMAN BLACK #BL066BL": [
-      9.3,
-      9.1,
-      8.9,
-      8.7,
-      3.3,
-      2.6,
-      2.4,
-      2.2,
-      1.8,
-      1.5,
-      1.4,
-      1.3,
-      1.2,
-      1.1,
-      1.1,
-      0.7,
-      0.7,
       0.5
     ],
     "940182|Cargador PCP DOBERMAN cal 5.5mm para Mod. M16": [
@@ -97637,10 +97555,10 @@ var DATOS = {
       0.5
     ],
     "110714|N-Cartuc.#81011/Sz1 Michaels": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      1,
+      1,
+      1,
+      1,
       0.5,
       0.5,
       0.5,
@@ -97697,10 +97615,10 @@ var DATOS = {
       0.5
     ],
     "REP920017|N-REPUESTOp/Rifle Mendoza JUEGO DEL CERROJO": [
-      1.5,
-      1.5,
-      1.5,
-      1.5,
+      1,
+      1,
+      1,
+      1,
       0.5,
       0.5,
       0.5,
@@ -97777,10 +97695,10 @@ var DATOS = {
       0.5
     ],
     "270560|Cobertor Fab Defense Mod. MOJO Cavalier": [
-      1.7,
-      1.7,
-      1.7,
-      1.7,
+      2.6,
+      2.6,
+      2.6,
+      2.6,
       0.9,
       0.9,
       0.9,
@@ -97816,6 +97734,26 @@ var DATOS = {
       0.5,
       0.5
     ],
+    "140188|Correa táctica DOBERMAN BLACK #BL066BL": [
+      9.3,
+      9.1,
+      8.9,
+      8.7,
+      3.3,
+      2.6,
+      2.4,
+      2.2,
+      1.8,
+      1.5,
+      1.4,
+      1.3,
+      1.2,
+      1.1,
+      1.1,
+      0.7,
+      0.7,
+      0.5
+    ],
     "900947|Elevador de Cargador Tanfoglio": [
       0.5,
       0.5,
@@ -97837,10 +97775,10 @@ var DATOS = {
       0.5
     ],
     "260300|N-Mont.M.Leupold Ruger 49029": [
-      1,
-      1,
-      1,
-      1,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -97857,10 +97795,10 @@ var DATOS = {
       0.5
     ],
     "115305|Pistolera p/asiento de cuero Negro": [
-      1.5,
-      1.5,
-      1.5,
-      1.5,
+      1,
+      1,
+      1,
+      1,
       0.5,
       0.5,
       0.5,
@@ -97897,10 +97835,10 @@ var DATOS = {
       0.5
     ],
     "270570|Cobertor Fab Defense Mod. MOJO Phalanx": [
-      1.8,
-      1.8,
-      1.7,
-      1.7,
+      1,
+      1,
+      0.8,
+      0.8,
       0.8,
       0.8,
       0.8,
@@ -97917,10 +97855,10 @@ var DATOS = {
       0.5
     ],
     "4501020|Cargador Sundance 25AUTO/6.35ACP Negro 8T": [
-      0,
-      0,
-      0,
-      0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -98037,10 +97975,10 @@ var DATOS = {
       0.5
     ],
     "110584|Funda FOBUS Mod. #WP-22 p/ WaltherP22 Paddle": [
-      2.4,
-      2.3,
-      2.3,
-      2.3,
+      3.3,
+      3.2,
+      3.2,
+      3.2,
       1,
       1,
       1,
@@ -98057,10 +97995,10 @@ var DATOS = {
       0.5
     ],
     "110562|Funda FOBUS Mod. #GL-2ND p/ G17/19 Paddle": [
-      4,
-      2.6,
-      2.4,
-      1.8,
+      5.8,
+      4.4,
+      4.2,
+      3.6,
       1.8,
       1.8,
       1.7,
@@ -98097,15 +98035,15 @@ var DATOS = {
       0.5
     ],
     "110375|Muslera p/ Pistola cal.9mm #P11": [
-      0,
-      0,
-      0,
-      0,
       0.5,
       0.5,
       0.5,
       0.5,
-      0.5,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.5,
       0.5,
       0.5,
@@ -98121,26 +98059,6 @@ var DATOS = {
       1,
       1,
       0.9,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5
-    ],
-    "830327|Hilo Snake Mult. 4X Wild 0.40MM 150M": [
-      1.6,
-      1.6,
-      1.6,
-      1.6,
       0.5,
       0.5,
       0.5,
@@ -98241,11 +98159,11 @@ var DATOS = {
       0,
       0,
       0,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -98261,11 +98179,11 @@ var DATOS = {
       0.5,
       0.5,
       0.5,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -98277,10 +98195,10 @@ var DATOS = {
       0.5
     ],
     "110028|Pistolera p/ 9mm P18 S/Rapido": [
-      1.8,
-      1.8,
-      1.8,
-      1.8,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
       0.5,
       0.5,
       0.5,
@@ -98317,11 +98235,31 @@ var DATOS = {
       0.5
     ],
     "501535|Cartuchos GB 32 #3 14g 250/25": [
-      0.1,
-      0,
-      0,
-      0,
-      0,
+      0.6,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "830327|Hilo Snake Mult. 4X Wild 0.40MM 150M": [
+      1.1,
+      1.1,
+      1.1,
+      1,
+      0.5,
       0.5,
       0.5,
       0.5,
@@ -98337,10 +98275,10 @@ var DATOS = {
       0.5
     ],
     "920045|N-Choque Esc. ARMED cal16  28\" 3PCS": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       0.5,
       0.5,
       0.5,
@@ -98437,10 +98375,10 @@ var DATOS = {
       0.4
     ],
     "260620|Punto de Mira p/Armed Semiautomatico/Monotiro": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.5,
       0.5,
       0.5,
@@ -98461,11 +98399,11 @@ var DATOS = {
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.4,
       0.4,
       0.4,
@@ -98496,36 +98434,16 @@ var DATOS = {
       0.4,
       0.4
     ],
-    "261060|Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370": [
-      0,
-      0,
-      0,
-      0,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4
-    ],
     "110047|Pistolera p/ 9mm P12Z p/ Zurdo Multiples": [
-      1.7,
-      1.7,
-      1.7,
-      1.7,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
       0.4,
       0.4,
       0.4,
@@ -98636,6 +98554,26 @@ var DATOS = {
       0.4,
       0.4
     ],
+    "261060|Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370": [
+      0,
+      0,
+      0,
+      0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
+    ],
     "321080|Cargador UMAREX T4E de emergencia para cal 43 mod Walther PPQ #2.4760.2": [
       6,
       6,
@@ -98657,15 +98595,15 @@ var DATOS = {
       0.4
     ],
     "111569|Funda Externa P/ BERETTA APX A1 CYA SUPPLY CO.": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.4,
       0.4,
       0.4,
@@ -98697,10 +98635,10 @@ var DATOS = {
       0.4
     ],
     "620621|Anzuelo Snake Ba. Niquel #1 c/20.": [
-      0.7,
-      0.5,
-      0.5,
-      0.5,
+      1.2,
+      1.1,
+      1,
+      1,
       0.5,
       0.5,
       0.5,
@@ -98777,10 +98715,10 @@ var DATOS = {
       0.4
     ],
     "620623|Anzuelo Snake Ba. Niquel #4 c/20.": [
-      0.6,
-      0.5,
-      0.5,
-      0.5,
+      0.1,
+      0,
+      0,
+      0,
       0.5,
       0.5,
       0.4,
@@ -98837,10 +98775,10 @@ var DATOS = {
       0.4
     ],
     "901408|Bateria NITECORE Mod. PLB500 para NPL25 500mAh": [
-      2.7,
-      2.7,
-      2.7,
-      2.7,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       1.4,
       1.2,
       1.2,
@@ -99217,10 +99155,10 @@ var DATOS = {
       0.4
     ],
     "760041|Parche 5.11 Mod. PARAGUAY 92199PY": [
-      2,
-      1.1,
-      0.9,
-      1.2,
+      0.8,
+      0,
+      0,
+      0,
       1.1,
       1.1,
       1,
@@ -99317,10 +99255,10 @@ var DATOS = {
       0.4
     ],
     "260736|Montante p/ Escopeta con Picattini #5066": [
-      1.4,
-      1.4,
-      1.4,
-      1.4,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.5,
       0.5,
       0.5,
@@ -99557,10 +99495,10 @@ var DATOS = {
       0.4
     ],
     "REP900876|Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 20": [
-      0.8,
-      0.8,
-      0.8,
-      0.8,
+      1.6,
+      1.6,
+      1.6,
+      1.6,
       0.4,
       0.4,
       0.4,
@@ -99617,10 +99555,10 @@ var DATOS = {
       0.4
     ],
     "LIQREP611063|LQN-Repuesto - Cuerda Aitor  Jungle King #16053": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0,
+      0,
+      0,
+      0,
       0.4,
       0.4,
       0.4,
@@ -99697,10 +99635,10 @@ var DATOS = {
       0.4
     ],
     "250061|Envase 45ml GSM-BWC RIGÍ† Grasa universal protege armas de fuego #40020": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.5,
       0.5,
       0.5,
@@ -100077,15 +100015,15 @@ var DATOS = {
       0.4
     ],
     "901280|Cordon p/Glock con Clip #1764": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.4,
       0.4,
       0.4,
@@ -100157,10 +100095,10 @@ var DATOS = {
       0.4
     ],
     "110738|N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 #BR2": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.4,
       0.4,
       0.4,
@@ -100197,10 +100135,10 @@ var DATOS = {
       0.4
     ],
     "620680|Anzuelo Snake Maruseigo Negro #20 c/20.": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.8,
+      0.8,
+      0.8,
+      0.7,
       0.4,
       0.4,
       0.4,
@@ -100597,10 +100535,10 @@ var DATOS = {
       0.4
     ],
     "111566|Funda Interna CYASUPPLY-FOBUS para Cargador Large Single Stack 9mm/.40/357SIG/45ACP #WHLSMAG0022-427171318888": [
-      0.4,
-      2.5,
-      2.5,
       2.4,
+      4.5,
+      4.5,
+      4.3,
       0.4,
       0.4,
       0.4,
@@ -100697,10 +100635,10 @@ var DATOS = {
       0.3
     ],
     "110655|N-Cartuc.#78021 Sz2 Michngr": [
-      0,
-      0,
-      0,
-      0,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -100718,9 +100656,9 @@ var DATOS = {
     ],
     "510455|Bolso 5.11 Mod. Bail Out Negro #56026-019": [
       0,
-      0,
-      0,
-      0,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -100757,7 +100695,7 @@ var DATOS = {
       0.3
     ],
     "731102|Abrigo Moleton Bordado S.W.A.T. 4210007 #G": [
-      0.7,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -100817,10 +100755,10 @@ var DATOS = {
       0.3
     ],
     "260260|N-Mont.Sig Sauer #45712": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.3,
       0.3,
       0.3,
@@ -100937,15 +100875,15 @@ var DATOS = {
       0.3
     ],
     "901302|Filtro p/ Luz Tactica Laser GTL21/22 Glock #5878": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.3,
       0.3,
       0.3,
@@ -101097,10 +101035,10 @@ var DATOS = {
       0.3
     ],
     "610558|Caña Hummer Rods Sumax 6-12 LBS#SHM561ML": [
-      1.2,
-      1.2,
-      1,
-      1,
+      1.8,
+      1.7,
+      1.6,
+      1.6,
       0.5,
       0.5,
       0.5,
@@ -101297,10 +101235,10 @@ var DATOS = {
       0.3
     ],
     "151523|Cuchillo Nieto Linea Yesca (Palo Violeta) 1049-V": [
-      2.6,
-      2.6,
-      2.6,
-      2.6,
+      3.2,
+      3.2,
+      3.2,
+      3.2,
       0.6,
       0.6,
       0.6,
@@ -101317,10 +101255,10 @@ var DATOS = {
       0.3
     ],
     "830342|Hilo Snake Mult. 8X Colossus 0.55MM 150M": [
-      0.8,
-      0.8,
-      0.7,
-      0.7,
+      0.4,
+      0.4,
+      0.4,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -101381,11 +101319,11 @@ var DATOS = {
       0,
       0,
       0,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -101417,10 +101355,10 @@ var DATOS = {
       0.3
     ],
     "110711|N-Pistolera c/Padded Cañamo Uncle Mikes#78151": [
-      1.3,
-      1.3,
-      1.3,
-      1.3,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.3,
       0.3,
       0.3,
@@ -101577,10 +101515,10 @@ var DATOS = {
       0.3
     ],
     "DES150080|Hacha COLEMAN Mod. RUGGED #2000038217": [
-      0.3,
-      0.2,
-      0.2,
-      0.3,
+      0.6,
+      0.5,
+      0.5,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -101657,10 +101595,10 @@ var DATOS = {
       0.3
     ],
     "4500960|N-Cargador Marlin P/Escopeta Cal. 12": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -101777,10 +101715,10 @@ var DATOS = {
       0.3
     ],
     "730060|Remera Tanfoglio Basic Cotton XL #AS007": [
-      0.6,
       0.3,
-      0.3,
-      0.3,
+      0,
+      0,
+      0,
       0.3,
       0.3,
       0.3,
@@ -101797,10 +101735,10 @@ var DATOS = {
       0.3
     ],
     "115050|N-Porta Carg.Doble p/Sobaquera Houston #113S": [
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -101877,15 +101815,15 @@ var DATOS = {
       0.3
     ],
     "901241|Disparador con Barra de Gatillo p/Glock M19/23 #4497": [
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.6,
       0.6,
       0.6,
       0.6,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -101977,10 +101915,10 @@ var DATOS = {
       0.3
     ],
     "680564|Lampara NTK Mod. Cairo #417167-6": [
-      0.6,
-      0.6,
-      0.6,
-      0.6,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -102057,10 +101995,10 @@ var DATOS = {
       0.3
     ],
     "270601|Punto de Mira Fab Defense ArmaLarga Universal Polimero #FBS": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0,
+      0,
+      0,
+      0,
       0.3,
       0.3,
       0.3,
@@ -102117,10 +102055,10 @@ var DATOS = {
       0.3
     ],
     "260175|N-Mont.p/Pistolon Rexio": [
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      1.2,
+      1.2,
+      1.2,
+      1.2,
       0.3,
       0.3,
       0.3,
@@ -102317,10 +102255,10 @@ var DATOS = {
       0.3
     ],
     "620020|Anzuelo Preparado Maruseigo #12 c/10": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0,
+      0,
+      0,
+      0,
       0.3,
       0.3,
       0.3,
@@ -102477,10 +102415,10 @@ var DATOS = {
       0.3
     ],
     "REP902075|Repuesto - Conjunto de Cierre Escopeta Uzkon": [
-      1.4,
-      1.4,
-      1.4,
-      1.4,
+      1.1,
+      1.1,
+      1.1,
+      1.1,
       0.3,
       0.3,
       0.3,
@@ -102717,10 +102655,10 @@ var DATOS = {
       0.3
     ],
     "LIQ770301|Tapa oidos electronico GSM-BWC eKrestÍ´ negro carbonizado 26 NRR #43250": [
+      0.5,
       0.3,
-      0,
-      0,
-      0,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -102757,10 +102695,10 @@ var DATOS = {
       0.3
     ],
     "920060|N-Compensador Tanfoglio 9Mm Dobl": [
-      1.4,
-      1.4,
-      1.4,
-      1.4,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.3,
       0.3,
       0.3,
@@ -102797,11 +102735,11 @@ var DATOS = {
       0.3
     ],
     "400458|N-Punta Redonda Cal. 10mm 180grs*100": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.3,
       0.3,
       0.3,
@@ -102816,11 +102754,31 @@ var DATOS = {
       0.3,
       0.3
     ],
+    "260683|Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415": [
+      1.4,
+      1.4,
+      0.4,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      2.8,
+      2.8,
+      2.8,
+      2.5,
+      1.7,
+      1.6,
+      1.5,
+      0.7,
+      0.3
+    ],
     "150084|N-Sevillana Art.#K106": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.3,
       0.3,
@@ -102997,10 +102955,10 @@ var DATOS = {
       0.3
     ],
     "REP900871|Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 20": [
-      1.3,
-      1.3,
-      0.8,
-      0.8,
+      1,
+      1,
+      0.5,
+      0.5,
       0.3,
       0.3,
       0.3,
@@ -103057,10 +103015,10 @@ var DATOS = {
       0.3
     ],
     "REP900838|Repuesto Resorte de 60 cm p/Carg. de Escopeta": [
-      0.8,
-      0.8,
-      0.8,
-      0.8,
+      1,
+      1,
+      1,
+      1,
       0.3,
       0.3,
       0.3,
@@ -103077,31 +103035,11 @@ var DATOS = {
       0.3
     ],
     "REP900841|Repuesto - Apagallama Armed 12 Semi Auto": [
-      1,
-      1,
-      1,
-      1,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "550261|Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242": [
-      0,
-      0,
-      0,
-      0,
-      0.4,
       0.3,
       0.3,
       0.3,
@@ -103137,7 +103075,7 @@ var DATOS = {
       0.3
     ],
     "711014|Chaleco Caza Beige Py #XL": [
-      0.3,
+      0,
       0.3,
       0.3,
       0.3,
@@ -103158,9 +103096,9 @@ var DATOS = {
     ],
     "260574|Punto Rojo para Rifle VECTOR OPTICS Mod. MAVERICK II GEN ii 1x22 #SCRD-12II": [
       0,
-      8.9,
-      8.3,
-      8.3,
+      2.5,
+      1.8,
+      1.8,
       6.1,
       4,
       3.7,
@@ -103297,10 +103235,10 @@ var DATOS = {
       0.2
     ],
     "LIQ800173|LQN - Caja Pesca POLYMER Grande 1 Bandeja Tapa Negra #4030": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103337,10 +103275,10 @@ var DATOS = {
       0.2
     ],
     "621422|Anzuelo Marine Sport caja de 100pcs 7/0 #12147": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0,
+      0,
+      0,
+      0,
       0.2,
       0.2,
       0.2,
@@ -103374,6 +103312,26 @@ var DATOS = {
       0.2,
       0.2,
       0.2,
+      0.2
+    ],
+    "550261|Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242": [
+      0,
+      0,
+      0,
+      0,
+      0.4,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.2
     ],
     "4500405|Cargador Tanfoglio 38SUPER Stock2 Standard 17T #C010": [
@@ -103517,10 +103475,10 @@ var DATOS = {
       0.2
     ],
     "4500943|Cargador Taurus 9mm PT24/7 10T": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103617,10 +103575,10 @@ var DATOS = {
       0.2
     ],
     "680008|Linterna Reysol  Led Recarg.#MG-8803L1": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103697,11 +103655,11 @@ var DATOS = {
       0.2
     ],
     "210335|N-Shell Holder Lee #9 No.90209": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103717,10 +103675,10 @@ var DATOS = {
       0.2
     ],
     "680571|Linterna IMALENT LD70 4000 lumenes 1x18350": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103777,10 +103735,10 @@ var DATOS = {
       0.2
     ],
     "620684|Anzuelo Snake Maruseigo Niquel #13 c/20.": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -103837,9 +103795,9 @@ var DATOS = {
       0.2
     ],
     "270900|Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC": [
-      0,
-      0,
-      0,
+      0.7,
+      0.5,
+      0.2,
       0,
       0.8,
       0.8,
@@ -103937,7 +103895,7 @@ var DATOS = {
       0.2
     ],
     "723015|Camisa Cardume Siena Masc Verde Agua G2 #93200-4": [
-      0,
+      0.2,
       0.5,
       0.5,
       0.2,
@@ -104077,10 +104035,10 @@ var DATOS = {
       0.2
     ],
     "900930|Palanca de Fiador Version p/Pistola Tanfoglio #PR002": [
-      0.7,
-      0.7,
-      0.7,
-      0.7,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -104101,11 +104059,11 @@ var DATOS = {
       0,
       0,
       0,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
       0.2,
       0.2,
       0.2,
@@ -104137,10 +104095,10 @@ var DATOS = {
       0.2
     ],
     "920245|Mesa Portátil Pleg. c/2posa vaso #QF209": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -104177,15 +104135,15 @@ var DATOS = {
       0.2
     ],
     "920259|Choke Para Caño Medio Esc. Boito Calibre 12": [
-      0,
-      0,
-      0,
-      0,
       0.3,
       0.3,
       0.3,
       0.3,
-      0.3,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.3,
       0.3,
       0.3,
@@ -104277,11 +104235,11 @@ var DATOS = {
       0.2
     ],
     "505629|Balas Federal /Hanse 30-06 Springfield 150gr.": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -104317,10 +104275,10 @@ var DATOS = {
       0.2
     ],
     "115035|Porta Carg.Doble Israeli p/Taurus 24/7 9mm #6-0065": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
       0.2,
       0.2,
       0.2,
@@ -104377,10 +104335,10 @@ var DATOS = {
       0.2
     ],
     "DES770700|Guante Caterpillar de alta visibilidad Mediano #CAT017411M (copia)": [
-      0.1,
-      0,
-      0,
-      0,
+      0.7,
+      0.6,
+      0.6,
+      0.6,
       0.6,
       0.5,
       0.5,
@@ -104577,7 +104535,7 @@ var DATOS = {
       0.2
     ],
     "740600|Remera ML Softline Fem Rosa XP #144097-3": [
-      0.2,
+      0.4,
       0.2,
       0.2,
       0.2,
@@ -104657,10 +104615,10 @@ var DATOS = {
       0.2
     ],
     "LIQ680599|LQN - Linterna IMALENT BG10 2.300 lumenes": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -104677,10 +104635,10 @@ var DATOS = {
       0.2
     ],
     "REP900117|N-Repuesto-Muelle del disparador - Mendoza FS-06": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -104997,10 +104955,10 @@ var DATOS = {
       0.2
     ],
     "620217|Destorcedor marine sport BBS 100pcs 1/0": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -105097,10 +105055,10 @@ var DATOS = {
       0.2
     ],
     "4500651U|Cargador Fino 32Auto 17T #usado": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.2,
       0.2,
       0.2,
@@ -105117,10 +105075,10 @@ var DATOS = {
       0.2
     ],
     "4500652U|Cargador Fino 32Auto 7T #usado": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.2,
       0.2,
       0.2,
@@ -105177,10 +105135,10 @@ var DATOS = {
       0.2
     ],
     "150070|Cuchillo Hachitac/Manopla#Hk983-A": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -105217,10 +105175,10 @@ var DATOS = {
       0.2
     ],
     "110568|Funda FOBUS Mod #VPQ p/ varios modelos Paddle": [
-      2.9,
-      1.8,
-      1.9,
-      2,
+      0.9,
+      0,
+      0,
+      0,
       0.7,
       0.7,
       0.7,
@@ -105257,10 +105215,10 @@ var DATOS = {
       0.2
     ],
     "110739|N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 ROT #BR2RT": [
-      0.6,
-      0.6,
-      0.6,
-      0.6,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -105397,10 +105355,10 @@ var DATOS = {
       0.2
     ],
     "730343|REMERA ABU GARCIA FOR LIFE #1368747 NEGRO -M": [
+      0.4,
       0.2,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -105477,10 +105435,10 @@ var DATOS = {
       0.2
     ],
     "270808|Funda Fab Defense M1 SigSauer P226/P229 Cinto/Paddle #M1226": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0,
+      0,
+      0,
+      0,
       0.2,
       0.2,
       0.2,
@@ -105537,10 +105495,10 @@ var DATOS = {
       0.2
     ],
     "270821|Porta Cargadores FAB DEFENSE Glock 9mm/.40 Cinto/Paddle Negro #PG-9": [
-      0,
-      0,
-      0,
-      0,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.4,
       0.2,
       0.2,
@@ -105617,10 +105575,10 @@ var DATOS = {
       0.2
     ],
     "920415|Conjunto p/lluvia Coleman Hombre PVC/Polyester 0,35 mm Gr/N-M # 20425": [
-      1.4,
-      1.4,
-      0.9,
-      0.9,
+      0.5,
+      0.5,
+      0,
+      0,
       0.9,
       0.9,
       0.9,
@@ -105677,10 +105635,10 @@ var DATOS = {
       0.2
     ],
     "681109|Linterna NITECORE Mod. MT2APro 1000Lm Bat 1600 mAh y 2xAA": [
-      6.7,
-      5.9,
-      2.7,
-      2.2,
+      9.6,
+      8.8,
+      5.7,
+      5.1,
       2.2,
       0,
       7,
@@ -105917,10 +105875,10 @@ var DATOS = {
       0.2
     ],
     "150477|N-Juego de Cubiertos#DSG-12Asado Caja 4P.MPV": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -105977,10 +105935,10 @@ var DATOS = {
       0.2
     ],
     "621375|Anzuelo Preparada Nylon Nro 6 x 25 unid": [
-      0.2,
       0.5,
-      0.5,
-      0.5,
+      0.7,
+      0.7,
+      0.7,
       0.2,
       0.2,
       0.2,
@@ -106077,10 +106035,10 @@ var DATOS = {
       0.2
     ],
     "115523|Pistolera Sig Sauer 9MM #P229": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.2,
       0.2,
       0.2,
@@ -106197,10 +106155,10 @@ var DATOS = {
       0.2
     ],
     "610932|Caña Snake Python 1.83m 15-30LB Medium Heavy Molinete MC-C#601": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -106277,10 +106235,10 @@ var DATOS = {
       0.2
     ],
     "270050|Empuñadura Fab Defense Ergonomica #PTK": [
-      1,
-      1,
-      1,
-      1,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.3,
       0.3,
       0.3,
@@ -106337,10 +106295,10 @@ var DATOS = {
       0.2
     ],
     "830323|Hilo Snake Mult. 4X Wild 0.26MM 150M": [
-      0,
-      0,
-      0,
-      0,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.2,
       0.2,
@@ -106397,10 +106355,10 @@ var DATOS = {
       0.2
     ],
     "REP920110|Repuesto amortiguador para Marlin": [
-      0.8,
-      0.8,
-      0.8,
-      0.8,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
       0.2,
       0.2,
       0.2,
@@ -106517,10 +106475,10 @@ var DATOS = {
       0.2
     ],
     "621425|Anzuelo Marine Sport caja de 100pcs 9/0 #12147": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -106557,10 +106515,10 @@ var DATOS = {
       0.2
     ],
     "900945|Elevador del Tirante del Disp. p/Pistola Tanfoglio#PR011": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0,
+      0,
+      0,
+      0,
       0.2,
       0.2,
       0.2,
@@ -106577,10 +106535,10 @@ var DATOS = {
       0.2
     ],
     "260735|Montante c/Picattiny Sniper #TI2232": [
-      0.5,
-      0.5,
-      0.5,
-      0.5,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.2,
       0.2,
       0.2,
@@ -106657,10 +106615,10 @@ var DATOS = {
       0.2
     ],
     "611050|Bomba de Agua Rule 360GPH #24": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -106877,10 +106835,10 @@ var DATOS = {
       0.2
     ],
     "610914|Caña Snake Mamba Neg 1.76m 20-40LB Medium Molinete MC-JIG-4C 581": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -106977,10 +106935,10 @@ var DATOS = {
       0.2
     ],
     "REP900875|Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 12": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.3,
       0.2,
       0.2,
@@ -107161,11 +107119,11 @@ var DATOS = {
       0.6,
       0.6,
       0.6,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -107197,10 +107155,10 @@ var DATOS = {
       0.1
     ],
     "610010|Caña Solara 10-20LB Azul#SB-1802M": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.1,
       0.1,
       0.1,
@@ -107377,10 +107335,10 @@ var DATOS = {
       0.1
     ],
     "270|N-Cacha Rs-6L Ruger Pachmayer": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.1,
       0.1,
       0.1,
@@ -107816,26 +107774,6 @@ var DATOS = {
       0.1,
       0.1
     ],
-    "260684|Montante para rifles KONUS de 25.4mm Medio para Rifles 22LR y AC #7416": [
-      0,
-      0,
-      0,
-      0,
-      1.4,
-      1.4,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1,
-      0.4,
-      0.4,
-      0.4,
-      0.1,
-      0.1
-    ],
     "110027|Funda Especial 1,30 Rectangular": [
       0.6,
       0.6,
@@ -107934,26 +107872,6 @@ var DATOS = {
       0.2,
       0.2,
       0.1,
-      0.1
-    ],
-    "260683|Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415": [
-      1.4,
-      1.4,
-      0.4,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      2.8,
-      2.8,
-      2.8,
-      2.5,
-      1.7,
-      1.6,
-      1.5,
-      0.7,
       0.1
     ],
     "260234|Mira Telescopica VICOPTICS Mod. B3 4x40 con anillas de 11mm #OPSL38": [
@@ -108077,10 +107995,10 @@ var DATOS = {
       0.1
     ],
     "620225|Destorcedor engante 100pcs 7": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -108237,7 +108155,7 @@ var DATOS = {
       0.1
     ],
     "720225|Casco Antimotín FBK-03": [
-      0.3,
+      0.4,
       0.1,
       0.1,
       0.1,
@@ -108317,10 +108235,10 @@ var DATOS = {
       0.1
     ],
     "110734|N-Cartuch.FOBUS p/Pist.Glock Walther380 #GL2ND": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
       0.1,
       0.1,
       0.1,
@@ -108596,26 +108514,6 @@ var DATOS = {
       0.1,
       0.1
     ],
-    "900305|Pila DURACELL Mod. 2032 x 5 unidades": [
-      1.1,
-      7,
-      6.7,
-      2.1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      0.9,
-      0.9,
-      0.9,
-      0.8,
-      0.8,
-      0.8,
-      0.7,
-      0.1,
-      0.1
-    ],
     "621320|Anzuelo P/Boga no:16 x 7 Und": [
       0,
       0,
@@ -108737,10 +108635,10 @@ var DATOS = {
       0.1
     ],
     "260616|Montante Beamshot S y W P2 Silver(Sop)": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -109017,7 +108915,7 @@ var DATOS = {
       0.1
     ],
     "760074|Parches Paraguay": [
-      0.2,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -109277,10 +109175,10 @@ var DATOS = {
       0.1
     ],
     "610575|Caña de Pesca Lubinax 2 tramos #LUX-C562M 1.68m 10-16LB": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -109577,7 +109475,7 @@ var DATOS = {
       0.1
     ],
     "720446|Sombrero con nuquera SUMAX Mod. SB-1308V Verde": [
-      1.7,
+      2.6,
       0.7,
       0.7,
       0.6,
@@ -109608,26 +109506,6 @@ var DATOS = {
       0.1,
       0.1,
       0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1
-    ],
-    "400460|Balines de Paintball UMAREX cal 50 x 100 unid": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0.5,
-      0.4,
-      0.4,
-      0.4,
-      0.2,
       0.1,
       0.1,
       0.1,
@@ -109777,10 +109655,10 @@ var DATOS = {
       0.1
     ],
     "900882|Resorte de Corredera Ensamblado p/Glock M17#8284": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -109957,10 +109835,10 @@ var DATOS = {
       0.1
     ],
     "900881|Resorte de Disparador 31N (Azul) #3724": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -110097,10 +109975,10 @@ var DATOS = {
       0.1
     ],
     "250060|Envase 22ml GSM-BWC lubricante/protector de choke p/ Esc. Choke Tube #40015": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -110117,10 +109995,10 @@ var DATOS = {
       0.1
     ],
     "550220|Cepillo de bronce 16 Escop.  #91989/41989": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -110177,7 +110055,7 @@ var DATOS = {
       0.1
     ],
     "730344|REMERA ABU GARCIA FOR LIFE #1368776 NEGRO -L": [
-      0.2,
+      0.3,
       0.1,
       0.1,
       0.1,
@@ -110497,10 +110375,10 @@ var DATOS = {
       0.1
     ],
     "REP900862|Repuesto -  Cilindro Ret. c/aros Esc. Armed 12\"": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
       0.1,
       0.1,
       0.1,
@@ -110517,10 +110395,10 @@ var DATOS = {
       0.1
     ],
     "REP900863|Repuesto - Cilindro Ret. c/aros Esc. Armed 20\"": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -110716,6 +110594,26 @@ var DATOS = {
       0.1,
       0.1
     ],
+    "400460|Balines de Paintball UMAREX cal 50 x 100 unid": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.5,
+      0.4,
+      0.4,
+      0.4,
+      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
     "AVE610962|Caña Snake Mamba Neg 1.68m 15-30LB Medium Heavy Frontal MC-M#561": [
       0.2,
       0.2,
@@ -110757,10 +110655,10 @@ var DATOS = {
       0.1
     ],
     "140104|Porta Cartucho Cal.12 - cuero": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -111017,10 +110915,10 @@ var DATOS = {
       0.1
     ],
     "621426|Anzuelo Marine Sport caja de 100pcs 3/0 #12147": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -111057,10 +110955,10 @@ var DATOS = {
       0.1
     ],
     "680216|Linterna LED Táctica Cree Swat 9500w #7089": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111137,15 +111035,15 @@ var DATOS = {
       0.1
     ],
     "901276|Adaptador p/Glock 43- 9x19 Herra. Mont.Univ.p/Alza Mira#33550": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -111296,26 +111194,6 @@ var DATOS = {
       0.1,
       0.1
     ],
-    "110504|Pistolera para Traumatica INDUNAYLON p/MOLLE": [
-      0,
-      0,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.5,
-      0.4,
-      0.3,
-      0.2,
-      0.2,
-      0.1,
-      0.1,
-      0.1
-    ],
     "210350|N-Shell Holder X23 Lyman": [
       0,
       0,
@@ -111357,10 +111235,10 @@ var DATOS = {
       0.1
     ],
     "621410|Anzuelo Marine Sport caja de 100pcs 10 #4330": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111377,7 +111255,7 @@ var DATOS = {
       0.1
     ],
     "DES510130|Mochila NTK c/Bolsa de Agua Mod. HYDRA BACKPACK #202000": [
-      8.2,
+      15.9,
       6.3,
       3.7,
       2.1,
@@ -111477,7 +111355,7 @@ var DATOS = {
       0.1
     ],
     "920421|N-Conjunto p/Lluvia OTTONI #P1016/V13 #L": [
-      0.2,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111517,10 +111395,10 @@ var DATOS = {
       0.1
     ],
     "110166|Pistolera Titan #M1911 C4-1911": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111657,10 +111535,10 @@ var DATOS = {
       0.1
     ],
     "NSE610235|Caña Marine Sports Evolution#C561ML": [
-      0,
-      0,
-      0,
-      0,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -111737,7 +111615,7 @@ var DATOS = {
       0.1
     ],
     "720138|Chaleco Verde Limon  extra grande": [
-      0.2,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111797,7 +111675,7 @@ var DATOS = {
       0.1
     ],
     "760071|Parche Grupo sanguineo 0-": [
-      0,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111817,10 +111695,10 @@ var DATOS = {
       0.1
     ],
     "250680|Montante Visor DHHR 9-11 MM ALTA1\"": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -111957,10 +111835,10 @@ var DATOS = {
       0.1
     ],
     "670117|Cocinita Portable MA100": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -112017,10 +111895,10 @@ var DATOS = {
       0.1
     ],
     "REP900869|Repuesto Fab Defense picatinny frontal KPOS Scout Verde L": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -112217,7 +112095,7 @@ var DATOS = {
       0.1
     ],
     "DES650225|Bolsa de dormir NTK Mod. BUGGY 200g #230120": [
-      0,
+      0.2,
       0,
       0,
       0,
@@ -112337,15 +112215,15 @@ var DATOS = {
       0.1
     ],
     "921016|Choke BOITO Mod. Modificado Incrementado cal 12 #33201": [
-      0,
-      0,
-      0,
-      0,
       0.1,
       0.1,
       0.1,
       0.1,
-      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -112399,8 +112277,8 @@ var DATOS = {
     "110225|Funda p/Rifle c/Mira Ng. 1,10 - F06": [
       0.3,
       0.1,
-      0,
-      0,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -112597,10 +112475,10 @@ var DATOS = {
       0.1
     ],
     "901410|Bateria NITECORE NL2140 Mod. 21700 4000 mAh": [
-      1.7,
-      1.2,
+      1.6,
+      1.1,
       0.7,
-      0.1,
+      0,
       2.3,
       2.6,
       0.1,
@@ -112857,10 +112735,10 @@ var DATOS = {
       0.1
     ],
     "200377|Grips Frontal p/Mossberg-SigSauer #HI2459": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -113057,10 +112935,10 @@ var DATOS = {
       0.1
     ],
     "110751|Cartuchera FOBUS p/Beretta/Taurus -92": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
       0.1,
       0.1,
       0.1,
@@ -113153,6 +113031,26 @@ var DATOS = {
       0.1,
       0.1,
       0.1,
+      0.1,
+      0.1
+    ],
+    "900305|Pila DURACELL Mod. 2032 x 5 unidades": [
+      1.1,
+      7,
+      6.7,
+      2.1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0.9,
+      0.9,
+      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.7,
       0.1,
       0.1
     ],
@@ -113257,10 +113155,10 @@ var DATOS = {
       0.1
     ],
     "110403|Revolvera 38 c/ balera": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -113536,26 +113434,6 @@ var DATOS = {
       0.1,
       0.1
     ],
-    "110016M|Funda P/Arma Larga Negro-110 X 20 F03/Mendoza": [
-      0,
-      0,
-      0,
-      0,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.1
-    ],
     "830157|Hilo de Pesca C.A.M.0,50mm100M#ADV4-050": [
       0.1,
       0.1,
@@ -113637,10 +113515,10 @@ var DATOS = {
       0.1
     ],
     "611070|Conector p/Manguera Combustible": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -113677,11 +113555,11 @@ var DATOS = {
       0.1
     ],
     "501209|Cartuchos GB 12 12P BUCKSHOT 98g 250/10": [
-      1.7,
-      1.2,
-      0.9,
-      0.3,
-      0.3,
+      1.5,
+      1.1,
+      0.7,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2,
@@ -113737,10 +113615,10 @@ var DATOS = {
       0.1
     ],
     "920249|N-Rabiza Retracil Anti-Perdida p/Pistola RAB-01": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -113832,6 +113710,26 @@ var DATOS = {
       0.1,
       0.1,
       0.1,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "110504|Pistolera para Traumatica INDUNAYLON p/MOLLE": [
+      0,
+      0,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1
@@ -114077,11 +113975,11 @@ var DATOS = {
       0.1
     ],
     "501490|Cartuchos GB 28 #1 15g 250/25": [
-      0,
-      0,
-      0,
-      0,
-      0,
+      1.5,
+      1.4,
+      1.4,
+      1.4,
+      1.4,
       1.4,
       1.4,
       1.4,
@@ -114517,10 +114415,10 @@ var DATOS = {
       0
     ],
     "830242|Hilo Snake Magnum 0.28mm 600M": [
-      0.3,
-      0.1,
-      0.1,
-      0.1,
+      0.2,
+      0,
+      0,
+      0,
       0.1,
       0.1,
       0.1,
@@ -114697,7 +114595,7 @@ var DATOS = {
       0
     ],
     "110137|Riñonera c/TERMITO c/PICO #1030": [
-      0,
+      0.1,
       0,
       0,
       0,
@@ -114937,10 +114835,10 @@ var DATOS = {
       0
     ],
     "250050|Pasta 60ml GSM-BWC Perma BlueÍ† para rayaduras de armas con terminado azul/negro #13322": [
-      3.5,
-      3.5,
-      3.2,
-      2.1,
+      5.4,
+      5.4,
+      5.2,
+      4.1,
       1.8,
       1.3,
       1.2,
@@ -115137,10 +115035,10 @@ var DATOS = {
       0
     ],
     "REP920032|N-Repuesto p/Esc.Aguja del Percutor ARMED Semiauto": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -115337,10 +115235,10 @@ var DATOS = {
       0
     ],
     "150138|NAVAJA c/Estuche#1733": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0,
       0,
       0,
@@ -115677,7 +115575,7 @@ var DATOS = {
       0
     ],
     "730450|Remera Evolucion Airsoft Gris 1110191 #P": [
-      0,
+      0.1,
       0,
       0,
       0,
@@ -116097,10 +115995,10 @@ var DATOS = {
       0
     ],
     "550210|N-Cepillo De Lana 44-45": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -116337,10 +116235,10 @@ var DATOS = {
       0
     ],
     "620544|Anzuelo Sumax Soft Bait BC- 5/0-25": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
+      0,
       0,
       0,
       0,
@@ -116577,10 +116475,10 @@ var DATOS = {
       0
     ],
     "990060|Botella Deportiva de Aluminio Coleman 473ml #16355": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -116938,7 +116836,7 @@ var DATOS = {
     ],
     "830313|Hilo Snake Mult. 4X Motion 0.28MM 150M": [
       0.2,
-      0.1,
+      0.2,
       0.1,
       0,
       0,
@@ -118017,10 +117915,10 @@ var DATOS = {
       0
     ],
     "900884|Resorte de Cargador Glock M17/19 Calib 9x19 #33510": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -118037,10 +117935,10 @@ var DATOS = {
       0
     ],
     "621425R|Anzuelo Marine Sport caja de 48pcs 9/0 #12147": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -118412,26 +118310,6 @@ var DATOS = {
       0,
       0,
       0,
-      0,
-      0,
-      0
-    ],
-    "400236|Balines APOLO 5,5mm MAGNUM 1gr. Carton*100X250 #E13001": [
-      6,
-      2.3,
-      2.3,
-      4.4,
-      2.8,
-      2.8,
-      0.8,
-      0.5,
-      0.5,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
       0,
       0,
       0
@@ -119557,10 +119435,10 @@ var DATOS = {
       0
     ],
     "550228|N-Cepillo de bronce 25ACP KLEEN-BORE A-162": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -120357,9 +120235,9 @@ var DATOS = {
       0
     ],
     "620115|Tanza Simple  x 5Und.": [
-      0.1,
-      0.1,
-      0.1,
+      0,
+      0,
+      0,
       0,
       0,
       0,
@@ -120417,8 +120295,8 @@ var DATOS = {
       0
     ],
     "621301|Tanza Loca 0,50 x 5 Und.": [
-      0,
-      0,
+      0.1,
+      0.1,
       0,
       0,
       0,
@@ -121457,11 +121335,11 @@ var DATOS = {
       0
     ],
     "501379|Cartuchos GB 20 #5 28GR 25x250": [
-      175.6,
-      39.4,
-      42.2,
-      0.4,
-      1,
+      174.6,
+      38.4,
+      41.2,
+      0,
+      0,
       0.2,
       0.2,
       0.2,
@@ -121577,10 +121455,10 @@ var DATOS = {
       0
     ],
     "830269|Hilo Snake Skyline 0.30mm 300M": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
       0.1,
       0.1,
       0.1,
@@ -125219,15 +125097,15 @@ var DATOS = {
   },
   "SERIES_FAM": {
     "ACCESORIO DE ARMA": [
-      421.8,
-      716.2,
-      745.9,
-      2501.3,
-      2179.4,
-      2078.9,
-      2043.1,
-      1998.8,
-      2187.3,
+      428.2,
+      722.5,
+      752.2,
+      2507.7,
+      2194.5,
+      2094.1,
+      2058.3,
+      2013.9,
+      2202.5,
       2490.1,
       2483.5,
       2438.7,
@@ -125236,16 +125114,16 @@ var DATOS = {
       2521.9,
       2489.7,
       2410.4,
-      2607.1
+      2598.2
     ],
     "ACCESORIO DE ARMA (PROMO)": [
-      375.3,
-      375.5,
-      368.6,
-      358.9,
-      457.7,
-      451.6,
-      447.1,
+      495.3,
+      495.5,
+      488.6,
+      478.9,
+      457.8,
+      451.7,
+      447.2,
       444.9,
       439.5,
       439.8,
@@ -125259,10 +125137,10 @@ var DATOS = {
       393.1
     ],
     "AIRE LIBRE": [
-      320.2,
-      269,
-      236.1,
-      198.1,
+      316.5,
+      261.2,
+      228.3,
+      190.3,
       327.4,
       313.8,
       308.8,
@@ -125276,13 +125154,13 @@ var DATOS = {
       414.1,
       405.1,
       396.8,
-      393.5
+      393.2
     ],
     "AIRE LIBRE (PROMO)": [
-      1029.1,
-      1021.2,
-      937.9,
-      886.1,
+      1012.3,
+      1004.5,
+      921.2,
+      869.4,
       1092.1,
       1065.2,
       1212.5,
@@ -125296,7 +125174,7 @@ var DATOS = {
       1051.6,
       924.4,
       850.6,
-      834.7
+      834.1
     ],
     "AIRGUN": [
       1301.6,
@@ -125316,17 +125194,17 @@ var DATOS = {
       3724.1,
       3622,
       3269.2,
-      3128.9
+      3123.9
     ],
     "AIRGUN (PROMO)": [
-      1065.7,
-      1343,
-      1317.2,
-      1424.1,
-      1345.3,
-      1307.7,
-      1242.3,
-      1196.8,
+      1061.8,
+      1339.2,
+      1313.4,
+      1420.2,
+      1342.8,
+      1305.1,
+      1239.7,
+      1194.2,
       1182.4,
       1143.8,
       1124.9,
@@ -125336,7 +125214,7 @@ var DATOS = {
       1040.1,
       985.3,
       879.3,
-      854
+      852.4
     ],
     "ARMA": [
       11501.4,
@@ -125356,7 +125234,7 @@ var DATOS = {
       6085.3,
       6030.3,
       6552.2,
-      6340.8
+      6335.7
     ],
     "CAJA FUERTE": [
       0,
@@ -125379,10 +125257,10 @@ var DATOS = {
       312.7
     ],
     "INDUMENTARIA": [
-      904.5,
-      852.6,
-      764.1,
-      732.7,
+      935.2,
+      851.2,
+      762.7,
+      731.3,
       630.7,
       554,
       533.6,
@@ -125396,13 +125274,13 @@ var DATOS = {
       847.9,
       830.3,
       1541.8,
-      1522
+      1518.4
     ],
     "INDUMENTARIA (PROMO)": [
-      105.7,
-      90.7,
-      87.8,
-      84.5,
+      110,
+      86.2,
+      83.3,
+      79.9,
       134.5,
       129.8,
       126.3,
@@ -125439,11 +125317,11 @@ var DATOS = {
       0
     ],
     "MUNICION": [
-      581.7,
+      561.2,
       0,
-      4471.2,
-      3917.2,
-      3873.4,
+      4450.7,
+      3896.7,
+      3852.9,
       12972.9,
       12820.2,
       12746.4,
@@ -125456,7 +125334,7 @@ var DATOS = {
       12319.1,
       12280.9,
       12184,
-      12140.3
+      12139.2
     ],
     "Merchandising": [
       21.6,
@@ -125479,11 +125357,11 @@ var DATOS = {
       23.3
     ],
     "NO LETAL": [
-      1120.1,
-      758.7,
-      721.8,
-      651.6,
-      559.8,
+      1119.2,
+      757.8,
+      720.9,
+      650.7,
+      558.8,
       454.3,
       401.7,
       1656.2,
@@ -125496,14 +125374,14 @@ var DATOS = {
       1738,
       1629.4,
       1508.9,
-      1520.2
+      1517.1
     ],
     "NO LETAL (PROMO)": [
-      52.6,
-      55,
-      166,
-      200.1,
-      196.6,
+      52.8,
+      55.2,
+      166.2,
+      200.2,
+      196.8,
       189.3,
       188.4,
       214.9,
@@ -125556,13 +125434,13 @@ var DATOS = {
       53.2,
       52.8,
       50.6,
-      51.9
+      51.5
     ],
     "PESCA": [
-      3251.8,
-      3244.4,
-      3236.6,
-      3225.5,
+      3238.5,
+      3231.1,
+      3223.2,
+      3212.1,
       3185,
       161,
       159.9,
@@ -125579,10 +125457,10 @@ var DATOS = {
       152.6
     ],
     "PESCA (PROMO)": [
-      809.7,
-      799.7,
-      797.2,
-      789.5,
+      782.7,
+      772.7,
+      770.2,
+      762.6,
       713.1,
       706.9,
       706.1,
@@ -125641,10 +125519,10 @@ var DATOS = {
       0
     ],
     "5.11\u0001No reglamentado": [
-      44.8,
-      34.2,
-      32.1,
-      33.6,
+      39.4,
+      32.9,
+      30.8,
+      32.3,
       37.9,
       32.6,
       32.2,
@@ -125798,7 +125676,7 @@ var DATOS = {
       470.2,
       830.2,
       770.8,
-      763.2
+      761.8
     ],
     "ATA\u0001Armas": [
       3.4,
@@ -125821,10 +125699,10 @@ var DATOS = {
       3.4
     ],
     "Abu Garcia\u0001No reglamentado": [
-      41.4,
-      39.1,
-      38.1,
-      34.3,
+      42.7,
+      40.3,
+      39.3,
+      35.5,
       24.5,
       20.2,
       20.2,
@@ -125841,10 +125719,10 @@ var DATOS = {
       17.5
     ],
     "Aitor\u0001No reglamentado": [
-      59.7,
-      54.7,
-      53.8,
-      49.4,
+      59.9,
+      54.8,
+      54,
+      49.5,
       19.9,
       19.9,
       19.4,
@@ -125861,10 +125739,10 @@ var DATOS = {
       17.6
     ],
     "Akdal\u0001Cargadores": [
-      57.7,
-      57.7,
-      57.7,
-      57.7,
+      75.5,
+      75.5,
+      75.5,
+      75.5,
       27.8,
       27.8,
       27.8,
@@ -125978,7 +125856,7 @@ var DATOS = {
       589.3,
       561.3,
       520.5,
-      494.7
+      494.3
     ],
     "Armadillo\u0001No reglamentado": [
       0,
@@ -126001,10 +125879,10 @@ var DATOS = {
       12.2
     ],
     "Armed\u0001Accesorio controlado": [
-      28,
-      28,
-      27.5,
-      27.5,
+      30.1,
+      30.1,
+      29.5,
+      29.5,
       11.1,
       10.8,
       10.8,
@@ -126138,7 +126016,7 @@ var DATOS = {
       74.4,
       74.4,
       58.4,
-      58.4
+      55.6
     ],
     "BRG\u0001Armas": [
       0,
@@ -126161,10 +126039,10 @@ var DATOS = {
       10.9
     ],
     "BWC\u0001Accesorio controlado": [
-      382.2,
-      373.8,
-      361.3,
-      354.4,
+      352.2,
+      343.8,
+      331.2,
+      324.4,
       171.3,
       165.9,
       163.7,
@@ -126178,13 +126056,13 @@ var DATOS = {
       132.6,
       128.5,
       123.5,
-      122.4
+      122.3
     ],
     "BWC\u0001No reglamentado": [
-      11.7,
-      8.6,
-      8.6,
-      8.1,
+      9.9,
+      7.2,
+      7.2,
+      6.7,
       4,
       3.2,
       2.8,
@@ -126321,7 +126199,7 @@ var DATOS = {
       5.3
     ],
     "Beretta Mod\u0001No reglamentado": [
-      28.9,
+      37.3,
       16.2,
       16.8,
       10.2,
@@ -126381,15 +126259,15 @@ var DATOS = {
       0.7
     ],
     "Boito\u0001Accesorio controlado": [
-      5.8,
-      5.8,
-      5.8,
-      5.8,
-      10.5,
-      10.5,
-      10.5,
-      10.2,
-      10.2,
+      9.5,
+      9.5,
+      9.5,
+      9.5,
+      7.4,
+      7.4,
+      7.4,
+      7.1,
+      7,
       6.6,
       6.6,
       6.6,
@@ -126441,11 +126319,11 @@ var DATOS = {
       0.2
     ],
     "CCI\u0001Municiones": [
-      436.1,
-      434.2,
-      433.5,
-      432.4,
-      426.5,
+      441.6,
+      439.8,
+      439,
+      438,
+      432,
       563,
       562.1,
       561.7,
@@ -126461,15 +126339,15 @@ var DATOS = {
       556.7
     ],
     "CYA Supply Co.\u0001Accesorio controlado": [
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
       0.4,
       0.4,
       0.4,
@@ -126541,10 +126419,10 @@ var DATOS = {
       0.2
     ],
     "Caterpillar\u0001No reglamentado": [
-      52,
-      109.7,
-      90.6,
-      118.4,
+      47.7,
+      105.4,
+      86.3,
+      114.1,
       121.6,
       119.8,
       120.3,
@@ -126581,10 +126459,10 @@ var DATOS = {
       7.3
     ],
     "Coleman\u0001No reglamentado": [
-      233.2,
-      225.8,
-      220.9,
-      208.1,
+      211.8,
+      204.4,
+      199.4,
+      186.7,
       178.4,
       176.3,
       174.9,
@@ -126661,14 +126539,14 @@ var DATOS = {
       0
     ],
     "Crosman\u0001No reglamentado": [
-      293.9,
-      264.2,
-      238.5,
-      228.7,
-      207.2,
-      193.1,
-      164.7,
-      141.4,
+      291.4,
+      261.7,
+      235.9,
+      226.1,
+      204.7,
+      190.5,
+      162.2,
+      138.8,
       135.1,
       129,
       123.1,
@@ -126678,10 +126556,10 @@ var DATOS = {
       91.1,
       70.1,
       68.9,
-      67.9
+      66.6
     ],
     "DK\u0001No reglamentado": [
-      15.9,
+      17.4,
       8.7,
       7.2,
       4.5,
@@ -126781,10 +126659,10 @@ var DATOS = {
       88.3
     ],
     "Doberman\u0001Accesorio controlado": [
-      121.6,
-      120.2,
-      119.5,
-      110.9,
+      203.4,
+      202,
+      201.3,
+      192.6,
       147.9,
       146.9,
       146.1,
@@ -126821,7 +126699,7 @@ var DATOS = {
       2
     ],
     "Doberman\u0001No reglamentado": [
-      13.3,
+      21.6,
       60.4,
       43.8,
       47.9,
@@ -126838,7 +126716,7 @@ var DATOS = {
       80.3,
       47.9,
       28.3,
-      15.6
+      13.6
     ],
     "Doberman BALINES\u0001No reglamentado": [
       0,
@@ -126878,13 +126756,13 @@ var DATOS = {
       161.3,
       154.8,
       914.9,
-      903.9
+      903.2
     ],
     "Doberman LINTERNAS\u0001No reglamentado": [
-      209.5,
-      188.8,
-      172,
-      149.5,
+      219.5,
+      198.8,
+      182,
+      159.5,
       80.4,
       71.4,
       65.4,
@@ -126898,10 +126776,10 @@ var DATOS = {
       199.4,
       190.1,
       184.9,
-      182.2
+      181.9
     ],
     "Doberman MOCHILAS\u0001No reglamentado": [
-      640.8,
+      667.8,
       547.1,
       465.8,
       409.1,
@@ -126918,7 +126796,7 @@ var DATOS = {
       410.5,
       400.2,
       385.2,
-      378.4
+      378.2
     ],
     "Doberman/Pistola\u0001Armas": [
       0.4,
@@ -126998,7 +126876,7 @@ var DATOS = {
       7.3,
       7.1,
       5.1,
-      6.9
+      6.6
     ],
     "EG\u0001Municiones": [
       14.3,
@@ -127081,14 +126959,14 @@ var DATOS = {
       7.6
     ],
     "Fab Defense\u0001Accesorio controlado": [
-      160.1,
-      133.8,
-      122.4,
-      111.8,
-      268.4,
-      260.9,
-      259.9,
-      257.6,
+      256.7,
+      230.3,
+      219,
+      208.4,
+      268.5,
+      261,
+      260,
+      257.7,
       256.6,
       252.4,
       253.3,
@@ -127141,11 +127019,11 @@ var DATOS = {
       7.3
     ],
     "Federal\u0001Municiones": [
-      47.6,
-      47.2,
-      46.6,
-      45.9,
-      45.3,
+      294.5,
+      294.1,
+      293.4,
+      292.7,
+      292.2,
       319.1,
       319.2,
       319,
@@ -127241,15 +127119,15 @@ var DATOS = {
       0.2
     ],
     "Fobus\u0001Accesorio controlado": [
-      86.8,
-      132.3,
-      128.3,
-      145.6,
-      113.8,
-      94.9,
-      90.8,
-      76.9,
-      74.8,
+      74.9,
+      120.4,
+      116.4,
+      133.7,
+      114.1,
+      95.2,
+      91.1,
+      77.2,
+      75.1,
       72,
       70.8,
       61,
@@ -127261,10 +127139,10 @@ var DATOS = {
       35.7
     ],
     "Fobus\u0001Cargadores": [
-      0.6,
-      11.4,
-      11.4,
-      11.2,
+      2.5,
+      13.3,
+      13.3,
+      13.1,
       0.6,
       0.6,
       0.6,
@@ -127321,11 +127199,11 @@ var DATOS = {
       0.1
     ],
     "GB\u0001Municiones": [
-      1015.7,
-      700.9,
-      602.7,
-      269.6,
-      386.8,
+      810.4,
+      495.5,
+      397.3,
+      64.2,
+      181.4,
       283,
       262.8,
       256.8,
@@ -127338,13 +127216,13 @@ var DATOS = {
       137,
       130.2,
       112.4,
-      111.5
+      111.4
     ],
     "Gamo\u0001Accesorio controlado": [
-      11.4,
-      11.2,
-      11.2,
-      11.1,
+      15.7,
+      15.5,
+      15.5,
+      15.3,
       4.8,
       4.8,
       4.8,
@@ -127421,15 +127299,15 @@ var DATOS = {
       239.5
     ],
     "Glock\u0001Accesorio controlado": [
-      4.8,
-      2.9,
-      2.9,
-      2.9,
-      50.3,
-      50.3,
-      50.3,
-      50.3,
-      50.3,
+      0,
+      0,
+      0,
+      0,
+      53.1,
+      53.1,
+      53.1,
+      53.1,
+      53.1,
       143.1,
       143.1,
       143.1,
@@ -127621,11 +127499,11 @@ var DATOS = {
       0.6
     ],
     "IMI\u0001Municiones": [
-      314.2,
-      298.1,
-      257.2,
-      247.1,
-      239.5,
+      626.3,
+      610.2,
+      569.3,
+      559.2,
+      551.5,
       4342.3,
       4337.4,
       4324.5,
@@ -127638,13 +127516,13 @@ var DATOS = {
       4224.9,
       4230.9,
       4213.3,
-      4199.1
+      4198.5
     ],
     "Imalent\u0001No reglamentado": [
-      67,
-      66.6,
-      66.2,
-      66.2,
+      69.3,
+      68.8,
+      68.5,
+      68.4,
       21.4,
       21.4,
       20.9,
@@ -127678,7 +127556,7 @@ var DATOS = {
       4.2,
       3.8,
       3.7,
-      8.5
+      8.4
     ],
     "Intratec\u0001Cargadores": [
       0,
@@ -127738,7 +127616,7 @@ var DATOS = {
       297.8,
       299.8,
       299.5,
-      297.7
+      297
     ],
     "KOR\u0001Armas": [
       1434.7,
@@ -127764,7 +127642,7 @@ var DATOS = {
       0,
       0,
       0,
-      418.7,
+      371.5,
       481.5,
       466.6,
       455.5,
@@ -127778,7 +127656,7 @@ var DATOS = {
       658.1,
       630.5,
       589.6,
-      570
+      562.3
     ],
     "Konus\u0001No reglamentado": [
       0,
@@ -127801,10 +127679,10 @@ var DATOS = {
       0.1
     ],
     "Llama\u0001Cargadores": [
-      5.5,
-      5.5,
-      5.5,
-      5.5,
+      4.8,
+      4.8,
+      4.8,
+      4.8,
       3.7,
       3.7,
       3.7,
@@ -127883,8 +127761,8 @@ var DATOS = {
     "Marine Sports\u0001No reglamentado": [
       21.8,
       19.4,
-      18.8,
-      16.5,
+      18.9,
+      16.6,
       14.5,
       13.9,
       13.2,
@@ -127901,10 +127779,10 @@ var DATOS = {
       11.9
     ],
     "Marlin\u0001Accesorio controlado": [
-      1.1,
-      1.1,
-      1.1,
-      1.1,
+      1,
+      1,
+      1,
+      1,
       0.3,
       0.3,
       0.3,
@@ -127981,10 +127859,10 @@ var DATOS = {
       0.2
     ],
     "Mendoza\u0001Accesorio controlado": [
-      7.2,
-      7.2,
-      7.2,
-      7.2,
+      5.5,
+      5.5,
+      5.5,
+      5.5,
       4.6,
       4.6,
       4.6,
@@ -127998,7 +127876,7 @@ var DATOS = {
       4.6,
       4.6,
       4.6,
-      4
+      3.9
     ],
     "Mendoza\u0001Armas": [
       1323.3,
@@ -128018,7 +127896,7 @@ var DATOS = {
       1125.7,
       1127.4,
       1123.9,
-      1081.3
+      1076.1
     ],
     "Mendoza\u0001No reglamentado": [
       3,
@@ -128041,10 +127919,10 @@ var DATOS = {
       0.8
     ],
     "Miguel Nieto\u0001No reglamentado": [
-      52.5,
-      51,
-      50.5,
-      47.6,
+      43,
+      41.5,
+      41,
+      38.1,
       57.8,
       56.2,
       47.8,
@@ -128061,10 +127939,10 @@ var DATOS = {
       29.8
     ],
     "Mossberg\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
       0.1,
       0.1,
       0.1,
@@ -128121,10 +127999,10 @@ var DATOS = {
       6.1
     ],
     "NTK\u0001No reglamentado": [
-      332.4,
-      308.6,
-      263.4,
-      212.2,
+      339.6,
+      308.2,
+      263.1,
+      211.8,
       514.3,
       495.8,
       487.6,
@@ -128141,10 +128019,10 @@ var DATOS = {
       367.3
     ],
     "Nitecore\u0001Accesorio controlado": [
-      29.8,
-      29.7,
-      28.6,
-      27.7,
+      22.1,
+      21.9,
+      20.8,
+      20,
       19,
       17,
       15.3,
@@ -128161,10 +128039,10 @@ var DATOS = {
       13.6
     ],
     "Nitecore\u0001No reglamentado": [
-      260.1,
-      217.6,
-      189.9,
-      170.6,
+      269.3,
+      226.8,
+      199.1,
+      179.8,
       193.8,
       184.6,
       350.5,
@@ -128178,7 +128056,7 @@ var DATOS = {
       283.7,
       189.4,
       135.9,
-      127.7
+      127.1
     ],
     "Norinco\u0001Cargadores": [
       3.5,
@@ -128201,15 +128079,15 @@ var DATOS = {
       3.3
     ],
     "Olight\u0001Accesorio controlado": [
-      4.7,
-      4.7,
-      4.7,
-      4.7,
-      5.7,
-      5.7,
-      5.7,
-      2.3,
-      2.3,
+      5.5,
+      5.5,
+      5.5,
+      5.5,
+      6.5,
+      6.5,
+      6.5,
+      3.1,
+      3.1,
       3.1,
       3.1,
       3.1,
@@ -128302,7 +128180,7 @@ var DATOS = {
     ],
     "Ottoni\u0001No reglamentado": [
       0.8,
-      0.7,
+      0.8,
       0.7,
       0.7,
       2,
@@ -128361,10 +128239,10 @@ var DATOS = {
       3.8
     ],
     "Polymer\u0001No reglamentado": [
-      5.5,
       5.2,
-      4.8,
-      4,
+      5,
+      4.6,
+      3.8,
       3.9,
       3.7,
       3.6,
@@ -128461,10 +128339,10 @@ var DATOS = {
       0
     ],
     "Rexio\u0001Accesorio controlado": [
-      0.9,
-      0.9,
-      0.9,
-      0.9,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
       0.7,
       0.7,
       0.7,
@@ -128501,10 +128379,10 @@ var DATOS = {
       7.2
     ],
     "Reysol\u0001No reglamentado": [
-      15.2,
-      15.2,
-      15.2,
-      14.8,
+      6.5,
+      6.5,
+      6.5,
+      6.1,
       7.5,
       7.5,
       7.5,
@@ -128521,11 +128399,11 @@ var DATOS = {
       7.5
     ],
     "Rio\u0001Municiones": [
-      22.7,
-      22.7,
-      22.7,
-      22.5,
-      22.5,
+      23.1,
+      23.1,
+      23.1,
+      22.9,
+      22.9,
       22.7,
       22.6,
       22.6,
@@ -128541,10 +128419,10 @@ var DATOS = {
       0.3
     ],
     "Rocky Boots\u0001No reglamentado": [
-      75.8,
-      71.3,
-      70.9,
-      70.2,
+      74.3,
+      77,
+      76.6,
+      75.9,
       60.1,
       59.5,
       59.5,
@@ -128681,11 +128559,11 @@ var DATOS = {
       106.8
     ],
     "Saga\u0001Municiones": [
-      1045.8,
-      805.3,
-      719.7,
-      612.2,
-      585.4,
+      894.3,
+      653.9,
+      568.3,
+      460.8,
+      433.9,
       761.9,
       739.3,
       719.7,
@@ -128743,9 +128621,9 @@ var DATOS = {
     "Sellier & Bellot\u0001Municiones": [
       0,
       0,
-      2255,
-      2240.3,
-      2202.7,
+      2024.6,
+      2009.9,
+      1972.3,
       5313,
       5263.4,
       5239.4,
@@ -128758,7 +128636,7 @@ var DATOS = {
       5215.9,
       5193.7,
       5167.4,
-      5144.7
+      5144.4
     ],
     "Sig Sauer\u0001Armas": [
       7.5,
@@ -128801,15 +128679,15 @@ var DATOS = {
       170.8
     ],
     "Sin Marca\u0001Accesorio controlado": [
-      134.7,
-      133.6,
-      132.6,
-      128.5,
-      187.3,
-      186.9,
-      186.6,
-      186.3,
-      186,
+      148.4,
+      147.4,
+      146.4,
+      142.3,
+      189.5,
+      189,
+      188.8,
+      188.4,
+      188.1,
       183.4,
       183.5,
       182.9,
@@ -128821,10 +128699,10 @@ var DATOS = {
       181.3
     ],
     "Sin Marca\u0001Cargadores": [
-      7.1,
-      7.1,
-      7.1,
-      7.1,
+      10.5,
+      10.5,
+      10.5,
+      10.5,
       8.9,
       8.9,
       8.9,
@@ -128841,11 +128719,11 @@ var DATOS = {
       8.4
     ],
     "Sin Marca\u0001Municiones": [
-      57.5,
-      57.5,
-      57.5,
-      55.3,
-      55.5,
+      59.7,
+      59.7,
+      59.7,
+      57.4,
+      57.3,
       61.7,
       61.7,
       61.7,
@@ -128861,10 +128739,10 @@ var DATOS = {
       61.7
     ],
     "Sin Marca\u0001No reglamentado": [
-      3359.4,
-      3357.1,
-      3354.6,
-      3351.1,
+      3339.3,
+      3332.1,
+      3329.5,
+      3326.1,
       3326.3,
       307.1,
       306.2,
@@ -128878,7 +128756,7 @@ var DATOS = {
       302.5,
       302,
       301.6,
-      300.4
+      300.3
     ],
     "Smith & Wesson\u0001Accesorio controlado": [
       1,
@@ -128961,10 +128839,10 @@ var DATOS = {
       0.3
     ],
     "Snake\u0001No reglamentado": [
-      809.8,
-      799.5,
-      796.2,
-      788.1,
+      783.1,
+      772.8,
+      769.4,
+      761.4,
       710.6,
       704.3,
       703.7,
@@ -128981,10 +128859,10 @@ var DATOS = {
       683.6
     ],
     "Sumax\u0001No reglamentado": [
-      68.8,
-      46.3,
-      43.4,
-      41,
+      68,
+      46.5,
+      43.6,
+      41.3,
       38.2,
       37.1,
       36.1,
@@ -129001,10 +128879,10 @@ var DATOS = {
       30.4
     ],
     "Sundance\u0001Cargadores": [
-      6.2,
-      6.2,
-      6.2,
-      6.2,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
       3.6,
       3.6,
       3.6,
@@ -129021,10 +128899,10 @@ var DATOS = {
       3.5
     ],
     "TSS\u0001Accesorio controlado": [
-      3.1,
-      3.1,
-      3.1,
-      3.1,
+      0,
+      0,
+      0,
+      0,
       3,
       3,
       3,
@@ -129058,18 +128936,18 @@ var DATOS = {
       1789.8,
       1421.1,
       1210.5,
-      1165.7
+      1165.1
     ],
     "Tanfoglio\u0001Accesorio controlado": [
-      64.6,
-      64.6,
-      64.6,
-      64.6,
-      26.9,
-      26.9,
-      26.9,
-      26.9,
-      26.9,
+      76.6,
+      76.6,
+      76.6,
+      76.6,
+      27.1,
+      27.1,
+      27.1,
+      27.1,
+      27.1,
       27.1,
       27.1,
       27.1,
@@ -129101,10 +128979,10 @@ var DATOS = {
       603.1
     ],
     "Tanfoglio\u0001Cargadores": [
-      22.6,
-      22.4,
-      22.2,
-      22.2,
+      23.7,
+      23.5,
+      23.4,
+      23.4,
       21.9,
       21.9,
       21.9,
@@ -129121,10 +128999,10 @@ var DATOS = {
       20.1
     ],
     "Tanfoglio\u0001No reglamentado": [
-      0.6,
       0.3,
-      0.3,
-      0.3,
+      0,
+      0,
+      0,
       0.3,
       0.3,
       0.3,
@@ -129281,10 +129159,10 @@ var DATOS = {
       1.3
     ],
     "Truglo\u0001Accesorio controlado": [
-      45.1,
-      43.4,
-      42.5,
-      43.6,
+      58.1,
+      56.4,
+      55.5,
+      56.5,
       25,
       25,
       24.5,
@@ -129361,11 +129239,11 @@ var DATOS = {
       38.3
     ],
     "Umarex\u0001No reglamentado": [
-      1604.1,
-      1175,
-      1090.8,
-      1289.2,
-      1400.9,
+      1602.1,
+      1172.9,
+      1088.7,
+      1287.1,
+      1400.2,
       1277.1,
       1182.4,
       2726.1,
@@ -129378,13 +129256,13 @@ var DATOS = {
       3361.7,
       3189,
       2939,
-      2880
+      2876
     ],
     "Uzkon\u0001Accesorio controlado": [
-      11.4,
-      11.4,
-      11.4,
-      11.4,
+      11.2,
+      11.2,
+      11.2,
+      11.2,
       2.4,
       2.4,
       2.4,
@@ -129462,14 +129340,14 @@ var DATOS = {
     ],
     "Vector Optics\u0001Accesorio controlado": [
       0,
-      259.7,
-      228.3,
-      210.7,
-      160.5,
-      129,
-      119.2,
-      97.4,
-      316.4,
+      236,
+      204.6,
+      187.1,
+      172.1,
+      140.6,
+      130.8,
+      109,
+      328,
       303.3,
       298.5,
       285.4,
@@ -129478,7 +129356,7 @@ var DATOS = {
       397.5,
       381.3,
       359.2,
-      355.2
+      355.1
     ],
     "Vector Optics\u0001No reglamentado": [
       0,
@@ -129626,12 +129504,12 @@ var DATOS = {
       0,
       0,
       0,
-      1424.2,
-      1323.9,
-      1244.2,
-      1212.1,
-      1173.3,
-      1363.9,
+      1408,
+      1339.1,
+      1259.3,
+      1227.3,
+      1188.5,
+      1379.1,
       1666.3,
       1659.7,
       1626.5,
@@ -129640,13 +129518,13 @@ var DATOS = {
       1719.1,
       1685.7,
       1608.6,
-      1807.5
+      1799.3
     ],
     "ACCESORIO DE ARMA\u0001Cargadores": [
-      1123.4,
-      1105.1,
-      1196.9,
-      1076.8,
+      1145.7,
+      1127.4,
+      1219.1,
+      1099,
       855.1,
       834.5,
       830.7,
@@ -129660,13 +129538,13 @@ var DATOS = {
       802.5,
       803.7,
       801.5,
-      799.3
+      798.6
     ],
     "ACCESORIO DE ARMA\u0001Municiones": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
       0.3,
       0.3,
       0.3,
@@ -129683,14 +129561,14 @@ var DATOS = {
       0.3
     ],
     "ACCESORIO DE ARMA (PROMO)\u0001Accesorio controlado": [
-      374.7,
-      364.1,
-      357.2,
-      347.7,
+      492.8,
+      482.2,
+      475.3,
+      465.8,
       457.1,
-      451,
-      446.5,
-      444.2,
+      451.1,
+      446.6,
+      444.3,
       438.9,
       439.2,
       440,
@@ -129703,10 +129581,10 @@ var DATOS = {
       392.7
     ],
     "ACCESORIO DE ARMA (PROMO)\u0001Cargadores": [
-      0.6,
-      11.4,
-      11.4,
-      11.2,
+      2.5,
+      13.3,
+      13.3,
+      13.1,
       0.6,
       0.6,
       0.6,
@@ -129723,10 +129601,10 @@ var DATOS = {
       0.4
     ],
     "AIRE LIBRE\u0001No reglamentado": [
-      320.2,
-      269,
-      236.1,
-      198.1,
+      316.5,
+      261.2,
+      228.3,
+      190.3,
       327.4,
       313.8,
       308.8,
@@ -129740,13 +129618,13 @@ var DATOS = {
       414.1,
       405.1,
       396.8,
-      393.5
+      393.2
     ],
     "AIRE LIBRE (PROMO)\u0001No reglamentado": [
-      1029.1,
-      1021.2,
-      937.9,
-      886.1,
+      1012.3,
+      1004.5,
+      921.2,
+      869.4,
       1092.1,
       1065.2,
       1212.5,
@@ -129760,7 +129638,7 @@ var DATOS = {
       1051.6,
       924.4,
       850.6,
-      834.7
+      834.1
     ],
     "AIRGUN\u0001Cargadores": [
       14,
@@ -129800,7 +129678,7 @@ var DATOS = {
       3693.6,
       3592.2,
       3240,
-      3099.7
+      3094.7
     ],
     "AIRGUN (PROMO)\u0001Cargadores": [
       15.3,
@@ -129823,14 +129701,14 @@ var DATOS = {
       14.2
     ],
     "AIRGUN (PROMO)\u0001No reglamentado": [
-      1050.4,
+      1046.5,
+      1323.8,
+      1298.1,
+      1405,
       1327.7,
-      1302,
-      1408.9,
-      1330.2,
-      1292.9,
-      1227.5,
-      1182,
+      1290.4,
+      1224.9,
+      1179.4,
       1167.6,
       1129.2,
       1110.4,
@@ -129840,7 +129718,7 @@ var DATOS = {
       1025.6,
       971.1,
       865.1,
-      839.9
+      838.3
     ],
     "ARMA\u0001Armas": [
       11501.4,
@@ -129860,7 +129738,7 @@ var DATOS = {
       6085.3,
       6030.3,
       6552.2,
-      6340.8
+      6335.7
     ],
     "CAJA FUERTE\u0001No reglamentado": [
       0,
@@ -129883,10 +129761,10 @@ var DATOS = {
       312.7
     ],
     "INDUMENTARIA\u0001No reglamentado": [
-      904.5,
-      852.6,
-      764.1,
-      732.7,
+      935.2,
+      851.2,
+      762.7,
+      731.3,
       630.7,
       554,
       533.6,
@@ -129900,13 +129778,13 @@ var DATOS = {
       847.9,
       830.3,
       1541.8,
-      1522
+      1518.4
     ],
     "INDUMENTARIA (PROMO)\u0001No reglamentado": [
-      105.7,
-      90.7,
-      87.8,
-      84.5,
+      110,
+      86.2,
+      83.3,
+      79.9,
       134.5,
       129.8,
       126.3,
@@ -129943,11 +129821,11 @@ var DATOS = {
       0
     ],
     "MUNICION\u0001Municiones": [
-      581.7,
+      561.2,
       0,
-      4471.2,
-      3917.2,
-      3873.4,
+      4450.7,
+      3896.7,
+      3852.9,
       12972.9,
       12820.2,
       12746.4,
@@ -129960,7 +129838,7 @@ var DATOS = {
       12319.1,
       12280.9,
       12184,
-      12140.3
+      12139.2
     ],
     "Merchandising\u0001No reglamentado": [
       21.6,
@@ -130003,11 +129881,11 @@ var DATOS = {
       11.1
     ],
     "NO LETAL\u0001No reglamentado": [
-      1099.4,
-      740.6,
-      703.9,
-      633.7,
-      541.9,
+      1098.5,
+      739.7,
+      703,
+      632.8,
+      541,
       436.5,
       383.8,
       1645.2,
@@ -130020,14 +129898,14 @@ var DATOS = {
       1726.6,
       1618,
       1497.7,
-      1509
+      1506
     ],
     "NO LETAL (PROMO)\u0001No reglamentado": [
-      52.6,
-      55,
-      166,
-      200.1,
-      196.6,
+      52.8,
+      55.2,
+      166.2,
+      200.2,
+      196.8,
       189.3,
       188.4,
       214.9,
@@ -130080,13 +129958,13 @@ var DATOS = {
       53.2,
       52.8,
       50.6,
-      51.9
+      51.5
     ],
     "PESCA\u0001No reglamentado": [
-      3251.8,
-      3244.4,
-      3236.6,
-      3225.5,
+      3238.5,
+      3231.1,
+      3223.2,
+      3212.1,
       3185,
       161,
       159.9,
@@ -130103,10 +129981,10 @@ var DATOS = {
       152.6
     ],
     "PESCA (PROMO)\u0001No reglamentado": [
-      809.7,
-      799.7,
-      797.2,
-      789.5,
+      782.7,
+      772.7,
+      770.2,
+      762.6,
       713.1,
       706.9,
       706.1,
@@ -130124,21 +130002,21 @@ var DATOS = {
     ]
   },
   "CMV6": {
-    "Umarex": 1524.8,
-    "Apolo": 187.5,
+    "Umarex": 1528.7,
+    "Apolo": 187.9,
     "Doberman BALINES": 115.6,
-    "Doberman BOTAS": 431.1,
-    "TSS": 1314,
-    "Doberman": 185,
-    "IMI": 132.2,
+    "Doberman BOTAS": 431.7,
+    "TSS": 1314.6,
+    "Doberman": 187.1,
+    "IMI": 132.8,
     "Tanfoglio": 229.1,
     "Beretta": 703.1,
-    "KCI": 27.4,
+    "KCI": 28.1,
     "Fobus": 40.8,
-    "ASG": 282.4,
-    "Vector Optics": 139.3,
-    "Konus": 192,
-    "Nitecore": 132.9,
+    "ASG": 283.9,
+    "Vector Optics": 139.4,
+    "Konus": 199.8,
+    "Nitecore": 133.5,
     "Canik": 82.7,
     "NTK": 74.7,
     "Tinck": 353.5,
@@ -130147,12 +130025,12 @@ var DATOS = {
     "Doberman RIFLES": 3.6,
     "Escort": 8.7,
     "Fab Defense": 57.6,
-    "Doberman MOCHILAS": 121.9,
-    "Doberman LINTERNAS": 42.5,
-    "Sin Marca": 9,
+    "Doberman MOCHILAS": 122,
+    "Doberman LINTERNAS": 42.8,
+    "Sin Marca": 9.1,
     "Coleman": 17.9,
-    "Duracell": 1.6,
-    "BWC": 33.7,
+    "Duracell": 1.9,
+    "BWC": 33.8,
     "Mustad": 0.1,
     "Snake": 13.7,
     "Sumax": 3.3,
@@ -130162,10 +130040,10 @@ var DATOS = {
     "Glock": 164.5,
     "5.11": 6.3,
     "Saga": 105.2,
-    "GB": 150.6,
-    "Indunaylon": 1.4,
+    "GB": 150.7,
+    "Indunaylon": 1.6,
     "Beretta Mod": 47.7,
-    "Sellier & Bellot": 75.3,
+    "Sellier & Bellot": 75.7,
     "Remington": 9.2,
     "Mahely": 0.8,
     "BRG": 32.7,
@@ -130177,11 +130055,11 @@ var DATOS = {
     "Federal": 1.3,
     "Bersa": 11.7,
     "Colt": 41.6,
-    "Mendoza": 134.1,
+    "Mendoza": 141.1,
     "Walther": 49.4,
     "Maverick": 13.9,
     "Tula": 5.1,
-    "Crosman": 74,
+    "Crosman": 75.3,
     "Armed": 7.8,
     "Marine Sports": 0.3,
     "KOR": 29.3,
@@ -130217,7 +130095,7 @@ var DATOS = {
     "Aitor": 2.5,
     "Bestway": 0.1,
     "Cometa": 1.9,
-    "B.E. Armor": 30.2,
+    "B.E. Armor": 33,
     "ISSC": 10.5,
     "FN": 25.2,
     "Bull": 3.9,
@@ -130243,18 +130121,18 @@ var DATOS = {
     "Sarsilmaz": 3.1
   },
   "CMV6_FAM": {
-    "AIRGUN": 2291.8,
-    "NO LETAL": 1045.2,
-    "INDUMENTARIA": 622.9,
-    "AIRGUN (PROMO)": 289.7,
-    "MUNICION": 608.4,
-    "ARMA": 2689.5,
-    "ACCESORIO DE ARMA": 493.2,
+    "AIRGUN": 2296.8,
+    "NO LETAL": 1048.2,
+    "INDUMENTARIA": 626.6,
+    "AIRGUN (PROMO)": 291.3,
+    "MUNICION": 609.4,
+    "ARMA": 2696.4,
+    "ACCESORIO DE ARMA": 502.2,
     "ACCESORIO DE ARMA (PROMO)": 73.2,
-    "AIRE LIBRE (PROMO)": 240.8,
-    "AIRE LIBRE": 59,
+    "AIRE LIBRE (PROMO)": 241.5,
+    "AIRE LIBRE": 59.3,
     "PESCA": 6.3,
-    "Otro": 4.2,
+    "Otro": 4.5,
     "PESCA (PROMO)": 13.6,
     "NO LETAL (PROMO)": 57,
     "OTRO (PROMO)": 2.2,
@@ -130264,21 +130142,21 @@ var DATOS = {
     "CAJA FUERTE": 45.8
   },
   "CMV6_MT": {
-    "Umarex\u0001No reglamentado": 1521.3,
-    "Apolo\u0001No reglamentado": 187.5,
+    "Umarex\u0001No reglamentado": 1525.2,
+    "Apolo\u0001No reglamentado": 187.9,
     "Doberman BALINES\u0001No reglamentado": 115.6,
-    "Doberman BOTAS\u0001No reglamentado": 431.1,
-    "TSS\u0001No reglamentado": 1314,
-    "Doberman\u0001No reglamentado": 176,
-    "IMI\u0001Municiones": 132.2,
+    "Doberman BOTAS\u0001No reglamentado": 431.7,
+    "TSS\u0001No reglamentado": 1314.6,
+    "Doberman\u0001No reglamentado": 178.1,
+    "IMI\u0001Municiones": 132.8,
     "Tanfoglio\u0001Armas": 227.7,
     "Beretta\u0001Armas": 701.2,
-    "KCI\u0001Cargadores": 27.4,
+    "KCI\u0001Cargadores": 28.1,
     "Fobus\u0001Accesorio controlado": 38.1,
-    "ASG\u0001No reglamentado": 275,
-    "Vector Optics\u0001Accesorio controlado": 139.3,
-    "Konus\u0001Accesorio controlado": 188.8,
-    "Nitecore\u0001No reglamentado": 130.1,
+    "ASG\u0001No reglamentado": 276.4,
+    "Vector Optics\u0001Accesorio controlado": 139.4,
+    "Konus\u0001Accesorio controlado": 196.6,
+    "Nitecore\u0001No reglamentado": 130.7,
     "Doberman\u0001Cargadores": 2.2,
     "Canik\u0001Armas": 82.7,
     "NTK\u0001No reglamentado": 74.7,
@@ -130289,12 +130167,12 @@ var DATOS = {
     "Doberman RIFLES\u0001Accesorio controlado": 3.6,
     "Escort\u0001Armas": 8.7,
     "Fab Defense\u0001Cargadores": 12.2,
-    "Doberman MOCHILAS\u0001No reglamentado": 121.9,
-    "Doberman LINTERNAS\u0001No reglamentado": 42.5,
+    "Doberman MOCHILAS\u0001No reglamentado": 122,
+    "Doberman LINTERNAS\u0001No reglamentado": 42.8,
     "Sin Marca\u0001No reglamentado": 5.6,
     "Coleman\u0001No reglamentado": 17.9,
-    "Duracell\u0001No reglamentado": 1.6,
-    "BWC\u0001Accesorio controlado": 32.8,
+    "Duracell\u0001No reglamentado": 1.9,
+    "BWC\u0001Accesorio controlado": 32.9,
     "Mustad\u0001No reglamentado": 0.1,
     "Snake\u0001No reglamentado": 13.7,
     "Sumax\u0001No reglamentado": 3.3,
@@ -130305,10 +130183,10 @@ var DATOS = {
     "5.11\u0001No reglamentado": 6.3,
     "Fab Defense\u0001Accesorio controlado": 44.4,
     "Saga\u0001Municiones": 105.2,
-    "GB\u0001Municiones": 150.6,
-    "Indunaylon\u0001Accesorio controlado": 1.4,
+    "GB\u0001Municiones": 150.7,
+    "Indunaylon\u0001Accesorio controlado": 1.6,
     "Beretta Mod\u0001Accesorio controlado": 5.9,
-    "Sellier & Bellot\u0001Municiones": 75.3,
+    "Sellier & Bellot\u0001Municiones": 75.7,
     "Remington\u0001Armas": 9.2,
     "Mahely\u0001No reglamentado": 0.8,
     "BRG\u0001Armas": 32.7,
@@ -130322,11 +130200,11 @@ var DATOS = {
     "Beretta Mod\u0001No reglamentado": 41.8,
     "Bersa\u0001Armas": 11.7,
     "Colt\u0001Armas": 41.6,
-    "Mendoza\u0001Armas": 133.5,
+    "Mendoza\u0001Armas": 140.4,
     "Walther\u0001Armas": 49.4,
     "Maverick\u0001Accesorio controlado": 2.4,
     "Tula\u0001Armas": 5.1,
-    "Crosman\u0001No reglamentado": 73.9,
+    "Crosman\u0001No reglamentado": 75.2,
     "Armed\u0001Armas": 7.8,
     "Sin Marca\u0001Accesorio controlado": 2.9,
     "Marine Sports\u0001No reglamentado": 0.3,
@@ -130380,7 +130258,7 @@ var DATOS = {
     "Bestway\u0001No reglamentado": 0.1,
     "Cometa\u0001No reglamentado": 1.9,
     "Tanfoglio\u0001Accesorio controlado": 0.1,
-    "B.E. Armor\u0001No reglamentado": 30.2,
+    "B.E. Armor\u0001No reglamentado": 33,
     "Tanfoglio\u0001Cargadores": 1.4,
     "ISSC\u0001Armas": 10.5,
     "FN\u0001Armas": 25.2,
@@ -130411,25 +130289,25 @@ var DATOS = {
     "Vector Optics\u0001No reglamentado": 0,
     "VAULTEK\u0001No reglamentado": 45.8,
     "Jericho\u0001Armas": 21.2,
-    "Mendoza\u0001Accesorio controlado": 0.6,
+    "Mendoza\u0001Accesorio controlado": 0.7,
     "Osight HK\u0001Accesorio controlado": 25.1,
     "Sarsilmaz\u0001Armas": 3.1
   },
   "CMV6_FT": {
-    "AIRGUN\u0001No reglamentado": 2288.5,
-    "NO LETAL\u0001No reglamentado": 1043.7,
-    "INDUMENTARIA\u0001No reglamentado": 622.9,
-    "AIRGUN (PROMO)\u0001No reglamentado": 289.3,
-    "MUNICION\u0001Municiones": 608.4,
-    "ARMA\u0001Armas": 2689.5,
-    "ACCESORIO DE ARMA\u0001Cargadores": 48.1,
+    "AIRGUN\u0001No reglamentado": 2293.6,
+    "NO LETAL\u0001No reglamentado": 1046.7,
+    "INDUMENTARIA\u0001No reglamentado": 626.6,
+    "AIRGUN (PROMO)\u0001No reglamentado": 290.9,
+    "MUNICION\u0001Municiones": 609.4,
+    "ARMA\u0001Armas": 2696.4,
+    "ACCESORIO DE ARMA\u0001Cargadores": 48.8,
     "ACCESORIO DE ARMA (PROMO)\u0001Accesorio controlado": 72.5,
-    "ACCESORIO DE ARMA\u0001Accesorio controlado": 445.1,
-    "AIRE LIBRE (PROMO)\u0001No reglamentado": 240.8,
+    "ACCESORIO DE ARMA\u0001Accesorio controlado": 453.4,
+    "AIRE LIBRE (PROMO)\u0001No reglamentado": 241.5,
     "AIRGUN\u0001Cargadores": 3.2,
-    "AIRE LIBRE\u0001No reglamentado": 59,
+    "AIRE LIBRE\u0001No reglamentado": 59.3,
     "PESCA\u0001No reglamentado": 6.3,
-    "Otro\u0001No reglamentado": 4.2,
+    "Otro\u0001No reglamentado": 4.5,
     "PESCA (PROMO)\u0001No reglamentado": 13.6,
     "NO LETAL (PROMO)\u0001No reglamentado": 57,
     "OTRO (PROMO)\u0001No reglamentado": 2.2,
@@ -130473,10 +130351,10 @@ var DATOS = {
       "400202",
       "Gas CO2 UMAREX 12G #4.1685",
       "Umarex",
-      37,
-      9.3,
-      23031,
-      5804
+      37.2,
+      9.2,
+      23121,
+      5714
     ],
     [
       "505070",
@@ -130493,8 +130371,8 @@ var DATOS = {
       "Umarex",
       18.3,
       79.9,
-      16436,
-      37572
+      16437,
+      37571
     ],
     [
       "501048",
@@ -130509,19 +130387,19 @@ var DATOS = {
       "501113",
       "Cartuchos GB 12 #3 Express 34g 250/25",
       "GB",
-      24,
-      4.3,
-      12086,
-      2155
+      24.1,
+      4.2,
+      12136,
+      2105
     ],
     [
       "505154",
       "Balas IMI 9mm 115GR DI-CUT P. Hueca 1000/50",
       "IMI",
-      13.8,
-      975.3,
-      4711,
-      332524
+      14.4,
+      974.7,
+      4911,
+      332324
     ],
     [
       "501425",
@@ -130605,6 +130483,15 @@ var DATOS = {
       129
     ],
     [
+      "505327",
+      "Balas SELLIER n BELLOT cal 357MAG FMJ 158gr 50x20 #V311392",
+      "Sellier & Bellot",
+      8.6,
+      169.3,
+      2580,
+      50733
+    ],
+    [
       "501366",
       "Cartuchos SAGA 20 #3 GOLD 28gr T2",
       "Saga",
@@ -130612,15 +130499,6 @@ var DATOS = {
       121.3,
       2500,
       33400
-    ],
-    [
-      "505327",
-      "Balas SELLIER n BELLOT cal 357MAG FMJ 158gr 50x20 #V311392",
-      "Sellier & Bellot",
-      8.3,
-      169.7,
-      2480,
-      50833
     ],
     [
       "501421",
@@ -130655,8 +130533,8 @@ var DATOS = {
       "Apolo",
       45.8,
       10.3,
-      2257,
-      507
+      2258,
+      506
     ],
     [
       "400212",
@@ -130698,10 +130576,10 @@ var DATOS = {
       "400299",
       "Balines APOLO cal 4,5mm BBs Botella 1500 unid 1500x10 #E19980",
       "Apolo",
-      26.4,
-      67.1,
-      1486,
-      3786
+      26.6,
+      66.9,
+      1498,
+      3774
     ],
     [
       "501493",
@@ -130806,10 +130684,10 @@ var DATOS = {
       "940168",
       "Inflador para PCP DOBERMAN",
       "Doberman",
-      172.1,
-      6.2,
-      587,
-      21
+      174.2,
+      4.1,
+      594,
+      14
     ],
     [
       "160190",
@@ -130830,22 +130708,13 @@ var DATOS = {
       5
     ],
     [
-      "320069",
-      "Rifle AC TSS/Doberman 5.5mm B2-4P Polimero",
-      "TSS",
-      102.5,
-      362.4,
-      532,
-      1880
-    ],
-    [
       "350022",
       "Blanco de Cartulina Recicl. 58x81cm",
       "Sin Marca",
-      1,
-      9.9,
-      528,
-      5008
+      1.1,
+      9.8,
+      538,
+      4998
     ],
     [
       "400379",
@@ -130853,8 +130722,17 @@ var DATOS = {
       "Apolo",
       6.2,
       3.4,
-      528,
-      293
+      534,
+      287
+    ],
+    [
+      "320069",
+      "Rifle AC TSS/Doberman 5.5mm B2-4P Polimero",
+      "TSS",
+      102.5,
+      362.4,
+      532,
+      1880
     ],
     [
       "170356",
@@ -130959,10 +130837,10 @@ var DATOS = {
       "322000",
       "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
       "Umarex",
-      64.4,
-      6.3,
-      396,
-      39
+      64.6,
+      6.1,
+      397,
+      38
     ],
     [
       "501350",
@@ -131013,10 +130891,10 @@ var DATOS = {
       "320077",
       "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
       "TSS",
-      69.4,
-      75.9,
-      324,
-      354
+      69.9,
+      75.4,
+      326,
+      352
     ],
     [
       "680652",
@@ -131024,8 +130902,8 @@ var DATOS = {
       "Doberman LINTERNAS",
       16.4,
       34.8,
-      315,
-      701
+      316,
+      700
     ],
     [
       "505107",
@@ -131051,8 +130929,17 @@ var DATOS = {
       "Snake",
       0.5,
       0.7,
+      278,
+      419
+    ],
+    [
+      "320461",
+      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
+      "ASG",
+      59,
+      31.5,
       277,
-      420
+      146
     ],
     [
       "501591",
@@ -131062,15 +130949,6 @@ var DATOS = {
       75,
       275,
       19150
-    ],
-    [
-      "320461",
-      "Pistola AC ASG 4.5mm BERSA THUNDER 9 PRO GNB CO2 #17302",
-      "ASG",
-      58.5,
-      31.9,
-      275,
-      148
     ],
     [
       "400331",
@@ -131096,8 +130974,8 @@ var DATOS = {
       "Umarex",
       5.4,
       11.1,
-      261,
-      546
+      262,
+      545
     ],
     [
       "620685",
@@ -131141,8 +131019,8 @@ var DATOS = {
       "Doberman LINTERNAS",
       5.7,
       17.7,
-      246,
-      770
+      247,
+      769
     ],
     [
       "505051",
@@ -131166,10 +131044,19 @@ var DATOS = {
       "260233",
       "Mira Telescopica VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
       "Vector Optics",
-      8.2,
-      1.6,
+      8.3,
+      1.5,
+      188,
+      34
+    ],
+    [
+      "680650",
+      "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB",
+      "Doberman LINTERNAS",
+      5.1,
+      22.3,
       186,
-      36
+      830
     ],
     [
       "320081",
@@ -131190,31 +131077,22 @@ var DATOS = {
       719
     ],
     [
-      "680650",
-      "Linterna DOBERMAN 260L c/ Cargador de Cel #LP-8381USB",
-      "Doberman LINTERNAS",
-      5,
-      22.4,
-      182,
-      834
+      "324085",
+      "Pistola Marcadora de Paintball UMAREX T4E cal 50 Mod. TP 50 GEN2 13 Joules #2.4066",
+      "Umarex",
+      77.8,
+      155.3,
+      180,
+      365
     ],
     [
       "320073",
       "Rifle AC DOBERMAN cal 5.5mm Mod. B1-4P Polimero",
       "TSS",
-      31.3,
-      204.9,
-      177,
-      1159
-    ],
-    [
-      "324085",
-      "Pistola Marcadora de Paintball UMAREX T4E cal 50 Mod. TP 50 GEN2 13 Joules #2.4066",
-      "Umarex",
-      76.1,
-      157,
-      176,
-      369
+      31.5,
+      204.7,
+      178,
+      1158
     ],
     [
       "DES160190",
@@ -131289,6 +131167,15 @@ var DATOS = {
       113125
     ],
     [
+      "260292",
+      "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
+      "Konus",
+      29.7,
+      34.6,
+      127,
+      148
+    ],
+    [
       "501368",
       "Cartuchos Valor 20 #3 28gr *25",
       "Valor",
@@ -131307,31 +131194,22 @@ var DATOS = {
       1
     ],
     [
-      "260292",
-      "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
-      "Konus",
-      28.8,
-      35.6,
-      123,
-      152
-    ],
-    [
       "680686",
       "Linterna DOBERMAN Mod. LP-234026 5000 Lumenes Bat 26650 Recargable",
       "Doberman LINTERNAS",
-      9.5,
-      70.5,
-      120,
-      886
+      9.6,
+      70.4,
+      121,
+      885
     ],
     [
       "400226",
       "Balines APOLO 5,5mm Mod. DESTROYER 1,80gr 100 x 65 #E19901",
       "Apolo",
-      1.8,
-      5.4,
-      119,
-      345
+      1.9,
+      5.3,
+      121,
+      343
     ],
     [
       "111580",
@@ -131388,6 +131266,15 @@ var DATOS = {
       85
     ],
     [
+      "400314",
+      "Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503",
+      "Umarex",
+      5.4,
+      17.5,
+      109,
+      353
+    ],
+    [
       "830281",
       "Hilo Snake Mult. 4X Fullpowe 0.40MM 100M",
       "Snake",
@@ -131395,15 +131282,6 @@ var DATOS = {
       5.3,
       109,
       672
-    ],
-    [
-      "400314",
-      "Balines de Practica UMAREX cal 68 Bolsa de 100 #2.4503",
-      "Umarex",
-      5.4,
-      17.5,
-      108,
-      354
     ],
     [
       "324090",
@@ -131427,10 +131305,10 @@ var DATOS = {
       "322080",
       "Pistola AC CO2 UMAREX 4,5mm Mod. Jericho NonBlow #5.8174",
       "Umarex",
-      31.4,
-      9.7,
-      103,
-      32
+      31.7,
+      9.4,
+      104,
+      31
     ],
     [
       "830285",
@@ -131501,8 +131379,8 @@ var DATOS = {
       "Doberman",
       1.2,
       0.5,
-      98,
-      42
+      99,
+      41
     ],
     [
       "942176",
@@ -131544,10 +131422,10 @@ var DATOS = {
       "942183",
       "Bota DOBERMAN Mod. COMBAT READY Dessert 41",
       "Doberman BOTAS",
-      19.8,
-      21,
-      85,
-      95
+      20,
+      20.8,
+      86,
+      94
     ],
     [
       "400101",
@@ -131658,6 +131536,15 @@ var DATOS = {
       1664
     ],
     [
+      "SID4520100",
+      "Cargador KCI cal 9mm Mod. Glock 33 tiros",
+      "KCI",
+      9.8,
+      23.6,
+      70,
+      169
+    ],
+    [
       "400217",
       "Balines APOLO 4,5mm Hollow Point Cobreado 0.6gr 400 x 40 #E19990",
       "Apolo",
@@ -131712,15 +131599,6 @@ var DATOS = {
       1
     ],
     [
-      "SID4520100",
-      "Cargador KCI cal 9mm Mod. Glock 33 tiros",
-      "KCI",
-      9.4,
-      24.1,
-      67,
-      172
-    ],
-    [
       "400396",
       "Balines de gas pimienta UMAREX cal 50 x 10 unid #2.4784",
       "Umarex",
@@ -131757,6 +131635,15 @@ var DATOS = {
       186
     ],
     [
+      "700300",
+      "Rifle Mendoza 22LR Puma SemiAuto Madera MirasReflect 17T",
+      "Mendoza",
+      103.6,
+      418.6,
+      62,
+      250
+    ],
+    [
       "505426",
       "Balas Blazer 44MAG 240GR PHuecaCobreada 50x20 #3564",
       "CCI",
@@ -131773,15 +131660,6 @@ var DATOS = {
       2.1,
       62,
       17
-    ],
-    [
-      "700300",
-      "Rifle Mendoza 22LR Puma SemiAuto Madera MirasReflect 17T",
-      "Mendoza",
-      101.9,
-      420.2,
-      61,
-      251
     ],
     [
       "942182",
@@ -131883,6 +131761,15 @@ var DATOS = {
       440
     ],
     [
+      "942186",
+      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
+      "Doberman BOTAS",
+      12.5,
+      6.5,
+      54,
+      29
+    ],
+    [
       "400250",
       "Balines APOLO cal 5,5mm Mod. SLUG STAR 1,36gr 21 grains LATA 200x30 #E19312",
       "Apolo",
@@ -131892,13 +131779,13 @@ var DATOS = {
       851
     ],
     [
-      "942186",
-      "Bota DOBERMAN Mod. COMBAT READY Dessert 44",
-      "Doberman BOTAS",
-      12.2,
-      6.7,
-      53,
-      30
+      "400296",
+      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,25g, 3300 unid #19411",
+      "ASG",
+      2.6,
+      23.9,
+      52,
+      475
     ],
     [
       "830296",
@@ -131919,13 +131806,13 @@ var DATOS = {
       10
     ],
     [
-      "400296",
-      "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,25g, 3300 unid #19411",
-      "ASG",
-      2.6,
-      23.9,
+      "900305",
+      "Pila DURACELL Mod. 2032 x 5 unidades",
+      "Duracell",
+      0.3,
+      0.1,
       51,
-      476
+      10
     ],
     [
       "320083",
@@ -132000,6 +131887,15 @@ var DATOS = {
       1779
     ],
     [
+      "680660",
+      "Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA",
+      "Doberman LINTERNAS",
+      0.7,
+      6.6,
+      47,
+      426
+    ],
+    [
       "510701",
       "Mochila DOBERMAN 40L CHARLIE COYOTE #BL076KH",
       "Doberman MOCHILAS",
@@ -132027,15 +131923,6 @@ var DATOS = {
       3945
     ],
     [
-      "680660",
-      "Linterna DOBERMAN 3W CREE LED Chica #LP-8142-1AA",
-      "Doberman LINTERNAS",
-      0.7,
-      6.6,
-      46,
-      427
-    ],
-    [
       "260235",
       "Mira Telescopica VECTOR OPTICS Mod. FORESTER JR. 3-9x40 #SCOM-35",
       "Vector Optics",
@@ -132043,6 +131930,15 @@ var DATOS = {
       0,
       46,
       0
+    ],
+    [
+      "320029",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. Bersa BP9CC Blowback #17301",
+      "ASG",
+      19.9,
+      67.6,
+      45,
+      152
     ],
     [
       "942153",
@@ -132061,15 +131957,6 @@ var DATOS = {
       0,
       45,
       71
-    ],
-    [
-      "320029",
-      "Pistola AC CO2 ASG cal 4,5mm Mod. Bersa BP9CC Blowback #17301",
-      "ASG",
-      19.4,
-      68,
-      44,
-      153
     ],
     [
       "322055",
@@ -132102,10 +131989,10 @@ var DATOS = {
       "250111",
       "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
       "BWC",
-      2,
-      9,
-      43,
-      192
+      2.1,
+      8.9,
+      44,
+      191
     ],
     [
       "510488",
@@ -132171,15 +132058,6 @@ var DATOS = {
       1141
     ],
     [
-      "900305",
-      "Pila DURACELL Mod. 2032 x 5 unidades",
-      "Duracell",
-      0.2,
-      0.1,
-      41,
-      20
-    ],
-    [
       "942156",
       "Bota DOBERMAN Mod. COMBAT READY Negro 43",
       "Doberman BOTAS",
@@ -132187,6 +132065,15 @@ var DATOS = {
       31.8,
       40,
       125
+    ],
+    [
+      "680655",
+      "Linterna DOBERMAN 180L c/Magnetico USB #LP-9515",
+      "Doberman LINTERNAS",
+      1.3,
+      8.5,
+      40,
+      262
     ],
     [
       "942165",
@@ -132268,15 +132155,6 @@ var DATOS = {
       12.3,
       39,
       2043
-    ],
-    [
-      "680655",
-      "Linterna DOBERMAN 180L c/Magnetico USB #LP-9515",
-      "Doberman LINTERNAS",
-      1.3,
-      8.5,
-      39,
-      263
     ],
     [
       "510798",
@@ -132693,6 +132571,15 @@ var DATOS = {
       50
     ],
     [
+      "320022",
+      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726",
+      "ASG",
+      9,
+      35.4,
+      26,
+      102
+    ],
+    [
       "550303",
       "Kit de limpieza GSM-BWC para armas cortas #BC-HNDGCLN-KIT",
       "BWC",
@@ -132709,15 +132596,6 @@ var DATOS = {
       7.4,
       26,
       95
-    ],
-    [
-      "320022",
-      "Pistola AC CO2 ASG cal 4,5mm Mod. CZ75 P-07DUTY NonBlow #16726",
-      "ASG",
-      8.7,
-      35.8,
-      25,
-      103
     ],
     [
       "830257",
@@ -132873,6 +132751,15 @@ var DATOS = {
       10
     ],
     [
+      "900302",
+      "Pila Duracell Alcalina - AAAx6 CHICA",
+      "Duracell",
+      0.6,
+      0.8,
+      23,
+      29
+    ],
+    [
       "350200",
       "Target GSM-SME con reseteo automatico para cal 22 #SME-ST22RES",
       "BWC",
@@ -133021,9 +132908,9 @@ var DATOS = {
       "Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415",
       "Konus",
       3,
-      0.1,
+      0.3,
       22,
-      1
+      2
     ],
     [
       "DES920284",
@@ -133042,6 +132929,15 @@ var DATOS = {
       29.3,
       21,
       138
+    ],
+    [
+      "942203",
+      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
+      "Doberman BOTAS",
+      4.5,
+      23.3,
+      21,
+      109
     ],
     [
       "830291",
@@ -133080,6 +132976,15 @@ var DATOS = {
       256
     ],
     [
+      "400460",
+      "Balines de Paintball UMAREX cal 50 x 100 unid",
+      "Umarex",
+      0.2,
+      0.1,
+      21,
+      5
+    ],
+    [
       "505586",
       "Balas IMI 308WIN 175GR Francotirador King OTM BT *500/20",
       "IMI",
@@ -133087,15 +132992,6 @@ var DATOS = {
       290.5,
       20,
       25950
-    ],
-    [
-      "942203",
-      "Bota DOBERMAN Mod. COMBAT READY 6p Dessert Arena 40",
-      "Doberman BOTAS",
-      4.3,
-      23.5,
-      20,
-      110
     ],
     [
       "700870",
@@ -133132,6 +133028,15 @@ var DATOS = {
       12.3,
       20,
       685
+    ],
+    [
+      "681112",
+      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
+      "Nitecore",
+      3.6,
+      9.7,
+      20,
+      54
     ],
     [
       "111570",
@@ -133179,15 +133084,6 @@ var DATOS = {
       1
     ],
     [
-      "400460",
-      "Balines de Paintball UMAREX cal 50 x 100 unid",
-      "Umarex",
-      0.2,
-      0.1,
-      20,
-      6
-    ],
-    [
       "681104",
       "Linterna NITECORE Mod. SRT7GT 1000Lm Multicolor",
       "Nitecore",
@@ -133204,15 +133100,6 @@ var DATOS = {
       15.4,
       19,
       99
-    ],
-    [
-      "681112",
-      "Linterna Cabeza NITECORE Mod. NU27 600Lm Bat850mAh",
-      "Nitecore",
-      3.4,
-      9.9,
-      19,
-      55
     ],
     [
       "DES190001",
@@ -133249,15 +133136,6 @@ var DATOS = {
       0.8,
       19,
       1
-    ],
-    [
-      "900302",
-      "Pila Duracell Alcalina - AAAx6 CHICA",
-      "Duracell",
-      0.5,
-      0.9,
-      19,
-      33
     ],
     [
       "901345",
@@ -133305,6 +133183,15 @@ var DATOS = {
       104
     ],
     [
+      "320707",
+      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
+      "Umarex",
+      15.7,
+      16.6,
+      18,
+      19
+    ],
+    [
       "323115",
       "Pistola Airsoft CO2 UMAREX 6mm Mod. Walther P99 DAO Blowback #2.5684",
       "Umarex",
@@ -133341,6 +133228,15 @@ var DATOS = {
       58
     ],
     [
+      "261413",
+      "Cámara KONUS Mod. FLAME 0,6x-2.4x res 160x120 #7953",
+      "Konus",
+      32.2,
+      54.9,
+      17,
+      28
+    ],
+    [
       "942164",
       "Bota DOBERMAN Mod. COMBAT READY Negro 41",
       "Doberman BOTAS",
@@ -133368,15 +133264,6 @@ var DATOS = {
       26
     ],
     [
-      "320707",
-      "Revolver a Fogueo UMAREX cal 9mm R.K. Mod. ROHM RG59 Negro #722.02.00",
-      "Umarex",
-      14.8,
-      17.5,
-      17,
-      20
-    ],
-    [
       "904005",
       "Balines de Practica UMAREX T4E cal 43 x 500 unid #2.4505",
       "Umarex",
@@ -133402,6 +133289,15 @@ var DATOS = {
       2.2,
       17,
       64
+    ],
+    [
+      "250180",
+      "Lubricante ASG 220ml. #16286",
+      "ASG",
+      0.4,
+      1.6,
+      17,
+      62
     ],
     [
       "901340",
@@ -133494,13 +133390,13 @@ var DATOS = {
       135
     ],
     [
-      "261413",
-      "Cámara KONUS Mod. FLAME 0,6x-2.4x res 160x120 #7953",
-      "Konus",
-      28.3,
-      58.9,
-      15,
-      30
+      "400236",
+      "Balines APOLO 5,5mm MAGNUM 1gr. Carton*100X250 #E13001",
+      "Apolo",
+      0.1,
+      0,
+      16,
+      0
     ],
     [
       "322212",
@@ -133548,6 +133444,15 @@ var DATOS = {
       80
     ],
     [
+      "320517",
+      "Flecha UMAREX Mod. NXG 26'' x3 unidades",
+      "Umarex",
+      0.6,
+      1.4,
+      15,
+      33
+    ],
+    [
       "830288",
       "Hilo Snake Mult. 4X Fullpowe 0.90MM 100M",
       "Snake",
@@ -133582,6 +133487,15 @@ var DATOS = {
       0.1,
       15,
       1
+    ],
+    [
+      "110504",
+      "Pistolera para Traumatica INDUNAYLON p/MOLLE",
+      "Indunaylon",
+      0.4,
+      0.1,
+      15,
+      2
     ],
     [
       "322216",
@@ -133656,6 +133570,15 @@ var DATOS = {
       860
     ],
     [
+      "681090",
+      "Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh",
+      "Nitecore",
+      6.1,
+      2.2,
+      14,
+      5
+    ],
+    [
       "400462",
       "Balines de Paintball UMAREX cal 50 x 250 unid",
       "Umarex",
@@ -133708,15 +133631,6 @@ var DATOS = {
       0.6,
       14,
       27
-    ],
-    [
-      "110504",
-      "Pistolera para Traumatica INDUNAYLON p/MOLLE",
-      "Indunaylon",
-      0.4,
-      0.1,
-      14,
-      3
     ],
     [
       "749101",
@@ -133861,24 +133775,6 @@ var DATOS = {
       2.4,
       13,
       7
-    ],
-    [
-      "681090",
-      "Linterna NITECORE Mod. P10iX 4000Lm Bat21700 5000mAh",
-      "Nitecore",
-      5.7,
-      2.6,
-      13,
-      6
-    ],
-    [
-      "320517",
-      "Flecha UMAREX Mod. NXG 26'' x3 unidades",
-      "Umarex",
-      0.5,
-      1.5,
-      13,
-      35
     ],
     [
       "901415",
@@ -134079,13 +133975,13 @@ var DATOS = {
       8
     ],
     [
-      "400236",
-      "Balines APOLO 5,5mm MAGNUM 1gr. Carton*100X250 #E13001",
-      "Apolo",
-      0.1,
+      "110016M",
+      "Funda P/Arma Larga Negro-110 X 20 F03/Mendoza",
+      "Mendoza",
+      0.7,
       0,
       12,
-      4
+      0
     ],
     [
       "4520400",
@@ -134205,15 +134101,6 @@ var DATOS = {
       750
     ],
     [
-      "250180",
-      "Lubricante ASG 220ml. #16286",
-      "ASG",
-      0.3,
-      1.8,
-      11,
-      68
-    ],
-    [
       "901355",
       "Riel Picattiny VECTOR OPTICS Mod. OFFSET #SCRA-34",
       "Vector Optics",
@@ -134230,15 +134117,6 @@ var DATOS = {
       0.7,
       11,
       35
-    ],
-    [
-      "110016M",
-      "Funda P/Arma Larga Negro-110 X 20 F03/Mendoza",
-      "Mendoza",
-      0.6,
-      0.1,
-      11,
-      1
     ],
     [
       "621010",
@@ -134277,6 +134155,15 @@ var DATOS = {
       1787
     ],
     [
+      "SID4520055",
+      "Cargador KCI cal 9mm Mod. Glock 17 tiros",
+      "KCI",
+      1,
+      14.5,
+      10,
+      141
+    ],
+    [
       "680661",
       "Linterna DOBERMAN 3W LED 1XAA #LP7043B",
       "Doberman LINTERNAS",
@@ -134311,6 +134198,15 @@ var DATOS = {
       5.9,
       10,
       52
+    ],
+    [
+      "510442",
+      "Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL",
+      "Doberman MOCHILAS",
+      0.8,
+      4.8,
+      10,
+      60
     ],
     [
       "830290",
@@ -134466,6 +134362,15 @@ var DATOS = {
       12
     ],
     [
+      "260289",
+      "Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274",
+      "Konus",
+      7.6,
+      0.8,
+      10,
+      1
+    ],
+    [
       "4520455",
       "Cargador KCI cal .40 Mod. Glock 50 tiros",
       "KCI",
@@ -134560,6 +134465,15 @@ var DATOS = {
       "Cartucho Spray Pimienta PDP UMAREX p/ HDR50 HDS68 y PDP #2.2050.1",
       "Umarex",
       0.7,
+      0,
+      10,
+      0
+    ],
+    [
+      "260684",
+      "Montante para rifles KONUS de 25.4mm Medio para Rifles 22LR y AC #7416",
+      "Konus",
+      1.4,
       0,
       10,
       0
@@ -134745,15 +134659,6 @@ var DATOS = {
       17
     ],
     [
-      "260289",
-      "Mira KONUS Mod. PLUS 6-24x50 Objetivo Ajustable Punto Ilumnable #7274",
-      "Konus",
-      6.8,
-      1.5,
-      9,
-      2
-    ],
-    [
       "270550",
       "Cobertor de Corredera Fab Defense Glock M19/23/25/32/38 Negro",
       "Fab Defense",
@@ -134799,15 +134704,6 @@ var DATOS = {
       16
     ],
     [
-      "260684",
-      "Montante para rifles KONUS de 25.4mm Medio para Rifles 22LR y AC #7416",
-      "Konus",
-      1.2,
-      0.1,
-      9,
-      1
-    ],
-    [
       "321095",
       "Cargador UMAREX para Mod. HDR50 x 2 unid. #2.4757.1",
       "Umarex",
@@ -134833,6 +134729,24 @@ var DATOS = {
       0,
       9,
       0
+    ],
+    [
+      "700305",
+      "Rifle Mendoza 22LR Puma SemiAuto Squad MirasReflect 17T",
+      "Mendoza",
+      14,
+      165,
+      8,
+      94
+    ],
+    [
+      "904006",
+      "Balines de Practica UMAREX T4E cal 50 Performance x 500 unid #2.4781",
+      "Umarex",
+      1.7,
+      63.9,
+      8,
+      294
     ],
     [
       "272063",
@@ -134907,15 +134821,6 @@ var DATOS = {
       42
     ],
     [
-      "510442",
-      "Mochila DOBERMAN 30L NAVY CAMO GREY / YELLOW #LP97NVYELL",
-      "Doberman MOCHILAS",
-      0.6,
-      4.9,
-      8,
-      62
-    ],
-    [
       "DES941059",
       "Hamaca NTK. Mod. KOKUN 1 persona",
       "NTK",
@@ -134932,6 +134837,24 @@ var DATOS = {
       3.2,
       8,
       899
+    ],
+    [
+      "621044",
+      "Esmerillon Snake Negro Nickel 3 c/12 NS-1707",
+      "Snake",
+      0,
+      2.5,
+      8,
+      1409
+    ],
+    [
+      "320515",
+      "Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
+      "Umarex",
+      0.9,
+      2.4,
+      8,
+      21
     ],
     [
       "260674",
@@ -135060,22 +134983,13 @@ var DATOS = {
       0
     ],
     [
-      "700305",
-      "Rifle Mendoza 22LR Puma SemiAuto Squad MirasReflect 17T",
+      "700312",
+      "Rifle Mendoza 22LR Puma SemiAuto Safari MirasReflect 17T",
       "Mendoza",
-      12.3,
-      166.8,
+      12.1,
+      363.9,
       7,
-      95
-    ],
-    [
-      "904006",
-      "Balines de Practica UMAREX T4E cal 50 Performance x 500 unid #2.4781",
-      "Umarex",
-      1.5,
-      64.1,
-      7,
-      295
+      210
     ],
     [
       "323145",
@@ -135103,15 +135017,6 @@ var DATOS = {
       19.6,
       7,
       5357
-    ],
-    [
-      "SID4520055",
-      "Cargador KCI cal 9mm Mod. Glock 17 tiros",
-      "KCI",
-      0.7,
-      14.8,
-      7,
-      144
     ],
     [
       "720682",
@@ -135249,15 +135154,6 @@ var DATOS = {
       385
     ],
     [
-      "621044",
-      "Esmerillon Snake Negro Nickel 3 c/12 NS-1707",
-      "Snake",
-      0,
-      2.5,
-      7,
-      1410
-    ],
-    [
       "DES680531",
       "Linterna Caterpillar 175 LM LED COB de Bolsillo Camo  #CT1200 Sin Pilas / Sin Blíster",
       "Caterpillar",
@@ -135303,6 +135199,15 @@ var DATOS = {
       45
     ],
     [
+      "900322",
+      "PILA Duracell 9V 1 x 48",
+      "Duracell",
+      0.2,
+      0.9,
+      7,
+      36
+    ],
+    [
       "380005",
       "Accesorio de Práctica de Goma Mod. 223REM #SCSC-01",
       "Vector Optics",
@@ -135326,6 +135231,15 @@ var DATOS = {
       "Coleman",
       1.2,
       1.4,
+      7,
+      8
+    ],
+    [
+      "324156",
+      "Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891",
+      "Umarex",
+      0.9,
+      1.1,
       7,
       8
     ],
@@ -135645,15 +135559,6 @@ var DATOS = {
       36
     ],
     [
-      "320515",
-      "Arco y Flecha UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
-      "Umarex",
-      0.7,
-      2.7,
-      6,
-      23
-    ],
-    [
       "550304",
       "Kit de limpieza GSM-BWC para Rifles AR15 #BC-ARCLN-KIT",
       "BWC",
@@ -135708,6 +135613,15 @@ var DATOS = {
       621
     ],
     [
+      "900364",
+      "Pila Duracell Alcalina AAX6 Chica",
+      "Duracell",
+      0.2,
+      1.5,
+      6,
+      53
+    ],
+    [
       "720686",
       "Kepi BERETTA Mod. Tech Cap Naranja #BC791T19360021UNI",
       "Beretta Mod",
@@ -135724,15 +135638,6 @@ var DATOS = {
       1.6,
       6,
       2
-    ],
-    [
-      "324156",
-      "Pistola AC Resorte UMAREX 6mm Mod Walther P22Q #2.5891",
-      "Umarex",
-      0.8,
-      1.2,
-      6,
-      9
     ],
     [
       "250693",
@@ -135796,6 +135701,15 @@ var DATOS = {
       0.3,
       6,
       27
+    ],
+    [
+      "550261",
+      "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
+      "BWC",
+      0.1,
+      0.2,
+      6,
+      23
     ],
     [
       "111564",
@@ -135868,15 +135782,6 @@ var DATOS = {
       0,
       6,
       0
-    ],
-    [
-      "700312",
-      "Rifle Mendoza 22LR Puma SemiAuto Safari MirasReflect 17T",
-      "Mendoza",
-      8.7,
-      365.6,
-      5,
-      211
     ],
     [
       "602800",
@@ -136140,15 +136045,6 @@ var DATOS = {
       14
     ],
     [
-      "900322",
-      "PILA Duracell 9V 1 x 48",
-      "Duracell",
-      0.1,
-      1,
-      5,
-      38
-    ],
-    [
       "720691",
       "Kepis con nuquera sumax SB-1303A UV AZUL",
       "Sumax",
@@ -136221,6 +136117,15 @@ var DATOS = {
       5
     ],
     [
+      "620687",
+      "Anzuelo Snake Maruseigo Niquel #16 c/20.",
+      "Snake",
+      0,
+      0.6,
+      5,
+      324
+    ],
+    [
       "940182",
       "Cargador PCP DOBERMAN cal 5.5mm para Mod. M16",
       "Doberman",
@@ -136282,15 +136187,6 @@ var DATOS = {
       0.2,
       5,
       2
-    ],
-    [
-      "550261",
-      "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
-      "BWC",
-      0.1,
-      0.3,
-      5,
-      24
     ],
     [
       "150785",
@@ -136464,6 +136360,15 @@ var DATOS = {
       141
     ],
     [
+      "DES320522",
+      "Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas",
+      "Crosman",
+      5.1,
+      33,
+      4,
+      26
+    ],
+    [
       "323130",
       "Pistola Airsoft Green Gas UMAREX Mod. BERETTA M9A3 GBB FDE #2274310",
       "Umarex",
@@ -136507,6 +136412,15 @@ var DATOS = {
       18.5,
       4,
       20
+    ],
+    [
+      "721102",
+      "Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG",
+      "B.E. Armor",
+      11.3,
+      22.5,
+      4,
+      8
     ],
     [
       "260562",
@@ -136624,6 +136538,15 @@ var DATOS = {
       1.9,
       4,
       675
+    ],
+    [
+      "620661",
+      "Anzuelo Snake Crystal Niquel #1/0 c/25.",
+      "Snake",
+      0,
+      1.8,
+      4,
+      683
     ],
     [
       "320514",
@@ -136768,15 +136691,6 @@ var DATOS = {
       0.9,
       4,
       6
-    ],
-    [
-      "620687",
-      "Anzuelo Snake Maruseigo Niquel #16 c/20.",
-      "Snake",
-      0,
-      0.6,
-      4,
-      325
     ],
     [
       "621152",
@@ -137022,15 +136936,6 @@ var DATOS = {
       32
     ],
     [
-      "DES320522",
-      "Ballesta Recurvada RAVIN/CROSMAN  Mod. TYRO mira 4x32 3 flechas",
-      "Crosman",
-      3.8,
-      34.3,
-      3,
-      27
-    ],
-    [
       "850014786847",
       "Caja de seguridad largo VAULTEKNRS800i-BK",
       "VAULTEK",
@@ -137047,15 +136952,6 @@ var DATOS = {
       22.8,
       3,
       956
-    ],
-    [
-      "721102",
-      "Chaleco Antibala B.E. Armor 4000 L NIJ 010106 IIIA 44MAG",
-      "B.E. Armor",
-      8.4,
-      25.3,
-      3,
-      9
     ],
     [
       "250007",
@@ -137254,6 +137150,15 @@ var DATOS = {
       3.4,
       3,
       20
+    ],
+    [
+      "110009",
+      "Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.",
+      "Indunaylon",
+      0.2,
+      2.7,
+      3,
+      43
     ],
     [
       "270203",
@@ -137650,6 +137555,15 @@ var DATOS = {
       0.4,
       3,
       253
+    ],
+    [
+      "261060",
+      "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
+      "BWC",
+      0,
+      0.4,
+      3,
+      80
     ],
     [
       "320516",
@@ -138372,6 +138286,15 @@ var DATOS = {
       48
     ],
     [
+      "260290",
+      "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
+      "Konus",
+      4.2,
+      6.2,
+      2,
+      3
+    ],
+    [
       "942171",
       "Bota DOBERMAN Mod. COMBAT READY Negro 47",
       "Doberman BOTAS",
@@ -138534,15 +138457,6 @@ var DATOS = {
       1
     ],
     [
-      "620661",
-      "Anzuelo Snake Crystal Niquel #1/0 c/25.",
-      "Snake",
-      0,
-      1.8,
-      2,
-      685
-    ],
-    [
       "621154",
       "Gancho p/ Esmerillon  Snake Negro Nickel SN3804 4 c/8",
       "Snake",
@@ -138597,13 +138511,13 @@ var DATOS = {
       5
     ],
     [
-      "900364",
-      "Pila Duracell Alcalina AAX6 Chica",
-      "Duracell",
-      0.1,
-      1.6,
+      "620310",
+      "Anzuelo Mustad #6/0*6 92259",
+      "Mustad",
+      0,
+      1.3,
       2,
-      57
+      274
     ],
     [
       "260563",
@@ -138786,13 +138700,13 @@ var DATOS = {
       356
     ],
     [
-      "261060",
-      "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
-      "BWC",
+      "830327",
+      "Hilo Snake Mult. 4X Wild 0.40MM 150M",
+      "Snake",
       0,
-      0.4,
+      0.5,
       2,
-      81
+      33
     ],
     [
       "111566",
@@ -139740,15 +139654,6 @@ var DATOS = {
       2126
     ],
     [
-      "260290",
-      "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
-      "Konus",
-      2.1,
-      8.3,
-      1,
-      4
-    ],
-    [
       "700900CARU",
       "Escopeta Pajera Savage l Cal. 12 l Polimero l Mod. 320 Pump l 18,5 P. l 5+1 T.",
       "Savage",
@@ -140172,15 +140077,6 @@ var DATOS = {
       49
     ],
     [
-      "620310",
-      "Anzuelo Mustad #6/0*6 92259",
-      "Mustad",
-      0,
-      1.3,
-      1,
-      275
-    ],
-    [
       "830358",
       "Hilo Snake Mult. 4X Motion 0.90MM 300M",
       "Snake",
@@ -140332,6 +140228,15 @@ var DATOS = {
       1.2,
       1,
       46
+    ],
+    [
+      "550250",
+      "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
+      "BWC",
+      0,
+      1.1,
+      1,
+      25
     ],
     [
       "DES880050",
@@ -140539,15 +140444,6 @@ var DATOS = {
       0.4,
       1,
       20
-    ],
-    [
-      "830327",
-      "Hilo Snake Mult. 4X Wild 0.40MM 150M",
-      "Snake",
-      0,
-      0.5,
-      1,
-      34
     ],
     [
       "610592",
@@ -144726,15 +144622,6 @@ var DATOS = {
       24
     ],
     [
-      "110009",
-      "Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.",
-      "Indunaylon",
-      0,
-      2.9,
-      0,
-      45
-    ],
-    [
       "160175",
       "GAS P/ DEFENSA 60CC #PS00760",
       "Sin Marca",
@@ -147019,15 +146906,6 @@ var DATOS = {
       0.9,
       0,
       4
-    ],
-    [
-      "550250",
-      "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
-      "BWC",
-      0,
-      1.1,
-      0,
-      26
     ],
     [
       "270152",
