@@ -150,8 +150,9 @@ section{scroll-margin-top:120px}
 .scroll td{border-bottom:1px solid var(--line2)}
 .shead h2{
   font-family:var(--disp); font-weight:600; font-size:19px; text-transform:uppercase;
-  letter-spacing:.05em; margin:0;
+  letter-spacing:.05em; margin:0; white-space:nowrap;
 }
+.shead .note{min-width:0}
 .shead .rule{flex:1; height:1px; background:var(--line)}
 .shead .note{font-size:11.5px; color:var(--muted)}
 
@@ -166,6 +167,16 @@ section{scroll-margin-top:120px}
 .kpi.click{cursor:pointer; transition:border-color .15s, box-shadow .15s}
 .kpi.click:hover{border-color:var(--ink2); box-shadow:0 1px 0 var(--line)}
 .kpi.click:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.cambios{
+  margin:10px 0 0; padding:10px 14px; background:var(--paper);
+  border:1px solid var(--line); border-left:3px solid var(--ink2);
+  font-size:12.5px; color:var(--ink2); display:flex; gap:8px 20px; flex-wrap:wrap;
+  align-items:center;
+}
+.cambios .titulo{font-weight:600; color:var(--ink)}
+.cambios .delta{display:inline-flex; align-items:center; gap:5px; font-family:var(--mono); font-size:12px}
+.cambios .sube{color:#2F6B4F}
+.cambios .baja{color:#8A3524}
 .kpi .ver{
   display:inline-block; font-size:11px; color:var(--B); margin-top:7px;
   border-bottom:1px solid transparent; cursor:pointer;
@@ -190,6 +201,7 @@ section{scroll-margin-top:120px}
 }
 .formula b{color:var(--ink)}
 .formula .aviso{color:#8A3524}
+.aviso{color:#8A3524}
 .nota-cat{
   margin:0 0 12px; padding:10px 13px; background:#FBF6E4; border-left:3px solid var(--NC);
   font-size:12.5px; color:var(--ink2); line-height:1.55;
@@ -204,6 +216,9 @@ section{scroll-margin-top:120px}
 
 /* ---------- panel torta principal ---------- */
 .hero{display:grid; grid-template-columns:minmax(300px,1fr) 1.15fr; gap:10px}
+/* Sin esto una tabla ancha estira su columna de la grilla y aparece scroll
+   horizontal en toda la página, en vez de quedarse dentro de su tarjeta. */
+.hero > *{min-width:0}
 .card{background:var(--paper); border:1px solid var(--line); padding:16px}
 .card h3{
   font-family:var(--disp); font-size:15px; text-transform:uppercase; letter-spacing:.06em;
@@ -314,9 +329,46 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .chip.sm{font-size:11.5px; padding:3px 9px}
 .clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
 .count{font-family:var(--mono); font-size:11px; color:var(--muted)}
+
+/* Eje 1: las dos mitades del stock según sea material controlado o no.
+   Son tarjetas y no filas de tabla porque el corte es binario y conviene
+   que se lea de un golpe antes que cualquier otro desglose. */
+.ejes2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.eje{
+  background:var(--paper); border:1px solid var(--line); padding:16px 18px;
+  cursor:pointer; transition:border-color .15s;
+}
+.eje:hover{border-color:var(--ink2)}
+.eje:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.eje.on{border-color:var(--ink); box-shadow:inset 3px 0 0 var(--ink)}
+.eje h3{
+  font-family:var(--disp); font-size:19px; font-weight:500; margin:0;
+  letter-spacing:.01em; color:var(--ink); text-transform:none;
+  border:none; padding:0;
+}
+.eje .cifra{
+  display:block; font-family:var(--mono); font-size:26px; margin:7px 0 1px;
+  letter-spacing:-.02em; font-variant-numeric:tabular-nums;
+}
+.eje .bajo{display:block; font-size:11.5px; color:var(--muted)}
+.eje .desglose{margin:13px 0 0; padding:0; list-style:none; display:grid; gap:5px}
+.eje .desglose li{display:flex; align-items:center; gap:7px; font-size:12px}
+.eje .desglose .pin{width:9px; height:9px; flex:none; border-radius:1px}
+.eje .desglose .n{
+  margin-left:auto; font-family:var(--mono); font-size:11.5px; color:var(--ink2);
+  font-variant-numeric:tabular-nums;
+}
+.eje .desglose .p{font-family:var(--mono); font-size:10.5px; color:var(--muted); width:42px; text-align:right}
+
+/* Banda de rotación: el color va de verde a rust igual que el resto del
+   reporte, donde rust es siempre capital que hay que mover. */
+.bnd{display:inline-flex; align-items:center; gap:7px}
+.bnd i{width:9px; height:9px; border-radius:1px; display:block; flex:none}
+
 @media (max-width:900px){
   .kpis{grid-template-columns:repeat(2,1fr)}
   .hero{grid-template-columns:1fr}
+  .ejes2{grid-template-columns:1fr}
   .ttl h1{font-size:24px}
 }
 @media (prefers-reduced-motion:no-preference){
@@ -372,10 +424,50 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 <div class="wrap">
 
   <div id="p1" role="tabpanel" aria-labelledby="t1">
-    <section><div class="kpis" id="kpis"></div></section>
+    <section><div class="kpis" id="kpis"></div>
+      <div class="cambios" id="cambios" hidden></div>
+    </section>
+
+    <section id="eje-ctl">
+      <div class="shead"><h2>Eje 1 · Material controlado</h2><div class="rule"></div>
+        <div class="note" id="nota-ctl"></div></div>
+      <div class="ejes2" id="cajas-ctl"></div>
+    </section>
+
+    <section id="sec-fam">
+      <div class="shead"><h2>Eje 2 · Familia</h2><div class="rule"></div>
+        <div class="note" id="nota-fam"></div></div>
+      <div class="card"><div class="scroll"><table id="tbl-fam">
+        <thead><tr>
+          <th class="ord l" data-k="k">Familia</th><th class="l">Tipo</th>
+          <th class="ord" data-k="ctl"><span class="bnd"><i style="background:#4A5560"></i>Controlado</span></th>
+          <th class="ord" data-k="nctl"><span class="bnd"><i style="background:#AEB8B8"></i>No controlado</span></th>
+          <th class="ord" data-k="v">Total a costo</th>
+          <th>% del stock</th><th style="width:170px">Peso</th>
+        </tr></thead><tbody></tbody><tfoot></tfoot>
+      </table></div></div>
+    </section>
+
+    <section id="eje-rot">
+      <div class="shead"><h2>Eje 3 · Rotación</h2><div class="rule"></div>
+        <div class="note" id="nota-eje-rot"></div></div>
+      <div class="card">
+        <p class="nota-cat" id="aviso-rot" hidden></p>
+        <div class="scroll"><table id="tbl-banda">
+          <thead><tr>
+            <th class="l">Nivel de rotación</th><th class="l">Qué quiere decir</th>
+            <th class="ord" data-k="n">Artículos</th>
+            <th class="ord" data-k="ctl"><span class="bnd"><i style="background:#4A5560"></i>Controlado</span></th>
+            <th class="ord" data-k="nctl"><span class="bnd"><i style="background:#AEB8B8"></i>No controlado</span></th>
+            <th class="ord" data-k="v">Valor a costo</th>
+            <th>% del stock medido</th><th style="width:150px">Peso</th>
+          </tr></thead><tbody></tbody><tfoot></tfoot>
+        </table></div>
+      </div>
+    </section>
 
     <section>
-      <div class="shead"><h2>Composición del stock a costo</h2><div class="rule"></div>
+      <div class="shead"><h2>Clasificación ABC</h2><div class="rule"></div>
         <div class="note" id="nota-alcance"></div></div>
       <div class="hero">
         <div class="card">
@@ -428,17 +520,6 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           <th class="sel" data-cat="ACC">ACC</th>
           <th class="sel" data-cat="NC">Sin categorizar</th>
           <th class="ord" data-k="_t">Total</th><th>% del stock</th>
-        </tr></thead><tbody></tbody><tfoot></tfoot>
-      </table></div></div>
-    </section>
-
-    <section id="sec-fam">
-      <div class="shead"><h2>Por familia</h2><div class="rule"></div>
-        <div class="note">Millones de guaraníes · categoría de producto de Odoo · clic para filtrar</div></div>
-      <div class="card"><div class="scroll"><table id="tbl-fam">
-        <thead><tr>
-          <th class="ord l" data-k="k">Familia</th><th class="l">Tipo</th>
-          <th class="ord" data-k="v">Valor a costo</th><th>% del stock</th><th style="width:200px">Peso</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -502,6 +583,8 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
             </div>
           </div>
           <div class="fgroup"><select id="f-serie" aria-label="Marca o familia"></select></div>
+          <div class="fgroup"><label class="flab" for="f-canal">Canal</label>
+            <select id="f-canal"><option value="*">Canal: todos</option></select></div>
           <div class="fgroup"><button class="chip sm" id="f-comparar" aria-pressed="false"
             title="Mostrar todas juntas en el mismo gráfico">Comparar todas</button></div>
           <div class="sep"></div>
@@ -565,9 +648,10 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           <thead><tr>
             <th class="ord l" data-k="0">Referencia</th>
             <th class="ord l" data-k="1">Producto</th>
+            <th class="ord l" data-k="7">Cat.</th>
             <th class="ord" data-k="5">Vendidas (unid.)</th>
             <th class="ord" data-k="6">En stock (unid.)</th>
-            <th class="ord" data-k="7">Rotación (veces/año)</th>
+            <th class="ord" data-k="8">Rotación (veces/año)</th>
             <th></th>
           </tr></thead><tbody></tbody>
         </table></div>
@@ -605,6 +689,7 @@ var SERIES_ART = DATOS.SERIES_ART || {};
 /* Cuando hay un artículo elegido, el gráfico muestra su serie y no la de la marca. */
 var articuloActivo = null;
 var comparando = false;
+var canal = "*";
 /* "marca" o "fam": qué nivel se está mirando en la Parte 2. */
 var nivel = "marca";
 var SERIES_FAM = DATOS.SERIES_FAM || {};
@@ -641,6 +726,8 @@ var totalNoComercial = function(){
 };
 
 var MESES = DATOS.MESES || [];
+/* Ventana con la que el script calcula el costo de venta (STK.MESES_ROTACION). */
+var MESES_ROT = DATOS.MESES_ROT || 6;
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
 
@@ -658,8 +745,13 @@ var suma = function(o){ var t=0; CLAVES.forEach(function(k){ t += o[k]||0; }); r
 var FUERA = ["ARM","MUN","CARG","ACC"];
 var sumaFuera = function(o){ var t=0; FUERA.forEach(function(k){ t += o[k]||0; }); return t; };
 
-/* ---------------- estado de filtros ---------------- */
-var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*" };
+/* ---------------- estado de filtros ----------------
+   "rot" es la banda de rotación y se comporta distinto a los demás: la
+   rotación se mide por artículo, así que solo puede filtrar las vistas que
+   trabajan a nivel de artículo. Las tablas que salen de la valorización de
+   Odoo (marca, depósito, familia, calibre) no tienen esa dimensión y lo
+   avisan en pantalla en vez de mostrar un número que no corresponde. */
+var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*", rot:"*" };
 var serieActiva = null;
 var orden_filtros = [];
 /* Orden de cada tabla: columna y sentido. */
@@ -696,7 +788,75 @@ var pasa = function(r){
       && (f.fam === "*" || r.fam === f.fam)
       && (f.ctl === "*" || r.ctl === f.ctl);
 };
-var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*" || f.cal!=="*" || f.fam!=="*" || f.ctl!=="*"; };
+var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*" || f.cal!=="*" || f.fam!=="*" || f.ctl!=="*" || f.rot!=="*"; };
+
+/* ---------------- Eje 3: bandas de rotación ----------------
+   Los cortes están acá a propósito, en un solo lugar y con nombre, para que
+   Gerencia los pueda mover sin tocar el resto del reporte. La rotación del
+   artículo se mide en unidades (vendidas ÷ en stock, anualizado) y no en
+   guaraníes: no depende de que el costo esté bien cargado en Odoo. */
+var BANDAS = [
+  { k:"alta",  lab:"Alta",           col:"#2F6B4F", desde:4,
+    dice:"se repone 4 veces al año o más" },
+  { k:"media", lab:"Media",          col:"#3D6E8C", desde:1.5,
+    dice:"se repone entre 1 y 3 veces al año" },
+  { k:"baja",  lab:"Baja",           col:"#B08A2E", desde:0,
+    dice:"más de 8 meses de stock al ritmo actual" },
+  { k:"nula",  lab:"Sin movimiento", col:"#A6432E", desde:null,
+    dice:"con stock y sin una sola venta en el período" },
+  { k:"sinstock", lab:"Sin stock",   col:"#93A0A6", desde:null,
+    dice:"vendió y no le queda existencia" },
+];
+var BANDA = {};
+BANDAS.forEach(function(b){ BANDA[b.k] = b; });
+
+/** En qué banda cae un artículo, a partir de sus unidades. */
+function bandaDe(qv, qs){
+  if (qs <= 0) return "sinstock";
+  if (qv <= 0) return "nula";
+  var r = (qv * 2) / qs;
+  if (r >= BANDA.alta.desde)  return "alta";
+  if (r >= BANDA.media.desde) return "media";
+  return "baja";
+}
+
+/**
+ * Índice por referencia con la rotación del artículo y los otros dos ejes.
+ * ROT_ART no trae familia ni control, así que se toman de ARTICULOS: las dos
+ * listas salen del mismo juego de artículos, de modo que la referencia alcanza
+ * para cruzarlas. Se calcula una sola vez.
+ */
+var ROT_IDX = null;
+function indiceRotacion(){
+  if (ROT_IDX) return ROT_IDX;
+  var dim = {};
+  ARTICULOS.forEach(function(a){
+    if (!dim[a[0]]) {
+      dim[a[0]] = { fam:a[9] || "Sin familia", ctl:a[10] || "No controlado",
+                    marca:a[2], tipo:a[3], cal:a[6] || "Sin calibre", deps:{} };
+    }
+    dim[a[0]].deps[a[4]] = true;
+  });
+  ROT_IDX = {};
+  ROT_ART.forEach(function(a){
+    var d = dim[a[0]] || {};
+    var qv = a[5] || 0, qs = a[6] || 0;
+    ROT_IDX[a[0]] = {
+      ref:a[0], nombre:a[1], marca:a[2],
+      venta:a[3] || 0, stock:a[4] || 0, qv:qv, qs:qs, cat:a[7] || "",
+      fam:d.fam || "Sin familia", ctl:d.ctl || "No controlado",
+      tipo:d.tipo || "", cal:d.cal || "Sin calibre", deps:d.deps || {},
+      rot:qs > 0 ? (qv * 2) / qs : 0, banda:bandaDe(qv, qs),
+    };
+  });
+  return ROT_IDX;
+}
+
+/** La banda de un artículo, o null si no está medido. */
+function bandaDeRef(ref){
+  var x = indiceRotacion()[ref];
+  return x ? x.banda : null;
+}
 
 /** Agrupa las filas que pasan el filtro por la clave que se pida. */
 function agrupar(clave){
@@ -895,7 +1055,7 @@ function armarFiltros(){
   });
   /* Volver al estado inicial: sin filtros, sin búsquedas, arriba de todo. */
   function reiniciar(){
-    f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*" };
+    f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*", rot:"*" };
     var qm = document.getElementById("q-marca"), qa = document.getElementById("q-art");
     if (qm) qm.value = "";
     if (qa) qa.value = "";
@@ -944,7 +1104,7 @@ function armarFiltros(){
     if (!b) return;
     var cual = b.dataset.quitar;
     if (cual === "todos") {
-      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*" };
+      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*", rot:"*" };
     } else {
       f[cual] = "*";
     }
@@ -990,7 +1150,7 @@ function armarFiltros(){
       var ultimo = orden_filtros[orden_filtros.length - 1];
       if (ultimo) { f[ultimo] = "*"; orden_filtros.pop(); }
     } else {
-      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*" };
+      f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*", rot:"*" };
       orden_filtros = [];
     }
     reflejarFiltros(); pintar(); sincronizarSerie();
@@ -1085,6 +1245,7 @@ function pintar(){
   var bloqueado = 0;
   STOCK.forEach(function(r){ if (pasa(r) && esNoComercial(r.dep)) bloqueado += r.v; });
 
+  pintarCambios();
   pintarActivos();
   actualizarOpciones();
   if (window.stkAcomodar) window.stkAcomodar();
@@ -1166,16 +1327,54 @@ function pintar(){
   Array.prototype.forEach.call(document.querySelectorAll("th.sel"), function(th){
     th.classList.toggle("on", th.dataset.cat === f.cat);
   });
+  ejeControl();
+  tablaFamilias(T);
+  ejeRotacion(T);
   tablaMarcas(agrupar("m"), T);
   tablaDepositos(agrupar("dep"), T);
   document.getElementById("nota-dep").textContent = NO_COMERCIAL.length
     ? "Millones de guaraníes · " + NO_COMERCIAL.join(" y ") +
       " guarda stock que no se puede vender: clic para ver el detalle"
     : "Millones de guaraníes · mismo criterio, abierto por ubicación física";
-  tablaFamilias(T);
   tablaCalibres(T);
   tablaArticulos();
   tortas(agrupar("m"));
+}
+
+/**
+ * Qué cambió desde la corrida anterior. Sale de la bitácora que guarda el
+ * script en cada actualización: sin eso, una variación de mil millones entre
+ * ayer y hoy no tiene explicación posible.
+ */
+function pintarCambios(){
+  var caja = document.getElementById("cambios");
+  var c = DATOS.CAMBIO;
+  /* Solo tiene sentido sobre el total: con filtros puestos, la comparación
+     sería contra un total que no coincide. */
+  if (!c || hayFiltro()) { caja.hidden = true; return; }
+
+  var etiquetas = {};
+  CATS.forEach(function(x){ etiquetas[x.k] = x.lab.split(" – ")[0]; });
+
+  var partes = Object.keys(c.cambios || {})
+    .filter(function(k){ return Math.abs(c.cambios[k]) >= 1000000; })
+    .sort(function(a,b){ return Math.abs(c.cambios[b]) - Math.abs(c.cambios[a]); })
+    .map(function(k){
+      var v = c.cambios[k];
+      return '<span class="delta '+(v>0?"sube":"baja")+'">'+
+        esc(etiquetas[k] || k)+' '+(v>0?"▲":"▼")+' '+fmt(Math.abs(v))+'</span>';
+    });
+
+  if (!partes.length && Math.abs(c.total) < 1000000) { caja.hidden = true; return; }
+
+  caja.hidden = false;
+  caja.innerHTML =
+    '<span class="titulo">Desde la corrida del ' + esc(c.desde||"") + '</span>' +
+    '<span style="color:var(--muted)">Gs.</span>' +
+    '<span class="delta '+(c.total>0?"sube":"baja")+'">Total '+
+      (c.total>0?"▲":"▼")+' '+fmt(Math.abs(c.total))+'</span>' +
+    partes.join("") +
+    (c.articulos ? '<span class="delta">'+(c.articulos>0?"+":"")+fmt(c.articulos)+' artículos</span>' : "");
 }
 
 function kpi(lab,val,sub,cls,filtro,porque){
@@ -1302,69 +1501,6 @@ function tablaDepositos(filas, T){
     });
   });
 }
-/* Artículo: [ref, nombre, marca, tipo, dep, cat, cal, cantidad, valor] */
-var A_REF=0, A_NOM=1, A_MAR=2, A_TIPO=3, A_DEP=4, A_CAT=5, A_CAL=6, A_CANT=7, A_VAL=8, A_FAM=9, A_CTL=10;
-
-function articulosFiltrados(){
-  var q = (document.getElementById("q-art").value || "").trim().toLowerCase();
-  return ARTICULOS.filter(function(a){
-    if (f.dep   !== "*" && a[A_DEP]  !== f.dep)   return false;
-    if (f.tipo  !== "*" && a[A_TIPO] !== f.tipo)  return false;
-    if (f.cat   !== "*" && a[A_CAT]  !== f.cat)   return false;
-    if (f.marca !== "*" && a[A_MAR]  !== f.marca) return false;
-    if (f.cal   !== "*" && a[A_CAL]  !== f.cal)   return false;
-    if (f.fam   !== "*" && (a[A_FAM]||"Sin familia") !== f.fam) return false;
-    if (f.ctl   !== "*" && (a[A_CTL]||"No controlado") !== f.ctl) return false;
-    if (q && (a[A_NOM]+" "+a[A_REF]).toLowerCase().indexOf(q) < 0) return false;
-    return true;
-  });
-}
-
-function tablaArticulos(){
-  var filas = articulosFiltrados();
-  var tb = document.querySelector("#tbl-art tbody");
-  var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
-
-  document.getElementById("nota-art").textContent = hayFiltro()
-    ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
-    : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
-  pintarAvisoCategoria(filas);
-
-  document.getElementById("q-art-n").textContent =
-    filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
-
-  if (!filas.length) {
-    /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
-       lo segundo es un problema de publicación, no del filtro. */
-    tb.innerHTML = ARTICULOS.length
-      ? '<tr><td colspan="8" class="empty">Ningún artículo coincide con el filtro.</td></tr>'
-      : '<tr><td colspan="8" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
-        'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
-        'versión del script, y refrescá esta página con Ctrl+F5.</td></tr>';
-    return;
-  }
-  filas = ordenar(filas, orden.art.k, orden.art.asc);
-  marcarOrden("#tbl-art", orden.art);
-  var top = filas.slice(0, 300);
-  tb.innerHTML = top.map(function(a){
-    var c = a[A_CAT];
-    var badge = (c === "A" || c === "B" || c === "C")
-      ? '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>'
-      : '<span style="font-family:var(--mono);font-size:11px;color:var(--'+(c==="NC"?"NC":"SC")+')">'+esc(c)+'</span>';
-    return '<tr><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[A_REF])+'</td>'+
-      '<td class="l">'+esc(a[A_NOM])+'</td>'+
-      '<td class="l">'+esc(a[A_MAR])+'</td>'+
-      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_DEP])+'</td>'+
-      '<td class="l">'+badge+'</td>'+
-      '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
-      '<td class="num">'+fmt(a[A_CANT])+'</td>'+
-      '<td class="num"><b>'+gs(a[A_VAL])+'</b></td></tr>';
-  }).join("") +
-  (filas.length > top.length
-    ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
-    : "");
-}
-
 /**
  * Explica por qué los artículos de la lista están en la categoría filtrada.
  * "Sin categorizar" es lo que más se malinterpreta: no significa que falte
@@ -1432,134 +1568,6 @@ function pintarAvisoCategoria(filas){
   caja.innerHTML = textos[f.cat] + extra;
 }
 
-function tablaFamilias(T){
-  var mapa = {};
-  STOCK.forEach(function(r){
-    if (!pasa(r)) return;
-    if (!mapa[r.fam]) mapa[r.fam] = { k:r.fam, tipos:{}, v:0 };
-    mapa[r.fam].tipos[r.tipo] = true;
-    mapa[r.fam].v += r.v;
-  });
-  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
-    .filter(function(r){ return r.v > 0; });
-
-  var sec = document.getElementById("sec-fam");
-  sec.hidden = filas.length < 2;
-  if (sec.hidden) return;
-
-  filas = ordenar(filas, orden.fam.k, orden.fam.asc);
-  marcarOrden("#tbl-fam", orden.fam);
-  var max = filas.reduce(function(m,r){ return Math.max(m, r.v); }, 0);
-
-  var tb = document.querySelector("#tbl-fam tbody"), tf = document.querySelector("#tbl-fam tfoot");
-  tb.innerHTML = filas.map(function(r){
-    var t = Object.keys(r.tipos);
-    var w = max ? r.v/max*100 : 0;
-    return '<tr data-fam="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
-      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
-      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
-      '<td class="num">'+pct(r.v, T)+'</td>'+
-      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:var(--ink2)"></i></div></td></tr>';
-  }).join("");
-  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
-  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-fam]"), function(tr){
-    tr.addEventListener("click", function(){
-      f.fam = (f.fam === tr.dataset.fam) ? "*" : tr.dataset.fam;
-      registrar("fam");
-      reflejarFiltros(); pintar(); sincronizarSerie();
-    });
-  });
-}
-
-function tablaCalibres(T){
-  var mapa = {};
-  STOCK.forEach(function(r){
-    if (!pasa(r)) return;
-    if (!mapa[r.cal]) mapa[r.cal] = { k:r.cal, tipos:{}, v:0 };
-    mapa[r.cal].tipos[r.tipo] = true;
-    mapa[r.cal].v += r.v;
-  });
-  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
-    .filter(function(r){ return r.v > 0; })
-    .sort(function(a,b){
-      if (orden.cal.k === "v" && !orden.cal.asc) {
-        if (a.k === "Sin calibre") return 1;
-        if (b.k === "Sin calibre") return -1;
-      }
-      return 0;
-    });
-  filas = ordenar(filas, orden.cal.k, orden.cal.asc);
-  marcarOrden("#tbl-cal", orden.cal);
-
-  var sec = document.getElementById("sec-cal");
-  var reales = filas.filter(function(r){ return r.k !== "Sin calibre"; });
-  sec.hidden = reales.length === 0;
-  if (sec.hidden) return;
-
-  var max = filas[0] ? filas[0].v : 0;
-  var tb = document.querySelector("#tbl-cal tbody"), tf = document.querySelector("#tbl-cal tfoot");
-  tb.innerHTML = filas.map(function(r){
-    var t = Object.keys(r.tipos);
-    var w = max ? r.v/max*100 : 0;
-    var color = r.k === "Sin calibre" ? "var(--SC)" : "var(--ink2)";
-    return '<tr data-cal="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
-      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
-      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
-      '<td class="num">'+pct(r.v, T)+'</td>'+
-      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+color+'"></i></div></td></tr>';
-  }).join("");
-  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
-  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
-    tr.addEventListener("click", function(){
-      f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
-      document.getElementById("f-cal").value = f.cal;
-  document.getElementById("f-fam").value = f.fam;
-  document.getElementById("f-ctl").value = f.ctl;
-      pintar();
-    });
-  });
-}
-
-/* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
-function celda(v, k){
-  var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
-  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
-}
-
-function tortas(filas){
-  filas = filas.filter(function(r){ return suma(r) > 0; });
-  var top = filas.slice(0, 24);
-  document.getElementById("nota-pies").textContent = filas.length > 24
-    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
-    : "Mismo esquema replicado para cada marca";
-  if (!top.length) {
-    document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
-    return;
-  }
-  document.getElementById("pies").innerHTML = top.map(function(r){
-    var T = suma(r);
-    var activa = (f.marca === r.k);
-    var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
-      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
-    }).join("");
-    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
-      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
-      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
-  }).join("");
-
-  Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
-    var elegir = function(){
-      f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
-      document.getElementById("f-marca").value = f.marca;
-      pintar(); sincronizarSerie();
-    };
-    el.addEventListener("click", elegir);
-    el.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
-    });
-  });
-}
-
 /* Artículo: [ref, nombre, marca, tipo, dep, cat, cal, cantidad, valor] */
 var A_REF=0, A_NOM=1, A_MAR=2, A_TIPO=3, A_DEP=4, A_CAT=5, A_CAL=6, A_CANT=7, A_VAL=8, A_FAM=9, A_CTL=10;
 
@@ -1573,6 +1581,8 @@ function articulosFiltrados(){
     if (f.cal   !== "*" && a[A_CAL]  !== f.cal)   return false;
     if (f.fam   !== "*" && (a[A_FAM]||"Sin familia") !== f.fam) return false;
     if (f.ctl   !== "*" && (a[A_CTL]||"No controlado") !== f.ctl) return false;
+    /* La banda de rotación es por artículo: acá sí se puede aplicar. */
+    if (f.rot   !== "*" && bandaDeRef(a[A_REF]) !== f.rot) return false;
     if (q && (a[A_NOM]+" "+a[A_REF]).toLowerCase().indexOf(q) < 0) return false;
     return true;
   });
@@ -1623,13 +1633,103 @@ function tablaArticulos(){
     : "");
 }
 
+/* ======================= Eje 1 · Material controlado ======================= */
+
+/**
+ * Stock abierto por controlado / no controlado, con todos los filtros puestos
+ * menos el de control: así las dos tarjetas quedan comparables incluso cuando
+ * una de las dos está elegida.
+ */
+function porControl(){
+  var g = {};
+  STOCK.forEach(function(r){
+    if (f.dep   !== "*" && r.dep  !== f.dep)   return;
+    if (f.tipo  !== "*" && r.tipo !== f.tipo)  return;
+    if (f.cat   !== "*" && r.cat  !== f.cat)   return;
+    if (f.marca !== "*" && r.m    !== f.marca) return;
+    if (f.cal   !== "*" && r.cal  !== f.cal)   return;
+    if (f.fam   !== "*" && r.fam  !== f.fam)   return;
+    var k = r.ctl || "No controlado";
+    if (!g[k]) g[k] = Object.assign({ k:k, marcas:{} }, vacio);
+    g[k].marcas[r.m] = true;
+    if (g[k][r.cat] !== undefined) g[k][r.cat] += r.v;
+  });
+  return g;
+}
+
+function ejeControl(){
+  var g = porControl();
+  var vacia = function(k){ return Object.assign({ k:k, marcas:{} }, vacio); };
+  var lados = [
+    { k:"Controlado",    x:g["Controlado"]    || vacia("Controlado"),
+      pie:"armas, municiones, cargadores y accesorios de arma" },
+    { k:"No controlado", x:g["No controlado"] || vacia("No controlado"),
+      pie:"el stock que sí entra en la clasificación A / B / C" },
+  ];
+  var T = lados.reduce(function(t,l){ return t + suma(l.x); }, 0);
+
+  document.getElementById("cajas-ctl").innerHTML = lados.map(function(l){
+    var v = suma(l.x);
+    var nm = Object.keys(l.x.marcas).length;
+    var partes = CATS.filter(function(c){ return (l.x[c.k] || 0) > 0; })
+      .sort(function(a,b){ return l.x[b.k] - l.x[a.k]; });
+    return '<div class="eje'+(f.ctl === l.k ? " on" : "")+'" data-ctl="'+esc(l.k)+'" '+
+      'tabindex="0" role="button" aria-pressed="'+(f.ctl === l.k)+'" '+
+      'title="Filtrar todo el reporte por '+esc(l.k.toLowerCase())+'">'+
+      '<h3>'+esc(l.k)+'</h3>'+
+      '<strong class="cifra">'+gsM(v)+'</strong>'+
+      '<span class="bajo">'+pct(v, T)+' del stock · '+fmt(nm)+
+        (nm === 1 ? " marca" : " marcas")+' · '+l.pie+'</span>'+
+      '<div class="bar" style="margin-top:12px">'+barra(l.x)+'</div>'+
+      '<ul class="desglose">'+ partes.map(function(c){
+        return '<li data-ctl="'+esc(l.k)+'" data-cat="'+c.k+'" '+
+          'title="Ver '+esc(c.lab)+' dentro de '+esc(l.k.toLowerCase())+'">'+
+          '<span class="pin" style="'+swatch(c)+'"></span>'+
+          '<span>'+esc(c.lab)+'</span>'+
+          '<span class="n">'+fmt(l.x[c.k])+'</span>'+
+          '<span class="p">'+pct(l.x[c.k], v)+'</span></li>';
+      }).join("") + '</ul></div>';
+  }).join("");
+
+  /* Material controlado con A, B o C encima es un dato mal cargado en Odoo:
+     por regla del negocio no debería tener categoría de rotación. */
+  var mal = ["A","B","C"].reduce(function(t,k){
+    return t + ((g["Controlado"] || {})[k] || 0);
+  }, 0);
+  document.getElementById("nota-ctl").innerHTML = mal > 0
+    ? 'Millones de guaraníes · <span class="aviso">' + gsM(mal) +
+      ' de material controlado tiene categoría A, B o C cargada en Odoo, ' +
+      'y por regla del negocio no debería tenerla</span>'
+    : "Millones de guaraníes · clic en una tarjeta para filtrar todo el reporte";
+
+  var tocar = function(ctl, cat){
+    f.ctl = (f.ctl === ctl && (cat === null || f.cat === cat)) ? "*" : ctl;
+    registrar("ctl");
+    if (cat !== null) { f.cat = (f.ctl === "*") ? "*" : cat; registrar("cat"); }
+    reflejarFiltros(); pintar(); sincronizarSerie();
+  };
+  Array.prototype.forEach.call(document.querySelectorAll("#cajas-ctl .eje"), function(el){
+    el.addEventListener("click", function(e){
+      var li = e.target.closest("li[data-cat]");
+      tocar(el.dataset.ctl, li ? li.dataset.cat : null);
+    });
+    el.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tocar(el.dataset.ctl, null); }
+    });
+  });
+}
+
+/* ============================ Eje 2 · Familia ============================= */
+
 function tablaFamilias(T){
   var mapa = {};
   STOCK.forEach(function(r){
     if (!pasa(r)) return;
-    if (!mapa[r.fam]) mapa[r.fam] = { k:r.fam, tipos:{}, v:0 };
-    mapa[r.fam].tipos[r.tipo] = true;
-    mapa[r.fam].v += r.v;
+    if (!mapa[r.fam]) mapa[r.fam] = { k:r.fam, tipos:{}, v:0, ctl:0, nctl:0 };
+    var x = mapa[r.fam];
+    x.tipos[r.tipo] = true;
+    x.v += r.v;
+    if ((r.ctl || "No controlado") === "Controlado") x.ctl += r.v; else x.nctl += r.v;
   });
   var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
     .filter(function(r){ return r.v > 0; });
@@ -1638,26 +1738,175 @@ function tablaFamilias(T){
   sec.hidden = filas.length < 2;
   if (sec.hidden) return;
 
+  var mixtas = filas.filter(function(r){ return r.ctl > 0 && r.nctl > 0; }).length;
+  document.getElementById("nota-fam").innerHTML =
+    "Millones de guaraníes · categoría de producto de Odoo · clic para filtrar" +
+    (mixtas
+      ? ' · <span class="aviso">' + fmt(mixtas) +
+        (mixtas === 1 ? ' familia mezcla' : ' familias mezclan') +
+        ' material controlado con el que no lo es</span>'
+      : "");
+
   filas = ordenar(filas, orden.fam.k, orden.fam.asc);
   marcarOrden("#tbl-fam", orden.fam);
   var max = filas.reduce(function(m,r){ return Math.max(m, r.v); }, 0);
+  var tCtl  = filas.reduce(function(t,r){ return t + r.ctl;  }, 0);
+  var tNctl = filas.reduce(function(t,r){ return t + r.nctl; }, 0);
 
   var tb = document.querySelector("#tbl-fam tbody"), tf = document.querySelector("#tbl-fam tfoot");
   tb.innerHTML = filas.map(function(r){
     var t = Object.keys(r.tipos);
-    var w = max ? r.v/max*100 : 0;
+    var wc = r.v ? r.ctl/max*100 : 0, wn = r.v ? r.nctl/max*100 : 0;
     return '<tr data-fam="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
       '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
+      '<td class="num">'+(r.ctl ? fmt(r.ctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
+      '<td class="num">'+(r.nctl ? fmt(r.nctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
       '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
       '<td class="num">'+pct(r.v, T)+'</td>'+
-      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:var(--ink2)"></i></div></td></tr>';
+      '<td><div class="bar" title="Controlado '+fmt(r.ctl)+' · no controlado '+fmt(r.nctl)+'">'+
+        (wc ? '<i style="width:'+wc.toFixed(1)+'%;background:var(--ARM)"></i>' : '')+
+        (wn ? '<i style="width:'+wn.toFixed(1)+'%;background:#AEB8B8"></i>' : '')+
+      '</div></td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
+  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(tCtl)+'</td>'+
+    '<td class="num">'+fmt(tNctl)+'</td><td class="num">'+fmt(T)+'</td>'+
+    '<td class="num">100%</td><td></td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-fam]"), function(tr){
     tr.addEventListener("click", function(){
       f.fam = (f.fam === tr.dataset.fam) ? "*" : tr.dataset.fam;
       registrar("fam");
       reflejarFiltros(); pintar(); sincronizarSerie();
+    });
+  });
+}
+
+/* =========================== Eje 3 · Rotación ============================= */
+
+/** El filtro común, aplicado a un artículo del índice de rotación. */
+function pasaArt(x, conBanda){
+  if (f.marca !== "*" && x.marca !== f.marca) return false;
+  if (f.fam   !== "*" && x.fam   !== f.fam)   return false;
+  if (f.ctl   !== "*" && x.ctl   !== f.ctl)   return false;
+  if (f.tipo  !== "*" && x.tipo  !== f.tipo)  return false;
+  if (f.cat   !== "*" && x.cat   !== f.cat)   return false;
+  if (f.cal   !== "*" && x.cal   !== f.cal)   return false;
+  if (f.dep   !== "*" && !x.deps[f.dep])      return false;
+  if (conBanda && f.rot !== "*" && x.banda !== f.rot) return false;
+  return true;
+}
+
+function ejeRotacion(T){
+  var tb = document.querySelector("#tbl-banda tbody");
+  var tf = document.querySelector("#tbl-banda tfoot");
+  var aviso = document.getElementById("aviso-rot");
+  var nota = document.getElementById("nota-eje-rot");
+  var idx = indiceRotacion();
+  var refs = Object.keys(idx);
+
+  if (!refs.length) {
+    nota.textContent = "";
+    aviso.hidden = true;
+    tf.innerHTML = "";
+    tb.innerHTML = '<tr><td colspan="8" class="empty">' +
+      'El archivo de datos no incluye el detalle por artículo.<br>' +
+      'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> ' +
+      'con la última versión del script, y refrescá con Ctrl+F5.</td></tr>';
+    return;
+  }
+
+  /* La banda no se aplica acá: la tabla tiene que seguir mostrando las cinco
+     para poder saltar de una a otra. */
+  var mapa = {};
+  BANDAS.forEach(function(b){ mapa[b.k] = { k:b.k, n:0, v:0, ctl:0, nctl:0 }; });
+  var medido = 0, art = 0, sinCosto = 0, porNombre = {};
+  refs.forEach(function(ref){
+    var x = idx[ref];
+    if (!pasaArt(x, false)) return;
+    var fila = mapa[x.banda];
+    fila.n += 1;
+    fila.v += x.stock;
+    if (x.ctl === "Controlado") fila.ctl += x.stock; else fila.nctl += x.stock;
+    medido += x.stock;
+    art += 1;
+    /* Unidades en el depósito pero sin costo cargado: el artículo existe y no
+       suma un guaraní al valorizado. */
+    if (x.qs > 0 && x.stock <= 0) sinCosto += 1;
+    porNombre[x.nombre] = (porNombre[x.nombre] || 0) + 1;
+  });
+  var repetidos = Object.keys(porNombre).filter(function(n){ return porNombre[n] > 1; }).length;
+
+  var filas = BANDAS.map(function(b){ return mapa[b.k]; })
+    .filter(function(r){ return r.n > 0; });
+
+  if (!filas.length) {
+    nota.textContent = "";
+    aviso.hidden = true;
+    tf.innerHTML = "";
+    tb.innerHTML = '<tr><td colspan="8" class="empty">Ningún artículo medido cumple este filtro.</td></tr>';
+    return;
+  }
+
+  var pegas = [];
+  if (sinCosto)  pegas.push("<b>" + fmt(sinCosto) + "</b> " + (sinCosto === 1
+    ? "artículo con unidades en stock y costo cero"
+    : "artículos con unidades en stock y costo cero"));
+  if (repetidos) pegas.push("<b>" + fmt(repetidos) + "</b> " + (repetidos === 1
+    ? "nombre de producto repetido en más de una referencia"
+    : "nombres de producto repetidos en más de una referencia"));
+
+  nota.innerHTML =
+    "Millones de guaraníes · " + fmt(art) + " artículos por " + gsM(medido) +
+    ", el " + pct(medido, T) + " del stock filtrado · unidades vendidas ÷ en stock, " +
+    "anualizado sobre " + MESES_ROT + " meses";
+
+  var max = filas.reduce(function(m,r){ return Math.max(m, r.v); }, 0);
+  tb.innerHTML = filas.map(function(r){
+    var b = BANDA[r.k];
+    var w = max ? r.v/max*100 : 0;
+    return '<tr data-banda="'+r.k+'" style="cursor:pointer"'+
+      (f.rot === r.k ? ' class="sel-fila"' : '')+
+      ' title="Ver los artículos de rotación '+esc(b.lab.toLowerCase())+'">'+
+      '<td class="l"><span class="bnd"><i style="background:'+b.col+'"></i><b>'+esc(b.lab)+'</b></span></td>'+
+      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(b.dice)+'</td>'+
+      '<td class="num">'+fmt(r.n)+'</td>'+
+      '<td class="num">'+(r.ctl ? fmt(r.ctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
+      '<td class="num">'+(r.nctl ? fmt(r.nctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
+      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
+      '<td class="num">'+pct(r.v, medido)+'</td>'+
+      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:'+b.col+'"></i></div></td></tr>';
+  }).join("");
+  tf.innerHTML = '<tr><td>Total medido</td><td></td><td class="num">'+fmt(art)+'</td>'+
+    '<td class="num">'+fmt(filas.reduce(function(t,r){return t+r.ctl;},0))+'</td>'+
+    '<td class="num">'+fmt(filas.reduce(function(t,r){return t+r.nctl;},0))+'</td>'+
+    '<td class="num">'+fmt(medido)+'</td><td class="num">100%</td><td></td></tr>';
+
+  /* El filtro de banda solo puede aplicarse a la lista de artículos: las
+     tablas que salen de la valorización de Odoo no tienen esa dimensión. */
+  var texto = "";
+  if (f.rot !== "*") {
+    var b = BANDA[f.rot];
+    texto =
+      'Estás viendo <b>rotación ' + esc(b.lab.toLowerCase()) + '</b>: ' + esc(b.dice) + '. ' +
+      'Este filtro llega hasta la lista de <b>Artículos</b> de más abajo. Las tablas por ' +
+      'marca, depósito, familia y calibre siguen mostrando el stock completo, porque la ' +
+      'rotación se mide por artículo y la valorización de Odoo no la guarda a ese nivel.';
+  }
+  if (pegas.length) {
+    texto += (texto ? "<br><br>" : "") +
+      'Para revisar en Odoo: ' + pegas.join(" · ") + '. ' +
+      'Un artículo sin costo existe en el depósito y suma Gs. 0 al valorizado; ' +
+      'dos referencias con el mismo nombre suelen ser un producto duplicado.';
+  }
+  aviso.hidden = !texto;
+  aviso.className = "nota-cat";
+  aviso.innerHTML = texto;
+
+  Array.prototype.forEach.call(tb.querySelectorAll("tr[data-banda]"), function(tr){
+    tr.addEventListener("click", function(){
+      f.rot = (f.rot === tr.dataset.banda) ? "*" : tr.dataset.banda;
+      registrar("rot");
+      reflejarFiltros(); pintar();
+      if (f.rot !== "*") abrirArticulos();
     });
   });
 }
@@ -1811,6 +2060,7 @@ function pintarActivos(){
   if (f.cal   !== "*") partes.push(["cal",   "Calibre",   f.cal]);
   if (f.fam   !== "*") partes.push(["fam",   "Familia",   f.fam]);
   if (f.ctl   !== "*") partes.push(["ctl",   "Control",   f.ctl]);
+  if (f.rot   !== "*") partes.push(["rot",   "Rotación",  (BANDA[f.rot]||{lab:f.rot}).lab]);
 
   var caja = document.getElementById("f-activos");
   if (!partes.length) { caja.innerHTML = ""; return; }
@@ -1849,7 +2099,35 @@ function armarPeriodo(){
 }
 
 /** La serie recortada al período elegido. */
+/* Valor reservado para "todas": no puede chocar con un nombre de marca. */
+var TODAS = "\u0002TODAS";
+var esTodas = function(x){ return x === TODAS; };
+var rotuloTodas = function(){
+  return nivel === "fam" ? "Todas las familias" : "Todas las marcas";
+};
+/** Nombre legible de lo que se está graficando. */
+function etiquetaSerie(){
+  if (esTodas(serieActiva)) {
+    return rotuloTodas() + (f.tipo !== "*" ? " · " + f.tipo : "");
+  }
+  return serieActiva || "";
+}
+
 function serieDe(clave){
+  /* "Todas" suma las series una a una en vez de leer un total guardado: así
+     respeta los mismos filtros que la lista de abajo y no hay dos números
+     distintos para lo mismo. Marcas y familias no se superponen entre sí, de
+     modo que la suma no cuenta nada dos veces. */
+  if (esTodas(clave)) {
+    var total = null;
+    marcasConSerie().forEach(function(m){
+      var s = serieFuente()[claveSerie(m)] || [];
+      if (!s.length) return;
+      if (!total) total = s.map(function(v){ return v; });
+      else s.forEach(function(v, i){ total[i] = (total[i] || 0) + v; });
+    });
+    return (total || []).slice(per.desde, per.hasta + 1);
+  }
   return (serieFuente()[claveSerie(clave)] || []).slice(per.desde, per.hasta + 1);
 }
 function mesesDe(){ return MESES.slice(per.desde, per.hasta + 1); }
@@ -1873,11 +2151,20 @@ function sincronizarSerie(){
   }
   var volver = document.getElementById("volver-marca");
   if (volver) volver.hidden = !articuloActivo;
-  if (!serieActiva || lista.indexOf(serieActiva) < 0) serieActiva = lista[0];
+  /* Sin un filtro de marca o familia puesto, el gráfico abre en el total: es
+     la pregunta de arriba ("cómo viene la mercadería"), y bajar a una marca
+     es un paso que se da después. Con filtro puesto manda el filtro. */
+  if (!serieActiva || (!esTodas(serieActiva) && lista.indexOf(serieActiva) < 0)) {
+    serieActiva = (deseado === "*") ? TODAS : lista[0];
+  }
+  if (esTodas(serieActiva)) articuloActivo = null;
 
-  sel.innerHTML = lista.map(function(m){
-    return '<option value="'+esc(m)+'"'+(m===serieActiva?' selected':'')+'>'+esc(m)+'</option>';
-  }).join("");
+  sel.innerHTML =
+    '<option value="'+TODAS+'"'+(esTodas(serieActiva)?' selected':'')+'>'+
+      rotuloTodas()+' ('+fmt(lista.length)+')</option>' +
+    lista.map(function(m){
+      return '<option value="'+esc(m)+'"'+(m===serieActiva?' selected':'')+'>'+esc(m)+'</option>';
+    }).join("");
   evolucion(); rotacion(); rotacionArticulos();
 }
 
@@ -1963,7 +2250,9 @@ function evolucion(){
   var etiquetasMes = mesesDe();
   if (d.length < 2) {
     caja.innerHTML = '<div class="empty">' +
-      (esArticulo ? 'Sin serie histórica para este artículo.' : 'Sin serie histórica para esta marca.') +
+      (esArticulo ? 'Sin serie histórica para este artículo.'
+        : esTodas(serieActiva) ? 'Sin series históricas para este filtro.'
+        : 'Sin serie histórica para esta marca.') +
       '</div>';
     resumen.textContent = "";
     return;
@@ -2006,7 +2295,7 @@ function evolucion(){
     ' style="font-weight:600">'+fmt(Math.round(ult))+' M</text>';
 
   caja.innerHTML =
-    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(serieActiva)+'">'+
+    '<svg viewBox="0 0 '+W+' '+H+'" width="100%" role="img" aria-label="Evolución del stock de '+esc(etiquetaSerie())+'">'+
     '<defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">'+
       '<stop offset="0%" stop-color="#12161A" stop-opacity=".13"/><stop offset="100%" stop-color="#12161A" stop-opacity="0"/>'+
     '</linearGradient></defs>'+ grid +
@@ -2019,7 +2308,7 @@ function evolucion(){
   var variacion = ini0 ? (ult - ini0) / ini0 * 100 : 0;
   var pico = Math.max.apply(null, d), piso = Math.min.apply(null, d);
   resumen.textContent =
-    (esArticulo ? articuloActivo.split("|")[1] + "   ·   " : "") +
+    (esArticulo ? articuloActivo.split("|")[1] : etiquetaSerie()) + "   ·   " +
     etiquetasMes[0] + " → " + etiquetasMes[etiquetasMes.length-1] + "   ·   " +
     gsM(ini0) + " → " + gsM(ult) +
     "  (" + (variacion >= 0 ? "+" : "") + variacion.toFixed(0) + "%)" +
@@ -2113,11 +2402,31 @@ function rotacion(){
  * Solo aparece cuando hay una marca seleccionada: sin marca serían miles de
  * filas sin foco.
  */
+/** Etiqueta de categoría con el color que le corresponde. */
+function badgeCat(c){
+  if (!c) return '<span style="color:#C3C9C9">—</span>';
+  if (c === "A" || c === "B" || c === "C") {
+    return '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>';
+  }
+  return '<span style="font-family:var(--mono);font-size:11px;color:var(--'+
+    (c === "NC" ? "NC" : "SC")+')">'+esc(c)+'</span>';
+}
+
+/** Desglose por canal, para el tooltip de las unidades vendidas. */
+function tituloCanales(porCanal){
+  var k = Object.keys(porCanal || {});
+  if (!k.length) return "Sin ventas en el período";
+  return k.sort().map(function(c){ return c + ": " + fmt(porCanal[c]); }).join(" · ");
+}
+
 function rotacionArticulos(){
   var sec = document.getElementById("sec-rot-art");
   var marca = serieActiva;
-  /* El detalle por artículo se arma por marca: por familia serían miles. */
-  if (!marca || nivel !== "marca" || comparando) { sec.hidden = true; return; }
+  /* El detalle por artículo se arma por marca: por familia, o con el total
+     elegido, serían miles de filas sin foco. */
+  if (!marca || esTodas(marca) || nivel !== "marca" || comparando) {
+    sec.hidden = true; return;
+  }
 
   /* Sin datos por artículo la sección quedaba oculta sin explicar por qué:
      casi siempre es que el datos.js se publicó con una versión anterior. */
@@ -2125,7 +2434,7 @@ function rotacionArticulos(){
     sec.hidden = false;
     document.getElementById("nota-rot-art").textContent = "";
     document.querySelector("#tbl-rot-art tbody").innerHTML =
-      '<tr><td colspan="6" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+      '<tr><td colspan="7" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
       'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
       'versión del script, y refrescá con Ctrl+F5.</td></tr>';
     return;
@@ -2135,15 +2444,20 @@ function rotacionArticulos(){
      más directo de leer y no depende de si el costo está bien cargado. */
   var filas = ROT_ART.filter(function(a){ return a[2] === marca; })
     .map(function(a){
-      var qv = a[5] || 0, qs = a[6] || 0;
-      return [a[0], a[1], a[2], a[3], a[4], qv, qs, qs > 0 ? (qv * 2) / qs : 0];
-    });
+      /* Con un canal elegido, las unidades vendidas son solo las de ese canal. */
+      var porCanal = a[8] || {};
+      var qv = canal === "*" ? (a[5] || 0) : (porCanal[canal] || 0);
+      var qs = a[6] || 0;
+      return [a[0], a[1], a[2], a[3], a[4], qv, qs, a[7] || "",
+              qs > 0 ? (qv * 2) / qs : 0, porCanal];
+    })
+    .filter(function(a){ return canal === "*" || a[5] > 0 || a[6] > 0; });
 
   if (!filas.length) {
     sec.hidden = false;
     document.getElementById("nota-rot-art").textContent = esc(marca);
     document.querySelector("#tbl-rot-art tbody").innerHTML =
-      '<tr><td colspan="6" class="empty">Sin artículos con stock ni ventas para ' +
+      '<tr><td colspan="7" class="empty">Sin artículos con stock ni ventas para ' +
       esc(marca) + '.</td></tr>';
     return;
   }
@@ -2156,7 +2470,9 @@ function rotacionArticulos(){
   var totalQS = filas.reduce(function(t,a){ return t + a[6]; }, 0);
   document.getElementById("nota-rot-art").textContent =
     esc(marca) + " · " + fmt(filas.length) + " artículos · " +
-    fmt(totalQV) + " unidades vendidas · " + fmt(totalQS) + " en stock";
+    fmt(totalQV) + " unidades vendidas" +
+    (canal !== "*" ? " a " + canal.toLowerCase() : "") +
+    " · " + fmt(totalQS) + " en stock";
 
   document.querySelector("#tbl-rot-art tbody").innerHTML = filas.map(function(a){
     var sinBase = a[5] < 1 && a[6] < 1;
@@ -2167,14 +2483,15 @@ function rotacionArticulos(){
       (clave === articuloActivo ? ' class="sel-fila"' : '')+
       '><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[0])+'</td>'+
       '<td class="l">'+esc(a[1])+'</td>'+
-      '<td class="num" title="Costo de venta: '+gs(a[3])+' Gs.">'+fmt(a[5])+'</td>'+
+      '<td class="l">'+badgeCat(a[7])+'</td>'+
+      '<td class="num" title="'+tituloCanales(a[9])+'">'+fmt(a[5])+'</td>'+
       '<td class="num" title="Valor en stock: '+gs(a[4])+' Gs.">'+fmt(a[6])+'</td>'+
       '<td class="num">'+(a[6] <= 0
         ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px" '+
           'title="Vendió y no le queda stock">sin stock</span>'
         : (sinBase
           ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
-          : '<span class="mono">'+a[7].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
+          : '<span class="mono">'+a[8].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
       '<td class="num" style="width:40px">'+(hayHist
         ? '<span style="color:var(--B);font-size:11px">ver ↑</span>' : '')+'</td></tr>';
   }).join("");
@@ -2225,6 +2542,24 @@ document.getElementById("f-serie").addEventListener("change", function(){
 });
 
 /* Alternar entre ver la Parte 2 por marca o por familia. */
+/* Canales disponibles, tomados de lo que trajo el script. */
+(function(){
+  var sel = document.getElementById("f-canal");
+  var vistos = {};
+  ROT_ART.forEach(function(a){
+    Object.keys(a[8] || {}).forEach(function(c){ vistos[c] = true; });
+  });
+  var lista = Object.keys(vistos).sort();
+  sel.hidden = lista.length < 2;
+  if (sel.hidden) return;
+  sel.innerHTML = '<option value="*">Canal: todos</option>' +
+    lista.map(function(c){ return '<option value="'+esc(c)+'">'+esc(c)+'</option>'; }).join("");
+  sel.addEventListener("change", function(){
+    canal = this.value;
+    rotacionArticulos();
+  });
+})();
+
 Array.prototype.forEach.call(document.querySelectorAll("#f-nivel .chip"), function(b){
   b.addEventListener("click", function(){
     nivel = b.dataset.n;
