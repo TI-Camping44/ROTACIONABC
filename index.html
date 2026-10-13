@@ -1530,7 +1530,13 @@ function tablaFamilias(T){
       ABC.map(function(k){ return celda(r[k], k); }).join('')+
       '<td class="num"><b>'+fmt(r._t)+'</b></td>'+
       '<td class="num">'+pct(r._t, T)+'</td>'+
-      '<td><div class="bar"><i style="width:'+w.toFixed(1)+'%;background:var(--ink2)"></i></div></td></tr>';
+      /* El largo de la barra es el peso de la familia contra la más grande;
+         los colores, de qué está hecha. Es el único lugar donde se ve que
+         ACCESORIO DE ARMA es cargadores y accesorios, ahora que esas columnas
+         no están. */
+      '<td><div class="bar" title="'+esc(r.k)+': '+fmt(r._t)+' M"><span '+
+        'style="display:flex;height:100%;width:'+w.toFixed(1)+'%">'+barra(r)+
+      '</span></div></td></tr>';
   }).join("");
   tf.innerHTML = '<tr><td>Total</td>'+ABC.map(function(k){ return celda(s[k], k); }).join('')+
     '<td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
