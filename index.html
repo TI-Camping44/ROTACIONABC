@@ -332,6 +332,19 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
 .chip.sm{font-size:11.5px; padding:3px 9px}
 .clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
+.buscador{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:0 0 14px}
+.buscador label{
+  font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink2);
+  font-weight:600;
+}
+.buscador input{
+  flex:1 1 320px; max-width:460px; font-family:var(--body); font-size:14px;
+  padding:9px 12px; border:1.5px solid var(--ink2); border-radius:3px; background:#fff;
+  color:var(--ink);
+}
+.buscador input::placeholder{color:#9AA4A4; font-size:13px}
+.buscador input:focus{outline:none; border-color:var(--B); box-shadow:0 0 0 3px rgba(61,110,140,.14)}
+
 .salto{
   background:#fff; border:1px solid var(--line); border-radius:2px; cursor:pointer;
   font-family:var(--body); font-size:11.5px; padding:2px 8px; margin:2px 2px 0 0; color:var(--ink);
@@ -607,9 +620,10 @@ td.mes.vacio{color:#D7DCDC}
           tabla de arriba, que va en guaraníes y usa promedio.
           Los montos en guaraníes de cada artículo se ven al pasar el mouse.
         </p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
-          <input type="search" id="q-rot-art" placeholder="Buscar referencia o producto…"
-                 style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:250px">
+        <div class="buscador">
+          <label for="q-rot-art">Buscar</label>
+          <input type="search" id="q-rot-art"
+                 placeholder="referencia interna o parte del nombre del producto…">
           <span class="count" id="q-rot-art-n"></span>
         </div>
         <p class="nota-cat" id="rot-art-otras" hidden></p>
@@ -958,6 +972,8 @@ function armarFiltros(){
     if (qa) qa.value = "";
     var qr = document.getElementById("q-rot-art");
     if (qr) qr.value = "";
+    serieActiva = null;
+    articuloActivo = null;
     reflejarFiltros();
     pintar(); sincronizarSerie();
     irA(0);
@@ -1009,8 +1025,12 @@ function armarFiltros(){
     pintar(); sincronizarSerie();
   });
 
-  document.getElementById("q-art").addEventListener("input", function(){ tablaArticulos(); });
-  document.getElementById("q-rot-art").addEventListener("input", function(){ rotacionArticulos(); });
+  document.getElementById("q-art").addEventListener("input", function(){
+    tablaArticulos(); guardarEstado();
+  });
+  document.getElementById("q-rot-art").addEventListener("input", function(){
+    rotacionArticulos(); guardarEstado();
+  });
 
   /* Descarga la lista filtrada. Sirve para trabajarla en la planilla:
      por ejemplo, mandarle a Comercial los artículos sin categorizar. */
@@ -1126,6 +1146,66 @@ function armarFiltros(){
     "las tablas resumen muestran millones de guaraníes; el detalle por artículo y la rotación, guaraníes completos.";
 }
 
+
+/* ---------------- el estado vive en la dirección ----------------
+   Al recargar, el reporte volvía siempre a la Parte 1 sin filtros: es un
+   archivo estático y no recordaba nada. Guardar lo elegido en la dirección lo
+   arregla y, de paso, hace que se pueda pasar un enlace a una vista concreta
+   —"mirá esta marca en la Parte 2"— en vez de explicar qué hay que tocar.
+   Se usa replaceState para no llenar el botón de atrás del navegador. */
+var restaurando = false;
+
+function guardarEstado(){
+  if (restaurando) return;
+  var e = {};
+  Object.keys(f).forEach(function(k){ if (f[k] !== "*") e[k] = f[k]; });
+  if (panes[1] && !panes[1].hidden) e.p = "2";
+  if (nivel !== "marca") e.nv = nivel;
+  if (serieActiva && !esTodas(serieActiva)) e.s = serieActiva;
+  if (canal !== "*") e.cn = canal;
+  if (articuloActivo) e.art = articuloActivo;
+  var qa = document.getElementById("q-art"), qr = document.getElementById("q-rot-art");
+  if (qa && qa.value) e.qa = qa.value;
+  if (qr && qr.value) e.qr = qr.value;
+
+  var h = Object.keys(e).map(function(k){ return k + "=" + encodeURIComponent(e[k]); }).join("&");
+  try {
+    history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
+  } catch (sinPermiso) { /* archivo local abierto sin servidor: no es grave */ }
+}
+
+/** Devuelve true si hay que abrir en la Parte 2. */
+function restaurarEstado(){
+  var h = (location.hash || "").replace(/^#/, "");
+  if (!h) return false;
+  var e = {};
+  h.split("&").forEach(function(par){
+    var i = par.indexOf("=");
+    if (i > 0) { try { e[par.slice(0, i)] = decodeURIComponent(par.slice(i + 1)); } catch (x) {} }
+  });
+
+  restaurando = true;
+  ["dep","tipo","cat","marca","cal","fam","ctl"].forEach(function(k){
+    if (e[k]) { f[k] = e[k]; registrar(k); }
+  });
+  if (e.nv === "fam") {
+    nivel = "fam";
+    Array.prototype.forEach.call(document.querySelectorAll("#f-nivel .chip"), function(x){
+      x.setAttribute("aria-pressed", String(x.dataset.n === "fam"));
+    });
+    var th = document.getElementById("th-nivel");
+    if (th) th.textContent = "Familia";
+  }
+  if (e.s) serieActiva = e.s;
+  if (e.cn) canal = e.cn;
+  if (e.art) articuloActivo = e.art;
+  var qa = document.getElementById("q-art"), qr = document.getElementById("q-rot-art");
+  if (qa && e.qa) qa.value = e.qa;
+  if (qr && e.qr) qr.value = e.qr;
+  restaurando = false;
+  return e.p === "2";
+}
+
 /* ---------------- Parte 1 ---------------- */
 function pintar(){
   var t = totales(), T = suma(t);
@@ -1204,6 +1284,7 @@ function pintar(){
   tablaCalibres(T);
   tablaArticulos();
   tortas(agrupar("m"));
+  guardarEstado();
 }
 
 /**
@@ -1864,6 +1945,7 @@ function sincronizarSerie(){
       return '<option value="'+esc(m)+'"'+(m===serieActiva?' selected':'')+'>'+esc(m)+'</option>';
     }).join("");
   evolucion(); rotacion(); rotacionArticulos();
+  guardarEstado();
 }
 
 /* Colores para el modo comparar. Se repiten si hay más de doce series. */
@@ -2308,6 +2390,7 @@ function irA(i){
   tabs.forEach(function(x,j){ x.setAttribute("aria-selected", j===i); });
   panes.forEach(function(p,j){ p.hidden = j!==i; });
   if (window.stkAcomodar) window.stkAcomodar();
+  guardarEstado();
 }
 tabs.forEach(function(t,i){
   t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
@@ -2381,8 +2464,11 @@ document.getElementById("volver-marca").addEventListener("click", function(){
   this.hidden = true;
   evolucion(); rotacionArticulos();
 });
+var abrirEnParte2 = restaurarEstado();
+reflejarFiltros();
 pintar();
 sincronizarSerie();
+if (abrirEnParte2) irA(1);
 })();
 </script>
 </body>
