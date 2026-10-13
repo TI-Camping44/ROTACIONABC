@@ -605,7 +605,15 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 
   <footer id="pie"></footer>
 </div>
-<script src="datos.js"></script>
+<!-- El archivo de datos se pide con la hora pegada al nombre. Sin eso, el
+     navegador y el CDN de GitHub Pages guardan el datos.js viejo y el reporte
+     sigue mostrando las cifras de ayer aunque la planilla ya haya publicado
+     las nuevas: era el "hay que tocar F5" de siempre. document.write se usa a
+     propósito, porque corre durante el armado de la página y mantiene el orden
+     de carga, cosa que no pasa si se agrega el <script> después. -->
+<script>
+  document.write('<scr' + 'ipt src="datos.js?v=' + Date.now() + '"><\/scr' + 'ipt>');
+</script>
 <script>
 (function(){
 "use strict";
