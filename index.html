@@ -13,6 +13,7 @@
   --paper:#FFFFFF; --bg:#E7EAEA; --line:#D2D7D7; --line2:#E6E9E9;
   --A:#B08A2E; --B:#3D6E8C; --C:#A6432E; --NC:#8C7A57;
   --ARM:#4A5560; --MUN:#6E7B84; --CARG:#93A0A6; --ACC:#B3BEC3; --SC:#626C76;
+  --N:#4F8A6B;
   --ncbg:#DCD6C8;
   --ok:#2F6B4F;
   --disp:"Barlow Condensed", "Arial Narrow", sans-serif;
@@ -443,6 +444,7 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           <th class="sel" data-cat="A" title="Filtrar por A">A</th>
           <th class="sel" data-cat="B" title="Filtrar por B">B</th>
           <th class="sel" data-cat="C" title="Filtrar por C">C</th>
+          <th class="sel" data-cat="N" title="Filtrar por nuevos">N</th>
           <th class="ord" data-k="_t">Total</th>
           <th>% del stock</th><th style="width:170px">Peso</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
@@ -458,6 +460,7 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           <th class="sel" data-cat="A">A</th>
           <th class="sel" data-cat="B">B</th>
           <th class="sel" data-cat="C">C</th>
+          <th class="sel" data-cat="N">N</th>
           <th class="sel" data-cat="ARM">ARM</th>
           <th class="sel" data-cat="MUN">MUN</th>
           <th class="sel" data-cat="CARG">CARG</th>
@@ -688,8 +691,8 @@ var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
 var gs = function(n){ return fmt(Math.round((n||0) * 1000000)); };
 var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
 var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];}); };
-var vacio = { A:0,B:0,C:0,ARM:0,MUN:0,CARG:0,ACC:0,NC:0 };
-var CLAVES = ["A","B","C","ARM","MUN","CARG","ACC","NC"];
+var vacio = { A:0,B:0,C:0,N:0,ARM:0,MUN:0,CARG:0,ACC:0,NC:0 };
+var CLAVES = ["A","B","C","N","ARM","MUN","CARG","ACC","NC"];
 var suma = function(o){ var t=0; CLAVES.forEach(function(k){ t += o[k]||0; }); return t; };
 /* Material controlado que todavía no tiene letra cargada. */
 var FUERA = ["ARM","MUN","CARG","ACC"];
@@ -1107,9 +1110,11 @@ function armarFiltros(){
 function pintar(){
   var t = totales(), T = suma(t);
   /* La clasificación alcanza a toda la mercadería, así que la cobertura se mide
-     sobre el stock completo: qué parte ya tiene su letra. Lo que falta son los
-     controlados sin categoría (ARM/MUN/CARG/ACC) más los NC. */
-  var clasificado = t.A + t.B + t.C;
+     sobre el stock completo: qué parte ya tiene su letra. N cuenta como
+     clasificado, porque marcar un producto como nuevo es una decisión tomada y
+     no un dato que falte. Lo que falta son los controlados sin categoría
+     (ARM/MUN/CARG/ACC) más los NC. */
+  var clasificado = t.A + t.B + t.C + t.N;
   var sinClasificar = T - clasificado;
   var cobertura = T ? clasificado/T*100 : 0;
   var bloqueado = 0;
@@ -1134,10 +1139,11 @@ function pintar(){
           : "")),
     kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
         gsM(sinClasificar) + " todavía sin categorizar", "warn", "NC",
-        "Qué parte de todo el stock ya tiene su A, B o C en Odoo. La clasificación " +
+        "Qué parte de todo el stock ya tiene categoría en Odoo. La clasificación " +
         "alcanza a toda la mercadería, armas y municiones incluidas, así que lo que " +
         "falta se mide contra el stock completo y no contra una parte. " +
-        "Los productos marcados D, N o \"Sin categoria\" cuentan como sin clasificar."),
+        "<b>N</b> (producto nuevo) cuenta como clasificado: es una decisión tomada. " +
+        "Lo que figura como \"Sin categoria\" o en blanco, no."),
     kpi("Capital en Categoría C", gsM(t.C),
         pct(t.C, T) + " del stock total · liquidación pendiente", "", "C",
         "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
@@ -1274,7 +1280,7 @@ function sinResultados(){
 function tablaDepositos(filas, T){
   var tb = document.querySelector("#tbl-dep tbody"), tf = document.querySelector("#tbl-dep tfoot");
   if (!filas.length) {
-    tb.innerHTML = '<tr><td colspan="11" class="empty">Sin datos para este filtro.</td></tr>';
+    tb.innerHTML = '<tr><td colspan="12" class="empty">Sin datos para este filtro.</td></tr>';
     tf.innerHTML = ""; return;
   }
   var s = Object.assign({}, vacio);
@@ -1321,6 +1327,9 @@ function pintarAvisoCategoria(filas){
          'miras, culatas y demás accesorios de armas.',
     C: '<b>Categoría C</b> es la mercadería marcada para liquidar según la matriz vigente. ' +
        'Es capital inmovilizado que el MP-MIS-01 pide liberar.',
+    N: '<b>N</b> es producto <b>nuevo</b>: entró hace poco y todavía no tiene historia de ' +
+       'rotación suficiente para asignarle A, B o C. No es un dato que falte, es una ' +
+       'categoría asignada a propósito, y por eso cuenta dentro de la cobertura de la matriz.',
     A: '<b>Categoría A</b> son los productos de mayor rotación según la matriz vigente.',
     B: '<b>Categoría B</b> son los productos de rotación intermedia según la matriz vigente.',
   };
@@ -1535,7 +1544,7 @@ function tablaFamilias(T){
   marcarOrden("#tbl-fam", orden.fam);
   var max = filas.reduce(function(m,r){ return Math.max(m, r._t); }, 0);
 
-  var ABC = ["A","B","C"];
+  var ABC = ["A","B","C","N"];
   var s = Object.assign({}, vacio);
   var tb = document.querySelector("#tbl-fam tbody"), tf = document.querySelector("#tbl-fam tfoot");
   tb.innerHTML = filas.map(function(r){
