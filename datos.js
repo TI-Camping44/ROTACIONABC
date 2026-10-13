@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 13/10/2026 13:55.
+/* Generado desde la planilla el 13/10/2026 14:08.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -7,25 +7,25 @@ var DATOS = {
       "k": "A",
       "lab": "A – Potenciar",
       "col": "var(--A)",
-      "raw": "#B08A2E"
+      "raw": "#2F7D4F"
     },
     {
       "k": "B",
       "lab": "B – Mantener",
       "col": "var(--B)",
-      "raw": "#3D6E8C"
+      "raw": "#B8921B"
     },
     {
       "k": "C",
       "lab": "C – Liquidar",
       "col": "var(--C)",
-      "raw": "#A6432E"
+      "raw": "#C0392B"
     },
     {
       "k": "N",
       "lab": "N – Nuevo",
       "col": "var(--N)",
-      "raw": "#4F8A6B"
+      "raw": "#3D6E8C"
     },
     {
       "k": "ARM",
@@ -58,7 +58,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "13/10/2026 13:54",
+  "GENERADO": "13/10/2026 14:01",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [],
