@@ -683,7 +683,7 @@ var esc = function(s){ return String(s).replace(/[&<>"]/g,function(c){return {"&
 var vacio = { A:0,B:0,C:0,ARM:0,MUN:0,CARG:0,ACC:0,NC:0 };
 var CLAVES = ["A","B","C","ARM","MUN","CARG","ACC","NC"];
 var suma = function(o){ var t=0; CLAVES.forEach(function(k){ t += o[k]||0; }); return t; };
-/* Fuera del alcance ABC: armas, municiones y cargadores. */
+/* Material controlado que todavía no tiene letra cargada. */
 var FUERA = ["ARM","MUN","CARG","ACC"];
 var sumaFuera = function(o){ var t=0; FUERA.forEach(function(k){ t += o[k]||0; }); return t; };
 
@@ -1098,22 +1098,14 @@ function armarFiltros(){
 /* ---------------- Parte 1 ---------------- */
 function pintar(){
   var t = totales(), T = suma(t);
-  var alcance = T - sumaFuera(t);
-  var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
+  /* La clasificación alcanza a toda la mercadería, así que la cobertura se mide
+     sobre el stock completo: qué parte ya tiene su letra. Lo que falta son los
+     controlados sin categoría (ARM/MUN/CARG/ACC) más los NC. */
+  var clasificado = t.A + t.B + t.C;
+  var sinClasificar = T - clasificado;
+  var cobertura = T ? clasificado/T*100 : 0;
   var bloqueado = 0;
-  /* Capital en C sobre TODO el stock, no solo sobre la parte que lleva
-     clasificación: un arma o una munición con C cargada en Odoo también es
-     mercadería marcada para liquidar. La categoría final de esas filas es
-     ARM/MUN/CARG/ACC, así que la letra se lee del campo aparte que publica el
-     script. Si el archivo de datos es viejo y no lo trae, se cae al valor de
-     siempre y la tarjeta sigue funcionando. */
-  var hayAbc = STOCK.some(function(r){ return r.abc; });
-  var capitalC = 0;
-  STOCK.forEach(function(r){
-    if (!pasa(r)) return;
-    if (esNoComercial(r.dep)) bloqueado += r.v;
-    if (hayAbc ? (r.abc === "C") : (r.cat === "C")) capitalC += r.v;
-  });
+  STOCK.forEach(function(r){ if (pasa(r) && esNoComercial(r.dep)) bloqueado += r.v; });
 
   pintarCambios();
   pintarActivos();
@@ -1133,19 +1125,16 @@ function pintar(){
             ", que existe en stock pero hoy no se puede vender."
           : "")),
     kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
-        gsM(t.NC) + " todavía sin categorizar", "warn", "NC",
-        "Del stock que sí puede clasificarse, cuánto ya tiene su A, B o C. " +
-        "Si baja, hay productos nuevos sin categorizar o la matriz semestral quedó vieja."),
-    kpi("Capital en Categoría C", gsM(capitalC),
-        pct(capitalC, T) + " del stock total · liquidación pendiente", "", "C",
+        gsM(sinClasificar) + " todavía sin categorizar", "warn", "NC",
+        "Qué parte de todo el stock ya tiene su A, B o C en Odoo. La clasificación " +
+        "alcanza a toda la mercadería, armas y municiones incluidas, así que lo que " +
+        "falta se mide contra el stock completo y no contra una parte. " +
+        "Los productos marcados D, N o \"Sin categoria\" cuentan como sin clasificar."),
+    kpi("Capital en Categoría C", gsM(t.C),
+        pct(t.C, T) + " del stock total · liquidación pendiente", "", "C",
         "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
-        "inmovilizado que el MP-MIS-01 pide liberar. Cuenta la C de todo el " +
-        "stock, también la de armas, municiones y accesorios controlados: la " +
-        "clasificación alcanza a toda la mercadería." +
-        (hayAbc && capitalC > t.C
-          ? " De ese total, " + gsM(capitalC - t.C) + " es material controlado, " +
-            "que en las tablas de abajo figura por su tipo y no como C."
-          : "")),
+        "inmovilizado que el MP-MIS-01 pide liberar. Incluye el material controlado " +
+        "marcado C: la clasificación alcanza a toda la mercadería."),
   ].join("");
 
   /* Cada KPI abre el detalle de lo que está contando. */
@@ -1310,18 +1299,18 @@ function pintarAvisoCategoria(filas){
     NC: '<b>Sin categorizar</b> quiere decir que el producto todavía no tiene ' +
         'asignada una categoría A, B o C en Odoo. No es un dato que falte del artículo: ' +
         'es que el ciclo semestral del MP-MIS-01 no lo alcanzó, sea porque entró después ' +
-        'de la última matriz o porque quedó fuera de ella. La columna <b>Cat.</b> ' +
-        'es la clasificación ABC y no tiene relación con el calibre.',
-    ARM: '<b>ARM</b> son armas de fuego. Por regla del negocio no llevan clasificación ' +
-         'A, B o C: quedan fuera del alcance del ABC y por eso no aparecen en la cobertura ' +
-         'de la matriz.',
-    MUN: '<b>MUN</b> son municiones. Igual que las armas, no llevan clasificación A, B o C ' +
-         'por regla del negocio.',
-    CARG: '<b>CARG</b> son cargadores. Se reconocen por el nombre del producto, porque en ' +
-          'Odoo están dentro de Accesorio de arma. Tampoco llevan clasificación ABC.',
-    ACC: '<b>ACC</b> son accesorios de material controlado: fundas, miras, culatas y demás ' +
-         'accesorios de armas. Al ser material controlado quedan fuera del alcance del ABC, ' +
-         'igual que las armas y las municiones.',
+        'de la última matriz o porque quedó fuera de ella. Acá entran también los que ' +
+        'figuran como D, N o "Sin categoria". La columna <b>Cat.</b> es la clasificación ' +
+        'ABC y no tiene relación con el calibre.',
+    ARM: '<b>ARM</b> son armas de fuego que <b>todavía no tienen</b> categoría de rotación ' +
+         'cargada en Odoo. Las que sí la tienen aparecen en su letra, porque la clasificación ' +
+         'alcanza a toda la mercadería.',
+    MUN: '<b>MUN</b> son municiones sin categoría de rotación cargada. Las que ya la tienen ' +
+         'figuran en A, B o C como cualquier otro producto.',
+    CARG: '<b>CARG</b> son cargadores sin categoría cargada. Se reconocen por el nombre del ' +
+          'producto, porque en Odoo están dentro de Accesorio de arma.',
+    ACC: '<b>ACC</b> son accesorios de material controlado sin categoría cargada: fundas, ' +
+         'miras, culatas y demás accesorios de armas.',
     C: '<b>Categoría C</b> es la mercadería marcada para liquidar según la matriz vigente. ' +
        'Es capital inmovilizado que el MP-MIS-01 pide liberar.',
     A: '<b>Categoría A</b> son los productos de mayor rotación según la matriz vigente.',
@@ -1487,15 +1476,15 @@ function ejeControl(){
       }).join("") + '</ul></div>';
   }).join("");
 
-  /* Material controlado con A, B o C encima es un dato mal cargado en Odoo:
-     por regla del negocio no debería tener categoría de rotación. */
-  var mal = ["A","B","C"].reduce(function(t,k){
-    return t + ((g["Controlado"] || {})[k] || 0);
-  }, 0);
-  document.getElementById("nota-ctl").innerHTML = mal > 0
-    ? 'Millones de guaraníes · <span class="aviso">' + gsM(mal) +
-      ' de material controlado tiene categoría A, B o C cargada en Odoo, ' +
-      'y por regla del negocio no debería tenerla</span>'
+  /* La clasificación alcanza a toda la mercadería, así que un controlado con
+     A/B/C está bien. Lo que conviene mirar es el que todavía no tiene ninguna:
+     ese es el que queda afuera de la matriz. */
+  var ctlObj = g["Controlado"] || {};
+  var falta = FUERA.reduce(function(t,k){ return t + (ctlObj[k] || 0); }, 0)
+            + (ctlObj.NC || 0);
+  document.getElementById("nota-ctl").innerHTML = falta > 0
+    ? 'Millones de guaraníes · <span class="aviso">' + gsM(falta) +
+      ' de material controlado todavía no tiene categoría cargada en Odoo</span>'
     : "Millones de guaraníes · clic en una tarjeta para filtrar todo el reporte";
 
   var tocar = function(ctl, cat){
