@@ -334,6 +334,12 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
 .count{font-family:var(--mono); font-size:11px; color:var(--muted)}
 
+/* Columnas de mes del detalle por artículo: angostas, para que entren seis o
+   siete sin empujar el resto de la tabla fuera de la pantalla. */
+th.mes{font-size:10px; letter-spacing:.03em; white-space:nowrap}
+td.mes{font-family:var(--mono); font-size:11.5px; width:58px}
+td.mes.vacio{color:#D7DCDC}
+
 /* Eje 1: las dos mitades del stock según sea material controlado o no.
    Son tarjetas y no filas de tabla porque el corte es binario y conviene
    que se lea de un golpe antes que cualquier otro desglose. */
@@ -596,15 +602,7 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
           Los montos en guaraníes de cada artículo se ven al pasar el mouse.
         </p>
         <div class="scroll"><table id="tbl-rot-art">
-          <thead><tr>
-            <th class="ord l" data-k="0">Referencia</th>
-            <th class="ord l" data-k="1">Producto</th>
-            <th class="ord l" data-k="7">Cat.</th>
-            <th class="ord" data-k="5">Vendidas (unid.)</th>
-            <th class="ord" data-k="6">En stock (unid.)</th>
-            <th class="ord" data-k="8">Rotación (veces/año)</th>
-            <th></th>
-          </tr></thead><tbody></tbody>
+          <thead><tr id="rot-art-head"></tr></thead><tbody></tbody>
         </table></div>
       </div>
     </section>
@@ -685,6 +683,10 @@ var totalNoComercial = function(){
 };
 
 var MESES = DATOS.MESES || [];
+/* Etiquetas de los meses de venta: una columna por mes en el detalle por
+   artículo. Si el datos.js es anterior no vienen, y la tabla se arma sin ellas. */
+var MESES_VENTA = DATOS.MESES_VENTA || [];
+var MESES_ROT = DATOS.MESES_ROT || 6;
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
 
@@ -1052,7 +1054,6 @@ function armarFiltros(){
   conectarOrden("#tbl-cal", orden.cal, function(){ pintar(); });
   conectarOrden("#tbl-fam", orden.fam, function(){ pintar(); });
   conectarOrden("#tbl-rot", orden.rot, function(){ rotacion(); });
-  conectarOrden("#tbl-rot-art", orden.rota, function(){ rotacionArticulos(); });
   conectarOrden("#tbl-art", orden.art, function(){ tablaArticulos(); });
 
   /* Clic en el encabezado de una categoría: filtra por ella. */
@@ -2101,6 +2102,38 @@ function tituloCanales(porCanal){
   return k.sort().map(function(c){ return c + ": " + fmt(porCanal[c]); }).join(" · ");
 }
 
+/**
+ * Cabecera del detalle por artículo. Se arma en JS porque la cantidad de meses
+ * depende de los datos publicados: con un datos.js anterior no hay columnas de
+ * mes y la tabla queda como antes, sin romperse.
+ */
+function armarCabeceraArticulos(){
+  var tr = document.getElementById("rot-art-head");
+  if (tr.dataset.meses === String(MESES_VENTA.length)) return;
+  tr.dataset.meses = String(MESES_VENTA.length);
+  tr.innerHTML =
+    '<th class="ord l" data-k="0">Referencia</th>' +
+    '<th class="ord l" data-k="1">Producto</th>' +
+    '<th class="ord l" data-k="7">Cat.</th>' +
+    MESES_VENTA.map(function(etiqueta, i){
+      return '<th class="ord mes" data-k="'+(11 + i)+'">'+esc(etiqueta)+'</th>';
+    }).join('') +
+    '<th class="ord" data-k="5">Suma vendidas</th>' +
+    '<th class="ord" data-k="6">Stock actual</th>' +
+    '<th class="ord" data-k="8">Rotación (veces/año)</th>' +
+    '<th></th>';
+  /* Los encabezados nuevos necesitan su propio enganche de orden. */
+  Array.prototype.forEach.call(tr.querySelectorAll("th.ord"), function(th){
+    th.addEventListener("click", function(){
+      var k = th.dataset.k;
+      var num = String(Number(k)) === String(k) ? Number(k) : k;
+      if (String(orden.rota.k) === String(num)) orden.rota.asc = !orden.rota.asc;
+      else { orden.rota.k = num; orden.rota.asc = false; }
+      rotacionArticulos();
+    });
+  });
+}
+
 function rotacionArticulos(){
   var sec = document.getElementById("sec-rot-art");
   var marca = serieActiva;
@@ -2116,7 +2149,7 @@ function rotacionArticulos(){
     sec.hidden = false;
     document.getElementById("nota-rot-art").textContent = "";
     document.querySelector("#tbl-rot-art tbody").innerHTML =
-      '<tr><td colspan="7" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
+      '<tr><td colspan="20" class="empty">El archivo de datos no incluye el detalle por artículo.<br>' +
       'En la planilla, ejecutá <b>Reporte de Stock → 3. Actualizar y publicar</b> con la última ' +
       'versión del script, y refrescá con Ctrl+F5.</td></tr>';
     return;
@@ -2130,8 +2163,12 @@ function rotacionArticulos(){
       var porCanal = a[8] || {};
       var qv = canal === "*" ? (a[5] || 0) : (porCanal[canal] || 0);
       var qs = a[6] || 0;
-      return [a[0], a[1], a[2], a[3], a[4], qv, qs, a[7] || "",
-              qs > 0 ? (qv * 2) / qs : 0, porCanal];
+      var meses = a[9] || [];
+      var fila = [a[0], a[1], a[2], a[3], a[4], qv, qs, a[7] || "",
+                  qs > 0 ? (qv * 2) / qs : 0, porCanal, meses];
+      /* Cada mes como columna ordenable: los índices 11 en adelante. */
+      MESES_VENTA.forEach(function(_, i){ fila[11 + i] = meses[i] || 0; });
+      return fila;
     })
     .filter(function(a){ return canal === "*" || a[5] > 0 || a[6] > 0; });
 
@@ -2139,11 +2176,12 @@ function rotacionArticulos(){
     sec.hidden = false;
     document.getElementById("nota-rot-art").textContent = esc(marca);
     document.querySelector("#tbl-rot-art tbody").innerHTML =
-      '<tr><td colspan="7" class="empty">Sin artículos con stock ni ventas para ' +
+      '<tr><td colspan="20" class="empty">Sin artículos con stock ni ventas para ' +
       esc(marca) + '.</td></tr>';
     return;
   }
   sec.hidden = false;
+  armarCabeceraArticulos();
 
   filas = ordenar(filas, orden.rota.k, orden.rota.asc);
   marcarOrden("#tbl-rot-art", orden.rota);
@@ -2166,6 +2204,11 @@ function rotacionArticulos(){
       '><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[0])+'</td>'+
       '<td class="l">'+esc(a[1])+'</td>'+
       '<td class="l">'+badgeCat(a[7])+'</td>'+
+      MESES_VENTA.map(function(etiqueta, i){
+        var q = a[11 + i] || 0;
+        return '<td class="num mes'+(q ? '' : ' vacio')+'" title="'+esc(etiqueta)+'">'+
+               (q ? fmt(q) : '<span style="color:#D7DCDC">0</span>')+'</td>';
+      }).join('')+
       '<td class="num" title="'+tituloCanales(a[9])+'">'+fmt(a[5])+'</td>'+
       '<td class="num" title="Valor en stock: '+gs(a[4])+' Gs.">'+fmt(a[6])+'</td>'+
       '<td class="num">'+(a[6] <= 0
