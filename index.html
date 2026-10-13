@@ -1101,7 +1101,19 @@ function pintar(){
   var alcance = T - sumaFuera(t);
   var cobertura = alcance ? (alcance - t.NC)/alcance*100 : 0;
   var bloqueado = 0;
-  STOCK.forEach(function(r){ if (pasa(r) && esNoComercial(r.dep)) bloqueado += r.v; });
+  /* Capital en C sobre TODO el stock, no solo sobre la parte que lleva
+     clasificación: un arma o una munición con C cargada en Odoo también es
+     mercadería marcada para liquidar. La categoría final de esas filas es
+     ARM/MUN/CARG/ACC, así que la letra se lee del campo aparte que publica el
+     script. Si el archivo de datos es viejo y no lo trae, se cae al valor de
+     siempre y la tarjeta sigue funcionando. */
+  var hayAbc = STOCK.some(function(r){ return r.abc; });
+  var capitalC = 0;
+  STOCK.forEach(function(r){
+    if (!pasa(r)) return;
+    if (esNoComercial(r.dep)) bloqueado += r.v;
+    if (hayAbc ? (r.abc === "C") : (r.cat === "C")) capitalC += r.v;
+  });
 
   pintarCambios();
   pintarActivos();
@@ -1124,10 +1136,16 @@ function pintar(){
         gsM(t.NC) + " todavía sin categorizar", "warn", "NC",
         "Del stock que sí puede clasificarse, cuánto ya tiene su A, B o C. " +
         "Si baja, hay productos nuevos sin categorizar o la matriz semestral quedó vieja."),
-    kpi("Capital en Categoría C", gsM(t.C),
-        pct(t.C, alcance) + " del stock que lleva clasificación ABC · liquidación pendiente", "", "C",
+    kpi("Capital en Categoría C", gsM(capitalC),
+        pct(capitalC, T) + " del stock total · liquidación pendiente", "", "C",
         "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
-        "inmovilizado que el MP-MIS-01 pide liberar."),
+        "inmovilizado que el MP-MIS-01 pide liberar. Cuenta la C de todo el " +
+        "stock, también la de armas, municiones y accesorios controlados: la " +
+        "clasificación alcanza a toda la mercadería." +
+        (hayAbc && capitalC > t.C
+          ? " De ese total, " + gsM(capitalC - t.C) + " es material controlado, " +
+            "que en las tablas de abajo figura por su tipo y no como C."
+          : "")),
   ].join("");
 
   /* Cada KPI abre el detalle de lo que está contando. */
