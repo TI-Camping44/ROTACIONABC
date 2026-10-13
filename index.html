@@ -157,7 +157,7 @@ section{scroll-margin-top:120px}
 .shead .note{font-size:11.5px; color:var(--muted)}
 
 /* ---------- KPIs ---------- */
-.kpis{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+.kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
 .kpi{background:var(--paper); border:1px solid var(--line); padding:14px 16px; position:relative; overflow:hidden}
 .kpi span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 .kpi strong{display:block; font-family:var(--mono); font-weight:500; font-size:23px; margin-top:6px; letter-spacing:-.02em}
@@ -439,11 +439,17 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
         <div class="note" id="nota-fam"></div></div>
       <div class="card"><div class="scroll"><table id="tbl-fam">
         <thead><tr>
-          <th class="ord l" data-k="k">Familia</th><th class="l">Tipo</th>
-          <th class="ord" data-k="ctl"><span class="bnd"><i style="background:#4A5560"></i>Controlado</span></th>
-          <th class="ord" data-k="nctl"><span class="bnd"><i style="background:#AEB8B8"></i>No controlado</span></th>
-          <th class="ord" data-k="v">Total a costo</th>
-          <th>% del stock</th><th style="width:170px">Peso</th>
+          <th class="ord l" data-k="k">Familia</th>
+          <th class="sel" data-cat="A" title="Filtrar por A">A</th>
+          <th class="sel" data-cat="B" title="Filtrar por B">B</th>
+          <th class="sel" data-cat="C" title="Filtrar por C">C</th>
+          <th class="sel" data-cat="ARM" title="Filtrar por armas">ARM</th>
+          <th class="sel" data-cat="MUN" title="Filtrar por municiones">MUN</th>
+          <th class="sel" data-cat="CARG" title="Filtrar por cargadores">CARG</th>
+          <th class="sel" data-cat="ACC" title="Filtrar por accesorios controlados">ACC</th>
+          <th class="sel" data-cat="NC" title="Filtrar por sin categorizar">Sin categorizar</th>
+          <th class="ord" data-k="_t">Total</th>
+          <th>% del stock</th><th style="width:140px">Peso</th>
         </tr></thead><tbody></tbody><tfoot></tfoot>
       </table></div></div>
     </section>
@@ -755,7 +761,7 @@ var f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*", rot:
 var serieActiva = null;
 var orden_filtros = [];
 /* Orden de cada tabla: columna y sentido. */
-var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:5, asc:false}, fam:{k:"v", asc:false},
+var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:5, asc:false}, fam:{k:"_t", asc:false},
               mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
 
 /** Ordena filas por una clave, con texto e números tratados distinto. */
@@ -1262,18 +1268,12 @@ function pintar(){
           ? " Incluye " + gsM(bloqueado) + " en " + NO_COMERCIAL.join(", ") +
             ", que existe en stock pero hoy no se puede vender."
           : "")),
-    kpi("Dentro del alcance ABC", gsM(alcance),
-        sumaFuera(t) ? "excluye material controlado (" + pct(sumaFuera(t),T) + " del total)"
-                     : "sin exclusiones", "", "alcance",
-        "Stock total menos el material controlado: armas, municiones, cargadores y " +
-        "accesorios de material controlado. Nada de eso lleva clasificación A/B/C por " +
-        "regla del negocio, así que se aparta para no distorsionar el resto."),
     kpi("Cobertura de la matriz", cobertura.toFixed(1).replace(".",",")+"%",
         gsM(t.NC) + " todavía sin categorizar", "warn", "NC",
         "Del stock que sí puede clasificarse, cuánto ya tiene su A, B o C. " +
         "Si baja, hay productos nuevos sin categorizar o la matriz semestral quedó vieja."),
     kpi("Capital en Categoría C", gsM(t.C),
-        pct(t.C, alcance) + " del alcance ABC · liquidación pendiente", "", "C",
+        pct(t.C, alcance) + " del stock que lleva clasificación ABC · liquidación pendiente", "", "C",
         "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
         "inmovilizado que el MP-MIS-01 pide liberar."),
   ].join("");
@@ -1282,7 +1282,7 @@ function pintar(){
   Array.prototype.forEach.call(document.querySelectorAll(".kpi.click"), function(el){
     var ir = function(irAbajo){
       var d = el.dataset.filtro;
-      f.cat = (d === "todo" || d === "alcance") ? "*" : d;
+      f.cat = (d === "todo") ? "*" : d;
       registrar("cat");
       reflejarFiltros(); pintar(); sincronizarSerie();
       /* Solo baja a la lista si se tocó "ver artículos": el resto de la
@@ -1387,7 +1387,7 @@ function kpi(lab,val,sub,cls,filtro,porque){
       'this.setAttribute(\'aria-expanded\',v)">?</button>'+
     '</span>'+
     '<strong>'+val+'</strong><em>'+esc(sub)+'</em>'+
-    (filtro && filtro !== "todo" && filtro !== "alcance" ? '<span class="ver">ver artículos →</span>' : '')+
+    (filtro && filtro !== "todo" ? '<span class="ver">ver artículos →</span>' : '')+
     '<p class="formula" id="'+id+'" hidden style="margin-top:9px">'+porque+'</p></div>';
 }
 
@@ -1721,24 +1721,24 @@ function ejeControl(){
 
 /* ============================ Eje 2 · Familia ============================= */
 
+/**
+ * Familias abiertas por categoría, con las mismas columnas que las tablas de
+ * marca y depósito. El nombre de la familia ya dice si es material controlado
+ * —MUNICION, ARMA— así que separar controlado de no controlado repetía un dato
+ * que la fila tiene a la vista; las categorías, en cambio, no se deducen.
+ */
 function tablaFamilias(T){
-  var mapa = {};
-  STOCK.forEach(function(r){
-    if (!pasa(r)) return;
-    if (!mapa[r.fam]) mapa[r.fam] = { k:r.fam, tipos:{}, v:0, ctl:0, nctl:0 };
-    var x = mapa[r.fam];
-    x.tipos[r.tipo] = true;
-    x.v += r.v;
-    if ((r.ctl || "No controlado") === "Controlado") x.ctl += r.v; else x.nctl += r.v;
-  });
-  var filas = Object.keys(mapa).map(function(k){ return mapa[k]; })
-    .filter(function(r){ return r.v > 0; });
+  var filas = agrupar("fam").filter(function(r){ return suma(r) > 0; });
 
   var sec = document.getElementById("sec-fam");
   sec.hidden = filas.length < 2;
   if (sec.hidden) return;
 
-  var mixtas = filas.filter(function(r){ return r.ctl > 0 && r.nctl > 0; }).length;
+  /* Una familia con valor en las dos mitades mezcla material controlado con el
+     que no lo es: no rompe nada, pero conviene que se vea. */
+  var mixtas = filas.filter(function(r){
+    return sumaFuera(r) > 0 && (suma(r) - sumaFuera(r)) > 0;
+  }).length;
   document.getElementById("nota-fam").innerHTML =
     "Millones de guaraníes · categoría de producto de Odoo · clic para filtrar" +
     (mixtas
@@ -1747,30 +1747,25 @@ function tablaFamilias(T){
         ' material controlado con el que no lo es</span>'
       : "");
 
+  filas.forEach(function(r){ r._t = suma(r); });
   filas = ordenar(filas, orden.fam.k, orden.fam.asc);
   marcarOrden("#tbl-fam", orden.fam);
-  var max = filas.reduce(function(m,r){ return Math.max(m, r.v); }, 0);
-  var tCtl  = filas.reduce(function(t,r){ return t + r.ctl;  }, 0);
-  var tNctl = filas.reduce(function(t,r){ return t + r.nctl; }, 0);
+  var max = filas.reduce(function(m,r){ return Math.max(m, r._t); }, 0);
 
+  var s = Object.assign({}, vacio);
   var tb = document.querySelector("#tbl-fam tbody"), tf = document.querySelector("#tbl-fam tfoot");
   tb.innerHTML = filas.map(function(r){
-    var t = Object.keys(r.tipos);
-    var wc = r.v ? r.ctl/max*100 : 0, wn = r.v ? r.nctl/max*100 : 0;
+    CATS.forEach(function(c){ s[c.k] += r[c.k] || 0; });
+    var w = max ? r._t/max*100 : 0;
     return '<tr data-fam="'+esc(r.k)+'" style="cursor:pointer"><td><b>'+esc(r.k)+'</b></td>'+
-      '<td class="l" style="color:var(--muted);font-size:12px">'+esc(t.length===1?t[0]:"varios")+'</td>'+
-      '<td class="num">'+(r.ctl ? fmt(r.ctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
-      '<td class="num">'+(r.nctl ? fmt(r.nctl) : '<span style="color:#C3C9C9">—</span>')+'</td>'+
-      '<td class="num"><b>'+fmt(r.v)+'</b></td>'+
-      '<td class="num">'+pct(r.v, T)+'</td>'+
-      '<td><div class="bar" title="Controlado '+fmt(r.ctl)+' · no controlado '+fmt(r.nctl)+'">'+
-        (wc ? '<i style="width:'+wc.toFixed(1)+'%;background:var(--ARM)"></i>' : '')+
-        (wn ? '<i style="width:'+wn.toFixed(1)+'%;background:#AEB8B8"></i>' : '')+
-      '</div></td></tr>';
+      CLAVES.map(function(k){ return celda(r[k], k); }).join('')+
+      '<td class="num"><b>'+fmt(r._t)+'</b></td>'+
+      '<td class="num">'+pct(r._t, T)+'</td>'+
+      '<td><div class="bar"><span style="display:flex;height:100%;width:'+
+        w.toFixed(1)+'%">'+barra(r)+'</span></div></td></tr>';
   }).join("");
-  tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(tCtl)+'</td>'+
-    '<td class="num">'+fmt(tNctl)+'</td><td class="num">'+fmt(T)+'</td>'+
-    '<td class="num">100%</td><td></td></tr>';
+  tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
+    '<td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-fam]"), function(tr){
     tr.addEventListener("click", function(){
       f.fam = (f.fam === tr.dataset.fam) ? "*" : tr.dataset.fam;
