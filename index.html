@@ -332,6 +332,12 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
 .chip.sm{font-size:11.5px; padding:3px 9px}
 .clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
+.salto{
+  background:#fff; border:1px solid var(--line); border-radius:2px; cursor:pointer;
+  font-family:var(--body); font-size:11.5px; padding:2px 8px; margin:2px 2px 0 0; color:var(--ink);
+}
+.salto:hover{border-color:var(--ink2); background:#F7F9F9}
+.salto b{font-family:var(--mono); color:var(--muted); font-weight:500}
 .count{font-family:var(--mono); font-size:11px; color:var(--muted)}
 
 /* Columnas de mes del detalle por artículo: angostas, para que entren seis o
@@ -601,6 +607,12 @@ td.mes.vacio{color:#D7DCDC}
           tabla de arriba, que va en guaraníes y usa promedio.
           Los montos en guaraníes de cada artículo se ven al pasar el mouse.
         </p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
+          <input type="search" id="q-rot-art" placeholder="Buscar referencia o producto…"
+                 style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:250px">
+          <span class="count" id="q-rot-art-n"></span>
+        </div>
+        <p class="nota-cat" id="rot-art-otras" hidden></p>
         <div class="scroll"><table id="tbl-rot-art">
           <thead><tr id="rot-art-head"></tr></thead><tbody></tbody>
         </table></div>
@@ -944,6 +956,8 @@ function armarFiltros(){
     f = { dep:"*", tipo:"*", cat:"*", marca:"*", cal:"*", fam:"*", ctl:"*" };
     var qa = document.getElementById("q-art");
     if (qa) qa.value = "";
+    var qr = document.getElementById("q-rot-art");
+    if (qr) qr.value = "";
     reflejarFiltros();
     pintar(); sincronizarSerie();
     irA(0);
@@ -996,6 +1010,7 @@ function armarFiltros(){
   });
 
   document.getElementById("q-art").addEventListener("input", function(){ tablaArticulos(); });
+  document.getElementById("q-rot-art").addEventListener("input", function(){ rotacionArticulos(); });
 
   /* Descarga la lista filtrada. Sirve para trabajarla en la planilla:
      por ejemplo, mandarle a Comercial los artículos sin categorizar. */
@@ -2103,6 +2118,43 @@ function tituloCanales(porCanal){
 }
 
 /**
+ * Lo que se busca casi nunca está en la marca que uno tiene abierta: se escribe
+ * una referencia y no aparece nada, sin decir por qué. Esto mira el resto de las
+ * marcas y ofrece saltar a la que sí la tiene, en vez de dejar la lista vacía.
+ */
+function buscarEnOtrasMarcas(q, marca){
+  var caja = document.getElementById("rot-art-otras");
+  if (!q) { caja.hidden = true; return; }
+
+  var porMarca = {};
+  ROT_ART.forEach(function(a){
+    if (a[2] === marca) return;
+    if ((a[1] + " " + a[0]).toLowerCase().indexOf(q) < 0) return;
+    porMarca[a[2]] = (porMarca[a[2]] || 0) + 1;
+  });
+  var otras = Object.keys(porMarca).sort(function(a,b){ return porMarca[b] - porMarca[a]; });
+  if (!otras.length) { caja.hidden = true; return; }
+
+  caja.hidden = false;
+  caja.className = "nota-cat";
+  caja.innerHTML = 'También hay coincidencias en ' +
+    otras.slice(0, 8).map(function(m){
+      return '<button type="button" class="salto" data-marca="'+esc(m)+'">'+
+             esc(m)+' <b>'+fmt(porMarca[m])+'</b></button>';
+    }).join(" ") +
+    (otras.length > 8 ? ' y ' + fmt(otras.length - 8) + ' marcas más.' : '');
+
+  Array.prototype.forEach.call(caja.querySelectorAll("button[data-marca]"), function(b){
+    b.addEventListener("click", function(){
+      serieActiva = b.dataset.marca;
+      var sel = document.getElementById("f-serie");
+      if (sel) sel.value = serieActiva;
+      evolucion(); rotacion(); rotacionArticulos();
+    });
+  });
+}
+
+/**
  * Cabecera del detalle por artículo. Se arma en JS porque la cantidad de meses
  * depende de los datos publicados: con un datos.js anterior no hay columnas de
  * mes y la tabla queda como antes, sin romperse.
@@ -2155,9 +2207,14 @@ function rotacionArticulos(){
     return;
   }
 
+  var q = (document.getElementById("q-rot-art").value || "").trim().toLowerCase();
+  var coincide = function(a){
+    return !q || (a[1] + " " + a[0]).toLowerCase().indexOf(q) >= 0;
+  };
+
   /* Para el artículo la rotación se mide en unidades, no en guaraníes: es
      más directo de leer y no depende de si el costo está bien cargado. */
-  var filas = ROT_ART.filter(function(a){ return a[2] === marca; })
+  var filas = ROT_ART.filter(function(a){ return a[2] === marca && coincide(a); })
     .map(function(a){
       /* Con un canal elegido, las unidades vendidas son solo las de ese canal. */
       var porCanal = a[8] || {};
@@ -2174,13 +2231,19 @@ function rotacionArticulos(){
 
   if (!filas.length) {
     sec.hidden = false;
+    armarCabeceraArticulos();
     document.getElementById("nota-rot-art").textContent = esc(marca);
-    document.querySelector("#tbl-rot-art tbody").innerHTML =
-      '<tr><td colspan="20" class="empty">Sin artículos con stock ni ventas para ' +
-      esc(marca) + '.</td></tr>';
+    document.getElementById("q-rot-art-n").textContent = q ? "sin coincidencias" : "";
+    document.querySelector("#tbl-rot-art tbody").innerHTML = q
+      ? '<tr><td colspan="20" class="empty">Ningún artículo de ' + esc(marca) +
+        ' coincide con <b>' + esc(q) + '</b>.</td></tr>'
+      : '<tr><td colspan="20" class="empty">Sin artículos con stock ni ventas para ' +
+        esc(marca) + '.</td></tr>';
+    buscarEnOtrasMarcas(q, marca);
     return;
   }
   sec.hidden = false;
+  buscarEnOtrasMarcas(q, marca);
   armarCabeceraArticulos();
 
   filas = ordenar(filas, orden.rota.k, orden.rota.asc);
@@ -2188,6 +2251,9 @@ function rotacionArticulos(){
 
   var totalQV = filas.reduce(function(t,a){ return t + a[5]; }, 0);
   var totalQS = filas.reduce(function(t,a){ return t + a[6]; }, 0);
+  document.getElementById("q-rot-art-n").textContent = q
+    ? fmt(filas.length) + (filas.length === 1 ? " coincidencia" : " coincidencias")
+    : "";
   document.getElementById("nota-rot-art").textContent =
     esc(marca) + " · " + fmt(filas.length) + " artículos · " +
     fmt(totalQV) + " unidades vendidas" +
