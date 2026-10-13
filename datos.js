@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 13/10/2026 13:43.
+/* Generado desde la planilla el 13/10/2026 13:55.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -20,6 +20,12 @@ var DATOS = {
       "lab": "C – Liquidar",
       "col": "var(--C)",
       "raw": "#A6432E"
+    },
+    {
+      "k": "N",
+      "lab": "N – Nuevo",
+      "col": "var(--N)",
+      "raw": "#4F8A6B"
     },
     {
       "k": "ARM",
@@ -52,7 +58,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "13/10/2026 13:41",
+  "GENERADO": "13/10/2026 13:54",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [],
@@ -137,12 +143,12 @@ var DATOS = {
       "m": "1911",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
       "v": 0,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "5.11",
@@ -236,12 +242,12 @@ var DATOS = {
       "m": "AKSA",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "12GA",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 1.1,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "AKSA",
@@ -273,7 +279,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 19,
+      "v": 0.6,
       "abc": ""
     },
     {
@@ -290,13 +296,13 @@ var DATOS = {
     {
       "m": "ASG",
       "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "ACC",
+      "dep": "Central",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 0.3,
-      "abc": ""
+      "v": 18.4,
+      "abc": "N"
     },
     {
       "m": "ASG",
@@ -308,6 +314,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 0.8,
       "abc": "B"
+    },
+    {
+      "m": "ASG",
+      "tipo": "Accesorio controlado",
+      "dep": "Showroom",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "Controlado",
+      "v": 0.3,
+      "abc": "N"
     },
     {
       "m": "ASG",
@@ -456,12 +473,12 @@ var DATOS = {
       "m": "ASG",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 87.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "ASG",
@@ -577,12 +594,12 @@ var DATOS = {
       "m": "ASG",
       "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "ATA",
@@ -1061,12 +1078,12 @@ var DATOS = {
       "m": "Armadillo",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 6.8,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Armadillo",
@@ -1083,12 +1100,12 @@ var DATOS = {
       "m": "Armadillo",
       "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 3.7,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Armed",
@@ -1732,17 +1749,6 @@ var DATOS = {
       "m": "Beretta",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": "9mm",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 24.9,
-      "abc": ""
-    },
-    {
-      "m": "Beretta",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "A",
       "cal": "9mm",
       "fam": "ARMA",
@@ -1771,6 +1777,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 19.4,
       "abc": "C"
+    },
+    {
+      "m": "Beretta",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "9mm",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 24.9,
+      "abc": "N"
     },
     {
       "m": "Beretta",
@@ -2011,7 +2028,7 @@ var DATOS = {
       "cal": "12GA",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 2.1,
+      "v": 0.9,
       "abc": ""
     },
     {
@@ -2068,6 +2085,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 0.7,
       "abc": "C"
+    },
+    {
+      "m": "Boito",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "12GA",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 1.2,
+      "abc": "N"
     },
     {
       "m": "Boito",
@@ -2371,17 +2399,6 @@ var DATOS = {
       "tipo": "Armas",
       "dep": "Central",
       "cat": "ARM",
-      "cal": "9mm",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 18.7,
-      "abc": ""
-    },
-    {
-      "m": "CZ",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
       "cal": "Sin calibre",
       "fam": "ARMA",
       "ctl": "Controlado",
@@ -2389,15 +2406,15 @@ var DATOS = {
       "abc": ""
     },
     {
-      "m": "Canik",
+      "m": "CZ",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 5,
-      "abc": ""
+      "v": 18.7,
+      "abc": "N"
     },
     {
       "m": "Canik",
@@ -2409,6 +2426,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 94.5,
       "abc": "C"
+    },
+    {
+      "m": "Canik",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "9mm",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 5,
+      "abc": "N"
     },
     {
       "m": "Canik",
@@ -2480,23 +2508,23 @@ var DATOS = {
       "m": "Chiappa",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": "410GA",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 2.1,
-      "abc": ""
-    },
-    {
-      "m": "Chiappa",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "C",
       "cal": "22LR",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 5.1,
       "abc": "C"
+    },
+    {
+      "m": "Chiappa",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "410GA",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 2.1,
+      "abc": "N"
     },
     {
       "m": "Coleman",
@@ -2953,12 +2981,12 @@ var DATOS = {
       "m": "Doberman BOTAS",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
       "v": 309.8,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Doberman BOTAS",
@@ -2975,12 +3003,12 @@ var DATOS = {
       "m": "Doberman BOTAS",
       "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
       "v": 0.7,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Doberman LINTERNAS",
@@ -3272,12 +3300,12 @@ var DATOS = {
       "m": "Doberman",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
       "v": 0,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Doberman",
@@ -3426,12 +3454,12 @@ var DATOS = {
       "m": "FN",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "38SPL",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 7.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Fab Defense",
@@ -3855,17 +3883,6 @@ var DATOS = {
       "m": "Fobus",
       "tipo": "Accesorio controlado",
       "dep": "Central",
-      "cat": "ACC",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 43,
-      "abc": ""
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
@@ -3898,13 +3915,13 @@ var DATOS = {
     {
       "m": "Fobus",
       "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "ACC",
+      "dep": "Central",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
-      "v": 1.5,
-      "abc": ""
+      "v": 43,
+      "abc": "N"
     },
     {
       "m": "Fobus",
@@ -3938,6 +3955,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 1.9,
       "abc": "C"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "Accesorio controlado",
+      "dep": "Showroom",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "Controlado",
+      "v": 1.5,
+      "abc": "N"
     },
     {
       "m": "Fobus",
@@ -4350,23 +4378,23 @@ var DATOS = {
       "m": "Girsan",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": "12GA",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 8.5,
-      "abc": ""
-    },
-    {
-      "m": "Girsan",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "C",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 180.5,
       "abc": "C"
+    },
+    {
+      "m": "Girsan",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "12GA",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 8.5,
+      "abc": "N"
     },
     {
       "m": "Girsan",
@@ -4464,8 +4492,19 @@ var DATOS = {
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
-      "v": 22.2,
+      "v": 11.1,
       "abc": ""
+    },
+    {
+      "m": "Glock",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "9mm",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 11.1,
+      "abc": "N"
     },
     {
       "m": "Glock",
@@ -4900,23 +4939,23 @@ var DATOS = {
       "m": "Indunaylon",
       "tipo": "Accesorio controlado",
       "dep": "Central",
-      "cat": "ACC",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 4.4,
-      "abc": ""
-    },
-    {
-      "m": "Indunaylon",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
       "v": 2.9,
       "abc": "B"
+    },
+    {
+      "m": "Indunaylon",
+      "tipo": "Accesorio controlado",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "Controlado",
+      "v": 4.4,
+      "abc": "N"
     },
     {
       "m": "Indunaylon",
@@ -4944,12 +4983,12 @@ var DATOS = {
       "m": "Jericho",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 7.1,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "KCI",
@@ -5252,12 +5291,12 @@ var DATOS = {
       "m": "Luger",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 1.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Luvo",
@@ -5362,12 +5401,12 @@ var DATOS = {
       "m": "Marlin",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "cal 30",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 6.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Marlin",
@@ -5428,12 +5467,12 @@ var DATOS = {
       "m": "Maverick",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "12",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 1.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Mendoza",
@@ -5868,23 +5907,23 @@ var DATOS = {
       "m": "Osight HK",
       "tipo": "Accesorio controlado",
       "dep": "Central",
-      "cat": "ACC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
       "v": 214.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Osight HK",
       "tipo": "Accesorio controlado",
       "dep": "Showroom",
-      "cat": "ACC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
       "ctl": "Controlado",
       "v": 7.3,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Otros",
@@ -6330,17 +6369,6 @@ var DATOS = {
       "m": "Ruger",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": "9mm",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 5.6,
-      "abc": ""
-    },
-    {
-      "m": "Ruger",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "C",
       "cal": "22LR",
       "fam": "ARMA",
@@ -6380,6 +6408,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 2.8,
       "abc": "C"
+    },
+    {
+      "m": "Ruger",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "9mm",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 5.6,
+      "abc": "N"
     },
     {
       "m": "Ruger",
@@ -6561,23 +6600,23 @@ var DATOS = {
       "m": "SIN MARCA",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 325.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "SIN MARCA",
       "tipo": "Armas",
       "dep": "Showroom",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "9mm",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 14.2,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "SIN MARCA",
@@ -6594,12 +6633,12 @@ var DATOS = {
       "m": "Sabatti",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "223REM",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 10.1,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Safir",
@@ -6891,17 +6930,6 @@ var DATOS = {
       "m": "Savage",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": "12GA",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 4.1,
-      "abc": ""
-    },
-    {
-      "m": "Savage",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "C",
       "cal": "22LR",
       "fam": "ARMA",
@@ -6919,6 +6947,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 7.1,
       "abc": "C"
+    },
+    {
+      "m": "Savage",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "12GA",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 4.1,
+      "abc": "N"
     },
     {
       "m": "Sellier & Bellot",
@@ -8519,28 +8558,6 @@ var DATOS = {
       "m": "Tanfoglio",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
-      "cal": ".40",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 5.1,
-      "abc": ""
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Armas",
-      "dep": "Central",
-      "cat": "ARM",
-      "cal": "9mm",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 4.6,
-      "abc": ""
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "A",
       "cal": "9mm",
       "fam": "ARMA",
@@ -8602,6 +8619,28 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 16.3,
       "abc": "C"
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": ".40",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 5.1,
+      "abc": "N"
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "Armas",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "9mm",
+      "fam": "ARMA",
+      "ctl": "Controlado",
+      "v": 4.6,
+      "abc": "N"
     },
     {
       "m": "Tanfoglio",
@@ -8838,12 +8877,12 @@ var DATOS = {
       "m": "Taurus",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": ".22 LR",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 3.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Taurus",
@@ -9960,23 +9999,23 @@ var DATOS = {
       "m": "VAULTEK",
       "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "CAJA FUERTE",
       "ctl": "No controlado",
       "v": 270.8,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "VAULTEK",
       "tipo": "No reglamentado",
       "dep": "Showroom",
-      "cat": "NC",
+      "cat": "N",
       "cal": "Sin calibre",
       "fam": "CAJA FUERTE",
       "ctl": "No controlado",
       "v": 26.9,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Valor",
@@ -10290,12 +10329,12 @@ var DATOS = {
       "m": "Winchester",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "ARM",
+      "cat": "N",
       "cal": "12GA",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 4.6,
-      "abc": ""
+      "abc": "N"
     },
     {
       "m": "Winchester",
@@ -10722,7 +10761,7 @@ var DATOS = {
       "SIN MARCA",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       24,
       169.9,
@@ -10800,7 +10839,7 @@ var DATOS = {
       "SIN MARCA",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       22,
       155.7,
@@ -11242,7 +11281,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       27,
       70.4,
@@ -11450,7 +11489,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       26,
       56.1,
@@ -11606,7 +11645,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       47,
       46.5,
@@ -11853,7 +11892,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       53,
       37.8,
@@ -11866,7 +11905,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       7,
       37.7,
@@ -11892,7 +11931,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       25,
       37.1,
@@ -12204,7 +12243,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       31,
       30.7,
@@ -12503,7 +12542,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       42,
       26.6,
@@ -12581,7 +12620,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       667,
       26.2,
@@ -12685,7 +12724,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       327,
       25.4,
@@ -12815,7 +12854,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       105,
       23.8,
@@ -12828,7 +12867,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       104,
       23.6,
@@ -12841,7 +12880,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       104,
       23.6,
@@ -12854,7 +12893,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       104,
       23.6,
@@ -12919,7 +12958,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       108,
       23.1,
@@ -12958,7 +12997,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       107,
       22.9,
@@ -12997,7 +13036,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       106,
       22.7,
@@ -13023,7 +13062,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       105,
       22.4,
@@ -13205,7 +13244,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       660,
       21.1,
@@ -13452,7 +13491,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       4,
       20,
@@ -13647,7 +13686,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       16,
       19,
@@ -13686,7 +13725,7 @@ var DATOS = {
       "ASG",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       70,
       18.4,
@@ -13738,7 +13777,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       3,
       18.1,
@@ -13764,7 +13803,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       78,
       17.7,
@@ -13777,7 +13816,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       78,
       17.7,
@@ -13803,7 +13842,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       26,
       17.5,
@@ -14050,7 +14089,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       77,
       16.5,
@@ -14063,7 +14102,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       77,
       16.5,
@@ -14167,7 +14206,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       16,
       15.8,
@@ -14271,7 +14310,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       332,
       14.9,
@@ -14297,7 +14336,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       65,
       14.7,
@@ -14362,7 +14401,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       12,
       14.4,
@@ -14440,7 +14479,7 @@ var DATOS = {
       "SIN MARCA",
       "Armas",
       "Showroom",
-      "ARM",
+      "N",
       "9mm",
       2,
       14.2,
@@ -14466,7 +14505,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       66,
       14.1,
@@ -14596,7 +14635,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       96,
       13.7,
@@ -14869,7 +14908,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       13,
       12.3,
@@ -15181,7 +15220,7 @@ var DATOS = {
       "CZ",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       11.1,
@@ -15194,7 +15233,7 @@ var DATOS = {
       "Glock",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       11.1,
@@ -15337,7 +15376,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       6,
       10.7,
@@ -15558,7 +15597,7 @@ var DATOS = {
       "Sabatti",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "223REM",
       1,
       10.1,
@@ -15961,7 +16000,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       144,
       8.8,
@@ -16026,7 +16065,7 @@ var DATOS = {
       "Beretta",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       8.6,
@@ -16039,7 +16078,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       72,
       8.6,
@@ -16065,7 +16104,7 @@ var DATOS = {
       "Girsan",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12GA",
       1,
       8.5,
@@ -16208,7 +16247,7 @@ var DATOS = {
       "Beretta",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       8.1,
@@ -16221,7 +16260,7 @@ var DATOS = {
       "Beretta",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       8.1,
@@ -16442,7 +16481,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       34,
       7.7,
@@ -16494,7 +16533,7 @@ var DATOS = {
       "FN",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "38SPL",
       1,
       7.6,
@@ -16507,7 +16546,7 @@ var DATOS = {
       "CZ",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       7.6,
@@ -16689,7 +16728,7 @@ var DATOS = {
       "Jericho",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       7.1,
@@ -16975,7 +17014,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       31,
       6.6,
@@ -17001,7 +17040,7 @@ var DATOS = {
       "Marlin",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "cal 30",
       1,
       6.6,
@@ -17144,7 +17183,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       5,
       6.2,
@@ -17287,7 +17326,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       6,
@@ -17482,7 +17521,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       72,
       5.7,
@@ -17638,7 +17677,7 @@ var DATOS = {
       "Ruger",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       5.6,
@@ -17794,7 +17833,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       5.4,
@@ -18080,7 +18119,7 @@ var DATOS = {
       "Tanfoglio",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       ".40",
       1,
       5.1,
@@ -18184,7 +18223,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       5,
@@ -18197,7 +18236,7 @@ var DATOS = {
       "Canik",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       5,
@@ -18509,7 +18548,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       47,
       4.7,
@@ -18522,7 +18561,7 @@ var DATOS = {
       "Winchester",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12GA",
       1,
       4.6,
@@ -18535,7 +18574,7 @@ var DATOS = {
       "Tanfoglio",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       4.6,
@@ -18574,7 +18613,7 @@ var DATOS = {
       "Armadillo",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       3,
       4.6,
@@ -19029,7 +19068,7 @@ var DATOS = {
       "Savage",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12GA",
       1,
       4.1,
@@ -19523,7 +19562,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       47,
       3.7,
@@ -19562,7 +19601,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       46,
       3.7,
@@ -19731,7 +19770,7 @@ var DATOS = {
       "Taurus",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       ".22 LR",
       1,
       3.6,
@@ -20134,7 +20173,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       15,
       3.4,
@@ -20459,7 +20498,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       15,
       3.2,
@@ -20550,7 +20589,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       14,
       3.2,
@@ -20784,7 +20823,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       14,
       3,
@@ -21460,7 +21499,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       2.6,
@@ -21863,7 +21902,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       97,
       2.4,
@@ -22487,7 +22526,7 @@ var DATOS = {
       "Armadillo",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       2.2,
@@ -22500,7 +22539,7 @@ var DATOS = {
       "Armadillo",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       2.2,
@@ -22604,7 +22643,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       2.2,
@@ -22669,7 +22708,7 @@ var DATOS = {
       "Chiappa",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "410GA",
       1,
       2.1,
@@ -22747,7 +22786,7 @@ var DATOS = {
       "Indunaylon",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       33,
       2.1,
@@ -23839,7 +23878,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       1.8,
@@ -24580,7 +24619,7 @@ var DATOS = {
       "Maverick",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12",
       1,
       1.6,
@@ -24593,7 +24632,7 @@ var DATOS = {
       "Luger",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "9mm",
       1,
       1.6,
@@ -24879,7 +24918,7 @@ var DATOS = {
       "Armadillo",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       1.5,
@@ -25061,7 +25100,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       1.5,
@@ -26205,7 +26244,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       1.2,
@@ -26322,7 +26361,7 @@ var DATOS = {
       "Boito",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12GA",
       1,
       1.2,
@@ -26452,7 +26491,7 @@ var DATOS = {
       "VAULTEK",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       1.2,
@@ -26517,7 +26556,7 @@ var DATOS = {
       "Indunaylon",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       19,
       1.2,
@@ -26569,7 +26608,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       1.2,
@@ -27167,7 +27206,7 @@ var DATOS = {
       "AKSA",
       "Armas",
       "Central",
-      "ARM",
+      "N",
       "12GA",
       1,
       1.1,
@@ -27349,7 +27388,7 @@ var DATOS = {
       "Indunaylon",
       "Accesorio controlado",
       "Central",
-      "ACC",
+      "N",
       "Sin calibre",
       15,
       1.1,
@@ -28129,7 +28168,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       1,
@@ -28142,7 +28181,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       1,
@@ -28155,7 +28194,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       1,
@@ -28441,7 +28480,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.9,
@@ -31054,7 +31093,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.7,
@@ -31795,7 +31834,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.7,
@@ -32341,7 +32380,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.6,
@@ -35422,7 +35461,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.4,
@@ -37086,7 +37125,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.4,
@@ -38347,7 +38386,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       4,
       0.3,
@@ -39933,7 +39972,7 @@ var DATOS = {
       "ASG",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.3,
@@ -40869,7 +40908,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.2,
@@ -40882,7 +40921,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.2,
@@ -41350,7 +41389,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       0.2,
@@ -41376,7 +41415,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       0.2,
@@ -41935,7 +41974,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       0.2,
@@ -43365,7 +43404,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.2,
@@ -44899,7 +44938,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       4,
       0.2,
@@ -46342,7 +46381,7 @@ var DATOS = {
       "ASG",
       "No reglamentado",
       "Showroom",
-      "NC",
+      "N",
       "Sin calibre",
       3,
       0.1,
@@ -48799,7 +48838,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.1,
@@ -50619,7 +50658,7 @@ var DATOS = {
       "Osight HK",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       1,
       0.1,
@@ -50970,7 +51009,7 @@ var DATOS = {
       "Fobus",
       "Accesorio controlado",
       "Showroom",
-      "ACC",
+      "N",
       "Sin calibre",
       3,
       0.1,
@@ -65296,7 +65335,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       20,
       0,
@@ -65309,7 +65348,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       20,
       0,
@@ -65322,7 +65361,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       20,
       0,
@@ -65335,7 +65374,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       20,
       0,
@@ -65348,7 +65387,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       19,
       0,
@@ -65361,7 +65400,7 @@ var DATOS = {
       "Doberman BOTAS",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       19,
       0,
@@ -65426,7 +65465,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65439,7 +65478,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65452,7 +65491,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65465,7 +65504,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65478,7 +65517,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65491,7 +65530,7 @@ var DATOS = {
       "1911",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65504,7 +65543,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65517,7 +65556,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65530,7 +65569,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       10,
       0,
@@ -65582,7 +65621,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       6,
       0,
@@ -65608,7 +65647,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65621,7 +65660,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65634,7 +65673,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65647,7 +65686,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65660,7 +65699,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65673,7 +65712,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65686,7 +65725,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65699,7 +65738,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65712,7 +65751,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65725,7 +65764,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       2,
       0,
@@ -65842,7 +65881,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       0,
@@ -65855,7 +65894,7 @@ var DATOS = {
       "Doberman",
       "No reglamentado",
       "Central",
-      "NC",
+      "N",
       "Sin calibre",
       1,
       0,
@@ -96973,7 +97012,7 @@ var DATOS = {
       23.6,
       39,
       104,
-      "NC",
+      "N",
       {
         "Mayorista": 39
       }
@@ -96986,7 +97025,7 @@ var DATOS = {
       23.6,
       39,
       104,
-      "NC",
+      "N",
       {
         "Mayorista": 39
       }
@@ -96999,7 +97038,7 @@ var DATOS = {
       23.6,
       39,
       104,
-      "NC",
+      "N",
       {
         "Mayorista": 39
       }
@@ -97071,7 +97110,7 @@ var DATOS = {
       14.7,
       37,
       65,
-      "NC",
+      "N",
       {
         "Mayorista": 36,
         "Online": 1
@@ -97118,7 +97157,7 @@ var DATOS = {
       24,
       36,
       106,
-      "NC",
+      "N",
       {
         "Mayorista": 36
       }
@@ -97841,7 +97880,7 @@ var DATOS = {
       22.4,
       25,
       105,
-      "NC",
+      "N",
       {
         "Mayorista": 21,
         "Ventas Externas": 3,
@@ -97918,7 +97957,7 @@ var DATOS = {
       22.7,
       24,
       106,
-      "NC",
+      "N",
       {
         "Mayorista": 23,
         "Ventas Externas": 1
@@ -97932,7 +97971,7 @@ var DATOS = {
       14.1,
       24,
       66,
-      "NC",
+      "N",
       {
         "Mayorista": 21,
         "Ventas Externas": 3
@@ -98058,7 +98097,7 @@ var DATOS = {
       22.9,
       23,
       107,
-      "NC",
+      "N",
       {
         "Mayorista": 21,
         "Ventas Externas": 1,
@@ -98272,7 +98311,7 @@ var DATOS = {
       23.3,
       21,
       109,
-      "NC",
+      "N",
       {
         "Mayorista": 19,
         "Ventas Externas": 1,
@@ -99018,7 +99057,7 @@ var DATOS = {
       6.6,
       15,
       31,
-      "NC",
+      "N",
       {
         "Mayorista": 13,
         "Ventas Externas": 2
@@ -99077,7 +99116,7 @@ var DATOS = {
       2.1,
       15,
       33,
-      "ACC",
+      "N",
       {
         "Salon": 7,
         "Online": 8
@@ -99755,7 +99794,7 @@ var DATOS = {
       21.1,
       12,
       660,
-      "NC",
+      "N",
       {
         "Salon": 3,
         "Mayorista": 5,
@@ -99890,7 +99929,7 @@ var DATOS = {
       3.4,
       12,
       15,
-      "NC",
+      "N",
       {
         "Mayorista": 12
       }
@@ -99903,7 +99942,7 @@ var DATOS = {
       3.4,
       12,
       15,
-      "NC",
+      "N",
       {
         "Mayorista": 12
       }
@@ -99916,7 +99955,7 @@ var DATOS = {
       3,
       12,
       14,
-      "NC",
+      "N",
       {
         "Mayorista": 11,
         "No Pagar C.": 1
@@ -100150,7 +100189,7 @@ var DATOS = {
       3.2,
       11,
       15,
-      "NC",
+      "N",
       {
         "Mayorista": 11
       }
@@ -100829,7 +100868,7 @@ var DATOS = {
       17.7,
       9,
       78,
-      "NC",
+      "N",
       {
         "Mayorista": 9
       }
@@ -100842,7 +100881,7 @@ var DATOS = {
       17.7,
       9,
       78,
-      "NC",
+      "N",
       {
         "Mayorista": 9
       }
@@ -100855,7 +100894,7 @@ var DATOS = {
       16.5,
       9,
       77,
-      "NC",
+      "N",
       {
         "Mayorista": 8,
         "Ventas Externas": 1
@@ -100869,7 +100908,7 @@ var DATOS = {
       16.5,
       9,
       77,
-      "NC",
+      "N",
       {
         "Mayorista": 8,
         "Ventas Externas": 1
@@ -100916,7 +100955,7 @@ var DATOS = {
       7.5,
       9,
       6,
-      "NC",
+      "N",
       {
         "Salon": 4,
         "Online": 4,
@@ -101365,7 +101404,7 @@ var DATOS = {
       6.1,
       8,
       4,
-      "NC",
+      "N",
       {
         "Salon": 7,
         "Online": 1
@@ -101695,7 +101734,7 @@ var DATOS = {
       7.7,
       7,
       34,
-      "NC",
+      "N",
       {
         "Mayorista": 6,
         "Online": 1
@@ -102224,7 +102263,7 @@ var DATOS = {
       38.5,
       6,
       54,
-      "ACC",
+      "N",
       {
         "Mayorista": 6
       }
@@ -102293,7 +102332,7 @@ var DATOS = {
       18.6,
       6,
       71,
-      "ACC",
+      "N",
       {
         "Mayorista": 2,
         "Online": 4
@@ -102307,7 +102346,7 @@ var DATOS = {
       13.3,
       6,
       14,
-      "ACC",
+      "N",
       {
         "Mayorista": 6
       }
@@ -102891,7 +102930,7 @@ var DATOS = {
       169.9,
       5,
       24,
-      "ARM",
+      "N",
       {
         "Salon": 5
       }
@@ -102918,7 +102957,7 @@ var DATOS = {
       25.7,
       5,
       331,
-      "NC",
+      "N",
       {
         "Online": 4,
         "Salon": 1
@@ -103031,7 +103070,7 @@ var DATOS = {
       7.1,
       5,
       1,
-      "ARM",
+      "N",
       {
         "Online": 2,
         "Salon": 2,
@@ -103598,7 +103637,7 @@ var DATOS = {
       38.6,
       4,
       26,
-      "NC",
+      "N",
       {
         "Mayorista": 3,
         "Online": 1
@@ -103665,7 +103704,7 @@ var DATOS = {
       24.2,
       4,
       4,
-      "NC",
+      "N",
       {
         "Online": 3,
         "Salon": 1
@@ -104452,7 +104491,7 @@ var DATOS = {
       0,
       4,
       6,
-      "NC",
+      "N",
       {
         "Ventas Externas": 4
       }
@@ -104615,7 +104654,7 @@ var DATOS = {
       58.3,
       3,
       27,
-      "NC",
+      "N",
       {
         "Mayorista": 2,
         "Salon": 1
@@ -104629,7 +104668,7 @@ var DATOS = {
       31.7,
       3,
       32,
-      "ACC",
+      "N",
       {
         "Mayorista": 3
       }
@@ -104682,7 +104721,7 @@ var DATOS = {
       20.2,
       3,
       17,
-      "ACC",
+      "N",
       {
         "Mayorista": 2,
         "Online": 1
@@ -104696,7 +104735,7 @@ var DATOS = {
       18.2,
       3,
       27,
-      "ACC",
+      "N",
       {
         "Mayorista": 3
       }
@@ -104737,7 +104776,7 @@ var DATOS = {
       16.8,
       3,
       17,
-      "ACC",
+      "N",
       {
         "Mayorista": 3
       }
@@ -104778,7 +104817,7 @@ var DATOS = {
       12.5,
       3,
       7,
-      "NC",
+      "N",
       {
         "Mayorista": 2,
         "Salon": 1
@@ -104821,7 +104860,7 @@ var DATOS = {
       9,
       3,
       147,
-      "ACC",
+      "N",
       {
         "Online": 3
       }
@@ -106394,7 +106433,7 @@ var DATOS = {
       73,
       2,
       28,
-      "NC",
+      "N",
       {
         "Online": 1,
         "Mayorista": 1
@@ -106408,7 +106447,7 @@ var DATOS = {
       47.5,
       2,
       48,
-      "ACC",
+      "N",
       {
         "Mayorista": 2
       }
@@ -106476,7 +106515,7 @@ var DATOS = {
       27.2,
       2,
       43,
-      "ACC",
+      "N",
       {
         "Mayorista": 2
       }
@@ -106502,7 +106541,7 @@ var DATOS = {
       15,
       2,
       335,
-      "NC",
+      "N",
       {
         "Online": 2
       }
@@ -106528,7 +106567,7 @@ var DATOS = {
       15.6,
       2,
       13,
-      "NC",
+      "N",
       {
         "Online": 1,
         "Mayorista": 1
@@ -106754,7 +106793,7 @@ var DATOS = {
       4.7,
       2,
       48,
-      "ACC",
+      "N",
       {
         "Mayorista": 2
       }
@@ -106793,7 +106832,7 @@ var DATOS = {
       3.8,
       2,
       48,
-      "ACC",
+      "N",
       {
         "Mayorista": 2
       }
@@ -108335,7 +108374,7 @@ var DATOS = {
       169.9,
       1,
       24,
-      "ARM",
+      "N",
       {
         "Salon": 1
       }
@@ -108426,7 +108465,7 @@ var DATOS = {
       26.4,
       1,
       671,
-      "NC",
+      "N",
       {
         "Salon": 1
       }
@@ -108478,7 +108517,7 @@ var DATOS = {
       14.1,
       1,
       99,
-      "ACC",
+      "N",
       {
         "Salon": 1
       }
@@ -108699,7 +108738,7 @@ var DATOS = {
       4.6,
       1,
       1,
-      "ARM",
+      "N",
       {
         "Online": 1
       }
@@ -108725,7 +108764,7 @@ var DATOS = {
       4.1,
       1,
       1,
-      "ARM",
+      "N",
       {
         "Salon": 1
       }
@@ -108790,7 +108829,7 @@ var DATOS = {
       3.9,
       1,
       49,
-      "ACC",
+      "N",
       {
         "Online": 1
       }
@@ -110584,7 +110623,7 @@ var DATOS = {
       0,
       1,
       19,
-      "NC",
+      "N",
       {
         "Ventas Externas": 1
       }
@@ -110597,7 +110636,7 @@ var DATOS = {
       0,
       1,
       19,
-      "NC",
+      "N",
       {
         "Ventas Externas": 1
       }
@@ -110623,7 +110662,7 @@ var DATOS = {
       0,
       1,
       1,
-      "NC",
+      "N",
       {
         "Ventas Externas": 1
       }
@@ -110636,7 +110675,7 @@ var DATOS = {
       0,
       1,
       1,
-      "NC",
+      "N",
       {
         "Ventas Externas": 1
       }
@@ -112443,7 +112482,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ARM",
+      "N",
       {
         "Online": 1
       }
@@ -112742,7 +112781,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ARM",
+      "N",
       {
         "Online": 1
       }
@@ -112768,7 +112807,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ARM",
+      "N",
       {
         "Online": 1
       }
@@ -113034,7 +113073,7 @@ var DATOS = {
       43.1,
       0,
       8,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -113320,7 +113359,7 @@ var DATOS = {
       25,
       0,
       5,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -113584,7 +113623,7 @@ var DATOS = {
       11.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113595,7 +113634,7 @@ var DATOS = {
       11.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113650,7 +113689,7 @@ var DATOS = {
       10.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113793,7 +113832,7 @@ var DATOS = {
       8.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113804,7 +113843,7 @@ var DATOS = {
       8.9,
       0,
       75,
-      "ACC",
+      "N",
       {}
     ],
     [
@@ -113815,7 +113854,7 @@ var DATOS = {
       8.5,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113859,7 +113898,7 @@ var DATOS = {
       8.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113870,7 +113909,7 @@ var DATOS = {
       8.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113936,7 +113975,7 @@ var DATOS = {
       7.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -113947,7 +113986,7 @@ var DATOS = {
       7.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114101,7 +114140,7 @@ var DATOS = {
       6.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114255,7 +114294,7 @@ var DATOS = {
       6,
       0,
       75,
-      "ACC",
+      "N",
       {}
     ],
     [
@@ -114288,7 +114327,7 @@ var DATOS = {
       5.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114420,7 +114459,7 @@ var DATOS = {
       5.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114442,7 +114481,7 @@ var DATOS = {
       5,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114530,7 +114569,7 @@ var DATOS = {
       4.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -114893,7 +114932,7 @@ var DATOS = {
       3.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -115619,7 +115658,7 @@ var DATOS = {
       2.5,
       0,
       100,
-      "ACC",
+      "N",
       {}
     ],
     [
@@ -115839,7 +115878,7 @@ var DATOS = {
       4.4,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -115894,7 +115933,7 @@ var DATOS = {
       2.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -116576,7 +116615,7 @@ var DATOS = {
       1.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -116587,7 +116626,7 @@ var DATOS = {
       1.6,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -117170,7 +117209,7 @@ var DATOS = {
       1.2,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -117269,7 +117308,7 @@ var DATOS = {
       1.2,
       0,
       19,
-      "ACC",
+      "N",
       {}
     ],
     [
@@ -117478,7 +117517,7 @@ var DATOS = {
       1.1,
       0,
       1,
-      "ARM",
+      "N",
       {}
     ],
     [
@@ -117577,7 +117616,7 @@ var DATOS = {
       1.1,
       0,
       15,
-      "ACC",
+      "N",
       {}
     ],
     [
@@ -132801,7 +132840,7 @@ var DATOS = {
       0,
       0,
       20,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132812,7 +132851,7 @@ var DATOS = {
       0,
       0,
       20,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132823,7 +132862,7 @@ var DATOS = {
       0,
       0,
       20,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132834,7 +132873,7 @@ var DATOS = {
       0,
       0,
       20,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132878,7 +132917,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132889,7 +132928,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132900,7 +132939,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132911,7 +132950,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132922,7 +132961,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132933,7 +132972,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132944,7 +132983,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132955,7 +132994,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -132966,7 +133005,7 @@ var DATOS = {
       0,
       0,
       10,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133021,7 +133060,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133032,7 +133071,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133043,7 +133082,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133054,7 +133093,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133065,7 +133104,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133076,7 +133115,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133087,7 +133126,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133098,7 +133137,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133109,7 +133148,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
@@ -133120,7 +133159,7 @@ var DATOS = {
       0,
       0,
       2,
-      "NC",
+      "N",
       {}
     ],
     [
