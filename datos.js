@@ -1,4 +1,4 @@
-/* Generado desde la planilla el 26/10/2026 06:14.
+/* Generado desde la planilla el 26/10/2026 11:45.
    No editar a mano: la próxima publicación lo sobrescribe. */
 
 var DATOS = {
@@ -58,7 +58,7 @@ var DATOS = {
       "raw": "#8C7A57"
     }
   ],
-  "GENERADO": "26/10/2026 06:14",
+  "GENERADO": "26/10/2026 11:45",
   "EMPRESA": "CAMPING44",
   "PARAMS": {},
   "NO_COMERCIAL": [],
@@ -282,83 +282,6 @@ var DATOS = {
     },
     {
       "m": "ASG",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "ACC",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.6,
-      "abc": ""
-    },
-    {
-      "m": "ASG",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 22.7,
-      "abc": "B"
-    },
-    {
-      "m": "ASG",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "N",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 18.1,
-      "abc": "N"
-    },
-    {
-      "m": "ASG",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.8,
-      "abc": "B"
-    },
-    {
-      "m": "ASG",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "N",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "N"
-    },
-    {
-      "m": "ASG",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "6mm",
-      "fam": "AIRGUN (PROMO)",
-      "ctl": "Controlado",
-      "v": 13,
-      "abc": "C"
-    },
-    {
-      "m": "ASG",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "6mm",
-      "fam": "AIRGUN (PROMO)",
-      "ctl": "Controlado",
-      "v": 1.2,
-      "abc": "C"
-    },
-    {
-      "m": "ASG",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
@@ -407,6 +330,17 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 22.7,
+      "abc": "B"
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 178,
@@ -442,7 +376,7 @@ var DATOS = {
       "cal": "6mm",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
-      "v": 0,
+      "v": 13,
       "abc": "C"
     },
     {
@@ -493,11 +427,33 @@ var DATOS = {
       "m": "ASG",
       "tipo": "No reglamentado",
       "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.6,
+      "abc": ""
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "N",
       "cal": "6mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 87.6,
+      "abc": "N"
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 18.1,
       "abc": "N"
     },
     {
@@ -550,6 +506,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.8,
+      "abc": "B"
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 13.1,
@@ -575,6 +542,17 @@ var DATOS = {
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "6mm",
+      "fam": "AIRGUN (PROMO)",
+      "ctl": "No controlado",
+      "v": 1.2,
       "abc": "C"
     },
     {
@@ -619,6 +597,17 @@ var DATOS = {
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0.6,
+      "abc": "N"
+    },
+    {
+      "m": "ASG",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
       "abc": "N"
     },
     {
@@ -799,17 +788,6 @@ var DATOS = {
     },
     {
       "m": "Akkar",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Akkar",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "C",
@@ -839,6 +817,17 @@ var DATOS = {
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 9.7,
+      "abc": "C"
+    },
+    {
+      "m": "Akkar",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
       "abc": "C"
     },
     {
@@ -1129,72 +1118,6 @@ var DATOS = {
     },
     {
       "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "20GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.6,
-      "abc": "B"
-    },
-    {
-      "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 8.3,
-      "abc": "B"
-    },
-    {
-      "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "16GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "C"
-    },
-    {
-      "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "20GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
-      "abc": "B"
-    },
-    {
-      "m": "Armed",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Armed",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "A",
@@ -1236,6 +1159,72 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 2.8,
       "abc": "C"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "20GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.6,
+      "abc": "B"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 8.3,
+      "abc": "B"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "16GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "C"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "20GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "B"
+    },
+    {
+      "m": "Armed",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
     },
     {
       "m": "Armscor",
@@ -1437,201 +1426,69 @@ var DATOS = {
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 46.3,
       "abc": "A"
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "223REM",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.5,
       "abc": "B"
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "22LR",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 6.7,
       "abc": "B"
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "22MAG",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 4.6,
       "abc": "B"
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "9mm",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0,
       "abc": "B"
     },
     {
       "m": "BWC",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 28.8,
       "abc": "B"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.9,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "22LR",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 21.2,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 3.1,
-      "abc": "A"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "223REM",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "B"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "22LR",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "B"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "22MAG",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "B"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.8,
-      "abc": "B"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "22LR",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "C"
-    },
-    {
-      "m": "BWC",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 3,
-      "abc": "C"
     },
     {
       "m": "BWC",
@@ -1649,10 +1506,142 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.9,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "22LR",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 21.2,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
       "cal": "Sin calibre",
       "fam": "AIRE LIBRE (PROMO)",
       "ctl": "No controlado",
       "v": 1.7,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 3.1,
+      "abc": "A"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "223REM",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "B"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22LR",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "B"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "22MAG",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "B"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 2.8,
+      "abc": "B"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "22LR",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "C"
+    },
+    {
+      "m": "BWC",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 3,
       "abc": "C"
     },
     {
@@ -1668,36 +1657,14 @@ var DATOS = {
     },
     {
       "m": "Beamshot",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.3,
       "abc": "C"
-    },
-    {
-      "m": "Beretta Mod",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 4.4,
-      "abc": "B"
-    },
-    {
-      "m": "Beretta Mod",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.9,
-      "abc": "B"
     },
     {
       "m": "Beretta Mod",
@@ -1709,6 +1676,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0.5,
       "abc": "A"
+    },
+    {
+      "m": "Beretta Mod",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 4.4,
+      "abc": "B"
     },
     {
       "m": "Beretta Mod",
@@ -1749,6 +1727,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.9,
+      "abc": "B"
+    },
+    {
+      "m": "Beretta Mod",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
       "v": 19.9,
@@ -1763,17 +1752,6 @@ var DATOS = {
       "fam": "INDUMENTARIA (PROMO)",
       "ctl": "No controlado",
       "v": 8.4,
-      "abc": "C"
-    },
-    {
-      "m": "Beretta",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.9,
       "abc": "C"
     },
     {
@@ -1947,6 +1925,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.9,
+      "abc": "C"
+    },
+    {
+      "m": "Beretta",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "INDUMENTARIA (PROMO)",
       "ctl": "No controlado",
       "v": 0.3,
@@ -1994,61 +1983,6 @@ var DATOS = {
       "fam": "AIRE LIBRE",
       "ctl": "No controlado",
       "v": 0.5,
-      "abc": "C"
-    },
-    {
-      "m": "Boito",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "B"
-    },
-    {
-      "m": "Boito",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Boito",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Boito",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 5.3,
-      "abc": "C"
-    },
-    {
-      "m": "Boito",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
       "abc": "C"
     },
     {
@@ -2170,6 +2104,61 @@ var DATOS = {
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 5.1,
+      "abc": "C"
+    },
+    {
+      "m": "Boito",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "B"
+    },
+    {
+      "m": "Boito",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Boito",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Boito",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 5.3,
+      "abc": "C"
+    },
+    {
+      "m": "Boito",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
       "abc": "C"
     },
     {
@@ -2405,12 +2394,12 @@ var DATOS = {
     },
     {
       "m": "CYA Supply Co.",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.4,
       "abc": "C"
     },
@@ -2528,23 +2517,23 @@ var DATOS = {
       "m": "Chiappa",
       "tipo": "Armas",
       "dep": "Central",
-      "cat": "C",
-      "cal": "22LR",
-      "fam": "ARMA",
-      "ctl": "Controlado",
-      "v": 5.1,
-      "abc": "C"
-    },
-    {
-      "m": "Chiappa",
-      "tipo": "Armas",
-      "dep": "Central",
       "cat": "N",
       "cal": "410GA",
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 2.1,
       "abc": "N"
+    },
+    {
+      "m": "Chiappa",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "22LR",
+      "fam": "ARMA",
+      "ctl": "No controlado",
+      "v": 5.1,
+      "abc": "C"
     },
     {
       "m": "Coleman",
@@ -2654,17 +2643,6 @@ var DATOS = {
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
       "v": 4.1,
-      "abc": "C"
-    },
-    {
-      "m": "Crosman",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0,
       "abc": "C"
     },
     {
@@ -2783,6 +2761,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "C"
+    },
+    {
+      "m": "Crosman",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
       "v": 7.9,
@@ -2830,50 +2819,6 @@ var DATOS = {
       "fam": "PESCA",
       "ctl": "No controlado",
       "v": 0,
-      "abc": "C"
-    },
-    {
-      "m": "Derya",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 5.5,
-      "abc": "B"
-    },
-    {
-      "m": "Derya",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "C"
-    },
-    {
-      "m": "Derya",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "B"
-    },
-    {
-      "m": "Derya",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
       "abc": "C"
     },
     {
@@ -2965,6 +2910,50 @@ var DATOS = {
       "abc": ""
     },
     {
+      "m": "Derya",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 5.5,
+      "abc": "B"
+    },
+    {
+      "m": "Derya",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "C"
+    },
+    {
+      "m": "Derya",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "B"
+    },
+    {
+      "m": "Derya",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
       "m": "Doberman BALINES",
       "tipo": "No reglamentado",
       "dep": "Central",
@@ -2972,7 +2961,7 @@ var DATOS = {
       "cal": "5.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 181.1,
+      "v": 181,
       "abc": "A"
     },
     {
@@ -2994,7 +2983,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
-      "v": 565.2,
+      "v": 564.7,
       "abc": "A"
     },
     {
@@ -3038,7 +3027,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRE LIBRE",
       "ctl": "No controlado",
-      "v": 136.9,
+      "v": 136.8,
       "abc": "A"
     },
     {
@@ -3104,7 +3093,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
-      "v": 220,
+      "v": 219.9,
       "abc": "A"
     },
     {
@@ -3208,69 +3197,14 @@ var DATOS = {
     },
     {
       "m": "Doberman",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.1,
       "abc": "A"
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
-      "abc": "B"
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 134.1,
-      "abc": "C"
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "A"
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 1.5,
-      "abc": "C"
-    },
-    {
-      "m": "Doberman",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "5.5mm",
-      "fam": "AIRGUN",
-      "ctl": "Controlado",
-      "v": 2,
-      "abc": "B"
     },
     {
       "m": "Doberman",
@@ -3282,6 +3216,28 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 1.2,
       "abc": "A"
+    },
+    {
+      "m": "Doberman",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "5.5mm",
+      "fam": "AIRGUN",
+      "ctl": "No controlado",
+      "v": 2,
+      "abc": "B"
+    },
+    {
+      "m": "Doberman",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "B"
     },
     {
       "m": "Doberman",
@@ -3322,6 +3278,17 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 134.1,
+      "abc": "C"
+    },
+    {
+      "m": "Doberman",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "AIRE LIBRE (PROMO)",
       "ctl": "No controlado",
       "v": 0.1,
@@ -3337,6 +3304,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0,
       "abc": "N"
+    },
+    {
+      "m": "Doberman",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "A"
     },
     {
       "m": "Doberman",
@@ -3359,6 +3337,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0.1,
       "abc": "B"
+    },
+    {
+      "m": "Doberman",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 1.5,
+      "abc": "C"
     },
     {
       "m": "Doberman",
@@ -3517,39 +3506,6 @@ var DATOS = {
     {
       "m": "Fab Defense",
       "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 4.3,
-      "abc": "B"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "223REM",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 18.7,
-      "abc": "C"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 106.5,
-      "abc": "C"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
       "dep": "Showroom",
       "cat": "ACC",
       "cal": "Sin calibre",
@@ -3568,61 +3524,6 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 8.2,
       "abc": ""
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.3,
-      "abc": "B"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "223REM",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "C"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 28.1,
-      "abc": "C"
-    },
-    {
-      "m": "Fab Defense",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "C"
     },
     {
       "m": "Fab Defense",
@@ -3650,11 +3551,99 @@ var DATOS = {
       "m": "Fab Defense",
       "tipo": "No reglamentado",
       "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 4.3,
+      "abc": "B"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "223REM",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 18.7,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 106.5,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA (PROMO)",
       "ctl": "No controlado",
       "v": 5.8,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.3,
+      "abc": "B"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "223REM",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 28.1,
+      "abc": "C"
+    },
+    {
+      "m": "Fab Defense",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
       "abc": "C"
     },
     {
@@ -3901,101 +3890,35 @@ var DATOS = {
     },
     {
       "m": "Fobus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 30,
       "abc": "A"
     },
     {
       "m": "Fobus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 24.1,
       "abc": "C"
     },
     {
       "m": "Fobus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 3.6,
-      "abc": "C"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "N",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 42.9,
-      "abc": "N"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "A"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 4.9,
-      "abc": "C"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.9,
-      "abc": "C"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "N",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.5,
-      "abc": "N"
-    },
-    {
-      "m": "Fobus",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.4,
       "abc": "C"
     },
     {
@@ -4023,6 +3946,61 @@ var DATOS = {
     {
       "m": "Fobus",
       "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 42.9,
+      "abc": "N"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "A"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 4.9,
+      "abc": "C"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.9,
+      "abc": "C"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
@@ -4030,6 +4008,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 1.3,
       "abc": "C"
+    },
+    {
+      "m": "Fobus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "N",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.5,
+      "abc": "N"
     },
     {
       "m": "Frilley",
@@ -4330,28 +4319,6 @@ var DATOS = {
     },
     {
       "m": "Gamo",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.9,
-      "abc": "C"
-    },
-    {
-      "m": "Gamo",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.9,
-      "abc": "C"
-    },
-    {
-      "m": "Gamo",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
@@ -4359,6 +4326,17 @@ var DATOS = {
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 3.5,
+      "abc": "C"
+    },
+    {
+      "m": "Gamo",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 2.9,
       "abc": "C"
     },
     {
@@ -4393,6 +4371,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 3.9,
       "abc": "N"
+    },
+    {
+      "m": "Gamo",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.9,
+      "abc": "C"
     },
     {
       "m": "Gamo",
@@ -4458,72 +4447,6 @@ var DATOS = {
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 24,
-      "abc": "C"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 71,
-      "abc": "B"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 40.5,
-      "abc": "C"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 7.8,
-      "abc": "B"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 17.5,
-      "abc": "B"
-    },
-    {
-      "m": "Glock",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 5.7,
       "abc": "C"
     },
     {
@@ -4630,6 +4553,28 @@ var DATOS = {
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 71,
+      "abc": "B"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": "Sin calibre",
       "fam": "INDUMENTARIA",
       "ctl": "No controlado",
@@ -4664,10 +4609,43 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 40.5,
+      "abc": "C"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "Otro",
       "ctl": "No controlado",
       "v": 13.7,
       "abc": "C"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 7.8,
+      "abc": "B"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 17.5,
+      "abc": "B"
     },
     {
       "m": "Glock",
@@ -4697,6 +4675,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 5.7,
+      "abc": "C"
+    },
+    {
+      "m": "Glock",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "Otro",
       "ctl": "No controlado",
       "v": 1.4,
@@ -4710,7 +4699,7 @@ var DATOS = {
       "cal": "22LR",
       "fam": "MUNICION",
       "ctl": "Controlado",
-      "v": 275.5,
+      "v": 275.4,
       "abc": "A"
     },
     {
@@ -4814,12 +4803,12 @@ var DATOS = {
     },
     {
       "m": "Hawke",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 5.2,
       "abc": "C"
     },
@@ -4886,7 +4875,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "MUNICION",
       "ctl": "Controlado",
-      "v": 1217.1,
+      "v": 1216.8,
       "abc": "A"
     },
     {
@@ -4990,34 +4979,34 @@ var DATOS = {
     },
     {
       "m": "Indunaylon",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 2.9,
       "abc": "B"
     },
     {
       "m": "Indunaylon",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 4.2,
       "abc": "N"
     },
     {
       "m": "Indunaylon",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.3,
       "abc": "B"
     },
@@ -5133,90 +5122,35 @@ var DATOS = {
     },
     {
       "m": "Konus",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "ACC",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.6,
-      "abc": ""
-    },
-    {
-      "m": "Konus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 297.5,
       "abc": "A"
     },
     {
       "m": "Konus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 139.8,
       "abc": "B"
     },
     {
       "m": "Konus",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 6,
-      "abc": "C"
-    },
-    {
-      "m": "Konus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 69,
-      "abc": "A"
-    },
-    {
-      "m": "Konus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 32.7,
-      "abc": "B"
-    },
-    {
-      "m": "Konus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Konus",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
       "abc": "C"
     },
     {
@@ -5239,6 +5173,61 @@ var DATOS = {
       "fam": "OTRO (PROMO)",
       "ctl": "No controlado",
       "v": 0,
+      "abc": "C"
+    },
+    {
+      "m": "Konus",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.6,
+      "abc": ""
+    },
+    {
+      "m": "Konus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 69,
+      "abc": "A"
+    },
+    {
+      "m": "Konus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 32.7,
+      "abc": "B"
+    },
+    {
+      "m": "Konus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Konus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
       "abc": "C"
     },
     {
@@ -5430,17 +5419,6 @@ var DATOS = {
     },
     {
       "m": "Marlin",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "B"
-    },
-    {
-      "m": "Marlin",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "N",
@@ -5473,48 +5451,15 @@ var DATOS = {
       "abc": ""
     },
     {
-      "m": "Maverick",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "ACC",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.4,
-      "abc": ""
-    },
-    {
-      "m": "Maverick",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
-      "abc": "C"
-    },
-    {
-      "m": "Maverick",
-      "tipo": "Accesorio controlado",
+      "m": "Marlin",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.2,
       "abc": "B"
-    },
-    {
-      "m": "Maverick",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
-      "abc": "C"
     },
     {
       "m": "Maverick",
@@ -5539,37 +5484,48 @@ var DATOS = {
       "abc": "N"
     },
     {
-      "m": "Mendoza",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.8,
-      "abc": "B"
-    },
-    {
-      "m": "Mendoza",
-      "tipo": "Accesorio controlado",
+      "m": "Maverick",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.1,
+      "ctl": "No controlado",
+      "v": 0,
       "abc": "C"
     },
     {
-      "m": "Mendoza",
-      "tipo": "Accesorio controlado",
+      "m": "Maverick",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "NC",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.4,
+      "abc": ""
+    },
+    {
+      "m": "Maverick",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
+      "ctl": "No controlado",
+      "v": 0.2,
       "abc": "B"
+    },
+    {
+      "m": "Maverick",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "C"
     },
     {
       "m": "Mendoza",
@@ -5630,12 +5586,45 @@ var DATOS = {
       "m": "Mendoza",
       "tipo": "No reglamentado",
       "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 2.8,
+      "abc": "B"
+    },
+    {
+      "m": "Mendoza",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "C",
       "cal": "4.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0.8,
       "abc": "C"
+    },
+    {
+      "m": "Mendoza",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.1,
+      "abc": "C"
+    },
+    {
+      "m": "Mendoza",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "B"
     },
     {
       "m": "Miguel Nieto",
@@ -5672,17 +5661,6 @@ var DATOS = {
     },
     {
       "m": "Mossberg",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Mossberg",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "C",
@@ -5701,6 +5679,17 @@ var DATOS = {
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 3.5,
+      "abc": "C"
+    },
+    {
+      "m": "Mossberg",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
       "abc": "C"
     },
     {
@@ -5733,7 +5722,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "AIRE LIBRE (PROMO)",
       "ctl": "No controlado",
-      "v": 334.4,
+      "v": 334.2,
       "abc": "C"
     },
     {
@@ -5826,28 +5815,6 @@ var DATOS = {
     },
     {
       "m": "Nitecore",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 6.8,
-      "abc": "C"
-    },
-    {
-      "m": "Nitecore",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 6.4,
-      "abc": "C"
-    },
-    {
-      "m": "Nitecore",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
@@ -5856,6 +5823,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0.2,
       "abc": "B"
+    },
+    {
+      "m": "Nitecore",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 6.8,
+      "abc": "C"
     },
     {
       "m": "Nitecore",
@@ -5900,6 +5878,17 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0.6,
       "abc": "B"
+    },
+    {
+      "m": "Nitecore",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 6.4,
+      "abc": "C"
     },
     {
       "m": "Nitecore",
@@ -5958,12 +5947,12 @@ var DATOS = {
     },
     {
       "m": "Olight",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 2.4,
       "abc": "B"
     },
@@ -5980,45 +5969,45 @@ var DATOS = {
     },
     {
       "m": "Osight HK",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 214.6,
       "abc": "N"
     },
     {
       "m": "Osight HK",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "N",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 7.3,
       "abc": "N"
     },
     {
       "m": "Otros",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0,
       "abc": "C"
     },
     {
       "m": "Otros",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.1,
       "abc": "B"
     },
@@ -6255,28 +6244,6 @@ var DATOS = {
     },
     {
       "m": "Rexio",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "38SPL",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "C"
-    },
-    {
-      "m": "Rexio",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Rexio",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "C",
@@ -6317,6 +6284,28 @@ var DATOS = {
       "fam": "ARMA",
       "ctl": "Controlado",
       "v": 0.6,
+      "abc": "C"
+    },
+    {
+      "m": "Rexio",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "38SPL",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "Rexio",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
       "abc": "C"
     },
     {
@@ -6438,17 +6427,6 @@ var DATOS = {
       "fam": "INDUMENTARIA (PROMO)",
       "ctl": "No controlado",
       "v": 4.2,
-      "abc": "C"
-    },
-    {
-      "m": "Ruger",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.6,
       "abc": "C"
     },
     {
@@ -6670,6 +6648,17 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 1.4,
       "abc": ""
+    },
+    {
+      "m": "Ruger",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.6,
+      "abc": "C"
     },
     {
       "m": "SIN MARCA",
@@ -7454,248 +7443,6 @@ var DATOS = {
     },
     {
       "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.1,
-      "abc": "B"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "16GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "22LR",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "28GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "32GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "36GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "380ACP",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.6,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "38SPL",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "44MAG",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 11.4,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 126.4,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "16GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "380ACP",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "38SPL",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "45ACP",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.8,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 33.7,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "12GA",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0,
-      "abc": "B"
-    },
-    {
-      "m": "Sin Marca",
       "tipo": "Cargadores",
       "dep": "Central",
       "cat": "CARG",
@@ -7806,146 +7553,25 @@ var DATOS = {
     },
     {
       "m": "Sin Marca",
-      "tipo": "Municiones",
+      "tipo": "No reglamentado",
       "dep": "Central",
-      "cat": "C",
-      "cal": "10mm",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
+      "cat": "B",
       "cal": "12GA",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 1.9,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "223REM",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 1.2,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "380ACP",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 3.3,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "45ACP",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 4.9,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 1.2,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 43.5,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 40",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 1.7,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 44",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 0.5,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "12GA",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
       "v": 0,
-      "abc": "C"
+      "abc": "B"
     },
     {
       "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "20GA",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "C"
-    },
-    {
-      "m": "Sin Marca",
-      "tipo": "Municiones",
-      "dep": "Showroom",
-      "cat": "C",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
       "cal": "Sin calibre",
-      "fam": "MUNICION",
-      "ctl": "Controlado",
-      "v": 2.3,
-      "abc": "C"
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 2.1,
+      "abc": "B"
     },
     {
       "m": "Sin Marca",
@@ -7979,6 +7605,204 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0.1,
       "abc": "B"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "10mm",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 1.9,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "16GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "223REM",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 1.2,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "22LR",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "28GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "32GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "36GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "380ACP",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.6,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "380ACP",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 3.3,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "38SPL",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "44MAG",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "45ACP",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 4.9,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 11.4,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 1.2,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 126.4,
+      "abc": "C"
     },
     {
       "m": "Sin Marca",
@@ -8019,6 +7843,17 @@ var DATOS = {
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 43.5,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "NO LETAL",
       "ctl": "No controlado",
       "v": 0.2,
@@ -8045,6 +7880,39 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 91.3,
       "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "cal 40",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 1.7,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "cal 44",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 0.5,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
     },
     {
       "m": "Sin Marca",
@@ -8096,9 +7964,86 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "12GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 0,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "12GA",
       "fam": "PESCA",
       "ctl": "No controlado",
       "v": 0,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "16GA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "20GA",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "380ACP",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "38SPL",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "45ACP",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
       "abc": "C"
     },
     {
@@ -8110,6 +8055,39 @@ var DATOS = {
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 2.8,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 33.7,
       "abc": "C"
     },
     {
@@ -8151,6 +8129,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "MUNICION",
+      "ctl": "No controlado",
+      "v": 2.3,
+      "abc": "C"
+    },
+    {
+      "m": "Sin Marca",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "NO LETAL",
       "ctl": "No controlado",
       "v": 0.2,
@@ -8180,28 +8169,6 @@ var DATOS = {
     },
     {
       "m": "Smith & Wesson",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Smith & Wesson",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "B"
-    },
-    {
-      "m": "Smith & Wesson",
       "tipo": "Armas",
       "dep": "Central",
       "cat": "C",
@@ -8221,6 +8188,28 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 0.5,
       "abc": ""
+    },
+    {
+      "m": "Smith & Wesson",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Smith & Wesson",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "B"
     },
     {
       "m": "Smith & Wesson",
@@ -8252,7 +8241,7 @@ var DATOS = {
       "cal": "Sin calibre",
       "fam": "PESCA (PROMO)",
       "ctl": "No controlado",
-      "v": 668,
+      "v": 667.4,
       "abc": "C"
     },
     {
@@ -8400,35 +8389,13 @@ var DATOS = {
     },
     {
       "m": "TSS",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 2.5,
-      "abc": "C"
-    },
-    {
-      "m": "TSS",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "C"
-    },
-    {
-      "m": "TSS",
       "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "A",
       "cal": "5.5mm",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
-      "v": 578.5,
+      "v": 577.8,
       "abc": "A"
     },
     {
@@ -8439,7 +8406,7 @@ var DATOS = {
       "cal": "5.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 323.7,
+      "v": 317.2,
       "abc": "A"
     },
     {
@@ -8473,6 +8440,17 @@ var DATOS = {
       "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 14.9,
+      "abc": "C"
+    },
+    {
+      "m": "TSS",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 2.5,
       "abc": "C"
     },
     {
@@ -8580,6 +8558,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA (PROMO)",
+      "ctl": "No controlado",
+      "v": 0.4,
+      "abc": "C"
+    },
+    {
+      "m": "TSS",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
       "fam": "AIRGUN (PROMO)",
       "ctl": "No controlado",
       "v": 0,
@@ -8594,50 +8583,6 @@ var DATOS = {
       "fam": "NO LETAL (PROMO)",
       "ctl": "No controlado",
       "v": 1.4,
-      "abc": "C"
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 6.4,
-      "abc": "B"
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 17.5,
-      "abc": "C"
-    },
-    {
-      "m": "Tanfoglio",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2.9,
       "abc": "C"
     },
     {
@@ -8929,33 +8874,55 @@ var DATOS = {
     {
       "m": "Tanfoglio",
       "tipo": "No reglamentado",
-      "dep": "Showroom",
-      "cat": "C",
+      "dep": "Central",
+      "cat": "B",
       "cal": "Sin calibre",
-      "fam": "INDUMENTARIA",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 6.4,
+      "abc": "B"
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
       "ctl": "No controlado",
       "v": 0.3,
       "abc": "C"
     },
     {
-      "m": "Taurus",
-      "tipo": "Accesorio controlado",
+      "m": "Tanfoglio",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
+      "ctl": "No controlado",
+      "v": 17.5,
       "abc": "C"
     },
     {
-      "m": "Taurus",
-      "tipo": "Accesorio controlado",
+      "m": "Tanfoglio",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
+      "v": 2.9,
+      "abc": "C"
+    },
+    {
+      "m": "Tanfoglio",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "INDUMENTARIA",
+      "ctl": "No controlado",
       "v": 0.3,
       "abc": "C"
     },
@@ -8991,6 +8958,28 @@ var DATOS = {
       "ctl": "Controlado",
       "v": 0.2,
       "abc": ""
+    },
+    {
+      "m": "Taurus",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "C"
+    },
+    {
+      "m": "Taurus",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.3,
+      "abc": "C"
     },
     {
       "m": "Tikka",
@@ -9159,56 +9148,56 @@ var DATOS = {
     },
     {
       "m": "Truglo",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "20GA",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 1.7,
       "abc": "B"
     },
     {
       "m": "Truglo",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 7.6,
       "abc": "C"
     },
     {
       "m": "Truglo",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 2.2,
       "abc": "C"
     },
     {
       "m": "Truglo",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "B",
       "cal": "20GA",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 0.7,
       "abc": "B"
     },
     {
       "m": "Truglo",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Showroom",
       "cat": "C",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA (PROMO)",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 4.1,
       "abc": "C"
     },
@@ -9232,160 +9221,6 @@ var DATOS = {
       "fam": "MUNICION",
       "ctl": "Controlado",
       "v": 0.3,
-      "abc": "C"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 32,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 1.4,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "4.5mm",
-      "fam": "AIRGUN",
-      "ctl": "Controlado",
-      "v": 6.8,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "4.5mm",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 0.8,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "6mm",
-      "fam": "AIRGUN",
-      "ctl": "Controlado",
-      "v": 3.5,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 43",
-      "fam": "AIRGUN",
-      "ctl": "Controlado",
-      "v": 14.6,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 43",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 5.2,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "cal 68",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 4.1,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Central",
-      "cat": "C",
-      "cal": "cal 43",
-      "fam": "NO LETAL (PROMO)",
-      "ctl": "Controlado",
-      "v": 1.7,
-      "abc": "C"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "cal 43",
-      "fam": "AIRGUN",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "cal 43",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 0.4,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "cal 68",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "B"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 43",
-      "fam": "NO LETAL (PROMO)",
-      "ctl": "Controlado",
-      "v": 5.4,
-      "abc": "C"
-    },
-    {
-      "m": "Umarex",
-      "tipo": "Cargadores",
-      "dep": "Showroom",
-      "cat": "C",
-      "cal": "cal 43",
-      "fam": "NO LETAL",
-      "ctl": "Controlado",
-      "v": 0.4,
       "abc": "C"
     },
     {
@@ -9440,7 +9275,7 @@ var DATOS = {
       "cal": "9mm",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 182.2,
+      "v": 174.4,
       "abc": "A"
     },
     {
@@ -9517,7 +9352,18 @@ var DATOS = {
       "cal": "4.5mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 96.5,
+      "v": 103.4,
+      "abc": "B"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "4.5mm",
+      "fam": "NO LETAL",
+      "ctl": "No controlado",
+      "v": 0.8,
       "abc": "B"
     },
     {
@@ -9539,7 +9385,18 @@ var DATOS = {
       "cal": "6mm",
       "fam": "AIRGUN",
       "ctl": "No controlado",
-      "v": 247.8,
+      "v": 251.3,
+      "abc": "B"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 32,
       "abc": "B"
     },
     {
@@ -9603,9 +9460,20 @@ var DATOS = {
       "dep": "Central",
       "cat": "B",
       "cal": "cal 43",
+      "fam": "AIRGUN",
+      "ctl": "No controlado",
+      "v": 14.6,
+      "abc": "B"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "cal 43",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 15.8,
+      "v": 21,
       "abc": "B"
     },
     {
@@ -9627,7 +9495,7 @@ var DATOS = {
       "cal": "cal 68",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 28.3,
+      "v": 32.3,
       "abc": "B"
     },
     {
@@ -9694,6 +9562,17 @@ var DATOS = {
       "fam": "NO LETAL",
       "ctl": "No controlado",
       "v": 2.1,
+      "abc": "C"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "C",
+      "cal": "cal 43",
+      "fam": "NO LETAL (PROMO)",
+      "ctl": "No controlado",
+      "v": 1.7,
       "abc": "C"
     },
     {
@@ -9911,6 +9790,17 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 1.4,
+      "abc": "B"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
       "fam": "AIRE LIBRE",
       "ctl": "No controlado",
       "v": 4.9,
@@ -9955,9 +9845,20 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "B",
       "cal": "cal 43",
-      "fam": "NO LETAL",
+      "fam": "AIRGUN",
       "ctl": "No controlado",
       "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "cal 43",
+      "fam": "NO LETAL",
+      "ctl": "No controlado",
+      "v": 1.1,
       "abc": "B"
     },
     {
@@ -9979,7 +9880,7 @@ var DATOS = {
       "cal": "cal 68",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 0.8,
+      "v": 1,
       "abc": "B"
     },
     {
@@ -10043,9 +9944,20 @@ var DATOS = {
       "dep": "Showroom",
       "cat": "C",
       "cal": "cal 43",
+      "fam": "NO LETAL (PROMO)",
+      "ctl": "No controlado",
+      "v": 5.4,
+      "abc": "C"
+    },
+    {
+      "m": "Umarex",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "C",
+      "cal": "cal 43",
       "fam": "NO LETAL",
       "ctl": "No controlado",
-      "v": 5.1,
+      "v": 5.5,
       "abc": "C"
     },
     {
@@ -10072,12 +9984,12 @@ var DATOS = {
     },
     {
       "m": "Uzkon",
-      "tipo": "Accesorio controlado",
+      "tipo": "No reglamentado",
       "dep": "Central",
       "cat": "B",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
+      "ctl": "No controlado",
       "v": 2.4,
       "abc": "B"
     },
@@ -10194,61 +10106,6 @@ var DATOS = {
     {
       "m": "Vector Optics",
       "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "A",
-      "cal": "22LR",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "A"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "A",
-      "cal": "9mm",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 2,
-      "abc": "A"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "A",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 69.6,
-      "abc": "A"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "223REM",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.7,
-      "abc": "B"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Central",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 89.7,
-      "abc": "B"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
       "dep": "Showroom",
       "cat": "ACC",
       "cal": "Sin calibre",
@@ -10259,58 +10116,36 @@ var DATOS = {
     },
     {
       "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "A",
       "cal": "22LR",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
+      "ctl": "No controlado",
+      "v": 0.7,
       "abc": "A"
     },
     {
       "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "A",
       "cal": "9mm",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.1,
+      "ctl": "No controlado",
+      "v": 2,
       "abc": "A"
     },
     {
       "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
+      "tipo": "No reglamentado",
+      "dep": "Central",
       "cat": "A",
       "cal": "Sin calibre",
       "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 9.7,
+      "ctl": "No controlado",
+      "v": 69.6,
       "abc": "A"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "223REM",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 0.2,
-      "abc": "B"
-    },
-    {
-      "m": "Vector Optics",
-      "tipo": "Accesorio controlado",
-      "dep": "Showroom",
-      "cat": "B",
-      "cal": "Sin calibre",
-      "fam": "ACCESORIO DE ARMA",
-      "ctl": "Controlado",
-      "v": 9.5,
-      "abc": "B"
     },
     {
       "m": "Vector Optics",
@@ -10322,6 +10157,28 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0,
       "abc": "A"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "223REM",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.7,
+      "abc": "B"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Central",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 89.7,
+      "abc": "B"
     },
     {
       "m": "Vector Optics",
@@ -10344,6 +10201,61 @@ var DATOS = {
       "ctl": "No controlado",
       "v": 0,
       "abc": "C"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "22LR",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "A"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "9mm",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.1,
+      "abc": "A"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "A",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 9.7,
+      "abc": "A"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "223REM",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 0.2,
+      "abc": "B"
+    },
+    {
+      "m": "Vector Optics",
+      "tipo": "No reglamentado",
+      "dep": "Showroom",
+      "cat": "B",
+      "cal": "Sin calibre",
+      "fam": "ACCESORIO DE ARMA",
+      "ctl": "No controlado",
+      "v": 9.5,
+      "abc": "B"
     },
     {
       "m": "Walther",
@@ -10548,8 +10460,8 @@ var DATOS = {
       "Central",
       "A",
       "9mm",
-      309082,
-      906.5,
+      308982,
+      906.2,
       "MUNICION",
       "Controlado"
     ],
@@ -10665,8 +10577,8 @@ var DATOS = {
       "Central",
       "A",
       "5.5mm",
-      1806,
-      348.1,
+      1802,
+      347.3,
       "AIRGUN (PROMO)",
       "No controlado"
     ],
@@ -10769,8 +10681,8 @@ var DATOS = {
       "Central",
       "A",
       "22LR",
-      9263,
-      275.5,
+      9259,
+      275.4,
       "MUNICION",
       "Controlado"
     ],
@@ -10895,14 +10807,14 @@ var DATOS = {
       "261411",
       "Cámara KONUS Mod. FLAME 1,5x3x res 384×288 #7954",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       29,
       161.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505426",
@@ -11246,14 +11158,14 @@ var DATOS = {
       "261414",
       "Cámara KONUS Mod. FIERY 2x-16x res 400×300 #7957",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       14,
       85.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700970",
@@ -11503,32 +11415,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "320070",
-      "Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca",
-      "TSS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      268,
-      60.3,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
-      "320077",
-      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
-      "TSS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      278,
-      59.6,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "300095",
       "Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS Verde",
       "Fab Defense",
@@ -11540,6 +11426,19 @@ var DATOS = {
       57.8,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "320070",
+      "Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca",
+      "TSS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      255,
+      57.4,
+      "AIRGUN",
+      "No controlado"
     ],
     [
       "400331",
@@ -11591,6 +11490,19 @@ var DATOS = {
       26,
       56.1,
       "CAJA FUERTE",
+      "No controlado"
+    ],
+    [
+      "320077",
+      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
+      "TSS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      261,
+      55.9,
+      "AIRGUN",
       "No controlado"
     ],
     [
@@ -11714,14 +11626,14 @@ var DATOS = {
       "250005",
       "Mira Punto Rojo OSIGHT Mod. SE MOS Cerrada Multi-Reticula 2+32 MOA MOS CR1620 #OsightSEMOS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       47,
       46.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750300",
@@ -11779,14 +11691,14 @@ var DATOS = {
       "270812",
       "Funda interna FAB DEFENSE Mod. Scorpus Covert #sc-cg9b",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       248,
       45,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320019",
@@ -11818,14 +11730,14 @@ var DATOS = {
       "901601",
       "Magnetico DOBERMAN 30 lbs #SDMGunMag-1 pack x 10",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       166,
       42.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700800",
@@ -11948,14 +11860,14 @@ var DATOS = {
       "250000",
       "Mira Punto Rojo OSIGHT Mod. C Abierta Multi-Reticula 3+32 MOA RMR #OsightC",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       53,
       37.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850014786830",
@@ -12004,7 +11916,7 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      2250,
+      2249,
       36.5,
       "NO LETAL",
       "No controlado"
@@ -12013,14 +11925,14 @@ var DATOS = {
       "260294",
       "Telémetro KONUS Mod. RF1200 6x25 1200 mts #7316",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       40,
       36.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500250",
@@ -12117,14 +12029,14 @@ var DATOS = {
       "261411",
       "Cámara KONUS Mod. FLAME 1,5x3x res 384×288 #7954",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       6,
       33.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942154",
@@ -12231,19 +12143,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "400334",
-      "Balines DOBERMAN 5,5mm Mod. JUMBO 1.4gr 250x30 #D19921",
-      "Doberman BALINES",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      1560,
-      31.2,
-      "AIRGUN",
-      "No controlado"
-    ],
-    [
       "942153",
       "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 41",
       "Doberman BOTAS",
@@ -12257,17 +12156,30 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "400334",
+      "Balines DOBERMAN 5,5mm Mod. JUMBO 1.4gr 250x30 #D19921",
+      "Doberman BALINES",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      1559,
+      31.2,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
       "960160",
       "Kit de aerosoles GSM-BWC Limpia Armas, Disolvedor, Protector #33309",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       203,
       31.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680652",
@@ -12277,8 +12189,8 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      624,
-      31,
+      622,
+      30.9,
       "AIRE LIBRE",
       "No controlado"
     ],
@@ -12286,40 +12198,40 @@ var DATOS = {
       "900906",
       "Punto de Mira Glock de Acero 4,1 Luminiscente #7082",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       133,
       30.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324024",
       "Kit táctico para Marcadora UMAREX T4E para Mod. TR50 y TP50 #2.406",
       "Umarex",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       112,
       30.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250003",
       "Mira Punto Rojo OSIGHT Mod. S Cerrada Multi-Reticula 2+32 MOA RMSc Recargable #OsightS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       31,
       30.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942156",
@@ -12338,14 +12250,14 @@ var DATOS = {
       "111580",
       "Funda Externa CYTAC-FOBUS Mod. APXA1/92A1/STK/Universal c/retensor #1-UT100",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       286,
       30,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750335",
@@ -12455,14 +12367,14 @@ var DATOS = {
       "900926",
       "Alza de Mira GLOCK Gen4 6,5 auto-luminoso - 6879",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       90,
       28.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "702600",
@@ -12533,14 +12445,14 @@ var DATOS = {
       "261413",
       "Cámara KONUS Mod. FLAME 0,6x2.4x res 160x120 #7953",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       14,
       27.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505156",
@@ -12585,14 +12497,14 @@ var DATOS = {
       "901611",
       "Magnetico DOBERMAN 35lbs #SDMGunMag-2 pack x 10",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       103,
       26.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES320522",
@@ -12611,27 +12523,27 @@ var DATOS = {
       "272063",
       "Correa Fab Defense Elastica Mod. One Point Bungee",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       338,
       26.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250001",
       "Mira Punto Rojo OSIGHT Mod. K Abierta 6 MOA RMSc #OsightK",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       42,
       26.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322096",
@@ -12702,27 +12614,27 @@ var DATOS = {
       "260584",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY GIN/RTS 1X26X32 #SCRD-79",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       43,
       26,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260570",
       "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       30,
       25.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320227",
@@ -12910,14 +12822,14 @@ var DATOS = {
       "260292",
       "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       102,
       23.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942192",
@@ -12975,14 +12887,14 @@ var DATOS = {
       "261413",
       "Cámara KONUS Mod. FLAME 0,6x2.4x res 160x120 #7953",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       12,
       23.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323005",
@@ -13079,14 +12991,14 @@ var DATOS = {
       "260583",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOJ 1X24X29 MRS GENII #SCRD-76",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       43,
       22.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942204",
@@ -13118,14 +13030,14 @@ var DATOS = {
       "901600",
       "Magnetico DOBERMAN 30 lbs #SDMGunMag-1 x 1",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       944,
       22.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942206",
@@ -13157,14 +13069,14 @@ var DATOS = {
       "260053",
       "Binocular KONUS Mod. SPY19 HD 1,5x-12x 400mts #7940",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       30,
       22.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501577",
@@ -13222,14 +13134,14 @@ var DATOS = {
       "260572",
       "Magnificador VECTOR OPTICS Mod. PARAGON 5x30 #SCMF-34",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       29,
       21.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500428",
@@ -13443,14 +13355,14 @@ var DATOS = {
       "260246",
       "Mira Larga Distancia Norinco 15x45 TiroPractico Tripode #LBW15",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       33,
       20.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942183",
@@ -13703,14 +13615,14 @@ var DATOS = {
       "901610",
       "Magnetico DOBERMAN 35lbs #SDMGunMag-2 x 1",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       773,
       19.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320518",
@@ -13729,40 +13641,40 @@ var DATOS = {
       "DES260044",
       "Binocular KONUS GIANT 20x60 #2125",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       59,
       19,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250007",
       "Mira Punto Rojo OSIGHT Mod. XR Cerrada Multi-Reticula 2/6+32 MOA RMR Recargable #OsightXR",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       16,
       19,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270251",
       "Porta cargador Fab Defense 223REM/5.56NATO #556pouch",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "223REM",
       195,
       18.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400251",
@@ -13781,14 +13693,14 @@ var DATOS = {
       "550303",
       "Kit de limpieza GSM-BWC para armas cortas #BC-HNDGCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       112,
       18.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400389",
@@ -13824,8 +13736,8 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      5074,
-      18.3,
+      5064,
+      18.2,
       "PESCA (PROMO)",
       "No controlado"
     ],
@@ -13859,14 +13771,14 @@ var DATOS = {
       "110900",
       "Strike Systems Airsoft rifle case, 105x32x10cm, Black #18664",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       69,
       18.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260242",
@@ -13924,14 +13836,14 @@ var DATOS = {
       "250002",
       "Mira Punto Rojo OSIGHT Mod. K GN Abierta Verde 6 MOA RMSc #OsightKGN",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       26,
       17.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942155",
@@ -14084,7 +13996,7 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      4620,
+      4610,
       16.9,
       "PESCA (PROMO)",
       "No controlado"
@@ -14275,14 +14187,14 @@ var DATOS = {
       "250006",
       "Mira Punto Rojo OSIGHT Mod. XE AMRS Cerrada Multi-Reticula 2/6+32 MOA RMR #OsightXEAMRS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       16,
       15.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510759",
@@ -14305,7 +14217,7 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      4589,
+      4579,
       15.3,
       "PESCA (PROMO)",
       "No controlado"
@@ -14353,27 +14265,27 @@ var DATOS = {
       "260562",
       "Punto Rojo KONUS SIGHT-PRO PTS2 3x30 c/Reticulas RO/AZ #7203",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       29,
       15,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115019",
       "Porta Carg. 2ble P229/226/250 sp2022 Tanfoglio Taurus",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       178,
       15,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400298",
@@ -14431,14 +14343,14 @@ var DATOS = {
       "321093",
       "Cargador de Emergencia UMAREX T4E cal 43 Mod. GLOCK 17 GEN 5 #211.101",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "cal 43",
       36,
       14.6,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942196",
@@ -14483,14 +14395,14 @@ var DATOS = {
       "LIQ300118",
       "LQN-Caja PLANO p/2Rifles/Escop.c/Port. Cart. Ng#10527",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       27,
       14.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322065",
@@ -14669,8 +14581,8 @@ var DATOS = {
       "Central",
       "C",
       "Sin calibre",
-      1763,
-      13.8,
+      1753,
+      13.7,
       "PESCA (PROMO)",
       "No controlado"
     ],
@@ -14678,14 +14590,14 @@ var DATOS = {
       "111583",
       "Funda Externa CYTAC-FOBUS Mod. Universal c/Muslera #1-UT140",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       96,
       13.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920127",
@@ -14743,14 +14655,14 @@ var DATOS = {
       "900929",
       "Alza de Mira GLOCK Gen5 6,5 auto-luminoso - 39745",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       40,
       13.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160140",
@@ -14860,14 +14772,14 @@ var DATOS = {
       "300133",
       "Maleta ASG 102x35x15cm Mod. TACTICAL #19489",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       16,
       12.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500120",
@@ -14886,14 +14798,14 @@ var DATOS = {
       "901620",
       "Magnetico DOBERMAN 2 piezas 25 lbs  #SDMGunMag-3",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       431,
       12.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400371",
@@ -14909,19 +14821,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "830262",
-      "Hilo Snake Nevada 0.60mm 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      2131,
-      12.6,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "4500437",
       "Cargador GLOCK 9mm M19X 17 tiros Coyote - 1587-01",
       "Glock",
@@ -14933,6 +14832,19 @@ var DATOS = {
       12.6,
       "ACCESORIO DE ARMA",
       "Controlado"
+    ],
+    [
+      "830262",
+      "Hilo Snake Nevada 0.60mm 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      2121,
+      12.5,
+      "PESCA (PROMO)",
+      "No controlado"
     ],
     [
       "320016",
@@ -14951,14 +14863,14 @@ var DATOS = {
       "900927",
       "Alza de Mira GLOCK Gen4 6,9 auto-luminoso - 6883",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       39,
       12.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322097",
@@ -14977,14 +14889,14 @@ var DATOS = {
       "250004",
       "Mira Punto Rojo OSIGHT Mod. SE DPP Cerrada Multi-Reticula 2+32 MOA DPP CR1620 #OsightSEDPP",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       13,
       12.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610935",
@@ -15003,14 +14915,14 @@ var DATOS = {
       "261406",
       "Camara GSM-STEALTHCAM Mod. BROWTINE 18MP #STC-BT18",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       33,
       12.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "750142",
@@ -15081,14 +14993,14 @@ var DATOS = {
       "LIQ300113",
       "LQN-Caja p/Rifle Lujoso Negro #10101",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       12,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600423",
@@ -15341,14 +15253,14 @@ var DATOS = {
       "260573",
       "Punto Rojo para Rifle VECTOR OPTICS Mod. PARAGON 4x24 #SCPS-M04",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       13,
       11,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600890",
@@ -15432,14 +15344,14 @@ var DATOS = {
       "LIQ300115",
       "LQN-N-Caja p/2Rifles Lujoso Negro #10252",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       10.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "701291",
@@ -15471,14 +15383,14 @@ var DATOS = {
       "200182",
       "Bipode KONUS 22-33cm #1947",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       39,
       10.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400106",
@@ -15510,14 +15422,14 @@ var DATOS = {
       "901621",
       "Magnetico DOBERMAN 2 piezas 25 lbs  #SDMGunMag-3 pack x 10",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       34,
       10.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501567",
@@ -15611,19 +15523,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "510430",
-      "Morral DOBERMAN 5L FOXTROX BLACK #BL011BL",
-      "Doberman MOCHILAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      174,
-      10.1,
-      "INDUMENTARIA",
-      "No controlado"
-    ],
-    [
       "904005",
       "Balines de Practica UMAREX T4E cal 43 x 500 unid #2.4505",
       "Umarex",
@@ -15650,14 +15549,14 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "942150",
-      "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38",
-      "Doberman BOTAS",
+      "510430",
+      "Morral DOBERMAN 5L FOXTROX BLACK #BL011BL",
+      "Doberman MOCHILAS",
       "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
-      40,
+      173,
       10.1,
       "INDUMENTARIA",
       "No controlado"
@@ -15692,14 +15591,14 @@ var DATOS = {
       "300132",
       "Maleta ASG 100x35x15cm Negro #19834",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       17,
       9.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "701305",
@@ -15738,6 +15637,19 @@ var DATOS = {
       252,
       9.8,
       "AIRE LIBRE (PROMO)",
+      "No controlado"
+    ],
+    [
+      "942150",
+      "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      39,
+      9.8,
+      "INDUMENTARIA",
       "No controlado"
     ],
     [
@@ -15900,14 +15812,14 @@ var DATOS = {
       "260291",
       "Mira KONUS Mod. ABSOLUTE 5-40x56 Vidrio ED #7179",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       9.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505054",
@@ -16001,19 +15913,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "830295",
-      "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      1119,
-      8.9,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "EXH600849",
       "Pistola BERETTA cal 9mm Mod. APX A1 2 cargadores 17 tiros",
       "Beretta",
@@ -16030,27 +15929,40 @@ var DATOS = {
       "111585",
       "Porta Cargador Doble CYTAC-FOBUS Mod. Universal Paddle #1-M1MPU00",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       144,
       8.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900907",
       "Punto de Mira Glock de Acero 4,9 Luminiscente  #33580",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       38,
       8.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
+    ],
+    [
+      "830295",
+      "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      1109,
+      8.8,
+      "PESCA (PROMO)",
+      "No controlado"
     ],
     [
       "510758",
@@ -16108,14 +16020,14 @@ var DATOS = {
       "111584",
       "Funda Externa CYTAC-FOBUS Mod. Universal Muslera c/Linterna #1-UR1401",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       72,
       8.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720694",
@@ -16138,7 +16050,7 @@ var DATOS = {
       "Central",
       "B",
       "Sin calibre",
-      421,
+      420,
       8.5,
       "AIRE LIBRE",
       "No controlado"
@@ -16225,14 +16137,14 @@ var DATOS = {
       "250111",
       "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       176,
       8.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500270",
@@ -16342,14 +16254,14 @@ var DATOS = {
       "260565",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOS MOJ 1x22x26  #SCRD-M36",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       14,
       8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260243",
@@ -16394,14 +16306,14 @@ var DATOS = {
       "260566",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MRS MOJ Gen II 1x19x26  #SCRD-SM64",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       12,
       8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "748000",
@@ -16420,14 +16332,14 @@ var DATOS = {
       "110585",
       "Funda interna FOBUS Mod. #IWBL Universal tamaño L",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       60,
       7.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600930",
@@ -16472,14 +16384,14 @@ var DATOS = {
       "260571",
       "Magnificador VECTOR OPTICS Mod. MAVERICK III 3x22 #SCMF-31",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       19,
       7.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505382",
@@ -16495,32 +16407,6 @@ var DATOS = {
       "Controlado"
     ],
     [
-      "830261",
-      "Hilo Snake Nevada 0.50mm 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      1702,
-      7.7,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
-      "320775",
-      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04",
-      "Umarex",
-      "No reglamentado",
-      "Central",
-      "A",
-      "9mm",
-      6,
-      7.7,
-      "NO LETAL",
-      "No controlado"
-    ],
-    [
       "942197",
       "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Desert Arena Talle EUR 45",
       "Doberman BOTAS",
@@ -16531,6 +16417,19 @@ var DATOS = {
       34,
       7.7,
       "INDUMENTARIA",
+      "No controlado"
+    ],
+    [
+      "830261",
+      "Hilo Snake Nevada 0.50mm 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      1692,
+      7.7,
+      "PESCA (PROMO)",
       "No controlado"
     ],
     [
@@ -16875,14 +16774,14 @@ var DATOS = {
       "260568",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY PLUS 1x18x20 #SCRD-63",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       10,
       6.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151400",
@@ -16901,27 +16800,27 @@ var DATOS = {
       "900931",
       "Alza de Mira GLOCK Gen5 6,9 auto-luminoso - 39746",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       20,
       6.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "321055",
       "Cargador ASG cal. 6mm para modelos AEG M16 130 tiros #17616",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "6mm",
       125,
       6.7,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE600854CARU",
@@ -17083,14 +16982,14 @@ var DATOS = {
       "260294",
       "Telémetro KONUS Mod. RF1200 6x25 1200 mts #7316",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       7,
       6.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520355",
@@ -17265,14 +17164,14 @@ var DATOS = {
       "261414",
       "Cámara KONUS Mod. FIERY 2x-16x res 400×300 #7957",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       6.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "602845",
@@ -17356,14 +17255,14 @@ var DATOS = {
       "550251",
       "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22LR #41403",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "22LR",
       103,
       5.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680660",
@@ -17382,14 +17281,14 @@ var DATOS = {
       "900722",
       "Tubo Cañon p/Glock M19 9mm D.D. STS",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "9mm",
       3,
       5.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324005",
@@ -17551,14 +17450,14 @@ var DATOS = {
       "111582",
       "Funda Externa CYTAC-FOBUS Mod. Universal c/Linterna #1-UR1001",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       71,
       5.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920407",
@@ -17720,14 +17619,14 @@ var DATOS = {
       "110440",
       "N-Canillera p/Armas Compactas 380/9mm#21202",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       41,
       5.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "193715028671",
@@ -17746,14 +17645,14 @@ var DATOS = {
       "200030",
       "Culata DERYA Polímero para Mod. Carina Q101",
       "Derya",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       42,
       5.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "602825",
@@ -17863,14 +17762,14 @@ var DATOS = {
       "270150",
       "Culata Fab Defense Glock M17 #GLR-17",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       5.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500280",
@@ -17980,14 +17879,14 @@ var DATOS = {
       "321090",
       "Cargador UMAREX T4E de emergencia para cal 43 mod TPM1 #2.4768.2",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "cal 43",
       12,
       5.2,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400395",
@@ -18019,14 +17918,14 @@ var DATOS = {
       "702301",
       "Rifle Palanquero CHIAPPA Cal 22LR Mod. LA322 15+1 tiros",
       "Chiappa",
-      "Armas",
+      "No reglamentado",
       "Central",
       "C",
       "22LR",
       1,
       5.1,
       "ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700800",
@@ -18079,19 +17978,6 @@ var DATOS = {
       5.1,
       "ARMA",
       "Controlado"
-    ],
-    [
-      "830296",
-      "Hilo Snake Mult. 4X Fullpowe.0.35MM 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      642,
-      5.1,
-      "PESCA (PROMO)",
-      "No controlado"
     ],
     [
       "720679",
@@ -18156,6 +18042,19 @@ var DATOS = {
       58,
       5,
       "INDUMENTARIA",
+      "No controlado"
+    ],
+    [
+      "830296",
+      "Hilo Snake Mult. 4X Fullpowe.0.35MM 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      632,
+      5,
+      "PESCA (PROMO)",
       "No controlado"
     ],
     [
@@ -18318,14 +18217,14 @@ var DATOS = {
       "900928",
       "Alza de Mira GLOCK Gen4 7.3 auto-luminoso - 6960",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       15,
       4.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320102",
@@ -18357,14 +18256,14 @@ var DATOS = {
       "260567",
       "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK MOJ #SCRDM-08",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       44,
       4.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680512",
@@ -18396,27 +18295,27 @@ var DATOS = {
       "260360",
       "Alza y Punto de mira TRUGLO de Fibra Optica para GLOCK mod LOW #TG131G1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       4.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250100",
       "Montura Picatinny OSIGHT Mod. OSP-091 p/Glock #OSP-091",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       47,
       4.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830287",
@@ -18500,14 +18399,14 @@ var DATOS = {
       "550252",
       "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22MAG a 308WIN #41405",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "22MAG",
       80,
       4.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES941059",
@@ -18523,30 +18422,17 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "830285",
-      "Hilo Snake Mult. 4X Fullpowe 0.60MM 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      576,
-      4.6,
-      "PESCA (PROMO)",
-      "No controlado"
-    ],
-    [
       "270650",
       "Manija de Cerrojado Fab Defense Glock #FCH",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       14,
       4.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750420",
@@ -18601,6 +18487,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "830285",
+      "Hilo Snake Mult. 4X Fullpowe 0.60MM 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      566,
+      4.5,
+      "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
       "620205",
       "Esmerillon #1/0  Art.202 x 5Und.",
       "Sin Marca",
@@ -18630,27 +18529,27 @@ var DATOS = {
       "260053",
       "Binocular KONUS Mod. SPY19 HD 1,5x-12x 400mts #7940",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       6,
       4.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111570",
       "Funda BERETTA Mod. UNIFORM PRO SOFT Azul #FO491T1932054VUNI",
       "Beretta Mod",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       15,
       4.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "712117",
@@ -18708,14 +18607,14 @@ var DATOS = {
       "350203",
       "Target GSM-SME Mod. Molino auto curable #SME-SHW",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       33,
       4.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES880071",
@@ -18734,14 +18633,14 @@ var DATOS = {
       "270080",
       "Agarre táctico Fab Defense Mod. MOJO para modelos AR15, con cobertor táctico",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       22,
       4.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500752",
@@ -18773,14 +18672,14 @@ var DATOS = {
       "110586",
       "Funda interna FOBUS Mod. #IWBMCC Universal tamaño M corte combate",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       32,
       4.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510770",
@@ -18851,14 +18750,14 @@ var DATOS = {
       "REP920041",
       "N-Repuesto p/Esc.SetCula/Guard.M:S3112 Semi/Poly ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       29,
       4.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700180",
@@ -18877,14 +18776,14 @@ var DATOS = {
       "260290",
       "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       4.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES321201",
@@ -19033,14 +18932,14 @@ var DATOS = {
       "321097",
       "Cargador UMAREX T4E cal 68 2 unidades #2.4717.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "cal 68",
       61,
       4.1,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830284",
@@ -19085,14 +18984,14 @@ var DATOS = {
       "350202",
       "Target GSM-SME 8p auto curable para diferentes calibres #SME-80SHGNG",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       26,
       4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700150",
@@ -19150,14 +19049,14 @@ var DATOS = {
       "260450",
       "Mira Laser Leupold #48806",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       3.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681107",
@@ -19254,14 +19153,14 @@ var DATOS = {
       "300092",
       "Kit de Precisión Fab Defense Ruger 10-22 Delta #UASR10/22",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       3.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901150",
@@ -19280,27 +19179,27 @@ var DATOS = {
       "LIQ300214",
       "LQN-N-Caja p/2Pistolas Neg. #10402",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       3.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ920350",
       "N-Visor C-More",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       3.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES320522",
@@ -19358,14 +19257,14 @@ var DATOS = {
       "260275",
       "Mira KONUS PRO M30 12.5-50x56 reticula iluminada 1/2 Mil-Dot #7289",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       3.8,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830286",
@@ -19475,40 +19374,40 @@ var DATOS = {
       "250101",
       "Placa Adaptadora OSIGHT RMR a RMSc #RMRtoRMScAdapterPlate",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       47,
       3.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210090",
       "N-Balanza Lyman #1000  Electrico",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       3.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111581",
       "Funda Externa CYTAC-FOBUS Mod. Universal Zurdo c/retensor #1-UR100L",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       46,
       3.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300094",
@@ -19550,19 +19449,6 @@ var DATOS = {
       "No controlado"
     ],
     [
-      "DES750305",
-      "Carpa NTK Mod. PANDA 6 personas #155154",
-      "NTK",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      18,
-      3.7,
-      "AIRE LIBRE (PROMO)",
-      "No controlado"
-    ],
-    [
       "501230",
       "Cartucho Fire quest 12 GA salt",
       "Fire quest",
@@ -19579,14 +19465,14 @@ var DATOS = {
       "500812",
       "Servicio de Reacondicionamiento .45 Pack *500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       20,
       3.6,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700689",
@@ -19657,14 +19543,14 @@ var DATOS = {
       "324020",
       "Pistola Marcadora de Paintball UMAREX T4E cal 43 Mod. SW M&P9 M2.0 Negro+Cargador de Emergenca adicional #2.4767",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "cal 43",
       2,
       3.6,
       "NO LETAL (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "710590",
@@ -19839,27 +19725,27 @@ var DATOS = {
       "200125",
       "Pistol Grip BOITO Madera",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       195,
       3.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260677",
       "Montante para rifles KONUS de 30mm Bajo para Picattiny / Weaver #7405",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       26,
       3.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300096",
@@ -19904,14 +19790,14 @@ var DATOS = {
       "270150",
       "Culata Fab Defense Glock M17 #GLR-17",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       3.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ322055",
@@ -20034,14 +19920,14 @@ var DATOS = {
       "260575",
       "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK TEK #SCRDM-01",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       33,
       3.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400266",
@@ -20054,6 +19940,19 @@ var DATOS = {
       39,
       3.5,
       "NO LETAL",
+      "No controlado"
+    ],
+    [
+      "DES750305",
+      "Carpa NTK Mod. PANDA 6 personas #155154",
+      "NTK",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      17,
+      3.5,
+      "AIRE LIBRE (PROMO)",
       "No controlado"
     ],
     [
@@ -20073,14 +19972,14 @@ var DATOS = {
       "110587",
       "Funda interna FOBUS Mod. #IWBMLH Universal tamaño M para Zurdo",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       26,
       3.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324085",
@@ -20112,14 +20011,14 @@ var DATOS = {
       "270202",
       "Montante Táctico Fab Defense Pistola Universal Aluminio #USM",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       12,
       3.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700973",
@@ -20177,14 +20076,14 @@ var DATOS = {
       "110710D",
       "N-Cartuc.#78051 Sz5 Michng R",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       24,
       3.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600430",
@@ -20203,27 +20102,27 @@ var DATOS = {
       "900929",
       "Alza de Mira GLOCK Gen5 6,5 auto-luminoso - 39745",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       10,
       3.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900931",
       "Alza de Mira GLOCK Gen5 6,9 auto-luminoso - 39746",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       10,
       3.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ150983",
@@ -20307,14 +20206,14 @@ var DATOS = {
       "111560",
       "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Full Size #WHLSBOR0331-842717113914",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       21,
       3.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620607",
@@ -20372,14 +20271,14 @@ var DATOS = {
       "260682",
       "Montante para rifles KONUS de 25.4mm Bajo para Picattiny / Weaver #7402",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       22,
       3.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621201",
@@ -20450,27 +20349,27 @@ var DATOS = {
       "900926",
       "Alza de Mira GLOCK Gen4 6,5 auto-luminoso - 6879",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       10,
       3.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900927",
       "Alza de Mira GLOCK Gen4 6,9 auto-luminoso - 6883",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       10,
       3.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620665",
@@ -20606,14 +20505,14 @@ var DATOS = {
       "500816",
       "Servicio de Reacondicionamiento .380 Pack *1000",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "380ACP",
       16,
       3.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680000",
@@ -20697,14 +20596,14 @@ var DATOS = {
       "300090",
       "Kit de Precisión Fab Defense Ruger 10-22 PRO Delta #UASPROR10/22",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500753",
@@ -20723,14 +20622,14 @@ var DATOS = {
       "260291",
       "Mira KONUS Mod. ABSOLUTE 5-40x56 Vidrio ED #7179",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4501000",
@@ -20801,14 +20700,14 @@ var DATOS = {
       "260910",
       "N-Mira Rifle Polvora Ng90Mjt Lym",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620619",
@@ -20879,27 +20778,27 @@ var DATOS = {
       "200183",
       "Bipode KONUS 15-22cm #1948",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       9,
       2.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270204",
       "Montante Táctico Fab Defense para Glock #GIS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       17,
       2.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320815",
@@ -20996,27 +20895,27 @@ var DATOS = {
       "900928",
       "Alza de Mira GLOCK Gen4 7.3 auto-luminoso - 6960",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       9,
       2.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680850",
       "Cable Tactico NITECORE Mod. RSW2i para mod. P10",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       34,
       2.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160175",
@@ -21035,14 +20934,14 @@ var DATOS = {
       "260581",
       "Placa para Punto Rojo VECTOR OPTICS Mod. UNIVERSAL OFFSET PICATINNY #SCFRM-29",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       33,
       2.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400202",
@@ -21052,7 +20951,7 @@ var DATOS = {
       "Central",
       "A",
       "Sin calibre",
-      1771,
+      1766,
       2.8,
       "AIRGUN",
       "No controlado"
@@ -21165,27 +21064,27 @@ var DATOS = {
       "900906",
       "Punto de Mira Glock de Acero 4,1 Luminiscente #7082",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       12,
       2.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260556",
       "Punto Rojo HAWKE 1x3 MOA LG DIGITAL WEAVER #12144",
       "Hawke",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       2.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681108",
@@ -21295,14 +21194,14 @@ var DATOS = {
       "901281",
       "Argolla Base de Cargador p/Sujetar el Cordon #39002",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       275,
       2.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520700",
@@ -21321,66 +21220,66 @@ var DATOS = {
       "710506",
       "Caja de Seguridad Digital Noble 35x22x25cm#SWSL33EW",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       2.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260568",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY PLUS 1x18x20 #SCRD-63",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       4,
       2.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110654",
       "N-Cartuc.#78361 Sz36Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       20,
       2.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260566",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MRS MOJ Gen II 1x19x26  #SCRD-SM64",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       2.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210705",
       "N-Dado Dillon 45Acp Sd-Jr #20123",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "45ACP",
       6,
       2.6,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP901140",
@@ -21451,14 +21350,14 @@ var DATOS = {
       "270650",
       "Manija de Cerrojado Fab Defense Glock #FCH",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       2.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920210",
@@ -21516,14 +21415,14 @@ var DATOS = {
       "4520754",
       "Cargador AC UMAREX cal 4,5mm para Mod GLOCK 19X BlowBack #5.8367.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       11,
       2.6,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600424",
@@ -21542,40 +21441,40 @@ var DATOS = {
       "900907",
       "Punto de Mira Glock de Acero 4,9 Luminiscente  #33580",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       11,
       2.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270203",
       "Montante Linterna Fab Defense Izquierdo Pistola FAB 1p #PLG",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       20,
       2.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260252",
       "Montante TSS 25mm Montura Simple 3 Tornillos",
       "TSS",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       229,
       2.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621155",
@@ -21633,14 +21532,14 @@ var DATOS = {
       "900653",
       "Placa para punto rojo BERETTA Mod. APXA1 N2",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       11,
       2.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600428",
@@ -21659,14 +21558,14 @@ var DATOS = {
       "300160",
       "N-Estuche p/Balas Fusil*9 Sm70",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       164,
       2.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620617",
@@ -21776,14 +21675,14 @@ var DATOS = {
       "500809",
       "Servicio de Reacondicionamiento .40 Pack *500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       24,
       2.5,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150129",
@@ -21802,27 +21701,27 @@ var DATOS = {
       "260552",
       "Punto Rojo Hawke 1x5 M.O.A Reticula Ilum.Rojo Sensor aut.de brillo #12133",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       2.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550304",
       "Kit de limpieza GSM-BWC para Rifles AR15 #BC-ARCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       12,
       2.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621044",
@@ -21867,40 +21766,40 @@ var DATOS = {
       "111586",
       "Porta Tapa Oido CYTAC-FOBUS #1-A1EMC10",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       97,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260277",
       "Mira táctica KONUS PRO M30 1-4x24 reticula iluminada Center Dot #7184",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260277",
       "Mira táctica KONUS PRO M30 1-4x24 reticula iluminada Center Dot #7184",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322080",
@@ -21945,14 +21844,14 @@ var DATOS = {
       "200360",
       "N-Cacha Hoge Ruger P85 Etc.85000",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       31,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600431",
@@ -21971,14 +21870,14 @@ var DATOS = {
       "260555",
       "Punto Rojo HAWKE 1x3 MOA Mod. Sport Optics #12141",
       "Hawke",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681122",
@@ -22010,14 +21909,14 @@ var DATOS = {
       "LIQ300115",
       "LQN-N-Caja p/2Rifles Lujoso Negro #10252",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       2.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600423",
@@ -22114,14 +22013,14 @@ var DATOS = {
       "260360",
       "Alza y Punto de mira TRUGLO de Fibra Optica para GLOCK mod LOW #TG131G1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       2.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750300",
@@ -22205,26 +22104,13 @@ var DATOS = {
       "260221",
       "Mira Telescopica BSA QK8-32X56 BWF30",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       2.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
-      "830283",
-      "Hilo Snake Mult. 4X Fullpowe 0.50MM 100M",
-      "Snake",
-      "No reglamentado",
-      "Central",
-      "C",
-      "Sin calibre",
-      290,
-      2.3,
-      "PESCA (PROMO)",
       "No controlado"
     ],
     [
@@ -22244,14 +22130,14 @@ var DATOS = {
       "110712D",
       "N-Cartuc.#78191 Sz19 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       18,
       2.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150953",
@@ -22296,14 +22182,14 @@ var DATOS = {
       "110668",
       "N-Cartuc.#95181 Sz18Michael",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       2.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620606",
@@ -22423,6 +22309,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "830283",
+      "Hilo Snake Mult. 4X Fullpowe 0.50MM 100M",
+      "Snake",
+      "No reglamentado",
+      "Central",
+      "C",
+      "Sin calibre",
+      280,
+      2.2,
+      "PESCA (PROMO)",
+      "No controlado"
+    ],
+    [
       "320515",
       "Arco UMAREX Mod. NXG Recurvado Cadet3 129cm 15lbs #2.2345",
       "Umarex",
@@ -22439,27 +22338,27 @@ var DATOS = {
       "260363",
       "Alza y Punto de mira Truglo de Tritium Pro para Ruger SR series con circulo blanco #TG231R1W",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       2.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "262000",
       "Rueda de Parallax KONUS p/Miras Telescopicas p/Modelos Varios #7199",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       2.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620605",
@@ -22569,14 +22468,14 @@ var DATOS = {
       "260559",
       "Placa para Punto Rojo VECTOR OPTICS Mod. M1911 TEK #SCRDM-02",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       19,
       2.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680848",
@@ -22621,14 +22520,14 @@ var DATOS = {
       "210700",
       "N-Dado Dillon 44Splmgsd-Jr#20242",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       2.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323005",
@@ -22686,27 +22585,27 @@ var DATOS = {
       "260272",
       "Mira KONUS PRO-F30 8-32x56 Primer plano focal reticula iluminada Mil-Dot #7298",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       2.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260272",
       "Mira KONUS PRO-F30 8-32x56 Primer plano focal reticula iluminada Mil-Dot #7298",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       2.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621042",
@@ -22777,14 +22676,14 @@ var DATOS = {
       "300093",
       "Kit de Precisión Fab Defense Ruger 10-22 Retractil #M4R10/22",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       2.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500760",
@@ -22803,14 +22702,14 @@ var DATOS = {
       "260290",
       "Mira KONUS Mod. EVENT 1-10x24 reticula circular iluminada #7183",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       2.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620657",
@@ -22842,14 +22741,14 @@ var DATOS = {
       "260571",
       "Magnificador VECTOR OPTICS Mod. MAVERICK III 3x22 #SCMF-31",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       5,
       2.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610506",
@@ -22868,40 +22767,40 @@ var DATOS = {
       "DES260046",
       "Binocular KONUS Mod. ACTION Verde 10x25 #2041",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       20,
       2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "380015",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 9mm #SCSC-04",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "9mm",
       59,
       2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260603",
       "Punto Rojo Titan Tactica #TT-553 c/Pila",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700930",
@@ -22972,14 +22871,14 @@ var DATOS = {
       "900898",
       "Punto de Mira Xtreme 2.5x5.5 p/Pistola Tanfoglio #X023",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500260",
@@ -22998,14 +22897,14 @@ var DATOS = {
       "REP920043",
       "N-Repuesto p/Tanfoglio Sear Hounsing Assy",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400217",
@@ -23076,14 +22975,14 @@ var DATOS = {
       "321057",
       "Cargador ASG de BB cal. 6mm rápido para 1200 unid. #17476",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "6mm",
       125,
       2,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400467",
@@ -23102,14 +23001,14 @@ var DATOS = {
       "920258",
       "N-Caño De Extension 9Mm Intrat",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       9,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500660",
@@ -23128,14 +23027,14 @@ var DATOS = {
       "900723",
       "Tubo Cañon p/Glock M19 9mm D.D Dorado",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "9mm",
       1,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520520",
@@ -23219,14 +23118,14 @@ var DATOS = {
       "260760",
       "Montante weaver de 30 mm EXTRA HIGH",
       "Gamo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       7,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "712117",
@@ -23258,40 +23157,40 @@ var DATOS = {
       "260757",
       "Montante Gamo TS-300 30mm High p/ Riel Rfle",
       "Gamo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260444",
       "Mira Laser CAT Bersa Thunder 9mm/40SW/45ACP",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       5,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110009",
       "Funda para rifle INDYNAYLON Mod. F03 110m x 20cm.",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       30,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE700863",
@@ -23323,14 +23222,14 @@ var DATOS = {
       "250210",
       "Botella 90ml GSM-BWC Gun Stock Wax para proteger madera y metal #23723",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       22,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "721143",
@@ -23414,14 +23313,14 @@ var DATOS = {
       "270101",
       "Guardamano Fab Defense M:H y K G3 Aluminio #G3-RS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323145",
@@ -23453,27 +23352,27 @@ var DATOS = {
       "400261",
       "Cartuchos P/Bengala Cal.12 *3",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       39,
       1.9,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260442",
       "Mira Laser CAT Taurus PT92/99",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610539",
@@ -23505,14 +23404,14 @@ var DATOS = {
       "550151",
       "Equipo Limp. 6.35 Pistol#96412",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       49,
       1.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510700",
@@ -23531,14 +23430,14 @@ var DATOS = {
       "250691",
       "Montante NITECORE Mod. GM03 para escopetas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       35,
       1.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES681101",
@@ -23570,40 +23469,40 @@ var DATOS = {
       "4520770",
       "Cargador Airsoft UMAREX cal 6mm 14 T. para Mod GLOCK 17 GEN5 #2.6439.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "6mm",
       8,
       1.9,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110588",
       "Funda interna FOBUS Mod. #IWBS Universal tamaño S",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       14,
       1.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "261406",
       "Camara GSM-STEALTHCAM Mod. BROWTINE 18MP #STC-BT18",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       1.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750100",
@@ -23674,14 +23573,14 @@ var DATOS = {
       "321058",
       "Cargador ASG de BB cal. 6mm rápido para pistolas Airsoft #14847",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "6mm",
       108,
       1.8,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750186",
@@ -23791,14 +23690,14 @@ var DATOS = {
       "210458",
       "Dado Lyman P/45Acp 7680107",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "45ACP",
       11,
       1.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "711050",
@@ -23973,14 +23872,14 @@ var DATOS = {
       "260370",
       "Punto de mira TRUGLO para escopetas universal verde HD SGT 12-20GA GRN #TG93HA",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "20GA",
       15,
       1.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500870",
@@ -24025,27 +23924,27 @@ var DATOS = {
       "324000",
       "Pistola UMAREX T4E cal 43 Mod. Walther PPQ +Cargador de Emergenca adicional #2.4760",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "cal 43",
       1,
       1.7,
       "NO LETAL (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324000",
       "Pistola UMAREX T4E cal 43 Mod. Walther PPQ +Cargador de Emergenca adicional #2.4760",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "cal 43",
       1,
       1.7,
       "NO LETAL (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200139",
@@ -24103,14 +24002,14 @@ var DATOS = {
       "210715",
       "N-Dado Dillon 380Autosd-Jr#20246",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       1.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320088",
@@ -24129,40 +24028,27 @@ var DATOS = {
       "REP900112",
       "N-Repuesto Guia y Traba de Cerrojo Boito #G12344",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       38,
       1.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
-    ],
-    [
-      "400379",
-      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
-      "Apolo",
-      "No reglamentado",
-      "Central",
-      "A",
-      "5.5mm",
-      146,
-      1.7,
-      "AIRGUN",
       "No controlado"
     ],
     [
       "260674",
       "Montante para rifles KONUS de 30mm Alto  para Picattiny / Weaver #7403",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       10,
       1.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621154",
@@ -24204,6 +24090,19 @@ var DATOS = {
       "No controlado"
     ],
     [
+      "400379",
+      "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
+      "Apolo",
+      "No reglamentado",
+      "Central",
+      "A",
+      "5.5mm",
+      145,
+      1.7,
+      "AIRGUN",
+      "No controlado"
+    ],
+    [
       "772000",
       "Tapa Boca s/Metal c/Goma 8/M=50/ SM7401",
       "Sin Marca",
@@ -24220,14 +24119,14 @@ var DATOS = {
       "260573",
       "Punto Rojo para Rifle VECTOR OPTICS Mod. PARAGON 4x24 #SCPS-M04",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       1.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "261405",
@@ -24402,14 +24301,14 @@ var DATOS = {
       "400422",
       "N-Punta Normal Cal. 40 200grs(Brasil)",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "cal 40",
       32,
       1.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300095",
@@ -24428,14 +24327,14 @@ var DATOS = {
       "270813",
       "Funda Fab Defense p/ M:1911 Level 1 #M1-1911",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       1.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850162",
@@ -24493,14 +24392,14 @@ var DATOS = {
       "270056",
       "Empuñadura Fab Defense Ergonomica c/MontLinternaTáctica #MIKI1",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       7,
       1.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681116",
@@ -24558,14 +24457,14 @@ var DATOS = {
       "4520771",
       "Cargador Airsoft UMAREX cal 6mm 14 T. para Mod GLOCK 19X  #2.6435.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "6mm",
       7,
       1.6,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620695",
@@ -24649,27 +24548,27 @@ var DATOS = {
       "260972",
       "Mira Telescopica Bushnell  1-4x24 #AR91424BI",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       1.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250206",
       "Botella 90ml GSM-BWC Tru-Oil renueva terminación culata madera #23123",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       30,
       1.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680549",
@@ -24714,14 +24613,14 @@ var DATOS = {
       "321062",
       "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. CZ P-09 Green Gas #17658",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "6mm",
       10,
       1.6,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620613",
@@ -24740,14 +24639,14 @@ var DATOS = {
       "260270",
       "Mira electrónica KONUS PRO EL30 4-16x44 con 10 reticulas cambiables #7330",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       1.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720692",
@@ -24792,14 +24691,14 @@ var DATOS = {
       "REP920040",
       "N-Repuesto p/Esc.SetCula/Guard.M:S1112 Semi/Mad. ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       4,
       1.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE700940",
@@ -24935,14 +24834,14 @@ var DATOS = {
       "110583",
       "Funda interna FOBUS Mod. #SWC p/ APX/MASADA/S n W/PPQ/Taurus/otros",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       19,
       1.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620141",
@@ -24961,14 +24860,14 @@ var DATOS = {
       "250205",
       "Botella 90ml GSM-BWC Cleaner-Degreaser limpia el arma antes del pavonado #16225",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       54,
       1.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES710031",
@@ -25091,14 +24990,14 @@ var DATOS = {
       "4520753",
       "Cargador AC UMAREX cal 4,5mm para Mod GLOCK 19X NonBlow #5.8368.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       16,
       1.5,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850014786809",
@@ -25390,27 +25289,27 @@ var DATOS = {
       "260671",
       "Montante para rifles KONUS de 30mm Alto para Rifles 22LR y AC  #7418",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       1.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210400",
       "N-Molde P/Punta Sc180G 452374 Hp",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       7,
       1.4,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501113",
@@ -25429,14 +25328,14 @@ var DATOS = {
       "4520755",
       "Cargador AC UMAREX cal 4,5mm para Mod JERICHO #5.8174.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       10,
       1.4,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "630040",
@@ -25507,27 +25406,27 @@ var DATOS = {
       "100066",
       "Anillo Porta Correa p/ Esc. Maverick",
       "Maverick",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
-      "ACC",
+      "NC",
       "Sin calibre",
       74,
       1.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324024",
       "Kit táctico para Marcadora UMAREX T4E para Mod. TR50 y TP50 #2.406",
       "Umarex",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       5,
       1.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151538",
@@ -25572,27 +25471,27 @@ var DATOS = {
       "250690",
       "Montante NITECORE Mod. GM02 para picattinys",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       19,
       1.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210317",
       "N-Ensamblador Para Dado Sd/Jr  #20113",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       1.4,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700895",
@@ -25624,14 +25523,14 @@ var DATOS = {
       "270602",
       "Punto y alza de mira FAB DEFENSE Mod. OFFSET #fx-frbsosb",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       1.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700884",
@@ -25650,27 +25549,27 @@ var DATOS = {
       "110654",
       "N-Cartuc.#78361 Sz36Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250691",
       "Montante NITECORE Mod. GM03 para escopetas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       25,
       1.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ680554",
@@ -25689,14 +25588,14 @@ var DATOS = {
       "110712",
       "N-Cartuc.#78191 Sz19 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850560",
@@ -25728,27 +25627,27 @@ var DATOS = {
       "901355",
       "Riel Picattiny VECTOR OPTICS Mod. OFFSET #SCRA-34",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       37,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210348",
       "N-Shell Holder Lee #19 No.90023",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       81,
       1.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720686",
@@ -25819,40 +25718,40 @@ var DATOS = {
       "260366",
       "Alza y Punto de mira TRUGLO TFO para GLOCK mod LOW Alza Amarilla #TG131GT1Y",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       1.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260553",
       "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum Rojo10 ajustes #12135",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260553",
       "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum Rojo10 ajustes #12135",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681090",
@@ -25910,14 +25809,14 @@ var DATOS = {
       "200183",
       "Bipode KONUS 15-22cm #1948",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "941105",
@@ -25949,40 +25848,40 @@ var DATOS = {
       "110567",
       "Funda FOBUS Mod. #APN43X p/ G43X Apendix Ambidiestro",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       1.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260611",
       "Punto Rojo/Triji #JM9240 c/Pila",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP920019",
       "N-REPUESTOp/Rifle Mendoza JUEGOdelTAPON DE MEC.",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620586",
@@ -26001,14 +25900,14 @@ var DATOS = {
       "260676",
       "Montante para rifles KONUS de 30mm Mediano para Picattiny / Weaver #7404",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       9,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830278",
@@ -26027,14 +25926,14 @@ var DATOS = {
       "110292",
       "Pistolera Personalizada p/Pistola Tanfoglio #FO002",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE750160",
@@ -26066,27 +25965,27 @@ var DATOS = {
       "550271",
       "Cepillo de lana GSM-BWC para escopeta 20/28/30/36 #41332",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       104,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250105",
       "Aerosol 300ml GSM-BWC Limpia Arma Gun Scrubber#33340",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       19,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680470",
@@ -26118,14 +26017,14 @@ var DATOS = {
       "260554",
       "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum Rojo 10 ajustes #12136",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900364",
@@ -26170,14 +26069,14 @@ var DATOS = {
       "260563",
       "Punto Rojo KONUS FISSION 2,0 c/ 5 Inten. y Montante Duo #7245",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620312",
@@ -26209,14 +26108,14 @@ var DATOS = {
       "210412",
       "N-Molde P/H.Punta Dc200G 452460",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500201",
@@ -26300,53 +26199,53 @@ var DATOS = {
       "210090",
       "N-Balanza Lyman #1000  Electrico",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260608",
       "Punto Rojo c/ Linterna",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210619",
       "N-Shell Plate 550 44Spl Mag #20136",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210401",
       "N-Molde P/H.Punta Sc125G 356637Ph",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621080",
@@ -26391,14 +26290,14 @@ var DATOS = {
       "400450",
       "Punta Ojival Cal. 9mm/380 120gr x50",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       22,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920150",
@@ -26417,14 +26316,14 @@ var DATOS = {
       "250692",
       "Montante NITECORE Mod. GM04 18mm para escopetas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       34,
       1.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "820271",
@@ -26508,27 +26407,27 @@ var DATOS = {
       "110501",
       "Revolvera para Traumatica INDUNAYLON 4\" P/TR50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       44,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270103",
       "Guardamano Fab Defense 12.5p de Aluminio para modelo M4/M16/AR15 #NFR RL",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       1.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ680558",
@@ -26560,14 +26459,14 @@ var DATOS = {
       "110006",
       "Funda para rifle INDUNAYLON Mod. F02 100cm x 20cm.",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       19,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES880091",
@@ -26612,14 +26511,14 @@ var DATOS = {
       "250007",
       "Mira Punto Rojo OSIGHT Mod. XR Cerrada Multi-Reticula 2/6+32 MOA RMR Recargable #OsightXR",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270680",
@@ -26638,14 +26537,14 @@ var DATOS = {
       "321079",
       "Cargador PCP UMAREX cl 5,5 - 10T Mod. KOMPLETE BL. X2",
       "Umarex",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       18,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500356U",
@@ -26677,27 +26576,27 @@ var DATOS = {
       "260682",
       "Montante para rifles KONUS de 25.4mm Bajo para Picattiny / Weaver #7402",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       8,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550302",
       "Kit de limpieza GSM-BWC para escopetas #BC-SHGCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       6,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870814",
@@ -26755,14 +26654,14 @@ var DATOS = {
       "200352",
       "N-Cacha Hoge SW 5906,4006 40010",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       15,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620587",
@@ -26781,27 +26680,27 @@ var DATOS = {
       "260292",
       "Mira KONUS Mod. FIGHTER 3-9x40 reticula 30-30 con anillas #7352",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       5,
       1.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270550",
       "Cobertor de Corredera Fab Defense Glock M19/23/25/32/38 Negro",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       1.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681101",
@@ -26872,14 +26771,14 @@ var DATOS = {
       "210626",
       "N-Shell Plate Dillon 22Hornet #20150",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       1.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870812",
@@ -26937,14 +26836,14 @@ var DATOS = {
       "300091",
       "Kit de Precisión Fab Defense Ruger 10-22 PRO Retractil #M4PROR10/22",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505009",
@@ -26976,14 +26875,14 @@ var DATOS = {
       "270501",
       "Acople Carg. Fab Defense con Agarre Frontal Tanfoglio #GMF-9",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       18,
       1.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760051",
@@ -27015,14 +26914,14 @@ var DATOS = {
       "260565",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOS MOJ 1x22x26  #SCRD-M36",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750340",
@@ -27067,14 +26966,14 @@ var DATOS = {
       "210600",
       "N-Shell Plate Dillon 38-357P550 20132",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       1.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400265",
@@ -27093,14 +26992,14 @@ var DATOS = {
       "901340",
       "Riel Picattiny VECTOR OPTICS para MLOK 2p Mod. SCRAAM-52",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       54,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "962011",
@@ -27249,14 +27148,14 @@ var DATOS = {
       "270200",
       "Montante Linterna Fab Defense Lado Izquierdo Universal 1p #PLS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       1.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680597",
@@ -27301,14 +27200,14 @@ var DATOS = {
       "200350",
       "N-Cacha Hoge SW 1006,4506 06010",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       14,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830355",
@@ -27340,27 +27239,27 @@ var DATOS = {
       "REP900877",
       "Repuesto Aguja percutora con resorte p/ Escopeta Armed",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       24,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210407",
       "N-Molde P/H.Punta Dc245G 429244",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       1.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720694",
@@ -27379,40 +27278,40 @@ var DATOS = {
       "500821",
       "Servicio de Reacondicionamiento 223 REM Pack *500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "223REM",
       4,
       1.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260677",
       "Montante para rifles KONUS de 30mm Bajo para Picattiny / Weaver #7405",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       8,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110014",
       "Funda para rifle INDUNAYLON Mod. F05 130cm x 20cm.",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "N",
       "Sin calibre",
       15,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680383",
@@ -27522,14 +27421,14 @@ var DATOS = {
       "250692",
       "Montante NITECORE Mod. GM04 18mm para escopetas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       30,
       1.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720226",
@@ -27587,27 +27486,27 @@ var DATOS = {
       "260583",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY-X MOJ 1X24X29 MRS GENII #SCRD-76",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ300118",
       "LQN-Caja PLANO p/2Rifles/Escop.c/Port. Cart. Ng#10527",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       1.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850563",
@@ -27626,14 +27525,14 @@ var DATOS = {
       "270550",
       "Cobertor de Corredera Fab Defense Glock M19/23/25/32/38 Negro",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       1.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "751000",
@@ -27691,14 +27590,14 @@ var DATOS = {
       "250209",
       "Botella 90ml GSM-BWC Gun Stock Sealer y  Filler para sellar los poros de las culatas/mango #23323",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       26,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320022",
@@ -27769,27 +27668,27 @@ var DATOS = {
       "210002",
       "N-Ensamblador Para Dado P/Prensa Sq Dillon",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260562",
       "Punto Rojo KONUS SIGHT-PRO PTS2 3x30 c/Reticulas RO/AZ #7203",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES320275",
@@ -27847,14 +27746,14 @@ var DATOS = {
       "260113",
       "Punto Rojo BSA 1x45 #SP15580",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270457",
@@ -27873,14 +27772,14 @@ var DATOS = {
       "LIQ300225",
       "Caja p/2Pistolas Neg. #10088",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501527",
@@ -27938,27 +27837,27 @@ var DATOS = {
       "DES260039",
       "Binocular KONUS Mod. NEWZOOM 10-30x60 #2124",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       3,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES260039",
       "Binocular KONUS Mod. NEWZOOM 10-30x60 #2124",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       3,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323120",
@@ -27977,14 +27876,14 @@ var DATOS = {
       "260111",
       "Punto Rojo BSA 1x30 #SP15578",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       7,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620629",
@@ -28016,14 +27915,14 @@ var DATOS = {
       "REP920042",
       "N-Repuesto p/Esc.SetCula/Guard.M:S4112 PumAcPoly ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       7,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "772010",
@@ -28042,27 +27941,27 @@ var DATOS = {
       "LIQ300113",
       "LQN-Caja p/Rifle Lujoso Negro #10101",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260676",
       "Montante para rifles KONUS de 30mm Mediano para Picattiny / Weaver #7404",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       7,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322061",
@@ -28120,53 +28019,53 @@ var DATOS = {
       "250006",
       "Mira Punto Rojo OSIGHT Mod. XE AMRS Cerrada Multi-Reticula 2/6+32 MOA RMR #OsightXEAMRS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250003",
       "Mira Punto Rojo OSIGHT Mod. S Cerrada Multi-Reticula 2+32 MOA RMSc Recargable #OsightS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250005",
       "Mira Punto Rojo OSIGHT Mod. SE MOS Cerrada Multi-Reticula 2+32 MOA MOS CR1620 #OsightSEMOS",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250694",
       "Montante NITECORE GM06 para picattinys costado",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       29,
       1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720693",
@@ -28224,14 +28123,14 @@ var DATOS = {
       "260450",
       "Mira Laser Leupold #48806",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681120",
@@ -28380,40 +28279,40 @@ var DATOS = {
       "500840",
       "Servicio de Reacondicionamiento .32 Auto Pack *1000",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110569",
       "Funda FOBUS Mod. #CZ-DUTY p/ 75/SHADOW2/P07/P09/otros Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250004",
       "Mira Punto Rojo OSIGHT Mod. SE DPP Cerrada Multi-Reticula 2+32 MOA DPP CR1620 #OsightSEDPP",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323145",
@@ -28445,14 +28344,14 @@ var DATOS = {
       "900920",
       "Alza de Mira Regulable Tanfoglio #TM001",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720679",
@@ -28471,53 +28370,53 @@ var DATOS = {
       "400540",
       "N-Punta Hornady #3200 32 71Gr Fmj-Rn",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       14,
       0.9,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111562",
       "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Compact #WHLSBOR0491-842717125962",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111560",
       "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Full Size #WHLSBOR0331-842717113914",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110293",
       "Pistolera Deportiva p/Pistola Tanfoglio #FO003",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621222",
@@ -28536,14 +28435,14 @@ var DATOS = {
       "110712",
       "N-Cartuc.#78191 Sz19 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       7,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681116",
@@ -28588,14 +28487,14 @@ var DATOS = {
       "4520750",
       "Cargador AC UMAREX cal 4,5mm para Mod BERETTA ELITE II #5.8090.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       10,
       0.9,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320514",
@@ -28614,40 +28513,40 @@ var DATOS = {
       "110500",
       "Revolvera para Traumatica INDUNAYLON 6\" P/CP300",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       31,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260550",
       "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum.Rojo 6 ajustes#12134",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260550",
       "Punto Rojo Hawke 1x5 M.O.A Ret. Ilum.Rojo 6 ajustes#12134",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ320264",
@@ -28731,14 +28630,14 @@ var DATOS = {
       "900653",
       "Placa para punto rojo BERETTA Mod. APXA1 N2",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       4,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520520",
@@ -28822,14 +28721,14 @@ var DATOS = {
       "270812",
       "Funda interna FAB DEFENSE Mod. Scorpus Covert #sc-cg9b",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ322050",
@@ -28913,40 +28812,40 @@ var DATOS = {
       "270602",
       "Punto y alza de mira FAB DEFENSE Mod. OFFSET #fx-frbsosb",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110300",
       "Cartuchera P/Revolver Naa 22-7",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "321061",
       "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. M9 IA Green Gas #16863",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "C",
       "6mm",
       5,
       0.9,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505376",
@@ -28965,14 +28864,14 @@ var DATOS = {
       "200370",
       "N-Cacha Hoge Handall Jr. #18000",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       19,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400400",
@@ -28991,14 +28890,14 @@ var DATOS = {
       "270200",
       "Montante Linterna Fab Defense Lado Izquierdo Universal 1p #PLS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       8,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505577",
@@ -29017,14 +28916,14 @@ var DATOS = {
       "111570",
       "Funda BERETTA Mod. UNIFORM PRO SOFT Azul #FO491T1932054VUNI",
       "Beretta Mod",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500910",
@@ -29095,14 +28994,14 @@ var DATOS = {
       "260361",
       "ALZA Y PUNTO DE MIRA TRUGLO DE TRITIUM PARA GLOCK MOD LOW#1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610538",
@@ -29121,40 +29020,40 @@ var DATOS = {
       "210402",
       "N-Molde P/H.Punta Sc250G 429640Ph",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.9,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260681",
       "Montante para rifles KONUS de 25.4mm Medio para Picattiny / Weaver #7401",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       6,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760060",
       "Parches de limpieza GSM-BWC pack de 300 p/ escop cal 12 a 20 #41168",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       17,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681090",
@@ -29173,14 +29072,14 @@ var DATOS = {
       "270152",
       "Culata Fab Defense Mod. M4/M16/AR15 #RAPS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720153",
@@ -29225,53 +29124,53 @@ var DATOS = {
       "110713",
       "N-Cartuc.#78011 Sz1 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       7,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681213",
       "Linterna Olight p/Arma Odini Mini Preto Black D#284487-9",
       "Olight",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260570",
       "Punto Rojo para Rifle VECTOR OPTICS Mod. FRENZY PLUS MRS 1x31x26 #SCRD-M67",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200345",
       "Cacha Hoge Bereta 92Wfgr 92000",
       "Beretta",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       11,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760052",
@@ -29290,14 +29189,14 @@ var DATOS = {
       "110112",
       "Sobaquera #77360 Sz36 Unkle Mikes",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920420",
@@ -29329,14 +29228,14 @@ var DATOS = {
       "260674",
       "Montante para rifles KONUS de 30mm Alto  para Picattiny / Weaver #7403",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       5,
       0.9,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ800170",
@@ -29433,27 +29332,27 @@ var DATOS = {
       "260671",
       "Montante para rifles KONUS de 30mm Alto para Rifles 22LR y AC  #7418",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       6,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520751",
       "Cargador AC UMAREX cal 4,5mm para Mod BERETTA APX #5.8327.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       9,
       0.8,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620682",
@@ -29537,66 +29436,66 @@ var DATOS = {
       "270801",
       "Funda Fab Defense Glock ZURDO #M1G-9LH",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210415",
       "N-Mango P/Molde #2735793",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       7,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210356",
       "N-Shell Holder #1P/38-357 7738040",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       32,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550250",
       "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "22LR",
       19,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550303",
       "Kit de limpieza GSM-BWC para armas cortas #BC-HNDGCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES320207",
@@ -29615,14 +29514,14 @@ var DATOS = {
       "260552",
       "Punto Rojo Hawke 1x5 M.O.A Reticula Ilum.Rojo Sensor aut.de brillo #12133",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510262",
@@ -29641,14 +29540,14 @@ var DATOS = {
       "940183",
       "Cargador PCP DOBERMAN cal 5.5mm para Mod. M60B",
       "Doberman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "5.5mm",
       7,
       0.8,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500200",
@@ -29667,14 +29566,14 @@ var DATOS = {
       "REP902050",
       "Repuesto - Kit aguja percutora con Resorte Uzkon",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       26,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323135",
@@ -29706,27 +29605,27 @@ var DATOS = {
       "260238",
       "Mira Telescopica VECTOR OPTICS Mod. MUSTANG 1-4x24 FFP #SCFF-36",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900950",
       "Retensor de la Corredera p/Pistola Tanfoglio #PR015",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920189",
@@ -29823,27 +29722,27 @@ var DATOS = {
       "210359",
       "N-Shell Holder #12P/9M/38Sp7738051",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       31,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300133",
       "Maleta ASG 102x35x15cm Mod. TACTICAL #19489",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES151612",
@@ -29862,14 +29761,14 @@ var DATOS = {
       "115020",
       "Porta Carg.Doble #88310 Camu",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       13,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680686",
@@ -29888,40 +29787,40 @@ var DATOS = {
       "110760",
       "Porta Carg.Doble FOBUS p/Pist. 357/40 #6900BHS",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550301",
       "Kit de limpieza GSM-BWC para rifles #BC-RIFCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       4,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200069",
       "Culata EXT. p/GLOCK TI2461",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150952",
@@ -30031,14 +29930,14 @@ var DATOS = {
       "681211",
       "Linterna Olight p/Arma Odini Mini Desert Tan D#284485-5",
       "Olight",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ150995",
@@ -30070,14 +29969,14 @@ var DATOS = {
       "200360",
       "N-Cacha Hoge Ruger P85 Etc.85000",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ150996",
@@ -30148,14 +30047,14 @@ var DATOS = {
       "260278",
       "Mira compacta KONUS PRO T30 3-12x44 reticula iluminada 550 yardas #7291",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611300",
@@ -30174,27 +30073,27 @@ var DATOS = {
       "210620",
       "N-Shell Plate Dillon 9M38Sp550 20127",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "960160",
       "Kit de aerosoles GSM-BWC Limpia Armas, Disolvedor, Protector #33309",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621151",
@@ -30213,40 +30112,40 @@ var DATOS = {
       "260443",
       "Mira Laser CAT Bersa Thunder Pro 9mm/40SW/45ACP",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       2,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210346",
       "N-Shell Holder Lee #11 No.90211",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       60,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270203",
       "Montante Linterna Fab Defense Izquierdo Pistola FAB 1p #PLG",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.8,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322211",
@@ -30330,14 +30229,14 @@ var DATOS = {
       "920255",
       "N-Rabisa corte de arranque",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "750044",
@@ -30356,14 +30255,14 @@ var DATOS = {
       "260675",
       "Montante para rifles KONUS de 30mm Alto de saque rápido para Picattiny / Weaver #7409",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       5,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500530",
@@ -30408,14 +30307,14 @@ var DATOS = {
       "210352",
       "N-Shell Holder X26 Lyman#7738063",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       29,
       0.8,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500880",
@@ -30434,27 +30333,27 @@ var DATOS = {
       "260551",
       "Punto Rojo Hawke 1x5 M.O.A Ret Iluminada Rojo 5 ajustes #12131",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260551",
       "Punto Rojo Hawke 1x5 M.O.A Ret Iluminada Rojo 5 ajustes #12131",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.8,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610093",
@@ -30499,27 +30398,27 @@ var DATOS = {
       "260500",
       "Alza de Mira Millet Regulable Smith y Wesson #SW40505",
       "Smith & Wesson",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260572",
       "Magnificador VECTOR OPTICS Mod. PARAGON 5x30 #SCMF-34",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ680595",
@@ -30551,14 +30450,14 @@ var DATOS = {
       "200132",
       "N-Cacha SW 3Rd Gen #59511 Michaels",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720223",
@@ -30616,14 +30515,14 @@ var DATOS = {
       "110753",
       "Cartuchera FOBUS p/Browning",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681105EGF",
@@ -30707,27 +30606,27 @@ var DATOS = {
       "502000",
       "Bengalas de Seguridad C5005",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       40,
       0.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900560",
       "Traba de Corred.Ext.p/Pist. 9x19.40.380.357 #7496",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       13,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322054",
@@ -30759,14 +30658,14 @@ var DATOS = {
       "901345",
       "Riel Picattiny VECTOR OPTICS para MLOK 4p Mod. SCRAAM-53",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       27,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830251",
@@ -30785,14 +30684,14 @@ var DATOS = {
       "900885",
       "Resorte de Corredera Ensamblado p/Glock M19 #8703",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       7,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620689",
@@ -30902,27 +30801,27 @@ var DATOS = {
       "901270",
       "Herramienta Montante Universal p/Alza de Mira GLOCK #5161",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110106",
       "N-Sobaquera #83051 Sz5 Michaels",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870798",
@@ -30967,14 +30866,14 @@ var DATOS = {
       "681210",
       "Linterna Olight p/Arma Pl-Pro Valkyrie Desert D#284480-0",
       "Olight",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681112",
@@ -30993,14 +30892,14 @@ var DATOS = {
       "920054",
       "N-Caño C/Roscap/Compensador 45Acp",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "45ACP",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140706",
@@ -31032,27 +30931,27 @@ var DATOS = {
       "250000",
       "Mira Punto Rojo OSIGHT Mod. C Abierta Multi-Reticula 3+32 MOA RMR #OsightC",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "380005",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 223REM #SCSC-01",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "223REM",
       17,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "700854ST",
@@ -31097,14 +30996,14 @@ var DATOS = {
       "AVEREP920028",
       "REPUESTOp/Rifle Mendoza CULATA BAR.c/ACC.",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870809",
@@ -31123,14 +31022,14 @@ var DATOS = {
       "260362",
       "Punto de mira Truglo de Tritium para Ruger SR series #TG231R1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680227",
@@ -31175,40 +31074,40 @@ var DATOS = {
       "940180",
       "Cargador PCP DOBERMAN cal 5.5mm para Mod. P35",
       "Doberman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "5.5mm",
       7,
       0.7,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "380025",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 22LR #SCSC-10",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "22LR",
       23,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270501",
       "Acople Carg. Fab Defense con Agarre Frontal Tanfoglio #GMF-9",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       11,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES681101",
@@ -31227,14 +31126,14 @@ var DATOS = {
       "260370",
       "Punto de mira TRUGLO para escopetas universal verde HD SGT 12-20GA GRN #TG93HA",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "20GA",
       6,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "751007",
@@ -31292,27 +31191,27 @@ var DATOS = {
       "262",
       "N-Cacha Rhk 41-44Mag Pachmayer",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "44MAG",
       4,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300093",
       "Kit de Precisión Fab Defense Ruger 10-22 Retractil #M4R10/22",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680467",
@@ -31487,27 +31386,27 @@ var DATOS = {
       "272022",
       "Culata s/tubo Fab Defense Retractil y Rebatible p/ FN FAL #M4 FAL J",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140171V",
       "Correa Porta Fusil c/Homb.Verde CP04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       26,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870756",
@@ -31591,14 +31490,14 @@ var DATOS = {
       "270816",
       "Funda Fab Defense M24 Jerico941F Holster For Paddle",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900807",
@@ -31682,27 +31581,27 @@ var DATOS = {
       "680071",
       "Linterna Titan Tactica Led #TL-T9 c/Pila",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "710506",
       "Caja de Seguridad Digital Noble 35x22x25cm#SWSL33EW",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500180",
@@ -31721,14 +31620,14 @@ var DATOS = {
       "210301",
       "N-Shell Holder Lee #1 No.90201",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       52,
       0.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151430",
@@ -31747,27 +31646,27 @@ var DATOS = {
       "250002",
       "Mira Punto Rojo OSIGHT Mod. K GN Abierta Verde 6 MOA RMSc #OsightKGN",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901268",
       "Kit profesional de Herramientas GSM-BWC WeekenderÃ´ para armeros #42021",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "870804",
@@ -31786,14 +31685,14 @@ var DATOS = {
       "921125",
       "Culata BOITO para Escopeta Pajera #1388",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       4,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621050",
@@ -31838,14 +31737,14 @@ var DATOS = {
       "250693",
       "Montante NITECORE Mod. GM05 para miras telescopicas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       30,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400263",
@@ -31890,14 +31789,14 @@ var DATOS = {
       "270055",
       "Bipode Fab Defense Porta Linterna #T-PODFA",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850595",
@@ -31942,92 +31841,92 @@ var DATOS = {
       "110585",
       "Funda interna FOBUS Mod. #IWBL Universal tamaño L",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110587",
       "Funda interna FOBUS Mod. #IWBMLH Universal tamaño M para Zurdo",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110588",
       "Funda interna FOBUS Mod. #IWBS Universal tamaño S",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270151",
       "Culata Fab Defense Glock M19 #GLR-440",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260366",
       "Alza y Punto de mira TRUGLO TFO para GLOCK mod LOW Alza Amarilla #TG131GT1Y",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270813",
       "Funda Fab Defense p/ M:1911 Level 1 #M1-1911",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.7,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210411",
       "N-Molde P/H.Punta Dc51Gr 252435",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.7,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920063",
@@ -32137,27 +32036,27 @@ var DATOS = {
       "250693",
       "Montante NITECORE Mod. GM05 para miras telescopicas",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       29,
       0.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES260044",
       "Binocular KONUS GIANT 20x60 #2125",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500800",
@@ -32202,14 +32101,14 @@ var DATOS = {
       "260611",
       "Punto Rojo/Triji #JM9240 c/Pila",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610220",
@@ -32228,14 +32127,14 @@ var DATOS = {
       "110712D",
       "N-Cartuc.#78191 Sz19 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "7000022UC",
@@ -32280,14 +32179,14 @@ var DATOS = {
       "250001",
       "Mira Punto Rojo OSIGHT Mod. K Abierta 6 MOA RMSc #OsightK",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680090",
@@ -32332,14 +32231,14 @@ var DATOS = {
       "270198",
       "Montante Fab Defense p/Miras Telescopicas M:H y K G-3 #G3-SM",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP901120",
@@ -32358,14 +32257,14 @@ var DATOS = {
       "260560",
       "Punto Rojo/Verde KONUS SIGHT PRO R8 Recar c/8 reticulas 7376",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
-      "ACC",
+      "NC",
       "Sin calibre",
       1,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620668",
@@ -32423,27 +32322,27 @@ var DATOS = {
       "261100",
       "Llave para Rifle Ruger Mini14 para Ajustar Alza de Mira #90049",
       "Ruger",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260900",
       "N-Mira Rifle #3572087 Ng57Sme Lyma",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901500",
@@ -32488,27 +32387,27 @@ var DATOS = {
       "210338",
       "N-Shell Holder Lee #10 No.90210",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       50,
       0.6,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550304",
       "Kit de limpieza GSM-BWC para Rifles AR15 #BC-ARCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "600474",
@@ -32592,14 +32491,14 @@ var DATOS = {
       "210358",
       "N-Shell Holder #7P/44Spl/Mg7738046",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       23,
       0.6,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620627",
@@ -32618,14 +32517,14 @@ var DATOS = {
       "260584",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY GIN/RTS 1X26X32 #SCRD-79",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "322096",
@@ -32787,14 +32686,14 @@ var DATOS = {
       "300131",
       "Maleta ASG 100x35x14cm FDE #19835",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
-      "ACC",
+      "NC",
       "Sin calibre",
       1,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES880091",
@@ -32904,14 +32803,14 @@ var DATOS = {
       "270080",
       "Agarre táctico Fab Defense Mod. MOJO para modelos AR15, con cobertor táctico",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151502",
@@ -33060,14 +32959,14 @@ var DATOS = {
       "260609",
       "Punto Rojo c/ Linterna Ijk Optics Co.",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150953",
@@ -33099,40 +32998,40 @@ var DATOS = {
       "260902",
       "N-Mira Rifle Polvora Ng57Wjs Lym",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260906",
       "N-Mira Rifle Polvora Ng66La Lym",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110582",
       "Funda FOBUS Mod. #320C-ND p/ SIGP250/320  #320C-ND",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "711305",
@@ -33151,40 +33050,40 @@ var DATOS = {
       "210339",
       "N-Shell Holder Lee #2 No.90202",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       44,
       0.6,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260672",
       "Montante para rifles KONUS de 30mm Mediano para Rifles 22LR y AC  #7419",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260559",
       "Placa para Punto Rojo VECTOR OPTICS Mod. M1911 TEK #SCRDM-02",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       5,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920271",
@@ -33294,14 +33193,14 @@ var DATOS = {
       "901271",
       "Herramientas Manuales p/Mant.Pistola Glock#2987",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900731",
@@ -33320,14 +33219,14 @@ var DATOS = {
       "250660",
       "Montante Bushnell Tactical  #260600",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830352",
@@ -33359,14 +33258,14 @@ var DATOS = {
       "110592",
       "Pistolera p/9mm Guardamonte Grande Diestro #P31",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       22,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "670125",
@@ -33411,27 +33310,27 @@ var DATOS = {
       "901201",
       "Kit Clavija de Seguridad + Resorte del Disparador Glock 17/19#77",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       16,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250207",
       "Botella 90ml GSM-BWC Stock Sheen y Conditioner limpia protege culata madera #23623",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       14,
       0.6,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900149",
@@ -33463,14 +33362,14 @@ var DATOS = {
       "272063",
       "Correa Fab Defense Elastica Mod. One Point Bungee",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       7,
       0.6,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750310",
@@ -33554,14 +33453,14 @@ var DATOS = {
       "210163",
       "N-Dosificador De Polvora Lee #90578",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.5,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400314",
@@ -33593,14 +33492,14 @@ var DATOS = {
       "900955",
       "Seguro del Fiador Ambidiestro Ext.p/Pistola Tanfoglio #PR017",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720669",
@@ -33658,14 +33557,14 @@ var DATOS = {
       "321061",
       "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. M9 IA Green Gas #16863",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "6mm",
       3,
       0.5,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680650",
@@ -33710,27 +33609,27 @@ var DATOS = {
       "901240",
       "Disparador con Barra de Gatillo p/Glock M17/22/31/34/35/37 #3608",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       7,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900960",
       "Gatillo de Doble Accion p/Pistola Tanfoglio #PR021",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620688",
@@ -33775,27 +33674,27 @@ var DATOS = {
       "260557",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY TEK 1x17x24 #SCRD-19II",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260557",
       "Punto Rojo VECTOR OPTICS Mod. FRENZY TEK 1x17x24 #SCRD-19II",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324156",
@@ -33814,14 +33713,14 @@ var DATOS = {
       "350203",
       "Target GSM-SME Mod. Molino auto curable #SME-SHW",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620650",
@@ -33840,14 +33739,14 @@ var DATOS = {
       "250109",
       "Aerosol 300ml GSM- BWC Disolvente bore Scrubber",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       8,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680661",
@@ -33905,14 +33804,14 @@ var DATOS = {
       "200030",
       "Culata DERYA Polímero para Mod. Carina Q101",
       "Derya",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "321092",
@@ -33944,14 +33843,14 @@ var DATOS = {
       "110563",
       "Funda FOBUS Mod. #RBT17GBUNDLE p/ G17 c/ linterna",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500760",
@@ -33970,14 +33869,14 @@ var DATOS = {
       "261065",
       "Puntera de baqueta GSM-BWC para parches escopeta 10, 12, 16, 20 #41372",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       97,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400395",
@@ -33996,14 +33895,14 @@ var DATOS = {
       "REP900870",
       "Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 12",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       2,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500205U",
@@ -34061,40 +33960,40 @@ var DATOS = {
       "260601",
       "Punto de Mira Millet Rojo Beretta 92S, 84, 85",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115704",
       "Funda Arma Larga Doberman Cuero x 135CM",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250111",
       "Aerosol 177ml GSM-BWC Aceite para armas Synthetic Gun Oil #44135",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       11,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500386U",
@@ -34139,27 +34038,27 @@ var DATOS = {
       "260357",
       "Alza y Punto de mira TRUGLO de Tritium PRO para GLOCK con circulo blanco mod LOW #TG231G1W",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES260046",
       "Binocular KONUS Mod. ACTION Verde 10x25 #2041",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       5,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "323115",
@@ -34191,14 +34090,14 @@ var DATOS = {
       "260564",
       "Placa para Punto Rojo VECTOR OPTICS Mod. BERETTA 92 TEK #SCRDM-04",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       4,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "324162",
@@ -34217,14 +34116,14 @@ var DATOS = {
       "940182",
       "Cargador PCP DOBERMAN cal 5.5mm para Mod. M16",
       "Doberman",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "5.5mm",
       5,
       0.5,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150288",
@@ -34347,14 +34246,14 @@ var DATOS = {
       "REP920017",
       "N-REPUESTOp/Rifle Mendoza JUEGO DEL CERROJO",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       4,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "800173",
@@ -34412,14 +34311,14 @@ var DATOS = {
       "900947",
       "Elevador de Cargador Tanfoglio",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       12,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260300",
@@ -34438,27 +34337,27 @@ var DATOS = {
       "270575",
       "Cobertor Fab Defense Mod. MOJO Vigilante",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.5,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550272",
       "Cepillo de lana GSM-BWC para escopeta 12/16 #41333",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       48,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400295",
@@ -34581,14 +34480,14 @@ var DATOS = {
       "LIQ300214",
       "LQN-N-Caja p/2Pistolas Neg. #10402",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140704",
@@ -34633,14 +34532,14 @@ var DATOS = {
       "900660",
       "Boton Ovalado Corto, Extrator de Carg. p/Pist. #2025",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       8,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "990023",
@@ -34724,14 +34623,14 @@ var DATOS = {
       "4520756",
       "Cargador AC UMAREX cal 4,5mm para Mod XBG #5.8173.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "4.5mm",
       5,
       0.5,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500351",
@@ -34750,14 +34649,14 @@ var DATOS = {
       "110503",
       "Pistolera para Traumatica INDUNAYLON P/TP50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       17,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621131",
@@ -34789,14 +34688,14 @@ var DATOS = {
       "110028",
       "Pistolera p/ 9mm P18 S/Rapido",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       18,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610012",
@@ -34867,14 +34766,14 @@ var DATOS = {
       "260680",
       "Montante para rifles KONUS de 25.4mm Alto para Picattiny / Weaver #7400",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151538",
@@ -34906,27 +34805,27 @@ var DATOS = {
       "210004",
       "N-Funda Para Prensa Dillon",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.5,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920045",
       "N-Choque Esc. ARMED cal16  28P 3PCS",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "16GA",
       7,
       0.5,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4501040",
@@ -34971,14 +34870,14 @@ var DATOS = {
       "210354",
       "N-Shell Holder X15 Lyman#7738055",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       17,
       0.5,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611040",
@@ -35036,27 +34935,27 @@ var DATOS = {
       "140171",
       "Correa Porta Fusil c/Homb.Negro CP04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       17,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901268",
       "Kit profesional de Herramientas GSM-BWC WeekenderÃ´ para armeros #42021",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830358",
@@ -35088,14 +34987,14 @@ var DATOS = {
       "200118",
       "N-Cacha SW 469Auto #59504",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320029",
@@ -35114,14 +35013,14 @@ var DATOS = {
       "110672",
       "N-Cartuc.P/Arma C/Laser#73021",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320023",
@@ -35205,53 +35104,53 @@ var DATOS = {
       "260620",
       "Punto de Mira p/Armed Semiautomatico/Monotiro",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       32,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260361",
       "ALZA Y PUNTO DE MIRA TRUGLO DE TRITIUM PARA GLOCK MOD LOW#1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110031",
       "Revolvera p/ 38 2p R01/1 S/Rapido",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       19,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901260",
       "Piso de Cargador Glock M17/19 Calib 9x19 #3206",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       9,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920064",
@@ -35264,19 +35163,6 @@ var DATOS = {
       22,
       0.4,
       "AIRGUN",
-      "No controlado"
-    ],
-    [
-      "942189",
-      "Bota Tactica DOBERMAN Mod. COMBAT READY 6 Pulgadas Desert Talle EUR 47",
-      "Doberman BOTAS",
-      "No reglamentado",
-      "Central",
-      "A",
-      "Sin calibre",
-      2,
-      0.4,
-      "INDUMENTARIA",
       "No controlado"
     ],
     [
@@ -35309,14 +35195,14 @@ var DATOS = {
       "260567",
       "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK MOJ #SCRDM-08",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160140",
@@ -35335,27 +35221,27 @@ var DATOS = {
       "321090",
       "Cargador UMAREX T4E de emergencia para cal 43 mod TPM1 #2.4768.2",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "B",
       "cal 43",
       1,
       0.4,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260268",
       "Punto Rojo/Verde KONU SIGHT 1x35 4MOA c/ 4 reticulas #7378",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320461",
@@ -35374,27 +35260,27 @@ var DATOS = {
       "321080",
       "Cargador UMAREX T4E de emergencia para cal 43 mod Walther PPQ #2.4760.2",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "cal 43",
       1,
       0.4,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111569",
       "Funda Externa P/ BERETTA APX A1 CYA SUPPLY CO.",
       "CYA Supply Co.",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750315",
@@ -35426,27 +35312,27 @@ var DATOS = {
       "111583",
       "Funda Externa CYTAC-FOBUS Mod. Universal c/Muslera #1-UT140",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210616",
       "N-Shell Plate Dillon 3030 550#20139",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.4,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320071",
@@ -35465,14 +35351,14 @@ var DATOS = {
       "260250",
       "Soporte RedField para Remington  #MIRAJR700LA",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620581",
@@ -35530,14 +35416,14 @@ var DATOS = {
       "680850",
       "Cable Tactico NITECORE Mod. RSW2i para mod. P10",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES151611",
@@ -35712,27 +35598,27 @@ var DATOS = {
       "110047",
       "Pistolera p/ 9mm P12Z p/ Zurdo Multiples",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       17,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920330",
       "Servicio de Reacondicionamiento Cono Rush",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.4,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510262",
@@ -35751,53 +35637,53 @@ var DATOS = {
       "260252",
       "Montante TSS 25mm Montura Simple 3 Tornillos",
       "TSS",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       37,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "350201",
       "Target GSM-SME de metal para cal 22 #SME-ST22FLD",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "22LR",
       4,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110042",
       "Revolvera p/ 38 2 Barracuda R05",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       17,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250694",
       "Montante NITECORE GM06 para picattinys costado",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400133",
@@ -35829,14 +35715,14 @@ var DATOS = {
       "260223",
       "Mira Telescopica GAMO 4x20 TV WA-N",
       "Gamo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500930",
@@ -35868,14 +35754,14 @@ var DATOS = {
       "321093",
       "Cargador de Emergencia UMAREX T4E cal 43 Mod. GLOCK 17 GEN 5 #211.101",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "B",
       "cal 43",
       1,
       0.4,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610804",
@@ -35933,14 +35819,14 @@ var DATOS = {
       "260129",
       "Mira Telescopica c/ Laser #LS3,5-10x40E c/Pila",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400296",
@@ -35972,14 +35858,14 @@ var DATOS = {
       "200171",
       "Cacha p/Revolver Pucara 38SPL",
       "Rexio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "38SPL",
       4,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110012",
@@ -36050,53 +35936,53 @@ var DATOS = {
       "110375",
       "Muslera p/ Pistola cal.9mm #P11",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       11,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE770525",
       "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Mod. Punisher #GWP-RSEMFSSB-PUN",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ770525",
       "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Mod. Punisher #GWP-RSEMFSSB-PUN",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110102",
       "Revolvera p/ 38 2p R01 c/velcro",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       20,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680482",
@@ -36154,27 +36040,27 @@ var DATOS = {
       "110714",
       "N-Cartuc.#81011/Sz1 Michaels",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550301",
       "Kit de limpieza GSM-BWC para rifles #BC-RIFCLN-KIT",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760052",
@@ -36232,27 +36118,27 @@ var DATOS = {
       "REP902076",
       "Repuesto - Uña Estractor para Escopeta Uzkon",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       25,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP902055",
       "Repuesto - Kit Alza y Punto de Mira Picotiny p/Esc. Uzkon",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       5,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620630",
@@ -36297,14 +36183,14 @@ var DATOS = {
       "REP920040",
       "N-Repuesto p/Esc.SetCula/Guard.M:S1112 Semi/Mad. ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4520050",
@@ -36323,14 +36209,14 @@ var DATOS = {
       "115305",
       "Pistolera p/asiento de cuero Negro",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920456",
@@ -36362,14 +36248,14 @@ var DATOS = {
       "110567",
       "Funda FOBUS Mod. #APN43X p/ G43X Apendix Ambidiestro",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750428",
@@ -36440,14 +36326,14 @@ var DATOS = {
       "260443",
       "Mira Laser CAT Bersa Thunder Pro 9mm/40SW/45ACP",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850068",
@@ -36479,14 +36365,14 @@ var DATOS = {
       "260757",
       "Montante Gamo TS-300 30mm High p/ Riel Rfle",
       "Gamo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ150970",
@@ -36518,14 +36404,14 @@ var DATOS = {
       "210706",
       "N-Dado Scuare-Dillon 9Mm #20241",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.4,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170229",
@@ -36544,27 +36430,27 @@ var DATOS = {
       "110569",
       "Funda FOBUS Mod. #CZ-DUTY p/ 75/SHADOW2/P07/P09/otros Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901620",
       "Magnetico DOBERMAN 2 piezas 25 lbs  #SDMGunMag-3",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       13,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500428",
@@ -36609,27 +36495,27 @@ var DATOS = {
       "261060",
       "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "223REM",
       70,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901271",
       "Herramientas Manuales p/Mant.Pistola Glock#2987",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920102",
@@ -36687,14 +36573,14 @@ var DATOS = {
       "110738",
       "N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 #BR2",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620482",
@@ -36726,14 +36612,14 @@ var DATOS = {
       "REP900876",
       "Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 20",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "20GA",
       12,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400384",
@@ -36765,14 +36651,14 @@ var DATOS = {
       "270565",
       "Cobertor Fab Defense Mod. MOJO Havoc",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680531",
@@ -36830,14 +36716,14 @@ var DATOS = {
       "270570",
       "Cobertor Fab Defense Mod. MOJO Phalanx",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140203",
@@ -36921,14 +36807,14 @@ var DATOS = {
       "110450",
       "N-Pistolera c/ Porta cargador y balera#59105",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610966",
@@ -37051,27 +36937,27 @@ var DATOS = {
       "900661",
       "Boton Ovalado Largo, Extrator de Carg. p/Pist. #3294",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       6,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111584",
       "Funda Externa CYTAC-FOBUS Mod. Universal Muslera c/Linterna #1-UR1401",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400191",
@@ -37168,40 +37054,40 @@ var DATOS = {
       "770523",
       "Tapa Oidos Electronicos GSM-WALKER Mod. RAZOR SLIM Negro #GWP-RSEM",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0.4,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111566",
       "Funda Interna CYASUPPLY-FOBUS para Cargador Large Single Stack 9mm/.40/357SIG/45ACP #WHLSMAG0022-427171318888",
       "Fobus",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       4,
       0.4,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210349",
       "N-Shell Holder Lee #4 No.90204",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       28,
       0.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151620",
@@ -37220,14 +37106,14 @@ var DATOS = {
       "250210",
       "Botella 90ml GSM-BWC Gun Stock Wax para proteger madera y metal #23723",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500653U",
@@ -37298,14 +37184,14 @@ var DATOS = {
       "110655",
       "N-Cartuc.#78021 Sz2 Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510455",
@@ -37324,14 +37210,14 @@ var DATOS = {
       "270204",
       "Montante Táctico Fab Defense para Glock #GIS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610592",
@@ -37363,27 +37249,27 @@ var DATOS = {
       "110112",
       "Sobaquera #77360 Sz36 Unkle Mikes",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901230",
       "Ejector del Mecanismo de Disparo p/Glock M17 #30275",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "731102",
@@ -37441,14 +37327,14 @@ var DATOS = {
       "210357",
       "N-Shell Holder #2 P/45Acp 7738041",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "45ACP",
       13,
       0.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500414U",
@@ -37480,14 +37366,14 @@ var DATOS = {
       "260260",
       "N-Mont.Sig Sauer #45712",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505305",
@@ -37597,14 +37483,14 @@ var DATOS = {
       "270070",
       "Agarre Frontal Fab Defense s/CubreGatillo Universal #FGG-S",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500382",
@@ -37636,14 +37522,14 @@ var DATOS = {
       "550185",
       "Cordel Limp. Hoppe-s Cal.16 #24034",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "16GA",
       7,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151400",
@@ -37701,27 +37587,27 @@ var DATOS = {
       "901302",
       "Filtro p/ Luz Tactica Laser GTL21/22 Glock #5878",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110672",
       "N-Cartuc.P/Arma C/Laser#73021",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES680539",
@@ -37753,27 +37639,27 @@ var DATOS = {
       "900898",
       "Punto de Mira Xtreme 2.5x5.5 p/Pistola Tanfoglio #X023",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270801",
       "Funda Fab Defense Glock ZURDO #M1G-9LH",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501530",
@@ -37805,14 +37691,14 @@ var DATOS = {
       "250108",
       "Aerosol 300ml GSM-BWC Protector de Arma Barricade",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       5,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "350000D",
@@ -37831,14 +37717,14 @@ var DATOS = {
       "REP900600",
       "N-Tubo Para Primer-Repuestop/Prensa",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720651",
@@ -37883,14 +37769,14 @@ var DATOS = {
       "110113",
       "Sobaquera p/380/765 c/1 Porta Carg.Cuero",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "380ACP",
       5,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750100",
@@ -37961,27 +37847,27 @@ var DATOS = {
       "270500",
       "Acople Carg. Fab Defense con AgarreFrontal Glock #GMFG",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901345",
       "Riel Picattiny VECTOR OPTICS para MLOK 4p Mod. SCRAAM-53",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       12,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "711054",
@@ -38065,27 +37951,27 @@ var DATOS = {
       "250206",
       "Botella 90ml GSM-BWC Tru-Oil renueva terminación culata madera #23123",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       6,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250062",
       "Envase 45ml GSM-BWC RIGÃ†+PÃ´ protege armas de acero inoxidable #40051",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151523",
@@ -38130,14 +38016,14 @@ var DATOS = {
       "321062",
       "Cargador p/ Pistola  Airsoft ASG cal. 6mm Mod. CZ P-09 Green Gas #17658",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "6mm",
       2,
       0.3,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620680",
@@ -38156,14 +38042,14 @@ var DATOS = {
       "250061",
       "Envase 45ml GSM-BWC RIGÃ† Grasa universal protege armas de fuego #40020",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       13,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "905005",
@@ -38195,79 +38081,79 @@ var DATOS = {
       "110711",
       "N-Pistolera c/Padded Cañamo Uncle Mikes#78151",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "321098",
       "Cargador CO2 T4E GLOCK 17 Gen5 cal 43 #211.100",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "B",
       "cal 43",
       1,
       0.3,
       "AIRGUN",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP902072",
       "Repuesto - Interno del Cierre del Disparador",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       25,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260578",
       "Placa para Punto Rojo VECTOR OPTICS Mod. SPRINGFIELD XD TEK #SCRD-05",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260580",
       "Placa para Punto Rojo VECTOR OPTICS Mod. HK USP TEK #SCRDM-07",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260579",
       "Placa para Punto Rojo VECTOR OPTICS Mod. S&W M&P TEK #SCRDM-06",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680537",
@@ -38286,40 +38172,40 @@ var DATOS = {
       "111580",
       "Funda Externa CYTAC-FOBUS Mod. APXA1/92A1/STK/Universal c/retensor #1-UT100",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111562",
       "Funda interna CYASUPPLY-FOBUS Mod. Beretta APX A1 Compact #WHLSBOR0491-842717125962",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "681102",
       "Linterna/Laser NITECORE Mod. NPL10 300Lm BatCR23V",
       "Nitecore",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200137",
@@ -38442,27 +38328,27 @@ var DATOS = {
       "260233",
       "Mira Telescopica VECTOR OPTICS VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       7,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760060",
       "Parches de limpieza GSM-BWC pack de 300 p/ escop cal 12 a 20 #41168",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       6,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500970",
@@ -38494,27 +38380,27 @@ var DATOS = {
       "350201",
       "Target GSM-SME de metal para cal 22 #SME-ST22FLD",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "22LR",
       3,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "350202",
       "Target GSM-SME 8p auto curable para diferentes calibres #SME-80SHGNG",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900859",
@@ -38559,14 +38445,14 @@ var DATOS = {
       "901241",
       "Disparador con Barra de Gatillo p/Glock M19/23 #4497",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       4,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621130",
@@ -38585,14 +38471,14 @@ var DATOS = {
       "260190",
       "N-Mira Angular #CL1-0164BK",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "613000",
@@ -38689,14 +38575,14 @@ var DATOS = {
       "260680",
       "Montante para rifles KONUS de 25.4mm Alto para Picattiny / Weaver #7400",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900812",
@@ -38780,14 +38666,14 @@ var DATOS = {
       "110502",
       "Revolvera para Traumatica INDUNAYLON 4\" p/MOLLE P/TR50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       11,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500830",
@@ -38832,40 +38718,40 @@ var DATOS = {
       "260175",
       "N-Mont.p/Pistolon Rexio",
       "Rexio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200131",
       "N-Cacha SW 59Auto #59505",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110280",
       "N-Estuche Porta Gas #88771 Micha.",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720691",
@@ -39144,14 +39030,14 @@ var DATOS = {
       "260681",
       "Montante para rifles KONUS de 25.4mm Medio para Picattiny / Weaver #7401",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "750202",
@@ -39235,14 +39121,14 @@ var DATOS = {
       "260920",
       "N-Mira Rifle Polv.540P/Base-Mont.Negrolym3",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "904005",
@@ -39287,27 +39173,27 @@ var DATOS = {
       "270251",
       "Porta cargador Fab Defense 223REM/5.56NATO #556pouch",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "223REM",
       3,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901600",
       "Magnetico DOBERMAN 30 lbs #SDMGunMag-1 x 1",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       12,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505700",
@@ -39326,53 +39212,53 @@ var DATOS = {
       "110582",
       "Funda FOBUS Mod. #320C-ND p/ SIGP250/320  #320C-ND",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110584",
       "Funda FOBUS Mod. #WP-22 p/ WaltherP22 Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110755",
       "Cartuchera c/PADDED p/PT24/7 #SP26151",
       "Taurus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260673",
       "Montante para rifles KONUS de 30mm Bajo para Rifles 22LR y AC  #7420",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115602",
@@ -39417,40 +39303,40 @@ var DATOS = {
       "270202",
       "Montante Táctico Fab Defense Pistola Universal Aluminio #USM",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP902075",
       "Repuesto - Conjunto de Cierre Escopeta Uzkon",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP920016",
       "N-REPUESTOp/Rifle Mendoza JUEGO DE MUELLE",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES750302",
@@ -39508,14 +39394,14 @@ var DATOS = {
       "250660",
       "Montante Bushnell Tactical  #260600",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "750047",
@@ -39560,14 +39446,14 @@ var DATOS = {
       "262000",
       "Rueda de Parallax KONUS p/Miras Telescopicas p/Modelos Varios #7199",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151609",
@@ -39612,14 +39498,14 @@ var DATOS = {
       "500860",
       "Servicio de Reacondicionamiento .25 Auto. Pack x 1000",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621451",
@@ -39716,40 +39602,40 @@ var DATOS = {
       "920060",
       "N-Compensador Tanfoglio 9Mm Dobl",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP920018",
       "N-REPUESTOp/Rifle Mendoza JUEGO RESORTE MEC.",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400458",
       "N-Punta Redonda Cal. 10mm 180grs*100",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "10mm",
       4,
       0.3,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400401",
@@ -39781,14 +39667,14 @@ var DATOS = {
       "200182",
       "Bipode KONUS 22-33cm #1947",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611020",
@@ -39807,14 +39693,14 @@ var DATOS = {
       "321055",
       "Cargador ASG cal. 6mm para modelos AEG M16 130 tiros #17616",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "6mm",
       5,
       0.3,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500204",
@@ -39859,14 +39745,14 @@ var DATOS = {
       "110586",
       "Funda interna FOBUS Mod. #IWBMCC Universal tamaño M corte combate",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320460",
@@ -39885,14 +39771,14 @@ var DATOS = {
       "110653",
       "N-Cartuc.#78001 Szo Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150617",
@@ -39937,40 +39823,40 @@ var DATOS = {
       "110900",
       "Strike Systems Airsoft rifle case, 105x32x10cm, Black #18664",
       "ASG",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110011",
       "Riñonera Rp03 P/Arma - Chico",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550250",
       "Baqueta de limpieza 12´´ GSM-BWC para pistolas de 22LR a .45ACP #41409",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "22LR",
       6,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320130",
@@ -40028,27 +39914,27 @@ var DATOS = {
       "901611",
       "Magnetico DOBERMAN 35lbs #SDMGunMag-2 pack x 10",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900871",
       "Repuesto -  Conjunto de Cierre Esc. ARMED Semi Cal 20",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "20GA",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920520",
@@ -40067,27 +39953,27 @@ var DATOS = {
       "115050",
       "N-Porta Carg.Doble p/Sobaquera Houston #113S",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140251",
       "Cinto para cartucho cal 32",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "32GA",
       9,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611300",
@@ -40106,14 +39992,14 @@ var DATOS = {
       "REP900838",
       "Repuesto Resorte de 60 cm p/Carg. de Escopeta",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       8,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500230",
@@ -40145,14 +40031,14 @@ var DATOS = {
       "REP900841",
       "Repuesto - Apagallama Armed 12 Semi Auto",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510701",
@@ -40210,27 +40096,27 @@ var DATOS = {
       "260690",
       "Montante KONUS CANTILEVER #7219",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260690",
       "Montante KONUS CANTILEVER #7219",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620160",
@@ -40314,14 +40200,14 @@ var DATOS = {
       "260574",
       "Punto Rojo para Rifle VECTOR OPTICS Mod. MAVERICK II GEN ii 1x22 #SCRD-12II",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151607",
@@ -40353,14 +40239,14 @@ var DATOS = {
       "901340",
       "Riel Picattiny VECTOR OPTICS para MLOK 2p Mod. SCRAAM-52",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       12,
       0.3,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942150",
@@ -40444,14 +40330,14 @@ var DATOS = {
       "260500",
       "Alza de Mira Millet Regulable Smith y Wesson #SW40505",
       "Smith & Wesson",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500201",
@@ -40574,53 +40460,53 @@ var DATOS = {
       "901280",
       "Cordon p/Glock con Clip #1764",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400438",
       "N-Punta Normal Cal.44Mag  240gr*100(No Lubricado)",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "cal 44",
       6,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270560",
       "Cobertor Fab Defense Mod. MOJO Cavalier",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270560",
       "Cobertor Fab Defense Mod. MOJO Cavalier",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "670133",
@@ -40639,14 +40525,14 @@ var DATOS = {
       "250204",
       "Botella 90ml GSM-BWC Blue n Rust remueve pavonado y óxido #16125",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       7,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "770522",
@@ -40691,14 +40577,14 @@ var DATOS = {
       "900970",
       "Resorte de Retroceso p/Pistola Tanfoglio #PR031",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500405",
@@ -40730,14 +40616,14 @@ var DATOS = {
       "110045",
       "Revolvera p/ 38 6p c/Broche R16",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "650606",
@@ -40821,14 +40707,14 @@ var DATOS = {
       "250209",
       "Botella 90ml GSM-BWC Gun Stock Sealer y  Filler para sellar los poros de las culatas/mango #23323",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       6,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610505",
@@ -40847,14 +40733,14 @@ var DATOS = {
       "110583",
       "Funda interna FOBUS Mod. #SWC p/ APX/MASADA/S n W/PPQ/Taurus/otros",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850160",
@@ -40873,53 +40759,53 @@ var DATOS = {
       "110010",
       "Riñonera Rp01 P/Arma - Grande",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210470",
       "N-Dado Mec Cal.20 600Mk #845220",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "20GA",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111581",
       "Funda Externa CYTAC-FOBUS Mod. Universal Zurdo c/retensor #1-UR100L",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "111582",
       "Funda Externa CYTAC-FOBUS Mod. Universal c/Linterna #1-UR1001",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500943",
@@ -40977,14 +40863,14 @@ var DATOS = {
       "900655",
       "Set Adaptador 01 p/Configuracion MOS (montantes) #33531",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901415",
@@ -41029,14 +40915,14 @@ var DATOS = {
       "260362",
       "Punto de mira Truglo de Tritium para Ruger SR series #TG231R1",
       "Truglo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQREP611063",
@@ -41055,14 +40941,14 @@ var DATOS = {
       "680067",
       "Linterna Tactica Sniper Surefire A206013 C/Resp. #SNP0539",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680008",
@@ -41107,14 +40993,14 @@ var DATOS = {
       "270056",
       "Empuñadura Fab Defense Ergonomica c/MontLinternaTáctica #MIKI1",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510797",
@@ -41263,27 +41149,27 @@ var DATOS = {
       "110196",
       "N-Cartuchera Tiro Practico #SNP0232",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110196",
       "N-Cartuchera Tiro Practico #SNP0232",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942169",
@@ -41315,14 +41201,14 @@ var DATOS = {
       "210161",
       "N-Top Punch G Only 374 #2786719",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       8,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "720141",
@@ -41380,14 +41266,14 @@ var DATOS = {
       "550251",
       "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22LR #41403",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "22LR",
       4,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942199",
@@ -41484,14 +41370,14 @@ var DATOS = {
       "550264",
       "Cepillo de bronze GSM-BWC para escopeta 20 #41268",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       21,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151410",
@@ -41653,14 +41539,14 @@ var DATOS = {
       "900930",
       "Palanca de Fiador Version p/Pistola Tanfoglio #PR002",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "942183",
@@ -41744,14 +41630,14 @@ var DATOS = {
       "210405",
       "N-Molde P/H.Punta Dc210G 429215",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "840301",
@@ -41783,14 +41669,27 @@ var DATOS = {
       "920259",
       "Choke Para Caño Medio Esc. Boito Calibre 12",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
+    ],
+    [
+      "942189",
+      "Bota Tactica DOBERMAN Mod. COMBAT READY 6 Pulgadas Desert Talle EUR 47",
+      "Doberman BOTAS",
+      "No reglamentado",
+      "Central",
+      "A",
+      "Sin calibre",
+      1,
+      0.2,
+      "INDUMENTARIA",
+      "No controlado"
     ],
     [
       "620224",
@@ -41835,14 +41734,14 @@ var DATOS = {
       "110410",
       "N-Pistolera con Cinto Velcro p/ colt 45 #50199",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250150",
@@ -41939,14 +41838,14 @@ var DATOS = {
       "210335",
       "N-Shell Holder Lee #9 No.90209",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830266",
@@ -42017,27 +41916,27 @@ var DATOS = {
       "380025",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 22LR #SCSC-10",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "22LR",
       7,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210623",
       "N-Shell Plate Dillon 380Acp #20133",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "380ACP",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500150",
@@ -42056,27 +41955,27 @@ var DATOS = {
       "260602",
       "Punto de Mira Millet Rojo Browning #DC34022",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260250",
       "Soporte RedField para Remington  #MIRAJR700LA",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500437",
@@ -42147,14 +42046,14 @@ var DATOS = {
       "260575",
       "Placa para Punto Rojo VECTOR OPTICS Mod. GLOCK TEK #SCRDM-01",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "261300",
@@ -42225,14 +42124,14 @@ var DATOS = {
       "AVE260285",
       "Mira KONUS FIRE 3-9x32 con montante #7351",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES151611",
@@ -42251,79 +42150,79 @@ var DATOS = {
       "260577",
       "Placa para Punto Rojo VECTOR OPTICS Mod. SIG P226 TEK #SCRDM-03",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260578",
       "Placa para Punto Rojo VECTOR OPTICS Mod. SPRINGFIELD XD TEK #SCRD-05",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260577",
       "Placa para Punto Rojo VECTOR OPTICS Mod. SIG P226 TEK #SCRDM-03",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260580",
       "Placa para Punto Rojo VECTOR OPTICS Mod. HK USP TEK #SCRDM-07",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "380005",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 223REM #SCSC-01",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "223REM",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200375",
       "Grips antideslizante Butler Creek #50543",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500630",
@@ -42394,27 +42293,27 @@ var DATOS = {
       "210410",
       "N-Molde P/H.Punta Dc225G 452374",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210410",
       "N-Molde P/H.Punta Dc225G 452374",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621358",
@@ -42459,14 +42358,14 @@ var DATOS = {
       "110705",
       "Funda para pistola Derya 9mm #F08",
       "Derya",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500660",
@@ -42485,14 +42384,14 @@ var DATOS = {
       "500847",
       "Servicio de Reacondicionamiento .32 Long Pack x 750",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621400",
@@ -42511,14 +42410,14 @@ var DATOS = {
       "100067",
       "Anillo porta correa Topping #S-4046",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830250",
@@ -42628,40 +42527,40 @@ var DATOS = {
       "260736",
       "Montante p/ Escopeta con Picattini #5066",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260736",
       "Montante p/ Escopeta con Picattini #5066",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "321097",
       "Cargador UMAREX T4E cal 68 2 unidades #2.4717.1",
       "Umarex",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "B",
       "cal 68",
       3,
       0.2,
       "NO LETAL",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760046",
@@ -42706,27 +42605,27 @@ var DATOS = {
       "REP900117",
       "N-Repuesto-Muelle del disparador - Mendoza FS-06",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250207",
       "Botella 90ml GSM-BWC Stock Sheen y Conditioner limpia protege culata madera #23623",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920184",
@@ -42758,14 +42657,14 @@ var DATOS = {
       "140121",
       "Clip para Glock Just It and Go",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500359U",
@@ -43031,27 +42930,27 @@ var DATOS = {
       "115035",
       "Porta Carg.Doble Israeli p/Taurus 24/7 9mm #6-0065",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       18,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550263",
       "Cepillo de bronze GSM-BWC para escopeta 28 #41267",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       19,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500650U",
@@ -43135,14 +43034,14 @@ var DATOS = {
       "200141",
       "Cacha COLT 10440",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       8,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170224",
@@ -43174,53 +43073,53 @@ var DATOS = {
       "140810",
       "Cinto IPSC 4 p/carg+ funda pistola",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110584",
       "Funda FOBUS Mod. #WP-22 p/ WaltherP22 Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110568",
       "Funda FOBUS Mod #VPQ p/ varios modelos Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110562",
       "Funda FOBUS Mod. #GL-2ND p/ G17/19 Paddle",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505421",
@@ -43239,27 +43138,27 @@ var DATOS = {
       "110739",
       "N-Cartuch.FOBUS p/Pist.Beretta92/Taurus92 ROT #BR2RT",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260255",
       "N-Mont.M.Laser SW Sw44S Rev",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611022",
@@ -43369,14 +43268,14 @@ var DATOS = {
       "901350",
       "Riel Picattiny VECTOR OPTICS para MLOK 5p Mod. SCRAAM-54",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       6,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "320516",
@@ -43460,14 +43359,14 @@ var DATOS = {
       "111585",
       "Porta Cargador Doble CYTAC-FOBUS Mod. Universal Paddle #1-M1MPU00",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830264",
@@ -43499,14 +43398,14 @@ var DATOS = {
       "300160",
       "N-Estuche p/Balas Fusil*9 Sm70",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       12,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500353",
@@ -43538,14 +43437,14 @@ var DATOS = {
       "110370",
       "Muslera p/ Revolver cal.38/4p #R22",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "38SPL",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "749100",
@@ -43564,40 +43463,40 @@ var DATOS = {
       "140002",
       "Cinto P/Cartucho CAL.12 Negro -CP01",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "500812",
       "Servicio de Reacondicionamiento .45 Pack *500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270808",
       "Funda Fab Defense M1 SigSauer P226/P229 Cinto/Paddle #M1226",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400333",
@@ -43629,14 +43528,14 @@ var DATOS = {
       "210004",
       "N-Funda Para Prensa Dillon",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ920229",
@@ -43655,14 +43554,14 @@ var DATOS = {
       "270821",
       "Porta Cargadores FAB DEFENSE Glock 9mm/.40 Cinto/Paddle Negro #PG-9",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620615",
@@ -43759,14 +43658,14 @@ var DATOS = {
       "270250",
       "Extensor de Cargador Fab Defense Glock M43 +4T #43-10",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "941106",
@@ -43824,14 +43723,14 @@ var DATOS = {
       "550260",
       "Cepillo de bronze GSM-BWC para calibres .17 #41241",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       16,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400399",
@@ -43863,27 +43762,27 @@ var DATOS = {
       "260612",
       "N-Mont.Beamshot Glock P1A Silver(Sop)",
       "Beamshot",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200150",
       "Culata sin Folding para Kit Kpos #UFN",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500860",
@@ -43915,14 +43814,14 @@ var DATOS = {
       "210416",
       "N-Cacha de goma extensora para SR9 Ruger #90341",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160185",
@@ -43993,14 +43892,14 @@ var DATOS = {
       "350200",
       "Target GSM-SME con reseteo automatico para cal 22 #SME-ST22RES",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "22LR",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850106",
@@ -44045,14 +43944,14 @@ var DATOS = {
       "110121",
       "Sobaquera p/7,65 -380 Horiz C/P CargS15",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "380ACP",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150002",
@@ -44084,14 +43983,14 @@ var DATOS = {
       "260581",
       "Placa para Punto Rojo VECTOR OPTICS Mod. UNIVERSAL OFFSET PICATINNY #SCFRM-29",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400312",
@@ -44292,14 +44191,14 @@ var DATOS = {
       "115523",
       "Pistolera Sig Sauer 9MM #P229",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500382",
@@ -44344,14 +44243,14 @@ var DATOS = {
       "115019",
       "Porta Carg. 2ble P229/226/250 sp2022 Tanfoglio Taurus",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170228",
@@ -44513,27 +44412,27 @@ var DATOS = {
       "REP900116",
       "Repuesto-Tornillo para culata - Mendoza FS-69-PAV",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270050",
       "Empuñadura Fab Defense Ergonomica #PTK",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170206",
@@ -44591,14 +44490,14 @@ var DATOS = {
       "REP920110",
       "Repuesto amortiguador para Marlin",
       "Marlin",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505536",
@@ -44656,14 +44555,14 @@ var DATOS = {
       "REP902070",
       "Repuesto - Pin para Escopeta Uzkon",
       "Uzkon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       26,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621425",
@@ -44695,14 +44594,14 @@ var DATOS = {
       "900945",
       "Elevador del Tirante del Disp. p/Pistola Tanfoglio#PR011",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830052",
@@ -44721,14 +44620,14 @@ var DATOS = {
       "502001",
       "Bengalas de Humo UC5002A",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       18,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620543",
@@ -44864,14 +44763,14 @@ var DATOS = {
       "250062",
       "Envase 45ml GSM-BWC RIGÃ†+PÃ´ protege armas de acero inoxidable #40051",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       6,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611050",
@@ -44929,14 +44828,14 @@ var DATOS = {
       "260607",
       "Punto de Mira Millet Rojo Ruger P85 #RP85006",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400265",
@@ -44968,14 +44867,14 @@ var DATOS = {
       "260354",
       "Alza y Punto de mira para GLOCK GEN 3",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920460",
@@ -45072,27 +44971,27 @@ var DATOS = {
       "900902",
       "Punto de Mira Personalizada p/Pistola Tanfoglio #TM008",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900902",
       "Punto de Mira Personalizada p/Pistola Tanfoglio #TM008",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830352",
@@ -45111,27 +45010,27 @@ var DATOS = {
       "270157",
       "Pistol grip Fab Defense p/ FN FAL #AG FAL",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210155",
       "N-Size Die H I 400 #2766501",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "850445",
@@ -45215,14 +45114,14 @@ var DATOS = {
       "200145",
       "Pistol para Maverick",
       "Maverick",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400335",
@@ -45254,14 +45153,14 @@ var DATOS = {
       "270900",
       "Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621406",
@@ -45280,27 +45179,27 @@ var DATOS = {
       "REP900875",
       "Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 12",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       5,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260224",
       "Mira Telescopica GAMO 3-7x28 TV",
       "Gamo",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500710",
@@ -45319,14 +45218,14 @@ var DATOS = {
       "260675",
       "Montante para rifles KONUS de 30mm Alto de saque rápido para Picattiny / Weaver #7409",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501425",
@@ -45345,27 +45244,27 @@ var DATOS = {
       "900975",
       "Guia de Retroceso p/PistolaTanfoglio #PR030",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900980",
       "Seguro Aut.delPercutor p/Pistola Tanfoglio #PR032",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.2,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150785",
@@ -45384,40 +45283,40 @@ var DATOS = {
       "1084",
       "Copitos P/Recarga De Cartuchos",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.2,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270601",
       "Punto de Mira Fab Defense ArmaLarga Universal Polimero #FBS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270601",
       "Punto de Mira Fab Defense ArmaLarga Universal Polimero #FBS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.2,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611040",
@@ -45462,14 +45361,14 @@ var DATOS = {
       "550500",
       "Liquido Limpia Lente 2Oz#32122",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "613001",
@@ -45514,14 +45413,14 @@ var DATOS = {
       "920380",
       "N-Prolongador Cargador P.O. Metal",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP901100",
@@ -45540,14 +45439,14 @@ var DATOS = {
       "550261",
       "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "223REM",
       14,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510750",
@@ -45657,27 +45556,27 @@ var DATOS = {
       "200146",
       "Pistol para Akkar",
       "Akkar",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270",
       "N-Cacha Rs-6L Ruger Pachmayer",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500870",
@@ -45787,14 +45686,14 @@ var DATOS = {
       "210102",
       "N-Gascheks Lyman 44Spl-Mag",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400290",
@@ -45813,14 +45712,14 @@ var DATOS = {
       "REP920042",
       "N-Repuesto p/Esc.SetCula/Guard.M:S4112 PumAcPoly ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400291",
@@ -45865,27 +45764,27 @@ var DATOS = {
       "270057",
       "Soporte Tactico Versatil Fab Defense #VTS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260673",
       "Montante para rifles KONUS de 30mm Bajo para Rifles 22LR y AC  #7420",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620193",
@@ -45969,27 +45868,27 @@ var DATOS = {
       "110013V",
       "Funda P/Arma Larga Camu.- 85 X 20 F08",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260117",
       "Mira Mini Red Dot  SNIPER  1x 30EG #TI0568",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500195",
@@ -46047,40 +45946,40 @@ var DATOS = {
       "250204",
       "Botella 90ml GSM-BWC Blue n Rust remueve pavonado y óxido #16125",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110710D",
       "N-Cartuc.#78051 Sz5 Michng R",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210347",
       "N-Shell Holder Lee #6 No.90206",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900364",
@@ -46112,27 +46011,27 @@ var DATOS = {
       "400442",
       "Punta Ojival Cal.45 230gr *100(No Lubricado)",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "45ACP",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "380015",
       "Accesorio VECTOR OPTICS de Práctica de Goma Mod. 9mm #SCSC-04",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "9mm",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "941050",
@@ -46177,14 +46076,14 @@ var DATOS = {
       "110027",
       "Funda Especial 1,30 Rectangular",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400251",
@@ -46281,14 +46180,14 @@ var DATOS = {
       "500859",
       "Servicio de Reacondicionamiento .25 Auto. Pack x 500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620586",
@@ -46320,14 +46219,14 @@ var DATOS = {
       "100067",
       "Anillo porta correa Topping #S-4046",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621371",
@@ -46372,27 +46271,27 @@ var DATOS = {
       "260683",
       "Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260683",
       "Montante para rifles KONUS de 25.4mm Alto para Rifles 22LR y AC #7415",
       "Konus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500754",
@@ -46424,27 +46323,27 @@ var DATOS = {
       "260234",
       "Mira Telescópica VECTOR OPTICS VICOPTICS Mod. B3 4x40 con anillas de 11mm #OPSL38",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400434",
       "N-Punta Normal Cal.44SPL  210gr*100(No Lubricado)",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "cal 44",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400298",
@@ -46463,40 +46362,40 @@ var DATOS = {
       "110440",
       "N-Canillera p/Armas Compactas 380/9mm#21202",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210434",
       "N-Size Die H I 429 Lyman 2766509",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260600",
       "Punto de Mira Millet Rojo Smith and Wesson #SW40508",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621442",
@@ -46541,14 +46440,14 @@ var DATOS = {
       "260233",
       "Mira Telescopica VECTOR OPTICS VICOPTICS Mod. A1 4x20 con anillas de 11mm #OPSL07",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620308",
@@ -46580,27 +46479,27 @@ var DATOS = {
       "140188",
       "Correa táctica DOBERMAN BLACK #BL066BL",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       11,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110653",
       "N-Cartuc.#78001 Szo Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620632",
@@ -46736,14 +46635,14 @@ var DATOS = {
       "210339",
       "N-Shell Holder Lee #2 No.90202",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       10,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ750428",
@@ -46814,27 +46713,27 @@ var DATOS = {
       "900910",
       "Aguja Percutora p/Pistola Tanfoglio - Version R #PR027",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900911",
       "Aguja Percutora p/Pistola Tanfoglio - Ver. Standard #PR028",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "711050",
@@ -46879,14 +46778,14 @@ var DATOS = {
       "110734",
       "N-Cartuch.FOBUS p/Pist.Glock Walther380 #GL2ND",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830162",
@@ -46905,14 +46804,14 @@ var DATOS = {
       "110173",
       "Riñonera Simple Chica  RP05",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505578",
@@ -46931,14 +46830,14 @@ var DATOS = {
       "110674",
       "N-Cartuc.P/Arma C/Laser#73151",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621390",
@@ -46983,27 +46882,27 @@ var DATOS = {
       "100063",
       "Anillo porta correa Topping #S-4032",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "100063",
       "Anillo porta correa Topping #S-4032",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ510434",
@@ -47100,14 +46999,14 @@ var DATOS = {
       "901280",
       "Cordon p/Glock con Clip #1764",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900830",
@@ -47152,27 +47051,27 @@ var DATOS = {
       "110273",
       "Pistolera 635 c/Clips",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       6,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110228V",
       "N-Funda para Escop/Rifle 1,10cm Verde",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160186",
@@ -47217,14 +47116,14 @@ var DATOS = {
       "550177",
       "Equipo Limp. Hoppe-s Rifle 22lr  #VOB",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "22LR",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150765",
@@ -47321,14 +47220,14 @@ var DATOS = {
       "270565",
       "Cobertor Fab Defense Mod. MOJO Havoc",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505053",
@@ -47347,27 +47246,27 @@ var DATOS = {
       "270575",
       "Cobertor Fab Defense Mod. MOJO Vigilante",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270570",
       "Cobertor Fab Defense Mod. MOJO Phalanx",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680802",
@@ -47399,14 +47298,14 @@ var DATOS = {
       "140188",
       "Correa táctica DOBERMAN BLACK #BL066BL",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "780000",
@@ -47503,14 +47402,14 @@ var DATOS = {
       "210445",
       "N-Top Punch G Only #460",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610010",
@@ -47555,14 +47454,14 @@ var DATOS = {
       "260616",
       "Montante Beamshot S y W P2 Silver(Sop)",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621391",
@@ -47620,14 +47519,14 @@ var DATOS = {
       "110675",
       "N-Cartuc.P/Arma C/Laser#73051",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500753",
@@ -47659,14 +47558,14 @@ var DATOS = {
       "512003",
       "Cartera con Accesorio #YQS88 Camu",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610173",
@@ -47828,40 +47727,40 @@ var DATOS = {
       "400440",
       "N-Punta Hueca Cal.44Mag  240gr *100",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "cal 44",
       3,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "500870",
       "Servicio de Reacondicionamiento .38 Super Pack x 500",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140253",
       "Cinto para cartucho cal 36",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "36GA",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760074",
@@ -47919,14 +47818,14 @@ var DATOS = {
       "550270",
       "Cepillo de bronze GSM-BWC para armas cortas 45/12mm #41283",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       13,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "152056",
@@ -47958,14 +47857,14 @@ var DATOS = {
       "250205",
       "Botella 90ml GSM-BWC Cleaner-Degreaser limpia el arma antes del pavonado #16225",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620132",
@@ -47997,14 +47896,14 @@ var DATOS = {
       "200261",
       "Cacha de Goma Butler Creek MEDIO #50542",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621317",
@@ -48114,14 +48013,14 @@ var DATOS = {
       "210344",
       "N-Shell Holder Lee #R9 No.90526",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610575",
@@ -48166,14 +48065,14 @@ var DATOS = {
       "REP920021",
       "N-REPUESTOp/Rifle Mendoza PALANCA RETENIDA",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "630031",
@@ -48231,14 +48130,14 @@ var DATOS = {
       "210351",
       "N-Shell Holder X09 Lyman",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830350",
@@ -48426,14 +48325,14 @@ var DATOS = {
       "921018",
       "Choke BOITO Mod. Cilindrico Incrementado cal 12 #33203",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "800173",
@@ -48465,27 +48364,27 @@ var DATOS = {
       "140171",
       "Correa Porta Fusil c/Homb.Negro CP04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "100060",
       "Anillo porta correa Topping #S-4512",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500810",
@@ -48504,27 +48403,27 @@ var DATOS = {
       "900965",
       "Placa de Fijacion del Seguro Perc. p/Pistola Tanfoglio#PR029",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900882",
       "Resorte de Corredera Ensamblado p/Glock M17#8284",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500630",
@@ -48543,14 +48442,14 @@ var DATOS = {
       "260632",
       "N-Mont.Beamshot Sig Sauer P5A Silver(Sop)",
       "Beamshot",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "751005",
@@ -48816,27 +48715,27 @@ var DATOS = {
       "900880",
       "Resorte de Disparador 28N (Rojo) #1049",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       11,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900881",
       "Resorte de Disparador 31N (Azul) #3724",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       11,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "840140",
@@ -48894,14 +48793,14 @@ var DATOS = {
       "110714",
       "N-Cartuc.#81011/Sz1 Michaels",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621320",
@@ -48920,14 +48819,14 @@ var DATOS = {
       "250100",
       "Montura Picatinny OSIGHT Mod. OSP-091 p/Glock #OSP-091",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "940178",
@@ -48959,14 +48858,14 @@ var DATOS = {
       "110280",
       "N-Estuche Porta Gas #88771 Micha.",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500680",
@@ -49063,14 +48962,14 @@ var DATOS = {
       "250060",
       "Envase 22ml GSM-BWC lubricante/protector de choke p/ Esc. Choke Tube #40015",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501593",
@@ -49128,53 +49027,53 @@ var DATOS = {
       "110232",
       "Canillera Universal C03",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550220",
       "Cepillo de bronce 16 Escop.  #91989/41989",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       12,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115305",
       "Pistolera p/asiento de cuero Negro",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550271",
       "Cepillo de lana GSM-BWC para escopeta 20/28/30/36 #41332",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       8,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "840441",
@@ -49245,14 +49144,14 @@ var DATOS = {
       "550264",
       "Cepillo de bronze GSM-BWC para escopeta 20 #41268",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       9,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "730344",
@@ -49271,27 +49170,27 @@ var DATOS = {
       "680690",
       "Linterna Montante tactical tec. y caja",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550261",
       "Cepillo de bronze GSM-BWC para calibres 22/223/5.56mm #41242",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "223REM",
       9,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "650532",
@@ -49310,14 +49209,14 @@ var DATOS = {
       "200190",
       "Cerrojo blow Back completo para Kit Kpos",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "962005",
@@ -49388,14 +49287,14 @@ var DATOS = {
       "110755",
       "Cartuchera c/PADDED p/PT24/7 #SP26151",
       "Taurus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "800403",
@@ -49492,14 +49391,14 @@ var DATOS = {
       "900935",
       "Interruptor p/Pistola Tanfoglio #PR007",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620310",
@@ -49531,14 +49430,14 @@ var DATOS = {
       "100062",
       "Anillo porta correa Topping #S-0712",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620231",
@@ -49570,14 +49469,14 @@ var DATOS = {
       "REP900862",
       "Repuesto -  Cilindro Ret. c/aros Esc. Armed 12p",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500800",
@@ -49596,14 +49495,14 @@ var DATOS = {
       "502000",
       "Bengalas de Seguridad C5005",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "710987",
@@ -49622,27 +49521,27 @@ var DATOS = {
       "110096",
       "N-Revolvera de Muslo #516",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900877",
       "Repuesto Aguja percutora con resorte p/ Escopeta Armed",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610579",
@@ -49739,14 +49638,14 @@ var DATOS = {
       "110500",
       "Revolvera para Traumatica INDUNAYLON 6\" P/CP300",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621156",
@@ -49934,14 +49833,14 @@ var DATOS = {
       "115306",
       "Pistolera p/asiento de cuero Marron",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621421",
@@ -49999,14 +49898,14 @@ var DATOS = {
       "AVE350050",
       "Blanco c/ Reseteo Automatico #ASTLG",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510439",
@@ -50181,27 +50080,27 @@ var DATOS = {
       "REP210003",
       "N-Repuesto P/Dosific.Prensa Sq Dillon",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901276",
       "Adaptador p/Glock 43- 9x19 Herra. Mont.Univ.p/Alza Mira#33550",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610006",
@@ -50233,14 +50132,14 @@ var DATOS = {
       "901275",
       "Adaptador p/Glock 42- Herr.Mont.Univ. p/Alza de Mira#33549",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "711017",
@@ -50428,40 +50327,40 @@ var DATOS = {
       "110503",
       "Pistolera para Traumatica INDUNAYLON P/TP50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210350",
       "N-Shell Holder X23 Lyman",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210353",
       "N-Shell Holder X32 Lyman",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621410",
@@ -50519,27 +50418,27 @@ var DATOS = {
       "260735",
       "Montante c/Picattiny Sniper #TI2232",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260735",
       "Montante c/Picattiny Sniper #TI2232",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900844",
@@ -50701,14 +50600,14 @@ var DATOS = {
       "110166",
       "Pistolera Titan #M1911 C4-1911",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501048",
@@ -50753,40 +50652,40 @@ var DATOS = {
       "250101",
       "Placa Adaptadora OSIGHT RMR a RMSc #RMRtoRMScAdapterPlate",
       "Osight HK",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140801",
       "Cinturon Cartuchera 28/12 1810010 #G",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "160257",
       "N-Cartuchos p/Taser #5360",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621393",
@@ -50831,27 +50730,27 @@ var DATOS = {
       "321057",
       "Cargador ASG de BB cal. 6mm rápido para 1200 unid. #17476",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "6mm",
       5,
       0.1,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110020",
       "Pistolera p/9mm P17 Universal",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "748000",
@@ -50870,27 +50769,27 @@ var DATOS = {
       "110209",
       "Porta Cargador UNIV.SIMPLE PC01",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       5,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200352",
       "N-Cacha Hoge SW 5906,4006 40010",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "505382",
@@ -50922,14 +50821,14 @@ var DATOS = {
       "REP920035",
       "N-Repuesto p/Esc.Gatillo de Resp.p/Semi Auto ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       15,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830290",
@@ -51026,14 +50925,14 @@ var DATOS = {
       "110029",
       "Pistolera p/ 380-7,65 P19",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "380ACP",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "151516",
@@ -51052,14 +50951,14 @@ var DATOS = {
       "270900",
       "Sujetador Fab Defense para 2 Cargadores Ultimag 30 Negro UC",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES400258",
@@ -51091,14 +50990,14 @@ var DATOS = {
       "111586",
       "Porta Tapa Oido CYTAC-FOBUS #1-A1EMC10",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "N",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "760071",
@@ -51130,14 +51029,14 @@ var DATOS = {
       "250680",
       "Montante Visor DHHR 9-11 MM ALTA1p",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620203",
@@ -51156,14 +51055,14 @@ var DATOS = {
       "900705",
       "Conector 1 de Gatillo p/Glock (2,5Kg) M17/19 #343",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170122",
@@ -51208,27 +51107,27 @@ var DATOS = {
       "901610",
       "Magnetico DOBERMAN 35lbs #SDMGunMag-2 x 1",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "250061",
       "Envase 45ml GSM-BWC RIGÃ† Grasa universal protege armas de fuego #40020",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900081",
@@ -51260,14 +51159,14 @@ var DATOS = {
       "110045",
       "Revolvera p/ 38 6p c/Broche R16",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "670117",
@@ -51312,40 +51211,40 @@ var DATOS = {
       "REP900868",
       "Repuesto Fab Defense picatinny frontal KPOS Scout FDE L",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900869",
       "Repuesto Fab Defense picatinny frontal KPOS Scout Verde L",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       11,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110375",
       "Muslera p/ Pistola cal.9mm #P11",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621461",
@@ -51416,14 +51315,14 @@ var DATOS = {
       "100061",
       "Anillo porta correa Topping #S-5312",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ680652",
@@ -51442,14 +51341,14 @@ var DATOS = {
       "REP900836",
       "Repuesto - Riel p/Alza de Mira Rifle Mendoza-Puma - KRCU624",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "740710",
@@ -51481,27 +51380,27 @@ var DATOS = {
       "901355",
       "Riel Picattiny VECTOR OPTICS Mod. OFFSET #SCRA-34",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200141",
       "Cacha COLT 10440",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830324",
@@ -51520,14 +51419,14 @@ var DATOS = {
       "110208",
       "Porta Cargador UNIV.DOBLE PC02",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       4,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620584",
@@ -51546,14 +51445,14 @@ var DATOS = {
       "100065",
       "Anillo p/ Mira 25mm c/ abert. simple 6 tornillos#TI2146",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       6,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830280",
@@ -51663,14 +51562,14 @@ var DATOS = {
       "550272",
       "Cepillo de lana GSM-BWC para escopeta 12/16 #41333",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       7,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "440165",
@@ -51702,14 +51601,14 @@ var DATOS = {
       "900883",
       "Resorte de Gatillo p/Glock M 17/19 #350",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920076",
@@ -51858,14 +51757,14 @@ var DATOS = {
       "900651",
       "Muelle de Gatillo NY 2Nara.Tirador de Gatillo 5,0Kg #7412",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "180360",
@@ -51897,14 +51796,14 @@ var DATOS = {
       "921016",
       "Choke BOITO Mod. Modificado Incrementado cal 12 #33201",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "840135",
@@ -51923,27 +51822,27 @@ var DATOS = {
       "900704",
       "Conector 8 (3,5Kg) Fino #33847 para GLOCK",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200375",
       "Grips antideslizante Butler Creek #50543",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "501361",
@@ -51962,14 +51861,14 @@ var DATOS = {
       "110225",
       "Funda p/Rifle c/Mira Ng. 1,10 - F06",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830345",
@@ -52027,27 +51926,27 @@ var DATOS = {
       "110705",
       "Funda para pistola Derya 9mm #F08",
       "Derya",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210337",
       "N-Shell Holder Lee #7 No.90207",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       4,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830051",
@@ -52157,14 +52056,14 @@ var DATOS = {
       "REP900767",
       "Repuesto Fab Defense picatinny frontal KPOS Scout Negro R",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       10,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "901410",
@@ -52196,14 +52095,14 @@ var DATOS = {
       "140460",
       "Cinto de cuero para catucho",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621370",
@@ -52313,14 +52212,14 @@ var DATOS = {
       "901250",
       "Cabeza de Cargador p/Glock M17/19 #1812",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       8,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "840136",
@@ -52404,14 +52303,14 @@ var DATOS = {
       "200377",
       "Grips Frontal p/Mossberg-SigSauer #HI2459",
       "Mossberg",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "820271",
@@ -52430,14 +52329,14 @@ var DATOS = {
       "500820",
       "Servicio de Reacondicionamiento 223 Pack *250",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "223REM",
       1,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115601",
@@ -52521,14 +52420,14 @@ var DATOS = {
       "110751",
       "Cartuchera FOBUS p/Beretta/Taurus -92",
       "Fobus",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "680552",
@@ -52586,14 +52485,14 @@ var DATOS = {
       "REP900863",
       "Repuesto - Cilindro Ret. c/aros Esc. Armed 20p",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610516",
@@ -52651,14 +52550,14 @@ var DATOS = {
       "REP920023",
       "N-REPUESTOp/Rifle Mendoza ELEVADOR",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       6,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "AVE610901",
@@ -52677,14 +52576,14 @@ var DATOS = {
       "110010",
       "Riñonera Rp01 P/Arma - Grande",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621104",
@@ -52703,66 +52602,66 @@ var DATOS = {
       "REP900768",
       "Repuesto Fab Defense picatinny frontal KPOS Scout FDE R",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900769",
       "Repuesto Fab Defense picatinny frontal KPOS Scout Verde R",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900867",
       "Repuesto Fab Defense picatinny frontal KPOS Scout Negro L",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       9,
       0.1,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "210440",
       "N-Top Punch G Only #226",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0.1,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140104",
       "Porta Cartucho Cal.12 - cuero",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "12GA",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920295",
@@ -52794,14 +52693,14 @@ var DATOS = {
       "140252",
       "Cinto para cartucho cal 16",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "16GA",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "510430",
@@ -52911,14 +52810,14 @@ var DATOS = {
       "110460",
       "N-Porta Cargador Triple 9mm#50613",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620668",
@@ -52963,27 +52862,27 @@ var DATOS = {
       "550252",
       "Baqueta de limpieza 33´´ GSM-BWC para rifles de 22MAG a 308WIN #41405",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "22MAG",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140250",
       "Cinto para cartucho cal 28",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "28GA",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620618",
@@ -53015,14 +52914,14 @@ var DATOS = {
       "900560",
       "Traba de Corred.Ext.p/Pist. 9x19.40.380.357 #7496",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150612",
@@ -53093,14 +52992,14 @@ var DATOS = {
       "110720",
       "Cartuchera #81101Sz10Michngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830294",
@@ -53210,27 +53109,27 @@ var DATOS = {
       "900650",
       "Muelle de Gatillo NY 1Verd.Tirador de Gatillo 4,5Kg #7405",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       8,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920249",
       "N-Rabiza Retracil Anti-Perdida p/Pistola RAB-01",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830440",
@@ -53262,79 +53161,79 @@ var DATOS = {
       "140200",
       "Correa completa para Kit Kpos",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300140",
       "Maletin de tela con correa para Kit Kpos",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110502",
       "Revolvera para Traumatica INDUNAYLON 4\" p/MOLLE P/TR50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110501",
       "Revolvera para Traumatica INDUNAYLON 4\" P/TR50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110504",
       "Pistolera para Traumatica INDUNAYLON p/MOLLE P/TP50",
       "Indunaylon",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110013",
       "Funda P/Arma Larga Negro- 85 X 20 F08",
       "Otros",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900621",
@@ -53418,14 +53317,14 @@ var DATOS = {
       "261060",
       "Puntera de baqueta GSM-BWC para parches 22. 223/5.56 #41370",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "223REM",
       10,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "770950",
@@ -53470,14 +53369,14 @@ var DATOS = {
       "260602",
       "Punto de Mira Millet Rojo Browning #DC34022",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "751008",
@@ -53561,14 +53460,14 @@ var DATOS = {
       "900886",
       "Resorte de Cargador Glock M19 Calib 9x19 #33509",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620134",
@@ -53665,27 +53564,27 @@ var DATOS = {
       "110347",
       "Sobaquera p/ 38,357 c/ Balera",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110347",
       "Sobaquera p/ 38,357 c/ Balera",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610438",
@@ -53704,14 +53603,14 @@ var DATOS = {
       "115050",
       "N-Porta Carg.Doble p/Sobaquera Houston #113S",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400315",
@@ -53743,14 +53642,14 @@ var DATOS = {
       "115000",
       "Porta Cargador Simple #88301 Ngr",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "921140",
@@ -53821,14 +53720,14 @@ var DATOS = {
       "110029",
       "Pistolera p/ 380-7,65 P19",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "380ACP",
       2,
       0.1,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400214",
@@ -53899,14 +53798,14 @@ var DATOS = {
       "901255",
       "Base de Cargador Glock M17/19 Calib 9x19 #1693",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       10,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "611340",
@@ -54081,14 +53980,14 @@ var DATOS = {
       "110232",
       "Canillera Universal C03",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "740220",
@@ -54133,14 +54032,14 @@ var DATOS = {
       "400261",
       "Cartuchos P/Bengala Cal.12 *3",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620603",
@@ -54198,14 +54097,14 @@ var DATOS = {
       "110400",
       "Revolvera p/38 3p Barracuda R12",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "170400",
@@ -54237,14 +54136,14 @@ var DATOS = {
       "550185",
       "Cordel Limp. Hoppe-s Cal.16 #24034",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "16GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620656",
@@ -54380,14 +54279,14 @@ var DATOS = {
       "900702",
       "Conector 3 (3,5Kg) #735 para GLOCK",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830286",
@@ -54432,14 +54331,14 @@ var DATOS = {
       "250050",
       "Pasta 60ml GSM-BWC Perma BlueÃ† para rayaduras de armas con terminado azul/negro #13322",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "A",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260050",
@@ -54497,14 +54396,14 @@ var DATOS = {
       "110231",
       "Funda p/Cadera 9mm Q04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620648",
@@ -54718,14 +54617,14 @@ var DATOS = {
       "550260",
       "Cepillo de bronze GSM-BWC para calibres .17 #41241",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621109",
@@ -54926,14 +54825,14 @@ var DATOS = {
       "110011",
       "Riñonera Rp03 P/Arma - Chico",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610546",
@@ -55108,14 +55007,14 @@ var DATOS = {
       "REP920032",
       "N-Repuesto p/Esc.Aguja del Percutor ARMED Semiauto",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       81,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920229",
@@ -55199,14 +55098,14 @@ var DATOS = {
       "900662",
       "Boton Extendido, Extrator de Carg. p/Pist. 9x19 #1981",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       6,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "833230",
@@ -55251,14 +55150,14 @@ var DATOS = {
       "210345",
       "N-Shell Holder Lee #R11 No.90528",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620691",
@@ -55485,14 +55384,14 @@ var DATOS = {
       "110273",
       "Pistolera 635 c/Clips",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "820274",
@@ -55524,14 +55423,14 @@ var DATOS = {
       "110224V",
       "N-Funda para Escop/Rifle 1,00cm  Verde",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621044",
@@ -55602,14 +55501,14 @@ var DATOS = {
       "550153",
       "Equipo Limp. 36(410) Escp. #96311",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620267",
@@ -55693,14 +55592,14 @@ var DATOS = {
       "REP920023",
       "N-REPUESTOp/Rifle Mendoza ELEVADOR",
       "Mendoza",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830084",
@@ -55849,14 +55748,14 @@ var DATOS = {
       "110403",
       "Revolvera 38 c/ balera",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621309",
@@ -55940,14 +55839,14 @@ var DATOS = {
       "110258",
       "Pistolera Universal c/ Porta Cargador Doble",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900460",
@@ -56044,27 +55943,27 @@ var DATOS = {
       "550151",
       "Equipo Limp. 6.35 Pistol#96412",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "DES440220",
       "Lente Táctico Crosman #SAG01",
       "Crosman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621464",
@@ -56382,27 +56281,27 @@ var DATOS = {
       "900991",
       "Resorte de Aguja Xtreme Medium p/Pist.Tanfoglio#X028",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110370",
       "Muslera p/ Revolver cal.38/4p #R22",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "38SPL",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830259",
@@ -56421,14 +56320,14 @@ var DATOS = {
       "140002",
       "Cinto P/Cartucho CAL.12 Negro -CP01",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830258",
@@ -56655,14 +56554,14 @@ var DATOS = {
       "300156",
       "Porta Fusil #YQS103 Kaki",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "LIQ800173",
@@ -56746,27 +56645,27 @@ var DATOS = {
       "110401",
       "Revolvera 38SPL-44 8´´ #R27",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "38SPL",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110401",
       "Revolvera 38SPL-44 8´´ #R27",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "38SPL",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "833231",
@@ -56811,14 +56710,14 @@ var DATOS = {
       "901215",
       "Embolo Depresor del Extrator p/Glock M17/19 #3449",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400216",
@@ -56863,14 +56762,14 @@ var DATOS = {
       "921031",
       "Guardamanos de Madera p/Esc Pajera Cal.12 BOITO #1390",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150002",
@@ -56889,40 +56788,40 @@ var DATOS = {
       "210443",
       "N-Top Punch G Only #421",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "921019",
       "Choke BOITO Mod. Cilindrico cal 12 #33204",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "500865",
       "Servicio de Reacondicionamiento .10 Auto. Pack x 150",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610420",
@@ -57331,14 +57230,14 @@ var DATOS = {
       "110350",
       "Sobaquera p/22 6´ S04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115601",
@@ -57435,40 +57334,40 @@ var DATOS = {
       "901350",
       "Riel Picattiny VECTOR OPTICS para MLOK 5p Mod. SCRAAM-54",
       "Vector Optics",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "A",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110203",
       "Porta Cargador Doble P/9Mm 020",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110203",
       "Porta Cargador Doble P/9Mm 020",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621102",
@@ -57487,14 +57386,14 @@ var DATOS = {
       "REP900863",
       "Repuesto - Cilindro Ret. c/aros Esc. Armed 20p",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620660",
@@ -57513,14 +57412,14 @@ var DATOS = {
       "REP900876",
       "Repuesto Palanca de Cerrojo Escopeta Armed Semi Auto Cal 20",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "20GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400242",
@@ -57669,14 +57568,14 @@ var DATOS = {
       "110406",
       "Revolvera c/muslera 38 4p indunaylon",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620522",
@@ -57695,14 +57594,14 @@ var DATOS = {
       "350142",
       "Blanco Adhesivo B24 7-34750",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       25,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "504998",
@@ -57734,14 +57633,14 @@ var DATOS = {
       "140104",
       "Porta Cartucho Cal.12 - cuero",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621201",
@@ -57799,27 +57698,27 @@ var DATOS = {
       "110573",
       "Funda de cuero p/ .25",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110572",
       "Funda de cuero p/765 o 380acp",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "380ACP",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260715",
@@ -57955,14 +57854,14 @@ var DATOS = {
       "210161",
       "N-Top Punch G Only 374 #2786719",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "630035",
@@ -58085,14 +57984,14 @@ var DATOS = {
       "550023",
       "Cepillo de Nylon cal. 16/20/28",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140203",
@@ -58137,14 +58036,14 @@ var DATOS = {
       "140500",
       "Cinto de Cuero Liso Marron #95 -033",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900300",
@@ -58228,14 +58127,14 @@ var DATOS = {
       "140605",
       "Cinto de Cuero Negro  #95 -045",
       "Otros",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830323",
@@ -58267,14 +58166,14 @@ var DATOS = {
       "140002V",
       "Cinto P/Cartucho CAL.12 Verde -CP01",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "12GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "152303",
@@ -58293,27 +58192,27 @@ var DATOS = {
       "200201",
       "Perno Quick release de encastre delantero Kit Kpos",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "200700",
       "Encastre trasero p/Glock Kit Kpos #SG2-401",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920408",
@@ -58384,14 +58283,14 @@ var DATOS = {
       "261065",
       "Puntera de baqueta GSM-BWC para parches escopeta 10, 12, 16, 20 #41372",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       5,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830334",
@@ -58436,14 +58335,14 @@ var DATOS = {
       "210354",
       "N-Shell Holder X15 Lyman#7738055",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830335",
@@ -58475,14 +58374,14 @@ var DATOS = {
       "140171V",
       "Correa Porta Fusil c/Homb.Verde CP04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900330",
@@ -58501,27 +58400,27 @@ var DATOS = {
       "140152",
       "Correa P/Arma Larga c/Balera Negro -CP03",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900884",
       "Resorte de Cargador Glock M17/19 Calib 9x19 #33510",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621425R",
@@ -58540,14 +58439,14 @@ var DATOS = {
       "550270",
       "Cepillo de bronze GSM-BWC para armas cortas 45/12mm #41283",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       3,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620624",
@@ -58644,14 +58543,14 @@ var DATOS = {
       "550210",
       "N-Cepillo De Lana 44-45",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "655056",
@@ -58735,40 +58634,40 @@ var DATOS = {
       "110078",
       "Pistolera 9mm HK -P21 SR9 SR40 SR45",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110078",
       "Pistolera 9mm HK -P21 SR9 SR40 SR45",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "140602",
       "Cinto de Cuero Negro  #85 -045",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620490",
@@ -58930,14 +58829,14 @@ var DATOS = {
       "110246",
       "Pistolera p/9mm c/tapa indunaylon",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920245",
@@ -58956,14 +58855,14 @@ var DATOS = {
       "110047",
       "Pistolera p/ 9mm P12Z p/ Zurdo Multiples",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621105",
@@ -59060,14 +58959,14 @@ var DATOS = {
       "100065",
       "Anillo p/ Mira 25mm c/ abert. simple 6 tornillos#TI2146",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610476",
@@ -59190,14 +59089,14 @@ var DATOS = {
       "110031",
       "Revolvera p/ 38 2p R01/1 S/Rapido",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900302",
@@ -59242,14 +59141,14 @@ var DATOS = {
       "110231",
       "Funda p/Cadera 9mm Q04",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900776",
@@ -59307,27 +59206,27 @@ var DATOS = {
       "110008",
       "Canillera P/635 C02",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110008",
       "Canillera P/635 C02",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621127",
@@ -59424,14 +59323,14 @@ var DATOS = {
       "260245",
       "Soporte para luneta (para mira telescopica)",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620628",
@@ -59567,14 +59466,14 @@ var DATOS = {
       "115035",
       "Porta Carg.Doble Israeli p/Taurus 24/7 9mm #6-0065",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620718",
@@ -59619,14 +59518,14 @@ var DATOS = {
       "900664",
       "Boton Extractor de Cargador p/Glock M19 #287",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620650",
@@ -59697,14 +59596,14 @@ var DATOS = {
       "110007",
       "Canillera para calibre 38",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "38SPL",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "751007",
@@ -59892,27 +59791,27 @@ var DATOS = {
       "110230",
       "N-Funda p/Cadera Universal Q03",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110403",
       "Revolvera 38 c/ balera",
       "Tanfoglio",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621115",
@@ -59983,14 +59882,14 @@ var DATOS = {
       "110159",
       "Revolvera 4p p/Pucara c/ Balera #R14/1",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "310033",
@@ -60022,14 +59921,14 @@ var DATOS = {
       "110066",
       "Pistolera P/ Glock c/Mira #P02/1",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621400R",
@@ -60113,14 +60012,14 @@ var DATOS = {
       "550237",
       "Cepillo 38 Tornado Brushes #1307",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620625",
@@ -60139,14 +60038,14 @@ var DATOS = {
       "901285",
       "Clip de Cinturon p/Glock #1449",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       9,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150085",
@@ -60243,14 +60142,14 @@ var DATOS = {
       "502001",
       "Bengalas de Humo UC5002A",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       2,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620526",
@@ -60334,14 +60233,14 @@ var DATOS = {
       "210335",
       "N-Shell Holder Lee #9 No.90209",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150139",
@@ -60438,27 +60337,27 @@ var DATOS = {
       "110019",
       "Pistolera p/9mm P12 Multiple",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "110019",
       "Pistolera p/9mm P12 Multiple",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621122",
@@ -60568,14 +60467,14 @@ var DATOS = {
       "321058",
       "Cargador ASG de BB cal. 6mm rápido para pistolas Airsoft #14847",
       "ASG",
-      "Cargadores",
+      "No reglamentado",
       "Showroom",
       "C",
       "6mm",
       1,
       0,
       "AIRGUN (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621130",
@@ -60685,14 +60584,14 @@ var DATOS = {
       "110101",
       "Revolvera p/ 38 4p R14Z p/Zurdo",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "610082",
@@ -60854,14 +60753,14 @@ var DATOS = {
       "110034",
       "N-Revolvera Interna p/ 357 4p 011-Cuero",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "830351",
@@ -60893,27 +60792,27 @@ var DATOS = {
       "110080",
       "Pistolera p/6,35 022",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "900750",
       "Tope de Resorte Anfibio, de la Aguja Persutora #3073",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       3,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621324",
@@ -60984,14 +60883,14 @@ var DATOS = {
       "921120",
       "Kit de Cerrojo p/Esc. Pajera Cal. 12 BOITO #1400",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621403R",
@@ -61023,14 +60922,14 @@ var DATOS = {
       "550500",
       "Liquido Limpia Lente 2Oz#32122",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620229",
@@ -61101,14 +61000,14 @@ var DATOS = {
       "942200",
       "Brazalete Tactico Special Forces #YQS Hard Drope Kaki",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "REP900798",
@@ -61205,14 +61104,14 @@ var DATOS = {
       "1084",
       "Copitos P/Recarga De Cartuchos",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "772000",
@@ -61465,14 +61364,14 @@ var DATOS = {
       "550210",
       "N-Cepillo De Lana 44-45",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620685",
@@ -61673,14 +61572,14 @@ var DATOS = {
       "110556",
       "Funda Interna CAL 9mm#I10",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "9mm",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "800400",
@@ -62050,14 +61949,14 @@ var DATOS = {
       "550267",
       "Cepillo de bronze GSM-BWC para armas cortas 380, 38/357 9mm #41280",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "9mm",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621440R",
@@ -62154,14 +62053,14 @@ var DATOS = {
       "550263",
       "Cepillo de bronze GSM-BWC para escopeta 28 #41267",
       "BWC",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620204",
@@ -62193,14 +62092,14 @@ var DATOS = {
       "901290",
       "Manual de Usuario Glock Ingles / Español #30887",
       "Glock",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       3,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "621373",
@@ -62375,14 +62274,14 @@ var DATOS = {
       "550238",
       "Cepillo 45 Tornado Brushes #1308",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "150571",
@@ -62713,27 +62612,27 @@ var DATOS = {
       "550228",
       "N-Cepillo de bronce 25ACP KLEEN-BORE A-162",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "550228",
       "N-Cepillo de bronce 25ACP KLEEN-BORE A-162",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620653",
@@ -63012,14 +62911,14 @@ var DATOS = {
       "REP920030",
       "N-Repuesto p/Esc. ARMED Bloque de Cierre Pajera / Semi",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       7,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "940210",
@@ -63402,27 +63301,27 @@ var DATOS = {
       "920265",
       "N-Polichoke 12 Maver.Modifie",
       "Maverick",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920265",
       "N-Polichoke 12 Maver.Modifie",
       "Maverick",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "400330",
@@ -63662,14 +63561,14 @@ var DATOS = {
       "REP920035",
       "N-Repuesto p/Esc.Gatillo de Resp.p/Semi Auto ARMED",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620520",
@@ -64247,14 +64146,14 @@ var DATOS = {
       "500811",
       "Servicio de Reacondicionamiento .45 Pack *300",
       "Sin Marca",
-      "Municiones",
+      "No reglamentado",
       "Central",
       "C",
       "Sin calibre",
       5,
       0,
       "MUNICION",
-      "Controlado"
+      "No controlado"
     ],
     [
       "920147",
@@ -64390,14 +64289,14 @@ var DATOS = {
       "REP920032",
       "N-Repuesto p/Esc.Aguja del Percutor ARMED Semiauto",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "B",
       "Sin calibre",
       4,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620076",
@@ -64455,27 +64354,27 @@ var DATOS = {
       "921062",
       "Resorte de Uña Extractora p/Esc. Pajera Cal. 12 BOITO #15019",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       4,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "921086",
       "Aguja de Tope de Cargador p/Esc. Pajera Cal. 12 BOITO #1405",
       "Sin Marca",
-      "Cargadores",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620677",
@@ -64793,14 +64692,14 @@ var DATOS = {
       "350142",
       "Blanco Adhesivo B24 7-34750",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620631",
@@ -64832,27 +64731,27 @@ var DATOS = {
       "921061",
       "Resorte de Aguja Percutora p/Esc.Pajera Cal. 12 BOITO #1401",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "12GA",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "921080",
       "Tornillo del Ejector p/Esc.Pajera Cal. 12 BOITO #1399",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       2,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "620272",
@@ -65118,14 +65017,14 @@ var DATOS = {
       "REP900113",
       "Repuesto Boito Bolt Acction M: Pump",
       "Boito",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       45,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "115152",
@@ -65365,14 +65264,14 @@ var DATOS = {
       "900230",
       "Kit de reparo DOBERMAN cargador Polimero Multishot GR1000X",
       "Doberman",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "Sin calibre",
       65,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "970057",
@@ -66015,14 +65914,14 @@ var DATOS = {
       "REP920038",
       "N-Repuesto p/Esc. ARMED Bloque de Cierre Pajera / Semi CAL 20",
       "Armed",
-      "Accesorio controlado",
+      "No reglamentado",
       "Central",
       "B",
       "20GA",
       6,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "944004",
@@ -66210,92 +66109,92 @@ var DATOS = {
       "200052",
       "Fore Grip para Picatinny",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "260117U",
       "Mira Mini Red Dot  SNIPER  1x 30EG #TI0568",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "261055",
       "Puntero Laser p/pistola Picatiny",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270151U",
       "Culata Fab Defense Glock M19 #GLR-440",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "270204U",
       "Montante Linterna Fab Defense Glock #GIS",
       "Fab Defense",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA (PROMO)",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300158",
       "Porta accesorios de tela de 3 componentes",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "300221",
       "Caja de arma corta simil cuero marron",
       "Sin Marca",
-      "Accesorio controlado",
+      "No reglamentado",
       "Showroom",
       "C",
       "Sin calibre",
       1,
       0,
       "ACCESORIO DE ARMA",
-      "Controlado"
+      "No controlado"
     ],
     [
       "4500435",
@@ -66739,14 +66638,14 @@ var DATOS = {
       10.9
     ],
     "BWC": [
-      270.9,
-      258.4,
-      250.9,
-      174.9,
-      168.7,
-      166.2,
-      162,
-      157.7,
+      270.5,
+      258,
+      250.5,
+      174.5,
+      168.3,
+      165.8,
+      161.6,
+      157.3,
       153.8,
       151.9,
       146.3,
@@ -66862,11 +66761,11 @@ var DATOS = {
       174.4,
       165,
       155.8,
-      151.2,
+      151.3,
       148.9,
       145.7,
       140,
-      134.5,
+      134.6,
       134.6,
       135.9,
       134.1,
@@ -67159,14 +67058,14 @@ var DATOS = {
       0.2
     ],
     "Derya": [
-      884.4,
-      809.6,
-      790.2,
-      870.4,
-      834.4,
-      832.4,
-      830.1,
-      824.5,
+      884.7,
+      809.9,
+      790.5,
+      870.6,
+      834.6,
+      832.7,
+      830.4,
+      824.8,
       827.5,
       827.5,
       816.7,
@@ -67236,7 +67135,7 @@ var DATOS = {
       154.8,
       914.9,
       893.7,
-      880.5
+      880
     ],
     "Doberman LINTERNAS": [
       109.7,
@@ -67256,7 +67155,7 @@ var DATOS = {
       190.1,
       184.9,
       180.4,
-      172.8
+      172.7
     ],
     "Doberman MOCHILAS": [
       558.2,
@@ -67439,14 +67338,14 @@ var DATOS = {
       7.6
     ],
     "Fab Defense": [
-      217.8,
-      195.1,
-      126.4,
-      300.8,
-      291.6,
-      290,
-      285.4,
-      283.7,
+      217.3,
+      194.6,
+      125.9,
+      300.3,
+      291.1,
+      289.5,
+      284.9,
+      283.2,
       279.5,
       280.4,
       275.3,
@@ -67659,14 +67558,14 @@ var DATOS = {
       234.2
     ],
     "Glock": [
-      366.7,
-      333.4,
-      295.7,
-      236.3,
-      237.6,
-      237.4,
-      236.7,
-      253.9,
+      378.1,
+      344.8,
+      307,
+      247.7,
+      248.9,
+      248.7,
+      248.1,
+      265.1,
       255.5,
       255.5,
       288.2,
@@ -67696,7 +67595,7 @@ var DATOS = {
       283.5,
       278.9,
       277.3,
-      276.2
+      276.1
     ],
     "Guepardo": [
       1.4,
@@ -67836,7 +67735,7 @@ var DATOS = {
       4230.9,
       4213.3,
       4126.3,
-      4119.1
+      4118.8
     ],
     "Imalent": [
       22.9,
@@ -67939,14 +67838,14 @@ var DATOS = {
       546.3
     ],
     "Llama": [
-      1.3,
-      1.3,
-      1.3,
-      3.7,
-      3.7,
-      3.7,
-      3.7,
-      3.7,
+      2,
+      2,
+      2,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
       3.7,
       3.7,
       3.7,
@@ -68216,16 +68115,16 @@ var DATOS = {
       391.5,
       374.7,
       365.2,
-      357.1
+      356.9
     ],
     "Nitecore": [
-      412.6,
-      383.7,
-      363.6,
-      214.6,
-      203.5,
-      367.8,
-      352.1,
+      409.1,
+      380.2,
+      360.1,
+      211.1,
+      200,
+      364.3,
+      348.6,
       350.8,
       343.8,
       331,
@@ -68479,14 +68378,14 @@ var DATOS = {
       0
     ],
     "Rexio": [
-      9,
-      9,
-      9.7,
-      10.1,
-      10.1,
-      10.1,
-      10.1,
-      8.9,
+      8.2,
+      8.2,
+      8.8,
+      9.2,
+      9.2,
+      9.2,
+      9.2,
+      8.1,
       8.5,
       8.5,
       10.9,
@@ -68759,14 +68658,14 @@ var DATOS = {
       203.6
     ],
     "Sin Marca": [
-      425.4,
-      421.8,
-      412,
-      3581.7,
-      561.5,
-      560.3,
-      559.6,
-      566.4,
+      380.6,
+      377,
+      367.3,
+      3536.9,
+      516.7,
+      515.5,
+      514.8,
+      521.6,
       565.3,
       564.3,
       563,
@@ -68816,7 +68715,7 @@ var DATOS = {
       690.6,
       687.5,
       682.9,
-      680.6
+      680
     ],
     "Sumax": [
       53.2,
@@ -68896,17 +68795,17 @@ var DATOS = {
       1424.2,
       1213.5,
       1115.5,
-      1057.6
+      1050.3
     ],
     "Tanfoglio": [
-      1182.1,
-      1128.5,
-      1044.9,
-      1004.7,
-      970.1,
-      898.8,
-      816.4,
-      785.6,
+      1181.5,
+      1127.9,
+      1044.3,
+      1004.1,
+      969.5,
+      898.2,
+      815.8,
+      785,
       803.7,
       811.9,
       720,
@@ -69076,17 +68975,17 @@ var DATOS = {
       3262,
       3011.2,
       2890.5,
-      2728.3
+      2720.5
     ],
     "Uzkon": [
-      5.1,
-      5.1,
-      5.1,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+      4.7,
+      4.7,
+      4.7,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
       2.4,
       2.4,
       2.4,
@@ -69159,14 +69058,14 @@ var DATOS = {
       0.6
     ],
     "Vector Optics": [
-      55.8,
-      24.4,
-      6.8,
+      204.8,
+      173.4,
+      155.8,
+      21.6,
       0,
       0,
       0,
-      0,
-      30.1,
+      178.3,
       303.5,
       298.7,
       285.6,
@@ -69318,7 +69217,7 @@ var DATOS = {
       980.8,
       979.3,
       929.9,
-      926.5
+      926.2
     ],
     "505569|Balas SELLIER n BELLOT cal 30-06SPRING FMJ 124gr 20x20 #V340772": [
       1645.9,
@@ -69498,7 +69397,7 @@ var DATOS = {
       425.4,
       379.5,
       360.3,
-      348.7
+      347.9
     ],
     "505053|Balas SELLIER n BELLOT cal 7.65mm/32AUTO FMJ 73gr 50x40 #V310232": [
       348.8,
@@ -69658,7 +69557,7 @@ var DATOS = {
       283.5,
       278.9,
       277.3,
-      275.6
+      275.5
     ],
     "700990|Rifle marca TINCK cal 223REM Mod. PERUN X16 8,5p 1 carg 30 tiros": [
       301.3,
@@ -70860,26 +70759,6 @@ var DATOS = {
       65.2,
       61.4
     ],
-    "320070|Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca": [
-      229.9,
-      202.8,
-      261,
-      227.7,
-      197.8,
-      182.3,
-      162.9,
-      158.2,
-      146.7,
-      133.4,
-      131.6,
-      129.8,
-      127.1,
-      125.8,
-      103.5,
-      83.3,
-      78.1,
-      60.8
-    ],
     "700184|Escopeta Safir 36 T14 SemiAuto Pav 2C 10T/5T Compact": [
       60.3,
       60.3,
@@ -70899,26 +70778,6 @@ var DATOS = {
       60.3,
       60.3,
       60.3
-    ],
-    "320077|Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero": [
-      156,
-      140,
-      183.8,
-      175.3,
-      167,
-      161.4,
-      158.6,
-      152.4,
-      140.8,
-      133.3,
-      130.5,
-      125.2,
-      113.2,
-      110.8,
-      96.2,
-      82.3,
-      73.9,
-      59.8
     ],
     "300095|Kit táctico Fab Defense KPOS Scout c/ agarre frontal, corredera y SLS Verde": [
       0,
@@ -70960,6 +70819,26 @@ var DATOS = {
       58.3,
       58.3
     ],
+    "320070|Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca": [
+      229.9,
+      202.8,
+      261,
+      227.7,
+      197.8,
+      182.3,
+      162.9,
+      158.2,
+      146.7,
+      133.4,
+      131.6,
+      129.8,
+      127.1,
+      125.8,
+      103.5,
+      83.3,
+      78.1,
+      57.8
+    ],
     "400331|Balines DOBERMAN cal 5,5mm Mod. SLUG  1,36gr LATA 250x30 #D19300": [
       0,
       0,
@@ -70979,6 +70858,26 @@ var DATOS = {
       59.9,
       58.1,
       57.2
+    ],
+    "320077|Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero": [
+      156,
+      140,
+      183.8,
+      175.3,
+      167,
+      161.4,
+      158.6,
+      152.4,
+      140.8,
+      133.3,
+      130.5,
+      125.2,
+      113.2,
+      110.8,
+      96.2,
+      82.3,
+      73.9,
+      56.2
     ],
     "505577|Balas SELLIER n BELLOT cal 30-30WIN SP 150gr 20x25 #V330352": [
       119.8,
@@ -72000,26 +71899,6 @@ var DATOS = {
       31.7,
       31.7
     ],
-    "680652|Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240": [
-      46.3,
-      38.4,
-      22.6,
-      17.2,
-      10.7,
-      7.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      46.2,
-      42.4,
-      38.1,
-      36.4,
-      34.5,
-      31.5
-    ],
     "942153|Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 41": [
       0,
       0,
@@ -72040,6 +71919,26 @@ var DATOS = {
       32.5,
       31.5
     ],
+    "680652|Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240": [
+      46.3,
+      38.4,
+      22.6,
+      17.2,
+      10.7,
+      7.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      46.2,
+      42.4,
+      38.1,
+      36.4,
+      34.5,
+      31.4
+    ],
     "400334|Balines DOBERMAN 5,5mm Mod. JUMBO 1.4gr 250x30 #D19921": [
       0,
       0,
@@ -72058,7 +71957,7 @@ var DATOS = {
       48.5,
       46.3,
       40.1,
-      31.4
+      31.3
     ],
     "DES750335|Carpa NTK Mod. FOX 4/5 personas #155340": [
       0,
@@ -72548,7 +72447,7 @@ var DATOS = {
       0,
       0,
       0,
-      0,
+      30.2,
       30.2,
       30.2,
       29.6,
@@ -73068,7 +72967,7 @@ var DATOS = {
       0,
       0,
       0,
-      0,
+      26.5,
       26.5,
       26.5,
       26.5,
@@ -74740,26 +74639,6 @@ var DATOS = {
       16.9,
       16.9
     ],
-    "830259|Hilo Snake Nevada 0.40mm 100M": [
-      0,
-      0,
-      0,
-      17.2,
-      17.2,
-      17.2,
-      17.2,
-      17.2,
-      17.2,
-      17.1,
-      17.1,
-      17.1,
-      17.1,
-      17.1,
-      17.1,
-      17,
-      16.9,
-      16.9
-    ],
     "DES750325|Carpa NTK Mod. FOX 2/3 personas #155300": [
       0,
       0,
@@ -74778,6 +74657,26 @@ var DATOS = {
       18.2,
       17.2,
       17.1,
+      16.9
+    ],
+    "830259|Hilo Snake Nevada 0.40mm 100M": [
+      0,
+      0,
+      0,
+      17.2,
+      17.2,
+      17.2,
+      17.2,
+      17.2,
+      17.2,
+      17.1,
+      17.1,
+      17.1,
+      17.1,
+      17.1,
+      17.1,
+      17,
+      16.9,
       16.9
     ],
     "501350|Cartuchos GB 16 Breneke 25x20": [
@@ -75284,11 +75183,11 @@ var DATOS = {
       0,
       0,
       0,
-      15.3,
-      15.3,
-      15.3,
-      15.3,
-      15.3,
+      0,
+      0,
+      0,
+      0,
+      0,
       15.3,
       15.3,
       15.3,
@@ -75600,26 +75499,6 @@ var DATOS = {
       14.2,
       14.2
     ],
-    "320775|Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04": [
-      11,
-      8.2,
-      6.8,
-      2.7,
-      2.7,
-      0,
-      89.7,
-      88.4,
-      88.4,
-      88.4,
-      84.5,
-      78.1,
-      64.1,
-      60.4,
-      59.1,
-      48.8,
-      37.3,
-      14.1
-    ],
     "111583|Funda Externa CYTAC-FOBUS Mod. Universal c/Muslera #1-UT140": [
       0,
       0,
@@ -75758,7 +75637,7 @@ var DATOS = {
       14.2,
       14.1,
       13.9,
-      13.9
+      13.8
     ],
     "610946|Caña Telescopica Snake Escarlate 4.50M": [
       27.8,
@@ -75881,14 +75760,14 @@ var DATOS = {
       13.1
     ],
     "LIQ300115|LQN-N-Caja p/2Rifles Lujoso Negro #10252": [
-      16.6,
-      16.6,
-      14.3,
-      14.3,
-      14.3,
-      14.3,
-      14.3,
-      14.3,
+      2.4,
+      2.4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       14.3,
       14.3,
       14.3,
@@ -76040,26 +75919,6 @@ var DATOS = {
       12.8,
       12.8
     ],
-    "830262|Hilo Snake Nevada 0.60mm 100M": [
-      0,
-      0,
-      0,
-      13.2,
-      13,
-      13,
-      13,
-      13,
-      13,
-      13,
-      12.9,
-      12.9,
-      12.9,
-      12.9,
-      12.9,
-      12.8,
-      12.7,
-      12.7
-    ],
     "260573|Punto Rojo para Rifle VECTOR OPTICS Mod. PARAGON 4x24 #SCPS-M04": [
       15.8,
       13.1,
@@ -76078,6 +75937,26 @@ var DATOS = {
       14.3,
       12.6,
       12.6,
+      12.6
+    ],
+    "830262|Hilo Snake Nevada 0.60mm 100M": [
+      0,
+      0,
+      0,
+      13.2,
+      13,
+      13,
+      13,
+      13,
+      13,
+      13,
+      12.9,
+      12.9,
+      12.9,
+      12.9,
+      12.9,
+      12.8,
+      12.7,
       12.6
     ],
     "270457|Cargador Fab Defense 223REM/5.56NATO p/ M:M16/M4/AR15 30T Verde #ULTIMAG30": [
@@ -76701,14 +76580,14 @@ var DATOS = {
       10.7
     ],
     "260566|Punto Rojo VECTOR OPTICS Mod. FRENZY-X MRS MOJ Gen II 1x19x26  #SCRD-SM64": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      9.6,
+      8.3,
+      7.2,
+      1.6,
+      1.4,
+      0.7,
+      0.7,
+      20.4,
       19.8,
       19.1,
       18.5,
@@ -76900,26 +76779,6 @@ var DATOS = {
       10.3,
       10.3
     ],
-    "942150|Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      8.9,
-      8.9,
-      8.1,
-      7.8,
-      6.7,
-      6.7,
-      6.7,
-      6.5,
-      10.6,
-      10.3,
-      10.3
-    ],
     "830293|Hilo Snake Mult. 4X Fullpowe.0.26MM 100M": [
       11.1,
       11.1,
@@ -76998,7 +76857,7 @@ var DATOS = {
       10.7,
       10.3,
       10.2,
-      10.2
+      10.1
     ],
     "700052CARU|Rifle Sabatti Mod Rover 600DL Cal .223 REM": [
       0,
@@ -77018,6 +76877,26 @@ var DATOS = {
       0,
       0,
       10.1,
+      10.1
+    ],
+    "942150|Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8.9,
+      8.9,
+      8.1,
+      7.8,
+      6.7,
+      6.7,
+      6.7,
+      6.5,
+      10.6,
+      10.3,
       10.1
     ],
     "900931|Alza de Mira GLOCK Gen5 6,9 auto-luminoso - 39746": [
@@ -77538,7 +77417,7 @@ var DATOS = {
       9.8,
       9.6,
       9.5,
-      9.1
+      9
     ],
     "111585|Porta Cargador Doble CYTAC-FOBUS Mod. Universal Paddle #1-M1MPU00": [
       0,
@@ -77620,26 +77499,6 @@ var DATOS = {
       9,
       9
     ],
-    "830295|Hilo Snake Mult. 4X Fullpowe.0.30MM 100M": [
-      10,
-      10,
-      9.9,
-      9.9,
-      9.9,
-      9.8,
-      9.8,
-      9.7,
-      9.7,
-      9.7,
-      9.7,
-      9.7,
-      9.7,
-      9.6,
-      9.3,
-      9.3,
-      8.9,
-      8.9
-    ],
     "111584|Funda Externa CYTAC-FOBUS Mod. Universal Muslera c/Linterna #1-UR1401": [
       0,
       0,
@@ -77697,6 +77556,26 @@ var DATOS = {
       8.9,
       8.9,
       8.9,
+      8.9,
+      8.9
+    ],
+    "830295|Hilo Snake Mult. 4X Fullpowe.0.30MM 100M": [
+      10,
+      10,
+      9.9,
+      9.9,
+      9.9,
+      9.8,
+      9.8,
+      9.7,
+      9.7,
+      9.7,
+      9.7,
+      9.7,
+      9.7,
+      9.6,
+      9.3,
+      9.3,
       8.9,
       8.9
     ],
@@ -78318,7 +78197,7 @@ var DATOS = {
       8,
       7.9,
       7.8,
-      7.8
+      7.7
     ],
     "505700|Balas Ultramasx 500 SW2 440GR 50": [
       8.1,
@@ -79260,6 +79139,26 @@ var DATOS = {
       10.8,
       6.5
     ],
+    "320775|Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04": [
+      11,
+      8.2,
+      6.8,
+      2.7,
+      2.7,
+      0,
+      89.7,
+      88.4,
+      88.4,
+      88.4,
+      84.5,
+      78.1,
+      64.1,
+      60.4,
+      59.1,
+      48.8,
+      37.3,
+      6.4
+    ],
     "712117|Vaso COLEMAN 590ML Verde Lima #2148886": [
       0.4,
       0,
@@ -79881,14 +79780,14 @@ var DATOS = {
       5.8
     ],
     "900722|Tubo Cañon p/Glock M19 9mm D.D. STS": [
-      5.8,
-      5.8,
-      5.8,
-      5.8,
-      5.8,
-      5.8,
-      5.8,
-      5.8,
+      11.6,
+      11.6,
+      11.6,
+      11.6,
+      11.6,
+      11.6,
+      11.6,
+      11.6,
       5.8,
       5.8,
       5.8,
@@ -80520,26 +80419,6 @@ var DATOS = {
       5.1,
       5.1
     ],
-    "830296|Hilo Snake Mult. 4X Fullpowe.0.35MM 100M": [
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.9,
-      5.7,
-      5.7,
-      5.7,
-      5.7,
-      5.6,
-      5.6,
-      5.5,
-      5.3,
-      5.1
-    ],
     "702301|Rifle Palanquero CHIAPPA Cal 22LR Mod. LA322 15+1 tiros": [
       5.1,
       5.1,
@@ -80638,6 +80517,26 @@ var DATOS = {
       5.1,
       5.1,
       5.1,
+      5.1
+    ],
+    "830296|Hilo Snake Mult. 4X Fullpowe.0.35MM 100M": [
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.9,
+      5.7,
+      5.7,
+      5.7,
+      5.7,
+      5.6,
+      5.6,
+      5.5,
+      5.3,
       5.1
     ],
     "830291|Hilo Snake Mult. 4X Fullpowe.0.20MM 100M": [
@@ -81300,26 +81199,6 @@ var DATOS = {
       4.7,
       4.6
     ],
-    "830285|Hilo Snake Mult. 4X Fullpowe 0.60MM 100M": [
-      5.8,
-      5.7,
-      5.7,
-      5.7,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.4,
-      5.2,
-      5.1,
-      4.6,
-      4.6
-    ],
     "620584|Anzuelo Snake Brecha amplia Negro #01 c/50": [
       9.2,
       9.2,
@@ -81339,6 +81218,26 @@ var DATOS = {
       4.6,
       4.6,
       4.6
+    ],
+    "830285|Hilo Snake Mult. 4X Fullpowe 0.60MM 100M": [
+      5.8,
+      5.7,
+      5.7,
+      5.7,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.2,
+      5.1,
+      4.6,
+      4.5
     ],
     "110586|Funda interna FOBUS Mod. #IWBMCC Universal tamaño M corte combate": [
       15.5,
@@ -81584,11 +81483,11 @@ var DATOS = {
       0,
       0,
       0,
-      5.3,
-      5.3,
-      5.3,
-      5.3,
-      5.3,
+      0,
+      0,
+      0,
+      0,
+      0,
       5.3,
       5.3,
       4.8,
@@ -81658,26 +81557,6 @@ var DATOS = {
       5.1,
       4.9,
       4.6,
-      4.3
-    ],
-    "DES750305|Carpa NTK Mod. PANDA 6 personas #155154": [
-      3.5,
-      1.2,
-      0.4,
-      17.1,
-      17.1,
-      16.7,
-      14.4,
-      13,
-      12.4,
-      10.8,
-      9.1,
-      8.1,
-      8.1,
-      7.5,
-      6.1,
-      5.3,
-      4.3,
       4.3
     ],
     "321097|Cargador UMAREX T4E cal 68 2 unidades #2.4717.1": [
@@ -82018,6 +81897,26 @@ var DATOS = {
       0,
       4.1,
       4.1,
+      4.1
+    ],
+    "DES750305|Carpa NTK Mod. PANDA 6 personas #155154": [
+      3.5,
+      1.2,
+      0.4,
+      17.1,
+      17.1,
+      16.7,
+      14.4,
+      13,
+      12.4,
+      10.8,
+      9.1,
+      8.1,
+      8.1,
+      7.5,
+      6.1,
+      5.3,
+      4.3,
       4.1
     ],
     "110654|N-Cartuc.#78361 Sz36Michngr": [
@@ -83161,14 +83060,14 @@ var DATOS = {
       3.5
     ],
     "110710D|N-Cartuc.#78051 Sz5 Michng R": [
-      3.5,
-      3.5,
-      3.5,
-      7,
-      7,
-      7,
-      7,
-      7,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       3.5,
       3.5,
       3.5,
@@ -84088,7 +83987,7 @@ var DATOS = {
       0,
       0,
       0,
-      0,
+      3.5,
       3.5,
       3.5,
       3.5,
@@ -84361,14 +84260,14 @@ var DATOS = {
       2.9
     ],
     "110712D|N-Cartuc.#78191 Sz19 Michngr": [
-      2.9,
-      2.9,
-      2.9,
-      2.9,
-      2.9,
-      2.9,
-      2.9,
-      2.9,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       2.9,
       2.9,
       2.9,
@@ -85760,26 +85659,6 @@ var DATOS = {
       2.4,
       2.4
     ],
-    "830283|Hilo Snake Mult. 4X Fullpowe 0.50MM 100M": [
-      3.7,
-      3.7,
-      3.7,
-      3.7,
-      3.3,
-      3.3,
-      3.3,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      2.9,
-      2.7,
-      2.4,
-      2.3
-    ],
     "LIQ150995|LQN-Cuchillo Aitor Tercio Black  #16104": [
       0,
       0,
@@ -85821,14 +85700,14 @@ var DATOS = {
       2.3
     ],
     "900898|Punto de Mira Xtreme 2.5x5.5 p/Pistola Tanfoglio #X023": [
-      7,
-      7,
-      7,
       4.6,
       4.6,
       4.6,
-      4.6,
-      4.6,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
+      2.3,
       2.3,
       2.3,
       2.3,
@@ -86044,11 +85923,11 @@ var DATOS = {
       0,
       0,
       0,
-      2.3,
-      2.3,
-      2.3,
-      2.3,
-      2.3,
+      0,
+      0,
+      0,
+      0,
+      0,
       2.3,
       2.3,
       2.3,
@@ -86078,6 +85957,26 @@ var DATOS = {
       2.3,
       2.3,
       2.3,
+      2.3
+    ],
+    "830283|Hilo Snake Mult. 4X Fullpowe 0.50MM 100M": [
+      3.7,
+      3.7,
+      3.7,
+      3.7,
+      3.3,
+      3.3,
+      3.3,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      3.1,
+      2.9,
+      2.7,
+      2.4,
       2.3
     ],
     "621150|Gancho p/ Esmerillon  Snake Negro Nickel SN3804 0 c/10": [
@@ -86980,26 +86879,6 @@ var DATOS = {
       2,
       2
     ],
-    "400379|Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002": [
-      17.5,
-      16,
-      14.4,
-      12,
-      11.2,
-      11.2,
-      10.9,
-      10.7,
-      10,
-      9.6,
-      8.4,
-      8.3,
-      8,
-      7.2,
-      7.1,
-      4.7,
-      3.2,
-      2
-    ],
     "REP920043|N-Repuesto p/Tanfoglio Sear Hounsing Assy": [
       4,
       4,
@@ -87018,6 +86897,26 @@ var DATOS = {
       2,
       2,
       2,
+      2
+    ],
+    "400379|Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002": [
+      17.5,
+      16,
+      14.4,
+      12,
+      11.2,
+      11.2,
+      10.9,
+      10.7,
+      10,
+      9.6,
+      8.4,
+      8.3,
+      8,
+      7.2,
+      7.1,
+      4.7,
+      3.2,
       2
     ],
     "323110|Pistola Airsoft CO2 UMAREX 6mm Mod. Beretta APX Blowback #2.6302": [
@@ -87281,14 +87180,14 @@ var DATOS = {
       1.9
     ],
     "900723|Tubo Cañon p/Glock M19 9mm D.D Dorado": [
-      7.8,
-      7.8,
-      7.8,
-      1.9,
-      1.9,
-      1.9,
-      1.9,
-      1.9,
+      9.7,
+      9.7,
+      9.7,
+      3.9,
+      3.9,
+      3.9,
+      3.9,
+      3.9,
       1.9,
       1.9,
       1.9,
@@ -87341,14 +87240,14 @@ var DATOS = {
       1.9
     ],
     "260611|Punto Rojo/Triji #JM9240 c/Pila": [
-      5.8,
-      5.8,
-      5.8,
       3.9,
       3.9,
       3.9,
-      3.9,
-      3.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
+      1.9,
       1.9,
       1.9,
       1.9,
@@ -89243,14 +89142,14 @@ var DATOS = {
   },
   "SERIES_FAM": {
     "ACCESORIO DE ARMA": [
-      682.7,
-      712.4,
-      2467.8,
-      1954.8,
-      1854.4,
-      1818.6,
-      1774.2,
-      1961.5,
+      796.8,
+      826.5,
+      2581.9,
+      2068.9,
+      1968.5,
+      1932.7,
+      1888.3,
+      2074.7,
       2490.1,
       2483.5,
       2438.7,
@@ -89263,14 +89162,14 @@ var DATOS = {
       2651.9
     ],
     "ACCESORIO DE ARMA (PROMO)": [
-      446.1,
-      439.3,
-      436.8,
-      458.8,
-      452.5,
-      448,
-      445.7,
-      444.8,
+      442.6,
+      435.7,
+      433.2,
+      455.2,
+      448.9,
+      444.4,
+      442.1,
+      444.7,
       439.8,
       440.6,
       437,
@@ -89300,7 +89199,7 @@ var DATOS = {
       405.1,
       396.8,
       391.3,
-      384.5
+      384.4
     ],
     "AIRE LIBRE (PROMO)": [
       801.1,
@@ -89320,7 +89219,7 @@ var DATOS = {
       924.4,
       850.6,
       827,
-      798
+      797.8
     ],
     "AIRGUN": [
       2184.8,
@@ -89340,7 +89239,7 @@ var DATOS = {
       3622,
       3269.2,
       3008,
-      2829.2
+      2822.5
     ],
     "AIRGUN (PROMO)": [
       1337.6,
@@ -89360,7 +89259,7 @@ var DATOS = {
       985.3,
       879.3,
       849.2,
-      826
+      825.3
     ],
     "ARMA": [
       9567.8,
@@ -89420,7 +89319,7 @@ var DATOS = {
       830.3,
       1541.8,
       1505.1,
-      1478.2
+      1477.7
     ],
     "INDUMENTARIA (PROMO)": [
       213.3,
@@ -89500,7 +89399,7 @@ var DATOS = {
       12280.4,
       12183.5,
       12052.1,
-      12041.9
+      12041.5
     ],
     "NO LETAL": [
       808.8,
@@ -89520,7 +89419,7 @@ var DATOS = {
       1629.4,
       1508.9,
       1500.8,
-      1413.9
+      1406.1
     ],
     "NO LETAL (PROMO)": [
       55.4,
@@ -89620,7 +89519,7 @@ var DATOS = {
       693.1,
       690,
       685.4,
-      683.1
+      682.5
     ]
   },
   "SERIES_MT": {
@@ -89764,65 +89663,25 @@ var DATOS = {
       0.4,
       0.4
     ],
-    "ASG\u0001Accesorio controlado": [
-      39.5,
-      39.7,
-      36.3,
-      35.7,
-      35.1,
-      34.3,
-      33.5,
-      31.5,
-      29.6,
-      29.6,
-      29.6,
-      28.4,
-      26.6,
-      26.6,
-      46.3,
-      42.7,
-      42.7,
-      42.4
-    ],
-    "ASG\u0001Cargadores": [
-      14.8,
-      14.8,
-      14.7,
-      14.7,
-      14.7,
-      14.7,
-      14.7,
-      14.7,
-      14.5,
-      14.5,
-      14.5,
-      14.5,
-      14.5,
-      14.5,
-      14.2,
-      14.2,
-      14.2,
-      14.2
-    ],
     "ASG\u0001No reglamentado": [
-      452,
-      419.7,
-      391.5,
-      353.3,
-      338.9,
-      329.3,
-      318.9,
-      316.5,
-      300.3,
-      628.2,
-      573.4,
-      522.6,
-      495.3,
-      470.2,
-      830.2,
-      770.8,
-      749.8,
-      713.9
+      506.3,
+      474.1,
+      442.5,
+      403.7,
+      388.8,
+      378.4,
+      367.1,
+      362.7,
+      344.4,
+      672.3,
+      617.5,
+      565.5,
+      536.4,
+      511.3,
+      890.7,
+      827.7,
+      806.7,
+      770.5
     ],
     "ATA\u0001Armas": [
       3.4,
@@ -89904,26 +89763,6 @@ var DATOS = {
       27.8,
       27.8
     ],
-    "Akkar\u0001Accesorio controlado": [
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1
-    ],
     "Akkar\u0001Armas": [
       0,
       0,
@@ -89943,6 +89782,26 @@ var DATOS = {
       90.6,
       85.5,
       85.5
+    ],
+    "Akkar\u0001No reglamentado": [
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
     ],
     "Albainox\u0001No reglamentado": [
       0.1,
@@ -90024,26 +89883,6 @@ var DATOS = {
       12.2,
       6.1
     ],
-    "Armed\u0001Accesorio controlado": [
-      28.7,
-      28.1,
-      28.1,
-      11.1,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8,
-      10.8
-    ],
     "Armed\u0001Armas": [
       126.9,
       120,
@@ -90063,6 +89902,26 @@ var DATOS = {
       111.1,
       111.1,
       109.2
+    ],
+    "Armed\u0001No reglamentado": [
+      28.7,
+      28.1,
+      28.1,
+      11.1,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8,
+      10.8
     ],
     "Armscor\u0001Armas": [
       1.1,
@@ -90164,47 +90023,27 @@ var DATOS = {
       10.9,
       10.9
     ],
-    "BWC\u0001Accesorio controlado": [
-      262,
-      249.5,
-      242.6,
-      170.9,
-      165.5,
-      163.3,
-      159.2,
-      155,
-      151,
-      149.1,
-      143.5,
-      139.7,
-      134.4,
-      132.6,
-      128.5,
-      123.5,
-      120.8,
-      120.3
-    ],
     "BWC\u0001No reglamentado": [
-      8.9,
-      8.9,
-      8.3,
-      4,
-      3.2,
-      2.8,
-      2.8,
-      2.7,
-      2.7,
-      2.7,
-      2.8,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.7,
-      2.6
+      270.5,
+      258,
+      250.5,
+      174.5,
+      168.3,
+      165.8,
+      161.6,
+      157.3,
+      153.8,
+      151.9,
+      146.3,
+      142.4,
+      137.1,
+      135.3,
+      131.2,
+      126.2,
+      123.5,
+      122.9
     ],
-    "Beamshot\u0001Accesorio controlado": [
+    "Beamshot\u0001No reglamentado": [
       0,
       0,
       0,
@@ -90223,26 +90062,6 @@ var DATOS = {
       0.3,
       0.3,
       0.3
-    ],
-    "Beretta\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9
     ],
     "Beretta\u0001Armas": [
       2341,
@@ -90285,64 +90104,44 @@ var DATOS = {
       13.1
     ],
     "Beretta\u0001No reglamentado": [
-      2.8,
-      2.8,
-      2.8,
-      1.1,
-      1.1,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9,
-      0.9
-    ],
-    "Beretta Mod\u0001Accesorio controlado": [
-      12.2,
-      12.2,
-      12.2,
-      11.9,
-      11.3,
-      11.3,
-      10.4,
-      9.5,
-      9.5,
-      9.5,
-      9.2,
-      9.2,
-      8.9,
-      8.6,
-      7.4,
-      6.2,
-      5.3,
-      5.3
+      1.9,
+      1.9,
+      1.9,
+      2.1,
+      2,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7,
+      1.7
     ],
     "Beretta Mod\u0001No reglamentado": [
-      91.3,
-      91.9,
-      85.3,
-      43.2,
-      39.7,
-      35.6,
-      34,
-      33,
-      32.3,
-      29.9,
-      159.6,
-      156.5,
-      156.1,
-      154,
-      152.3,
-      132.6,
-      131,
-      130
+      103.5,
+      104.1,
+      97.5,
+      55.1,
+      51,
+      46.9,
+      44.4,
+      42.5,
+      41.8,
+      39.4,
+      168.8,
+      165.7,
+      165,
+      162.6,
+      159.7,
+      138.9,
+      136.3,
+      135.3
     ],
     "Berkley\u0001No reglamentado": [
       1.6,
@@ -90384,26 +90183,6 @@ var DATOS = {
       0.7,
       0.7
     ],
-    "Boito\u0001Accesorio controlado": [
-      7.6,
-      7.6,
-      7.6,
-      6.9,
-      6.9,
-      6.9,
-      6.6,
-      6.6,
-      6.6,
-      6.6,
-      6.6,
-      6.6,
-      6.6,
-      6.6,
-      6.4,
-      6.4,
-      6.4,
-      6.4
-    ],
     "Boito\u0001Armas": [
       166.8,
       157.4,
@@ -90423,6 +90202,26 @@ var DATOS = {
       122.2,
       111,
       111
+    ],
+    "Boito\u0001No reglamentado": [
+      7.6,
+      7.6,
+      7.6,
+      6.9,
+      6.9,
+      6.9,
+      6.7,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
+      6.6,
+      6.4,
+      6.4,
+      6.4,
+      6.4
     ],
     "Browning\u0001Cargadores": [
       0.2,
@@ -90464,7 +90263,7 @@ var DATOS = {
       556.7,
       556.1
     ],
-    "CYA Supply Co.\u0001Accesorio controlado": [
+    "CYA Supply Co.\u0001No reglamentado": [
       0.4,
       0.4,
       0.4,
@@ -90565,9 +90364,26 @@ var DATOS = {
       116
     ],
     "Chiappa\u0001Armas": [
-      34.8,
-      24.9,
-      24.9,
+      29.6,
+      19.8,
+      19.8,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2.1,
+      2.1,
+      2.1
+    ],
+    "Chiappa\u0001No reglamentado": [
       5.1,
       5.1,
       5.1,
@@ -90580,9 +90396,12 @@ var DATOS = {
       5.1,
       5.1,
       5.1,
-      7.3,
-      7.3,
-      7.3
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1
     ],
     "Coleman\u0001No reglamentado": [
       33.4,
@@ -90644,45 +90463,25 @@ var DATOS = {
       17.9,
       17.2
     ],
-    "Crosman\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
     "Crosman\u0001No reglamentado": [
-      261.3,
-      236.8,
-      227,
-      205.6,
-      191.4,
-      163.1,
-      139.8,
-      135.1,
-      129,
-      123.1,
-      115.8,
-      112.1,
-      102.9,
+      261.8,
+      237.3,
+      227.5,
+      206,
+      191.6,
+      163.2,
+      139.9,
+      135.2,
+      129.2,
+      123.2,
+      115.9,
+      112.2,
+      103,
       91.1,
       70.1,
       68.9,
       66.6,
-      62.7
+      62.8
     ],
     "DK\u0001No reglamentado": [
       13.2,
@@ -90724,26 +90523,6 @@ var DATOS = {
       0.2,
       0.2
     ],
-    "Derya\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      6,
-      6,
-      6,
-      6,
-      6,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3,
-      6.3
-    ],
     "Derya\u0001Armas": [
       892.8,
       818.6,
@@ -90784,65 +90563,45 @@ var DATOS = {
       88.3,
       88.3
     ],
-    "Doberman\u0001Accesorio controlado": [
-      287.4,
-      286.6,
-      285.3,
-      148.2,
-      146.9,
-      146.1,
-      145.9,
-      144.2,
-      143.8,
-      143.7,
-      142.8,
-      142.4,
-      141.3,
-      140.8,
-      139.5,
-      139.2,
-      136.7,
-      135.9
-    ],
-    "Doberman\u0001Cargadores": [
-      1.4,
-      0.6,
-      0.3,
+    "Derya\u0001No reglamentado": [
       0,
       0,
       0,
-      0,
-      0,
-      0,
-      4.2,
-      3.6,
-      3.6,
-      3.6,
-      2.9,
-      2.4,
-      2,
-      2,
-      2
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3,
+      6.3
     ],
     "Doberman\u0001No reglamentado": [
-      56.9,
-      40.4,
-      44.4,
-      35.8,
-      28.6,
-      23.7,
-      22.6,
-      21.1,
-      14.3,
-      187.3,
+      345.7,
+      327.6,
+      330,
+      183.9,
+      175.5,
+      169.8,
       168.5,
-      154.4,
-      128.3,
-      80.3,
-      47.9,
-      28.3,
-      10.6,
-      10.4
+      165.4,
+      158.1,
+      335.2,
+      315,
+      300.4,
+      273.2,
+      224,
+      189.8,
+      169.5,
+      149.3,
+      148.3
     ],
     "Doberman BALINES\u0001No reglamentado": [
       0.1,
@@ -90882,7 +90641,7 @@ var DATOS = {
       154.8,
       914.9,
       893.7,
-      880.5
+      880
     ],
     "Doberman LINTERNAS\u0001No reglamentado": [
       109.7,
@@ -90902,7 +90661,7 @@ var DATOS = {
       190.1,
       184.9,
       180.4,
-      172.8
+      172.7
     ],
     "Doberman MOCHILAS\u0001No reglamentado": [
       558.2,
@@ -90925,19 +90684,19 @@ var DATOS = {
       369.9
     ],
     "Doberman RIFLES\u0001No reglamentado": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+      20.4,
+      18,
+      15.2,
+      12,
+      9.8,
+      7.4,
+      4,
+      0.4,
+      0.4,
+      3.5,
+      1.3,
+      0.2,
+      0.1,
       0,
       0,
       0,
@@ -91105,24 +90864,24 @@ var DATOS = {
       7.6
     ],
     "Fab Defense\u0001Accesorio controlado": [
-      158.2,
-      146.8,
-      136.2,
-      268.6,
-      261.2,
-      260.1,
-      257.9,
-      256.7,
-      252.4,
-      253.3,
-      252.3,
-      245.8,
-      251.9,
-      251.4,
-      250.2,
-      234.3,
-      233.9,
-      233.3
+      0,
+      0,
+      0,
+      0,
+      64.4,
+      62.7,
+      62.7,
+      62.7,
+      66.7,
+      66.7,
+      66.7,
+      66.7,
+      73.2,
+      73.2,
+      73.2,
+      73.2,
+      73.2,
+      73.2
     ],
     "Fab Defense\u0001Cargadores": [
       41.9,
@@ -91145,24 +90904,24 @@ var DATOS = {
       12.6
     ],
     "Fab Defense\u0001No reglamentado": [
-      17.7,
-      17.7,
-      17.2,
-      8.5,
-      8.4,
-      8.2,
-      8,
-      8,
-      8,
-      7.8,
-      7.8,
-      7.8,
-      7.7,
-      7.7,
-      7.7,
-      7.3,
-      7.2,
-      7
+      175.4,
+      164,
+      152.9,
+      276.6,
+      204.6,
+      205.1,
+      202.6,
+      201.4,
+      193.7,
+      194.5,
+      193.5,
+      186.9,
+      186.5,
+      185.9,
+      184.7,
+      168.4,
+      167.9,
+      167.2
     ],
     "Federal\u0001Municiones": [
       314,
@@ -91244,65 +91003,25 @@ var DATOS = {
       4.1,
       3.7
     ],
-    "Fobus\u0001Accesorio controlado": [
-      141.3,
-      137.2,
-      154.5,
-      113.8,
-      94.9,
-      90.8,
-      76.9,
-      74.8,
-      72,
-      70.8,
-      61,
-      57.5,
-      51.5,
-      49.2,
-      45.5,
-      37.6,
-      110.9,
-      109.2
-    ],
-    "Fobus\u0001Cargadores": [
-      0,
-      0,
-      0,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4
-    ],
     "Fobus\u0001No reglamentado": [
-      6.7,
-      6.5,
-      6.1,
-      6.1,
-      4.9,
-      4.9,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.1,
-      4,
-      3.8
+      118.9,
+      114.6,
+      131.4,
+      120.5,
+      100.4,
+      96.4,
+      82.3,
+      80.2,
+      77.5,
+      76.2,
+      66.3,
+      62.8,
+      56.8,
+      54.5,
+      50.7,
+      42.1,
+      115.3,
+      113.4
     ],
     "Frilley\u0001No reglamentado": [
       0.4,
@@ -91344,45 +91063,25 @@ var DATOS = {
       109,
       108.5
     ],
-    "Gamo\u0001Accesorio controlado": [
-      8.8,
-      8.8,
-      8.6,
-      4.4,
-      4.4,
-      4.4,
-      4.4,
-      4.4,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8,
-      4.8
-    ],
     "Gamo\u0001No reglamentado": [
-      3.7,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      3.6,
-      11
+      12.4,
+      12.4,
+      12.2,
+      8,
+      8,
+      8,
+      8,
+      8,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      8.4,
+      15.8
     ],
     "Gerber\u0001No reglamentado": [
       0.1,
@@ -91423,26 +91122,6 @@ var DATOS = {
       244.8,
       234.2,
       234.2
-    ],
-    "Glock\u0001Accesorio controlado": [
-      236,
-      236,
-      236,
-      141.5,
-      141.5,
-      141.5,
-      141.5,
-      141.4,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1,
-      143.1
     ],
     "Glock\u0001Armas": [
       73.4,
@@ -91485,24 +91164,24 @@ var DATOS = {
       58
     ],
     "Glock\u0001No reglamentado": [
-      37.1,
-      36.9,
-      36.6,
-      36.5,
-      37.7,
-      37.5,
-      37.4,
-      37.4,
-      37.3,
-      37.3,
-      37.1,
-      37.1,
-      37,
-      36.7,
-      36.6,
-      36.6,
-      36.5,
-      36.4
+      284.4,
+      284.3,
+      284,
+      189.3,
+      190.5,
+      190.4,
+      190.3,
+      190.1,
+      180.5,
+      180.5,
+      180.3,
+      180.3,
+      180.1,
+      179.8,
+      179.8,
+      179.7,
+      179.6,
+      179.6
     ],
     "Golden Eagle\u0001Municiones": [
       422.2,
@@ -91522,7 +91201,7 @@ var DATOS = {
       283.5,
       278.9,
       277.3,
-      276.2
+      276.1
     ],
     "Guepardo\u0001No reglamentado": [
       1.4,
@@ -91584,7 +91263,7 @@ var DATOS = {
       16.9,
       16.9
     ],
-    "Hawke\u0001Accesorio controlado": [
+    "Hawke\u0001No reglamentado": [
       0,
       0,
       0,
@@ -91662,7 +91341,7 @@ var DATOS = {
       4230.9,
       4213.3,
       4126.3,
-      4119.1
+      4118.8
     ],
     "Imalent\u0001No reglamentado": [
       22.9,
@@ -91684,7 +91363,7 @@ var DATOS = {
       20.8,
       21
     ],
-    "Indunaylon\u0001Accesorio controlado": [
+    "Indunaylon\u0001No reglamentado": [
       0,
       2.2,
       1.9,
@@ -91744,55 +91423,35 @@ var DATOS = {
       297,
       296.6
     ],
-    "Konus\u0001Accesorio controlado": [
-      0,
-      0,
-      747,
-      479.7,
-      464.8,
-      453.7,
-      449.2,
-      433.5,
-      670.7,
-      668.9,
-      664.4,
-      644.7,
-      627.6,
-      658.1,
-      630.5,
-      589.6,
-      552.3,
-      546.2
-    ],
     "Konus\u0001No reglamentado": [
-      2.8,
-      2.8,
-      2.8,
-      1.5,
-      1.5,
-      1.5,
-      1.5,
-      1.5,
-      1.2,
-      1.2,
-      1.2,
-      1.2,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1
+      0,
+      0,
+      749.9,
+      481.2,
+      466.3,
+      455.2,
+      450.6,
+      435,
+      671.9,
+      670.1,
+      665.6,
+      646,
+      627.7,
+      658.2,
+      630.6,
+      589.7,
+      552.4,
+      546.3
     ],
     "Llama\u0001Cargadores": [
-      1.3,
-      1.3,
-      1.3,
-      3.7,
-      3.7,
-      3.7,
-      3.7,
-      3.7,
+      2,
+      2,
+      2,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
+      4.5,
       3.7,
       3.7,
       3.7,
@@ -91904,26 +91563,6 @@ var DATOS = {
       11.9,
       11.7
     ],
-    "Marlin\u0001Accesorio controlado": [
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2
-    ],
     "Marlin\u0001Armas": [
       4,
       4,
@@ -91964,25 +91603,25 @@ var DATOS = {
       3.6,
       3.6
     ],
-    "Maverick\u0001Accesorio controlado": [
-      4.4,
-      4.1,
-      4.1,
-      3.2,
-      3.2,
-      3.2,
-      2.6,
-      2.6,
-      2.3,
-      2.3,
-      2.3,
-      1.5,
-      0.7,
+    "Marlin\u0001No reglamentado": [
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
       0.3,
       0.2,
       0.2,
       0.2,
-      1.5
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2,
+      0.2
     ],
     "Maverick\u0001Armas": [
       6.5,
@@ -92004,25 +91643,25 @@ var DATOS = {
       0,
       4.7
     ],
-    "Mendoza\u0001Accesorio controlado": [
-      9.2,
-      9.2,
-      9.2,
-      3.9,
-      3.9,
-      3.9,
-      3.9,
-      3.9,
-      4.6,
-      4.6,
-      4.6,
-      4.6,
-      4.6,
-      4.6,
-      4.6,
-      4.6,
-      3.9,
-      3.9
+    "Maverick\u0001No reglamentado": [
+      4.4,
+      4.1,
+      4.1,
+      3.2,
+      3.2,
+      3.2,
+      2.6,
+      2.6,
+      2.3,
+      2.3,
+      2.3,
+      1.5,
+      0.7,
+      0.3,
+      0.2,
+      0.2,
+      0.2,
+      1.5
     ],
     "Mendoza\u0001Armas": [
       1320,
@@ -92045,24 +91684,24 @@ var DATOS = {
       1052.1
     ],
     "Mendoza\u0001No reglamentado": [
-      3,
-      3,
-      3,
-      2.3,
-      2.3,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8,
-      0.8
+      12.3,
+      12.3,
+      12.3,
+      6.2,
+      6.2,
+      4.7,
+      4.7,
+      4.7,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      5.4,
+      4.7,
+      4.7
     ],
     "Miguel Nieto\u0001No reglamentado": [
       39.4,
@@ -92104,26 +91743,6 @@ var DATOS = {
       0,
       0
     ],
-    "Mossberg\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1,
-      0.1
-    ],
     "Mossberg\u0001Armas": [
       5.1,
       5.1,
@@ -92143,6 +91762,26 @@ var DATOS = {
       3.6,
       3.6,
       3.6
+    ],
+    "Mossberg\u0001No reglamentado": [
+      0,
+      0,
+      0,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1
     ],
     "Mustad\u0001No reglamentado": [
       9.7,
@@ -92182,47 +91821,27 @@ var DATOS = {
       391.5,
       374.7,
       365.2,
-      357.1
-    ],
-    "Nitecore\u0001Accesorio controlado": [
-      13.9,
-      12.8,
-      12,
-      20.9,
-      18.9,
-      17.2,
-      17.2,
-      19.3,
-      15.1,
-      15.1,
-      15,
-      14.8,
-      14.8,
-      14.8,
-      14.4,
-      13.3,
-      13.5,
-      13.2
+      356.9
     ],
     "Nitecore\u0001No reglamentado": [
-      398.7,
-      371,
-      351.7,
-      193.8,
-      184.6,
-      350.5,
-      335,
-      331.4,
-      328.7,
-      315.9,
-      310.4,
-      294.7,
-      286.8,
-      283.7,
-      189.4,
-      135.9,
-      121.8,
-      104.1
+      409.1,
+      380.2,
+      360.1,
+      211.1,
+      200,
+      364.3,
+      348.6,
+      350.8,
+      343.8,
+      331,
+      325.4,
+      309.5,
+      301.6,
+      298.5,
+      203.8,
+      149.2,
+      135.3,
+      117.3
     ],
     "Norinco\u0001Cargadores": [
       0,
@@ -92244,47 +91863,27 @@ var DATOS = {
       3.3,
       3.3
     ],
-    "Olight\u0001Accesorio controlado": [
-      6.1,
-      6.1,
-      6.1,
-      6.5,
-      6.5,
-      6.5,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      3.1,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
-      2.4
-    ],
     "Olight\u0001No reglamentado": [
-      2,
-      2,
-      2,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      8,
+      8,
+      8,
+      7.5,
+      7.5,
+      7.5,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      4.1,
+      3.3,
+      3.3,
+      3.3,
+      3.3,
+      3.3
     ],
-    "Osight HK\u0001Accesorio controlado": [
+    "Osight HK\u0001No reglamentado": [
       0,
       0,
       0,
@@ -92304,18 +91903,18 @@ var DATOS = {
       221.9,
       221.9
     ],
-    "Otros\u0001Accesorio controlado": [
-      0.8,
+    "Otros\u0001No reglamentado": [
+      0.9,
       0.8,
       0.7,
       0.4,
       0.4,
       0.3,
+      0.3,
+      0.3,
       0.2,
       0.2,
       0.2,
-      0.2,
-      0.1,
       0.1,
       0.1,
       0.1,
@@ -92323,26 +91922,6 @@ var DATOS = {
       0.1,
       0.1,
       0.1
-    ],
-    "Otros\u0001No reglamentado": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
     ],
     "Ottoni\u0001No reglamentado": [
       0,
@@ -92504,26 +92083,6 @@ var DATOS = {
       0,
       0
     ],
-    "Rexio\u0001Accesorio controlado": [
-      0.7,
-      0.7,
-      0.7,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      1.1,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7,
-      0.7
-    ],
     "Rexio\u0001Armas": [
       8.3,
       8.3,
@@ -92543,6 +92102,26 @@ var DATOS = {
       7.2,
       7.2,
       7.2
+    ],
+    "Rexio\u0001No reglamentado": [
+      0,
+      0,
+      0,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
     ],
     "Reysol\u0001No reglamentado": [
       15.9,
@@ -92624,26 +92203,6 @@ var DATOS = {
       49.6,
       49.6
     ],
-    "Ruger\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6
-    ],
     "Ruger\u0001Armas": [
       133.3,
       123.8,
@@ -92683,6 +92242,26 @@ var DATOS = {
       52.6,
       52.6,
       52.6
+    ],
+    "Ruger\u0001No reglamentado": [
+      0,
+      0,
+      0,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6,
+      0.6
     ],
     "SIN MARCA\u0001Armas": [
       0,
@@ -92884,26 +92463,6 @@ var DATOS = {
       170.8,
       170.8
     ],
-    "Sin Marca\u0001Accesorio controlado": [
-      166.1,
-      165,
-      160.9,
-      184.3,
-      183.9,
-      183.6,
-      183.2,
-      180.7,
-      183.4,
-      183.5,
-      182.9,
-      182.7,
-      182.6,
-      182.4,
-      180.6,
-      181.4,
-      181.3,
-      181.3
-    ],
     "Sin Marca\u0001Cargadores": [
       8.9,
       8.9,
@@ -92924,65 +92483,25 @@ var DATOS = {
       8.7,
       8.7
     ],
-    "Sin Marca\u0001Municiones": [
-      64.1,
-      64.1,
-      61.9,
-      61.9,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3,
-      61.3
-    ],
     "Sin Marca\u0001No reglamentado": [
-      186.3,
-      183.7,
-      180.3,
-      3326.3,
-      307.1,
-      306.2,
-      305.8,
-      315.2,
-      311.4,
-      310.3,
-      309.6,
-      308.9,
-      308.2,
-      302.5,
-      302,
-      301.6,
-      300.3,
-      299.9
-    ],
-    "Smith & Wesson\u0001Accesorio controlado": [
-      2,
-      2,
-      2,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1,
-      1
+      371.8,
+      368.1,
+      358.4,
+      3527.8,
+      507.5,
+      506.3,
+      505.7,
+      512.4,
+      556.1,
+      555.1,
+      553.8,
+      553,
+      552.1,
+      546.3,
+      544,
+      544.3,
+      542.9,
+      542.5
     ],
     "Smith & Wesson\u0001Armas": [
       17.1,
@@ -93025,24 +92544,24 @@ var DATOS = {
       0.5
     ],
     "Smith & Wesson\u0001No reglamentado": [
-      0.1,
-      0.1,
-      0.1,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3
+      2.1,
+      2.1,
+      2.1,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3,
+      1.3
     ],
     "Snake\u0001No reglamentado": [
       614,
@@ -93062,7 +92581,7 @@ var DATOS = {
       690.6,
       687.5,
       682.9,
-      680.6
+      680
     ],
     "Sumax\u0001No reglamentado": [
       53.2,
@@ -93124,65 +92643,25 @@ var DATOS = {
       0,
       1.6
     ],
-    "TSS\u0001Accesorio controlado": [
-      9.2,
-      9.2,
-      9.2,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3,
-      3
-    ],
     "TSS\u0001No reglamentado": [
-      1712.7,
-      1734.9,
-      2036.9,
-      1895,
-      1791,
-      1699.9,
-      1642.7,
-      1591.5,
-      1512.3,
-      2398,
-      2218.8,
-      2104.4,
-      1932.6,
-      1789.8,
-      1421.1,
-      1210.5,
-      1112.5,
-      1054.7
-    ],
-    "Tanfoglio\u0001Accesorio controlado": [
-      54.9,
-      54.9,
-      54.9,
-      27.9,
-      27.9,
-      27.9,
-      27.9,
-      27.9,
-      27.1,
-      27.1,
-      27.1,
-      27.1,
-      27,
-      27,
-      27,
-      27,
-      27,
-      27
+      1721.9,
+      1744.1,
+      2046.1,
+      1898,
+      1794,
+      1702.9,
+      1645.7,
+      1594.6,
+      1515.4,
+      2401.1,
+      2221.8,
+      2107.5,
+      1935.6,
+      1792.8,
+      1424.2,
+      1213.5,
+      1115.5,
+      1050.3
     ],
     "Tanfoglio\u0001Armas": [
       1106.8,
@@ -93205,14 +92684,14 @@ var DATOS = {
       573
     ],
     "Tanfoglio\u0001Cargadores": [
-      19.8,
-      19.7,
-      19.7,
-      21.9,
-      21.9,
-      21.9,
-      21.9,
-      21.9,
+      20,
+      19.9,
+      19.9,
+      22,
+      22,
+      22,
+      22,
+      22,
       21.9,
       21.9,
       21.9,
@@ -93225,44 +92704,24 @@ var DATOS = {
       20.1
     ],
     "Tanfoglio\u0001No reglamentado": [
-      0.6,
-      0.6,
-      0.6,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3,
-      0.3
-    ],
-    "Taurus\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4
+      54.7,
+      54.7,
+      54.7,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.4,
+      27.3,
+      27.3,
+      27.3,
+      27.3,
+      27.3,
+      27.3
     ],
     "Taurus\u0001Cargadores": [
       2.8,
@@ -93283,6 +92742,26 @@ var DATOS = {
       1.3,
       1.3,
       1.3
+    ],
+    "Taurus\u0001No reglamentado": [
+      0,
+      0,
+      0,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4,
+      0.4
     ],
     "Tikka\u0001Armas": [
       5,
@@ -93364,7 +92843,7 @@ var DATOS = {
       1.3,
       1.3
     ],
-    "Truglo\u0001Accesorio controlado": [
+    "Truglo\u0001No reglamentado": [
       68.6,
       67.7,
       68.7,
@@ -93404,75 +92883,35 @@ var DATOS = {
       7.7,
       7.7
     ],
-    "Umarex\u0001Accesorio controlado": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      22,
-      22,
-      24,
-      23.8,
-      23.8,
-      34.5,
-      34.3,
-      33.9,
-      33.5,
-      33.4
-    ],
-    "Umarex\u0001Cargadores": [
-      40.5,
-      40.1,
-      39.9,
-      30.3,
-      30.3,
-      30.3,
-      67.6,
-      67.6,
-      65.6,
-      67.3,
-      65.3,
-      65.3,
-      58.4,
-      58.2,
-      56.2,
-      52.4,
-      53.6,
-      43.9
-    ],
     "Umarex\u0001No reglamentado": [
-      1658.1,
-      1574.7,
-      1775.3,
-      1400.9,
-      1277.1,
-      1182.4,
-      2698.1,
-      2596.4,
-      2484.5,
-      2401.6,
-      2551.1,
-      2381.8,
-      3502.9,
-      3342.4,
-      3171.5,
-      2925,
-      2803.4,
-      2651
+      1684,
+      1601.5,
+      1801.9,
+      1417.6,
+      1293.4,
+      1197.1,
+      2765.7,
+      2664,
+      2572.1,
+      2490.9,
+      2640.4,
+      2470.9,
+      3585.1,
+      3435.2,
+      3262,
+      3011.2,
+      2890.5,
+      2720.5
     ],
-    "Uzkon\u0001Accesorio controlado": [
-      5.1,
-      5.1,
-      5.1,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
-      2.4,
+    "Uzkon\u0001No reglamentado": [
+      4.7,
+      4.7,
+      4.7,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
+      2.1,
       2.4,
       2.4,
       2.4,
@@ -93545,44 +92984,44 @@ var DATOS = {
       0.6
     ],
     "Vector Optics\u0001Accesorio controlado": [
-      55.6,
-      24.2,
-      6.6,
       0,
       0,
       0,
       0,
-      29.9,
-      303.3,
-      298.5,
-      285.4,
-      441.2,
-      410.1,
-      397.5,
-      381.3,
-      359.2,
-      353.4,
-      352.4
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      169.9,
+      169.9,
+      169.9,
+      169.9,
+      169.9,
+      169.9,
+      169.9
     ],
     "Vector Optics\u0001No reglamentado": [
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2,
-      0.2
+      204.8,
+      173.4,
+      155.8,
+      21.6,
+      0,
+      0,
+      0,
+      178.3,
+      303.5,
+      298.7,
+      285.6,
+      271.4,
+      240.4,
+      227.7,
+      211.5,
+      189.5,
+      183.6,
+      182.6
     ],
     "Walther\u0001Armas": [
       360.8,
@@ -93709,32 +93148,32 @@ var DATOS = {
     "ACCESORIO DE ARMA\u0001Accesorio controlado": [
       0,
       0,
-      1766.2,
-      1099.5,
-      1019.7,
-      987.7,
-      948.9,
-      1138.2,
-      1666.3,
-      1659.7,
-      1626.5,
-      1748.3,
-      1696.3,
-      1719.1,
-      1685.7,
-      1608.6,
-      1862.3,
-      1853.5
+      0,
+      0,
+      64.4,
+      62.7,
+      62.7,
+      62.7,
+      59.4,
+      59.4,
+      59.4,
+      229.4,
+      235.9,
+      235.9,
+      235.9,
+      235.9,
+      235.9,
+      235.9
     ],
     "ACCESORIO DE ARMA\u0001Cargadores": [
-      730,
-      821.8,
-      701.6,
-      855.3,
-      834.7,
-      830.9,
-      825.3,
-      823.3,
+      730.9,
+      822.6,
+      702.5,
+      856.3,
+      835.6,
+      831.8,
+      826.3,
+      824.2,
       823.8,
       823.8,
       812.2,
@@ -93746,45 +93185,65 @@ var DATOS = {
       798.8,
       798.4
     ],
-    "ACCESORIO DE ARMA (PROMO)\u0001Accesorio controlado": [
-      475.2,
-      468.4,
-      466.1,
-      458.2,
-      451.9,
-      447.4,
-      445.1,
-      444.2,
-      439.2,
-      440,
-      436.6,
-      431.8,
-      424.3,
-      423.9,
-      417.4,
-      396.2,
-      390,
-      386.7
+    "ACCESORIO DE ARMA\u0001No reglamentado": [
+      66,
+      3.9,
+      1879.4,
+      1212.7,
+      1068.5,
+      1038.1,
+      999.3,
+      1187.7,
+      1606.9,
+      1600.3,
+      1567,
+      1519,
+      1460.4,
+      1483.3,
+      1449.9,
+      1372.7,
+      1626.5,
+      1617.6
     ],
-    "ACCESORIO DE ARMA (PROMO)\u0001Cargadores": [
+    "ACCESORIO DE ARMA (PROMO)\u0001Accesorio controlado": [
       0,
       0,
       0,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.6,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4,
-      0.4
+      0,
+      0,
+      0,
+      0,
+      0,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2,
+      7.2
+    ],
+    "ACCESORIO DE ARMA (PROMO)\u0001No reglamentado": [
+      442.6,
+      435.7,
+      433.2,
+      455.2,
+      448.9,
+      444.4,
+      442.1,
+      444.7,
+      432.6,
+      433.4,
+      429.8,
+      425,
+      417.5,
+      417.1,
+      410.7,
+      389.4,
+      383.2,
+      379.9
     ],
     "AIRE LIBRE\u0001No reglamentado": [
       598.5,
@@ -93804,7 +93263,7 @@ var DATOS = {
       405.1,
       396.8,
       391.3,
-      384.5
+      384.4
     ],
     "AIRE LIBRE (PROMO)\u0001No reglamentado": [
       801.1,
@@ -93824,107 +93283,87 @@ var DATOS = {
       924.4,
       850.6,
       827,
-      798
-    ],
-    "AIRGUN\u0001Cargadores": [
-      15.4,
-      14.3,
-      13.8,
-      12.4,
-      12.4,
-      12.4,
-      28.6,
-      28.6,
-      28.4,
-      32.6,
-      31.8,
-      31.8,
-      31.4,
-      30.5,
-      29.8,
-      29.2,
-      28.7,
-      27.6
+      797.8
     ],
     "AIRGUN\u0001No reglamentado": [
-      2169.3,
-      1960.1,
-      2776.7,
-      2629.3,
-      2502.4,
-      2337.1,
-      2524.7,
-      2429,
-      2288.7,
-      3683.3,
-      3667.6,
-      3450.7,
-      4011.2,
-      3693.6,
-      3592.2,
-      3240,
-      2979.3,
-      2801.5
-    ],
-    "AIRGUN (PROMO)\u0001Cargadores": [
-      15.3,
-      15.2,
-      15.2,
-      15.1,
-      14.8,
-      14.8,
-      14.8,
-      14.8,
-      14.6,
-      14.6,
-      14.6,
-      14.6,
-      14.6,
-      14.5,
-      14.2,
-      14.2,
-      14.2,
-      14.2
+      2184.8,
+      1974.4,
+      2790.5,
+      2641.7,
+      2514.8,
+      2349.5,
+      2553.3,
+      2457.7,
+      2317.2,
+      3715.8,
+      3699.4,
+      3482.5,
+      4042.6,
+      3724.1,
+      3622,
+      3269.2,
+      3008,
+      2822.5
     ],
     "AIRGUN (PROMO)\u0001No reglamentado": [
-      1322.3,
-      1296.5,
-      1403.5,
-      1328.4,
-      1291.1,
-      1225.6,
-      1180.1,
-      1167.6,
-      1129.2,
-      1110.4,
-      1090.2,
-      1078.9,
-      1061.4,
-      1025.6,
-      971.1,
-      865.1,
-      835,
-      811.9
+      1337.6,
+      1311.8,
+      1418.6,
+      1343.5,
+      1305.9,
+      1240.4,
+      1194.9,
+      1182.4,
+      1143.8,
+      1124.9,
+      1104.8,
+      1093.5,
+      1076,
+      1040.1,
+      985.3,
+      879.3,
+      849.2,
+      825.3
     ],
     "ARMA\u0001Armas": [
-      9567.8,
-      8616.7,
-      7975.2,
-      8013.5,
-      8371.9,
-      7572,
-      6867.1,
-      6695.9,
-      6798.8,
-      6831.9,
-      6451.4,
-      6448.2,
-      6297.2,
-      6085.3,
-      6030.3,
-      6552.2,
-      6291.3,
-      6209.9
+      9562.7,
+      8611.5,
+      7970.1,
+      8008.4,
+      8366.7,
+      7566.8,
+      6862,
+      6690.8,
+      6793.7,
+      6826.7,
+      6446.3,
+      6443.1,
+      6292,
+      6080.2,
+      6025.2,
+      6547.1,
+      6286.1,
+      6204.8
+    ],
+    "ARMA\u0001No reglamentado": [
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1,
+      5.1
     ],
     "CAJA FUERTE\u0001No reglamentado": [
       0,
@@ -93964,7 +93403,7 @@ var DATOS = {
       830.3,
       1541.8,
       1505.1,
-      1478.2
+      1477.7
     ],
     "INDUMENTARIA (PROMO)\u0001No reglamentado": [
       213.3,
@@ -94027,84 +93466,64 @@ var DATOS = {
       23.3
     ],
     "MUNICION\u0001Municiones": [
-      9646.5,
-      14136.7,
-      13582.7,
-      13538.8,
-      12972.4,
-      12819.7,
-      12745.9,
-      12726.5,
-      12727.3,
-      12726.7,
-      12679.4,
-      12582.1,
-      12452.2,
-      12318.6,
-      12280.4,
-      12183.5,
-      12052.1,
-      12041.9
+      9582.4,
+      14072.6,
+      13520.8,
+      13476.8,
+      12911,
+      12758.3,
+      12684.6,
+      12665.1,
+      12665.9,
+      12665.3,
+      12618.1,
+      12520.8,
+      12390.8,
+      12257.3,
+      12219.1,
+      12122.1,
+      11990.8,
+      11980.2
     ],
-    "NO LETAL\u0001Cargadores": [
-      26.5,
-      26.4,
-      26.4,
-      17.9,
-      17.9,
-      17.9,
-      11,
-      11,
-      10.9,
-      10.9,
-      10.9,
-      10.9,
-      11.3,
-      11.3,
-      11.3,
-      11.2,
-      11.1,
-      11.1
+    "MUNICION\u0001No reglamentado": [
+      64.1,
+      64.1,
+      61.9,
+      61.9,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3,
+      61.3
     ],
     "NO LETAL\u0001No reglamentado": [
-      782.2,
-      745.5,
-      675.4,
-      541.9,
-      436.5,
-      383.8,
-      1645.2,
-      1571.5,
-      1497.1,
-      1436.2,
-      1334.4,
-      1193.5,
-      1801.3,
-      1726.6,
-      1618,
-      1497.7,
-      1489.7,
-      1402.7
-    ],
-    "NO LETAL (PROMO)\u0001Cargadores": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      28,
-      28,
-      26.2,
-      28,
-      26.2,
-      26.2,
-      19.3,
-      19.3,
-      17.5,
-      14,
-      15.8,
-      7.1
+      808.8,
+      771.9,
+      701.8,
+      559.8,
+      454.3,
+      401.7,
+      1656.2,
+      1582.4,
+      1508,
+      1447.1,
+      1345.3,
+      1204.4,
+      1812.6,
+      1738,
+      1629.4,
+      1508.9,
+      1500.8,
+      1406.1
     ],
     "NO LETAL (PROMO)\u0001No reglamentado": [
       55.4,
@@ -94113,18 +93532,18 @@ var DATOS = {
       196.6,
       189.3,
       188.4,
-      187,
-      186.4,
-      186.2,
-      182,
-      179.8,
+      214.9,
+      214.4,
+      212.4,
+      210,
+      206.1,
+      203.4,
+      196.1,
+      193.3,
       177.1,
-      176.9,
-      174,
-      159.5,
-      145,
-      138,
-      132.2
+      159,
+      153.8,
+      139.3
     ],
     "OTRO (PROMO)\u0001No reglamentado": [
       10.8,
@@ -94204,39 +93623,39 @@ var DATOS = {
       693.1,
       690,
       685.4,
-      683.1
+      682.5
     ]
   },
   "CMV6": {
-    "Umarex": 1611.4,
+    "Umarex": 1619.2,
     "Armadillo": 20.3,
-    "IMI": 193.6,
+    "IMI": 193.8,
     "Fobus": 33.8,
     "Mendoza": 131.8,
-    "Snake": 16.4,
+    "Snake": 17,
     "Indunaylon": 2.5,
     "BWC": 28.6,
     "Sumax": 3.8,
     "Apolo": 203.3,
     "Beretta": 480.2,
-    "Doberman LINTERNAS": 52,
+    "Doberman LINTERNAS": 52.1,
     "Sin Marca": 8.2,
-    "NTK": 75.4,
+    "NTK": 75.6,
     "ASG": 280.4,
     "GB": 147.6,
     "Doberman": 172.1,
     "Sellier & Bellot": 2450.4,
-    "Doberman BOTAS": 356.7,
+    "Doberman BOTAS": 357.1,
     "Saga": 90.2,
-    "Doberman MOCHILAS": 96.2,
+    "Doberman MOCHILAS": 96.3,
     "Miguel Nieto": 14.6,
-    "TSS": 1246.6,
+    "TSS": 1254,
     "Konus": 189.4,
     "Coleman": 20.2,
     "Duracell": 1.9,
     "Vector Optics": 122,
     "Crosman": 71.8,
-    "Golden Eagle": 11.5,
+    "Golden Eagle": 11.6,
     "Nitecore": 151.6,
     "Beretta Mod": 45.2,
     "Fab Defense": 51.1,
@@ -94329,17 +93748,17 @@ var DATOS = {
     "Imalent": 0.2
   },
   "CMV6_FAM": {
-    "AIRGUN": 2297.6,
-    "MUNICION": 3028,
+    "AIRGUN": 2304.2,
+    "MUNICION": 3028.4,
     "ACCESORIO DE ARMA": 454.1,
     "ARMA": 2274,
-    "PESCA (PROMO)": 16.4,
+    "PESCA (PROMO)": 17,
     "PESCA": 6.8,
-    "AIRE LIBRE": 63,
-    "NO LETAL": 1056,
-    "AIRE LIBRE (PROMO)": 262.3,
-    "INDUMENTARIA": 532.9,
-    "AIRGUN (PROMO)": 298,
+    "AIRE LIBRE": 63.1,
+    "NO LETAL": 1063.7,
+    "AIRE LIBRE (PROMO)": 262.5,
+    "INDUMENTARIA": 533.4,
+    "AIRGUN (PROMO)": 298.8,
     "OTRO (PROMO)": 2.4,
     "Otro": 4.4,
     "ACCESORIO DE ARMA (PROMO)": 70.2,
@@ -94350,63 +93769,60 @@ var DATOS = {
     "CAJA FUERTE": 71.8
   },
   "CMV6_MT": {
-    "Umarex\u0001No reglamentado": 1583.4,
+    "Umarex\u0001No reglamentado": 1619.2,
     "Armadillo\u0001No reglamentado": 20.3,
-    "IMI\u0001Municiones": 193.6,
-    "Fobus\u0001Accesorio controlado": 30.9,
+    "IMI\u0001Municiones": 193.8,
+    "Fobus\u0001No reglamentado": 33.8,
     "Mendoza\u0001Armas": 131.2,
-    "Snake\u0001No reglamentado": 16.4,
-    "Indunaylon\u0001Accesorio controlado": 2.5,
-    "BWC\u0001Accesorio controlado": 28.4,
+    "Snake\u0001No reglamentado": 17,
+    "Indunaylon\u0001No reglamentado": 2.5,
+    "BWC\u0001No reglamentado": 28.6,
     "Sumax\u0001No reglamentado": 3.8,
     "Apolo\u0001No reglamentado": 203.3,
     "Beretta\u0001Armas": 478.3,
-    "Doberman LINTERNAS\u0001No reglamentado": 52,
-    "Sin Marca\u0001No reglamentado": 5.4,
-    "NTK\u0001No reglamentado": 75.4,
-    "ASG\u0001No reglamentado": 270.7,
+    "Doberman LINTERNAS\u0001No reglamentado": 52.1,
+    "Sin Marca\u0001No reglamentado": 8.2,
+    "NTK\u0001No reglamentado": 75.6,
+    "ASG\u0001No reglamentado": 280.4,
     "GB\u0001Municiones": 147.6,
-    "Doberman\u0001Accesorio controlado": 8.1,
+    "Doberman\u0001No reglamentado": 172.1,
     "Sellier & Bellot\u0001Municiones": 2450.4,
-    "Doberman BOTAS\u0001No reglamentado": 356.7,
+    "Doberman BOTAS\u0001No reglamentado": 357.1,
     "Saga\u0001Municiones": 90.2,
-    "Sin Marca\u0001Accesorio controlado": 2.3,
-    "Doberman MOCHILAS\u0001No reglamentado": 96.2,
+    "Doberman MOCHILAS\u0001No reglamentado": 96.3,
     "Miguel Nieto\u0001No reglamentado": 14.6,
-    "TSS\u0001No reglamentado": 1246.5,
-    "Doberman\u0001No reglamentado": 162.4,
-    "Konus\u0001Accesorio controlado": 186.1,
+    "TSS\u0001No reglamentado": 1254,
+    "Konus\u0001No reglamentado": 189.4,
     "Coleman\u0001No reglamentado": 20.2,
     "Duracell\u0001No reglamentado": 1.9,
-    "Vector Optics\u0001Accesorio controlado": 121.9,
+    "Vector Optics\u0001No reglamentado": 122,
     "Crosman\u0001No reglamentado": 71.8,
-    "Golden Eagle\u0001Municiones": 11.5,
-    "Nitecore\u0001No reglamentado": 148.5,
-    "Beretta Mod\u0001No reglamentado": 39.6,
+    "Golden Eagle\u0001Municiones": 11.6,
+    "Nitecore\u0001No reglamentado": 151.6,
+    "Beretta Mod\u0001No reglamentado": 45.2,
     "Fab Defense\u0001Cargadores": 5.7,
     "Doberman BALINES\u0001No reglamentado": 130.4,
-    "Doberman RIFLES\u0001Accesorio controlado": 1.3,
+    "Doberman RIFLES\u0001No reglamentado": 1.3,
     "Armscor\u0001Municiones": 0.8,
     "Boito\u0001Armas": 36.8,
     "Browning\u0001Armas": 4.1,
     "Glock\u0001Armas": 164.9,
-    "Fab Defense\u0001Accesorio controlado": 44.2,
+    "Fab Defense\u0001No reglamentado": 45.4,
     "Derya\u0001Armas": 49.6,
     "Armsan\u0001Armas": 12,
     "Derya\u0001Cargadores": 1.9,
-    "Truglo\u0001Accesorio controlado": 14.4,
+    "Truglo\u0001No reglamentado": 14.4,
     "CCI\u0001Municiones": 2,
     "Tanfoglio\u0001Armas": 155.3,
     "AHSS\u0001Armas": 21.6,
     "Armed\u0001Armas": 9.2,
     "KCI\u0001Cargadores": 19.9,
-    "Maverick\u0001Accesorio controlado": 2.3,
+    "Maverick\u0001No reglamentado": 2.3,
     "Federal\u0001Municiones": 1.1,
     "Akkar\u0001Armas": 16.3,
     "5.11\u0001No reglamentado": 6.3,
     "Tinck\u0001Armas": 223.6,
     "Alfa\u0001Armas": 18.4,
-    "BWC\u0001No reglamentado": 0.2,
     "Rock Island\u0001Armas": 28.4,
     "BRG\u0001Armas": 21.8,
     "Savage\u0001Armas": 4.7,
@@ -94415,7 +93831,7 @@ var DATOS = {
     "Mauser\u0001Armas": 3.5,
     "Glock\u0001No reglamentado": 0.6,
     "Sabatti\u0001Armas": 8.3,
-    "Otros\u0001Accesorio controlado": 0.1,
+    "Otros\u0001No reglamentado": 0.1,
     "Caterpillar\u0001No reglamentado": 3.7,
     "Rossi\u0001Armas": 31,
     "Ruger\u0001Armas": 58.4,
@@ -94425,7 +93841,6 @@ var DATOS = {
     "Armscor\u0001Armas": 3.6,
     "Girsan\u0001Armas": 83.1,
     "HK\u0001Armas": 17,
-    "Nitecore\u0001Accesorio controlado": 3.1,
     "Rocky Boots\u0001No reglamentado": 3.5,
     "CZ\u0001Armas": 120.8,
     "KOR\u0001Armas": 19.8,
@@ -94436,24 +93851,18 @@ var DATOS = {
     "Marlin\u0001Armas": 6.4,
     "Marine Sports\u0001No reglamentado": 0.4,
     "Sig Sauer\u0001Armas": 81.5,
-    "Umarex\u0001Accesorio controlado": 1.3,
     "Ruger\u0001Cargadores": 2.9,
     "Frilley\u0001No reglamentado": 0.1,
-    "ASG\u0001Accesorio controlado": 9.3,
-    "Konus\u0001No reglamentado": 3.2,
-    "Umarex\u0001Cargadores": 26.6,
-    "GSM\u0001Accesorio controlado": 0,
+    "GSM\u0001No reglamentado": 0,
     "Beretta\u0001No reglamentado": 0.3,
-    "Boito\u0001Accesorio controlado": 0.2,
+    "Boito\u0001No reglamentado": 0.2,
     "SIN MARCA\u0001No reglamentado": 0,
     "Aitor\u0001No reglamentado": 2.5,
     "Beretta\u0001Cargadores": 1.6,
-    "ASG\u0001Cargadores": 0.3,
     "Bestway\u0001No reglamentado": 0.1,
     "Cometa\u0001No reglamentado": 2.6,
-    "Tanfoglio\u0001Accesorio controlado": 0.1,
+    "Tanfoglio\u0001No reglamentado": 0.1,
     "B.E. Armor\u0001No reglamentado": 44.4,
-    "Beretta Mod\u0001Accesorio controlado": 5.6,
     "Tanfoglio\u0001Cargadores": 1.4,
     "ISSC\u0001Armas": 10.5,
     "FN\u0001Armas": 25.2,
@@ -94464,15 +93873,10 @@ var DATOS = {
     "Hatsan\u0001Armas": 9.7,
     "Rio\u0001Municiones": 22.8,
     "Mossberg\u0001Armas": 9.3,
-    "Fab Defense\u0001No reglamentado": 1.2,
     "AKSA\u0001Armas": 14.8,
     "Valtro\u0001Armas": 4.5,
-    "Doberman RIFLES\u0001No reglamentado": 0,
-    "Crosman\u0001Cargadores": 0.1,
-    "Sin Marca\u0001Municiones": 0.5,
-    "Doberman\u0001Cargadores": 1.6,
     "Doberman/Pistola\u0001No reglamentado": 4.5,
-    "Olight\u0001Accesorio controlado": 1.7,
+    "Olight\u0001No reglamentado": 1.7,
     "Valor\u0001Municiones": 25.3,
     "Escort\u0001Armas": 5.8,
     "Polymer\u0001No reglamentado": 0.1,
@@ -94485,17 +93889,13 @@ var DATOS = {
     "DK\u0001No reglamentado": 3,
     "Smith & Wesson\u0001Armas": 6.1,
     "Baikal\u0001Armas": 2.7,
-    "Fobus\u0001Cargadores": 0.6,
-    "Fobus\u0001No reglamentado": 2.3,
     "DELIZLE\u0001Armas": 4.6,
-    "Vector Optics\u0001No reglamentado": 0,
     "VAULTEK\u0001No reglamentado": 71.8,
     "Jericho\u0001Armas": 42.5,
     "Ottoni\u0001No reglamentado": 0,
-    "Mendoza\u0001Accesorio controlado": 0.7,
-    "Osight HK\u0001Accesorio controlado": 25.1,
+    "Mendoza\u0001No reglamentado": 0.7,
+    "Osight HK\u0001No reglamentado": 25.1,
     "Sarsilmaz\u0001Armas": 3.1,
-    "TSS\u0001Accesorio controlado": 0.1,
     "Ballester-Molina\u0001Armas": 2.1,
     "Winchester\u0001Municiones": 0.3,
     "Fire quest\u0001Municiones": 0.4,
@@ -94505,29 +93905,25 @@ var DATOS = {
     "Imalent\u0001No reglamentado": 0.2
   },
   "CMV6_FT": {
-    "AIRGUN\u0001No reglamentado": 2293.7,
-    "MUNICION\u0001Municiones": 3028,
-    "ACCESORIO DE ARMA\u0001Accesorio controlado": 420.3,
+    "AIRGUN\u0001No reglamentado": 2304.2,
+    "MUNICION\u0001Municiones": 3027.9,
+    "ACCESORIO DE ARMA\u0001No reglamentado": 420.3,
     "ARMA\u0001Armas": 2274,
-    "PESCA (PROMO)\u0001No reglamentado": 16.4,
+    "PESCA (PROMO)\u0001No reglamentado": 17,
     "PESCA\u0001No reglamentado": 6.8,
-    "AIRE LIBRE\u0001No reglamentado": 63,
-    "NO LETAL\u0001No reglamentado": 1054.5,
-    "AIRE LIBRE (PROMO)\u0001No reglamentado": 262.3,
-    "INDUMENTARIA\u0001No reglamentado": 532.9,
-    "AIRGUN (PROMO)\u0001No reglamentado": 297.6,
+    "AIRE LIBRE\u0001No reglamentado": 63.1,
+    "NO LETAL\u0001No reglamentado": 1063.7,
+    "AIRE LIBRE (PROMO)\u0001No reglamentado": 262.5,
+    "INDUMENTARIA\u0001No reglamentado": 533.4,
+    "AIRGUN (PROMO)\u0001No reglamentado": 298.8,
     "OTRO (PROMO)\u0001No reglamentado": 2.4,
     "Otro\u0001No reglamentado": 4.4,
     "ACCESORIO DE ARMA\u0001Cargadores": 33.8,
-    "ACCESORIO DE ARMA (PROMO)\u0001Accesorio controlado": 69.6,
-    "NO LETAL (PROMO)\u0001No reglamentado": 48.6,
+    "ACCESORIO DE ARMA (PROMO)\u0001No reglamentado": 70.2,
+    "NO LETAL (PROMO)\u0001No reglamentado": 71.4,
     "INDUMENTARIA (PROMO)\u0001No reglamentado": 24.5,
-    "NO LETAL (PROMO)\u0001Cargadores": 22.8,
-    "NO LETAL\u0001Cargadores": 1.5,
     "MERCHANDISING\u0001No reglamentado": 0,
-    "AIRGUN (PROMO)\u0001Cargadores": 0.4,
-    "AIRGUN\u0001Cargadores": 4,
-    "ACCESORIO DE ARMA (PROMO)\u0001Cargadores": 0.6,
+    "MUNICION\u0001No reglamentado": 0.5,
     "ALL\u0001Armas": 4.6,
     "CAJA FUERTE\u0001No reglamentado": 71.8
   },
@@ -94657,12 +94053,12 @@ var DATOS = {
       "Umarex",
       38.1,
       3.5,
-      23701,
-      2183,
+      23706,
+      2178,
       "A",
       {
         "Ventas": 15,
-        "Online": 1617,
+        "Online": 1622,
         "Salon": 1824,
         "Mayorista": 18881,
         "No Pagar C.": 217,
@@ -94678,7 +94074,7 @@ var DATOS = {
         6330,
         3820,
         2343,
-        2804
+        2809
       ]
     ],
     [
@@ -94707,6 +94103,31 @@ var DATOS = {
       ]
     ],
     [
+      "505154",
+      "Balas IMI 9mm 115GR DI-CUT P Hueca 1000/50",
+      "IMI",
+      59.5,
+      926.2,
+      20287,
+      315788,
+      "A",
+      {
+        "Online": 2168,
+        "Salon": 1119,
+        "Mayorista": 2000,
+        "No Pagar C.": 15000
+      },
+      [
+        185,
+        1200,
+        200,
+        100,
+        505,
+        16846,
+        1251
+      ]
+    ],
+    [
       "400265",
       "Balas Fogueo UMAREX 9mm P.A.K. 600x75",
       "Umarex",
@@ -94731,31 +94152,6 @@ var DATOS = {
         1642,
         2325,
         4477
-      ]
-    ],
-    [
-      "505154",
-      "Balas IMI 9mm 115GR DI-CUT P Hueca 1000/50",
-      "IMI",
-      59.2,
-      926.5,
-      20187,
-      315888,
-      "A",
-      {
-        "Online": 2168,
-        "Salon": 1019,
-        "Mayorista": 2000,
-        "No Pagar C.": 15000
-      },
-      [
-        185,
-        1200,
-        200,
-        100,
-        505,
-        16846,
-        1151
       ]
     ],
     [
@@ -95273,16 +94669,16 @@ var DATOS = {
       "Balines DOBERMAN 5,5mm Mod. JUMBO 1.4gr 250x30 #D19921",
       "Doberman BALINES",
       32.4,
-      31.4,
-      1618,
-      1568,
+      31.3,
+      1619,
+      1567,
       "A",
       {
         "Mayorista": 1564,
         "Online": 6,
         "Salon": 6,
         "No Pagar C.": 1,
-        "E-commerce": 41
+        "E-commerce": 42
       },
       [
         58,
@@ -95291,7 +94687,7 @@ var DATOS = {
         214,
         122,
         315,
-        435
+        436
       ]
     ],
     [
@@ -95500,13 +94896,13 @@ var DATOS = {
       "Umarex",
       13.8,
       36.7,
-      851,
-      2263,
+      852,
+      2262,
       "A",
       {
         "Mayorista": 728,
         "Online": 27,
-        "Salon": 44,
+        "Salon": 45,
         "RRHH": 2,
         "E-commerce": 14,
         "Ventas Externas": 29,
@@ -95519,7 +94915,7 @@ var DATOS = {
         43,
         238,
         106,
-        229
+        230
       ]
     ],
     [
@@ -95596,16 +94992,16 @@ var DATOS = {
       "320069",
       "Rifle AC TSS/Doberman 5.5mm B2-4P Polimero",
       "TSS",
-      112.6,
-      348.7,
-      584,
-      1809,
+      113.3,
+      347.9,
+      588,
+      1805,
       "A",
       {
-        "Mayorista": 504,
+        "Mayorista": 507,
         "Online": 12,
         "Salon": 24,
-        "E-commerce": 36,
+        "E-commerce": 37,
         "Ventas Externas": 7,
         "No Pagar C.": 1
       },
@@ -95616,23 +95012,23 @@ var DATOS = {
         82,
         255,
         102,
-        60
+        64
       ]
     ],
     [
       "400379",
       "Balines APOLO cal 5,5mm Mod. CONICO 0,84gr CARTON 250X100 #E11002",
       "Apolo",
-      6.4,
+      6.5,
       2,
-      552,
-      171,
+      553,
+      170,
       "A",
       {
         "Mayorista": 505,
         "Salon": 36,
         "Online": 4,
-        "E-commerce": 4,
+        "E-commerce": 5,
         "Ventas Externas": 3
       },
       [
@@ -95642,7 +95038,7 @@ var DATOS = {
         7,
         206,
         133,
-        103
+        104
       ]
     ],
     [
@@ -95934,6 +95330,33 @@ var DATOS = {
       ]
     ],
     [
+      "320077",
+      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
+      "TSS",
+      86.2,
+      56.2,
+      402,
+      262,
+      "A",
+      {
+        "Mayorista": 322,
+        "Online": 6,
+        "E-commerce": 52,
+        "Salon": 6,
+        "Ventas Externas": 13,
+        "No Pagar C.": 3
+      },
+      [
+        75,
+        56,
+        11,
+        71,
+        67,
+        39,
+        83
+      ]
+    ],
+    [
       "322000",
       "Pistola AC CO2 UMAREX 4,5mm Mod. XBG NonBlow #5.8173",
       "Umarex",
@@ -95986,6 +95409,57 @@ var DATOS = {
       ]
     ],
     [
+      "504997",
+      "Balas GOLDEN EAGLE cal 22LR Punta Cobreada Hueca 50x40 #1B2220324",
+      "Golden Eagle",
+      11.6,
+      275.5,
+      390,
+      9262,
+      "A",
+      {
+        "Salon": 126,
+        "Online": 144,
+        "Mayorista": 120
+      },
+      [
+        22,
+        42,
+        39,
+        36,
+        153,
+        57,
+        41
+      ]
+    ],
+    [
+      "680652",
+      "Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
+      "Doberman LINTERNAS",
+      20,
+      31.4,
+      387,
+      632,
+      "A",
+      {
+        "Online": 19,
+        "Mayorista": 292,
+        "Salon": 11,
+        "No Pagar C.": 2,
+        "E-commerce": 20,
+        "Ventas Externas": 43
+      },
+      [
+        0,
+        134,
+        21,
+        91,
+        35,
+        40,
+        66
+      ]
+    ],
+    [
       "320092",
       "Rifle PCP DOBERMAN cal 5.5mm Mod. PR900S-GEN2 2 carg 7 tiros Polimero 900fps 200 bar 100cc",
       "TSS",
@@ -96011,30 +95485,6 @@ var DATOS = {
       ]
     ],
     [
-      "504997",
-      "Balas GOLDEN EAGLE cal 22LR Punta Cobreada Hueca 50x40 #1B2220324",
-      "Golden Eagle",
-      11.5,
-      275.6,
-      386,
-      9266,
-      "A",
-      {
-        "Salon": 122,
-        "Online": 144,
-        "Mayorista": 120
-      },
-      [
-        22,
-        42,
-        39,
-        36,
-        153,
-        57,
-        37
-      ]
-    ],
-    [
       "505107",
       "Balas Armscor 380ACP 95GR PNormalCobreada 50x20",
       "Armscor",
@@ -96055,60 +95505,6 @@ var DATOS = {
         95,
         0,
         80
-      ]
-    ],
-    [
-      "320077",
-      "Rifle AC DOBERMAN cal 5.5mm Mod. B3-3 Polimero",
-      "TSS",
-      82.5,
-      59.8,
-      385,
-      279,
-      "A",
-      {
-        "Mayorista": 306,
-        "Online": 6,
-        "E-commerce": 51,
-        "Salon": 6,
-        "Ventas Externas": 13,
-        "No Pagar C.": 3
-      },
-      [
-        75,
-        56,
-        11,
-        71,
-        67,
-        39,
-        66
-      ]
-    ],
-    [
-      "680652",
-      "Reflector DOBERMAN 630 L Bat. Recargable c/ Cargador de Cel, Panel Solar #236240",
-      "Doberman LINTERNAS",
-      19.9,
-      31.5,
-      385,
-      634,
-      "A",
-      {
-        "Online": 19,
-        "Mayorista": 290,
-        "Salon": 11,
-        "No Pagar C.": 2,
-        "E-commerce": 20,
-        "Ventas Externas": 43
-      },
-      [
-        0,
-        134,
-        21,
-        91,
-        35,
-        40,
-        64
       ]
     ],
     [
@@ -96238,14 +95634,14 @@ var DATOS = {
       "320070",
       "Rifle AC TSS/Doberman 5.5mm B3-3 Madera Palanca",
       "TSS",
-      72.5,
-      60.8,
-      322,
-      270,
+      75.4,
+      57.8,
+      335,
+      257,
       "A",
       {
         "Online": 3,
-        "Mayorista": 287,
+        "Mayorista": 300,
         "Salon": 1,
         "E-commerce": 8,
         "Ventas Externas": 21,
@@ -96258,7 +95654,7 @@ var DATOS = {
         101,
         91,
         24,
-        78
+        91
       ]
     ],
     [
@@ -97211,6 +96607,53 @@ var DATOS = {
       ]
     ],
     [
+      "830285",
+      "Hilo Snake Mult. 4X Fullpowe 0.60MM 100M",
+      "Snake",
+      0.9,
+      4.5,
+      112,
+      571,
+      "C",
+      {
+        "Salon": 2,
+        "Mayorista": 90,
+        "Ventas Externas": 20
+      },
+      [
+        2,
+        0,
+        0,
+        30,
+        10,
+        60,
+        10
+      ]
+    ],
+    [
+      "830283",
+      "Hilo Snake Mult. 4X Fullpowe 0.50MM 100M",
+      "Snake",
+      0.9,
+      2.3,
+      110,
+      285,
+      "C",
+      {
+        "Mayorista": 100,
+        "Ventas Externas": 10
+      },
+      [
+        0,
+        0,
+        0,
+        30,
+        20,
+        40,
+        20
+      ]
+    ],
+    [
       "830281",
       "Hilo Snake Mult. 4X Fullpowe 0.40MM 100M",
       "Snake",
@@ -97338,27 +96781,27 @@ var DATOS = {
       ]
     ],
     [
-      "830285",
-      "Hilo Snake Mult. 4X Fullpowe 0.60MM 100M",
+      "830295",
+      "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
       "Snake",
       0.8,
-      4.6,
-      102,
-      581,
+      8.9,
+      101,
+      1118,
       "C",
       {
-        "Salon": 2,
-        "Mayorista": 80,
-        "Ventas Externas": 20
+        "Mayorista": 60,
+        "Online": 1,
+        "Ventas Externas": 40
       },
       [
-        2,
         0,
         0,
+        10,
         30,
         10,
-        60,
-        0
+        41,
+        10
       ]
     ],
     [
@@ -97382,29 +96825,6 @@ var DATOS = {
         50,
         0,
         50
-      ]
-    ],
-    [
-      "830283",
-      "Hilo Snake Mult. 4X Fullpowe 0.50MM 100M",
-      "Snake",
-      0.8,
-      2.3,
-      100,
-      295,
-      "C",
-      {
-        "Mayorista": 90,
-        "Ventas Externas": 10
-      },
-      [
-        0,
-        0,
-        0,
-        30,
-        20,
-        40,
-        10
       ]
     ],
     [
@@ -97513,7 +96933,7 @@ var DATOS = {
       0,
       96,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 77,
         "Online": 7,
@@ -97605,30 +97025,6 @@ var DATOS = {
       ]
     ],
     [
-      "830295",
-      "Hilo Snake Mult. 4X Fullpowe.0.30MM 100M",
-      "Snake",
-      0.7,
-      8.9,
-      91,
-      1128,
-      "C",
-      {
-        "Mayorista": 50,
-        "Online": 1,
-        "Ventas Externas": 40
-      },
-      [
-        0,
-        0,
-        10,
-        30,
-        10,
-        41,
-        0
-      ]
-    ],
-    [
       "111580",
       "Funda Externa CYTAC-FOBUS Mod. APXA1/92A1/STK/Universal c/retensor #1-UT100",
       "Fobus",
@@ -97705,6 +97101,30 @@ var DATOS = {
       ]
     ],
     [
+      "830296",
+      "Hilo Snake Mult. 4X Fullpowe.0.35MM 100M",
+      "Snake",
+      0.7,
+      5.1,
+      82,
+      636,
+      "C",
+      {
+        "Online": 2,
+        "Mayorista": 50,
+        "Ventas Externas": 30
+      },
+      [
+        2,
+        0,
+        10,
+        0,
+        10,
+        30,
+        30
+      ]
+    ],
+    [
       "830293",
       "Hilo Snake Mult. 4X Fullpowe.0.26MM 100M",
       "Snake",
@@ -97726,6 +97146,31 @@ var DATOS = {
         10,
         30,
         1
+      ]
+    ],
+    [
+      "830261",
+      "Hilo Snake Nevada 0.50mm 100M",
+      "Snake",
+      0.4,
+      7.7,
+      80,
+      1701,
+      "C",
+      {
+        "Mayorista": 21,
+        "Salon": 4,
+        "Online": 5,
+        "Ventas Externas": 50
+      },
+      [
+        12,
+        3,
+        1,
+        0,
+        31,
+        22,
+        11
       ]
     ],
     [
@@ -97858,30 +97303,6 @@ var DATOS = {
       ]
     ],
     [
-      "830296",
-      "Hilo Snake Mult. 4X Fullpowe.0.35MM 100M",
-      "Snake",
-      0.6,
-      5.1,
-      72,
-      646,
-      "C",
-      {
-        "Online": 2,
-        "Mayorista": 40,
-        "Ventas Externas": 30
-      },
-      [
-        2,
-        0,
-        10,
-        0,
-        10,
-        30,
-        20
-      ]
-    ],
-    [
       "400217",
       "Balines APOLO 4,5mm Hollow Point Cobreado 0.6gr 400 x 40 #E19990",
       "Apolo",
@@ -97907,28 +97328,28 @@ var DATOS = {
       ]
     ],
     [
-      "830261",
-      "Hilo Snake Nevada 0.50mm 100M",
-      "Snake",
-      0.3,
-      7.8,
+      "320775",
+      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04",
+      "Umarex",
+      89.9,
+      6.4,
       70,
-      1711,
-      "C",
+      5,
+      "A",
       {
-        "Mayorista": 11,
-        "Salon": 4,
-        "Online": 5,
-        "Ventas Externas": 50
+        "Salon": 5,
+        "Mayorista": 56,
+        "E-commerce": 5,
+        "Online": 4
       },
       [
+        5,
+        11,
+        6,
+        2,
+        9,
         12,
-        3,
-        1,
-        0,
-        31,
-        22,
-        1
+        25
       ]
     ],
     [
@@ -97954,6 +97375,31 @@ var DATOS = {
         41,
         6,
         0
+      ]
+    ],
+    [
+      "830259",
+      "Hilo Snake Nevada 0.40mm 100M",
+      "Snake",
+      0.3,
+      16.9,
+      69,
+      4620,
+      "C",
+      {
+        "Online": 12,
+        "Mayorista": 20,
+        "Salon": 6,
+        "Ventas Externas": 31
+      },
+      [
+        15,
+        0,
+        4,
+        0,
+        22,
+        18,
+        10
       ]
     ],
     [
@@ -98006,31 +97452,6 @@ var DATOS = {
         15,
         1,
         28
-      ]
-    ],
-    [
-      "320775",
-      "Pistola  Fogueo UMAREX cal 9mm P.A.K. Mod. GLOCK 17 GEN5 Coyote #311.02.04",
-      "Umarex",
-      82.2,
-      14.1,
-      64,
-      11,
-      "A",
-      {
-        "Salon": 5,
-        "Mayorista": 50,
-        "E-commerce": 5,
-        "Online": 4
-      },
-      [
-        5,
-        11,
-        6,
-        2,
-        9,
-        12,
-        19
       ]
     ],
     [
@@ -98284,6 +97705,31 @@ var DATOS = {
       ]
     ],
     [
+      "830262",
+      "Hilo Snake Nevada 0.60mm 100M",
+      "Snake",
+      0.4,
+      12.6,
+      60,
+      2133,
+      "C",
+      {
+        "Online": 4,
+        "Salon": 6,
+        "Ventas Externas": 40,
+        "Mayorista": 10
+      },
+      [
+        2,
+        3,
+        1,
+        1,
+        21,
+        22,
+        10
+      ]
+    ],
+    [
       "400295",
       "Balines Airsoft ASG cal 6mm Mod. Blaster Devil, 0,28g, 3300 unid #19412",
       "ASG",
@@ -98335,31 +97781,6 @@ var DATOS = {
       ]
     ],
     [
-      "830259",
-      "Hilo Snake Nevada 0.40mm 100M",
-      "Snake",
-      0.2,
-      16.9,
-      59,
-      4630,
-      "C",
-      {
-        "Online": 12,
-        "Mayorista": 10,
-        "Salon": 6,
-        "Ventas Externas": 31
-      },
-      [
-        15,
-        0,
-        4,
-        0,
-        22,
-        18,
-        0
-      ]
-    ],
-    [
       "942176",
       "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Desert Talle EUR 43",
       "Doberman BOTAS",
@@ -98382,6 +97803,31 @@ var DATOS = {
         42,
         4,
         5
+      ]
+    ],
+    [
+      "830263",
+      "Hilo Snake Nevada 0.70mm 100M",
+      "Snake",
+      0.4,
+      13.8,
+      57,
+      1769,
+      "C",
+      {
+        "Online": 5,
+        "Ventas Externas": 40,
+        "Salon": 2,
+        "Mayorista": 10
+      },
+      [
+        1,
+        1,
+        0,
+        0,
+        20,
+        25,
+        10
       ]
     ],
     [
@@ -98675,27 +98121,26 @@ var DATOS = {
       ]
     ],
     [
-      "830262",
-      "Hilo Snake Nevada 0.60mm 100M",
+      "830256",
+      "Hilo Snake Nevada 0.30mm 100M",
       "Snake",
-      0.3,
-      12.7,
+      0.2,
+      15.3,
       50,
-      2143,
+      4583,
       "C",
       {
-        "Online": 4,
-        "Salon": 6,
-        "Ventas Externas": 40
+        "Ventas Externas": 40,
+        "Mayorista": 10
       },
       [
-        2,
-        3,
-        1,
-        1,
-        21,
-        22,
-        0
+        0,
+        0,
+        0,
+        0,
+        30,
+        10,
+        10
       ]
     ],
     [
@@ -98942,30 +98387,6 @@ var DATOS = {
       ]
     ],
     [
-      "830263",
-      "Hilo Snake Nevada 0.70mm 100M",
-      "Snake",
-      0.4,
-      13.9,
-      47,
-      1779,
-      "C",
-      {
-        "Online": 5,
-        "Ventas Externas": 40,
-        "Salon": 2
-      },
-      [
-        1,
-        1,
-        0,
-        0,
-        20,
-        25,
-        0
-      ]
-    ],
-    [
       "510753",
       "Mochila DOBERMAN 60L DELTA DARK BLUE #BL130DB",
       "Doberman MOCHILAS",
@@ -99013,6 +98434,31 @@ var DATOS = {
         18,
         8,
         1
+      ]
+    ],
+    [
+      "830257",
+      "Hilo Snake Nevada 0.35mm 100M",
+      "Snake",
+      0.2,
+      18.3,
+      46,
+      5074,
+      "C",
+      {
+        "Mayorista": 20,
+        "Online": 3,
+        "Salon": 3,
+        "Ventas Externas": 20
+      },
+      [
+        12,
+        0,
+        0,
+        0,
+        12,
+        11,
+        11
       ]
     ],
     [
@@ -99386,28 +98832,6 @@ var DATOS = {
       ]
     ],
     [
-      "830256",
-      "Hilo Snake Nevada 0.30mm 100M",
-      "Snake",
-      0.1,
-      15.3,
-      40,
-      4593,
-      "C",
-      {
-        "Ventas Externas": 40
-      },
-      [
-        0,
-        0,
-        0,
-        0,
-        30,
-        10,
-        0
-      ]
-    ],
-    [
       "260235",
       "Mira Telescopica VECTOR OPTICS Mod. FORESTER JR. 3-9x40 #SCOM-35",
       "Vector Optics",
@@ -99692,31 +99116,6 @@ var DATOS = {
       ]
     ],
     [
-      "830257",
-      "Hilo Snake Nevada 0.35mm 100M",
-      "Snake",
-      0.1,
-      18.3,
-      36,
-      5084,
-      "C",
-      {
-        "Mayorista": 10,
-        "Online": 3,
-        "Salon": 3,
-        "Ventas Externas": 20
-      },
-      [
-        12,
-        0,
-        0,
-        0,
-        12,
-        11,
-        1
-      ]
-    ],
-    [
       "DES320259",
       "Rifle AC NP CROSMAN cal 5,5mm Mod. Vital Shot #CTN2S",
       "Crosman",
@@ -99763,6 +99162,29 @@ var DATOS = {
         17,
         4,
         2
+      ]
+    ],
+    [
+      "680661",
+      "Linterna DOBERMAN 38L 3W LED 1XAA #LP7043B",
+      "Doberman LINTERNAS",
+      0.7,
+      9,
+      35,
+      446,
+      "B",
+      {
+        "Mayorista": 34,
+        "E-commerce": 1
+      },
+      [
+        0,
+        0,
+        0,
+        0,
+        10,
+        0,
+        25
       ]
     ],
     [
@@ -99837,28 +99259,6 @@ var DATOS = {
         25,
         0,
         0
-      ]
-    ],
-    [
-      "680661",
-      "Linterna DOBERMAN 38L 3W LED 1XAA #LP7043B",
-      "Doberman LINTERNAS",
-      0.7,
-      9.1,
-      34,
-      447,
-      "B",
-      {
-        "Mayorista": 34
-      },
-      [
-        0,
-        0,
-        0,
-        0,
-        10,
-        0,
-        24
       ]
     ],
     [
@@ -100590,6 +99990,58 @@ var DATOS = {
       ]
     ],
     [
+      "510430",
+      "Morral DOBERMAN 5L FOXTROX BLACK #BL011BL",
+      "Doberman MOCHILAS",
+      1.6,
+      10.1,
+      27,
+      174,
+      "A",
+      {
+        "Online": 3,
+        "Mayorista": 16,
+        "No Pagar C.": 3,
+        "Ventas Externas": 3,
+        "RRHH": 1,
+        "E-commerce": 1
+      },
+      [
+        4,
+        4,
+        5,
+        5,
+        7,
+        1,
+        1
+      ]
+    ],
+    [
+      "DES750305",
+      "Carpa NTK Mod. PANDA 6 personas #155154",
+      "NTK",
+      5.5,
+      4.1,
+      27,
+      20,
+      "C",
+      {
+        "Mayorista": 5,
+        "Salon": 6,
+        "E-commerce": 15,
+        "Online": 1
+      },
+      [
+        5,
+        0,
+        3,
+        8,
+        5,
+        5,
+        1
+      ]
+    ],
+    [
       "901350",
       "Riel Picattiny VECTOR OPTICS para MLOK 5p Mod. SCRAAM-54",
       "Vector Optics",
@@ -100664,57 +100116,6 @@ var DATOS = {
       ]
     ],
     [
-      "510430",
-      "Morral DOBERMAN 5L FOXTROX BLACK #BL011BL",
-      "Doberman MOCHILAS",
-      1.5,
-      10.2,
-      26,
-      175,
-      "A",
-      {
-        "Online": 3,
-        "Mayorista": 16,
-        "No Pagar C.": 3,
-        "Ventas Externas": 3,
-        "RRHH": 1
-      },
-      [
-        4,
-        4,
-        5,
-        5,
-        7,
-        1,
-        0
-      ]
-    ],
-    [
-      "DES750305",
-      "Carpa NTK Mod. PANDA 6 personas #155154",
-      "NTK",
-      5.3,
-      4.3,
-      26,
-      21,
-      "C",
-      {
-        "Mayorista": 5,
-        "Salon": 6,
-        "E-commerce": 14,
-        "Online": 1
-      },
-      [
-        5,
-        0,
-        3,
-        8,
-        5,
-        5,
-        0
-      ]
-    ],
-    [
       "681120",
       "Reflector NITECORE Mod. NWL20 600Lm Bat21700",
       "Nitecore",
@@ -100775,7 +100176,7 @@ var DATOS = {
       0,
       26,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 21,
         "Salon": 1,
@@ -101233,6 +100634,30 @@ var DATOS = {
       ]
     ],
     [
+      "942150",
+      "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38",
+      "Doberman BOTAS",
+      6,
+      10.1,
+      23,
+      40,
+      "A",
+      {
+        "Mayorista": 17,
+        "E-commerce": 5,
+        "Ventas Externas": 1
+      },
+      [
+        4,
+        1,
+        0,
+        2,
+        14,
+        1,
+        1
+      ]
+    ],
+    [
       "322212",
       "Rifle AC CO2 UMAREX 4,5mm Mod. HK MP5 #5.8159",
       "Umarex",
@@ -101279,30 +100704,6 @@ var DATOS = {
         0,
         22,
         0,
-        0
-      ]
-    ],
-    [
-      "942150",
-      "Bota Tactica DOBERMAN Mod. COMBAT READY 8 Pulgadas Negro Talle EUR 38",
-      "Doberman BOTAS",
-      5.8,
-      10.3,
-      22,
-      41,
-      "A",
-      {
-        "Mayorista": 17,
-        "E-commerce": 4,
-        "Ventas Externas": 1
-      },
-      [
-        4,
-        1,
-        0,
-        2,
-        14,
-        1,
         0
       ]
     ],
@@ -103422,6 +102823,29 @@ var DATOS = {
       ]
     ],
     [
+      "942189",
+      "Bota Tactica DOBERMAN Mod. COMBAT READY 6 Pulgadas Desert Talle EUR 47",
+      "Doberman BOTAS",
+      3.1,
+      0.2,
+      14,
+      1,
+      "A",
+      {
+        "Mayorista": 13,
+        "Salon": 1
+      },
+      [
+        3,
+        0,
+        0,
+        0,
+        10,
+        0,
+        1
+      ]
+    ],
+    [
       "322205",
       "Rifle Palanquero UMAREX 4,5mm Mod. MARLIN #5.8396",
       "Umarex",
@@ -103781,28 +103205,6 @@ var DATOS = {
       ]
     ],
     [
-      "942189",
-      "Bota Tactica DOBERMAN Mod. COMBAT READY 6 Pulgadas Desert Talle EUR 47",
-      "Doberman BOTAS",
-      2.9,
-      0.4,
-      13,
-      2,
-      "A",
-      {
-        "Mayorista": 13
-      },
-      [
-        3,
-        0,
-        0,
-        0,
-        10,
-        0,
-        0
-      ]
-    ],
-    [
       "620672",
       "Anzuelo Snake Maruseigo Negro #08 c/20.",
       "Snake",
@@ -103879,7 +103281,7 @@ var DATOS = {
       0,
       13,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 9,
         "Sales": 2,
@@ -104426,7 +103828,7 @@ var DATOS = {
       0,
       12,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 8,
         "Online": 4
@@ -104918,7 +104320,7 @@ var DATOS = {
       0,
       11,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 3,
         "Mayorista": 5,
@@ -105558,7 +104960,7 @@ var DATOS = {
       0,
       10,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 2,
         "Mayorista": 8
@@ -106284,7 +105686,7 @@ var DATOS = {
       0,
       9,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 1,
         "Salon": 3,
@@ -106308,7 +105710,7 @@ var DATOS = {
       0,
       9,
       0,
-      "CARG",
+      "NC",
       {
         "Mayorista": 9
       },
@@ -108541,7 +107943,7 @@ var DATOS = {
       0.6,
       6,
       1,
-      "ACC",
+      "NC",
       {
         "Mayorista": 5,
         "Online": 1
@@ -108909,7 +108311,7 @@ var DATOS = {
       0,
       6,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 6
       },
@@ -108953,7 +108355,7 @@ var DATOS = {
       0,
       6,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 1,
         "Salon": 5
@@ -111781,7 +111183,7 @@ var DATOS = {
       0,
       4,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 4
       },
@@ -112999,7 +112401,7 @@ var DATOS = {
       1.4,
       3,
       74,
-      "ACC",
+      "NC",
       {
         "Salon": 3
       },
@@ -114185,7 +113587,7 @@ var DATOS = {
       0,
       3,
       0,
-      "MUN",
+      "NC",
       {
         "Salon": 3
       },
@@ -114207,7 +113609,7 @@ var DATOS = {
       0,
       3,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 3
       },
@@ -114274,7 +113676,7 @@ var DATOS = {
       0,
       3,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 3
       },
@@ -114319,7 +113721,7 @@ var DATOS = {
       0,
       3,
       0,
-      "ACC",
+      "NC",
       {
         "Sales": 1,
         "Mayorista": 2
@@ -114637,7 +114039,7 @@ var DATOS = {
       0,
       3,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 3
       },
@@ -116269,7 +115671,7 @@ var DATOS = {
       0.6,
       2,
       1,
-      "ACC",
+      "NC",
       {
         "Mayorista": 1,
         "Salon": 1
@@ -117412,7 +116814,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Sales": 1,
         "Salon": 1
@@ -117525,7 +116927,7 @@ var DATOS = {
       0,
       2,
       0,
-      "CARG",
+      "NC",
       {
         "Sales": 1,
         "Online": 1
@@ -117548,7 +116950,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 1,
         "Online": 1
@@ -117639,7 +117041,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 2
       },
@@ -117661,7 +117063,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 2
       },
@@ -117706,7 +117108,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 2
       },
@@ -117997,7 +117399,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 2
       },
@@ -118019,7 +117421,7 @@ var DATOS = {
       0,
       2,
       0,
-      "ACC",
+      "NC",
       {
         "Sales": 2
       },
@@ -122663,7 +122065,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 1
       },
@@ -122927,7 +122329,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 1
       },
@@ -122949,7 +122351,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 1
       },
@@ -122971,7 +122373,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 1
       },
@@ -123015,7 +122417,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 1
       },
@@ -123037,7 +122439,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 1
       },
@@ -123081,7 +122483,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 1
       },
@@ -123213,7 +122615,7 @@ var DATOS = {
       0,
       1,
       0,
-      "CARG",
+      "NC",
       {
         "Mayorista": 1
       },
@@ -123367,7 +122769,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Salon": 1
       },
@@ -123389,7 +122791,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 1
       },
@@ -123697,7 +123099,7 @@ var DATOS = {
       0,
       1,
       0,
-      "CARG",
+      "NC",
       {
         "Salon": 1
       },
@@ -123741,7 +123143,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Online": 1
       },
@@ -124973,7 +124375,7 @@ var DATOS = {
       0,
       1,
       0,
-      "ACC",
+      "NC",
       {
         "Mayorista": 1
       },
