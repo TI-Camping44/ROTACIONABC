@@ -166,6 +166,9 @@ section{scroll-margin-top:120px}
 .kpi span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 .kpi strong{display:block; font-family:var(--mono); font-weight:500; font-size:23px; margin-top:6px; letter-spacing:-.02em}
 .kpi em{display:block; font-style:normal; font-size:11.5px; color:var(--ink2); margin-top:3px}
+/* Las unidades van debajo del monto: el guaraní y la cantidad se confunden
+   cuando están en la misma línea. */
+.kpi strong .u{display:block; font-size:13px; color:var(--ink2); letter-spacing:0; margin-top:2px}
 .kpi.warn{border-left:3px solid var(--NC)}
 .kpi.warn strong{color:#7A6742}
 .kpi.click{cursor:pointer; transition:border-color .15s, box-shadow .15s}
@@ -768,6 +771,20 @@ var pasa = function(r){
       && (f.fam === "*" || r.fam === f.fam)
       && (f.ctl === "*" || r.ctl === f.ctl);
 };
+/* Unidades del stock que pasa el filtro. Devuelve null cuando el datos.js es
+   anterior al cambio que publica la cantidad, para no mostrar "0 unidades"
+   como si no hubiera mercadería. */
+function unidadesFiltradas(){
+  var hay = false, n = 0;
+  STOCK.forEach(function(r){
+    if (r.q === undefined || r.q === null) return;
+    hay = true;
+    if (pasa(r)) n += r.q;
+  });
+  return hay ? n : null;
+}
+var unidades = function(n){ return fmt(Math.round(n)) + (Math.round(n) === 1 ? " unidad" : " unidades"); };
+
 var hayFiltro = function(){ return f.dep!=="*" || f.tipo!=="*" || f.cat!=="*" || f.marca!=="*" || f.cal!=="*" || f.fam!=="*" || f.ctl!=="*"; };
 
 /** Agrupa las filas que pasan el filtro por la clave que se pida. */
@@ -1219,6 +1236,7 @@ function pintar(){
   var cobertura = T ? clasificado/T*100 : 0;
   var bloqueado = 0;
   STOCK.forEach(function(r){ if (pasa(r) && esNoComercial(r.dep)) bloqueado += r.v; });
+  var u = unidadesFiltradas();
 
   pintarCambios();
   pintarActivos();
@@ -1226,13 +1244,15 @@ function pintar(){
   if (window.stkAcomodar) window.stkAcomodar();
 
   document.getElementById("kpis").innerHTML = [
-    kpi("Stock a costo", gsM(T),
+    kpi("Stock a costo", gsM(T) + (u === null ? "" : '<small class="u">' + unidades(u) + '</small>'),
         bloqueado > 0
           ? etiquetaFiltro() + " · " + gsM(bloqueado) + " no comercializable"
           : etiquetaFiltro(),
         "", "todo",
         "Suma del valor de las existencias en depósitos internos, valuadas al costo " +
-        "que registra Odoo. No es precio de venta." +
+        "que registra Odoo. No es precio de venta. El número chico de abajo son las " +
+        "unidades físicas que hay de lo que esté filtrado arriba: con <i>Tipo: Armas</i> " +
+        "puesto, son las armas en stock." +
         (bloqueado > 0
           ? " Incluye " + gsM(bloqueado) + " en " + NO_COMERCIAL.join(", ") +
             ", que existe en stock pero hoy no se puede vender."
@@ -1495,6 +1515,7 @@ function tablaArticulos(){
   var filas = articulosFiltrados();
   var tb = document.querySelector("#tbl-art tbody");
   var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
+  var cant  = filas.reduce(function(t,a){ return t + (a[A_CANT] || 0); }, 0);
 
   document.getElementById("nota-art").textContent = hayFiltro()
     ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
@@ -1502,7 +1523,9 @@ function tablaArticulos(){
   pintarAvisoCategoria(filas);
 
   document.getElementById("q-art-n").textContent =
-    filas.length ? fmt(filas.length) + " artículos · Gs. " + gs(total) : "";
+    filas.length
+      ? fmt(filas.length) + " artículos · " + unidades(cant) + " · Gs. " + gs(total)
+      : "";
 
   if (!filas.length) {
     /* Distinguir "el filtro no encontró nada" de "el datos.js no trae artículos":
@@ -1553,8 +1576,9 @@ function porControl(){
     if (f.cal   !== "*" && r.cal  !== f.cal)   return;
     if (f.fam   !== "*" && r.fam  !== f.fam)   return;
     var k = r.ctl || "No controlado";
-    if (!g[k]) g[k] = Object.assign({ k:k, marcas:{} }, vacio);
+    if (!g[k]) g[k] = Object.assign({ k:k, marcas:{}, q:0 }, vacio);
     g[k].marcas[r.m] = true;
+    g[k].q += (r.q || 0);
     if (g[k][r.cat] !== undefined) g[k][r.cat] += r.v;
   });
   return g;
@@ -1562,7 +1586,8 @@ function porControl(){
 
 function ejeControl(){
   var g = porControl();
-  var vacia = function(k){ return Object.assign({ k:k, marcas:{} }, vacio); };
+  var vacia = function(k){ return Object.assign({ k:k, marcas:{}, q:0 }, vacio); };
+  var hayQ = unidadesFiltradas() !== null;
   var lados = [
     { k:"Controlado",    x:g["Controlado"]    || vacia("Controlado"),
       pie:"armas, municiones, cargadores y accesorios de arma" },
@@ -1590,7 +1615,8 @@ function ejeControl(){
       'title="Filtrar todo el reporte por '+esc(l.k.toLowerCase())+'">'+
       '<h3>'+esc(l.k)+'</h3>'+
       '<strong class="cifra">'+gsM(v)+'</strong>'+
-      '<span class="bajo">'+pct(v, T)+' del stock · '+fmt(nm)+
+      '<span class="bajo">'+pct(v, T)+' del stock · '+
+        (hayQ ? unidades(l.x.q)+' · ' : '')+fmt(nm)+
         (nm === 1 ? " marca" : " marcas")+' · '+l.pie+'</span>'+
       '<div class="bar" style="margin-top:12px">'+barra(l.x)+'</div>'+
       '<ul class="desglose">'+ partes.map(function(c){
