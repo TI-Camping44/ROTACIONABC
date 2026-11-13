@@ -1,0 +1,61 @@
+# Compacta datos.js después de cada publicación.
+#
+# El script de Apps Script de la planilla publica datos.js con sangría
+# (2,3 MB). Esta tarea lo reescribe sin sangría (~1,3 MB) y lo guarda en
+# main. Solo cambia la forma del archivo: si los datos no quedan idénticos,
+# falla sin tocar nada (ver .github/scripts/compactar-datos.js).
+#
+# No se dispara a sí misma: GitHub no lanza tareas por los cambios que hace
+# otra tarea con el token automático, y si el archivo ya está compacto no se
+# guarda nada. También se puede correr a mano desde la pestaña Actions.
+
+name: Compactar datos.js
+
+on:
+  push:
+    branches: [main]
+    paths: [datos.js]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: compactar-datos
+  cancel-in-progress: false
+
+jobs:
+  compactar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Compactar
+        run: node .github/scripts/compactar-datos.js datos.js
+
+      - name: Guardar si cambió
+        run: |
+          if git diff --quiet -- datos.js; then
+            echo "datos.js ya estaba compacto."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add datos.js
+          git commit -m "Compactar datos.js (sin sangría)"
+          # Si mientras tanto entró otra publicación, se reintenta sobre la última.
+          for intento in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git reset --hard origin/main
+            node .github/scripts/compactar-datos.js datos.js
+            if git diff --quiet -- datos.js; then exit 0; fi
+            git add datos.js
+            git commit -m "Compactar datos.js (sin sangría)"
+          done
+          echo "No se pudo guardar después de 3 intentos."
+          exit 1
