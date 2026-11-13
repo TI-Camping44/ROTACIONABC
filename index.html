@@ -3,19 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFFFFF">
 <title>Reporte de Stock y Rotación · Camping 44</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#12161A; --ink2:#39424A; --muted:#77828B;
+  /* Todos los textos pasan 4,5:1 de contraste (WCAG AA) sobre cualquiera de
+     los fondos del reporte. --acc es el ocre para enlaces, hover y foco: el
+     amarillo de B (--B) queda para barras y tortas, que no son texto. */
+  --ink:#12161A; --ink2:#39424A; --muted:#5A6670; --acc:#7C5E0A;
+  color-scheme:light;
   --paper:#FFFFFF; --bg:#E7EAEA; --line:#D2D7D7; --line2:#E6E9E9;
   /* Semáforo: A rota bien, C hay que liquidarla. N es nuevo y por eso queda
      fuera de la escala, en azul. Los tonos están bajados respecto del verde,
      amarillo y rojo puros para que el texto se lea sobre blanco. */
   --A:#2F7D4F; --B:#B8921B; --C:#C0392B; --NC:#8C7A57;
-  --ARM:#4A5560; --MUN:#6E7B84; --CARG:#93A0A6; --ACC:#B3BEC3; --SC:#626C76;
+  /* Variantes oscuras de B y NC para usarlas como letra. */
+  --B-txt:#7C5E0A; --NC-txt:#6F5F3F;
+  --ARM:#4A5560; --MUN:#6E7B84; --CARG:#93A0A6; --ACC:#B3BEC3; --SC:#56626B;
   --N:#3D6E8C;
   --ncbg:#DCD6C8;
   --ok:#2F6B4F;
@@ -98,10 +105,10 @@ header.top{background:var(--paper)}
   cursor:pointer; transition:opacity .15s;
 }
 .mark:hover{opacity:.72}
-.mark:focus-visible{outline:2px solid var(--B); outline-offset:4px; border-radius:2px}
-.atajo{font-family:var(--mono); font-size:10px; color:var(--muted); margin-left:8px}
+.mark:focus-visible{outline:2px solid var(--acc); outline-offset:4px; border-radius:2px}
+.atajo{font-family:var(--mono); font-size:11px; color:var(--muted); margin-left:8px}
 kbd{
-  font-family:var(--mono); font-size:10px; border:1px solid var(--line);
+  font-family:var(--mono); font-size:11px; border:1px solid var(--line);
   border-bottom-width:2px; border-radius:3px; padding:1px 4px; background:#FAFBFB;
 }
 .mark img{height:46px; width:auto; display:block}
@@ -118,7 +125,7 @@ kbd{
 .ttl p{margin:2px 0 0; color:var(--muted); font-size:11.5px}
 .meta{display:flex; gap:20px; flex-wrap:wrap; padding-top:2px}
 .meta div{min-width:88px}
-.meta span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.meta span{display:block; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 .meta strong{font-family:var(--mono); font-weight:500; font-size:12.5px}
 
 /* ---------- tabs ---------- */
@@ -129,7 +136,7 @@ kbd{
   padding:7px 15px 6px; cursor:pointer; color:var(--muted); border-radius:3px 3px 0 0;
 }
 .tab[aria-selected="true"]{background:var(--paper); color:var(--ink); box-shadow:inset 0 3px 0 var(--ink)}
-.tab:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.tab:focus-visible{outline:2px solid var(--acc); outline-offset:2px}
 
 /* ---------- filtros ---------- */
 .filters{
@@ -139,11 +146,11 @@ kbd{
 }
 .filters .fgroup{gap:6px}
 .filters select{padding:4px 7px; font-size:12px; max-width:170px}
-.filters .flab{font-size:9.5px; letter-spacing:.08em}
+.filters .flab{font-size:11px; letter-spacing:.08em}
 .filters .chip.sm{font-size:11px; padding:3px 8px}
 
 .fgroup{display:flex; align-items:center; gap:8px}
-.flab{font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.flab{font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 #f-serie{min-width:190px}
 .filters #f-marca{max-width:165px}
 select,input[type=date]{
@@ -155,6 +162,8 @@ select,input[type=date]{
   font-size:12px; padding:4px 10px; border:1px solid var(--line); background:#FAFBFB;
   border-radius:20px; cursor:pointer; font-family:var(--body);
 }
+.chip{color:var(--ink)}
+.chip:disabled{color:var(--muted); border-style:dashed; background:transparent}
 .chip[aria-pressed="true"]{background:var(--ink); color:#fff; border-color:var(--ink)}
 
 /* ---------- secciones ---------- */
@@ -165,7 +174,7 @@ section{margin-top:22px}
   transition:transform .15s; display:inline-block; flex:0 0 14px;
 }
 .shead.closed .caret{transform:rotate(-90deg)}
-.shead:hover h2{color:var(--B)}
+.shead:hover h2{color:var(--acc)}
 section.plegada > *:not(.shead){display:none}
 .scroll{max-height:520px; overflow-y:auto; overflow-x:auto}
 .scroll thead th{position:sticky; top:0; background:var(--paper); z-index:2; box-shadow:0 1px 0 var(--line)}
@@ -184,17 +193,17 @@ section{scroll-margin-top:120px}
 /* ---------- KPIs ---------- */
 .kpis{display:grid; grid-template-columns:repeat(3,1fr); gap:10px}
 .kpi{background:var(--paper); border:1px solid var(--line); padding:14px 16px; position:relative; overflow:hidden}
-.kpi span{display:block; font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
+.kpi span{display:block; font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted)}
 .kpi strong{display:block; font-family:var(--mono); font-weight:500; font-size:23px; margin-top:6px; letter-spacing:-.02em}
 .kpi em{display:block; font-style:normal; font-size:11.5px; color:var(--ink2); margin-top:3px}
 /* Las unidades van debajo del monto: el guaraní y la cantidad se confunden
    cuando están en la misma línea. */
 .kpi strong .u{display:block; font-size:13px; color:var(--ink2); letter-spacing:0; margin-top:2px}
 .kpi.warn{border-left:3px solid var(--NC)}
-.kpi.warn strong{color:#7A6742}
+.kpi.warn strong{color:var(--NC-txt)}
 .kpi.click{cursor:pointer; transition:border-color .15s, box-shadow .15s}
 .kpi.click:hover{border-color:var(--ink2); box-shadow:0 1px 0 var(--line)}
-.kpi.click:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.kpi.click:focus-visible{outline:2px solid var(--acc); outline-offset:2px}
 .cambios{
   margin:10px 0 0; padding:10px 14px; background:var(--paper);
   border:1px solid var(--line); border-left:3px solid var(--ink2);
@@ -206,10 +215,10 @@ section{scroll-margin-top:120px}
 .cambios .sube{color:#2F6B4F}
 .cambios .baja{color:#8A3524}
 .kpi .ver{
-  display:inline-block; font-size:11px; color:var(--B); margin-top:7px;
+  display:inline-block; font-size:11px; color:var(--acc); margin-top:7px;
   border-bottom:1px solid transparent; cursor:pointer;
 }
-.kpi .ver:hover{border-bottom-color:var(--B)}
+.kpi .ver:hover{border-bottom-color:var(--acc)}
 .slice{cursor:pointer}
 .slice:hover{opacity:.82}
 .legend li.click{cursor:pointer; border-radius:2px}
@@ -218,7 +227,7 @@ section{scroll-margin-top:120px}
   border:none; background:none; color:var(--muted); cursor:pointer; padding:0 0 0 6px;
   font-family:var(--mono); font-size:11px; border-bottom:1px dotted var(--muted);
 }
-.ayuda:hover{color:var(--B); border-color:var(--B)}
+.ayuda:hover{color:var(--acc); border-color:var(--acc)}
 .formula{
   margin:10px 0 0; padding:11px 13px; background:#F4F6F6; border-left:3px solid var(--line);
   font-size:12.5px; color:var(--ink2); line-height:1.55;
@@ -237,7 +246,7 @@ section{scroll-margin-top:120px}
 .nota-cat b{color:var(--ink)}
 .nota-cat.gris{background:#F1F3F3; border-left-color:var(--SC)}
 .bloq{
-  font-family:var(--disp); font-size:10.5px; letter-spacing:.07em; text-transform:uppercase;
+  font-family:var(--disp); font-size:11px; letter-spacing:.07em; text-transform:uppercase;
   background:#F4E2DD; color:#8A3524; border:1px solid #E4C4BC; padding:1px 6px;
   border-radius:2px; margin-left:7px; white-space:nowrap;
 }
@@ -288,24 +297,25 @@ tfoot td{border-top:1.5px solid var(--ink); border-bottom:none; font-weight:600;
 .pie{background:var(--paper); border:1px solid var(--line); padding:12px; text-align:center}
 .pie{cursor:pointer; transition:border-color .15s, box-shadow .15s}
 .pie:hover{border-color:var(--ink2)}
-.pie:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+.pie:focus-visible{outline:2px solid var(--acc); outline-offset:2px}
 .pie.on{border-color:var(--ink); box-shadow:inset 0 0 0 1px var(--ink)}
-.pie h4{font-family:var(--disp); font-size:14px; text-transform:uppercase; letter-spacing:.05em; margin:0 0 1px; font-weight:600}
+.pie h3{font-family:var(--disp); font-size:14px; text-transform:uppercase; letter-spacing:.05em; margin:0 0 1px; font-weight:600}
 .pie .tot{font-family:var(--mono); font-size:11.5px; color:var(--muted); margin-bottom:8px}
 .pie .mini{display:flex; gap:3px; justify-content:center; margin-top:9px; flex-wrap:wrap}
-.pie .mini b{font-family:var(--mono); font-size:10px; font-weight:500; padding:1px 5px; border-radius:2px; color:#fff}
+.pie .mini b{font-family:var(--mono); font-size:11px; font-weight:500; padding:1px 5px; border-radius:2px; color:#fff}
 
 /* ---------- parte 2 ---------- */
 .evo{display:grid; grid-template-columns:1fr; gap:10px}
-.axis{font-family:var(--mono); font-size:10.5px; fill:var(--muted)}
+.axis{font-family:var(--mono); font-size:11px; fill:var(--muted)}
 .leyenda-serie{
   display:flex; gap:8px 16px; flex-wrap:wrap; margin:12px 0 0; font-size:12px;
 }
-.leyenda-serie > span{
+.leyenda-serie > button{
+  font:inherit; color:inherit; 
   display:inline-flex; align-items:center; gap:6px; cursor:pointer;
   padding:2px 8px; border:1px solid var(--line2); border-radius:20px; background:#FAFBFB;
 }
-.leyenda-serie > span:hover{border-color:var(--ink2); background:#fff}
+.leyenda-serie > button:hover{border-color:var(--ink2); background:#fff}
 .leyenda-serie i{width:16px; height:3px; border-radius:2px; display:inline-block; flex:0 0 16px}
 .leyenda-serie b{font-family:var(--mono); font-weight:500; color:var(--muted)}
 .rotpill{
@@ -328,13 +338,13 @@ footer{margin-top:26px; font-size:11.5px; color:var(--muted); text-align:center}
 [hidden]{display:none !important}
 th.sel{cursor:pointer; user-select:none}
 th.ord{cursor:pointer; user-select:none; white-space:nowrap}
-th.ord:hover{color:var(--B)}
+th.ord:hover{color:var(--acc)}
 th.ord::after{content:"⇅"; font-size:9px; color:var(--line); margin-left:4px}
 th.ord.asc::after{content:"▲"; font-size:8px; color:var(--ink)}
 th.ord.desc::after{content:"▼"; font-size:8px; color:var(--ink)}
-th.sel:hover{color:var(--B); text-decoration:underline}
+th.sel:hover{color:var(--acc); text-decoration:underline}
 th.sel.on{background:var(--ink); color:#fff; border-radius:2px 2px 0 0}
-td.dim{opacity:.32}
+td.dim{color:var(--muted); font-weight:400}
 tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .activos{display:flex; gap:5px; flex-wrap:wrap; align-items:center; margin:6px 0 0}
 .filters + .activos:empty{margin:0}
@@ -355,10 +365,10 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 .stamp{font-family:var(--mono); font-size:11.5px; color:var(--muted)}
 .empty{padding:26px; text-align:center; color:var(--muted); font-size:13px}
 .chip.sm{font-size:11.5px; padding:3px 9px}
-.clear{background:none;border:none;color:var(--B);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
+.clear{background:none;border:none;color:var(--acc);font-size:11.5px;cursor:pointer;text-decoration:underline;padding:0}
 .buscador{display:flex; gap:10px; align-items:center; flex-wrap:wrap; margin:0 0 14px}
 .buscador label{
-  font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink2);
+  font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink2);
   font-weight:600;
 }
 .buscador input{
@@ -367,7 +377,7 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
   color:var(--ink);
 }
 .buscador input::placeholder{color:#9AA4A4; font-size:13px}
-.buscador input:focus{outline:none; border-color:var(--B); box-shadow:0 0 0 3px rgba(61,110,140,.14)}
+.buscador input:focus{outline:none; border-color:var(--acc); box-shadow:0 0 0 3px rgba(61,110,140,.14)}
 
 .salto{
   background:#fff; border:1px solid var(--line); border-radius:2px; cursor:pointer;
@@ -379,9 +389,9 @@ tr.sel-fila td{background:#F1F3F3; font-weight:600}
 
 /* Columnas de mes del detalle por artículo: angostas, para que entren seis o
    siete sin empujar el resto de la tabla fuera de la pantalla. */
-th.mes{font-size:10px; letter-spacing:.03em; white-space:nowrap}
+th.mes{font-size:11px; letter-spacing:.03em; white-space:nowrap}
 td.mes{font-family:var(--mono); font-size:11.5px; width:58px}
-td.mes.vacio{color:#D7DCDC}
+td.mes.vacio{color:var(--muted)}
 
 /* Eje 1: las dos mitades del stock según sea material controlado o no.
    Son tarjetas y no filas de tabla porque el corte es binario y conviene
@@ -392,7 +402,7 @@ td.mes.vacio{color:#D7DCDC}
   cursor:pointer; transition:border-color .15s;
 }
 .eje:hover{border-color:var(--ink2)}
-.eje:focus-visible{outline:2px solid var(--B); outline-offset:2px}
+
 .eje.on{border-color:var(--ink); box-shadow:inset 3px 0 0 var(--ink)}
 .eje h3{
   font-family:var(--disp); font-size:19px; font-weight:500; margin:0;
@@ -412,7 +422,7 @@ td.mes.vacio{color:#D7DCDC}
   margin-left:auto; font-family:var(--mono); font-size:11.5px; color:var(--ink2);
   font-variant-numeric:tabular-nums;
 }
-.eje .desglose .p{font-family:var(--mono); font-size:10.5px; color:var(--muted); width:42px; text-align:right}
+.eje .desglose .p{font-family:var(--mono); font-size:11px; color:var(--muted); width:42px; text-align:right}
 
 /* Banda de rotación: el color va de verde a rust igual que el resto del
    reporte, donde rust es siempre capital que hay que mover. */
@@ -438,15 +448,40 @@ td.mes.vacio{color:#D7DCDC}
 @media (prefers-reduced-motion:no-preference){
   .slice{transition:opacity .15s}
 }
+
+/* ---------- accesibilidad ----------
+   .btn-cel es el botón real que se pone dentro de lo que responde al clic
+   (la celda del nombre de una fila, el título de una torta o de una
+   sección). Se ve igual que antes; suma teclado y lector de pantalla. */
+.btn-cel{appearance:none; background:none; border:0; padding:0; margin:0; font:inherit; color:inherit;
+         letter-spacing:inherit; text-transform:inherit; text-align:inherit; line-height:inherit; cursor:pointer}
+.btn-cel:focus-visible, th.ord:focus-visible, th.sel:focus-visible, .leyenda-serie > button:focus-visible,
+.kpi button.ver:focus-visible, .mini-logo:focus-visible{outline:2px solid var(--acc); outline-offset:2px; border-radius:2px}
+.shead h2 > .btn-cel{display:inline-flex; align-items:baseline; gap:12px}
+li > .btn-cel{display:flex; align-items:center; gap:7px; width:100%}
+td > .btn-cel{display:block; width:100%}
+.kpi button.ver{background:none; border:0; border-bottom:1px solid transparent; padding:0; font:inherit;
+                font-size:11px; letter-spacing:.1em; text-transform:uppercase; cursor:pointer}
+.saltar{position:absolute; left:-9999px; top:8px; z-index:200; background:#fff; color:var(--ink);
+        padding:8px 14px; border:2px solid var(--acc); border-radius:4px; font-weight:600; text-decoration:none}
+.saltar:focus{left:16px}
+main:focus{outline:none}
+h1, h2, h3{text-wrap:balance}
+body{-webkit-tap-highlight-color:rgba(0,0,0,.08)}
+button, a, select, input, .chip, .tab, th.ord, th.sel, .mark, .pie, tr[data-dep], tr[data-fam]{touch-action:manipulation}
+@media (prefers-reduced-motion:reduce){
+  *, *::before, *::after{transition:none !important; animation:none !important; scroll-behavior:auto !important}
+}
 </style>
 </head>
 <body>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
 
 <header class="top">
   <div class="top-in">
     <div class="mark" id="ir-inicio" role="button" tabindex="0"
          title="Volver al inicio y quitar todos los filtros">
-      <img src="LOGOC44.png" alt="Camping 44"
+      <img src="LOGOC44.png" alt="Camping 44" width="46" height="46" fetchpriority="high"
            onerror="this.outerHTML='&lt;span class=\'fallback\'&gt;44&lt;/span&gt;'">
     </div>
     <div class="ttl">
@@ -462,9 +497,9 @@ td.mes.vacio{color:#D7DCDC}
   </div>
 </header>
 
-<div class="fijo" id="fijo">
+<div class="fijo" id="fijo" role="region" aria-label="Pestañas y filtros">
   <div class="tabs-fila">
-    <img src="LOGOC44.png" alt="Camping 44" class="mini-logo" id="mini-logo"
+    <img src="LOGOC44.png" alt="Camping 44" class="mini-logo" id="mini-logo" width="22" height="22" role="button" tabindex="0"
          title="Volver al inicio y quitar todos los filtros" onerror="this.style.display='none'">
     <div class="tabs" role="tablist">
       <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Parte 1 · Situación actual</button>
@@ -490,7 +525,7 @@ td.mes.vacio{color:#D7DCDC}
   </div>
 </div>
 
-<div class="wrap">
+<main class="wrap" id="contenido" tabindex="-1">
 
   <div id="p1" role="tabpanel" aria-labelledby="t1">
     <section><div class="kpis" id="kpis"></div>
@@ -555,9 +590,9 @@ td.mes.vacio{color:#D7DCDC}
         <div class="note" id="nota-art"></div></div>
       <div class="card">
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:12px">
-          <input type="search" id="q-art" placeholder="Buscar artículo o referencia…"
+          <input type="search" id="q-art" aria-label="Buscar artículo o referencia" spellcheck="false" autocomplete="off" placeholder="Buscar artículo o referencia…"
                  style="font-family:var(--mono);font-size:12.5px;padding:5px 9px;border:1px solid var(--line);border-radius:2px;background:#FAFBFB;min-width:230px">
-          <span class="count" id="q-art-n"></span>
+          <span class="count" aria-live="polite" id="q-art-n"></span>
           <button class="clear" id="art-csv">descargar lista</button>
         </div>
         <p class="nota-cat" id="aviso-cat" hidden></p>
@@ -661,9 +696,9 @@ td.mes.vacio{color:#D7DCDC}
         </p>
         <div class="buscador">
           <label for="q-rot-art">Buscar</label>
-          <input type="search" id="q-rot-art"
+          <input type="search" id="q-rot-art" spellcheck="false" autocomplete="off"
                  placeholder="referencia interna o parte del nombre del producto…">
-          <span class="count" id="q-rot-art-n"></span>
+          <span class="count" aria-live="polite" id="q-rot-art-n"></span>
         </div>
         <p class="nota-cat" id="rot-art-otras" hidden></p>
         <div class="scroll"><table id="tbl-rot-art">
@@ -674,7 +709,7 @@ td.mes.vacio{color:#D7DCDC}
   </div>
 
   <footer id="pie"></footer>
-</div>
+</main>
 <!-- El archivo de datos se pide con la hora pegada al nombre. Sin eso, el
      navegador y el CDN de GitHub Pages guardan el datos.js viejo y el reporte
      sigue mostrando las cifras de ayer aunque la planilla ya haya publicado
@@ -687,6 +722,69 @@ td.mes.vacio{color:#D7DCDC}
 <script>
 (function(){
 "use strict";
+
+/* Movimiento: los desplazamientos suaves respetan "reducir movimiento". */
+var MOV = (window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) ? "auto" : "smooth";
+
+/* Al activar uno de estos botones la tabla se vuelve a dibujar; esto
+   devuelve el foco al botón equivalente para no perder el lugar. */
+var focoPendiente = null;
+var HOSTS = "[data-dep],[data-grp],[data-fam],[data-lin],[data-cal],[data-marca],[data-clave],[data-ctl]";
+function claveHost(el){
+  if (!el) return "";
+  return Array.prototype.map.call(el.attributes, function(a){
+    return a.name.indexOf("data-") === 0 ? a.name + "=" + a.value : "";
+  }).join("|") + "|" + el.tagName;
+}
+document.addEventListener("click", function(e){
+  var b = e.target.closest && e.target.closest(".btn-cel");
+  if (!b) return;
+  focoPendiente = claveHost(b.parentElement.closest(HOSTS));
+  setTimeout(function(){ focoPendiente = null; }, 0);
+}, true);
+
+/**
+ * Pone un <button> real dentro de un elemento que responde al clic (la
+ * celda del nombre de una fila, el título de una torta o de una sección).
+ * El clic del mouse sigue llegando al contenedor como antes; el botón suma
+ * lo que faltaba: se alcanza con Tab, se activa con Enter o Espacio y un
+ * lector de pantalla lo anuncia como botón sin borrar el título ni la celda.
+ */
+function botonDentro(el, titulo, presionado){
+  if (!el) return null;
+  var ya = el.querySelector(":scope > .btn-cel");
+  if (ya) return ya;
+  var b = document.createElement("button");
+  b.type = "button";
+  b.className = "btn-cel";
+  if (titulo) b.title = titulo;
+  if (presionado !== undefined) b.setAttribute("aria-pressed", String(Boolean(presionado)));
+  while (el.firstChild) b.appendChild(el.firstChild);
+  el.appendChild(b);
+  if (focoPendiente && claveHost(el.closest(HOSTS)) === focoPendiente) {
+    b.focus({ preventScroll:true });
+    focoPendiente = null;
+  }
+  return b;
+}
+
+/* Si la fila es la elegida en los filtros (o está resaltada), su botón
+   queda como presionado. */
+function filaElegida(tr){
+  var d = tr.dataset;
+  var porFiltro = ["dep", "grp", "lin", "fam", "cal", "marca"].some(function(k){
+    return d[k] !== undefined && typeof f !== "undefined" && f[k] === d[k];
+  });
+  return porFiltro || tr.classList.contains("sel-fila") || tr.classList.contains("on");
+}
+
+/* Descripción de una torta para lectores de pantalla. */
+function etiquetaTorta(nombre, vals){
+  var t = vals.reduce(function(a,b){ return a + b.v; }, 0);
+  var partes = vals.filter(function(x){ return x.v > 0; })
+    .map(function(x){ return x.lab + " " + pct(x.v, t); });
+  return (nombre ? nombre + ": " : "") + partes.join(", ");
+}
 
 if (typeof DATOS === "undefined" || !DATOS.STOCK) {
   document.querySelector(".wrap").innerHTML =
@@ -776,6 +874,8 @@ var orden_filtros = [];
 /* Orden de cada tabla: columna y sentido. */
 var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:5, asc:false}, fam:{k:"_t", asc:false},
               mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
+var ORDEN_INICIAL = {};
+Object.keys(orden).forEach(function(k){ ORDEN_INICIAL[k] = JSON.stringify(orden[k]); });
 
 /** Ordena filas por una clave, con texto e números tratados distinto. */
 function ordenar(filas, k, asc){
@@ -852,17 +952,17 @@ var valores = function(x){ return CATS.map(function(c){ return {v:x[c.k]||0, col
 var DEFS = '<defs><pattern id="hatch" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">'+
   '<rect width="6" height="6" fill="#DCD6C8"/><line x1="0" y1="0" x2="0" y2="6" stroke="#8C7A57" stroke-width="2.4"/></pattern></defs>';
 
-function donut(vals, size, thick){
+function donut(vals, size, thick, nombre){
   var t = vals.reduce(function(a,b){return a+b.v;},0);
   var r = size/2, ir = r - thick, cx = r, cy = r, ang = -Math.PI/2, out = "";
   if (t <= 0) {
-    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'">'+
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" aria-hidden="true">'+
       '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="#E6E9E9" stroke-width="'+thick+'"/></svg>';
   }
   var conValor = vals.filter(function(s){ return s.v > 0; });
   if (conValor.length === 1) {
     var u = conValor[0];
-    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+
+    return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img" aria-label="'+esc(etiquetaTorta(nombre, vals))+'">'+DEFS+
       '<circle cx="'+cx+'" cy="'+cy+'" r="'+(r-thick/2)+'" fill="none" stroke="'+u.col+
       '" stroke-width="'+thick+'"><title>'+esc(u.lab)+': '+gsM(u.v)+' (100%)</title></circle></svg>';
   }
@@ -878,7 +978,7 @@ function donut(vals, size, thick){
       '<title>'+esc(s.lab)+': '+gsM(s.v)+' ('+pct(s.v,t)+')</title></path>';
     ang = a2;
   });
-  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img">'+DEFS+out+'</svg>';
+  return '<svg width="'+size+'" height="'+size+'" viewBox="0 0 '+size+' '+size+'" role="img" aria-label="'+esc(etiquetaTorta(nombre, vals))+'">'+DEFS+out+'</svg>';
 }
 function swatch(c){
   return c.k === "NC"
@@ -956,7 +1056,6 @@ function actualizarOpciones(){
     if (b.dataset.v === "*") return;
     var hay = Boolean(okTipo[b.dataset.v]);
     b.disabled = !hay && b.dataset.v !== f.tipo;
-    b.style.opacity = b.disabled ? ".38" : "";
     b.style.cursor = b.disabled ? "not-allowed" : "";
   });
 }
@@ -1030,12 +1129,15 @@ function armarFiltros(){
     reflejarFiltros();
     pintar(); sincronizarSerie();
     irA(0);
-    window.scrollTo({ top:0, behavior:"smooth" });
+    window.scrollTo({ top:0, behavior:MOV });
   }
 
   document.getElementById("ir-inicio").addEventListener("click", reiniciar);
   var mini = document.getElementById("mini-logo");
   if (mini) mini.addEventListener("click", reiniciar);
+  if (mini) mini.addEventListener("keydown", function(e){
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reiniciar(); }
+  });
 
   /* El mini logo aparece cuando el título ya salió de pantalla. */
   (function(){
@@ -1161,19 +1263,22 @@ function armarFiltros(){
 
   /* Secciones plegables. */
   Array.prototype.forEach.call(document.querySelectorAll("section .shead"), function(h){
-    if (!h.querySelector(".caret")) h.insertAdjacentHTML("afterbegin", '<span class="caret">▾</span>');
-    h.setAttribute("role", "button");
-    h.setAttribute("tabindex", "0");
+    /* El título queda como título (h2) y el botón va adentro: con todo el
+       encabezado como role="button", un lector de pantalla dejaba de
+       anunciar las secciones como títulos. */
+    var btn = botonDentro(h.querySelector("h2"));
+    if (btn && !btn.querySelector(".caret")) {
+      btn.insertAdjacentHTML("afterbegin", '<span class="caret" aria-hidden="true">▾</span>');
+      btn.setAttribute("aria-expanded", "true");
+    }
     var alternar = function(){
       var sec = h.closest("section");
       sec.classList.toggle("plegada");
       h.classList.toggle("closed");
+      if (btn) btn.setAttribute("aria-expanded", String(!h.classList.contains("closed")));
       if (window.stkAcomodar) window.stkAcomodar();
     };
     h.addEventListener("click", alternar);
-    h.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); alternar(); }
-    });
   });
 
   /* Señal de que el archivo publicado quedó viejo: sin estos campos varias
@@ -1221,6 +1326,12 @@ function guardarEstado(){
   if (qa && qa.value) e.qa = qa.value;
   if (qr && qr.value) e.qr = qr.value;
 
+  if (per.desde !== 0 || per.hasta !== MESES.length - 1) { e.pd = per.desde; e.ph = per.hasta; }
+  if (comparando) e.cmp = "1";
+  var ord = Object.keys(orden).filter(function(k){ return JSON.stringify(orden[k]) !== ORDEN_INICIAL[k]; })
+    .map(function(k){ return k + "." + orden[k].k + "." + (orden[k].asc ? 1 : 0); });
+  if (ord.length) e.o = ord.join("~");
+
   var h = Object.keys(e).map(function(k){ return k + "=" + encodeURIComponent(e[k]); }).join("&");
   try {
     history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
@@ -1255,6 +1366,25 @@ function restaurarEstado(){
   var qa = document.getElementById("q-art"), qr = document.getElementById("q-rot-art");
   if (qa && e.qa) qa.value = e.qa;
   if (qr && e.qr) qr.value = e.qr;
+  if (e.pd !== undefined && e.ph !== undefined) {
+    var d0 = parseInt(e.pd, 10), h0 = parseInt(e.ph, 10);
+    if (d0 >= 0 && h0 < MESES.length && d0 <= h0) {
+      per.desde = d0; per.hasta = h0;
+      document.getElementById("f-desde").value = d0;
+      document.getElementById("f-hasta").value = h0;
+    }
+  }
+  if (e.cmp === "1") {
+    comparando = true;
+    document.getElementById("f-comparar").setAttribute("aria-pressed", "true");
+    document.getElementById("f-serie").disabled = true;
+  }
+  if (e.o) e.o.split("~").forEach(function(p){
+    var x = p.split(".");
+    if (x.length < 3 || !orden[x[0]]) return;
+    orden[x[0]].k = (x[1] !== "" && !isNaN(x[1])) ? Number(x[1]) : x[1];
+    orden[x[0]].asc = x[2] === "1";
+  });
   restaurando = false;
   return e.p === "2";
 }
@@ -1299,7 +1429,7 @@ function pintar(){
         "alcanza a toda la mercadería, armas y municiones incluidas, así que lo que " +
         "falta se mide contra el stock completo y no contra una parte. " +
         "<b>N</b> (producto nuevo) cuenta como clasificado: es una decisión tomada. " +
-        "Lo que figura como \"Sin categoria\" o en blanco, no."),
+        "Lo que figura como “Sin categoria” o en blanco, no."),
     kpi("Capital en Categoría C", gsM(t.C),
         pct(t.C, T) + " del stock total · liquidación pendiente", "", "C",
         "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
@@ -1321,9 +1451,6 @@ function pintar(){
     el.addEventListener("click", function(e){
       if (e.target.closest(".ayuda")) return;
       ir(Boolean(e.target.closest(".ver")));
-    });
-    el.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); ir(false); }
     });
   });
 
@@ -1381,15 +1508,15 @@ function pintarCambios(){
 
 function kpi(lab,val,sub,cls,filtro,porque){
   var id = "ayuda-" + (filtro || lab).replace(/\W/g,"");
-  return '<div class="kpi click '+cls+'" data-filtro="'+esc(filtro||"")+'" tabindex="0" role="button">'+
+  return '<div class="kpi click '+cls+'" data-filtro="'+esc(filtro||"")+'">'+
     '<span>'+lab+
-      '<button class="ayuda" type="button" aria-expanded="false" aria-controls="'+id+'" '+
+      '<button class="ayuda" type="button" aria-label="Qué significa '+esc(lab)+'" aria-expanded="false" aria-controls="'+id+'" '+
       'onclick="event.stopPropagation();var p=document.getElementById(\''+id+'\');'+
       'var v=p.hasAttribute(\'hidden\');v?p.removeAttribute(\'hidden\'):p.setAttribute(\'hidden\',\'\');'+
       'this.setAttribute(\'aria-expanded\',v)">?</button>'+
     '</span>'+
     '<strong>'+val+'</strong><em>'+esc(sub)+'</em>'+
-    (filtro && filtro !== "todo" ? '<span class="ver">ver artículos →</span>' : '')+
+    (filtro && filtro !== "todo" ? '<button type="button" class="ver">ver artículos →</button>' : '')+
     '<p class="formula" id="'+id+'" hidden style="margin-top:9px">'+porque+'</p></div>';
 }
 
@@ -1398,8 +1525,9 @@ function abrirArticulos(){
   var sec = document.getElementById("q-art").closest("section");
   sec.classList.remove("plegada");
   sec.querySelector(".shead").classList.remove("closed");
+  var bs = sec.querySelector(".shead .btn-cel"); if (bs) bs.setAttribute("aria-expanded", "true");
   if (window.stkAcomodar) window.stkAcomodar();
-  sec.scrollIntoView({ behavior:"smooth", block:"start" });
+  sec.scrollIntoView({ behavior:MOV, block:"start" });
 }
 function etiquetaFiltro(){
   var p = [];
@@ -1452,6 +1580,7 @@ function tablaDepositos(filas, T){
   tf.innerHTML = '<tr><td>Total</td>'+CLAVES.map(function(k){ return celda(s[k], k); }).join('')+
     '<td class="num">'+fmt(suma(s))+'</td><td class="num">100%</td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-dep]"), function(tr){
+    botonDentro(tr.cells[0], null, filaElegida(tr));
     tr.addEventListener("click", function(){
       f.dep = (f.dep === tr.dataset.dep) ? "*" : tr.dataset.dep;
       document.getElementById("f-dep").value = f.dep;
@@ -1471,7 +1600,7 @@ function pintarAvisoCategoria(filas){
         'asignada una categoría A, B o C en Odoo. No es un dato que falte del artículo: ' +
         'es que el ciclo semestral del MP-MIS-01 no lo alcanzó, sea porque entró después ' +
         'de la última matriz o porque quedó fuera de ella. Acá entran también los que ' +
-        'figuran como D, N o "Sin categoria". La columna <b>Cat.</b> es la clasificación ' +
+        'figuran como D, N o “Sin categoria”. La columna <b>Cat.</b> es la clasificación ' +
         'ABC y no tiene relación con el calibre.',
     ARM: '<b>ARM</b> son armas de fuego que <b>todavía no tienen</b> categoría de rotación ' +
          'cargada en Odoo. Las que sí la tienen aparecen en su letra, porque la clasificación ' +
@@ -1579,8 +1708,8 @@ function tablaArticulos(){
   tb.innerHTML = top.map(function(a){
     var c = a[A_CAT];
     var badge = (c === "A" || c === "B" || c === "C")
-      ? '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>'
-      : '<span style="font-family:var(--mono);font-size:11px;color:var(--'+(c==="NC"?"NC":"SC")+')">'+esc(c)+'</span>';
+      ? '<b style="font-family:var(--mono);color:var(--'+(c === "B" ? "B-txt" : c)+')">'+c+'</b>'
+      : '<span style="font-family:var(--mono);font-size:11px;color:var(--'+(c==="NC"?"NC-txt":"SC")+')">'+esc(c)+'</span>';
     return '<tr><td class="l" style="font-family:var(--mono);font-size:11.5px">'+esc(a[A_REF])+'</td>'+
       '<td class="l">'+esc(a[A_NOM])+'</td>'+
       '<td class="l">'+esc(a[A_MAR])+'</td>'+
@@ -1647,7 +1776,6 @@ function ejeControl(){
       .map(function(k){ return k + ": " + fmt(l.x[k]); }).join(" · ");
 
     return '<div class="eje'+(f.ctl === l.k ? " on" : "")+'" data-ctl="'+esc(l.k)+'" '+
-      'tabindex="0" role="button" aria-pressed="'+(f.ctl === l.k)+'" '+
       'title="Filtrar todo el reporte por '+esc(l.k.toLowerCase())+'">'+
       '<h3>'+esc(l.k)+'</h3>'+
       '<strong class="cifra">'+gsM(v)+'</strong>'+
@@ -1691,12 +1819,13 @@ function ejeControl(){
     reflejarFiltros(); pintar(); sincronizarSerie();
   };
   Array.prototype.forEach.call(document.querySelectorAll("#cajas-ctl .eje"), function(el){
+    botonDentro(el.querySelector("h3"), el.title, el.classList.contains("on"));
+    Array.prototype.forEach.call(el.querySelectorAll("li[data-cat]"), function(li){
+      botonDentro(li, li.title, f.ctl === li.dataset.ctl && f.cat === li.dataset.cat);
+    });
     el.addEventListener("click", function(e){
       var li = e.target.closest("li[data-cat]");
       tocar(el.dataset.ctl, li ? li.dataset.cat : null);
-    });
-    el.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); tocar(el.dataset.ctl, null); }
     });
   });
 }
@@ -1745,6 +1874,7 @@ function tablaFamilias(T){
   tf.innerHTML = '<tr><td>Total</td>'+ABC.map(function(k){ return celda(s[k], k); }).join('')+
     '<td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-fam]"), function(tr){
+    botonDentro(tr.cells[0], null, filaElegida(tr));
     tr.addEventListener("click", function(){
       f.fam = (f.fam === tr.dataset.fam) ? "*" : tr.dataset.fam;
       registrar("fam");
@@ -1792,6 +1922,7 @@ function tablaCalibres(T){
   }).join("");
   tf.innerHTML = '<tr><td>Total</td><td></td><td class="num">'+fmt(T)+'</td><td class="num">100%</td><td></td></tr>';
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-cal]"), function(tr){
+    botonDentro(tr.cells[0], null, filaElegida(tr));
     tr.addEventListener("click", function(){
       f.cal = (f.cal === tr.dataset.cal) ? "*" : tr.dataset.cal;
       document.getElementById("f-cal").value = f.cal;
@@ -1805,7 +1936,7 @@ function tablaCalibres(T){
 /* Cuando hay una categoría filtrada, las otras columnas se atenúan. */
 function celda(v, k){
   var dim = (f.cat !== "*" && k && k !== f.cat) ? " dim" : "";
-  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:#C3C9C9">—</span>')+'</td>';
+  return '<td class="num'+dim+'">'+(v ? fmt(v) : '<span style="color:var(--muted)">—</span>')+'</td>';
 }
 
 function tortas(filas){
@@ -1822,23 +1953,23 @@ function tortas(filas){
     var T = suma(r);
     var activa = (f.marca === r.k);
     var mini = CATS.filter(function(c){ return r[c.k] > 0; }).map(function(c){
-      return '<b style="background:'+(c.k==="NC" ? "#8C7A57" : c.col)+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
+      var fondo = { NC:"var(--NC-txt)", B:"var(--B-txt)", MUN:"#56626B" }[c.k] || c.col;
+      var claro = (c.k === "CARG" || c.k === "ACC") ? ";color:var(--ink)" : "";
+      return '<b style="background:'+fondo+claro+'">'+c.k+' '+Math.round(r[c.k]/T*100)+'</b>';
     }).join("");
-    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'" tabindex="0" role="button">'+
-      '<h4>'+esc(r.k)+'</h4><div class="tot">'+gsM(T)+'</div>'+
-      donut(valores(r),116,24)+'<div class="mini">'+mini+'</div></div>';
+    return '<div class="pie'+(activa?" on":"")+'" data-marca="'+esc(r.k)+'">'+
+      '<h3>'+esc(r.k)+'</h3><div class="tot">'+gsM(T)+'</div>'+
+      donut(valores(r),116,24,r.k)+'<div class="mini">'+mini+'</div></div>';
   }).join("");
 
   Array.prototype.forEach.call(document.querySelectorAll("#pies .pie"), function(el){
+    botonDentro(el.querySelector("h3"), null, el.classList.contains("on"));
     var elegir = function(){
       f.marca = (f.marca === el.dataset.marca) ? "*" : el.dataset.marca;
       document.getElementById("f-marca").value = f.marca;
       pintar(); sincronizarSerie();
     };
     el.addEventListener("click", elegir);
-    el.addEventListener("keydown", function(e){
-      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); elegir(); }
-    });
   });
 }
 
@@ -2062,12 +2193,12 @@ function evolucionComparada(){
     grid + lineas + etiquetas + '</svg>' +
     '<div class="leyenda-serie">' + series.map(function(x){
       var ult = x.d[x.d.length-1];
-      return '<span data-serie="'+esc(x.nombre)+'" title="Ver solo esta"><i style="background:'+x.col+'"></i>'+
-        esc(x.nombre)+' <b class="mono" style="font-weight:500">'+fmt(Math.round(ult))+'</b></span>';
+      return '<button type="button" data-serie="'+esc(x.nombre)+'" title="Ver solo esta"><i style="background:'+x.col+'"></i>'+
+        esc(x.nombre)+' <b class="mono" style="font-weight:500">'+fmt(Math.round(ult))+'</b></button>';
     }).join("") + '</div>';
 
   /* Clic en la leyenda: pasa a ver solo esa serie. */
-  Array.prototype.forEach.call(caja.querySelectorAll(".leyenda-serie span"), function(el){
+  Array.prototype.forEach.call(caja.querySelectorAll(".leyenda-serie button"), function(el){
     el.addEventListener("click", function(){
       comparando = false;
       document.getElementById("f-comparar").setAttribute("aria-pressed", "false");
@@ -2225,6 +2356,7 @@ function rotacion(){
 
   /* Clic en la marca: abre el detalle por artículo debajo, sin salir de acá. */
   Array.prototype.forEach.call(tb.querySelectorAll("tr[data-marca]"), function(tr){
+    botonDentro(tr.cells[0], null, filaElegida(tr));
     tr.addEventListener("click", function(){
       serieActiva = tr.dataset.marca;
       var sel = document.getElementById("f-serie");
@@ -2233,7 +2365,7 @@ function rotacion(){
       var sec = document.getElementById("sec-rot-art");
       if (!sec.hidden) {
         if (window.stkAcomodar) window.stkAcomodar();
-        sec.scrollIntoView({ behavior:"smooth", block:"start" });
+        sec.scrollIntoView({ behavior:MOV, block:"start" });
       }
     });
   });
@@ -2246,12 +2378,12 @@ function rotacion(){
  */
 /** Etiqueta de categoría con el color que le corresponde. */
 function badgeCat(c){
-  if (!c) return '<span style="color:#C3C9C9">—</span>';
+  if (!c) return '<span style="color:var(--muted)">—</span>';
   if (c === "A" || c === "B" || c === "C") {
-    return '<b style="font-family:var(--mono);color:var(--'+c+')">'+c+'</b>';
+    return '<b style="font-family:var(--mono);color:var(--'+(c === "B" ? "B-txt" : c)+')">'+c+'</b>';
   }
   return '<span style="font-family:var(--mono);font-size:11px;color:var(--'+
-    (c === "NC" ? "NC" : "SC")+')">'+esc(c)+'</span>';
+    (c === "NC" ? "NC-txt" : "SC")+')">'+esc(c)+'</span>';
 }
 
 /** Desglose por canal, para el tooltip de las unidades vendidas. */
@@ -2326,6 +2458,14 @@ function armarCabeceraArticulos(){
       if (String(orden.rota.k) === String(num)) orden.rota.asc = !orden.rota.asc;
       else { orden.rota.k = num; orden.rota.asc = false; }
       rotacionArticulos();
+    });
+  });
+  /* Ordenar también con el teclado. */
+  Array.prototype.forEach.call(tr.querySelectorAll("th.ord"), function(th){
+    th.setAttribute("role", "button");
+    th.setAttribute("tabindex", "0");
+    th.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); th.click(); }
     });
   });
 }
@@ -2417,7 +2557,7 @@ function rotacionArticulos(){
       MESES_VENTA.map(function(etiqueta, i){
         var q = a[11 + i] || 0;
         return '<td class="num mes'+(q ? '' : ' vacio')+'" title="'+esc(etiqueta)+'">'+
-               (q ? fmt(q) : '<span style="color:#D7DCDC">0</span>')+'</td>';
+               (q ? fmt(q) : '<span style="color:var(--muted)">0</span>')+'</td>';
       }).join('')+
       '<td class="num" title="'+tituloCanales(a[9])+'">'+fmt(a[5])+'</td>'+
       '<td class="num" title="Valor en stock: '+gs(a[4])+' Gs.">'+fmt(a[6])+'</td>'+
@@ -2428,19 +2568,20 @@ function rotacionArticulos(){
           ? '<span style="color:var(--muted);font-family:var(--mono);font-size:11.5px">sin base</span>'
           : '<span class="mono">'+a[8].toFixed(2).replace(".",",")+'</span>'))+'</td>'+
       '<td class="num" style="width:40px">'+(hayHist
-        ? '<span style="color:var(--B);font-size:11px">ver ↑</span>' : '')+'</td></tr>';
+        ? '<span style="color:var(--acc);font-size:11px">ver ↑</span>' : '')+'</td></tr>';
   }).join("");
 
   /* Clic en un artículo: el gráfico de arriba pasa a mostrar su histórico. */
   Array.prototype.forEach.call(
     document.querySelectorAll("#tbl-rot-art tbody tr[data-clave]"), function(tr){
       if (!SERIES_ART[tr.dataset.clave]) return;
+      botonDentro(tr.cells[1], "Ver su histórico", tr.dataset.clave === articuloActivo);
       tr.addEventListener("click", function(){
         articuloActivo = (articuloActivo === tr.dataset.clave) ? null : tr.dataset.clave;
         document.getElementById("volver-marca").hidden = !articuloActivo;
         evolucion(); rotacionArticulos();
         document.getElementById("evo-chart").closest("section")
-          .scrollIntoView({ behavior:"smooth", block:"start" });
+          .scrollIntoView({ behavior:MOV, block:"start" });
       });
     });
 }
@@ -2449,13 +2590,46 @@ function rotacionArticulos(){
 var tabs = [document.getElementById("t1"), document.getElementById("t2")];
 var panes = [document.getElementById("p1"), document.getElementById("p2")];
 function irA(i){
-  tabs.forEach(function(x,j){ x.setAttribute("aria-selected", j===i); });
+  tabs.forEach(function(x,j){ x.setAttribute("aria-selected", j===i); x.tabIndex = (j===i) ? 0 : -1; });
   panes.forEach(function(p,j){ p.hidden = j!==i; });
   if (window.stkAcomodar) window.stkAcomodar();
   guardarEstado();
 }
 tabs.forEach(function(t,i){
-  t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:"smooth"}); });
+  t.addEventListener("click", function(){ irA(i); window.scrollTo({top:0, behavior:MOV}); });
+});
+
+/* Pestañas con el teclado: flechas, Inicio y Fin. */
+document.querySelector('[role="tablist"]').addEventListener("keydown", function(e){
+  var i = tabs.indexOf(document.activeElement);
+  if (i < 0) return;
+  var n = { ArrowRight: i + 1, ArrowLeft: i - 1, Home: 0, End: tabs.length - 1 }[e.key];
+  if (n === undefined) return;
+  e.preventDefault();
+  n = (n + tabs.length) % tabs.length;
+  irA(n);
+  tabs[n].focus();
+});
+tabs.forEach(function(x){ x.tabIndex = x.getAttribute("aria-selected") === "true" ? 0 : -1; });
+
+/* "Saltar al contenido" sin tocar el hash, que guarda el estado del reporte. */
+(function(){
+  var saltar = document.querySelector(".saltar");
+  if (saltar) saltar.addEventListener("click", function(e){
+    e.preventDefault();
+    var m = document.getElementById("contenido");
+    m.focus({ preventScroll:true });
+    m.scrollIntoView();
+  });
+})();
+
+/* Período, comparación y orden de tablas también quedan en la dirección. */
+["f-desde", "f-hasta"].forEach(function(id){
+  document.getElementById(id).addEventListener("change", function(){ setTimeout(guardarEstado, 0); });
+});
+document.getElementById("f-comparar").addEventListener("click", function(){ setTimeout(guardarEstado, 0); });
+document.addEventListener("click", function(e){
+  if (e.target.closest && e.target.closest("th.ord")) setTimeout(guardarEstado, 0);
 });
 
 if (NO_COMERCIAL.length) {
