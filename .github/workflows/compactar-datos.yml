@@ -8,13 +8,18 @@
 # No se dispara a sí misma: GitHub no lanza tareas por los cambios que hace
 # otra tarea con el token automático, y si el archivo ya está compacto no se
 # guarda nada. También se puede correr a mano desde la pestaña Actions.
+#
+# En la misma pasada rehace la vista sin valorización (carpeta vista/): el
+# reporte en unidades, sin costos ni Parte 2, para áreas como Marketing.
+# Ver .github/scripts/vista-sin-valor.js. Corre también cuando cambia el
+# index.html, para que la vista quede igual a la página principal.
 
-name: Compactar datos.js
+name: Compactar datos.js y armar la vista sin valorización
 
 on:
   push:
     branches: [main]
-    paths: [datos.js]
+    paths: [datos.js, index.html, LOGOC44.png, .github/scripts/vista-sin-valor.js]
   workflow_dispatch:
 
 permissions:
@@ -37,25 +42,29 @@ jobs:
       - name: Compactar
         run: node .github/scripts/compactar-datos.js datos.js
 
+      - name: Vista sin valorización
+        run: node .github/scripts/vista-sin-valor.js
+
       - name: Guardar si cambió
         run: |
-          if git diff --quiet -- datos.js; then
-            echo "datos.js ya estaba compacto."
+          git add datos.js vista
+          if git diff --cached --quiet; then
+            echo "datos.js ya estaba compacto y la vista ya estaba al día."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add datos.js
-          git commit -m "Compactar datos.js (sin sangría)"
+          git commit -m "Compactar datos.js y actualizar la vista sin valorización"
           # Si mientras tanto entró otra publicación, se reintenta sobre la última.
           for intento in 1 2 3; do
             if git push origin HEAD:main; then exit 0; fi
             git fetch origin main
             git reset --hard origin/main
             node .github/scripts/compactar-datos.js datos.js
-            if git diff --quiet -- datos.js; then exit 0; fi
-            git add datos.js
-            git commit -m "Compactar datos.js (sin sangría)"
+            node .github/scripts/vista-sin-valor.js
+            git add datos.js vista
+            if git diff --cached --quiet; then exit 0; fi
+            git commit -m "Compactar datos.js y actualizar la vista sin valorización"
           done
           echo "No se pudo guardar después de 3 intentos."
           exit 1

@@ -853,9 +853,18 @@ var MESES_ROT = DATOS.MESES_ROT || 6;
 var SERIES = DATOS.SERIES || {};
 var CMV6 = DATOS.CMV6 || {};
 
+/* Vista sin valorización (carpeta /vista/). La arma el workflow a partir del
+   mismo datos.js: el costo se reemplaza por la cantidad y se quitan la Parte 2
+   y todo dato en guaraníes. Es para las áreas que necesitan ver qué hay y
+   dónde, pero no lo que cuesta. Esta misma página la dibuja en unidades. */
+var SIN_VALOR = DATOS.SIN_VALOR === true;
+var UNI = SIN_VALOR ? "Unidades" : "Millones de guaraníes";
+
 /* ---------------- formato ---------------- */
 var fmt = function(n,d){ return new Intl.NumberFormat("es-PY",{minimumFractionDigits:d||0,maximumFractionDigits:d||0}).format(n); };
-var gsM = function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
+var gsM = SIN_VALOR
+  ? function(n){ return fmt(Math.round(n)) + " u."; }
+  : function(n){ return "Gs. " + fmt(Math.round(n)) + " M"; };
 /* Los datos vienen en millones; esta los muestra en guaraníes completos. */
 var gs = function(n){ return fmt(Math.round((n||0) * 1000000)); };
 var pct = function(n,t){ return t ? (n/t*100).toFixed(1).replace(".",",") + "%" : "0%"; };
@@ -874,6 +883,7 @@ var orden_filtros = [];
 /* Orden de cada tabla: columna y sentido. */
 var orden = { rot:{k:"cmv", asc:false}, art:{k:8, asc:false}, rota:{k:5, asc:false}, fam:{k:"_t", asc:false},
               mar:{k:"_t", asc:false}, dep:{k:"_t", asc:false}, cal:{k:"v", asc:false} };
+if (SIN_VALOR) orden.art.k = 7;
 var ORDEN_INICIAL = {};
 Object.keys(orden).forEach(function(k){ ORDEN_INICIAL[k] = JSON.stringify(orden[k]); });
 
@@ -1193,11 +1203,13 @@ function armarFiltros(){
     var filas = articulosFiltrados();
     if (!filas.length) return;
     var esc2 = function(v){ return '"' + String(v).replace(/"/g, '""') + '"'; };
-    var lineas = [["Referencia","Producto","Marca","Tipo","Deposito","Categoria",
-                   "Calibre","Cantidad","Valor a costo (Gs.)"].map(esc2).join(";")];
+    var cab = ["Referencia","Producto","Marca","Tipo","Deposito","Categoria","Calibre","Cantidad"];
+    if (!SIN_VALOR) cab.push("Valor a costo (Gs.)");
+    var lineas = [cab.map(esc2).join(";")];
     filas.forEach(function(a){
-      lineas.push([a[A_REF],a[A_NOM],a[A_MAR],a[A_TIPO],a[A_DEP],a[A_CAT],a[A_CAL],
-                   a[A_CANT], Math.round(a[A_VAL]*1000000)].map(esc2).join(";"));
+      var fila = [a[A_REF],a[A_NOM],a[A_MAR],a[A_TIPO],a[A_DEP],a[A_CAT],a[A_CAL],a[A_CANT]];
+      if (!SIN_VALOR) fila.push(Math.round(a[A_VAL]*1000000));
+      lineas.push(fila.map(esc2).join(";"));
     });
     var url = URL.createObjectURL(new Blob(["\ufeff" + lineas.join("\r\n")],
                                            {type:"text/csv;charset=utf-8"}));
@@ -1299,9 +1311,32 @@ function armarFiltros(){
   document.getElementById("sello").textContent = (DATOS.GENERADO || "—").split(" ")[0];
   document.getElementById("ndep").textContent = fmt(deps.length);
   document.getElementById("nmar").textContent = fmt(marcas.length);
-  document.getElementById("pie").textContent =
-    "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · " +
-    "las tablas resumen muestran millones de guaraníes; el detalle por artículo y la rotación, guaraníes completos.";
+  document.getElementById("pie").textContent = SIN_VALOR
+    ? "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · vista sin valorización: " +
+      "todas las cifras son unidades en stock."
+    : "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · " +
+      "las tablas resumen muestran millones de guaraníes; el detalle por artículo y la rotación, guaraníes completos.";
+
+  /* Vista sin valorización: lo que en el HTML está escrito para la versión
+     a costo se reemplaza acá, y se quita todo lo que trae guaraníes. */
+  if (SIN_VALOR) {
+    document.title = "Stock de Mercaderías (unidades) · Camping 44";
+    document.querySelector(".ttl h1").textContent = "Reporte de Stock de Mercaderías";
+    document.querySelector(".ttl p").textContent =
+      "Camping 44 S.A. · Vista sin valorización: cifras en unidades · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)";
+    var meta = document.querySelectorAll(".meta > div");
+    if (meta[1]) meta[1].innerHTML = "<span>Cifras en</span><strong>Unidades</strong>";
+    /* Se ocultan y no se borran: la navegación de pestañas guarda referencias a los dos. */
+    ["t2", "p2"].forEach(function(id){ var el = document.getElementById(id); if (el) { el.hidden = true; el.style.display = "none"; } });
+    var sw = document.querySelector(".sw-empresa");
+    if (sw) sw.remove();
+    var notaCal = document.querySelector("#sec-cal .note");
+    if (notaCal) notaCal.textContent = "Unidades · de la etiqueta de Odoo o del nombre del producto · clic para filtrar";
+    var thCal = document.querySelector('#tbl-cal th[data-k="v"]');
+    if (thCal) thCal.textContent = "Unidades";
+    var thVal = document.querySelector('#tbl-art th[data-k="8"]');
+    if (thVal) thVal.remove();
+  }
 }
 
 
@@ -1410,15 +1445,19 @@ function pintar(){
   if (window.stkAcomodar) window.stkAcomodar();
 
   document.getElementById("kpis").innerHTML = [
-    kpi("Stock a costo", gsM(T) + (u === null ? "" : '<small class="u">' + unidades(u) + '</small>'),
+    kpi(SIN_VALOR ? "Stock en unidades" : "Stock a costo",
+        gsM(T) + (u === null || SIN_VALOR ? "" : '<small class="u">' + unidades(u) + '</small>'),
         bloqueado > 0
           ? etiquetaFiltro() + " · " + gsM(bloqueado) + " no comercializable"
           : etiquetaFiltro(),
         "", "todo",
-        "Suma del valor de las existencias en depósitos internos, valuadas al costo " +
-        "que registra Odoo. No es precio de venta. El número chico de abajo son las " +
-        "unidades físicas que hay de lo que esté filtrado arriba: con <i>Tipo: Armas</i> " +
-        "puesto, son las armas en stock." +
+        (SIN_VALOR
+          ? "Unidades físicas en stock en los depósitos internos, de lo que esté " +
+            "filtrado arriba: con <i>Tipo: Armas</i> puesto, son las armas en stock."
+          : "Suma del valor de las existencias en depósitos internos, valuadas al costo " +
+            "que registra Odoo. No es precio de venta. El número chico de abajo son las " +
+            "unidades físicas que hay de lo que esté filtrado arriba: con <i>Tipo: Armas</i> " +
+            "puesto, son las armas en stock.") +
         (bloqueado > 0
           ? " Incluye " + gsM(bloqueado) + " en " + NO_COMERCIAL.join(", ") +
             ", que existe en stock pero hoy no se puede vender."
@@ -1430,11 +1469,11 @@ function pintar(){
         "falta se mide contra el stock completo y no contra una parte. " +
         "<b>N</b> (producto nuevo) cuenta como clasificado: es una decisión tomada. " +
         "Lo que figura como “Sin categoria” o en blanco, no."),
-    kpi("Capital en Categoría C", gsM(t.C),
+    kpi(SIN_VALOR ? "Stock en Categoría C" : "Capital en Categoría C", gsM(t.C),
         pct(t.C, T) + " del stock total · liquidación pendiente", "", "C",
-        "Mercadería marcada para liquidar según la matriz vigente. Es capital " +
-        "inmovilizado que el MP-MIS-01 pide liberar. Incluye el material controlado " +
-        "marcado C: la clasificación alcanza a toda la mercadería."),
+        "Mercadería marcada para liquidar según la matriz vigente. " +
+        (SIN_VALOR ? "" : "Es capital inmovilizado que el MP-MIS-01 pide liberar. ") +
+        "Incluye el material controlado marcado C: la clasificación alcanza a toda la mercadería."),
   ].join("");
 
   /* Cada KPI abre el detalle de lo que está contando. */
@@ -1461,9 +1500,9 @@ function pintar(){
   tablaFamilias(T);
   tablaDepositos(agrupar("dep"), T);
   document.getElementById("nota-dep").textContent = NO_COMERCIAL.length
-    ? "Millones de guaraníes · " + NO_COMERCIAL.join(" y ") +
+    ? UNI + " · " + NO_COMERCIAL.join(" y ") +
       " guarda stock que no se puede vender: clic para ver el detalle"
-    : "Millones de guaraníes · mismo criterio, abierto por ubicación física";
+    : UNI + " · mismo criterio, abierto por ubicación física";
   tablaCalibres(T);
   tablaArticulos();
   tortas(agrupar("m"));
@@ -1646,7 +1685,7 @@ function pintarAvisoCategoria(filas){
     filas.forEach(function(a){ porMarca[a[A_MAR]] = (porMarca[a[A_MAR]]||0) + a[A_VAL]; });
     var top = Object.keys(porMarca).sort(function(a,b){ return porMarca[b]-porMarca[a]; })[0];
     if (top && porMarca[top] / total > 0.5) {
-      extra = ' En esta selección, más de la mitad del monto es de <b>' + esc(top) +
+      extra = ' En esta selección, más de la mitad ' + (SIN_VALOR ? 'de las unidades' : 'del monto') + ' es de <b>' + esc(top) +
               '</b>: probablemente sea una línea completa que quedó fuera del ciclo, ' +
               'y no productos sueltos.';
     }
@@ -1682,14 +1721,18 @@ function tablaArticulos(){
   var total = filas.reduce(function(t,a){ return t + a[A_VAL]; }, 0);
   var cant  = filas.reduce(function(t,a){ return t + (a[A_CANT] || 0); }, 0);
 
-  document.getElementById("nota-art").textContent = hayFiltro()
-    ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
-    : "Guaraníes completos · elegí un filtro arriba para acotar la lista";
+  document.getElementById("nota-art").textContent = SIN_VALOR
+    ? (hayFiltro()
+        ? "Unidades · los artículos que cumplen el filtro, de mayor a menor cantidad"
+        : "Unidades · elegí un filtro arriba para acotar la lista")
+    : (hayFiltro()
+        ? "Guaraníes completos · los artículos que cumplen el filtro, de mayor a menor valor"
+        : "Guaraníes completos · elegí un filtro arriba para acotar la lista");
   pintarAvisoCategoria(filas);
 
   document.getElementById("q-art-n").textContent =
     filas.length
-      ? fmt(filas.length) + " artículos · " + unidades(cant) + " · Gs. " + gs(total)
+      ? fmt(filas.length) + " artículos · " + unidades(cant) + (SIN_VALOR ? "" : " · Gs. " + gs(total))
       : "";
 
   if (!filas.length) {
@@ -1717,10 +1760,10 @@ function tablaArticulos(){
       '<td class="l">'+badge+'</td>'+
       '<td class="l" style="color:var(--ink2);font-size:12px">'+esc(a[A_CAL] === "Sin calibre" ? "—" : a[A_CAL])+'</td>'+
       '<td class="num">'+fmt(a[A_CANT])+'</td>'+
-      '<td class="num"><b>'+gs(a[A_VAL])+'</b></td></tr>';
+      (SIN_VALOR ? '' : '<td class="num"><b>'+gs(a[A_VAL])+'</b></td>')+'</tr>';
   }).join("") +
   (filas.length > top.length
-    ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor valor, de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
+    ? '<tr><td colspan="8" class="empty">Se muestran los 300 de mayor '+(SIN_VALOR ? 'cantidad' : 'valor')+', de '+fmt(filas.length)+'. Usá el buscador o descargá la lista.</td></tr>'
     : "");
 }
 
@@ -1752,7 +1795,7 @@ function porControl(){
 function ejeControl(){
   var g = porControl();
   var vacia = function(k){ return Object.assign({ k:k, marcas:{}, q:0 }, vacio); };
-  var hayQ = unidadesFiltradas() !== null;
+  var hayQ = !SIN_VALOR && unidadesFiltradas() !== null;
   var lados = [
     { k:"Controlado",    x:g["Controlado"]    || vacia("Controlado"),
       pie:"armas, municiones, cargadores y accesorios de arma" },
@@ -1808,9 +1851,9 @@ function ejeControl(){
   var falta = FUERA.reduce(function(t,k){ return t + (ctlObj[k] || 0); }, 0)
             + (ctlObj.NC || 0);
   document.getElementById("nota-ctl").innerHTML = falta > 0
-    ? 'Millones de guaraníes · <span class="aviso">' + gsM(falta) +
+    ? UNI + ' · <span class="aviso">' + gsM(falta) +
       ' de material controlado todavía no tiene categoría cargada en Odoo</span>'
-    : "Millones de guaraníes · clic en una tarjeta para filtrar todo el reporte";
+    : UNI + " · clic en una tarjeta para filtrar todo el reporte";
 
   var tocar = function(ctl, cat){
     f.ctl = (f.ctl === ctl && (cat === null || f.cat === cat)) ? "*" : ctl;
@@ -1846,7 +1889,7 @@ function tablaFamilias(T){
   if (sec.hidden) return;
 
   document.getElementById("nota-fam").textContent =
-    "Millones de guaraníes · categoría de producto de Odoo · clic para filtrar";
+    UNI + " · categoría de producto de Odoo · clic para filtrar";
 
   filas.forEach(function(r){ r._t = suma(r); });
   filas = ordenar(filas, orden.fam.k, orden.fam.asc);
@@ -1943,7 +1986,7 @@ function tortas(filas){
   filas = filas.filter(function(r){ return suma(r) > 0; });
   var top = filas.slice(0, 24);
   document.getElementById("nota-pies").textContent = filas.length > 24
-    ? "Las 24 marcas de mayor monto, de " + fmt(filas.length)
+    ? (SIN_VALOR ? "Las 24 marcas con más unidades, de " : "Las 24 marcas de mayor monto, de ") + fmt(filas.length)
     : "Mismo esquema replicado para cada marca";
   if (!top.length) {
     document.getElementById("pies").innerHTML = '<div class="card empty">Sin marcas para este filtro.</div>';
@@ -2106,6 +2149,7 @@ function mesesDe(){ return MESES.slice(per.desde, per.hasta + 1); }
 
 /** Mantiene la marca de la Parte 2 alineada con el filtro de la Parte 1. */
 function sincronizarSerie(){
+  if (SIN_VALOR) return;
   var lista = marcasConSerie();
   var sel = document.getElementById("f-serie");
   if (!lista.length) {
@@ -2704,7 +2748,7 @@ var abrirEnParte2 = restaurarEstado();
 reflejarFiltros();
 pintar();
 sincronizarSerie();
-if (abrirEnParte2) irA(1);
+if (abrirEnParte2 && !SIN_VALOR) irA(1);
 })();
 </script>
 </body>
