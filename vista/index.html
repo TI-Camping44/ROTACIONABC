@@ -1298,7 +1298,7 @@ function armarFiltros(){
   var faltan = [];
   if (!STOCK.some(function(r){ return r.fam !== "Sin familia"; })) faltan.push("familia");
   if (!STOCK.some(function(r){ return r.ctl === "Controlado"; })) faltan.push("control");
-  if (faltan.length) {
+  if (faltan.length && !SIN_VALOR) {
     var av = document.createElement("div");
     av.className = "nota-cat";
     av.style.margin = "12px 0 0";
@@ -1312,18 +1312,30 @@ function armarFiltros(){
   document.getElementById("ndep").textContent = fmt(deps.length);
   document.getElementById("nmar").textContent = fmt(marcas.length);
   document.getElementById("pie").textContent = SIN_VALOR
-    ? "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · vista sin valorización: " +
-      "todas las cifras son unidades en stock."
+    ? "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · " +
+      (DATOS.VISTA_FAMILIAS || []).join(", ") + " · todas las cifras son unidades en stock."
     : "Datos extraídos de Odoo el " + (DATOS.GENERADO || "—") + " · valuación a costo · " +
       "las tablas resumen muestran millones de guaraníes; el detalle por artículo y la rotación, guaraníes completos.";
 
   /* Vista sin valorización: lo que en el HTML está escrito para la versión
      a costo se reemplaza acá, y se quita todo lo que trae guaraníes. */
   if (SIN_VALOR) {
-    document.title = "Stock de Mercaderías (unidades) · Camping 44";
-    document.querySelector(".ttl h1").textContent = "Reporte de Stock de Mercaderías";
+    var titulo = DATOS.VISTA_TITULO || "Stock de Mercaderías";
+    document.title = titulo + " · Camping 44";
+    document.querySelector(".ttl h1").textContent = titulo;
     document.querySelector(".ttl p").textContent =
-      "Camping 44 S.A. · Vista sin valorización: cifras en unidades · Base normativa: MP-MIS-01 Categorización de Inventario (Ver. 00)";
+      "Camping 44 S.A. · Qué hay y en qué depósito · cifras en unidades, sin costos";
+    /* La vista trae una sola familia: sin material controlado ni calibres, y
+       los filtros que no aplican se ocultan. */
+    ["eje-ctl", "sec-cal"].forEach(function(id){ var el = document.getElementById(id); if (el) el.hidden = true; });
+    ["f-tipo", "f-ctl", "f-fam", "f-cal"].forEach(function(id){ var el = document.getElementById(id); if (el) el.style.display = "none"; });
+    /* Columnas que en esta vista quedan siempre vacías: ARM/MUN/CARG/ACC por
+       depósito y el calibre de cada artículo. */
+    var css = document.createElement("style");
+    css.textContent =
+      "#tbl-dep tr > :nth-child(n+6):nth-child(-n+9){display:none}" +
+      "#tbl-art tr > :nth-child(6):not([colspan]){display:none}";
+    document.head.appendChild(css);
     var meta = document.querySelectorAll(".meta > div");
     if (meta[1]) meta[1].innerHTML = "<span>Cifras en</span><strong>Unidades</strong>";
     /* Se ocultan y no se borran: la navegación de pestañas guarda referencias a los dos. */
@@ -1474,7 +1486,7 @@ function pintar(){
         "Mercadería marcada para liquidar según la matriz vigente. " +
         (SIN_VALOR ? "" : "Es capital inmovilizado que el MP-MIS-01 pide liberar. ") +
         "Incluye el material controlado marcado C: la clasificación alcanza a toda la mercadería."),
-  ].join("");
+  ].slice(0, SIN_VALOR ? 1 : 3).join("");
 
   /* Cada KPI abre el detalle de lo que está contando. */
   Array.prototype.forEach.call(document.querySelectorAll(".kpi.click"), function(el){

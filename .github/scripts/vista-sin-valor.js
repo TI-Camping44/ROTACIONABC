@@ -1,8 +1,9 @@
 /*
  * Arma la vista sin valorización en la carpeta vista/.
  *
- * Es el mismo reporte, pero en unidades: para las áreas que necesitan ver qué
- * mercadería hay y dónde (por ejemplo Marketing), sin el costo. Se publica en
+ * Es el mismo reporte, pero en unidades y SOLO con las familias de la lista
+ * FAMILIAS: hoy, el merchandising, para que Marketing vea qué hay y en qué
+ * depósito, sin el costo y sin el resto del stock de la empresa. Se publica en
  * https://ti-camping44.github.io/ROTACIONABC/vista/
  *
  * Qué hace:
@@ -34,22 +35,27 @@ if (inicio < 0 || fin < inicio) {
 }
 const D = JSON.parse(original.slice(inicio + marca.length, fin));
 
+/* Familias de producto (categoría de Odoo) que entran en la vista. */
+const FAMILIAS = ['MERCHANDISING'];
+const TITULO = 'Stock de Merchandising';
+
 /* Campos que pasan tal cual: ninguno lleva guaraníes. */
 const TAL_CUAL = ['CATS', 'GENERADO', 'EMPRESA', 'PARAMS', 'NO_COMERCIAL'];
 
 /* Artículo: [ref, nombre, marca, tipo, dep, cat, cal, cantidad, valor, familia, control] */
 const A_CANT = 7, A_VAL = 8;
 
-const V = { SIN_VALOR: true };
+const V = { SIN_VALOR: true, VISTA_TITULO: TITULO, VISTA_FAMILIAS: FAMILIAS };
+const entra = function (fam) { return FAMILIAS.indexOf(fam) >= 0; };
 TAL_CUAL.forEach(function (k) { if (D[k] !== undefined) V[k] = D[k]; });
 
-V.STOCK = (D.STOCK || []).map(function (r) {
+V.STOCK = (D.STOCK || []).filter(function (r) { return entra(r.fam); }).map(function (r) {
   const q = Number(r.q) || 0;
   return { m: r.m, tipo: r.tipo, dep: r.dep, cat: r.cat, cal: r.cal, fam: r.fam,
            ctl: r.ctl, abc: r.abc, q: q, v: q };
 });
 
-V.ARTICULOS = (D.ARTICULOS || []).map(function (a) {
+V.ARTICULOS = (D.ARTICULOS || []).filter(function (a) { return entra(a[9]); }).map(function (a) {
   const b = a.slice();
   b[A_VAL] = Number(a[A_CANT]) || 0;
   return b;
@@ -69,8 +75,9 @@ V.STOCK.forEach(function (r, i) {
 V.ARTICULOS.forEach(function (a, i) {
   if (a[A_VAL] !== (Number(a[A_CANT]) || 0)) errores.push('ARTICULOS[' + i + '] conserva el valor a costo');
 });
-if (V.STOCK.length !== (D.STOCK || []).length) errores.push('STOCK no tiene las mismas filas');
-if (V.ARTICULOS.length !== (D.ARTICULOS || []).length) errores.push('ARTICULOS no tiene las mismas filas');
+V.STOCK.forEach(function (r, i) { if (!entra(r.fam)) errores.push('STOCK[' + i + '] es de otra familia: ' + r.fam); });
+V.ARTICULOS.forEach(function (a, i) { if (!entra(a[9])) errores.push('ARTICULOS[' + i + '] es de otra familia: ' + a[9]); });
+if (!V.ARTICULOS.length) errores.push('No hay artículos de ' + FAMILIAS.join(', ') + ' en el datos.js');
 if (errores.length) {
   console.error('La vista no quedó sin valorización. No toco nada.\n' + errores.slice(0, 10).join('\n'));
   process.exit(1);
@@ -81,7 +88,8 @@ const carpeta = 'vista';
 fs.mkdirSync(carpeta, { recursive: true });
 const encabezado =
   '/* Vista sin valorización: generada por .github/scripts/vista-sin-valor.js\n' +
-  '   a partir del datos.js del ' + (D.GENERADO || '—') + '. Cifras en unidades, sin costos.\n' +
+  '   a partir del datos.js del ' + (D.GENERADO || '—') + '. Solo ' + FAMILIAS.join(', ') +
+  ', cifras en unidades, sin costos.\n' +
   '   No editar a mano: se rehace en cada publicación. */\n\n';
 fs.writeFileSync(path.join(carpeta, 'datos.js'), encabezado + marca + JSON.stringify(V) + ';\n');
 fs.copyFileSync('index.html', path.join(carpeta, 'index.html'));
